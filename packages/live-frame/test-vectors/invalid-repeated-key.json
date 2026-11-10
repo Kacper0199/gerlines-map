@@ -1,0 +1,7 @@
+{
+  "name": "invalid-repeated-key",
+  "description": "keyframe-basic with its first trip key set to the second one, valid CRC.",
+  "decoder": "keyframe",
+  "error": "corrupt",
+  "byteLength": 485
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GerLines directions</title>
+<style>
+  :root { --bg: #111214; --surface: #18191c; --line: #2a2c30; --ink: #eceae6; --muted: #9c9a95; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+  header { padding: 28px 32px 8px; max-width: 1600px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; font-weight: 650; }
+  p { margin: 0 0 8px; color: var(--muted); max-width: 72ch; }
+  main { display: grid; gap: 28px; padding: 16px 32px 48px; max-width: 1600px; margin: 0 auto; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+  h2 { font-size: 18px; margin: 0 0 2px; font-weight: 650; }
+  .lead { color: var(--muted); margin-bottom: 14px; }
+  .shots { display: grid; grid-template-columns: 2fr 2fr 1fr; gap: 12px; align-items: start; }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; display: block; border: 1px solid var(--line); border-radius: 4px; background: #000; min-height: 60px; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  a { color: var(--ink); }
+  .open { display: inline-block; margin-top: 12px; padding: 8px 14px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; }
+  .open:focus-visible, a:focus-visible { outline: 2px solid #8fb7ff; outline-offset: 2px; }
+  @media (max-width: 900px) { .shots { grid-template-columns: 1fr; } header, main { padding-left: 16px; padding-right: 16px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>GerLines, four directions</h1>
+  <p>Each variant shows the same real data: 2,665 trains at 21:34 on Friday 23 October 2026 and ICE 379 from Berlin to Basel, selected, 51 minutes late. They differ in layout, type, colour, density and motion.</p>
+</header>
+<main>
+  <section>
+    <h2>A. Stellwerk</h2>
+    <p class="lead">Control room instrument. Docked left panel, Archivo, cool graphite, sky blue selection. Densest and calmest.</p>
+    <div class="shots">
+      <figure><img src="shots/a-desktop-national.png" alt="Variant A, desktop, all of Germany"><figcaption>Desktop, national</figcaption></figure>
+      <figure><img src="shots/a-desktop-city.png" alt="Variant A, desktop, Frankfurt"><figcaption>Desktop, Frankfurt</figcaption></figure>
+      <figure><img src="shots/a-phone.png" alt="Variant A, phone"><figcaption>Phone</figcaption></figure>
+    </div>
+    <figure style="margin:12px 0 0"><img src="shots/a-desktop-light.png" alt="Variant A, light theme" style="width:40%;min-width:280px;border:1px solid var(--line);border-radius:4px"><figcaption>Light theme</figcaption></figure>
+    <a class="open" href="a-stellwerk.html">Open variant A</a>
+  </section>
+  <section>
+    <h2>B. Fahrplan</h2>
+    <p class="lead">Printed timetable clarity. Floating cards, route as a line diagram, Overpass with Overpass Mono times, warm graphite, amber selection.</p>
+    <div class="shots">
+      <figure><img src="shots/b-desktop-national.png" alt="Variant B, desktop, all of Germany"><figcaption>Desktop, national</figcaption></figure>
+      <figure><img src="shots/b-desktop-city.png" alt="Variant B, desktop, Frankfurt"><figcaption>Desktop, Frankfurt</figcaption></figure>
+      <figure><img src="shots/b-phone.png" alt="Variant B, phone"><figcaption>Phone</figcaption></figure>
+    </div>
+    <figure style="margin:12px 0 0"><img src="shots/b-desktop-light.png" alt="Variant B, light theme" style="width:40%;min-width:280px;border:1px solid var(--line);border-radius:4px"><figcaption>Light theme</figcaption></figure>
+    <a class="open" href="b-fahrplan.html">Open variant B</a>
+  </section>
+  <section>
+    <h2>C. Atlas</h2>
+    <p class="lead">Cartographic atlas. Relief, forests and rivers visible, thin top bar and bottom strip, card anchored to the train, Commissioner, teal slate, rose selection.</p>
+    <div class="shots">
+      <figure><img src="shots/c-desktop-national.png" alt="Variant C, desktop, all of Germany"><figcaption>Desktop, national</figcaption></figure>
+      <figure><img src="shots/c-desktop-city.png" alt="Variant C, desktop, Frankfurt"><figcaption>Desktop, Frankfurt</figcaption></figure>
+      <figure><img src="shots/c-phone.png" alt="Variant C, phone"><figcaption>Phone</figcaption></figure>
+    </div>
+    <figure style="margin:12px 0 0"><img src="shots/c-desktop-light.png" alt="Variant C, light theme" style="width:40%;min-width:280px;border:1px solid var(--line);border-radius:4px"><figcaption>Light theme</figcaption></figure>
+    <a class="open" href="c-atlas.html">Open variant C</a>
+  </section>
+  <section>
+    <h2>D. Nachtfahrt</h2>
+    <p class="lead">Cinematic and calm. Near-black map, rail network as fine lines, right inspector with a large line number, Big Shoulders with Public Sans, lilac selection.</p>
+    <div class="shots">
+      <figure><img src="shots/d-desktop-national.png" alt="Variant D, desktop, all of Germany"><figcaption>Desktop, national</figcaption></figure>
+      <figure><img src="shots/d-desktop-city.png" alt="Variant D, desktop, Frankfurt"><figcaption>Desktop, Frankfurt</figcaption></figure>
+      <figure><img src="shots/d-phone.png" alt="Variant D, phone"><figcaption>Phone</figcaption></figure>
+    </div>
+    <figure style="margin:12px 0 0"><img src="shots/d-desktop-light.png" alt="Variant D, light theme" style="width:40%;min-width:280px;border:1px solid var(--line);border-radius:4px"><figcaption>Light theme</figcaption></figure>
+    <a class="open" href="d-nachtfahrt.html">Open variant D</a>
+  </section>
+</main>
+</body>
+</html>

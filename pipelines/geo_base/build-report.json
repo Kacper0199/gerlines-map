@@ -1,0 +1,168 @@
+{
+  "sources": {
+    "bkg-vg250": {
+      "url": "https://daten.gdz.bkg.bund.de/produkte/vg/vg250_ebenen_0101/2026/vg250_01-01.utm32s.gpkg.ebenen.zip",
+      "fetched_at": "2026-10-25T10:20:17Z",
+      "bytes": 70630747,
+      "sha256": "6b096eb4862b4eafda9294e425fb5a6d0e7773eb5815a4d4edc78b639ec2728f",
+      "md5": "912ebecfc58bade695cf31271f4e0e85",
+      "licence": "DL-DE-BY-2.0",
+      "attribution": "© GeoBasis-DE / BKG (2026)",
+      "edition": "VG250 Ebenen, Stand 2026-01-01"
+    },
+    "ne-admin0": {
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip",
+      "fetched_at": "2026-10-25T09:25:45Z",
+      "bytes": 4930492,
+      "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+      "md5": null,
+      "licence": "LicenseRef-NaturalEarth-PublicDomain",
+      "attribution": "Made with Natural Earth",
+      "edition": "Natural Earth 10m admin 0 countries, 5.1.1"
+    },
+    "ne-admin1": {
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces.zip",
+      "fetched_at": "2026-10-25T09:25:47Z",
+      "bytes": 14909524,
+      "sha256": "efc59726337323058f9446210adc96673179cd344e053666ee3d28cb58ba2b05",
+      "md5": null,
+      "licence": "LicenseRef-NaturalEarth-PublicDomain",
+      "attribution": "Made with Natural Earth",
+      "edition": "Natural Earth 10m admin 1 states and provinces, 5.1.1"
+    },
+    "ne-railroads": {
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_railroads.zip",
+      "fetched_at": "2026-10-25T09:25:50Z",
+      "bytes": 15116579,
+      "sha256": "0bce64d1bb7ce1178810f0a341322b0459acb0689a61016259ef38f75abed0a4",
+      "md5": null,
+      "licence": "LicenseRef-NaturalEarth-PublicDomain",
+      "attribution": "Made with Natural Earth",
+      "edition": "Natural Earth 10m railroads, 5.0.0"
+    }
+  },
+  "levels": [
+    {
+      "name": "national",
+      "tolerance": 300.0,
+      "decimals": 3,
+      "min_part_area": 5000000.0,
+      "keep": "Helgoland, Helgoland Düne, Neuwerk",
+      "use": "germany-outline, germany-mask, laender"
+    },
+    {
+      "name": "focus",
+      "tolerance": 100.0,
+      "decimals": 4,
+      "min_part_area": 500000.0,
+      "keep": "",
+      "use": "laender-masks"
+    }
+  ],
+  "parameters": {
+    "projected_crs": "EPSG:25832",
+    "land_area_classes": "VG250 GF 3 and 4 (land without and with structure)",
+    "label_precision_m": 100.0,
+    "point_decimals": 4,
+    "neighbour_max_distance_m": 100000.0,
+    "neighbour_label_band_m": 120000.0,
+    "crossing_max_gap_m": 10000.0,
+    "crossing_merge_m": 3000.0,
+    "fit_max_gap_m": 40000.0,
+    "fit_min_share": 0.1
+  },
+  "counts": {
+    "laender": 16,
+    "national_vertices": 19048,
+    "focus_vertices": 49855,
+    "outline_parts": 26,
+    "neighbours": 12,
+    "border_crossings": 83
+  },
+  "outputs": {
+    "border-crossings.geojson": {
+      "bytes": 14905,
+      "gzip_bytes": 1416
+    },
+    "germany-mask.geojson": {
+      "bytes": 95238,
+      "gzip_bytes": 27356
+    },
+    "germany-outline.geojson": {
+      "bytes": 95352,
+      "gzip_bytes": 27383
+    },
+    "laender-masks/DE-BB.geojson": {
+      "bytes": 62599,
+      "gzip_bytes": 18992
+    },
+    "laender-masks/DE-BE.geojson": {
+      "bytes": 8493,
+      "gzip_bytes": 2809
+    },
+    "laender-masks/DE-BW.geojson": {
+      "bytes": 70740,
+      "gzip_bytes": 21561
+    },
+    "laender-masks/DE-BY.geojson": {
+      "bytes": 114015,
+      "gzip_bytes": 34039
+    },
+    "laender-masks/DE-HB.geojson": {
+      "bytes": 8707,
+      "gzip_bytes": 2927
+    },
+    "laender-masks/DE-HE.geojson": {
+      "bytes": 57407,
+      "gzip_bytes": 17891
+    },
+    "laender-masks/DE-HH.geojson": {
+      "bytes": 10145,
+      "gzip_bytes": 3356
+    },
+    "laender-masks/DE-MV.geojson": {
+      "bytes": 99453,
+      "gzip_bytes": 29469
+    },
+    "laender-masks/DE-NI.geojson": {
+      "bytes": 86857,
+      "gzip_bytes": 27000
+    },
+    "laender-masks/DE-NW.geojson": {
+      "bytes": 62383,
+      "gzip_bytes": 19616
+    },
+    "laender-masks/DE-RP.geojson": {
+      "bytes": 46541,
+      "gzip_bytes": 14766
+    },
+    "laender-masks/DE-SH.geojson": {
+      "bytes": 63143,
+      "gzip_bytes": 19591
+    },
+    "laender-masks/DE-SL.geojson": {
+      "bytes": 16455,
+      "gzip_bytes": 5245
+    },
+    "laender-masks/DE-SN.geojson": {
+      "bytes": 59795,
+      "gzip_bytes": 17898
+    },
+    "laender-masks/DE-ST.geojson": {
+      "bytes": 50412,
+      "gzip_bytes": 15214
+    },
+    "laender-masks/DE-TH.geojson": {
+      "bytes": 62195,
+      "gzip_bytes": 18537
+    },
+    "laender.geojson": {
+      "bytes": 298536,
+      "gzip_bytes": 81546
+    },
+    "neighbours.geojson": {
+      "bytes": 2797,
+      "gzip_bytes": 781
+    }
+  }
+}

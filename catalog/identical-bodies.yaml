@@ -1,0 +1,55 @@
+# Which catalogue series may be drawn with the 3D model of another series because their car bodies are the
+# same. A row is accepted only with a citable source that says the bodies are identical; the series
+# without a model of its own is series_id, the series whose forge model is drawn is related_series_id. A
+# rejected row records a pair that was examined and does not hold. Rows come from the cited article
+# revisions (German Wikipedia, CC BY-SA 4.0); the evidence is a verbatim passage of the revision.
+- series_id: db-644
+  related_series_id: db-643
+  verdict: rejected
+  source: wikipedia-de-talent-r14
+  evidence: Bei den 644 ist jedes Fahrzeugsegment gegenüber den Triebwagen der Reihe 643.0 um einen Fensterteiler
+    verlängert ausgeführt.
+  reason: Each car body of the 644 is one window pier longer than in the 643.0 and the 644 has six doors per side,
+    so the bodies differ.
+- series_id: db-623
+  related_series_id: db-648
+  verdict: rejected
+  source: wikipedia-de-coradia-lint-r13
+  evidence: Diese Triebwagen werden als Baureihe 623 bezeichnet und sind die ersten Fahrzeuge Lint 41 mit neuer
+    Kopfform.
+  reason: The 623 is the first LINT 41 with a new head shape, so its cab ends differ from the older 648 whose cars
+    the forge draws. The article does not say whether the 1648 has the new head, and the forge draws the 1648 with
+    the cars of the 648 as well.
+- series_id: db-424
+  related_series_id: db-423
+  verdict: rejected
+  source: wikipedia-de-424
+  evidence: Die äußerlich ähnliche, technisch aber völlig anders aufgebaute S-Bahn-Baureihe 423 ist auf die höheren
+    Bahnsteige bei älteren S-Bahn-Netzen zugeschnitten. Die Fahrzeuge der Baureihen 424/434 haben (wie die Baureihe
+    425) je zwei Doppelschwenkschiebetüren pro Wagenkasten und Seite, während bei der Baureihe 423 drei Türen pro
+    Wagenkasten und Seite vorhanden sind.
+  reason: The 424 has two doors per car body and side, the 423 has three, so the door layout of the bodies differs.
+- series_id: db-425
+  related_series_id: db-423
+  verdict: rejected
+  source: wikipedia-de-424
+  evidence: Die Fahrzeuge der Baureihen 424/434 haben (wie die Baureihe 425) je zwei Doppelschwenkschiebetüren pro
+    Wagenkasten und Seite, während bei der Baureihe 423 drei Türen pro Wagenkasten und Seite vorhanden sind.
+  reason: The 425 has two doors per car body and side like the 424, the 423 has three, so the door layout of the
+    bodies differs.
+- series_id: db-483
+  related_series_id: db-483-484
+  verdict: rejected
+  source: wikipedia-de-483-484
+  evidence: Die Baureihe 483 bezeichnet hierbei sogenannte Viertelzüge, bestehend aus zwei Wagen; die Baureihe 484
+    dagegen Halbzüge, bestehend aus vier Wagen.
+  reason: The article does not state that the bodies are identical, and the model has the four cars of a 484 while
+    a 483 has two.
+- series_id: alstom-coradia-ilint
+  related_series_id: db-622
+  verdict: rejected
+  source: wikipedia-de-coradia-lint-r13
+  evidence: Auf Basis des diesel-mechanischen LINT 54 entwickelte Alstom zusammen mit dem Deutschen Zentrum für
+    Luft- und Raumfahrt in Salzgitter und Tarbes den iLint
+  reason: The iLint is developed on the basis of the LINT 54, which says the platform is shared and not that the
+    car bodies are identical.

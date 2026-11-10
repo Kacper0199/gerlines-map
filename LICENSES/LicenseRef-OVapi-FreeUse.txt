@@ -1,0 +1,4 @@
+OVapi GTFS and GTFS-RT feeds (https://gtfs.ovapi.nl/)
+
+Terms as recorded by GerLines on 2026-10-23: the feeds are free to use; credit the source as
+"OVapi". Check the current terms on the OVapi site before republishing the data.

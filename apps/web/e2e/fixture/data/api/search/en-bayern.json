@@ -1,0 +1,18 @@
+{
+  "query": "Bayern",
+  "serviceDate": "2026-11-08",
+  "timetableVersion": "1",
+  "results": [
+    {
+      "kind": "place",
+      "id": "land:DE-BY",
+      "type": "land",
+      "name": "Bavaria",
+      "region": null,
+      "landCode": "DE-BY",
+      "lon": 11.8178,
+      "lat": 48.7403,
+      "bbox": [8.9759, 47.2701, 13.8395, 50.5642]
+    }
+  ]
+}

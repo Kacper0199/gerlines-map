@@ -1,0 +1,7 @@
+{
+  "name": "invalid-one-stop",
+  "description": "keyframe-basic with a trip of one plan stop (a plan needs two).",
+  "decoder": "keyframe",
+  "error": "corrupt",
+  "byteLength": 485
+}

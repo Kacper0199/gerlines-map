@@ -1,0 +1,266 @@
+name: gerlines
+
+services:
+  db:
+    image: timescale/timescaledb-ha:pg18.6-ts2.31.0@sha256:ad8b5095c9e9f19b3c97794133f1dd80f09da9566a5687f79b6208324b98a388
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-gerlines}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-locally}
+      POSTGRES_DB: ${POSTGRES_DB:-gerlines}
+      TIMESCALEDB_TELEMETRY: "off"
+      NO_TS_TUNE: "true"
+    command:
+      - postgres
+      - -c
+      - shared_buffers=512MB
+      - -c
+      - effective_cache_size=1536MB
+      - -c
+      - work_mem=16MB
+      - -c
+      - maintenance_work_mem=256MB
+      - -c
+      - max_wal_size=4GB
+      - -c
+      - min_wal_size=256MB
+      - -c
+      - checkpoint_timeout=15min
+      - -c
+      - wal_compression=zstd
+      - -c
+      - max_connections=60
+      - -c
+      - max_worker_processes=32
+      - -c
+      - max_parallel_workers=4
+      - -c
+      - max_parallel_workers_per_gather=2
+      - -c
+      - timescaledb.max_background_workers=24
+      - -c
+      - timescaledb.telemetry_level=off
+      - -c
+      - random_page_cost=1.1
+      - -c
+      - log_min_duration_statement=1000
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - db-data:/home/postgres/pgdata
+    shm_size: 256mb
+    mem_limit: 2g
+    stop_grace_period: 60s
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -p 5432 -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+
+  valkey:
+    image: valkey/valkey:9.1.3-alpine@sha256:bf09d58e96d6b4524a15396b65b242bbe18beebbcc15a04d8ee75ddac62fae0b
+    restart: unless-stopped
+    command:
+      - valkey-server
+      - --protected-mode
+      - "no"
+      - --appendonly
+      - "yes"
+      - --appendfsync
+      - everysec
+      - --save
+      - "300 1 60 1000"
+      - --maxmemory
+      - 256mb
+      - --maxmemory-policy
+      - noeviction
+    ports:
+      - "127.0.0.1:${VALKEY_PORT:-6379}:6379"
+    volumes:
+      - valkey-data:/data
+    mem_limit: 512m
+    healthcheck:
+      test: ["CMD-SHELL", "valkey-cli ping | grep -q PONG"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  centrifugo:
+    image: centrifugo/centrifugo:v6.10.2@sha256:34b84f823515927266ce3abfb840fd9e0acabb58805e7e896f5de731217a627d
+    profiles: ["live"]
+    restart: unless-stopped
+    command: ["centrifugo", "--config", "/centrifugo/config.json"]
+    environment:
+      CENTRIFUGO_CLIENT_TOKEN_HMAC_SECRET_KEY: ${CENTRIFUGO_CLIENT_TOKEN_HMAC_SECRET_KEY:-change-me-locally}
+      CENTRIFUGO_HTTP_API_KEY: ${CENTRIFUGO_HTTP_API_KEY:-change-me-locally}
+      CENTRIFUGO_ADMIN_PASSWORD: ${CENTRIFUGO_ADMIN_PASSWORD:-change-me-locally}
+      CENTRIFUGO_ADMIN_SECRET: ${CENTRIFUGO_ADMIN_SECRET:-change-me-locally}
+    ports:
+      - "127.0.0.1:${CENTRIFUGO_PORT:-8000}:8000"
+    volumes:
+      - ./centrifugo/config.json:/centrifugo/config.json:ro
+    mem_limit: 256m
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8000/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+
+  live:
+    profiles: ["live"]
+    build:
+      context: ..
+      dockerfile: services/live/Dockerfile
+    image: gerlines-live:0.1.0
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    depends_on:
+      db:
+        condition: service_healthy
+      valkey:
+        condition: service_healthy
+      centrifugo:
+        condition: service_healthy
+    environment:
+      APP_NAME: ${APP_NAME:-gerlines}
+      APP_CONTACT: ${APP_CONTACT:-}
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ${POSTGRES_USER:-gerlines}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-locally}
+      POSTGRES_DB: ${POSTGRES_DB:-gerlines}
+      VALKEY_URL: redis://valkey:6379
+      CENTRIFUGO_URL: http://centrifugo:8000
+      CENTRIFUGO_HTTP_API_KEY: ${CENTRIFUGO_HTTP_API_KEY:-change-me-locally}
+      LIVE_LOCAL_STACK: "1"
+    user: "${LIVE_UID:-1000}:${LIVE_GID:-1000}"
+    ports:
+      - "127.0.0.1:${LIVE_PORT:-8790}:8790"
+    volumes:
+      - ${LIVE_DIR:-../data/live/run}:/live
+    mem_limit: 768m
+    stop_grace_period: 15s
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8790/healthz').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 120s
+
+  recorder:
+    profiles: ["recorder"]
+    build:
+      context: ..
+      dockerfile: services/ingest/Dockerfile
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    environment:
+      APP_NAME: ${APP_NAME:-gerlines}
+      APP_CONTACT: ${APP_CONTACT:-}
+      OTD_CH_API_KEY: ${OTD_CH_API_KEY:-}
+      SNCB_API_KEY: ${SNCB_API_KEY:-}
+      DB_CLIENT_ID: ${DB_CLIENT_ID:-}
+      DB_API_KEY: ${DB_API_KEY:-}
+      RECORDER_DB_APIS: ${RECORDER_DB_APIS:-0}
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ${POSTGRES_USER:-gerlines}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-locally}
+      POSTGRES_DB: ${POSTGRES_DB:-gerlines}
+      RECORDINGS_DIR: /recordings
+      RECORDER_SEED_DIR: /seed
+      RECORDER_MIGRATIONS_DIR: /app/migrations
+      RECORDER_DISK_FLOOR_GIB: ${RECORDER_DISK_FLOOR_GIB:-20}
+      MOBILITHEK_CERT_P12: /secrets/mobilithek/gerlines-recorder.p12
+      MOBILITHEK_CERT_PASSWORD: ${MOBILITHEK_CERT_PASSWORD:-}
+      MOBILITHEK_DELFI_RT_SUBSCRIPTION_ID: ${MOBILITHEK_DELFI_RT_SUBSCRIPTION_ID:-}
+    volumes:
+      - ${RECORDINGS_DIR:-../data/recordings}:/recordings
+      - ${RECORDER_SEED_DIR:-../data/inputs}:/seed:ro
+      - ../secrets/mobilithek:/secrets/mobilithek:ro
+    mem_limit: 1g
+    stop_grace_period: 30s
+    healthcheck:
+      test: ["CMD", "node", "/app/recorder.mjs", "health"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  realtime:
+    profiles: ["realtime"]
+    build:
+      context: ..
+      dockerfile: services/ingest/Dockerfile
+    entrypoint: ["node", "--max-old-space-size=1536", "/app/realtime.mjs"]
+    command: ["live", "--allow-shared", "--checkpoint", "/state/realtime.checkpoint.gz"]
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ${POSTGRES_USER:-gerlines}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change-me-locally}
+      POSTGRES_DB: ${POSTGRES_DB:-gerlines}
+      RECORDINGS_DIR: /recordings
+    volumes:
+      - ${RECORDINGS_DIR:-../data/recordings}:/recordings:ro
+      - ${REALTIME_STATE_DIR:-../data/realtime}:/state
+    mem_limit: 2560m
+    stop_grace_period: 60s
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: "5"
+
+  router:
+    profiles: ["router"]
+    build:
+      context: ../services/router
+    image: gerlines-router:2.11.4
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 256
+    ports:
+      - "127.0.0.1:${ROUTER_PORT:-8092}:8080"
+    volumes:
+      - ${ROUTER_RUN_DIR:-../data/router/runs/delfi-2026-10-19-rail}/data:/data:ro
+      - ${ROUTER_RUN_DIR:-../data/router/runs/delfi-2026-10-19-rail}/container.yml:/data/config.yml:ro
+    mem_limit: 3g
+    stop_grace_period: 30s
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--output", "/dev/null", "http://127.0.0.1:8080/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 120s
+
+volumes:
+  db-data:
+  valkey-data:

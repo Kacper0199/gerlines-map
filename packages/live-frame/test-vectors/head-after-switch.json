@@ -1,0 +1,14 @@
+{
+  "name": "head-after-switch",
+  "description": "The head right after a timetable switch or a restart: keyframe 500 is the latest state, no delta 500 exists, oldest 501.",
+  "decoder": "head",
+  "expected": {
+    "kind": "head",
+    "sequence": 500,
+    "timetableVersion": 7,
+    "timeBase": 1793000004,
+    "keyframeSequence": 500,
+    "oldestSequence": 501
+  },
+  "byteLength": 68
+}

@@ -1,0 +1,27 @@
+[project]
+name = "gerlines-rail-graph"
+version = "0.1.0"
+description = "Rail graph and trip shapes for GerLines: QA-gated shapes per trip pattern with arc length and elevation"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "gerlines-common",
+  "numpy==2.5.4",
+  "osmium==4.3.2",
+  "pillow==13.0.0",
+  "pmtiles==3.8.1",
+  "psycopg[binary]==3.3.6",
+  "pyproj==3.8.0",
+  "scipy==1.18.1",
+  "shapely==2.2.0",
+]
+
+[tool.uv.sources]
+gerlines-common = { workspace = true }
+
+[project.scripts]
+gerlines-rail-graph = "gerlines_rail_graph.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

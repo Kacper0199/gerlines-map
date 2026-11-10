@@ -1,0 +1,830 @@
+# Liveries with a cited source. RAL codes come from the article named in source; a hex value
+# only from Wikidata's sRGB triplet (P465) of that RAL colour item, and only when Wikidata
+# gives exactly one. All other liveries wait for a source (photos and brand
+# guides).
+- livery_id: db-long-distance-1996
+  name: DB long-distance colour scheme from 1996
+  operator_id: db-fernverkehr-ag
+  colours:
+    - role: body
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: window_band
+      name: Verkehrsrot
+      ral: RAL 3020
+      source: wikipedia-de-verkehrsrot
+  source: wikipedia-de-verkehrsrot
+  missing:
+    window_band hex: Wikidata gives two triplets for RAL 3020 (Q2516404), C1121C and CC0605
+    series_ids: the article names ICE and Intercity fleets, not series
+- livery_id: db-regional-1996
+  name: DB regional colour scheme from 1996
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+  source: wikipedia-de-verkehrsrot
+  missing:
+    body hex: Wikidata gives two triplets for RAL 3020 (Q2516404), C1121C and CC0605
+    operator_id: the article speaks of DB regional traffic as a whole, not one DB Regio unit
+- livery_id: s-bahn-berlin-481-traditional
+  name: S-Bahn Berlin traditional colours on class 481
+  operator_id: s-bahn-berlin-gmbh
+  series_ids: [db-481]
+  colours:
+    - role: upper_body
+      name: Ockergelb
+      ral: RAL 1024
+      hex: '#ba8f4c'
+      source: wikipedia-de-481
+      hex_source: rgb-to-ral
+    - role: lower_body
+      name: Rubinrot
+      ral: RAL 3003
+      hex: '#9b111e'
+      source: wikipedia-de-481
+      hex_source: wikidata
+  source: wikipedia-de-481
+# Liveries added by the vehicle forge (WP-5.1). Hex values come from Wikidata's sRGB triplet
+# (P465) when it gives exactly one; for Verkehrsrot (RAL 3020), where Wikidata gives two, from the
+# cited Verkehrsrot article, which states one of them (C1121C).
+- livery_id: db-ice-verkehrsweiss
+  name: ICE livery, verkehrsweiß with a verkehrsrot stripe
+  operator_id: db-fernverkehr-ag
+  colours:
+    - role: body
+      name: Verkehrsweiß
+      ral: RAL 9016
+      hex: '#f6f6f6'
+      source: wikipedia-de-intercity-express
+      hex_source: wikidata
+    - role: stripe
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-intercity-express
+      hex_source: wikipedia-de-verkehrsrot
+    - role: window_band
+      name: Schwarz
+      source: wikipedia-de-intercity-express
+    - role: skirt
+      name: Quarzgrau, the skirts and frames of the ICE
+      ral: RAL 7039
+      hex: '#6c6960'
+      source: wikipedia-de-ral-eisenbahnfarben
+      hex_source: wikidata
+  source: wikipedia-de-intercity-express
+  missing:
+    window_band hex: the article says black and names no RAL colour
+    series_ids: the article describes the whole ICE fleet
+- livery_id: db-regio-verkehrsrot
+  name: DB regional livery, verkehrsrot body
+  operator_id: db-regio-ag
+  series_ids: [db-1428, db-1429, db-1648, db-620, db-643, db-445, db-446]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: accent
+      name: Lichtgrau, the decorative lower band of the 1996 scheme on the units that carry it
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+  source: wikipedia-de-verkehrsrot
+  missing:
+    series_ids: >-
+      the article describes regional coaches and multiple units as a whole; series_ids lists the series with a
+      forge model but no livery of their own that DB operators run, each seen in DB red on a licensed photo read for the models and liveries: commons-1428-duisburg-side (1428 and 1429, FLIRT 3), commons-648-774-braunschweig
+      (648 and 1648), commons-643-002-front and commons-643-546-koeln-west-front (643), commons-445-007-rostock-front
+      (445 and 446), commons-622-508-koeln-deutz-front (the LINT 54 family of the 620); the photos are of other
+      units than the trains drawn, so the red is the series' DB scheme, not a per-unit fact
+- livery_id: s-bahn-hamburg-490
+  name: S-Bahn Hamburg class 490
+  operator_id: s-bahn-hamburg
+  series_ids: [db-490]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-490
+      hex_source: wikipedia-de-verkehrsrot
+    - role: stripe
+      name: Weiß
+      source: wikipedia-de-490
+    - role: doors
+      name: Weiß
+      source: wikipedia-de-490
+  source: wikipedia-de-490
+  missing:
+    stripe hex: the article says white and names no RAL colour
+    doors hex: the article says white and names no RAL colour
+- livery_id: s-bahn-hamburg-474-sampled
+  name: S-Bahn Hamburg class 474, red with light grey doors and lower band, colours sampled from photos
+  operator_id: s-bahn-hamburg
+  series_ids: [db-474]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: commons-474-ohlsdorf-front
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Hellgrau
+      hex: '#b0babc'
+      source: commons-474-elbbruecken-side
+      hex_source: commons-474-ohlsdorf-front
+    - role: skirt
+      name: Hellgrau
+      hex: '#b0babc'
+      source: commons-474-ohlsdorf-front
+      hex_source: commons-474-ohlsdorf-front
+    - role: roof
+      name: Grau
+      hex: '#9a9a9a'
+      source: commons-474-emu-roof
+      hex_source: commons-474-emu-roof
+  source: commons-474-ohlsdorf-front
+  missing:
+    ral: no cited source names the RAL colours of the grey parts; the red matches the Verkehrsrot sample of the photo
+- livery_id: s-bahn-hannover-flirt-3-xl-sampled
+  name: S-Bahn Hannover (Transdev), white with blue and red doors, colours sampled from photos
+  operator_id: s-bahn-hannover
+  series_ids: [stadler-flirt-3-xl]
+  colours:
+    - role: body
+      name: Weiß
+      hex: '#e5eaf6'
+      source: commons-3427-nienburg-side
+      hex_source: commons-3427-nienburg-sun
+    - role: skirt
+      name: Blau
+      hex: '#345db3'
+      source: commons-3427-nienburg-side
+      hex_source: commons-3427-nienburg-side
+    - role: mask
+      name: Blau, the windscreen surround
+      hex: '#345db3'
+      source: commons-3427-transdev-new
+      hex_source: commons-3427-nienburg-side
+    - role: roof
+      name: Blau
+      hex: '#345db3'
+      source: commons-3427-transdev-new
+      hex_source: commons-3427-nienburg-side
+    - role: doors
+      name: Rot
+      hex: '#a33b30'
+      source: commons-3427-transdev-new
+      hex_source: commons-3427-transdev-new
+  source: commons-3427-transdev-new
+  missing:
+    ral: no cited source names the RAL colours of the S-Bahn Hannover livery
+    DB Regio NRW units: the FLIRT 3 XL of DB Regio NRW run in the VRR design, row vrr-flirt-3-xl-sampled
+- livery_id: db-regio-612-sampled
+  name: DB regional livery on the 612, verkehrsrot with a grey helmet sampled from a photo
+  operator_id: db-regio-ag
+  series_ids: [db-612]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-612
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: accent
+      name: Lichtgrau, the decorative lower band of the 1996 scheme
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: mask
+      name: Grau, the helmet round the windscreen
+      hex: '#8b8b91'
+      source: commons-612-105-dresden-front
+      hex_source: commons-612-105-dresden-front
+  source: wikipedia-de-verkehrsrot
+  missing:
+    mask ral: no cited source names the RAL colour of the 612 helmet
+- livery_id: vrr-s-bahn-422-sampled
+  name: S-Bahn Rhein-Ruhr VRR design on the 422, light grey with green, colours sampled from a photo
+  operator_id: db-regio-ag-nrw
+  series_ids: [db-422]
+  lines: [S1, S4]
+  valid_from: 2019-12-01
+  colours:
+    - role: body
+      name: Lichtgrau
+      hex: '#a1a5a5'
+      source: wikipedia-de-422
+      hex_source: commons-422-045-dortmund-vrr
+    - role: doors
+      name: VRR-Grün, the door areas
+      hex: '#2d9d1d'
+      source: wikipedia-de-422
+      hex_source: commons-422-045-dortmund-vrr
+    - role: roof
+      name: VRR-Grün, the roof edge
+      hex: '#2d9d1d'
+      source: wikipedia-de-422
+      hex_source: commons-422-045-dortmund-vrr
+    - role: accent
+      name: VRR-Grün, the side parts of the front
+      hex: '#2d9d1d'
+      source: wikipedia-de-422
+      hex_source: commons-422-045-dortmund-vrr
+    - role: mask
+      name: Grau, the panel round the windscreen
+      hex: '#7b848d'
+      source: commons-422-045-dortmund-vrr
+      hex_source: commons-422-045-dortmund-vrr
+  source: wikipedia-de-422
+  missing:
+    ral: the article names light grey and the VRR green without RAL numbers
+    lines: >-
+      wikipedia-de-s-bahn-rhein-ruhr (oldid 271471617): the 48 VRR units run only on S1 and S4 since December 2019
+      (the article names the month, not the day, so valid_from is the first of the month); every other line of the
+      422 is the red row db-s-bahn-rhein-ruhr-422-red-sampled
+- livery_id: sncf-tgv-carmillon-sampled
+  name: SNCF Carmillon livery on the TGV Euroduplex 3UA, colours sampled from a photo
+  operator_id: sncf
+  series_ids: [sncf-tgv-duplex]
+  also_operator_ids: [db-fernverkehr-ag]
+  field_sources:
+    also_operator_ids: wikipedia-de-ice-linien
+  colours:
+    - role: body
+      name: Gris clair
+      hex: '#e4e3d7'
+      source: wikipedia-fr-tgv-2n2
+      hex_source: commons-tgv-4710-side
+    - role: window_band
+      name: Gris foncé, the upper-deck window band of the trailers
+      hex: '#1f262e'
+      source: commons-tgv-4702-offenburg-front
+      hex_source: commons-tgv-4702-offenburg-front
+    - role: mask
+      name: Bleu, the helmet of the power car
+      hex: '#1d3e66'
+      source: commons-tgv-4702-offenburg-front
+      hex_source: commons-tgv-4702-offenburg-front
+    - role: stripe
+      name: Carmin
+      hex: '#992d38'
+      source: commons-tgv-4702-offenburg-front
+      hex_source: commons-tgv-4702-offenburg-front
+    - role: skirt
+      name: Gris foncé, the skirt
+      hex: '#1f262e'
+      source: commons-tgv-4702-offenburg-front
+      hex_source: commons-tgv-4702-offenburg-front
+  source: wikipedia-fr-tgv-2n2
+  missing:
+    ral: no cited source names the colours of the Carmillon livery as RAL or hex values
+- livery_id: bwegt-463-sampled
+  name: bwegt (Baden-Württemberg), white with yellow, colours sampled from a photo
+  operator_id: db-regio-ag-baden-wuerttemberg
+  series_ids: [db-463]
+  colours:
+    - role: body
+      name: Weiß
+      hex: '#e3ddd3'
+      source: commons-mireo-karlsruhe-front
+      hex_source: commons-mireo-karlsruhe-front
+    - role: stripe
+      name: Gelb
+      hex: '#c8ad38'
+      source: commons-mireo-karlsruhe-front
+      hex_source: commons-mireo-karlsruhe-front
+  source: commons-mireo-karlsruhe-front
+  missing:
+    ral: no source of WP-5.1 names the RAL colours of the bwegt livery
+- livery_id: db-intercity-2-sampled
+  name: Intercity 2, white with a red stripe, colours sampled from a photo
+  operator_id: db-fernverkehr-ag
+  series_ids: [db-intercity-2]
+  colours:
+    - role: body
+      name: Weiß
+      hex: '#e1ebea'
+      source: commons-falk2-146-560-ic2
+      hex_source: commons-falk2-146-560-ic2
+    - role: stripe
+      name: Rot
+      hex: '#ff353c'
+      source: commons-falk2-146-560-ic2
+      hex_source: commons-falk2-146-560-ic2
+    - role: mask
+      name: Grau, the driving trailer's mask and roof cap
+      hex: '#636f76'
+      source: commons-falk2-dbpbzfa-668-hannover
+      hex_source: commons-falk2-dbpbzfa-668-hannover
+  source: commons-falk2-146-560-ic2
+  missing:
+    ral: no source of WP-5.1 names the RAL colours of the IC2 livery
+- livery_id: s-bahn-berlin-483-484
+  name: S-Bahn Berlin classes 483 and 484
+  operator_id: s-bahn-berlin-gmbh
+  series_ids: [db-483-484]
+  colours:
+    - role: upper_body
+      name: Senfgelb (NCS S 2010-Y10R)
+      hex: '#d6b77a'
+      source: wikipedia-de-483-484
+      hex_source: commons-versian-484-002
+    - role: lower_body
+      name: Rot (NCS S 1580-R)
+      hex: '#b6212f'
+      source: wikipedia-de-483-484
+      hex_source: commons-versian-484-002
+    - role: doors
+      name: Tiefschwarz
+      ral: RAL 9005
+      hex: '#0e0e10'
+      source: wikipedia-de-483-484
+      hex_source: wikidata
+  source: wikipedia-de-483-484
+# The DB regional livery as class 442 (Talent 2) wears it: the dark grey helmet, roof fairing and
+# skirt of the 442 photos are the DB AG roof and solebar grey of the cited table (the helmet is the
+# roof fairing drawn down over the cab, read from commons-ingolfbln-442-cottbus and the Donauwörth
+# photo; the roof colour on the helmet is that inference, the RAL code itself is cited).
+- livery_id: db-regio-442
+  name: DB regional livery on class 442, verkehrsrot with basalt grey helmet and skirt
+  operator_id: db-regio-ag
+  series_ids: [db-442]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: accent
+      name: Lichtgrau, the thin band low on the nose
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: mask
+      name: Basaltgrau, the helmet over the windscreen
+      ral: RAL 7012
+      hex: '#4e5754'
+      source: wikipedia-de-ral-eisenbahnfarben
+      hex_source: wikidata
+    - role: roof
+      name: Basaltgrau, the roof fairing
+      ral: RAL 7012
+      hex: '#4e5754'
+      source: wikipedia-de-ral-eisenbahnfarben
+      hex_source: wikidata
+    - role: skirt
+      name: Basaltgrau, the skirt under the nose
+      ral: RAL 7012
+      hex: '#4e5754'
+      source: wikipedia-de-ral-eisenbahnfarben
+      hex_source: wikidata
+  source: wikipedia-de-ral-eisenbahnfarben
+- livery_id: db-regio-440-sampled
+  name: DB regional livery on the Coradia Continental 440, verkehrsrot with a grey helmet sampled from a photo
+  operator_id: db-regio-ag
+  series_ids: [alstom-coradia-continental]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: accent
+      name: Lichtgrau, the decorative lower band of the 1996 scheme
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: mask
+      name: Grau, the helmet round the windscreen
+      hex: '#5a6067'
+      source: commons-440-039-nuernberg-front
+      hex_source: commons-440-039-nuernberg-front
+  source: wikipedia-de-verkehrsrot
+  missing:
+    mask ral: no source of WP-5.1 names the RAL colour of the 440 helmet
+- livery_id: db-regio-1440-sampled
+  name: DB regional livery on the Coradia Continental 1440, verkehrsrot with a grey helmet sampled from the Buttenheim front photo, de-tinted of the sky reflection
+  operator_id: db-regio-ag
+  series_ids: [db-1440]
+  colours:
+    - role: body
+      name: Verkehrsrot
+      ral: RAL 3020
+      hex: '#c1121c'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikipedia-de-verkehrsrot
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: accent
+      name: Lichtgrau, the decorative lower band of the 1996 scheme
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: mask
+      name: Grau, the roof cap above the windscreen and the chin arch
+      hex: '#656c72'
+      source: commons-1440-buttenheim-front
+      hex_source: commons-1440-buttenheim-front
+  source: wikipedia-de-verkehrsrot
+  missing:
+    mask ral: no source of WP-5.1 names the RAL colour of the 1440 cap
+- livery_id: db-s-bahn-rhein-ruhr-422-red-sampled
+  name: DB S-Bahn Rhein-Ruhr colour scheme on the 422 not bought by the VRR, verkehrsrot with a light grey sill
+    band, colours sampled from a photo
+  operator_id: db-regio-ag-nrw
+  series_ids:
+    - db-422
+  colours:
+    - role: body
+      name: Verkehrsrot as photographed
+      hex: '#bb3034'
+      source: wikipedia-de-422
+      hex_source: commons-422-027-westerfilde-front
+    - role: doors
+      name: Lichtgrau
+      ral: RAL 7035
+      hex: '#cbd0cc'
+      source: wikipedia-de-verkehrsrot
+      hex_source: wikidata
+    - role: skirt
+      name: Lichtgrau, the sill band
+      hex: '#9a9692'
+      source: commons-422-027-westerfilde-front
+      hex_source: commons-422-027-westerfilde-front
+    - role: mask
+      name: Grau, the panel round the windscreen
+      hex: '#71767d'
+      source: commons-422-027-westerfilde-front
+      hex_source: commons-422-027-westerfilde-front
+  source: wikipedia-de-422
+  missing:
+    ral: 'the photographed red is shaded (#b62828 to #bb3034 on the front, a glare reads #f0565d); the DB regional
+      red is RAL 3020 in wikipedia-de-verkehrsrot'
+    lines: 'wikipedia-de-s-bahn-rhein-ruhr: the 48 VRR units run only on S1 and S4, so this red row is the rule
+      for every other line; the 36 units that stay red are not told apart by number in the live data'
+- livery_id: vrr-flirt-3-xl-sampled
+  name: VRR design on the FLIRT 3 XL of the S-Bahn Rhein-Ruhr, white with green, colours sampled from a photo
+  operator_id: db-regio-ag-nrw
+  series_ids:
+    - stadler-flirt-3-xl
+  colours:
+    - role: body
+      name: Weiß, the sunlit shoulder
+      hex: '#e4e3e8'
+      source: commons-3429-bonn-oberkassel
+      hex_source: commons-3429-bonn-oberkassel
+    - role: skirt
+      name: VRR-Grün, the front sides
+      hex: '#179d12'
+      source: commons-3429-bonn-oberkassel
+      hex_source: commons-3429-bonn-oberkassel
+    - role: roof
+      name: VRR-Grün, the roof edge
+      hex: '#179d12'
+      source: commons-3429-bonn-oberkassel
+      hex_source: commons-3429-bonn-oberkassel
+    - role: doors
+      name: VRR-Grün, the doors
+      hex: '#179d12'
+      source: commons-3429-bonn-oberkassel
+      hex_source: commons-3429-bonn-oberkassel
+    - role: mask
+      name: Dunkelgrau, the windscreen surround
+      hex: '#686b75'
+      source: commons-3429-bonn-oberkassel
+      hex_source: commons-3429-bonn-oberkassel
+  source: commons-3429-bonn-oberkassel
+  missing:
+    ral: no source names the RAL colours of the VRR design
+    doors hex: 'the doors read #3a8c26 in shade in the photo; the brighter front green is drawn'
+- livery_id: hlb-sampled
+  name: HLB (Hessische Landesbahn) colour scheme, light grey with a yellow front and red doors, colours sampled
+    from a photo
+  operator_id: hessische-landesbahn-gmbh
+  series_ids:
+    - db-648
+    - db-1440
+    - alstom-coradia-continental
+  colours:
+    - role: body
+      name: Hellgrau
+      hex: '#a8acac'
+      source: commons-hlb-bad-vilbel
+      hex_source: commons-hlb-bad-vilbel
+    - role: mask
+      name: Gelb, the front
+      hex: '#d09e30'
+      source: commons-hlb-bad-vilbel
+      hex_source: commons-hlb-bad-vilbel
+    - role: doors
+      name: Rot, the doors
+      hex: '#ce3f2e'
+      source: commons-hlb-bad-vilbel
+      hex_source: commons-hlb-bad-vilbel
+    - role: roof
+      name: Rot, the roof band
+      hex: '#ce3f2e'
+      source: commons-hlb-bad-vilbel
+      hex_source: commons-hlb-bad-vilbel
+  source: commons-hlb-bad-vilbel
+  missing:
+    ral: no source names the RAL colours of the HLB scheme
+    other series: sampled on a Coradia Continental; the LINT 41 of the HLB wears the same yellow, grey and red
+- livery_id: brb-sampled
+  name: BRB (Bayerische Regiobahn) colour scheme, blue with a white lower body and red doors, colours sampled from
+    a photo
+  operator_id: bayerische-regiobahn
+  series_ids:
+    - db-1648
+    - db-648
+    - alstom-coradia-lint
+    - stadler-flirt-3
+  colours:
+    - role: body
+      name: Weiß, the lower body
+      hex: '#beb6a9'
+      source: commons-brb-paartalbahn
+      hex_source: commons-brb-paartalbahn
+    - role: upper_body
+      name: Blau
+      hex: '#1e3b8b'
+      source: commons-brb-paartalbahn
+      hex_source: commons-brb-paartalbahn
+    - role: roof
+      name: Blau
+      hex: '#1e3b8b'
+      source: commons-brb-paartalbahn
+      hex_source: commons-brb-paartalbahn
+    - role: mask
+      name: Blau, the front
+      hex: '#1e3b8b'
+      source: commons-brb-paartalbahn
+      hex_source: commons-brb-paartalbahn
+    - role: doors
+      name: Rot, the doors
+      hex: '#8f3c36'
+      source: commons-brb-paartalbahn
+      hex_source: commons-brb-paartalbahn
+  source: commons-brb-paartalbahn
+  missing:
+    ral: no source names the RAL colours of the BRB scheme
+    other series: sampled on a LINT 41; the BRB FLIRT 3 and LINT 54 are not read from a photo of their own
+- livery_id: erfurter-bahn-sampled
+  name: Erfurter Bahn colour scheme, white with green and red doors, colours sampled from a photo
+  operator_id: erfurter-bahn
+  series_ids:
+    - db-650
+  colours:
+    - role: body
+      name: Weiß
+      hex: '#b4bdba'
+      source: commons-eb-vt321-leipzig
+      hex_source: commons-eb-vt321-leipzig
+    - role: lower_body
+      name: Grün, the sill and the swoosh
+      hex: '#246f26'
+      source: commons-eb-vt321-leipzig
+      hex_source: commons-eb-vt321-leipzig
+    - role: skirt
+      name: Grün
+      hex: '#246f26'
+      source: commons-eb-vt321-leipzig
+      hex_source: commons-eb-vt321-leipzig
+    - role: mask
+      name: Weiß, the front
+      hex: '#b4bdba'
+      source: commons-eb-vt321-leipzig
+      hex_source: commons-eb-vt321-leipzig
+    - role: doors
+      name: Rot, the doors
+      hex: '#7f2d28'
+      source: commons-eb-vt321-leipzig
+      hex_source: commons-eb-vt321-leipzig
+  source: commons-eb-vt321-leipzig
+  missing:
+    ral: no source names the RAL colours of the Erfurter Bahn scheme
+- livery_id: agilis-sampled
+  name: agilis colour scheme, dark grey with a yellow-green front and doors, colours sampled from a photo
+  operator_id: agilis
+  series_ids:
+    - db-650
+    - alstom-coradia-continental
+  colours:
+    - role: body
+      name: Dunkelgrau
+      hex: '#616e7e'
+      source: commons-agilis-naila
+      hex_source: commons-agilis-naila
+    - role: lower_body
+      name: Hellgrau, the lower side
+      hex: '#8c8b8e'
+      source: commons-agilis-naila
+      hex_source: commons-agilis-naila
+    - role: mask
+      name: Gelbgrün, the front
+      hex: '#cabd4f'
+      source: commons-agilis-naila
+      hex_source: commons-agilis-naila
+    - role: doors
+      name: Gelbgrün, the doors
+      hex: '#cabd4f'
+      source: commons-agilis-naila
+      hex_source: commons-agilis-naila
+  source: commons-agilis-naila
+  missing:
+    ral: no source names the RAL colours of the agilis scheme
+    other series: sampled on a Regio-Shuttle; the agilis Coradia Continental wears the same scheme
+- livery_id: neb-sampled
+  name: NEB (Niederbarnimer Eisenbahn) colour scheme, blue with white panels and yellow doors, colours sampled from
+    a photo
+  operator_id: neb-niederbarnimer-eisenbahn
+  series_ids:
+    - siemens-mireo
+    - db-563
+  colours:
+    - role: body
+      name: Blau
+      hex: '#04519e'
+      source: commons-neb-563-003-basdorf
+      hex_source: commons-neb-563-003-basdorf
+    - role: mask
+      name: Blau, the front
+      hex: '#04519e'
+      source: commons-neb-563-003-basdorf
+      hex_source: commons-neb-563-003-basdorf
+    - role: accent
+      name: Weiß, the nose panel
+      hex: '#ccd3db'
+      source: commons-neb-563-003-basdorf
+      hex_source: commons-neb-563-003-basdorf
+    - role: doors
+      name: Gelb, the doors
+      hex: '#d9a336'
+      source: commons-neb-563-003-basdorf
+      hex_source: commons-neb-563-003-basdorf
+  source: commons-neb-563-003-basdorf
+  missing:
+    ral: no source names the RAL colours of the NEB scheme
+- livery_id: vlexx-sampled
+  name: vlexx colour scheme, silver-grey with a blue front, colours sampled from a photo
+  operator_id: vlexx
+  series_ids:
+    - db-620
+    - db-622
+  colours:
+    - role: body
+      name: Silbergrau
+      hex: '#8e9ca7'
+      source: commons-vlexx-ruesselsheim
+      hex_source: commons-vlexx-ruesselsheim
+    - role: roof
+      name: Blau
+      hex: '#07427a'
+      source: commons-vlexx-ruesselsheim
+      hex_source: commons-vlexx-ruesselsheim
+    - role: mask
+      name: Blau, the front
+      hex: '#07427a'
+      source: commons-vlexx-ruesselsheim
+      hex_source: commons-vlexx-ruesselsheim
+  source: commons-vlexx-ruesselsheim
+  missing:
+    ral: no source names the RAL colours of the vlexx scheme
+- livery_id: national-express-rrx-sampled
+  name: RRX colour scheme of National Express on the Desiro HC, white with orange doors, colours sampled from a
+    photo
+  operator_id: national-express
+  series_ids:
+    - siemens-desiro-hc
+  colours:
+    - role: body
+      name: Weiß, in shade
+      hex: '#b3b5b0'
+      source: commons-rrx-462-oberhausen
+      hex_source: commons-rrx-462-oberhausen
+    - role: doors
+      name: Orange, the doors
+      hex: '#f69c60'
+      source: commons-rrx-462-oberhausen
+      hex_source: commons-rrx-462-oberhausen
+    - role: mask
+      name: Dunkelgrau, the front
+      hex: '#272a39'
+      source: commons-rrx-462-oberhausen
+      hex_source: commons-rrx-462-oberhausen
+  source: commons-rrx-462-oberhausen
+  missing:
+    ral: no source names the RAL colours of the RRX scheme
+    series: only the Desiro HC (class 462) is read; National Express runs other series in the measured hour that
+      are not painted
+- livery_id: nordwestbahn-sampled
+  name: NordWestBahn colour scheme, blue with a silver roof and yellow doors, colours sampled from a photo
+  operator_id: nordwestbahn
+  series_ids:
+    - db-643
+    - db-648
+  colours:
+    - role: body
+      name: Blau, the lower body
+      hex: '#1c306b'
+      source: commons-nwb-643-bielefeld
+      hex_source: commons-nwb-643-bielefeld
+    - role: upper_body
+      name: Silber, the upper body
+      hex: '#b1b8be'
+      source: commons-nwb-643-bielefeld
+      hex_source: commons-nwb-643-bielefeld
+    - role: roof
+      name: Silber
+      hex: '#b1b8be'
+      source: commons-nwb-643-bielefeld
+      hex_source: commons-nwb-643-bielefeld
+    - role: doors
+      name: Gelb, the doors
+      hex: '#a58030'
+      source: commons-nwb-643-bielefeld
+      hex_source: commons-nwb-643-bielefeld
+    - role: mask
+      name: Weiß, the front
+      hex: '#b1b8be'
+      source: commons-nwb-643-bielefeld
+      hex_source: commons-nwb-643-bielefeld
+  source: commons-nwb-643-bielefeld
+  missing:
+    ral: no source names the RAL colours of the NWB scheme
+    other series: sampled on a Talent; the NWB LINT 41 is not read from a photo of its own
+- livery_id: arverio-bayern-mireo-sampled
+  name: Arverio Bayern colour scheme on the Mireo, light blue with a white nose panel, colours sampled from a photo
+  operator_id: arverio-bayern-gmbh
+  series_ids:
+    - siemens-mireo
+  colours:
+    - role: body
+      name: Hellblau
+      hex: '#14b4f0'
+      source: commons-arverio-by-mireo
+      hex_source: commons-arverio-by-mireo
+    - role: mask
+      name: Hellblau, the front
+      hex: '#14ade9'
+      source: commons-arverio-by-mireo
+      hex_source: commons-arverio-by-mireo
+    - role: accent
+      name: Weiß, the nose panel
+      hex: '#d9e2e7'
+      source: commons-arverio-by-mireo
+      hex_source: commons-arverio-by-mireo
+  source: commons-arverio-by-mireo
+  missing:
+    ral: no source names the RAL colours of the Arverio scheme

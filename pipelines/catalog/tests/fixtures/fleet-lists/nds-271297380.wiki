@@ -1,0 +1,27 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271297380 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 39-47, 117-125, 171-177; references removed. -->
+== Regionalverkehr ==
+{| class="wikitable sortable"
+!Linie
+!Teilnetz der Linie
+!Linienverlauf
+![[Kursbuch]]-Nr.
+![[Eisenbahnverkehrsunternehmen|Verkehrs&shy;unternehmen]]
+!Fahrzeuge im Regelbetrieb
+|-
+|-
+|RE8
+|<small>Expresskreuz Niedersachsen/Bremen</small>
+|''<small>[[Bremerhaven-Lehe Personenbahnhof|Bremerhaven-Lehe]] – [[Bremerhaven Hauptbahnhof|Bremerhaven]]</small> – Osterholz-Scharmbeck – <small>Bremen</small> – Verden (Aller) – Nienburg (Weser) – Hannover''
+|125, (380)
+|[[DB Regio Nord]]
+|1–3× [[Bombardier Talent 2|Talent 2]] (442)
+<small>selten:</small>
+[[Bombardier Traxx#P160 AC1|Traxx P160 AC1]] (146.1/146.2)<br />+ 6 [[Doppelstockwagen]]
+|-
+|RE18
+|<small>Weser-Ems-Netz</small>
+|[[Bahnhof Wilhelmshaven|Wilhelmshaven]] – Oldenburg (Oldb) – Cloppenburg – Bramsche – Osnabrück
+|392
+|[[NordWestBahn]]
+|1–3 × [[Alstom Coradia LINT#LINT 41|LINT 41]] (648/1648)
+|}

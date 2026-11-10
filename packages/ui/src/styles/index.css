@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import "./fonts.generated.css";
+@import "./theme.generated.css";
+@source "..";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@layer base {
+  html {
+    background-color: var(--gl-surface);
+    color: var(--gl-ink);
+    font-family: var(--gl-font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  *,
+  *::before,
+  *::after {
+    border-color: var(--gl-hairline);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--gl-focus);
+    outline-offset: 2px;
+  }
+}
+
+@utility num {
+  font-family: var(--gl-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.03em;
+}
+
+@utility punct {
+  margin-inline: -0.12em -0.2em;
+}
+
+@utility focus-ring {
+  outline: none;
+  outline-color: var(--gl-focus);
+
+  &:focus-visible {
+    outline: 2px solid var(--gl-focus);
+    outline-offset: 2px;
+  }
+}
+
+@utility popup-fade {
+  transition: opacity var(--gl-duration-panel) var(--gl-ease-out);
+
+  &[data-starting-style],
+  &[data-ending-style] {
+    opacity: 0;
+  }
+}
+
+@utility card-surface {
+  background-color: var(--gl-surface);
+  border: 1px solid var(--gl-hairline);
+  border-radius: var(--gl-radius-card);
+  box-shadow: var(--gl-shadow);
+  color: var(--gl-ink);
+}
+
+@keyframes gl-rail-draw {
+  from {
+    transform: scaleY(0);
+  }
+}
+
+@utility rail-draw {
+  animation: gl-rail-draw var(--gl-duration-route) var(--gl-ease-out) both;
+}
+
+@utility card-enter {
+  transition:
+    opacity var(--gl-duration-panel) var(--gl-ease-out),
+    translate var(--gl-duration-panel) var(--gl-ease-out);
+
+  @starting-style {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+}

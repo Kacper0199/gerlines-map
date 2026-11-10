@@ -1,0 +1,223 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      update-e2e-baselines:
+        description: "Make the Linux baselines of the visual tests and upload them (no suite run)"
+        type: boolean
+        default: false
+      e2e-workers:
+        description: "Playwright workers for the suite run (1 or 2), to measure the run time"
+        type: string
+        default: "1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  TURBO_TELEMETRY_DISABLED: "1"
+
+jobs:
+  typescript:
+    name: TypeScript lint, typecheck, test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Restore turbo cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: .turbo/cache
+          key: turbo-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: |
+            turbo-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - name: Lint, typecheck, test (includes the secret rule fixtures)
+        run: pnpm turbo run lint typecheck test --concurrency=2
+
+      - name: Recorder and realtime bundles build (the recorder image runs them)
+        run: pnpm --filter @gerlines/ingest build
+
+      - name: Secret scan of the tree (secretlint)
+        if: ${{ !cancelled() }}
+        run: pnpm secrets:scan
+
+      - name: Prune turbo cache entries older than 7 days before saving
+        if: ${{ !cancelled() }}
+        run: |
+          if [ -d .turbo/cache ]; then
+            find .turbo/cache -type f -mtime +7 -delete
+          fi
+
+  python-and-policy:
+    name: Python, workflows, licences, secret history
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      ACTIONLINT_VERSION: "1.7.12"
+      ACTIONLINT_SHA256: 8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8
+      GITLEAKS_VERSION: "8.30.1"
+      GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          version: "0.13.5"
+          enable-cache: true
+          cache-python: true
+
+      - name: Install Python dependencies
+        run: uv sync --locked
+
+      - name: Ruff lint
+        run: uv run --frozen ruff check --output-format=github .
+
+      - name: Ruff format
+        run: uv run --frozen ruff format --check .
+
+      - name: Pytest (database tests run in the Database workflow)
+        run: uv run --frozen pytest -m "not db" --ignore=pipelines/rail_graph
+
+      - name: Cache the pinned tool archives
+        if: ${{ !cancelled() }}
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ runner.temp }}/tool-archives
+          key: tool-archives-actionlint-${{ env.ACTIONLINT_VERSION }}-gitleaks-${{ env.GITLEAKS_VERSION }}
+
+      - name: Install pinned actionlint and gitleaks
+        if: ${{ !cancelled() }}
+        run: |
+          bin_dir="$RUNNER_TEMP/bin"
+          archives="$RUNNER_TEMP/tool-archives"
+          mkdir -p "$bin_dir" "$archives"
+          fetch() {
+            if [ ! -f "$archives/$1" ]; then
+              curl -sSfL --retry 5 --retry-all-errors --retry-delay 5 -o "$archives/$1" "$2"
+            fi
+          }
+          fetch actionlint.tar.gz \
+            "https://github.com/rhysd/actionlint/releases/download/v${ACTIONLINT_VERSION}/actionlint_${ACTIONLINT_VERSION}_linux_amd64.tar.gz"
+          echo "${ACTIONLINT_SHA256}  $archives/actionlint.tar.gz" | sha256sum --check --strict
+          tar -xzf "$archives/actionlint.tar.gz" -C "$bin_dir" actionlint
+          fetch gitleaks.tar.gz \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  $archives/gitleaks.tar.gz" | sha256sum --check --strict
+          tar -xzf "$archives/gitleaks.tar.gz" -C "$bin_dir" gitleaks
+          echo "$bin_dir" >> "$GITHUB_PATH"
+
+      - name: Workflow lint (actionlint)
+        if: ${{ !cancelled() }}
+        run: actionlint -color
+
+      - name: Licence lint (REUSE)
+        if: ${{ !cancelled() }}
+        run: uv run --frozen reuse lint
+
+      - name: Data licence guard tests
+        if: ${{ !cancelled() }}
+        run: node --test scripts/check-data-licences.test.mjs
+
+      - name: Screenshot capture script tests
+        if: ${{ !cancelled() }}
+        run: node --test scripts/screenshots/capture.test.mjs
+
+      - name: Data licence guard (no data file only under the AGPL catch-all)
+        if: ${{ !cancelled() }}
+        run: |
+          uv run --frozen reuse spdx --output "$RUNNER_TEMP/reuse.spdx"
+          node scripts/check-data-licences.mjs "$RUNNER_TEMP/reuse.spdx"
+
+      - name: Secret rule fixtures (gitleaks)
+        if: ${{ !cancelled() }}
+        run: node scripts/check-gitleaks-rules.mjs gitleaks
+
+      - name: Secret scan of the full history (gitleaks)
+        if: ${{ !cancelled() }}
+        run: gitleaks git --config .gitleaks.toml --redact --no-banner --exit-code 1 --log-opts="--all" .
+
+  e2e:
+    name: End-to-end and visual regression (Playwright, shard ${{ matrix.shard }} of 4)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    container:
+      image: mcr.microsoft.com/playwright:v1.65.0-noble@sha256:6e3fb709361521eb27161606e6da6d2674e5e89fa16516cb37d6fdd91372273d
+      options: --ipc=host --init
+    env:
+      E2E_WORKERS: ${{ inputs.e2e-workers || '1' }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Compile the messages
+        run: pnpm --filter @gerlines/i18n run compile
+
+      - name: Build and run the suite
+        if: ${{ !inputs.update-e2e-baselines }}
+        timeout-minutes: 22
+        run: pnpm --filter @gerlines/web e2e --shard=${{ matrix.shard }}/4
+
+      - name: Make the Linux baselines of the visual tests
+        if: ${{ inputs.update-e2e-baselines }}
+        timeout-minutes: 22
+        continue-on-error: true # Playwright fails a test whose baseline it has just written
+        run: pnpm --filter @gerlines/web e2e:update --shard=${{ matrix.shard }}/4
+
+      - name: Keep the report and the failed screenshots
+        if: ${{ !cancelled() && !inputs.update-e2e-baselines }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: e2e-report-${{ matrix.shard }}
+          path: |
+            apps/web/e2e/report
+            apps/web/e2e/test-results
+          retention-days: 7
+
+      - name: Keep the new Linux baselines
+        if: ${{ !cancelled() && inputs.update-e2e-baselines }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: e2e-baselines-linux-${{ matrix.shard }}
+          path: apps/web/e2e/tests/__screenshots__/**/*-linux.webp
+          retention-days: 7

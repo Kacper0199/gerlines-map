@@ -1,0 +1,309 @@
+{
+  "query": {
+    "from": "de:11000:900003201",
+    "to": "de:09162:100",
+    "time": "2026-11-10T06:00:00.000Z",
+    "arriveBy": false,
+    "categories": ["hsr", "ld", "night", "rfast", "reg", "sbahn", "urban", "bus", "other"],
+    "exclude": [],
+    "operators": [],
+    "avoidOperators": [],
+    "maxChanges": null,
+    "sort": "earliestArrival",
+    "results": 5,
+    "geometry": true
+  },
+  "journeys": [
+    {
+      "id": "b7d99d787087d43a",
+      "departure": "2026-11-10T06:37:00Z",
+      "arrival": "2026-11-10T11:20:00Z",
+      "durationS": 16980,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "29",
+          "tripNumber": "001503",
+          "headsign": "München Hbf",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_07:26_de-DELFI_3448681421",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:11000:900003200:2:53",
+            "name": "S+U Berlin Hauptbahnhof",
+            "lat": 52.525096000000005,
+            "lon": 13.369321,
+            "time": "2026-11-10T06:37:00Z",
+            "scheduledTime": "2026-11-10T06:37:00Z",
+            "track": "4",
+            "scheduledTrack": "4",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:09162:100:22:22",
+            "name": "München Hbf",
+            "lat": 48.140704,
+            "lon": 11.557617,
+            "time": "2026-11-10T11:20:00Z",
+            "scheduledTime": "2026-11-10T11:20:00Z",
+            "track": "22",
+            "scheduledTrack": "22",
+            "cancelled": false
+          },
+          "departure": "2026-11-10T06:37:00Z",
+          "arrival": "2026-11-10T11:20:00Z",
+          "scheduledDeparture": "2026-11-10T06:37:00Z",
+          "scheduledArrival": "2026-11-10T11:20:00Z",
+          "durationS": 16980,
+          "geometry": {
+            "polyline": "{xq_IkerpA~RyLrMwFpOoDtTkI`GgAlF_@tJ@jGl@vFbBnNlG`NrDbGbAdFDhL{@|DE~m@`BrJ|A~JhDx[dPjM`IjRhJlLvEhZzHdn@~N|v@hSxCnAjEdCbRjNtI~IfK~MrIlMvj@f_Axp@biAfOpX`H`KlLtMzH`HrRbNhPzIrUzIhdDbdApg@nMh~G|tBbLtC~o@hMjxC|g@tQrBrNRxfEiCbMb@vKzB~F~BnEbCpEdDdGzFpbCdsCnI`JrI`IlLvIjcAxk@~KlFvMtEvQzDdRbB`PJt^kBjPChvHf\\pJ`ArJlBdLnD|IbExJfGdJpHhHhHtIrKvJpO`rAzaC`HjL|`B|vBt`@jf@bKnN|FhJ|KhTpxDdlIbFtJ`FtI`MnQzNjP~LvK|MdJzO`IpN|ErnC~s@dFfBfFhCtEzCnEpDhH|GdGxGzFlHfFtHf_DzhFxFxKbFjLbFfNnEhObDzMbDnPpBpMtBfQnBrV`k@dsJzA`TtwA|wN~CdWjDlSvFfWnrB|hIjCpJrEzNxJjWhGhMxGvLzH|L|I~Lli@`o@~lBzyBvJbM~L~RdIbPdKvVlIhWhGxVbFrXfD`WvC~Z|@jNt@lPbIbfC`Cfl@z@v`@^lJx@fK~AzL~BbKrClIhErI~FbIbf@xg@hEjFnOpT|FjGhEzC`GhCbb@lKzGbC~CfBnDtC`ChC|ChEzCtFpBzEb_@fbAzFhMvHpN~jD`}Frb@xr@zd@rw@p{AlgCxkR~p[rHzOhC~GdC`IdBvGvB`KpC~QbB~Qt@bPP~KT~c@^hOpA|QnBbOzC|N`E|MlGpNnH~LbIrJtDdDrEzCxJlE~`@zL~H|C~DzBjE`DnDbD|DjEtC|DbDpF|FjM`EbM|Rfr@nC`IpCpG|G|L~G|JtIbKrG`G~GrEnFfCvJjCt{@rNduAlPtG~AtDrA|E|BtEpChJtHlq@ro@rK`L|cCjuCxIrLfElHbDxG~FxOfEbN|jHvyVvFtTx]z}A~CrQbDrVddBj|Ol@~H^vIHvHCrIm@jOwC~Za@rGQhI@bGb@`MfAbLnCnNrDjL`s@t}AxCtF`MjPlDvDxCdBzJlDbEVxN_AlFeAdGiBxQqO|GqIhMgRfDoDxBsAhCy@hDe@dGEns@xCd`@z@jEb@xExAtD~BxBtBnIlKzDrDfEzBbE~@dUn@pjAfBh[IlN[hFL|C^|D|@jDlAtDjB~DrChE`EtDpE`CrDdDhGxCnHpCjJxBlKvAdKpAzQv@|YpA`YxC`b@zCfZ~X`bCrDxVhDtQfBlIlHbYnCfJtEvMvEzLbI`Qh`BxxCdNrXpPba@fKzZhExNjElPbVrcAbMzd@xF|Q`G|PrThl@`jBdxE|IbWhIjWfMje@bFjTrC~MlIld@ls@l_FjGr]tGvZxKtb@zJ`\\hmB|nFbRpo@h\\ttAtEbO~BrIbF|NhOd_@|`@p{@jMpWdQx[zU~_@li@xx@`N|QhKjM~QbSbQtP`q@ve@xkAzs@bZ|Rp\\fZnZ|^hXhc@tUjg@pRzi@bFhPff@|eBp]rjAlGbQtJhUvJjStVnb@dSdY~SfVv`Ch{Bfh@pj@zKlOdPdW`Ql\\jLzWxJbX~K|]~HlZrEfStDhRt{@l{EbKbf@fLre@bKj_@nI`Y~Kh]~^|fAfO|e@tLvb@zNhl@jtDb}OzLpk@l}@xxEzHj`@vFnV`IzZhIfYxG|SfKrYrGlP`LxWfO`[vn@~lAlOvXlUp^pQnVdNrPfKdL~P~PtOfNlqBb_Bdi@j_@hKpIrHdH~InKrE`HfEbIbC|F~C`JpCfKrAfGdS`hAdXt}AlC~L`Ib[bCrMvAjL`CjXpEpt@vGfgArAtf@b@lHxA`KxHb_@hGhVpFbXrAxEjBlEnCdE~Xp\\bDhEbAhB|BpFjAbEnAdGrCtQnCpKfH~PlDvGfC~CvCjC~U|OvGzGn]be@~CtE~DdHfFnLrxAlbEdGhOrGfMpDxFrEfGpKrKbGpEbGlD~JbExJ~BpI~@fKN~Kq@|I_B`KgDpK{FdIgGnGoGhFsGtEcHpFeKdDuHfEeLda@}mAlKwYpHePnFuJ~GmKlJsL`M{LdZiWzzAupAvL}InO}IpHiDjI}CjPoEnJcBnIaAlOu@dRHlRzAvKfBlInBtJzCd|Axj@jMhEvKnCbLhBbLbA`KZ|KEpIa@rRaCvPaE|[yK~NcEhOqCnQaBvL[zNLjeA~E~KT~KClOe@xQ_BftAgTrKuAvUcB|HSfX?rbCbBjV`@pJt@bOpBvPvDpLxDzFvB|sD~_BfUzInSbGxIjB|YpE~OrAv_BtHz]LjVaAdNwAjdC{_@joAkS|fAcPpy@aGxy@n@`nDhTjDJ`r@k@nUcBxwI_u@rh@wHnl@qPnSuH~|Aw|@hTmKbt@wSdvEgpAjTaEzK_ArL]rTp@lEd@hJbBpHbBbLtDtNtGrN~IhdBnpA`PbKnJfFjXbKhkAh\\jPfDrNtB`LjArMl@bYHxPm@vY_DpwAqVjWeFxN}Dfb@oPpKsDnEiApf@wHbM_AnMWt|@nA`Jv@xOlCfJfChGvBnKrElc@vWrS~JtKzDpKzCnQhD|Hz@fMr@hk@X~Tv@`MtAhQlDzX`Hj_@`KdLjE~OlJpNrKzLrLl`@nf@zPvQphAv~@hOlOxM~OdNdSzWnd@|LtQhPtR`LlKfVhQfRfJlMvEzK~C~JdBfIbAxR`ApI@pLc@~NsAxHuAlQqEfJ_D~JoEdIoEhG_Efs@sh@bG}D`NkHlQwGvJkC|IeBrKyAxKs@zGMjPRfM~@nIhAhF`Ax`@lKrlB`i@`]fInV|GlH`Bzl@rPrPbEp[nKrx@hUfIvD|EzCxL`K|iAxfAr]xZpTlSh[x[xLvKjCrBrI`FhVzLpDlCdD|CxBhChEnGhXrg@nFjIzCvDlHzG|FpD~ExBzJxCb`@dI`^|GxHl@vzDhEraA`B~UJnGMhJ}@nEy@jO_FrGaDfG_EdKaJdSkUjWi\\|VcZrQ_XrCmDlTuRlUeWlgEkaFrCgCbu@s{@hIgKpk@eq@xTwX`nEkhFxVqWl{FihFpFmEjHqEbHcDbLsDjrAg]~x@eSlc@cMjt@iRxNgCrD]lIU~HPdKlAfLxCrKpEpJzFnlEhrC~HpGnlDraD~P|Or]~\\tZhXxKnK|FnE`F`CbFrA|YdD`h@dIrKl@~FGdJm@~b@gIpNeDfDYhED~Gr@jcAfPxk@nIxStDxJp@~bAR~{@|AvfAgGhIArFp@pD~@hDrAbE|BtCxB~GnHpL~Q~DjFfGlFdHnDdEnAjF~@f`BzVfDv@lErB|E~DnB`CzBjDze@~|@vEhHxBxBzCxBpF|BjCf@xCR`GW~IcB|MeDfb@gL|D{AxCgBnDcDrBkC|DuHnCsJzAoKZ_Gz@k\\`AgLdFa]zLq~@jMw}@lBwKvAkFrAyDpD{HpCoEbSgXbBwC~BuFvs@odC`IcZjPwk@`Ls[hBeHz@sHLoGI{CsB}\\_AiGuE_P{@{EkC}`@qCiTsAkH}@cH_CaYaBuZyB{VI}GZqHr@oFbDaOfBiGdBkErBwDjBkCnDuD`DiC~YkRxEqDhEqFpEaJrS{j@vJyVfD{HxI{QtDgJp\\qeApHkYtZk{AfCuKnBuGpEiLtFmKlGyI~H}H`EyCtHcEbeA_d@z^oQl`@oTfl@}^xIyExHiDjJeDxHqBrHwAnLwAnLi@~t@VzLQhKc@zhCiStfB{LvdEcHdVeAhQuB~zEqs@zVqFjlBke@~KiDfHyClI{E`JoGnw@op@xeCupB|QcMdKmFtIoDtL{DxJ}BdHmA|yAuRxlBcXhPqCbNaDjdAs\\|z@{Vvw@eX|LsDpHeB|LqBxp@eIxRgEdMcEpIuDvKcGtHyEfQsNb_@s^rMmLpSgNrNeHfKyDxi@eNdj@wF~x@gPdv@q_@jk@sk@fd@ez@tjAofChqAk~C`m@cyAnb@w_AbOcXhXea@|dCujDhkA}~A~OsQlQeQrPkK|\\{Mfc@{G|SuBrV{@`SJ|Jf@xJbArMzBxd@xJzKdBtJz@bN`@jPM`v@_HtQc@|FDhK^`Hn@j`BnRhVlHjHpCnM`GlP~JpF~DvLhK~KhLvKvMvNpSfXhb@~QrWlO`PxQpNlEvC`I|E`KdF|L|E`HxBhOxDb~@vSlHtA~Hf@vHMfIkAbFyAdTqIfHoBxAOlJJ~PtArDHfFQbGqApDyAhDqBfi@kh@`DiBbEoAre@}CbFBlHpAxVzKnDjArEf@|FUrfBmf@vaAkYhiDy_AhReDjaBcVtr@_C`JkApGqBzGqDjGeFdFaG~E}HdEeJdCsH~B}JnAmHhBkNnqAa{KdCgPrAyFxAyE`F{Kdn@}dAd^qy@lDeGxDyEdEoDzDaCvD_BrEgAnHc@b^d@hiBxCpIZvCZpIrBtGxCjp@``@nEbDfF~EhaGzoGxHtGhIlElDjAzGnAp_@nC~HpAlEvAfDzA~M|HpEtBxDrAlFhAtPtBx`A|JzNJ~O_AbHgApp@cN`Hy@hDIxLv@zfAnNnLf@`eA|@lHn@lGvA~EjB|IjF|KzH`GjFxFfHrQjZtFzHrHlHbYzQlGvF~EdGhg@xs@|GxGzIzFdG`ChFjAnDb@jFTh_@NzKh@zHtAxL|DvJjFzHpGbFzFlUv[xIjJbGlEnDlB~HtChK`BtHRpKYl_@wBnJDxKnAne@dIhL|BdFzAdGjChHtExaAt{@~FjEfK`Fnd@vN|JzAlGLvbDeEhOw@hIyAnGuBjgBuv@pEwAjHuAxFg@`HKlHZrTvCnJn@vHEbVuB`JUtH^hJdBxFlBlDdB~HlFdH~GzOzRrGdHfFdEfItEnEdBpFzA~YtGzJz@rHI~IcA`[oG~LsB`r@gJpJcBnJyBhgEmmA|pCqy@n`@oJpuA}`@~WkIze@oMlSoEdKaEzDyBfCoBpR{TdG_J|BkFhA}Dn@}Dh@sF|JyqBLwK[yS@oKzCqbA~@ut@fHwvB",
+            "precision": 5,
+            "points": 1162
+          }
+        }
+      ],
+      "tags": ["fastest", "fewestChanges", "earliestArrival"]
+    },
+    {
+      "id": "9bc87196a52cf13e",
+      "departure": "2026-11-10T06:55:00Z",
+      "arrival": "2026-11-10T11:42:00Z",
+      "durationS": 17220,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "18",
+          "tripNumber": "000703",
+          "headsign": "München Hbf",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_05:36_de-DELFI_3448675248",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:11000:900003200:2:52",
+            "name": "S+U Berlin Hauptbahnhof",
+            "lat": 52.52506,
+            "lon": 13.369167000000001,
+            "time": "2026-11-10T06:55:00Z",
+            "scheduledTime": "2026-11-10T06:55:00Z",
+            "track": "3",
+            "scheduledTrack": "3",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:09162:100:16:16",
+            "name": "München Hbf",
+            "lat": 48.140237,
+            "lon": 11.557545000000001,
+            "time": "2026-11-10T11:42:00Z",
+            "scheduledTime": "2026-11-10T11:42:00Z",
+            "track": "16",
+            "scheduledTrack": "16",
+            "cancelled": false
+          },
+          "departure": "2026-11-10T06:55:00Z",
+          "arrival": "2026-11-10T11:42:00Z",
+          "scheduledDeparture": "2026-11-10T06:55:00Z",
+          "scheduledArrival": "2026-11-10T11:42:00Z",
+          "durationS": 17220,
+          "geometry": {
+            "polyline": "oxq_IucrpAvMgInFaEdJeErCq@nMgBpTiIpEaAhFe@fIExGj@pGnBlNtGpNrCzFt@dFNdMcA~CGdj@xAxG|@dGrAnIlCtNzGhOfJp]pP~L|EvYtHfd@nKz`AxVxCnAjEdCbRjNtI~IfK~MrIlMvj@f_Axp@biAfOpX`H`KlLtMzH`HrRbNhPzIrUzIhdDbdApg@nMh~G|tBbLtC~o@hMjxC|g@tQrBrNRxfEiCbMb@vKzB~F~BnEbCpEdDdGzFpbCdsCnI`JrI`IlLvIjcAxk@~KlFvMtEvQzDdRbB`PJt^kBjPChvHf\\pJ`ArJlBdLnD|IbExJfGdJpHhHhHtIrKvJpO`rAzaC`HjL|`B|vBt`@jf@bKnN|FhJ|KhTpxDdlIbFtJ`FtI`MnQzNjP~LvK|MdJzO`IpN|ErnC~s@dFfBfFhCtEzCnEpDhH|GdGxGzFlHfFtHf_DzhFxFxKbFjLbFfNnEhObDzMbDnPpBpMtBfQnBrV`k@dsJzA`TtwA|wN~CdWjDlSvFfWnrB|hIjCpJrEzNxJjWhGhMxGvLzH|L|I~Lli@`o@~lBzyBvJbM~L~RdIbPdKvVlIhWhGxVbFrXfD`WvC~Z|@jNt@lPbIbfC`Cfl@z@v`@^lJx@fK~AzL~BbKrClIhErI~FbIbf@xg@hEjFnOpT|FjGhEzC`GhCbb@lKzGbC~CfBnDtC`ChC|ChEzCtFpBzEb_@fbAzFhMvHpN~jD`}Frb@xr@zd@rw@p{AlgCxkR~p[rHzOhC~GdC`IdBvGvB`KpC~QbB~Qt@bPP~KT~c@^hOpA|QnBbOzC|N`E|MlGpNnH~LbIrJtDdDrEzCxJlE~`@zL~H|C~DzBjE`DnDbD|DjEtC|DbDpF|FjM`EbM|Rfr@nC`IpCpG|G|L~G|JtIbKrG`G~GrEnFfCvJjCt{@rNduAlPtG~AtDrA|E|BtEpChJtHlq@ro@rK`L|cCjuCxIrLfElHbDxG~FxOfEbN|jHvyVvFtTx]z}A~CrQbDrVddBj|Ol@~H^vIHvHCrIm@jOwC~Za@rGQhI@bGb@`MfAbLnCnNrDjL`s@t}AxCtF`MjPlDvDxCdBzJlDbEVxN_AlFeAdGiBxQqO|GqIhMgRfDoDxBsAhCy@hDe@dGEns@xCd`@z@jEb@xExAtD~BxBtBnIlKzDrDfEzBbE~@dUn@pjAfBh[IlN[hFL|C^|D|@jDlAtDjB~DrChE`EtDpE`CrDdDhGxCnHpCjJxBlKvAdKpAzQv@|YpA`YxC`b@zCfZ~X`bCrDxVhDtQfBlIlHbYnCfJtEvMvEzLbI`Qh`BxxCdNrXpPba@fKzZhExNjElPbVrcAbMzd@xF|Q`G|PrThl@`jBdxE|IbWhIjWfMje@bFjTrC~MlIld@ls@l_FjGr]tGvZxKtb@zJ`\\hmB|nFbRpo@h\\ttAtEbO~BrIbF|NhOd_@|`@p{@jMpWdQx[zU~_@li@xx@`N|QhKjM~QbSbQtP`q@ve@xkAzs@bZ|Rp\\fZnZ|^hXhc@tUjg@pRzi@bFhPff@|eBp]rjAlGbQtJhUvJjStVnb@dSdY~SfVv`Ch{Bfh@pj@zKlOdPdW`Ql\\jLzWxJbX~K|]~HlZrEfStDhRt{@l{EbKbf@fLre@bKj_@nI`Y~Kh]~^|fAfO|e@tLvb@zNhl@jtDb}OzLpk@l}@xxEzHj`@vFnV`IzZhIfYxG|SfKrYrGlP`LxWfO`[vn@~lAlOvXlUp^pQnVdNrPfKdL~P~PtOfNlqBb_Bdi@j_@hKpIrHdH~InKrE`HfEbIbC|F~C`JpCfKrAfGdS`hAdXt}AlC~L`Ib[bCrMvAjL`CjXpEpt@vGfgArAtf@b@lHxA`KxHb_@hGhVpFbXrAxEjBlEnCdE~Xp\\bDhEbAhB|BpFjAbEnAdGrCtQnCpKfH~PlDvGfC~CvCjC~U|OvGzGn]be@~CtE~DdHfFnLrxAlbEdGhOrGfMpDxFrEfGpKrKbGpEbGlD~JbExJ~BpI~@fKN~Kq@|I_B`KgDpK{FdIgGnGoGhFsGtEcHpFeKdDuHfEeLda@}mAlKwYpHePnFuJ~GmKlJsL`M{LdZiWzzAupAvL}InO}IpHiDjI}CjPoEnJcBnIaAlOu@dRHlRzAvKfBlInBtJzCd|Axj@jMhEvKnCbLhBbLbA`KZ|KEpIa@rRaCvPaE|[yK~NcEhOqCnQaBvL[zNLjeA~E~KT~KClOe@xQ_BftAgTrKuAvUcB|HSfX?rbCbBjV`@pJt@bOpBvPvDpLxDzFvB|sD~_BfUzInSbGxIjB|YpE~OrAv_BtHz]LjVaAdNwAjdC{_@joAkS|fAcPpy@aGxy@n@`nDhTjDJ`r@k@nUcBxwI_u@rh@wHnl@qPnSuH~|Aw|@hTmKbt@wSdvEgpAjTaEzK_ArL]rTp@lEd@hJbBpHbBbLtDtNtGrN~IhdBnpA`PbKnJfFjXbKhkAh\\jPfDrNtB`LjArMl@bYHxPm@vY_DpwAqVjWeFxN}Dfb@oPpKsDnEiApf@wHbM_AnMWt|@nA`Jv@xOlCfJfChGvBnKrElc@vWrS~JtKzDpKzCnQhD|Hz@fMr@hk@X~Tv@`MtAhQlDzX`Hj_@`KdLjE~OlJpNrKzLrLl`@nf@zPvQphAv~@hOlOxM~OdNdSzWnd@|LtQhPtR`LlKfVhQfRfJlMvEzK~C~JdBfIbAxR`ApI@pLc@~NsAxHuAlQqEfJ_D~JoEdIoEhG_Efs@sh@bG}D`NkHlQwGvJkC|IeBrKyAxKs@zGMjPRfM~@nIhAhF`Ax`@lKrlB`i@`]fInV|GlH`Bzl@rPrPbEp[nKrx@hUfIvD|EzCxL`K|iAxfAr]xZpTlSh[x[xLvKjCrBrI`FhVzLpDlCdD|CxBhChEnGhXrg@nFjIzCvDlHzG|FpD~ExBzJxCb`@dI`^|GxHl@vzDhEraA`B~UJnGMhJ}@nEy@jO_FrGaDfG_EdKaJdSkUjWi\\|VcZrQ_XrCmDlTuRlUeWlgEkaFrCgCbu@s{@hIgKpk@eq@xTwX`nEkhFxVqWl{FihFpFmEjHqEbHcDbLsDjrAg]~x@eSjj@uObr@eQvOwBlIU`GJvGh@jGfAfIzB|GlChKzFdlE|qCfL`J~jBbdBnrAlmAr]~\\tZhXxKnK|FnE`F`CbFrA|YdD`h@dIrKl@~FGdJm@~b@gIpNeDfDYhED~Gr@jcAfPxk@nIxStDxJp@~bAR~{@|AvfAgGhIArFp@pD~@hDrAbE|BtCxB~GnHpL~Q~DjFfGlFdHnDdEnAjF~@f`BzVfDv@lErB|E~DnB`CzBjDrg@d_AtChE|C|CnFdD~GfB|DPrDSfFaA~o@qPhKkDrE}CnEiFrDeHzBgHjAeGp@cGXmGp@wXXeFl@eGnb@q{CxBwLvCsJvDkInDsF|PsUnCaF`CwFlCsI~_@usAbNkd@~HcZjPwk@hK{Yx@kCv@}Dh@qFDsEmBid@aA{HuE}Q{@{F{AoXoA_L~@|HdAbQfBrPtFfTn@fFvAxW~FbZ`CnHpDfGdBhB~BfBvFxBjSrFlo@tOdT|FrrDd}@jEnA|QtH~E`BvDx@~VxCzl@vNpDl@~CN`DKjEq@zCcAjGsDzPeM|C{A`E_AnHEzU`CxFKjCi@~CoA|LoGrDcAjCYnDCrCVbLfC|C^jC@~Dc@hCw@dDcBnKkJpDgCtFmBfF]dDNfCf@nCdA`DpBhu@bp@nCnBtDhBzDfAxEj@tELjFIvDc@xEqAhEiBdG{D|CmCrFaGfEyFno@q_AjDeGdC_GxB{HpAwHdC_Sz@aElAcEvBaF`D_FpCsClD}BtEaBjXcGz[gIvkAeXlLoBpMwAjNu@~JM|UP`Sg@pScBhQsCtHaBhLeDxS}HpIcF|PsNlEmCnEcAfF?f[`FlEbAjEnBrFxEhCnDzAnCtCtHxAvGrDnUrBrH~AvDpA`CpBlC`CbCnEnCnDlArc@dGjGhB~E~BdDxB~HlH~EzGvExIvBlFbKbZvCfGrCnE~CxDbD~CpN|J`MlKhLzMrDdFvFhJjCrFfCtGnDpLdBzHbHl`@|BlJrAxDtBxEfDtFxEjF|F~DtD~A`SdGhE`CdIlGxMdMbElCbHbCbEf@dFJvbBgElDFfD`@vCv@bDzAr`@nZ~EnCbFjBdHzAbGb@hWg@dLTxIv@nMdChM`Ez_C||@dE~BvCjCdE|FpC~FlArDdAvEr@zEfBfQ`AxFlAxEbV|n@zHvQlC~D`C|BpDpBnEv@hDApXkCdFVdCh@dCbAhFlDbCpCtCtEnKjSpDhFlClCpCnBtFvB`Ht@~CKrDg@tDiApW}KrE}ApF{@vGFpEx@lF|Bxk@t^xFhB`CRpC?pD[ts@uKzp@mKhDwAhDeCbT{V|BqBdC{ApE{AfFc@lDPzD|@rEpBnK`Gx|C|iBdKfH`GdGjD|Env@`pAxG~ItL~KpmApfAvY|VhGpEhHfDdXzGp`@pIzPzBzF\\jECbWkBt]iBrDRjDt@dBl@lEfCtDvC|CbD~EjH|AlDhBrFhBhJt@bINdEC~Le@|G_C`Qa@|EWbJLxIh@~HdAzGrApFhHnUfCpFxBbDbW`WzEfGhBjDz^tx@dEhHhEzEpNtKlCpCbB~BtB`ErA`DlSxk@nErJhCvD`CnCj\\d]jB`ClCjEfJpRpCtDzDlDzDvBzBt@pVvDrN`DdIdCrNxFnKrFrLxH~FpEjWpUzH|IpFtHrElHpc@ny@jNz\\rBfEvEhGlElD~DjBpBh@fC\\zCJpCKtc@uEjEKjHx@vC~@~BhAfD|BveCfqBvC~ClCxDzQz[|BlD`BnBlDzCpE~BzEhAhFTl`@}CpEAzD^rEjA`DrA|q@f`@fHpCvEv@~CDn^_CxHDbBLfGpAbDhA~DtBdGxEtEpF`G~JlDpJbCpK|@tG`BrX~@|IfA|FpCtIzCbG~C~DhEpDxExBlFfA~CLbCKlcA_LfEOpDRvEfAhD|AdO~IdEpA`Db@`F?hC[lEqA|K_FxD{@jDSlI\\dcAhHpGFpGa@vGqAfFcBxFuChGuEfd@ue@hEaGfCcFjBgFbC_JpPks@fd@}rBlC}MvGqYvAsEdCgG`CgEfDoEpDkD~EsDxeFqnDza@aZ|p@kd@xHqEpEqBlHmC`J{BbJsApFa@tyHiX``@eCrOgBd\\_GfgBkc@|RiEhLmBnLwAxYoBnTYhmMVdRo@|ReCrzFq`Axk@eJhnDgm@p}@mNnDYxKwBzGiCnHqEno@_j@|QoOtKiIpRoPxFcGvNuPhHaLfEaKlHeY|DoStCqUtAqTVuKF{KKurB\\_l@`@qJr@{Gl@mDz@wDdBoFfB_EzByDzByCpCsCfCmB~DuBlEqAxDk@|jFqj@j`@mD~g@mFh`@yEvMcC~LaD|M}E`NqGpQaL`JaHdGkF|HgIpFwGlMaRhJmOpJoQdW{g@dMeXdXij@zDmInE}KxGsS|B{I|CeNtDqTfCuShHaz@`BaO`DkT~C_PnvAapFzw@awCrMei@zCcO~AeKfAgJ|@{Kj@iMTeL~Ae~AZwn@bE_cEnBiwAv@}aAzG{rGf@{]b@aRx@kv@d@cv@xD{nDf@_]Vo`@~@mw@nAqm@~D{s@`AoLxFmf@bCcOdC_MlBwH|IuXlBaHtBuJ`EqVdCyKhDyK~EiNdPq`@lSuc@b_AouBpt@k`BhHyPbm@ksAlXkl@|Sof@pIyPjVc`@~DsJvCoKtAuIhAeN`ByLxAsGxE{PxEgVxHs]nA}J`Fs{Ap@eX`B{UlFmeAk@dH`Dgp@LyK[wS@mKxCmbAd@}\\nEovAnA}Ux@sJv@eT",
+            "precision": 5,
+            "points": 1378
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "4314b8770cb13750",
+      "departure": "2026-11-10T07:36:00Z",
+      "arrival": "2026-11-10T12:20:00Z",
+      "durationS": 17040,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "29",
+          "tripNumber": "001005",
+          "headsign": "München Hbf",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_08:26_de-DELFI_3448681686",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:11000:900003200:2:53",
+            "name": "S+U Berlin Hauptbahnhof",
+            "lat": 52.525096000000005,
+            "lon": 13.369321,
+            "time": "2026-11-10T07:36:00Z",
+            "scheduledTime": "2026-11-10T07:36:00Z",
+            "track": "4",
+            "scheduledTrack": "4",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:09162:100:22:23",
+            "name": "München Hbf",
+            "lat": 48.140812000000004,
+            "lon": 11.557644000000002,
+            "time": "2026-11-10T12:20:00Z",
+            "scheduledTime": "2026-11-10T12:20:00Z",
+            "track": "23",
+            "scheduledTrack": "23",
+            "cancelled": false
+          },
+          "departure": "2026-11-10T07:36:00Z",
+          "arrival": "2026-11-10T12:20:00Z",
+          "scheduledDeparture": "2026-11-10T07:36:00Z",
+          "scheduledArrival": "2026-11-10T12:20:00Z",
+          "durationS": 17040,
+          "geometry": {
+            "polyline": "{xq_IkerpA~RyLrMwFpOoDtTkI`GgAlF_@tJ@jGl@vFbBnNlG`NrDbGbAdFDhL{@|DE~m@`BrJ|A~JhDx[dPhMpHfQtIrIlD~OxEltBxh@xCnAjEdCbRjNtI~IfK~MrIlMvj@f_Axp@biAfOpX`H`KlLtMzH`HrRbNhPzIrUzIhdDbdApg@nMh~G|tBbLtC~o@hMjxC|g@tQrBrNRxfEiCbMb@vKzB~F~BnEbCpEdDdGzFpbCdsCnI`JrI`IlLvIjcAxk@~KlFvMtEvQzDdRbB`PJt^kBjPChvHf\\pJ`ArJlBdLnD|IbExJfGdJpHhHhHtIrKvJpO`rAzaC`HjL|`B|vBt`@jf@bKnN|FhJ|KhTpxDdlIbFtJ`FtI`MnQzNjP~LvK|MdJzO`IpN|ErnC~s@dFfBfFhCtEzCnEpDhH|GdGxGzFlHfFtHf_DzhFxFxKbFjLbFfNnEhObDzMbDnPpBpMtBfQnBrV`k@dsJzA`TtwA|wN~CdWjDlSvFfWnrB|hIjCpJrEzNxJjWhGhMxGvLzH|L|I~Lli@`o@~lBzyBvJbM~L~RdIbPdKvVlIhWhGxVbFrXfD`WvC~Z|@jNt@lPbIbfC`Cfl@z@v`@^lJx@fK~AzL~BbKrClIhErI~FbIbf@xg@hEjFnOpT|FjGhEzC`GhCbb@lKzGbC~CfBnDtC`ChC|ChEzCtFpBzEb_@fbAzFhMvHpN~jD`}Frb@xr@zd@rw@p{AlgCxkR~p[rHzOhC~GdC`IdBvGvB`KpC~QbB~Qt@bPP~KT~c@^hOpA|QnBbOzC|N`E|MlGpNnH~LbIrJtDdDrEzCxJlE~`@zL~H|C~DzBjE`DnDbD|DjEtC|DbDpF|FjM`EbM|Rfr@nC`IpCpG|G|L~G|JtIbKrG`G~GrEnFfCvJjCt{@rNduAlPtG~AtDrA|E|BtEpChJtHlq@ro@rK`L|cCjuCxIrLfElHbDxG~FxOfEbN|jHvyVvFtTx]z}A~CrQbDrVddBj|Ol@~H^vIHvHCrIm@jOwC~Za@rGQhI@bGb@`MfAbLnCnNrDjL`s@t}AxCtF`MjPlDvDxCdBzJlDbEVxN_AlFeAdGiBxQqO|GqIhMgRfDoDxBsAhCy@hDe@dGEns@xCd`@z@jEb@xExAtD~BxBtBnIlKzDrDfEzBbE~@dUn@pjAfBh[IlN[hFL|C^|D|@jDlAtDjB~DrChE`EtDpE`CrDdDhGxCnHpCjJxBlKvAdKpAzQv@|YpA`YxC`b@zCfZ~X`bCrDxVhDtQfBlIlHbYnCfJtEvMvEzLbI`Qh`BxxCdNrXpPba@fKzZhExNjElPbVrcAbMzd@xF|Q`G|PrThl@`jBdxE|IbWhIjWfMje@bFjTrC~MlIld@ls@l_FjGr]tGvZxKtb@zJ`\\hmB|nFbRpo@h\\ttAtEbO~BrIbF|NhOd_@|`@p{@jMpWdQx[zU~_@li@xx@`N|QhKjM~QbSbQtP`q@ve@xkAzs@bZ|Rp\\fZnZ|^hXhc@tUjg@pRzi@bFhPff@|eBp]rjAlGbQtJhUvJjStVnb@dSdY~SfVv`Ch{Bfh@pj@zKlOdPdW`Ql\\jLzWxJbX~K|]~HlZrEfStDhRt{@l{EbKbf@fLre@bKj_@nI`Y~Kh]~^|fAfO|e@tLvb@zNhl@jtDb}OzLpk@l}@xxEzHj`@vFnV`IzZhIfYxG|SfKrYrGlP`LxWfO`[vn@~lAlOvXlUp^pQnVdNrPfKdL~P~PtOfNlqBb_Bdi@j_@hKpIrHdH~InKrE`HfEbIbC|F~C`JpCfKrAfGdS`hAdXt}AlC~L`Ib[bCrMvAjL`CjXpEpt@vGfgArAtf@b@lHxA`KxHb_@hGhVpFbXrAxEjBlEnCdE~Xp\\bDhEbAhB|BpFjAbEnAdGrCtQnCpKfH~PlDvGfC~CvCjC~U|OvGzGn]be@~CtE~DdHfFnLrxAlbEdGhOrGfMpDxFrEfGpKrKbGpEbGlD~JbExJ~BpI~@fKN~Kq@|I_B`KgDpK{FdIgGnGoGhFsGtEcHpFeKdDuHfEeLda@}mAlKwYpHePnFuJ~GmKlJsL`M{LdZiWzzAupAvL}InO}IpHiDjI}CjPoEnJcBnIaAlOu@dRHlRzAvKfBlInBtJzCd|Axj@jMhEvKnCbLhBbLbA`KZ|KEpIa@rRaCvPaE|[yK~NcEhOqCnQaBvL[zNLjeA~E~KT~KClOe@xQ_BftAgTrKuAvUcB|HSfX?rbCbBjV`@pJt@bOpBvPvDpLxDzFvB|sD~_BfUzInSbGxIjB|YpE~OrAv_BtHz]LjVaAdNwAjdC{_@joAkS|fAcPpy@aGxy@n@`nDhTjDJ`r@k@nUcBxwI_u@rh@wHnl@qPnSuH~|Aw|@hTmKbt@wSdvEgpAjTaEzK_ArL]rTp@lEd@hJbBpHbBbLtDtNtGrN~IhdBnpA`PbKnJfFjXbKhkAh\\jPfDrNtB`LjArMl@bYHxPm@vY_DpwAqVjWeFxN}Dfb@oPpKsDnEiApf@wHbM_AnMWt|@nA`Jv@xOlCfJfChGvBnKrElc@vWrS~JtKzDpKzCnQhD|Hz@fMr@hk@X~Tv@`MtAhQlDzX`Hj_@`KdLjE~OlJpNrKzLrLl`@nf@zPvQphAv~@hOlOxM~OdNdSzWnd@|LtQhPtR`LlKfVhQfRfJjNbF|JrC~JdBfIbAxR`ApI@pLc@~NsAxHuAlQqEfJ_D~JoEdIoEhG_Efs@sh@bG}D`NkHlQwGvJkC|IeBrKyAxKs@zGMjPRfM~@nIhAhF`Ax`@lKrlB`i@`]fIndBxe@fTdHxz@`VdIvD|ExCxL`KviAtfAx]xZlTnSl[v[xL|KvJvGdPpIxGnEhCxBdJnJbB`CnGzJrLtThGhJxCnDrHvHvIpGxA~@hKnEnJfC|c@hJbV`EzGl@nFPviCbCniA|A~Yp@z]\\`JSrLcB|IiC~FaC`EuBfG}DxGwFdEiElUiX|MmQd[a_@~O{UfEqFtW{UfR}SnlHusIryB{jClzB{iClNkNjb@}_@h{EujEtFsEjHyE~GcDzIwCdvAk^dx@_Sf`@iLp_@_Kl_@sIlHcA|Ic@rFBrFX~K~ArMvDxJvExtEfxClMnK`z@~v@~jC~aCxVjVnUtSdMvLjEdDjErB~HnBpc@tEz\\vF|Ff@|EHjHMvFk@hq@_NnD[zD?jHv@jdBtWx_@lGrJx@tJPnZOjnAn@ho@u@vd@wBnEFpFp@pD|@jDrAnDpBlDhCjGxGdMtR|DjFpGnFlGbD~DlA|FdAf`B|VhDx@nEtBzE|DvErGbh@h`AdDxElClCxB|A~FbCrFv@rGMfFaA`d@eLpPqEtEeBrE}CnEiFrDeHzBgHjAeGp@cGXmGp@wXXeFl@eGnb@q{CxBwLvCsJvDkInDsF|PsUnCaF`CwFlCsI~_@usAbNkd@~HcZjPwk@dL}[~AuHb@sF@cDyBsf@u@qFuE}Q{@{FkBq[eGgd@wCg^aBuZsBcUOgFFkG\\sE~@wFlCyLfBiGvBkFfDwF~CkDvE_E~YkRxEqDhEqFpEaJrS{j@vJyVfD{HxI{QtDgJp\\qeApHkYtZk{AfCuKnBuGpEiLtFmKlGyI~H}H`EyCtHcEbeA_d@z^oQl`@oTfl@}^xIyExHiDjJeDxHqBrHwAnLwAnLi@~t@VzLQhKc@zhCiStfB{LvdEcHdVeAhQuB~zEqs@zVqFjlBke@~KiDfHyClI{E`JoGnw@op@xeCupB|QcMdKmFtIoDtL{DxJ}BdHmA|yAuRxlBcXhPqCbNaDjdAs\\|z@{Vvw@eX|LsDpHeB|LqBxp@eIxRgEdMcEpIuDvKcGtHyEfQsNb_@s^rMmLpSgNrNeHfKyDxi@eNdj@wF~x@gPdv@q_@jk@sk@fd@ez@tjAofChqAk~C`m@cyAnb@w_AbOcXhXea@|dCujDhkA}~A~OsQlQeQrPkK|\\{Mfc@{G|SuBrV{@`SJ|Jf@xJbArMzBxd@xJzKdBtJz@bN`@jPM`v@_HtQc@|FDhK^`Hn@j`BnRhVlHjHpCnM`GlP~JpF~DvLhK~KhLvKvMvNpSfXhb@~QrWlO`PxQpNlEvC`I|E`KdF|L|E`HxBhOxDb~@vSlHtA~Hf@vHMfIkAbFyAdTqIfHoBxAOlJJ~PtArDHfFQbGqApDyAhDqBfi@kh@`DiBbEoAre@}CbFBlHpAxVzKnDjArEf@|FUrfBmf@vaAkYhiDy_AhReDjaBcVtr@_C`JkApGqBzGqDjGeFdFaG~E}HdEeJdCsH~B}JnAmHhBkNnqAa{KdCgPrAyFxAyE`F{Kdn@}dAd^qy@lDeGxDyEdEoDzDaCvD_BrEgAnHc@b^d@hiBxCpIZvCZpIrBtGxCjp@``@nEbDfF~EhaGzoGxHtGhIlElDjAzGnAp_@nC~HpAlEvAfDzA~M|HpEtBxDrAlFhAtPtBx`A|JzNJ~O_AbHgApp@cN`Hy@hDIxLv@zfAnNnLf@`eA|@lHn@lGvA~EjB|IjF|KzH`GjFxFfHrQjZtFzHrHlHbYzQlGvF~EdGhg@xs@|GxGzIzFdG`ChFjAnDb@jFTh_@NzKh@zHtAxL|DvJjFzHpGbFzFlUv[xIjJbGlEnDlB~HtChK`BtHRpKYl_@wBnJDxKnAne@dIhL|BdFzAdGjChHtExaAt{@~FjEfK`Fnd@vN|JzAlGLvbDeEhOw@hIyAnGuBjgBuv@pEwAjHuAxFg@`HKlHZrTvCnJn@vHEbVuB`JUtH^hJdBxFlBlDdB~HlFdH~GzOzRrGdHfFdEfItEnEdBpFzA~YtGzJz@rHI~IcA`[oG~LsB`r@gJpJcBnJyBdoFe}A~w@gV~EmB~h@sOvh@qMfmAu]h\\_Kra@{KlSqElJqD`FqCvBcB~BcChP}RjEwG|AcDbA{CdAcFf@wDlKsuBLwK]gXDaG`DcfAx@gq@dEunANmL~@uY",
+            "precision": 5,
+            "points": 1160
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "b126106d003648c4",
+      "departure": "2026-11-10T08:37:00Z",
+      "arrival": "2026-11-10T13:21:00Z",
+      "durationS": 17040,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "29",
+          "tripNumber": "001505",
+          "headsign": "München Hbf",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_09:26_de-DELFI_3448681385",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:11000:900003200:2:53",
+            "name": "S+U Berlin Hauptbahnhof",
+            "lat": 52.525096000000005,
+            "lon": 13.369321,
+            "time": "2026-11-10T08:37:00Z",
+            "scheduledTime": "2026-11-10T08:37:00Z",
+            "track": "4",
+            "scheduledTrack": "4",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:09162:100:22:22",
+            "name": "München Hbf",
+            "lat": 48.140704,
+            "lon": 11.557617,
+            "time": "2026-11-10T13:21:00Z",
+            "scheduledTime": "2026-11-10T13:21:00Z",
+            "track": "22",
+            "scheduledTrack": "22",
+            "cancelled": false
+          },
+          "departure": "2026-11-10T08:37:00Z",
+          "arrival": "2026-11-10T13:21:00Z",
+          "scheduledDeparture": "2026-11-10T08:37:00Z",
+          "scheduledArrival": "2026-11-10T13:21:00Z",
+          "durationS": 17040,
+          "geometry": {
+            "polyline": "{xq_IkerpA~RyLrMwFpOoDtTkI`GgAlF_@tJ@jGl@vFbBnNlG`NrDbGbAdFDhL{@|DE~m@`BrJ|A~JhDx[dPjM`IjRhJlLvEhZzHdn@~N|v@hSxCnAjEdCbRjNtI~IfK~MrIlMvj@f_Axp@biAfOpX`H`KlLtMzH`HrRbNhPzIrUzIhdDbdApg@nMh~G|tBbLtC~o@hMjxC|g@tQrBrNRxfEiCbMb@vKzB~F~BnEbCpEdDdGzFpbCdsCnI`JrI`IlLvIjcAxk@~KlFvMtEvQzDdRbB`PJt^kBjPChvHf\\pJ`ArJlBdLnD|IbExJfGdJpHhHhHtIrKvJpO`rAzaC`HjL|`B|vBt`@jf@bKnN|FhJ|KhTpxDdlIbFtJ`FtI`MnQzNjP~LvK|MdJzO`IpN|ErnC~s@dFfBfFhCtEzCnEpDhH|GdGxGzFlHfFtHf_DzhFxFxKbFjLbFfNnEhObDzMbDnPpBpMtBfQnBrV`k@dsJzA`TtwA|wN~CdWjDlSvFfWnrB|hIjCpJrEzNxJjWhGhMxGvLzH|L|I~Lli@`o@~lBzyBvJbM~L~RdIbPdKvVlIhWhGxVbFrXfD`WvC~Z|@jNt@lPbIbfC`Cfl@z@v`@^lJx@fK~AzL~BbKrClIhErI~FbIbf@xg@hEjFnOpT|FjGhEzC`GhCbb@lKzGbC~CfBnDtC`ChC|ChEzCtFpBzEb_@fbAzFhMvHpN~jD`}Frb@xr@zd@rw@p{AlgCxkR~p[rHzOhC~GdC`IdBvGvB`KpC~QbB~Qt@bPP~KT~c@^hOpA|QnBbOzC|N`E|MlGpNnH~LbIrJtDdDrEzCxJlE~`@zL~H|C~DzBjE`DnDbD|DjEtC|DbDpF|FjM`EbM|Rfr@nC`IpCpG|G|L~G|JtIbKrG`G~GrEnFfCvJjCt{@rNduAlPtG~AtDrA|E|BtEpChJtHlq@ro@rK`L|cCjuCxIrLfElHbDxG~FxOfEbN|jHvyVvFtTx]z}A~CrQbDrVddBj|Ol@~H^vIHvHCrIm@jOwC~Za@rGQhI@bGb@`MfAbLnCnNrDjL`s@t}AxCtF`MjPlDvDxCdBzJlDbEVxN_AlFeAdGiBxQqO|GqIhMgRfDoDxBsAhCy@hDe@dGEns@xCd`@z@jEb@xExAtD~BxBtBnIlKzDrDfEzBbE~@dUn@pjAfBh[IlN[hFL|C^|D|@jDlAtDjB~DrChE`EtDpE`CrDdDhGxCnHpCjJxBlKvAdKpAzQv@|YpA`YxC`b@zCfZ~X`bCrDxVhDtQfBlIlHbYnCfJtEvMvEzLbI`Qh`BxxCdNrXpPba@fKzZhExNjElPbVrcAbMzd@xF|Q`G|PrThl@`jBdxE|IbWhIjWfMje@bFjTrC~MlIld@ls@l_FjGr]tGvZxKtb@zJ`\\hmB|nFbRpo@h\\ttAtEbO~BrIbF|NhOd_@|`@p{@jMpWdQx[zU~_@li@xx@`N|QhKjM~QbSbQtP`q@ve@xkAzs@bZ|Rp\\fZnZ|^hXhc@tUjg@pRzi@bFhPff@|eBp]rjAlGbQtJhUvJjStVnb@dSdY~SfVv`Ch{Bfh@pj@zKlOdPdW`Ql\\jLzWxJbX~K|]~HlZrEfStDhRt{@l{EbKbf@fLre@bKj_@nI`Y~Kh]~^|fAfO|e@tLvb@zNhl@jtDb}OzLpk@l}@xxEzHj`@vFnV`IzZhIfYxG|SfKrYrGlP`LxWfO`[vn@~lAlOvXlUp^pQnVdNrPfKdL~P~PtOfNlqBb_Bdi@j_@hKpIrHdH~InKrE`HfEbIbC|F~C`JpCfKrAfGdS`hAdXt}AlC~L`Ib[bCrMvAjL`CjXpEpt@vGfgArAtf@b@lHxA`KxHb_@hGhVpFbXrAxEjBlEnCdE~Xp\\bDhEbAhB|BpFjAbEnAdGrCtQnCpKfH~PlDvGfC~CvCjC~U|OvGzGn]be@~CtE~DdHfFnLrxAlbEdGhOrGfMpDxFrEfGpKrKbGpEbGlD~JbExJ~BpI~@fKN~Kq@|I_B`KgDpK{FdIgGnGoGhFsGtEcHpFeKdDuHfEeLda@}mAlKwYpHePnFuJ~GmKlJsL`M{LdZiWzzAupAvL}InO}IpHiDjI}CjPoEnJcBnIaAlOu@dRHlRzAvKfBlInBtJzCd|Axj@jMhEvKnCbLhBbLbA`KZ|KEpIa@rRaCvPaE|[yK~NcEhOqCnQaBvL[zNLjeA~E~KT~KClOe@xQ_BftAgTrKuAvUcB|HSfX?rbCbBjV`@pJt@bOpBvPvDpLxDzFvB|sD~_BfUzInSbGxIjB|YpE~OrAv_BtHz]LjVaAdNwAjdC{_@joAkS|fAcPpy@aGxy@n@`nDhTjDJ`r@k@nUcBxwI_u@rh@wHnl@qPnSuH~|Aw|@hTmKbt@wSdvEgpAjTaEzK_ArL]rTp@lEd@hJbBpHbBbLtDtNtGrN~IhdBnpA`PbKnJfFjXbKhkAh\\jPfDrNtB`LjArMl@bYHxPm@vY_DpwAqVjWeFxN}Dfb@oPpKsDnEiApf@wHbM_AnMWt|@nA`Jv@xOlCfJfChGvBnKrElc@vWrS~JtKzDpKzCnQhD|Hz@fMr@hk@X~Tv@`MtAhQlDzX`Hj_@`KdLjE~OlJpNrKzLrLl`@nf@zPvQphAv~@hOlOxM~OdNdSzWnd@|LtQhPtR`LlKfVhQfRfJlMvEzK~C~JdBfIbAxR`ApI@pLc@~NsAxHuAlQqEfJ_D~JoEdIoEhG_Efs@sh@bG}D`NkHlQwGvJkC|IeBrKyAxKs@zGMjPRfM~@nIhAhF`Ax`@lKrlB`i@`]fInV|GlH`Bzl@rPrPbEp[nKrx@hUfIvD|EzCxL`K|iAxfAr]xZpTlSh[x[xLvKjCrBrI`FhVzLpDlCdD|CxBhChEnGhXrg@nFjIzCvDlHzG|FpD~ExBzJxCb`@dI`^|GxHl@vzDhEraA`B~UJnGMhJ}@nEy@jO_FrGaDfG_EdKaJdSkUjWi\\|VcZrQ_XrCmDlTuRlUeWlgEkaFrCgCbu@s{@hIgKpk@eq@xTwX`nEkhFxVqWl{FihFpFmEjHqEbHcDbLsDjrAg]~x@eSlc@cMjt@iRxNgCrD]lIU~HPdKlAfLxCrKpEpJzFnlEhrC~HpGnlDraD~P|Or]~\\tZhXxKnK|FnE`F`CbFrA|YdD`h@dIrKl@~FGdJm@~b@gIpNeDfDYhED~Gr@jcAfPxk@nIxStDxJp@~bAR~{@|AvfAgGhIArFp@pD~@hDrAbE|BtCxB~GnHpL~Q~DjFfGlFdHnDdEnAjF~@f`BzVfDv@lErB|E~DnB`CzBjDze@~|@vEhHxBxBzCxBpF|BjCf@xCR`GW~IcB|MeDfb@gL|D{AxCgBnDcDrBkC|DuHnCsJzAoKZ_Gz@k\\`AgLdFa]zLq~@jMw}@lBwKvAkFrAyDpD{HpCoEbSgXbBwC~BuFvs@odC`IcZjPwk@`Ls[hBeHz@sHLoGI{CsB}\\_AiGuE_P{@{EkC}`@qCiTsAkH}@cH_CaYaBuZyB{VI}GZqHr@oFbDaOfBiGdBkErBwDjBkCnDuD`DiC~YkRxEqDhEqFpEaJrS{j@vJyVfD{HxI{QtDgJp\\qeApHkYtZk{AfCuKnBuGpEiLtFmKlGyI~H}H`EyCtHcEbeA_d@z^oQl`@oTfl@}^xIyExHiDjJeDxHqBrHwAnLwAnLi@~t@VzLQhKc@zhCiStfB{LvdEcHdVeAhQuB~zEqs@zVqFjlBke@~KiDfHyClI{E`JoGnw@op@xeCupB|QcMdKmFtIoDtL{DxJ}BdHmA|yAuRxlBcXhPqCbNaDjdAs\\|z@{Vvw@eX|LsDpHeB|LqBxp@eIxRgEdMcEpIuDvKcGtHyEfQsNb_@s^rMmLpSgNrNeHfKyDxi@eNdj@wF~x@gPdv@q_@jk@sk@fd@ez@tjAofChqAk~C`m@cyAnb@w_AbOcXhXea@|dCujDhkA}~A~OsQlQeQrPkK|\\{Mfc@{G|SuBrV{@`SJ|Jf@xJbArMzBxd@xJzKdBtJz@bN`@jPM`v@_HtQc@|FDhK^`Hn@j`BnRhVlHjHpCnM`GlP~JpF~DvLhK~KhLvKvMvNpSfXhb@~QrWlO`PxQpNlEvC`I|E`KdF|L|E`HxBhOxDb~@vSlHtA~Hf@vHMfIkAbFyAdTqIfHoBxAOlJJ~PtArDHfFQbGqApDyAhDqBfi@kh@`DiBbEoAre@}CbFBlHpAxVzKnDjArEf@|FUrfBmf@vaAkYhiDy_AhReDjaBcVtr@_C`JkApGqBzGqDjGeFdFaG~E}HdEeJdCsH~B}JnAmHhBkNnqAa{KdCgPrAyFxAyE`F{Kdn@}dAd^qy@lDeGxDyEdEoDzDaCvD_BrEgAnHc@b^d@hiBxCpIZvCZpIrBtGxCjp@``@nEbDfF~EhaGzoGxHtGhIlElDjAzGnAp_@nC~HpAlEvAfDzA~M|HpEtBxDrAlFhAtPtBx`A|JzNJ~O_AbHgApp@cN`Hy@hDIxLv@zfAnNnLf@`eA|@lHn@lGvA~EjB|IjF|KzH`GjFxFfHrQjZtFzHrHlHbYzQlGvF~EdGhg@xs@|GxGzIzFdG`ChFjAnDb@jFTh_@NzKh@zHtAxL|DvJjFzHpGbFzFlUv[xIjJbGlEnDlB~HtChK`BtHRpKYl_@wBnJDxKnAne@dIhL|BdFzAdGjChHtExaAt{@~FjEfK`Fnd@vN|JzAlGLvbDeEhOw@hIyAnGuBjgBuv@pEwAjHuAxFg@`HKlHZrTvCnJn@vHEbVuB`JUtH^hJdBxFlBlDdB~HlFdH~GzOzRrGdHfFdEfItEnEdBpFzA~YtGzJz@rHI~IcA`[oG~LsB`r@gJpJcBnJyBhgEmmA|pCqy@n`@oJpuA}`@~WkIze@oMlSoEdKaEzDyBfCoBpR{TdG_J|BkFhA}Dn@}Dh@sF|JyqBLwK[yS@oKzCqbA~@ut@fHwvB",
+            "precision": 5,
+            "points": 1162
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "f084368fe35aa4e6",
+      "departure": "2026-11-10T09:37:00Z",
+      "arrival": "2026-11-10T14:20:00Z",
+      "durationS": 16980,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "29",
+          "tripNumber": "001007",
+          "headsign": "München Hbf",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_10:37_de-DELFI_3448681648",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:11000:900003200:2:53",
+            "name": "S+U Berlin Hauptbahnhof",
+            "lat": 52.525096000000005,
+            "lon": 13.369321,
+            "time": "2026-11-10T09:37:00Z",
+            "scheduledTime": "2026-11-10T09:37:00Z",
+            "track": "4",
+            "scheduledTrack": "4",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:09162:100:22:23",
+            "name": "München Hbf",
+            "lat": 48.140812000000004,
+            "lon": 11.557644000000002,
+            "time": "2026-11-10T14:20:00Z",
+            "scheduledTime": "2026-11-10T14:20:00Z",
+            "track": "23",
+            "scheduledTrack": "23",
+            "cancelled": false
+          },
+          "departure": "2026-11-10T09:37:00Z",
+          "arrival": "2026-11-10T14:20:00Z",
+          "scheduledDeparture": "2026-11-10T09:37:00Z",
+          "scheduledArrival": "2026-11-10T14:20:00Z",
+          "durationS": 16980,
+          "geometry": {
+            "polyline": "{xq_IkerpA~RyLrMwFpOoDtTkI`GgAlF_@tJ@jGl@vFbBnNlG`NrDbGbAdFDhL{@|DE~m@`BrJ|A~JhDx[dPhMpHfQtIrIlD~OxEltBxh@xCnAjEdCbRjNtI~IfK~MrIlMvj@f_Axp@biAfOpX`H`KlLtMzH`HrRbNhPzIrUzIhdDbdApg@nMh~G|tBbLtC~o@hMjxC|g@tQrBrNRxfEiCbMb@vKzB~F~BnEbCpEdDdGzFpbCdsCnI`JrI`IlLvIjcAxk@~KlFvMtEvQzDdRbB`PJt^kBjPChvHf\\pJ`ArJlBdLnD|IbExJfGdJpHhHhHtIrKvJpO`rAzaC`HjL|`B|vBt`@jf@bKnN|FhJ|KhTpxDdlIbFtJ`FtI`MnQzNjP~LvK|MdJzO`IpN|ErnC~s@dFfBfFhCtEzCnEpDhH|GdGxGzFlHfFtHf_DzhFxFxKbFjLbFfNnEhObDzMbDnPpBpMtBfQnBrV`k@dsJzA`TtwA|wN~CdWjDlSvFfWnrB|hIjCpJrEzNxJjWhGhMxGvLzH|L|I~Lli@`o@~lBzyBvJbM~L~RdIbPdKvVlIhWhGxVbFrXfD`WvC~Z|@jNt@lPbIbfC`Cfl@z@v`@^lJx@fK~AzL~BbKrClIhErI~FbIbf@xg@hEjFnOpT|FjGhEzC`GhCbb@lKzGbC~CfBnDtC`ChC|ChEzCtFpBzEb_@fbAzFhMvHpN~jD`}Frb@xr@zd@rw@p{AlgCxkR~p[rHzOhC~GdC`IdBvGvB`KpC~QbB~Qt@bPP~KT~c@^hOpA|QnBbOzC|N`E|MlGpNnH~LbIrJtDdDrEzCxJlE~`@zL~H|C~DzBjE`DnDbD|DjEtC|DbDpF|FjM`EbM|Rfr@nC`IpCpG|G|L~G|JtIbKrG`G~GrEnFfCvJjCt{@rNduAlPtG~AtDrA|E|BtEpChJtHlq@ro@rK`L|cCjuCxIrLfElHbDxG~FxOfEbN|jHvyVvFtTx]z}A~CrQbDrVddBj|Ol@~H^vIHvHCrIm@jOwC~Za@rGQhI@bGb@`MfAbLnCnNrDjL`s@t}AxCtF`MjPlDvDxCdBzJlDbEVxN_AlFeAdGiBxQqO|GqIhMgRfDoDxBsAhCy@hDe@dGEns@xCd`@z@jEb@xExAtD~BxBtBnIlKzDrDfEzBbE~@dUn@pjAfBh[IlN[hFL|C^|D|@jDlAtDjB~DrChE`EtDpE`CrDdDhGxCnHpCjJxBlKvAdKpAzQv@|YpA`YxC`b@zCfZ~X`bCrDxVhDtQfBlIlHbYnCfJtEvMvEzLbI`Qh`BxxCdNrXpPba@fKzZhExNjElPbVrcAbMzd@xF|Q`G|PrThl@`jBdxE|IbWhIjWfMje@bFjTrC~MlIld@ls@l_FjGr]tGvZxKtb@zJ`\\hmB|nFbRpo@h\\ttAtEbO~BrIbF|NhOd_@|`@p{@jMpWdQx[zU~_@li@xx@`N|QhKjM~QbSbQtP`q@ve@xkAzs@bZ|Rp\\fZnZ|^hXhc@tUjg@pRzi@bFhPff@|eBp]rjAlGbQtJhUvJjStVnb@dSdY~SfVv`Ch{Bfh@pj@zKlOdPdW`Ql\\jLzWxJbX~K|]~HlZrEfStDhRt{@l{EbKbf@fLre@bKj_@nI`Y~Kh]~^|fAfO|e@tLvb@zNhl@jtDb}OzLpk@l}@xxEzHj`@vFnV`IzZhIfYxG|SfKrYrGlP`LxWfO`[vn@~lAlOvXlUp^pQnVdNrPfKdL~P~PtOfNlqBb_Bdi@j_@hKpIrHdH~InKrE`HfEbIbC|F~C`JpCfKrAfGdS`hAdXt}AlC~L`Ib[bCrMvAjL`CjXpEpt@vGfgArAtf@b@lHxA`KxHb_@hGhVpFbXrAxEjBlEnCdE~Xp\\bDhEbAhB|BpFjAbEnAdGrCtQnCpKfH~PlDvGfC~CvCjC~U|OvGzGn]be@~CtE~DdHfFnLrxAlbEdGhOrGfMpDxFrEfGpKrKbGpEbGlD~JbExJ~BpI~@fKN~Kq@|I_B`KgDpK{FdIgGnGoGhFsGtEcHpFeKdDuHfEeLda@}mAlKwYpHePnFuJ~GmKlJsL`M{LdZiWzzAupAvL}InO}IpHiDjI}CjPoEnJcBnIaAlOu@dRHlRzAvKfBlInBtJzCd|Axj@jMhEvKnCbLhBbLbA`KZ|KEpIa@rRaCvPaE|[yK~NcEhOqCnQaBvL[zNLjeA~E~KT~KClOe@xQ_BftAgTrKuAvUcB|HSfX?rbCbBjV`@pJt@bOpBvPvDpLxDzFvB|sD~_BfUzInSbGxIjB|YpE~OrAv_BtHz]LjVaAdNwAjdC{_@joAkS|fAcPpy@aGxy@n@`nDhTjDJ`r@k@nUcBxwI_u@rh@wHnl@qPnSuH~|Aw|@hTmKbt@wSdvEgpAjTaEzK_ArL]rTp@lEd@hJbBpHbBbLtDtNtGrN~IhdBnpA`PbKnJfFjXbKhkAh\\jPfDrNtB`LjArMl@bYHxPm@vY_DpwAqVjWeFxN}Dfb@oPpKsDnEiApf@wHbM_AnMWt|@nA`Jv@xOlCfJfChGvBnKrElc@vWrS~JtKzDpKzCnQhD|Hz@fMr@hk@X~Tv@`MtAhQlDzX`Hj_@`KdLjE~OlJpNrKzLrLl`@nf@zPvQphAv~@hOlOxM~OdNdSzWnd@|LtQhPtR`LlKfVhQfRfJlMvEzK~C~JdBfIbAxR`ApI@pLc@~NsAxHuAlQqEfJ_D~JoEdIoEhG_Efs@sh@bG}D`NkHlQwGvJkC|IeBrKyAxKs@zGMjPRfM~@nIhAhF`Ax`@lKrlB`i@`]fInV|GlH`Bzl@rPrPbEp[nKrx@hUfIvD|EzCxL`K|iAxfAr]xZpTlSh[x[xLvKjCrBrI`FhVzLpDlCdD|CxBhChEnGhXrg@nFjIzCvDlHzG|FpD~ExBzJxCb`@dI`^|GxHl@vzDhEraA`B~UJnGMhJ}@nEy@jO_FrGaDfG_EdKaJdSkUjWi\\|VcZrQ_XrCmDlTuRlUeWlgEkaFrCgCbu@s{@hIgKpk@eq@xTwX`nEkhFxVqWl{FihFpFmEjHqEbHcDbLsDjrAg]~x@eSlc@cMjt@iRxNgCrD]lIU~HPdKlAfLxCrKpEpJzFnlEhrC~HpGnlDraD~P|Or]~\\tZhXxKnK|FnE`F`CbFrA|YdD`h@dIrKl@~FGdJm@~b@gIpNeDfDYhED~Gr@jcAfPxk@nIxStDxJp@~bAR~{@|AvfAgGhIArFp@pD~@hDrAbE|BtCxB~GnHpL~Q~DjFfGlFdHnDdEnAjF~@f`BzVfDv@lErB|E~DnB`CzBjDze@~|@vEhHxBxBzCxBpF|BjCf@xCR`GW~IcB|MeDfb@gL|D{AxCgBnDcDrBkC|DuHnCsJzAoKZ_Gz@k\\`AgLdFa]zLq~@jMw}@lBwKvAkFrAyDpD{HpCoEbSgXbBwC~BuFvs@odC`IcZjPwk@`Ls[hBeHz@sHLoGI{CsB}\\_AiGuE_P{@{EkC}`@qCiTsAkH}@cH_CaYaBuZyB{VI}GZqHr@oFbDaOfBiGdBkErBwDjBkCnDuD`DiC~YkRxEqDhEqFpEaJrS{j@vJyVfD{HxI{QtDgJp\\qeApHkYtZk{AfCuKnBuGpEiLtFmKlGyI~H}H`EyCtHcEbeA_d@z^oQl`@oTfl@}^xIyExHiDjJeDxHqBrHwAnLwAnLi@~t@VzLQhKc@zhCiStfB{LvdEcHdVeAhQuB~zEqs@zVqFjlBke@~KiDfHyClI{E`JoGnw@op@xeCupB|QcMdKmFtIoDtL{DxJ}BdHmA|yAuRxlBcXhPqCbNaDjdAs\\|z@{Vvw@eX|LsDpHeB|LqBxp@eIxRgEdMcEpIuDvKcGtHyEfQsNb_@s^rMmLpSgNrNeHfKyDxi@eNdj@wF~x@gPdv@q_@jk@sk@fd@ez@tjAofChqAk~C`m@cyAnb@w_AbOcXhXea@|dCujDhkA}~A~OsQlQeQrPkK|\\{Mfc@{G|SuBrV{@`SJ|Jf@xJbArMzBxd@xJzKdBtJz@bN`@jPM`v@_HtQc@|FDhK^`Hn@j`BnRhVlHjHpCnM`GlP~JpF~DvLhK~KhLvKvMvNpSfXhb@~QrWlO`PxQpNlEvC`I|E`KdF|L|E`HxBhOxDb~@vSlHtA~Hf@vHMfIkAbFyAdTqIfHoBxAOlJJ~PtArDHfFQbGqApDyAhDqBfi@kh@`DiBbEoAre@}CbFBlHpAxVzKnDjArEf@|FUrfBmf@vaAkYhiDy_AhReDjaBcVtr@_C`JkApGqBzGqDjGeFdFaG~E}HdEeJdCsH~B}JnAmHhBkNnqAa{KdCgPrAyFxAyE`F{Kdn@}dAd^qy@lDeGxDyEdEoDzDaCvD_BrEgAnHc@b^d@hiBxCpIZvCZpIrBtGxCjp@``@nEbDfF~EhaGzoGxHtGhIlElDjAzGnAp_@nC~HpAlEvAfDzA~M|HpEtBxDrAlFhAtPtBx`A|JzNJ~O_AbHgApp@cN`Hy@hDIxLv@zfAnNnLf@`eA|@lHn@lGvA~EjB|IjF|KzH`GjFxFfHrQjZtFzHrHlHbYzQlGvF~EdGhg@xs@|GxGzIzFdG`ChFjAnDb@jFTh_@NzKh@zHtAxL|DvJjFzHpGbFzFlUv[xIjJbGlEnDlB~HtChK`BtHRpKYl_@wBnJDxKnAne@dIhL|BdFzAdGjChHtExaAt{@~FjEfK`Fnd@vN|JzAlGLvbDeEhOw@hIyAnGuBjgBuv@pEwAjHuAxFg@`HKlHZrTvCnJn@vHEbVuB`JUtH^hJdBxFlBlDdB~HlFdH~GzOzRrGdHfFdEfItEnEdBpFzA~YtGzJz@rHI~IcA`[oG~LsB`r@gJpJcBnJyBdoFe}A~w@gV~EmB~h@sOvh@qMfmAu]h\\_Kra@{KlSqElJqD`FqCvBcB~BcChP}RjEwG|AcDbA{CdAcFf@wDlKsuBLwK]gXDaG`DcfAx@gq@dEunANmL~@uY",
+            "precision": 5,
+            "points": 1166
+          }
+        }
+      ],
+      "tags": ["latestDeparture"]
+    }
+  ],
+  "removedByFilter": 0,
+  "removedBy": { "category": 0, "product": 0, "operator": 0 },
+  "earlierCursor": "EARLIER|1794290400",
+  "laterCursor": "LATER|1794303480",
+  "routerCalls": 1,
+  "partial": false
+}

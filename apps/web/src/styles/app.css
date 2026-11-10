@@ -1,0 +1,20 @@
+@import "@gerlines/ui/styles.css";
+@source "..";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    overflow: hidden;
+    background-color: var(--gl-map-land);
+  }
+
+  .maplibregl-canvas:focus-visible {
+    outline: 2px solid var(--gl-focus);
+    outline-offset: -2px;
+  }
+}

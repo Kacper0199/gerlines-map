@@ -1,0 +1,406 @@
+[
+  {
+    "key": 25702913,
+    "line": "91",
+    "trainNumber": 28,
+    "category": "hsr",
+    "delay": -60,
+    "dwelling": null
+  },
+  {
+    "key": 25704775,
+    "line": "S1",
+    "trainNumber": 35147,
+    "category": "sbahn",
+    "delay": 1020,
+    "dwelling": null
+  },
+  {
+    "key": 25705195,
+    "line": "S8",
+    "trainNumber": 35847,
+    "category": "sbahn",
+    "delay": 600,
+    "dwelling": null
+  },
+  {
+    "key": 25705303,
+    "line": "S1",
+    "trainNumber": 35146,
+    "category": "sbahn",
+    "delay": 120,
+    "dwelling": null
+  },
+  {
+    "key": 25705412,
+    "line": "RB58",
+    "trainNumber": 24352,
+    "category": "reg",
+    "delay": 180,
+    "dwelling": null
+  },
+  {
+    "key": 25705514,
+    "line": "S2",
+    "trainNumber": 35249,
+    "category": "sbahn",
+    "delay": 120,
+    "dwelling": null
+  },
+  {
+    "key": 25705634,
+    "line": "S6",
+    "trainNumber": 36646,
+    "category": "sbahn",
+    "delay": 180,
+    "dwelling": null
+  },
+  {
+    "key": 25705639,
+    "line": "S1",
+    "trainNumber": 35149,
+    "category": "sbahn",
+    "delay": 1980,
+    "dwelling": null
+  },
+  {
+    "key": 25705767,
+    "line": "S9",
+    "trainNumber": 35949,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25705913,
+    "line": "RB61",
+    "trainNumber": 15652,
+    "category": "reg",
+    "delay": 180,
+    "dwelling": null
+  },
+  {
+    "key": 25706070,
+    "line": "S6",
+    "trainNumber": 35644,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706077,
+    "line": "S8",
+    "trainNumber": 35849,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706109,
+    "line": "S6",
+    "trainNumber": 35647,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706112,
+    "line": "S2",
+    "trainNumber": 35248,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706160,
+    "line": "RB40",
+    "trainNumber": 24799,
+    "category": "reg",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706188,
+    "line": "S5",
+    "trainNumber": 35546,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706197,
+    "line": "S1",
+    "trainNumber": 35148,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706242,
+    "line": "S6",
+    "trainNumber": 36647,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706261,
+    "line": "S1",
+    "trainNumber": 36746,
+    "category": "sbahn",
+    "delay": 1260,
+    "dwelling": null
+  },
+  {
+    "key": 25706274,
+    "line": "RE85",
+    "trainNumber": 25336,
+    "category": "rfast",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706283,
+    "line": "S3",
+    "trainNumber": 35346,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706286,
+    "line": "S5",
+    "trainNumber": 35549,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706293,
+    "line": "RE54",
+    "trainNumber": 4621,
+    "category": "rfast",
+    "delay": 300,
+    "dwelling": null
+  },
+  {
+    "key": 25706295,
+    "line": "S8",
+    "trainNumber": 35848,
+    "category": "sbahn",
+    "delay": 240,
+    "dwelling": null
+  },
+  {
+    "key": 25706298,
+    "line": "S7",
+    "trainNumber": 35750,
+    "category": "sbahn",
+    "delay": 240,
+    "dwelling": null
+  },
+  {
+    "key": 25706326,
+    "line": "S4",
+    "trainNumber": 35447,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706398,
+    "line": "RB10",
+    "trainNumber": 25021,
+    "category": "reg",
+    "delay": 180,
+    "dwelling": null
+  },
+  {
+    "key": 25706457,
+    "line": "S2",
+    "trainNumber": 35251,
+    "category": "sbahn",
+    "delay": 360,
+    "dwelling": null
+  },
+  {
+    "key": 25706459,
+    "line": "RB58",
+    "trainNumber": 24349,
+    "category": "reg",
+    "delay": 0,
+    "dwelling": {
+      "stopIndex": 1,
+      "lon": 8.686181486045554,
+      "lat": 50.09900644888087
+    }
+  },
+  {
+    "key": 25706539,
+    "line": "S1",
+    "trainNumber": 35151,
+    "category": "sbahn",
+    "delay": 360,
+    "dwelling": {
+      "stopIndex": 1,
+      "lon": 8.455914362493012,
+      "lat": 50.03873623461815
+    }
+  },
+  {
+    "key": 25706550,
+    "line": "S6",
+    "trainNumber": 36648,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706570,
+    "line": "RB15",
+    "trainNumber": 21678,
+    "category": "reg",
+    "delay": 2580,
+    "dwelling": {
+      "stopIndex": 1,
+      "lon": 8.64676842829249,
+      "lat": 50.26980455627786
+    }
+  },
+  {
+    "key": 25706666,
+    "line": "RE85",
+    "trainNumber": 25329,
+    "category": "rfast",
+    "delay": 300,
+    "dwelling": null
+  },
+  {
+    "key": 25706738,
+    "line": "S3",
+    "trainNumber": 35349,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706802,
+    "line": "S9",
+    "trainNumber": 35950,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706805,
+    "line": "S4",
+    "trainNumber": 35446,
+    "category": "sbahn",
+    "delay": 300,
+    "dwelling": null
+  },
+  {
+    "key": 25706933,
+    "line": "S6",
+    "trainNumber": 35646,
+    "category": "sbahn",
+    "delay": 120,
+    "dwelling": null
+  },
+  {
+    "key": 25706976,
+    "line": "S2",
+    "trainNumber": 35250,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25706979,
+    "line": "S6",
+    "trainNumber": 35649,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25706986,
+    "line": "RB41",
+    "trainNumber": 24852,
+    "category": "reg",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707044,
+    "line": "RB10",
+    "trainNumber": 25022,
+    "category": "reg",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707048,
+    "line": "S5",
+    "trainNumber": 35548,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707060,
+    "line": "S1",
+    "trainNumber": 35150,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707087,
+    "line": "S6",
+    "trainNumber": 36649,
+    "category": "sbahn",
+    "delay": -60,
+    "dwelling": null
+  },
+  {
+    "key": 25707134,
+    "line": "S3",
+    "trainNumber": 35348,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25707146,
+    "line": "S8",
+    "trainNumber": 35850,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707154,
+    "line": "S5",
+    "trainNumber": 35551,
+    "category": "sbahn",
+    "delay": 60,
+    "dwelling": null
+  },
+  {
+    "key": 25707160,
+    "line": "RB12",
+    "trainNumber": 21543,
+    "category": "reg",
+    "delay": 0,
+    "dwelling": null
+  },
+  {
+    "key": 25707161,
+    "line": "S4",
+    "trainNumber": 35449,
+    "category": "sbahn",
+    "delay": 0,
+    "dwelling": null
+  }
+]

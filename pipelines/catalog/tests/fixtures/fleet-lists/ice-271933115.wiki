@@ -1,0 +1,69 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271933115 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 16-16, 813-826, 1009-1060, 1106-1106; references removed. -->
+== Aktuelle Linien (2026) ==
+=== Linie 60 ===
+
+Die neue Linie besteht seit dem Fahrplanwechsel im Dezember 2022. Sie fährt über die [[Schnellfahrstrecke Wendlingen–Ulm]]. Zwei Zugpaare verkehren ab/bis Basel SBB.
+
+{| class="wikitable"
+|-
+! Linie
+! Linienverlauf
+! Fahrzeuge
+|-
+| style="color:#269E50" | '''ICE&nbsp;60'''
+| ''{{nowrap|[[Bahnhof Basel SBB|Basel SBB]] –}} {{nowrap|[[Basel Badischer Bahnhof|Basel Bad Bf]] –}} {{nowrap|[[Bahnhof Weil am Rhein|Weil am Rhein]] –}} [[Bahnhof Müllheim im Markgräflerland|Müllheim]]&nbsp;– [[Freiburg (Breisgau) Hauptbahnhof|Freiburg]]&nbsp;– [[Bahnhof Lahr (Schwarzw)|Lahr]]&nbsp;– [[Bahnhof Offenburg|Offenburg]]&nbsp;– {{nowrap|[[Bahnhof Baden-Baden|Baden-Baden]] –}} ''[[Karlsruhe Hauptbahnhof|Karlsruhe]]&nbsp;– ''{{nowrap|[[Bahnhof Karlsruhe-Durlach|Karlsruhe-Durlach]] –}}'' [[Bahnhof Bruchsal|Bruchsal]]&nbsp;– [[Stuttgart Hauptbahnhof|Stuttgart]]&nbsp;– [[Ulm Hauptbahnhof|Ulm]]&nbsp;– ''[[Bahnhof Günzburg|Günzburg]]&nbsp;–'' [[Augsburg Hauptbahnhof|Augsburg]]&nbsp;– {{nowrap|[[Bahnhof München-Pasing|München-Pasing]] –}} [[München Hauptbahnhof|München]]
+| [[ICE 3]]
+|}
+=== Linie 85 ===
+
+Die ECE-Linie 85 verbindet seit Dezember 2017 einmal am Tag Frankfurt mit Mailand durch den [[Gotthard-Basistunnel]]. Ab Basel verkehrt er als EuroCity 151 weiter bis Mailand.
+
+{| class="wikitable" style="width:100%"
+|-
+! Linie
+! Linienverlauf
+! Fahrzeuge
+|-
+| style="color:#178748" | '''ECE&nbsp;85'''
+| [[Frankfurt (Main) Hauptbahnhof|Frankfurt]]&nbsp;– [[Mannheim Hauptbahnhof|Mannheim]]&nbsp;– [[Karlsruhe Hauptbahnhof|Karlsruhe]]&nbsp;– [[Ringsheim#Verkehr|Ringsheim]]&nbsp;– [[Freiburg (Breisgau) Hauptbahnhof|Freiburg]]&nbsp;– {{nowrap|[[Basel Badischer Bahnhof|Basel Bad]] –}} {{nowrap|[[Bahnhof Basel SBB|Basel SBB]] –}} [[Zürich Hauptbahnhof|Zürich]]&nbsp;– [[Bahnhof Zug|Zug]]&nbsp;– {{nowrap|[[Bahnhof Arth-Goldau|Arth-Goldau]] –}} [[Bahnhof Bellinzona|Bellinzona]]&nbsp;– [[Bahnhof Lugano|Lugano]]&nbsp;– [[Bahnhof Chiasso|Chiasso]]&nbsp;– [[Bahnhof Como San Giovanni|Como]]&nbsp;– [[Bahnhof Milano Centrale|Milano]]
+| [[SBB RABe 501|RABe 501 („Giruno“)]]
+|}
+
+=== Linie 88 ===
+
+Die Linie 88 ist eine [[EuroCity-Express]]-Linie, die im Dezember 2020 eingeführt wurde. Es verkehren zwischen München und Zürich täglich bis zu acht Zugpaare im Zweistundentakt, welche die EuroCity-Linie 88 ersetzen. Eingesetzt werden Fahrzeuge vom Typ [[Alstom ETR 610]] („Astoro“) der [[Schweizerische Bundesbahnen|Schweizerischen Bundesbahnen]].
+
+{| class="wikitable"
+|-
+! Linie
+! Linienverlauf
+! Fahrzeuge
+|-
+| style="color:#F013E8" | '''ECE&nbsp;88'''
+| [[München Hauptbahnhof|München]]&nbsp;– [[Bahnhof Buchloe|Buchloe]]&nbsp;– [[Bahnhof Memmingen|Memmingen]]&nbsp;– {{nowrap|[[Bahnhof Lindau-Reutin|Lindau-Reutin]] –}} [[Bahnhof Bregenz|Bregenz]]&nbsp;– {{nowrap|[[St. Margrethen#Verkehr|St. Margrethen]] –}} {{nowrap|[[Bahnhof St. Gallen|St. Gallen]] –}} [[Bahnhof Winterthur|Winterthur]]&nbsp;– {{nowrap|[[Bahnhof Zürich Flughafen|Zürich Flughafen]] –}} [[Zürich Hauptbahnhof|Zürich]]
+| [[ETR 610]]
+|}
+
+=== Linie 89 ===
+
+Die Linie 89 verbindet München mit Innsbruck und Italien. Ein Zugpaar verbindet Samstags saisonal München mit Feldkirch.
+
+{| class="wikitable" style="width:100%"
+|-
+! Linie
+! colspan="3" | Linienverlauf
+! Fahrzeuge
+|-
+| rowspan="3" style="color:#AD0755" | '''ICE&nbsp;89'''
+| rowspan="3" | [[München Hauptbahnhof|München]]&nbsp;– {{nowrap|[[Bahnhof München Ost|München Ost]] –}} [[Bahnhof Rosenheim|Rosenheim]]&nbsp;– [[Bahnhof Kufstein|Kufstein]]&nbsp;– [[Wörgl Hauptbahnhof|Wörgl]]&nbsp;– [[Bahnhof Jenbach|Jenbach]]&nbsp;– [[Innsbruck Hauptbahnhof|Innsbruck]]&nbsp;– 
+| colspan="2" | {{nowrap|[[Pfaffenhofen (Tirol)#Verkehr|Telfs-Pfaffenhofen]] –}} [[Bahnhof Ötztal|Ötztal]]&nbsp;– {{nowrap|[[Imst#Verkehr|Imst-Pitztal]] –}} {{nowrap|[[Bahnhof Landeck-Zams|Landeck-Zams]] –}} {{nowrap|[[Bahnhof St. Anton am Arlberg|St. Anton]] –}} ''[[Bahnhof Langen am Arlberg|Langen]]&nbsp;– [[Bahnhof Bludenz|Bludenz]]&nbsp;– [[Bahnhof Feldkirch|Feldkirch]]''
+| [[Railjet 1. Generation|Railjet]]
+|-
+| rowspan="2" |[[Bahnhof Brenner|Brenner]]&nbsp;– ''[[Bahnhof Franzensfeste|Franzensfeste]]&nbsp;–'' [[Bahnhof Brixen|Brixen]]&nbsp;– [[Bahnhof Bozen|Bozen]]&nbsp;– [[Bahnhof Trient|Trento]]&nbsp;– [[Bahnhof Rovereto|Rovereto]]&nbsp;– {{nowrap|[[Bahnhof Verona Porta Nuova|Verona Porta Nuova]]}}
+| [[Vicenza]]&nbsp;– [[Padua|Padova]]&nbsp;– {{nowrap|[[Bahnhof Venezia Mestre|Venezia Mestre]]&nbsp;– }}{{nowrap|[[Bahnhof Venezia Santa Lucia|Venezia Santa Lucia]]}}
+| rowspan="2" | [[Railjet 2. Generation|Railjet 2]]
+|-
+| [[Bahnhof Bologna Centrale|Bologna]]&nbsp;– ''[[Cesena]]&nbsp;– [[Bahnhof Rimini|Rimini]]&nbsp;– [[Riccione]]&nbsp;– [[Cattolica|Cattolica San Giovanni G.]]&nbsp;– [[Pesaro]]&nbsp;– [[Senigallia]]&nbsp;– [[Ancona]]''
+|}
+
+== Eingestellte Linien ==

@@ -1,0 +1,490 @@
+{
+  "station": "Frankfurt(Main)Hbf",
+  "eva": 8000105,
+  "stops": [
+    {
+      "id": "8573811631662133764-2610252045-5",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:15:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": []
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-7776488363957091076-2610252312-14",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:40:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": null,
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RE50",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-5751012814742180427-3710984775778268087",
+            "type": "d",
+            "code": 48,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:07:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [
+        {
+          "id": "840ca05c-e9b3-43b4-9550-fb9b9eb6334a",
+          "type": "h",
+          "code": null,
+          "category": "BAUARBEITEN",
+          "priority": 1,
+          "timestamp": "2026-10-25T02:30:00.000Z",
+          "validFrom": "2026-10-22T07:44:00.000Z",
+          "validTo": "2026-11-09T01:00:00.000Z",
+          "deleted": false
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "7582314568044505717-2610252043-12",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-26T01:57:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-3591111476902816862--3906184837907719259",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": {
+        "plannedTime": null,
+        "changedTime": "2026-10-26T02:14:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-3591111476902816862--3906184837907719259",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-5851721557238592488-2610252043-12",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-26T01:57:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "8747978737684680119-7784004222645903186",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": {
+        "plannedTime": null,
+        "changedTime": "2026-10-26T02:14:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "8747978737684680119-7784004222645903186",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "6228365463182028347-2610251909-9",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:12:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "7",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": []
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-7056878515633598205-2610251807-10",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T22:08:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "4",
+        "plannedPath": null,
+        "changedPath": [
+          "Utrecht Centraal",
+          "s-Hertogenbosch",
+          "Venlo",
+          "Mönchengladbach Hbf",
+          "Köln Hbf",
+          "Siegburg/Bonn",
+          "Frankfurt(M) Flughafen Fernbf"
+        ],
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-8088687490189814752-6335111308946250313",
+            "type": "d",
+            "code": 24,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T20:50:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "131571812634252966-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:47:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-7542644102838372160-2610252225-22",
+      "eva": 8000105,
+      "tripLabel": {
+        "category": "ICE",
+        "number": "2851",
+        "owner": "NZ",
+        "filter": "F",
+        "tripType": "s"
+      },
+      "arrival": {
+        "plannedTime": "2026-10-26T05:59:00.000Z",
+        "changedTime": "2026-10-26T05:59:00.000Z",
+        "delayMinutes": 0,
+        "plannedPlatform": "1",
+        "changedPlatform": null,
+        "plannedPath": [
+          "Hamburg-Altona",
+          "Hamburg Dammtor",
+          "Hamburg Hbf",
+          "Hamburg-Harburg",
+          "Bremen Hbf",
+          "Osnabrück Hbf",
+          "Münster(Westf)Hbf",
+          "Hamm(Westf)Hbf",
+          "Dortmund Hbf",
+          "Gelsenkirchen Hbf",
+          "Duisburg Hbf",
+          "Düsseldorf Flughafen",
+          "Düsseldorf Hbf",
+          "Köln Hbf",
+          "Bonn Hbf",
+          "Remagen",
+          "Andernach",
+          "Koblenz Hbf",
+          "Bingen(Rhein) Hbf",
+          "Mainz Hbf",
+          "Frankfurt(M) Flughafen Fernbf"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "ICE 2851",
+        "hidden": false,
+        "wings": ["2774174590951633862-2610252225"],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "6396478587309502628-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T14:14:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "5343103422382222039-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T14:14:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "-7712151058471052131-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T14:14:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "2423613592930774875-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T14:16:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "3651710136711031368--5750733951335330645",
+            "type": "d",
+            "code": 21,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:33:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "3110338756521254946-2610251934-1",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": null,
+      "departure": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T18:35:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": null,
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RE60",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-5393297253669438808-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T18:17:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "8836783779434141499-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T18:17:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [
+        {
+          "id": "3027095c-3568-4979-ac98-e18194c575a0",
+          "type": "h",
+          "code": null,
+          "category": "BAUARBEITEN",
+          "priority": 3,
+          "timestamp": "2026-10-25T21:00:00.000Z",
+          "validFrom": "2026-10-21T09:54:00.000Z",
+          "validTo": "2026-10-25T21:00:00.000Z",
+          "deleted": true
+        }
+      ],
+      "references": []
+    }
+  ]
+}

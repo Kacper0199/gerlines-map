@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "typecheck": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "$TURBO_ROOT$/DESIGN.md"]
+    },
+    "test": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "$TURBO_ROOT$/DESIGN.md"]
+    }
+  }
+}

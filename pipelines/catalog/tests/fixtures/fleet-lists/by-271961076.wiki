@@ -1,0 +1,78 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271961076 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 90, 91-101, 102-112, 605, 606-616, 627-640, 1338, 1339-1349, 1350-1362; references removed. -->
+=== Linien 1, 10–19 (Süd) ===
+{| class="wikitable sortable" style="font-size:90%; text-align:center;"
+|+
+|- class="hintergrundfarbe5"
+! Linie
+! Taktfolge<br />(in Minuten)
+! Marke/Linienname
+! class="unsortable"| Laufweg
+! class="unsortable"| Befahrene Strecken in Bayern
+! [[Kursbuchstrecke|KBS]]
+! [[Eisenbahnverkehrsunternehmen|EVU]]
+! Fahrzeuge im Regelbetrieb
+|- id="RE 1"
+| {{SPNV Bayern|RE1}}
+| 60 (München–Ingolstadt)<br />120 (Ingolstadt–Nürnberg)
+| [[München-Nürnberg-Express]]
+| [[München Hauptbahnhof|München]] (– Petershausen) – Pfaffenhofen (Ilm) – [[Ingolstadt Hauptbahnhof|Ingolstadt]] – [[Bahnhof Kinding (Altmühltal)|Kinding (Altmühltal)]] – [[Bahnhof Allersberg (Rothsee)|Allersberg (Rothsee)]] – [[Nürnberg Hauptbahnhof|Nürnberg]]
+| <small>[[Schnellfahrstrecke Nürnberg–Ingolstadt|Nürnberg–Ingolstadt]]<br />[[Bahnstrecke München–Treuchtlingen|München–Treuchtlingen]]</small>
+| 900
+| [[DB Regio Bayern]]
+| [[DB-Baureihe 102|Škoda 109 E3]] (102) + [[Škoda Wendezug-Garnitur]]<br />
+[[DB-Baureihe 101|BR 101]] + IC-Wagen<br />
+[[Bombardier Twindexx Vario#Oberbayern|Bombardier Twindexx Vario]] (445) ([[Mehrfachtraktion|Sandwich]]) + 2 oder 4 [[Doppelstockwagen|Doppelstock-Mittelwagen]]
+|}
+=== Linien 4, 40–49 (Süd) ===
+{| class="wikitable sortable" style="font-size:90%; text-align:center;"
+|+
+|- class="hintergrundfarbe5"
+! Linie
+! Taktfolge<br />(in Minuten)
+! Marke/Linienname
+! class="unsortable"| Laufweg
+! class="unsortable"| Befahrene Strecken in Bayern
+! [[Kursbuchstrecke|KBS]]
+! [[Eisenbahnverkehrsunternehmen|EVU]]
+! Fahrzeuge im Regelbetrieb
+|- id="RB 40"
+| {{SPNV Bayern|RB40}}
+| 60
+|
+| [[München Hauptbahnhof|München]] – [[Bahnhof Markt Schwaben|Markt Schwaben]] – [[Dorfen Bahnhof|Dorfen]] – [[Bahnhof Mühldorf (Oberbay)|Mühldorf]]
+| [[Bahnstrecke München–Simbach|<small>München–Simbach</small>]]
+| 940
+| [[DB RegioNetz Verkehrs GmbH]]
+[[Südostbayernbahn]]
+| [[DB-Baureihe 218|Baureihe 218]] / [[Bombardier Traxx]] P160 DE ME (245) + [[Liste von Doppelstockwagen der Deutschen Bahn|Doppelstockwagen]]
+
+[[DB-Baureihe 628|Baureihe 628]] (in Tagesrandlagen)
+
+[[Siemens Desiro Classic]] (642) (in Tagesrandlagen)
+|}
+=== Linien 8, 80–89 (Nord) ===
+{| class="wikitable sortable" style="font-size:90%; text-align:center;"
+|+
+|- class="hintergrundfarbe5"
+! Linie
+! Taktfolge<br />(in Minuten)
+! Marke/Linienname
+! class="unsortable"| Laufweg
+! class="unsortable"| Befahrene Strecken in Bayern
+! [[Kursbuchstrecke|KBS]]
+! [[Eisenbahnverkehrsunternehmen|EVU]]
+! Fahrzeuge im Regelbetrieb
+|- id="RE 8 (BW)"
+| {{SPNV Bayern|RE8 GA}}
+| 60
+|Franken-Enz
+| [[Würzburg Hauptbahnhof|Würzburg]] – [[Bahnhof Lauda|Lauda]] – [[Bahnhof Osterburken|Osterburken]] – [[Bad Friedrichshall Hauptbahnhof|Bad Friedrichshall]] – [[Heilbronn Hauptbahnhof|Heilbronn]] – [[Bahnhof Bietigheim-Bissingen|Bietigheim-Bissingen]] – [[Stuttgart Hauptbahnhof|Stuttgart]]
+| <small>[[Bahnstrecke Treuchtlingen–Würzburg|Treuchtlingen–Würzburg]]<br />[[Frankenbahn|Mosbach-Neckarelz–Würzburg-Heidingsfeld West]]</small>
+| 780
+| [[Arverio Baden-Württemberg]]
+| [[Stadler Flirt&nbsp;3]] (1428, 1430)
+[[Bombardier Talent 3]]
+(6442)
+
+[[Siemens Mireo]] (463)
+|}

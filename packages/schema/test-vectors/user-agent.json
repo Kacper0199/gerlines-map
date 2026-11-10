@@ -1,0 +1,45 @@
+{
+  "valid": [
+    {
+      "appName": "gerlines",
+      "version": "0.1.0",
+      "contact": "https://example.org/contact",
+      "expected": "gerlines/0.1.0 (+https://example.org/contact)"
+    },
+    {
+      "appName": "gerlines",
+      "version": "0.1.0",
+      "contact": "trains@example.org",
+      "expected": "gerlines/0.1.0 (+trains@example.org)"
+    },
+    {
+      "appName": "gerlines",
+      "version": "0.1.0",
+      "contact": "  trains@example.org \n",
+      "expected": "gerlines/0.1.0 (+trains@example.org)"
+    },
+    {
+      "appName": "gerlines",
+      "version": "1.0.0-rc.1+build.7",
+      "contact": "GerLines team <trains@example.org>",
+      "expected": "gerlines/1.0.0-rc.1+build.7 (+GerLines team <trains@example.org>)"
+    }
+  ],
+  "invalidAppName": ["", "ger lines", "ger/lines", "gerlines\r\n", "gérlines"],
+  "invalidVersion": ["", "1.0 beta", "1/0", "1.0\u0085"],
+  "invalidContact": [
+    "",
+    "   ",
+    "a(b)c",
+    "line\r\nX-Injected: 1",
+    "back\\slash",
+    "tab\tinside@example.org",
+    "next\u0085line@example.org",
+    "delete\u007f@example.org",
+    "café@example.org",
+    "züge@example.org",
+    "trains@例え.jp",
+    " trains@example.org",
+    "trains@example.org\u0085"
+  ]
+}

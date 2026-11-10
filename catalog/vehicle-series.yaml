@@ -1,0 +1,2016 @@
+# Vehicle series, priority list of R01 rolling-stock section 3. Facts come from Wikidata (CC0)
+# for wikidata_qid; where Wikidata has no single value, from the infobox of the German
+# Wikipedia article in dewiki_title (CC BY-SA 4.0, revisions in the sources file).
+# Operators are the catalogue operators whose Wikidata item is an operator (P137) of the series.
+# unit_kind, traction and double_deck come from the item's Wikidata classes (P31, P279 and their
+# P279 ancestors, P930), checked by `gerlines-catalog series-classes`; family from R01 section 3
+# (source gerlines); cars_min and cars_max only where the German article states them. Every empty
+# field names its reason in missing.
+- series_id: db-401
+  name: ICE 1
+  br: '401'
+  priority: P1
+  manufacturers:
+  - ABB Group
+  - AEG
+  - Henschel & Sohn
+  - KraussMaffei
+  - Lokomotiv- und Waggonbaufabrik Krupp
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 280
+  wikidata_qid: Q702311
+  commons_category: DBAG Class 401
+  dewiki_title: ICE 1
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-402
+  name: ICE 2
+  br: '402'
+  priority: P2
+  manufacturers:
+  - Siemens
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 280
+  unit_length_m: 205.0
+  wikidata_qid: Q694679
+  commons_category: DBAG Class 402
+  dewiki_title: ICE 2
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+- series_id: db-403
+  name: ICE 3
+  br: '403'
+  priority: P1
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 330
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  wikidata_qid: Q1151795
+  commons_category: DBAG Class 403
+  dewiki_title: DB-Baureihe 403 (1997)
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-406
+  name: ICE 3M
+  br: '406'
+  priority: P3
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 330
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  - nederlandse-spoorwegen
+  wikidata_qid: Q1151799
+  commons_category: DBAG Class 406
+  dewiki_title: DB-Baureihe 406
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-407
+  name: Velaro D
+  br: '407'
+  priority: P2
+  family: Velaro
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  cars_min: 8
+  cars_max: 8
+  max_speed_kmh: 320
+  unit_length_m: 201.0
+  wikidata_qid: Q3011142
+  commons_category: DBAG Class 407
+  dewiki_title: DB-Baureihe 407
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: db-408
+  name: ICE 3neo
+  br: '408'
+  priority: P1
+  family: Velaro
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  cars_min: 8
+  cars_max: 8
+  max_speed_kmh: 320
+  unit_length_m: 201.0
+  wikidata_qid: Q112306195
+  commons_category: DBAG Class 408
+  dewiki_title: DB-Baureihe 408
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: db-411
+  name: ICE T
+  br: '411'
+  priority: P2
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 230
+  unit_length_m: 184.4
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  - oesterreichische-bundesbahnen
+  wikidata_qid: Q115612330
+  commons_category: DBAG Class 411
+  dewiki_title: ICE T
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+- series_id: db-415
+  name: ICE T five-car
+  br: '415'
+  priority: P2
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 230
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  wikidata_qid: Q137972762
+  commons_category: DBAG Class 415
+  dewiki_title: ICE T
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-412
+  name: ICE 4
+  br: '412'
+  priority: P1
+  manufacturers:
+  - ALSTOM Transportation Germany
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  cars_min: 7
+  cars_max: 13
+  wikidata_qid: Q324870
+  commons_category: DBAG Class 412
+  dewiki_title: ICE 4
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-ice-l
+  name: ICE L
+  priority: P2
+  family: Talgo 230
+  manufacturers:
+  - Talgo
+  unit_kind: trainset
+  traction: electric
+  max_speed_kmh: 230
+  unit_length_m: 256.0
+  wikidata_qid: Q62056771
+  commons_category: ICE L
+  dewiki_title: ICE L
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: db-intercity-2
+  name: Intercity 2
+  priority: P1
+  family: Twindexx
+  double_deck: true
+  source: gerlines
+  field_sources:
+    double_deck: wikipedia-de-series
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: Q22340873 is a disambiguation page, no item for the series itself
+- series_id: db-4110
+  name: Intercity 2 KISS
+  br: '4110'
+  priority: P2
+  family: Stadler KISS
+  manufacturers:
+  - Stadler Rail
+  unit_kind: emu
+  traction: electric
+  double_deck: true
+  max_speed_kmh: 200
+  unit_length_m: 100.0
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  wikidata_qid: Q116264758
+  commons_category: Stadler KISS operated by DB Fernverkehr
+  dewiki_title: Intercity 2 (Deutsche Bahn)
+  source: wikidata
+  field_sources:
+    double_deck: wikidata
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+- series_id: db-101
+  name: DB Class 101
+  br: '101'
+  priority: P2
+  manufacturers:
+  - Adtranz
+  unit_kind: locomotive
+  traction: electric
+  unit_length_m: 19.1
+  wikidata_qid: Q697749
+  commons_category: DBAG Class 101
+  dewiki_title: DB-Baureihe 101
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+- series_id: db-146
+  name: DB Class 146
+  br: '146'
+  priority: P1
+  manufacturers:
+  - Adtranz
+  unit_kind: locomotive
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  - db-regio-ag-suedost
+  wikidata_qid: Q21680470
+  commons_category: DBAG Class 146
+  source: wikidata
+  field_sources:
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel-electric locomotive, diesel locomotive);
+      electric (electric locomotive)'
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-146-5
+  name: DB Class 146.5
+  br: '146.5'
+  priority: P1
+  unit_kind: locomotive
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  wikidata_qid: Q99194062
+  commons_category: DBAG Class 146.5
+  source: wikidata
+  field_sources:
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel-electric locomotive, diesel locomotive);
+      electric (electric locomotive)'
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-147
+  name: DB Class 147
+  br: '147'
+  priority: P1
+  manufacturers:
+  - ALSTOM Transportation Germany
+  unit_kind: locomotive
+  traction: electric
+  unit_length_m: 18.9
+  operators:
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  wikidata_qid: Q31838630
+  commons_category: DBAG Class 147.5
+  dewiki_title: Bombardier Traxx
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+- series_id: db-182
+  name: DB Class 182
+  br: '182'
+  priority: P2
+  source: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    family: no published source names a product family for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-218
+  name: DB Class 218
+  br: '218'
+  priority: P3
+  manufacturers:
+  - Henschel & Sohn
+  - KraussMaffei
+  - Lokomotiv- und Waggonbaufabrik Krupp
+  - Maschinenbau Kiel
+  unit_kind: locomotive
+  traction: diesel
+  unit_length_m: 16.4
+  wikidata_qid: Q564855
+  commons_category: DB Class 218
+  dewiki_title: DB-Baureihe 218
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+- series_id: db-245
+  name: DB Class 245
+  br: '245'
+  priority: P2
+  source: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    family: no published source names a product family for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: Q1151787 is a disambiguation page, no item for the series itself
+- series_id: db-111
+  name: DB Class 111
+  br: '111'
+  priority: P3
+  manufacturers:
+  - AEG
+  - Brown, Boveri & Cie
+  - Henschel & Sohn
+  - KraussMaffei
+  - Lokomotiv- und Waggonbaufabrik Krupp
+  - Siemens
+  unit_kind: locomotive
+  traction: electric
+  max_speed_kmh: 160
+  wikidata_qid: Q558185
+  commons_category: DB Class 111
+  dewiki_title: DB-Baureihe 111
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-143
+  name: DB Class 143
+  br: '143'
+  priority: P3
+  source: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    family: no published source names a product family for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: siemens-vectron
+  name: Siemens Vectron
+  br: '193'
+  priority: P2
+  family: Siemens Vectron
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: locomotive
+  traction: electric
+  operators:
+  - cd
+  - ceske-drahy
+  - daenische-staatsbahnen
+  - oesterreichische-bundesbahnen
+  - zssk
+  wikidata_qid: Q1039633
+  commons_category: Siemens Vectron
+  dewiki_title: Siemens Vectron
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: obb-railjet
+  name: Railjet
+  priority: P2
+  family: Railjet
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: Q125398911 is a disambiguation page, no item for the series itself
+- series_id: obb-railjet-2
+  name: Railjet 2
+  priority: P2
+  family: Railjet
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: trainset
+  max_speed_kmh: 200
+  operators:
+  - oesterreichische-bundesbahnen
+  wikidata_qid: Q55692047
+  commons_category: ÖBB Railjet 2
+  dewiki_title: Railjet 2. Generation
+  source: wikidata
+  field_sources:
+    family: gerlines
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    traction: no Wikidata class of the item states its traction
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: eurostar-e320
+  name: Eurostar e320
+  priority: P3
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  unit_length_m: 398.92
+  wikidata_qid: Q992877
+  commons_category: British Rail Class 374
+  dewiki_title: Eurostar 320
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+    unit_length_m: wikipedia-de-series
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+- series_id: sncf-tgv-duplex
+  name: TGV Duplex
+  priority: P3
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  unit_length_m: 202.0
+  operators:
+  - sncf
+  wikidata_qid: Q727577
+  commons_category: TGV 2N2
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+- series_id: sbb-rabe-501
+  name: SBB RABe 501 Giruno
+  br: RABe 501
+  priority: P3
+  manufacturers:
+  - Stadler Rail
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 250
+  unit_length_m: 202.0
+  operators:
+  - sbb
+  - westbahn
+  wikidata_qid: Q16798908
+  commons_category: Stadler SMILE
+  dewiki_title: SBB RABe 501
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+- series_id: db-442
+  name: Talent 2
+  br: '442'
+  priority: P1
+  family: Bombardier Talent 2
+  manufacturers:
+  - Bombardier
+  unit_kind: emu
+  traction: electric
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q124486382
+  commons_category: DBAG Class 442
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: bombardier-talent-2
+  name: Bombardier Talent 2
+  priority: P1
+  family: Bombardier Talent 2
+  manufacturers:
+  - Bombardier
+  unit_kind: emu
+  traction: electric
+  cars_min: 2
+  cars_max: 6
+  max_speed_kmh: 160
+  operators:
+  - cantus-verkehrsgesellschaft
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  - national-express
+  - suedwestdeutsche-verkehrs-ag
+  wikidata_qid: Q729191
+  commons_category: Bombardier Talent 2
+  dewiki_title: Bombardier Talent 2
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    max_speed_kmh: wikipedia-de-series
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: alstom-coradia-continental
+  name: Alstom Coradia Continental
+  br: '440'
+  priority: P1
+  family: Alstom Coradia Continental
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  operators:
+  - agilis
+  - agilis-schnellzug
+  - db-nahverkehr
+  - db-regio-ag
+  - hessische-landesbahn-gmbh
+  wikidata_qid: Q933795
+  commons_category: DBAG Class 440
+  dewiki_title: Alstom Coradia Continental
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-1440
+  name: DB Class 1440
+  br: '1440'
+  priority: P1
+  family: Alstom Coradia Continental
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - enno
+  wikidata_qid: Q98149859
+  commons_category: DBAG Class 1440
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: stadler-flirt
+  name: Stadler FLIRT
+  br: 427, 428, 429
+  priority: P1
+  family: Stadler FLIRT
+  manufacturers:
+  - Stadler Rail
+  operators:
+  - cantus-verkehrsgesellschaft
+  - db-nahverkehr
+  - db-regio-ag
+  - nederlandse-spoorwegen
+  - sbb
+  - trenitalia
+  wikidata_qid: Q668935
+  commons_category: Stadler FLIRT
+  dewiki_title: Stadler Flirt
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: stadler-flirt-3
+  name: Stadler FLIRT 3
+  br: 1428, 1429, 3429
+  priority: P1
+  family: Stadler FLIRT
+  operators:
+  - arverio-bayern-gmbh
+  - nederlandse-spoorwegen
+  - pkp-intercity
+  - suewex
+  wikidata_qid: Q87714348
+  commons_category: Stadler Flirt 3
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: stadler-flirt-3-xl
+  name: Stadler FLIRT 3 XL
+  priority: P2
+  family: Stadler FLIRT
+  manufacturers:
+  - Stadler Rail
+  operators:
+  - arverio-baden-wuerttemberg-gmbh
+  - db-nahverkehr
+  - db-regio-ag
+  - s-bahn-hannover
+  - vias-gmbh
+  - vias-rail-gmbh
+  wikidata_qid: Q87714334
+  commons_category: Stadler Flirt 3XL
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: siemens-desiro-hc
+  name: Siemens Desiro HC
+  br: '462'
+  priority: P1
+  family: Siemens Desiro HC
+  manufacturers:
+  - Siemens Mobility
+  cars_min: 4
+  cars_max: 6
+  operators:
+  - arverio-bayern-gmbh
+  - db-nahverkehr
+  - db-regio-ag
+  - national-express
+  - odeg-ostdeutsche-eisenbahn-gmbh
+  - ostdeutsche-eisenbahn-gmbh
+  wikidata_qid: Q55517325
+  commons_category: Siemens Desiro HC
+  dewiki_title: Siemens Desiro HC
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+  missing:
+    double_deck: Wikidata classes it as a bilevel rail car, the German article (revision 271144582) describes
+      single and double deck cars in one unit
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: siemens-mireo
+  name: Siemens Mireo
+  priority: P1
+  family: Siemens Mireo
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  cars_min: 2
+  cars_max: 4
+  operators:
+  - agilis
+  - agilis-schnellzug
+  - arverio-bayern-gmbh
+  - db-nahverkehr
+  - db-regio-ag
+  - die-laenderbahn-gmbh
+  - mittelrheinbahn-trans-regio
+  wikidata_qid: Q26836339
+  commons_category: Siemens Mireo
+  dewiki_title: Siemens Mireo
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-563
+  name: DB Class 563
+  br: '563'
+  priority: P2
+  family: Siemens Mireo
+  manufacturers: [Siemens Mobility]
+  cars_min: 2
+  cars_max: 2
+  unit_length_m: 47.0
+  dewiki_title: Siemens Mireo
+  source: wikipedia-de-spnv-bb
+  field_sources:
+    family: gerlines
+    unit_length_m: wikipedia-de-mireo
+  missing:
+    wikidata_qid: Wikidata was not searched for class 563 (the class covers the Mireo Plus B and Plus H)
+    traction: class 563 covers the battery Mireo Plus B and the hydrogen Mireo Plus H
+    unit_kind: no Wikidata item for this series
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no source was read for the speed of this series
+- series_id: db-463
+  name: DB Class 463
+  br: '463'
+  priority: P1
+  family: Siemens Mireo
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  wikidata_qid: Q124486463
+  commons_category: DBAG Class 463
+  dewiki_title: Siemens Mireo
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-445
+  name: DB Class 445
+  br: '445'
+  priority: P1
+  family: Bombardier Twindexx Vario
+  manufacturers:
+  - Bombardier
+  traction: electric
+  double_deck: true
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  wikidata_qid: Q112727450
+  commons_category: DBAG Class 445 (Twindexx)
+  source: wikidata
+  field_sources:
+    double_deck: wikidata
+    family: gerlines
+    traction: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-446
+  name: DB Class 446
+  br: '446'
+  priority: P1
+  family: Bombardier Twindexx Vario
+  manufacturers:
+  - Bombardier
+  traction: electric
+  double_deck: true
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q112727366
+  commons_category: DBAG Class 446
+  source: wikidata
+  field_sources:
+    double_deck: wikidata
+    family: gerlines
+    traction: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: bombardier-twindexx-vario
+  name: Bombardier Twindexx Vario
+  priority: P1
+  family: Bombardier Twindexx Vario
+  manufacturers:
+  - Bombardier
+  double_deck: true
+  operators:
+  - sbb
+  wikidata_qid: Q687696
+  commons_category: Bombardier Twindexx
+  dewiki_title: Bombardier Twindexx Vario
+  source: wikidata
+  field_sources:
+    double_deck: wikidata
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: doppelstockwagen
+  name: Double-deck coach
+  priority: P1
+  family: Doppelstockwagen
+  double_deck: true
+  wikidata_qid: Q1243337
+  commons_category: Double-decker railway coaches
+  dewiki_title: Doppelstockwagen
+  source: wikidata
+  field_sources:
+    double_deck: wikidata
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-425
+  name: DB Class 425
+  br: '425'
+  priority: P1
+  family: ET 425
+  manufacturers:
+  - ALSTOM Transportation Germany
+  - Adtranz
+  - Deutsche Waggonbau
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  cars_min: 4
+  cars_max: 4
+  max_speed_kmh: 160
+  unit_length_m: 67.5
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-suedost
+  wikidata_qid: Q540147
+  commons_category: DBAG Class 425
+  dewiki_title: DB-Baureihe 425 (1999)
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: db-426
+  name: DB Class 426
+  br: '426'
+  priority: P1
+  family: ET 425
+  unit_kind: emu
+  traction: electric
+  cars_min: 2
+  cars_max: 2
+  wikidata_qid: Q16724386
+  commons_category: DBAG Class 426
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-423
+  name: DB Class 423
+  br: '423'
+  priority: P1
+  manufacturers:
+  - Adtranz
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 140
+  unit_length_m: 67.4
+  operators:
+  - db-regio-ag-s-bahn-muenchen
+  wikidata_qid: Q256736
+  commons_category: DBAG Class 423
+  dewiki_title: DB-Baureihe 423
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-422
+  name: DB Class 422
+  br: '422'
+  priority: P1
+  manufacturers:
+  - ALSTOM Transportation Germany
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 140
+  unit_length_m: 69.43
+  wikidata_qid: Q567348
+  commons_category: DBAG Class 422
+  dewiki_title: DB-Baureihe 422
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+    unit_length_m: wikipedia-de-series
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-430
+  name: DB Class 430
+  br: '430'
+  priority: P1
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 140
+  unit_length_m: 68.3
+  wikidata_qid: Q326881
+  commons_category: DBAG Class 430
+  dewiki_title: DB-Baureihe 430
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+    unit_length_m: wikipedia-de-series
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-420
+  name: DB Class 420
+  br: '420'
+  priority: P2
+  manufacturers:
+  - DÜWAG
+  - MAN SE
+  - Messerschmitt-Bölkow-Blohm
+  - Orenstein & Koppel
+  - Waggon Union
+  - Waggon- und Maschinenbau GmbH Donauwörth
+  - Waggonfabrik Josef Rathgeber
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 120
+  unit_length_m: 67.4
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q834170
+  commons_category: DB Class 420
+  dewiki_title: DB-Baureihe 420
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-424
+  name: DB Class 424
+  br: '424'
+  priority: P2
+  manufacturers:
+  - Adtranz
+  - Bombardier
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 140
+  unit_length_m: 67.5
+  operators:
+  - db-regio-ag-s-bahn-muenchen
+  wikidata_qid: Q3721997
+  commons_category: DBAG Class 424
+  dewiki_title: DB-Baureihe 424
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+- series_id: db-480
+  name: DB Class 480
+  br: '480'
+  priority: P1
+  source: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    family: grouped with the other S-Bahn trains, not with a product family
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-481
+  name: DB Class 481
+  br: '481'
+  priority: P1
+  manufacturers:
+  - AEG
+  - ALSTOM Transportation Germany
+  - Adtranz
+  - Deutsche Waggonbau
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 100
+  unit_length_m: 36.8
+  operators:
+  - s-bahn-berlin-gmbh
+  wikidata_qid: Q466646
+  commons_category: Berlin S-Bahn train type 481
+  dewiki_title: DB-Baureihe 481
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-483
+  name: DB Class 483
+  br: '483'
+  priority: P1
+  manufacturers:
+  - Siemens Mobility
+  - Stadler Rail
+  unit_kind: emu
+  traction: electric
+  operators:
+  - s-bahn-berlin-gmbh
+  wikidata_qid: Q115146193
+  commons_category: DBAG Class 483
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-483-484
+  name: DB Class 483 and 484
+  br: 483, 484
+  priority: P1
+  manufacturers:
+  - Siemens
+  - Stadler Rail
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 100
+  operators:
+  - s-bahn-berlin-gmbh
+  wikidata_qid: Q22344403
+  commons_category: Berlin S-Bahn train type 483/484
+  dewiki_title: DB-Baureihe 483/484
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-474
+  name: DB Class 474
+  br: '474'
+  priority: P1
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  cars_min: 3
+  cars_max: 3
+  max_speed_kmh: 100
+  unit_length_m: 65.56
+  operators:
+  - s-bahn-hamburg
+  wikidata_qid: Q547773
+  commons_category: DBAG Class 474
+  dewiki_title: DB-Baureihe 474
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: db-490
+  name: DB Class 490
+  br: '490'
+  priority: P1
+  manufacturers:
+  - ALSTOM Transportation Germany
+  unit_kind: emu
+  traction: electric
+  max_speed_kmh: 140
+  unit_length_m: 66.0
+  operators:
+  - s-bahn-hamburg
+  wikidata_qid: Q46088756
+  commons_category: DBAG Class 490
+  dewiki_title: DB-Baureihe 490
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: grouped with the other S-Bahn trains, not with a product family
+- series_id: alstom-coradia-lint
+  name: Alstom Coradia LINT
+  priority: P1
+  family: Alstom Coradia LINT
+  manufacturers:
+  - Linke-Hofmann
+  unit_kind: dmu
+  wikidata_qid: Q351337
+  commons_category: Alstom Coradia LINT
+  dewiki_title: Alstom Coradia LINT
+  source: wikidata
+  field_sources:
+    family: gerlines
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel multiple unit); hydrogen (hydrogen
+      train)'
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-648
+  name: DB Class 648
+  br: '648'
+  priority: P1
+  family: Alstom Coradia LINT
+  manufacturers:
+  - Alstom
+  unit_kind: dmu
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  wikidata_qid: Q5204384
+  commons_category: DBAG Class 648
+  dewiki_title: Alstom Coradia LINT
+  source: wikidata
+  field_sources:
+    family: gerlines
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel multiple unit); hydrogen (hydrogen
+      train)'
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-640
+  name: DB Class 640
+  br: '640'
+  priority: P2
+  family: Alstom Coradia LINT
+  manufacturers:
+  - Alstom
+  unit_kind: dmu
+  traction: diesel
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q17189234
+  commons_category: DBAG Class 640
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-622
+  name: DB Class 622
+  br: '622'
+  priority: P2
+  family: Alstom Coradia LINT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-623
+  name: DB Class 623
+  br: '623'
+  priority: P2
+  family: Alstom Coradia LINT
+  manufacturers:
+  - Alstom
+  unit_kind: dmu
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  wikidata_qid: Q85516624
+  commons_category: DBAG Class 623
+  source: wikidata
+  field_sources:
+    family: gerlines
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel multiple unit); hydrogen (hydrogen
+      train)'
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-620
+  name: DB Class 620
+  br: '620'
+  priority: P2
+  family: Alstom Coradia LINT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-1648
+  name: DB Class 1648
+  br: '1648'
+  priority: P2
+  family: Alstom Coradia LINT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: alstom-coradia-ilint
+  name: Alstom Coradia iLint
+  br: '654'
+  priority: P3
+  family: Alstom Coradia iLint
+  manufacturers:
+  - Alstom
+  unit_kind: dmu
+  wikidata_qid: Q54034265
+  commons_category: Alstom Coradia iLint
+  source: wikidata
+  field_sources:
+    family: gerlines
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: 'Wikidata classes disagree on the traction: diesel (diesel multiple unit); hydrogen (hydrogen
+      train)'
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: bombardier-talent
+  name: Bombardier Talent
+  priority: P2
+  family: Bombardier Talent
+  manufacturers:
+  - ALSTOM Transportation Germany
+  - Waggonfabrik Talbot
+  cars_min: 2
+  cars_max: 4
+  operators:
+  - eurobahn
+  - mav
+  - neb-niederbarnimer-eisenbahn
+  - nordwestbahn
+  - oesterreichische-bundesbahnen
+  wikidata_qid: Q267639
+  commons_category: Bombardier Talent
+  dewiki_title: Bombardier Talent
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: db-643
+  name: DB Class 643
+  br: '643'
+  priority: P2
+  family: Bombardier Talent
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q9167419
+  commons_category: DBAG Class 643
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-644
+  name: DB Class 644
+  br: '644'
+  priority: P2
+  family: Bombardier Talent
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q17189238
+  commons_category: DBAG Class 644
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-642
+  name: DB Class 642
+  br: '642'
+  priority: P2
+  family: Siemens Desiro Classic
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: dmu
+  traction: diesel
+  max_speed_kmh: 120
+  unit_length_m: 41.7
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - db-regio-ag-nordost
+  wikidata_qid: Q17189236
+  commons_category: DBAG Class 642
+  dewiki_title: DB-Baureihe 642
+  source: wikidata
+  field_sources:
+    family: gerlines
+    max_speed_kmh: wikipedia-de-series
+    traction: wikidata
+    unit_kind: wikidata
+    unit_length_m: wikipedia-de-series
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: siemens-desiro-classic
+  name: Siemens Desiro Classic
+  priority: P2
+  family: Siemens Desiro Classic
+  manufacturers:
+  - Siemens Mobility
+  cars_min: 2
+  cars_max: 5
+  max_speed_kmh: 120
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  - hessische-landesbahn-gmbh
+  - odeg-ostdeutsche-eisenbahn-gmbh
+  - ostdeutsche-eisenbahn-gmbh
+  - trilex
+  - trilex-die-laenderbahn-gmbh-dlb
+  - trilex-express-die-laenderbahn-gmbh-dlb
+  wikidata_qid: Q11217544
+  commons_category: Siemens Desiro Classic
+  dewiki_title: Siemens Desiro Classic
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    family: gerlines
+  missing:
+    double_deck: no Wikidata class of the item says double deck or single deck
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: stadler-regio-shuttle-rs1
+  name: Stadler Regio-Shuttle RS1
+  priority: P2
+  family: Stadler Regio-Shuttle RS1
+  manufacturers:
+  - Stadler Rail
+  unit_kind: dmu
+  traction: diesel
+  max_speed_kmh: 120
+  unit_length_m: 25.5
+  operators:
+  - cd
+  - ceske-drahy
+  - city-bahn-chemnitz
+  - die-laenderbahn-gmbh
+  - erfurter-bahn
+  - erfurter-bahn-express
+  - hanseatische-eisenbahn-gmbh
+  - ilztalbahn
+  - neb-niederbarnimer-eisenbahn
+  - odeg-ostdeutsche-eisenbahn-gmbh
+  - ostdeutsche-eisenbahn-gmbh
+  - pressnitztalbahn
+  - rurtalbahn
+  - sued-thueringen-bahn
+  - sued-thueringen-bahn-express
+  wikidata_qid: Q1188054
+  commons_category: Stadler Regio-Shuttle RS1
+  dewiki_title: Stadler Regio-Shuttle RS 1
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+    unit_length_m: wikipedia-de-series
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+- series_id: db-650
+  name: DB Class 650
+  br: '650'
+  priority: P2
+  family: Stadler Regio-Shuttle RS1
+  unit_kind: dmu
+  traction: diesel
+  operators:
+  - db-nahverkehr
+  - db-regio-ag
+  wikidata_qid: Q13436877
+  commons_category: DBAG Class 650
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and no German article was read for this series
+    unit_length_m: Wikidata has no single length and no German article was read for this series
+- series_id: db-612
+  name: DB Class 612
+  br: '612'
+  priority: P2
+  family: RegioSwinger
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: Q860122 is a disambiguation page, no item for the series itself
+- series_id: db-628
+  name: DB Class 628
+  br: '628'
+  priority: P3
+  manufacturers:
+  - MAN SE
+  unit_kind: dmu
+  traction: diesel
+  wikidata_qid: Q452325
+  commons_category: DB Class 628
+  dewiki_title: DB-Baureihe 628
+  source: wikidata
+  field_sources:
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    family: no published source names a product family for this series
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: alstom-coradia-stream
+  name: Alstom Coradia Stream
+  priority: P2
+  family: Alstom Coradia Stream
+  manufacturers:
+  - Alstom
+  unit_kind: emu
+  traction: electric
+  operators:
+  - daenische-staatsbahnen
+  - nederlandse-spoorwegen
+  - oesterreichische-bundesbahnen
+  - trenitalia
+  wikidata_qid: Q42062659
+  commons_category: Alstom Coradia Stream
+  dewiki_title: Alstom Coradia Stream
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: siemens-desiro-ml
+  name: Siemens Desiro ML
+  priority: P2
+  family: Siemens Desiro ML
+  manufacturers:
+  - Siemens Mobility
+  unit_kind: emu
+  traction: electric
+  operators:
+  - mittelrheinbahn-trans-regio
+  - odeg-ostdeutsche-eisenbahn-gmbh
+  - oesterreichische-bundesbahnen
+  - ostdeutsche-eisenbahn-gmbh
+  - sncb
+  wikidata_qid: Q443874
+  commons_category: Siemens Desiro Mainline
+  dewiki_title: Siemens Desiro
+  source: wikidata
+  field_sources:
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: stadler-kiss
+  name: Stadler KISS
+  priority: P2
+  family: Stadler KISS
+  manufacturers:
+  - Stadler Rail
+  unit_kind: emu
+  traction: electric
+  double_deck: true
+  cars_min: 3
+  cars_max: 7
+  operators:
+  - cfl
+  - db-fernverkehr-ag
+  - db-fernverkehr-codesharing
+  - db-nahverkehr
+  - db-regio-ag
+  - odeg-ostdeutsche-eisenbahn-gmbh
+  - oesterreichische-bundesbahnen
+  - ostdeutsche-eisenbahn-gmbh
+  - sbb
+  - westbahn
+  - westfalenbahn
+  - zssk
+  wikidata_qid: Q672992
+  commons_category: Stadler KISS
+  dewiki_title: Stadler KISS
+  source: wikidata
+  field_sources:
+    cars_max: wikipedia-de-series
+    cars_min: wikipedia-de-series
+    double_deck: wikidata
+    family: gerlines
+    traction: wikidata
+    unit_kind: wikidata
+  missing:
+    max_speed_kmh: Wikidata has no single value in km/h and the article infobox states several or none
+    unit_length_m: Wikidata has no single length and the article infobox states several or none
+- series_id: avg-gt8-100d-2s-m
+  name: GT8-100D/2S-M
+  priority: P3
+  family: GT8-100
+  manufacturers:
+  - DÜWAG
+  max_speed_kmh: 100
+  unit_length_m: 36.57
+  operators:
+  - albtal-verkehrs-gesellschaft
+  wikidata_qid: Q16831504
+  commons_category: GT8-100D/2S-M
+  dewiki_title: GT8-100D/2S-M
+  source: wikidata
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    cars_min: Wikidata has no property for cars per unit and the German article lead read on 2026-10-25
+      states no number
+    double_deck: no Wikidata class of the item says double deck or single deck
+    traction: no Wikidata class of the item states its traction
+    unit_kind: no Wikidata class of the item states its unit kind
+- series_id: db-428
+  name: DB Class 428
+  br: '428'
+  priority: P1
+  family: Stadler FLIRT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-429
+  name: DB Class 429
+  br: '429'
+  priority: P1
+  family: Stadler FLIRT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-1428
+  name: DB Class 1428
+  br: '1428'
+  priority: P1
+  family: Stadler FLIRT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-1429
+  name: DB Class 1429
+  br: '1429'
+  priority: P1
+  family: Stadler FLIRT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25
+- series_id: db-3429
+  name: DB Class 3429
+  br: '3429'
+  priority: P2
+  family: Stadler FLIRT
+  source: gerlines
+  field_sources:
+    family: gerlines
+  missing:
+    cars_max: Wikidata has no property for cars per unit and no German article was read
+    cars_min: Wikidata has no property for cars per unit and no German article was read
+    double_deck: no Wikidata item for this series
+    max_speed_kmh: no Wikidata item and no article read for this series
+    traction: no Wikidata item for this series
+    unit_kind: no Wikidata item for this series
+    unit_length_m: no Wikidata item and no article read for this series
+    wikidata_qid: no Wikidata item for this series found by German article sitelink or by search on 2026-10-25

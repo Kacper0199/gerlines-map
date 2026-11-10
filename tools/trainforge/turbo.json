@@ -1,0 +1,21 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/catalog/vehicles.yaml",
+        "$TURBO_ROOT$/catalog/liveries.yaml"
+      ]
+    },
+    "build": {
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/catalog/vehicles.yaml",
+        "$TURBO_ROOT$/catalog/liveries.yaml"
+      ],
+      "outputs": ["dist/**"]
+    }
+  }
+}

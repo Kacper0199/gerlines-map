@@ -1,0 +1,37 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "ui": "stream",
+  "tasks": {
+    "transit": {
+      "dependsOn": ["^transit"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", "!**/*.test.ts", "!**/*.test.tsx", "!README.md"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {
+      "dependsOn": ["//#lint:root"],
+      "inputs": ["$TURBO_DEFAULT$", "$TURBO_ROOT$/biome.json"]
+    },
+    "//#lint:root": {
+      "inputs": [
+        "$TURBO_ROOT$/package.json",
+        "$TURBO_ROOT$/turbo.json",
+        "$TURBO_ROOT$/biome.json",
+        "$TURBO_ROOT$/.secretlintrc.json",
+        "$TURBO_ROOT$/.gitleaks.toml",
+        "$TURBO_ROOT$/.vscode/**",
+        "$TURBO_ROOT$/scripts/**"
+      ]
+    },
+    "typecheck": {
+      "dependsOn": ["transit"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md"]
+    },
+    "test": {
+      "dependsOn": ["transit"],
+      "inputs": ["$TURBO_DEFAULT$", "!README.md"]
+    }
+  }
+}

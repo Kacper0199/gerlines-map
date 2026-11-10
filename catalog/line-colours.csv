@@ -1,0 +1,821 @@
+line_colour_id,upstream_operator,line_name,delfi_agency_key,delfi_agency_name,operator_id,background_hex,text_hex,border_hex,shape,line_wikidata_qid,source
+agilis-rb-15-ag-rb15,agilis,RB 15,10838,agilis,agilis,#24b27d,#ffffff,,rectangle,Q130542089,traewelling-line-colors
+agilis-rb-17-ag-rb17,agilis,RB 17,10838,agilis,agilis,#90bf26,#ffffff,,rectangle,Q130542097,traewelling-line-colors
+agilis-rb-18-ag-rb18,agilis,RB 18,10838,agilis,agilis,#ff9999,#ffffff,,rectangle,Q104149638,traewelling-line-colors
+agilis-rb-21-ag-rb21,agilis,RB 21,10838,agilis,agilis,#e5a05c,#ffffff,,rectangle,Q130542098,traewelling-line-colors
+agilis-rb-22-ag-rb22,agilis,RB 22,10838,agilis,agilis,#90bf26,#ffffff,,rectangle,Q115773398,traewelling-line-colors
+agilis-rb-24-ag-rb24,agilis,RB 24,10838,agilis,agilis,#00ace5,#ffffff,,rectangle,Q130542099,traewelling-line-colors
+agilis-rb-26-ag-rb26,agilis,RB 26,10838,agilis,agilis,#6cc3d9,#ffffff,,rectangle,Q130542100,traewelling-line-colors
+agilis-rb-34-ag-rb34,agilis,RB 34,10838,agilis,agilis,#bf73bf,#ffffff,,rectangle,Q130542101,traewelling-line-colors
+agilis-rb-51-ag-rb51,agilis,RB 51,10838,agilis,agilis,#bf73bf,#ffffff,,rectangle,Q130542102,traewelling-line-colors
+agilis-rb-95-ag-rb95,agilis,RB 95,10838,agilis,agilis,#ff6600,#ffffff,,rectangle,Q130542103,traewelling-line-colors
+agilis-rb-96-ag-rb96,agilis,RB 96,10838,agilis,agilis,#ff6600,#ffffff,,rectangle,Q130542104,traewelling-line-colors
+agilis-rb-97-ag-rb97,agilis,RB 97,10838,agilis,agilis,#90bf26,#ffffff,,rectangle,Q130542106,traewelling-line-colors
+agilis-rb-98-ag-rb98,agilis,RB 98,10838,agilis,agilis,#24b27d,#ffffff,,rectangle,Q130542107,traewelling-line-colors
+agilis-rb-99-ag-rb99,agilis,RB 99,10838,agilis,agilis,#ffb200,#ffffff,,rectangle,Q130542108,traewelling-line-colors
+agilis-re-18-ag-re18,agilis,RE 18,10838,agilis,agilis,#006428,#ffffff,,rectangle,Q130542152,traewelling-line-colors
+agilis-re-22,agilis,RE 22,10940,agilis-Schnellzug,agilis-schnellzug,#ff6600,#ffffff,,rectangle,Q108179529,traewelling-line-colors
+agilis-re-50,agilis,RE 50,10940,agilis-Schnellzug,agilis-schnellzug,#804080,#ffffff,,rectangle,Q137420105,traewelling-line-colors
+alex-dlb-re-23-re23,alex-dlb,RE 23,10837,alex - Die Länderbahn GmbH DLB,alex-die-laenderbahn-gmbh-dlb,#ffffff,#006666,#006666,rectangle,Q130542294,traewelling-line-colors
+alex-dlb-re-25-re25,alex-dlb,RE 25,10837,alex - Die Länderbahn GmbH DLB,alex-die-laenderbahn-gmbh-dlb,#006666,#ffffff,,rectangle,Q130542295,traewelling-line-colors
+ams-s7-4-ams-7,ams,S7,11961,Abellio Rail Mitteldeutschland GmbH,abellio-rail-mitteldeutschland-gmbh,#0a579b,#ffffff,,pill,Q63217583,traewelling-line-colors
+arverio-bw-re-1-re-1,arverio-bw,RE 1,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#88c946,#ffffff,,rectangle,Q64504218,traewelling-line-colors
+arverio-bw-mex-13-mex-13,arverio-bw,MEX 13,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#00b9f2,#ffffff,,rectangle,Q130542338,traewelling-line-colors
+arverio-bw-mex-16-mex-16,arverio-bw,MEX 16,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#0073c0,#ffffff,,rectangle,Q130542339,traewelling-line-colors
+arverio-bw-re-8-re-8,arverio-bw,RE 8,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#b350a8,#ffffff,,rectangle,Q64512248,traewelling-line-colors
+arverio-bw-rb-8-rb-8,arverio-bw,RB 8,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#b350a8,#ffffff,,rectangle,Q131583892,traewelling-line-colors
+arverio-bw-re-90-re-90,arverio-bw,RE 90,15251,Arverio Baden-Württemberg GmbH,arverio-baden-wuerttemberg-gmbh,#fd3083,#ffffff,,rectangle,Q64512220,traewelling-line-colors
+arverio-by-rb86-rb-86,arverio-by,RB86,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#77aed2,#ffffff,,rectangle,Q130789113,traewelling-line-colors
+arverio-by-rb87-rb-87,arverio-by,RB87,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#77aed2,#ffffff,,rectangle,Q130789121,traewelling-line-colors
+arverio-by-rb89-rb-89,arverio-by,RB89,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#006da7,#ffffff,,rectangle,Q130789128,traewelling-line-colors
+arverio-by-rb92-rb-92,arverio-by,RB92,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#f28f8e,#ffffff,,rectangle,Q130789133,traewelling-line-colors
+arverio-by-re72-re-72,arverio-by,RE72,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#ef7c00,#ffffff,,rectangle,Q130789094,traewelling-line-colors
+arverio-by-re80-re-80,arverio-by,RE80,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#006da7,#ffffff,,rectangle,Q116761629,traewelling-line-colors
+arverio-by-re89-re-89,arverio-by,RE89,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#006da7,#ffffff,,rectangle,Q130789100,traewelling-line-colors
+arverio-by-re9-re-9,arverio-by,RE9,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#006da7,#ffffff,,rectangle,Q130789102,traewelling-line-colors
+arverio-by-re96-re-96,arverio-by,RE96,15250,Arverio Bayern GmbH,arverio-bayern-gmbh,#f9b000,#ffffff,,rectangle,Q130789109,traewelling-line-colors
+bayerische-zugspitzbahn-rb-64-bzb-rb64,bayerische-zugspitzbahn,RB 64,10971,Bayerische Zugspitzbahn,bayerische-zugspitzbahn,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+bentheimer-eisenbahn-rb56,bentheimer-eisenbahn,RB56,10847,Bentheimer Eisenbahn,bentheimer-eisenbahn,#1b83c5,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+bob-rb91,bob,RB91,10867,Bodensee-Oberschwaben-Bahn,bodensee-oberschwaben-bahn,#afca0b,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-13-brb-rb13,brb,RB 13,10969,Bayerische Regiobahn,bayerische-regiobahn,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-14-brb-rb14,brb,RB 14,10969,Bayerische Regiobahn,bayerische-regiobahn,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-53-brb-rb53,brb,RB 53,10969,Bayerische Regiobahn,bayerische-regiobahn,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-54-brb-rb54,brb,RB 54,10969,Bayerische Regiobahn,bayerische-regiobahn,#00ace5,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-55-brb-rb55,brb,RB 55,10969,Bayerische Regiobahn,bayerische-regiobahn,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-56-brb-rb56,brb,RB 56,10969,Bayerische Regiobahn,bayerische-regiobahn,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-57-brb-rb57,brb,RB 57,10969,Bayerische Regiobahn,bayerische-regiobahn,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-58-brb-rb58,brb,RB 58,10969,Bayerische Regiobahn,bayerische-regiobahn,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-67-brb-rb67,brb,RB 67,10969,Bayerische Regiobahn,bayerische-regiobahn,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-68-brb-rb68,brb,RB 68,10969,Bayerische Regiobahn,bayerische-regiobahn,#ffffff,#90bf26,#90bf26,rectangle,,traewelling-line-colors
+brb-rb-69-brb-rb69,brb,RB 69,10969,Bayerische Regiobahn,bayerische-regiobahn,#00ace5,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-77-brb-rb77,brb,RB 77,10969,Bayerische Regiobahn,bayerische-regiobahn,#24b27d,#ffffff,,rectangle,,traewelling-line-colors
+brb-rb-83-brb-rb83,brb,RB 83,10969,Bayerische Regiobahn,bayerische-regiobahn,#ffffff,#bf73bf,#bf73bf,rectangle,,traewelling-line-colors
+brb-re-5-brb-re5,brb,RE 5,10969,Bayerische Regiobahn,bayerische-regiobahn,#00416d,#ffffff,,rectangle,,traewelling-line-colors
+brb-s3-4-l8-s3,brb,S3,10969,Bayerische Regiobahn,bayerische-regiobahn,#2aa335,#ffffff,,pill,,traewelling-line-colors
+brb-s4-4-l8-s4,brb,S4,10969,Bayerische Regiobahn,bayerische-regiobahn,#a765a2,#ffffff,,pill,,traewelling-line-colors
+cantus-rb5,cantus,RB5,10907,cantus Verkehrsgesellschaft,cantus-verkehrsgesellschaft,#009890,#ffffff,,rectangle,,traewelling-line-colors
+cantus-rb6,cantus,RB6,10907,cantus Verkehrsgesellschaft,cantus-verkehrsgesellschaft,#009890,#ffffff,,rectangle,,traewelling-line-colors
+cantus-rb83,cantus,RB83,10907,cantus Verkehrsgesellschaft,cantus-verkehrsgesellschaft,#009890,#ffffff,,rectangle,,traewelling-line-colors
+cantus-rb87,cantus,RB87,10907,cantus Verkehrsgesellschaft,cantus-verkehrsgesellschaft,#009890,#ffffff,,rectangle,,traewelling-line-colors
+cantus-re5,cantus,RE5,13424,cantus Verkehrsgesellschaft,cantus-verkehrsgesellschaft,#009890,#ffffff,,rectangle,,traewelling-line-colors
+ceske-drahy-re-25-ex-352,ceske-drahy,RE 25,12634,Ceske Drahy,ceske-drahy,#006666,#ffffff,,rectangle,,traewelling-line-colors
+ceske-drahy-re-25-ex-354,ceske-drahy,RE 25,12634,Ceske Drahy,ceske-drahy,#006666,#ffffff,,rectangle,,traewelling-line-colors
+ceske-drahy-re-25-ex-362,ceske-drahy,RE 25,12634,Ceske Drahy,ceske-drahy,#006666,#ffffff,,rectangle,,traewelling-line-colors
+ceske-drahy-re-25-ex-364,ceske-drahy,RE 25,12634,Ceske Drahy,ceske-drahy,#006666,#ffffff,,rectangle,,traewelling-line-colors
+cfl-re-11-re-11,cfl,RE 11,10459,CFL1,cfl,#895da7,#ffffff,,rectangle,,traewelling-line-colors
+cfl-rb-83-rb-83,cfl,RB 83,10459,CFL1,cfl,#895da7,#ffffff,,rectangle,,traewelling-line-colors
+cfl-rb-87-rb-87,cfl,RB 87,10459,CFL1,cfl,#895da7,#ffffff,,rectangle,,traewelling-line-colors
+db-fernverkehr-ag-ic-87-re-87,db-fernverkehr-ag,IC 87,10918,DB Fernverkehr (Codesharing),db-fernverkehr-codesharing,#cc0066,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-2-re-2,db-regio-ag-baden-wurttemberg,RE 2,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#0069b4,#ffffff,,rectangle,Q88627355,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-3-re-3,db-regio-ag-baden-wurttemberg,RE 3,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#e5007d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-3,db-regio-ag-baden-wurttemberg,RB 3,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#e5007d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-4-re-4,db-regio-ag-baden-wurttemberg,RE 4,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#a05a2c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-5,db-regio-ag-baden-wurttemberg,RE 5,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#724019,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-6,db-regio-ag-baden-wurttemberg,RE 6,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ebaf2d,#ffffff,,rectangle,Q131584411,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-6a,db-regio-ag-baden-wurttemberg,RE 6a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#4d4d4d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-6b,db-regio-ag-baden-wurttemberg,RE 6b,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#4d4d4d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-7-re-7,db-regio-ag-baden-wurttemberg,RE 7,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ed6e19,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-10a,db-regio-ag-baden-wurttemberg,RB 10a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#9f5a2c,#ffffff,,rectangle,Q131587496,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-10a,db-regio-ag-baden-wurttemberg,RE 10a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#9f5a2c,#ffffff,,rectangle,Q131584412,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-10b,db-regio-ag-baden-wurttemberg,RE 10b,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#9f5a2c,#ffffff,,rectangle,Q131584450,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-14a,db-regio-ag-baden-wurttemberg,RE 14a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#f39794,#000000,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-14a,db-regio-ag-baden-wurttemberg,RB 14a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#f39794,#000000,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-14b,db-regio-ag-baden-wurttemberg,RE 14b,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#02aa9e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-14b,db-regio-ag-baden-wurttemberg,RB 14b,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#02aa9e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-12,db-regio-ag-baden-wurttemberg,MEX 12,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#f27320,#ffffff,,rectangle,Q131584405,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-17,db-regio-ag-baden-wurttemberg,MEX 17,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#561d6f,#ffffff,,rectangle,Q131584401,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-17a,db-regio-ag-baden-wurttemberg,MEX 17a,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#561d6f,#ffffff,,rectangle,Q131584401,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-17c,db-regio-ag-baden-wurttemberg,MEX 17c,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ec2933,#ffffff,,rectangle,Q131584403,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-17,db-regio-ag-baden-wurttemberg,RE 17,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ec6d18,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-17,db-regio-ag-baden-wurttemberg,RB 17,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#561d6f,#ffffff,,rectangle,Q131584392,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-18,db-regio-ag-baden-wurttemberg,MEX 18,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009c48,#ffffff,,rectangle,Q131584398,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-18,db-regio-ag-baden-wurttemberg,RE 18,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009c48,#ffffff,,rectangle,Q131583931,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-18,db-regio-ag-baden-wurttemberg,RB 18,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009c48,#ffffff,,rectangle,Q131583989,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-19-19,db-regio-ag-baden-wurttemberg,MEX 19,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#999999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-26-rb-26,db-regio-ag-baden-wurttemberg,RB 26,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009fe3,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-27-rb-27,db-regio-ag-baden-wurttemberg,RB 27,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#008c3c,#ffffff,,rectangle,Q130280632,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-28-rb-28,db-regio-ag-baden-wurttemberg,RB 28,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#724019,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-30-rb-30,db-regio-ag-baden-wurttemberg,RB 30,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#571d70,#ffffff,,rectangle,Q130280647,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-31-rb-31,db-regio-ag-baden-wurttemberg,RB 31,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#00a99d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-31,db-regio-ag-baden-wurttemberg,RE 31,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#00a99d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-32,db-regio-ag-baden-wurttemberg,RB 32,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#008c3c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-37,db-regio-ag-baden-wurttemberg,RB 37,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#aec90a,#ffffff,,rectangle,Q130283617,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-42,db-regio-ag-baden-wurttemberg,RB 42,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#088c3c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-50,db-regio-ag-baden-wurttemberg,RE 50,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#b5931c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-52,db-regio-ag-baden-wurttemberg,RB 52,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#00a99d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-53,db-regio-ag-baden-wurttemberg,RB 53,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#561c6f,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-55,db-regio-ag-baden-wurttemberg,RE 55,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#b0599e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-55,db-regio-ag-baden-wurttemberg,RB 55,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#b0599e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-63,db-regio-ag-baden-wurttemberg,RB 63,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#d30730,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-68,db-regio-ag-baden-wurttemberg,RB 68,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ec2933,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-71,db-regio-ag-baden-wurttemberg,RE 71,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#b6921d,#ffffff,,rectangle,Q131584454,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-71,db-regio-ag-baden-wurttemberg,RB 71,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#ec2933,#ffffff,,rectangle,Q131584394,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-72,db-regio-ag-baden-wurttemberg,RB 72,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#008c3c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-74,db-regio-ag-baden-wurttemberg,RB 74,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#0a69b2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-91,db-regio-ag-baden-wurttemberg,RB 91,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#afca0b,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-rb-93,db-regio-ag-baden-wurttemberg,RB 93,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009fe3,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-93,db-regio-ag-baden-wurttemberg,RE 93,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#009fe3,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-mex-90-90,db-regio-ag-baden-wurttemberg,MEX 90,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#e5007d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-ag-baden-wurttemberg-re-200-re-200,db-regio-ag-baden-wurttemberg,RE 200,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#aa0344,#ffffff,,rectangle,Q114680512,traewelling-line-colors
+db-regio-bayern-rb-6-rb-6,db-regio-bayern,RB 6,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-10-rb-10,db-regio-bayern,RB 10,10446,DB Regio AG Bayern,db-regio-ag-bayern,#90bf26,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-11-rb-11,db-regio-bayern,RB 11,10446,DB Regio AG Bayern,db-regio-ag-bayern,#00ace5,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-12-rb-12,db-regio-bayern,RB 12,10446,DB Regio AG Bayern,db-regio-ag-bayern,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-16-rb-16,db-regio-bayern,RB 16,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-21-rb-21,db-regio-bayern,RB 21,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-25-rb-25,db-regio-bayern,RB 25,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffa0a0,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-30-rb-30,db-regio-bayern,RB 30,10446,DB Regio AG Bayern,db-regio-ag-bayern,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-31-rb-31,db-regio-bayern,RB 31,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-33-rb-33,db-regio-bayern,RB 33,10446,DB Regio AG Bayern,db-regio-ag-bayern,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-53-rb-53,db-regio-bayern,RB 53,10446,DB Regio AG Bayern,db-regio-ag-bayern,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-60-rb-60,db-regio-bayern,RB 60,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-61-rb-61,db-regio-bayern,RB 61,10446,DB Regio AG Bayern,db-regio-ag-bayern,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-62-rb-62,db-regio-bayern,RB 62,10446,DB Regio AG Bayern,db-regio-ag-bayern,#90bf26,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-63-rb-63,db-regio-bayern,RB 63,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-65-rb-65,db-regio-bayern,RB 65,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-66-rb-66,db-regio-bayern,RB 66,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-73-rb-73,db-regio-bayern,RB 73,10446,DB Regio AG Bayern,db-regio-ag-bayern,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-74-rb-74,db-regio-bayern,RB 74,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-78-rb-78,db-regio-bayern,RB 78,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff9999,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-79-rb-79,db-regio-bayern,RB 79,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#90bf26,#90bf26,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-80-rb-80,db-regio-bayern,RB 80,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#008fbf,#008fbf,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-81-rb-81,db-regio-bayern,RB 81,10446,DB Regio AG Bayern,db-regio-ag-bayern,#24b27d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-82-rb-82,db-regio-bayern,RB 82,10446,DB Regio AG Bayern,db-regio-ag-bayern,#00ace5,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-85-rb-85,db-regio-bayern,RB 85,10446,DB Regio AG Bayern,db-regio-ag-bayern,#009fe3,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-91-rb-91,db-regio-bayern,RB 91,10446,DB Regio AG Bayern,db-regio-ag-bayern,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-rb-94-rb-94,db-regio-bayern,RB 94,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#90bf26,#90bf26,rectangle,,traewelling-line-colors
+db-regio-bayern-re-1-re-1,db-regio-bayern,RE 1,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-2-re-2,db-regio-bayern,RE 2,10446,DB Regio AG Bayern,db-regio-ag-bayern,#00b2b2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-3-re-3,db-regio-bayern,RE 3,10446,DB Regio AG Bayern,db-regio-ag-bayern,#800080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-7-re-7,db-regio-bayern,RE 7,10446,DB Regio AG Bayern,db-regio-ag-bayern,#992e00,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-10-re-10,db-regio-bayern,RE 10,10446,DB Regio AG Bayern,db-regio-ag-bayern,#006428,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-14-re-14,db-regio-bayern,RE 14,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-16-re-16,db-regio-bayern,RE 16,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-17-re-17,db-regio-bayern,RE 17,10446,DB Regio AG Bayern,db-regio-ag-bayern,#992e00,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-19-re-19,db-regio-bayern,RE 19,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-20-re-20,db-regio-bayern,RE 20,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-22-re-22,db-regio-bayern,RE 22,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ff6600,#ffffff,,rectangle,Q108179529,traewelling-line-colors
+db-regio-bayern-re-28-re-28,db-regio-bayern,RE 28,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-29-re-29,db-regio-bayern,RE 29,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#ff6600,#ff6600,rectangle,,traewelling-line-colors
+db-regio-bayern-re-30-re-30,db-regio-bayern,RE 30,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-31-re-31,db-regio-bayern,RE 31,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-32-re-32,db-regio-bayern,RE 32,10446,DB Regio AG Bayern,db-regio-ag-bayern,#004080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-33-re-33,db-regio-bayern,RE 33,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-35-re-35,db-regio-bayern,RE 35,10446,DB Regio AG Bayern,db-regio-ag-bayern,#004080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-38-re-38,db-regio-bayern,RE 38,10446,DB Regio AG Bayern,db-regio-ag-bayern,#008fbf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-40-re-40,db-regio-bayern,RE 40,10446,DB Regio AG Bayern,db-regio-ag-bayern,#992e00,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-41-re-41,db-regio-bayern,RE 41,10446,DB Regio AG Bayern,db-regio-ag-bayern,#992e00,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-43-re-43,db-regio-bayern,RE 43,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#992e00,#992e00,rectangle,,traewelling-line-colors
+db-regio-bayern-re-47-re-47,db-regio-bayern,RE 47,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#992e00,#992e00,rectangle,,traewelling-line-colors
+db-regio-bayern-re-50-re-50,db-regio-bayern,RE 50,10446,DB Regio AG Bayern,db-regio-ag-bayern,#804080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-54-re-54,db-regio-bayern,RE 54,10446,DB Regio AG Bayern,db-regio-ag-bayern,#800080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-55-re-55,db-regio-bayern,RE 55,10446,DB Regio AG Bayern,db-regio-ag-bayern,#800080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-60-re-60,db-regio-bayern,RE 60,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#800080,#800080,rectangle,,traewelling-line-colors
+db-regio-bayern-re-61-re-61,db-regio-bayern,RE 61,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#992e00,#992e00,rectangle,,traewelling-line-colors
+db-regio-bayern-re-62-re-62,db-regio-bayern,RE 62,10446,DB Regio AG Bayern,db-regio-ag-bayern,#ffffff,#992e00,#992e00,rectangle,,traewelling-line-colors
+db-regio-bayern-re-70-re-70,db-regio-bayern,RE 70,10446,DB Regio AG Bayern,db-regio-ag-bayern,#006629,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-71-re-71,db-regio-bayern,RE 71,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-73-re-73,db-regio-bayern,RE 73,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-75-re-75,db-regio-bayern,RE 75,10446,DB Regio AG Bayern,db-regio-ag-bayern,#e50000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-76-re-76,db-regio-bayern,RE 76,10446,DB Regio AG Bayern,db-regio-ag-bayern,#006629,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-bayern-re-79-re-79,db-regio-bayern,RE 79,10446,DB Regio AG Bayern,db-regio-ag-bayern,#800080,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-mitte-re1,db-regio-mitte,RE1,10445,SÜWEX,suewex,#be1b40,#ffffff,,rectangle-rounded-corner,Q112773387,traewelling-line-colors
+db-regio-mitte-re2,db-regio-mitte,RE2,10445,SÜWEX,suewex,#e3a023,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re4,db-regio-mitte,RE4,10445,SÜWEX,suewex,#970c7e,#ffffff,,rectangle-rounded-corner,Q112996721,traewelling-line-colors
+db-regio-mitte-re6,db-regio-mitte,RE6,13422,DB Regio AG Mitte,db-regio-ag-mitte,#64afbf,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re11,db-regio-mitte,RE11,10445,SÜWEX,suewex,#895da7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re14,db-regio-mitte,RE14,10445,SÜWEX,suewex,#970c7e,#ffffff,,rectangle-rounded-corner,Q112996572,traewelling-line-colors
+db-regio-mitte-re15,db-regio-mitte,RE15,13422,DB Regio AG Mitte,db-regio-ag-mitte,#7c52a1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re16,db-regio-mitte,RE16,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#7c52a1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re17,db-regio-mitte,RE17,13422,DB Regio AG Mitte,db-regio-ag-mitte,#8c943e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re18,db-regio-mitte,RE18,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#5e50a1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re19,db-regio-mitte,RE19,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#7672a0,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re20,db-regio-mitte,RE20,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ed1c24,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb22,db-regio-mitte,RB22,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ed1c24,#ffffff,,pill,Q130342880,traewelling-line-colors
+db-regio-mitte-rb23,db-regio-mitte,RB23,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#3777bc,#ffffff,,rectangle-rounded-corner,Q96474187,traewelling-line-colors
+db-regio-mitte-re25,db-regio-mitte,RE25,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#53558c,#ffffff,,rectangle-rounded-corner,Q98104051,traewelling-line-colors
+db-regio-mitte-rb26,db-regio-mitte,RB26,13422,DB Regio AG Mitte,db-regio-ag-mitte,#28b7ea,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re30,db-regio-mitte,RE30,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ed1c24,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb33,db-regio-mitte,RB33,13422,DB Regio AG Mitte,db-regio-ag-mitte,#67c2ee,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb34,db-regio-mitte,RB34,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#007dc5,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb35,db-regio-mitte,RB35,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#ed1c24,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb38,db-regio-mitte,RB38,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#186f9a,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re40,db-regio-mitte,RE40,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ff9027,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb41,db-regio-mitte,RB41,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#00ab4f,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb44,db-regio-mitte,RB44,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#7ac547,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re45,db-regio-mitte,RE45,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#cf631a,#ffffff,,rectangle-rounded-corner,Q126890289,traewelling-line-colors
+db-regio-mitte-re45-2,db-regio-mitte,RE45,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#f5821f,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb45,db-regio-mitte,RB45,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#f5821f,#ffffff,,rectangle-rounded-corner,Q98152720,traewelling-line-colors
+db-regio-mitte-rb46,db-regio-mitte,RB46,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#008f91,#ffffff,,rectangle-rounded-corner,Q98152733,traewelling-line-colors
+db-regio-mitte-rb48,db-regio-mitte,RB48,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#e4a025,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-re50,db-regio-mitte,RE50,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ed1c24,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb51,db-regio-mitte,RB51,13422,DB Regio AG Mitte,db-regio-ag-mitte,#b94d3a,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb51-2,db-regio-mitte,RB51,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ed1c24,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb52,db-regio-mitte,RB52,13422,DB Regio AG Mitte,db-regio-ag-mitte,#a1c1e6,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb52-2,db-regio-mitte,RB52,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#a1c1e6,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb53,db-regio-mitte,RB53,13422,DB Regio AG Mitte,db-regio-ag-mitte,#00ae8d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb53-2,db-regio-mitte,RB53,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#00ae8d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb54,db-regio-mitte,RB54,13422,DB Regio AG Mitte,db-regio-ag-mitte,#b066aa,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb55,db-regio-mitte,RB55,13422,DB Regio AG Mitte,db-regio-ag-mitte,#812a90,#ffffff,,rectangle-rounded-corner,Q108435213,traewelling-line-colors
+db-regio-mitte-rb56,db-regio-mitte,RB56,13422,DB Regio AG Mitte,db-regio-ag-mitte,#6993cd,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re60,db-regio-mitte,RE60,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#d03831,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb61,db-regio-mitte,RB61,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#007dc5,#ffffff,,pill,,traewelling-line-colors
+db-regio-mitte-rb62,db-regio-mitte,RB62,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#76ced9,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb63,db-regio-mitte,RB63,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#00bac6,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb64,db-regio-mitte,RB64,13422,DB Regio AG Mitte,db-regio-ag-mitte,#006061,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb65,db-regio-mitte,RB65,13422,DB Regio AG Mitte,db-regio-ag-mitte,#0080a6,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb66,db-regio-mitte,RB66,13422,DB Regio AG Mitte,db-regio-ag-mitte,#ba9765,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb67,db-regio-mitte,RB67,13422,DB Regio AG Mitte,db-regio-ag-mitte,#00ae8d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb67-2,db-regio-mitte,RB67,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#406bb1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb68,db-regio-mitte,RB68,13422,DB Regio AG Mitte,db-regio-ag-mitte,#ec008c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb68-2,db-regio-mitte,RB68,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#406bb1,#ffffff,,rectangle-rounded-corner,Q68930888,traewelling-line-colors
+db-regio-mitte-rb69,db-regio-mitte,RB69,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#38b54a,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re70,db-regio-mitte,RE70,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#d03831,#ffffff,,rectangle-rounded-corner,Q80105383,traewelling-line-colors
+db-regio-mitte-rb70,db-regio-mitte,RB70,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#6dcff6,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb71,db-regio-mitte,RB71,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#28b7ea,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-re73,db-regio-mitte,RE73,10440,DB Regio AG Mitte Region Hessen,db-regio-ag-mitte-region-hessen,#ff2e17,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb73,db-regio-mitte,RB73,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#0086c2,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb77,db-regio-mitte,RB77,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#3777bc,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb79,db-regio-mitte,RB79,12796,DB Regio Mitte,db-regio-mitte,#999999,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb81,db-regio-mitte,RB81,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#3777bc,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb82,db-regio-mitte,RB82,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#0086c2,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb83,db-regio-mitte,RB83,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#895da7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb83-2,db-regio-mitte,RB83,10445,SÜWEX,suewex,#895da7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-mitte-rb84,db-regio-mitte,RB84,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#3777bc,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+db-regio-nord-rb37,db-regio-nord,RB37,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb38,db-regio-nord,RB38,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb44,db-regio-nord,RB44,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb45,db-regio-nord,RB45,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb46,db-regio-nord,RB46,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb48,db-regio-nord,RB48,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb77,db-regio-nord,RB77,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb79,db-regio-nord,RB79,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb80,db-regio-nord,RB80,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb82,db-regio-nord,RB82,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-rb86,db-regio-nord,RB86,10435,DB Regio AG Nord,db-regio-ag-nord,#014895,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-re1,db-regio-nord,RE1,10435,DB Regio AG Nord,db-regio-ag-nord,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-re2,db-regio-nord,RE2,10435,DB Regio AG Nord,db-regio-ag-nord,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-re5,db-regio-nord,RE5,10435,DB Regio AG Nord,db-regio-ag-nord,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nord-re9,db-regio-nord,RE9,10435,DB Regio AG Nord,db-regio-ag-nord,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-fex-fex19829,db-regio-nordost,FEX,10434,DB Regio AG Nordost,db-regio-ag-nordost,#79122f,#ffffff,,rectangle,Q100533383,traewelling-line-colors
+db-regio-nordost-rb10-rb-10,db-regio-nordost,RB10,10434,DB Regio AG Nordost,db-regio-ag-nordost,#66aa22,#ffffff,,rectangle,Q15195695,traewelling-line-colors
+db-regio-nordost-rb11-rb-11,db-regio-nordost,RB11,10434,DB Regio AG Nordost,db-regio-ag-nordost,#ed1c24,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb12-rb-12,db-regio-nordost,RB12,10434,DB Regio AG Nordost,db-regio-ag-nordost,#399fdf,#ffffff,,rectangle,Q42383940,traewelling-line-colors
+db-regio-nordost-rb14-rb-14,db-regio-nordost,RB14,10434,DB Regio AG Nordost,db-regio-ag-nordost,#a5027d,#ffffff,,rectangle,Q15119376,traewelling-line-colors
+db-regio-nordost-rb17-rb-17,db-regio-nordost,RB17,10434,DB Regio AG Nordost,db-regio-ag-nordost,#dd4daf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb18-rb-18,db-regio-nordost,RB18,10434,DB Regio AG Nordost,db-regio-ag-nordost,#399fdf,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb20-rb-20,db-regio-nordost,RB20,10434,DB Regio AG Nordost,db-regio-ag-nordost,#007734,#ffffff,,rectangle,Q68007873,traewelling-line-colors
+db-regio-nordost-rb21-rb-21,db-regio-nordost,RB21,10434,DB Regio AG Nordost,db-regio-ag-nordost,#501689,#ffffff,,rectangle,Q105947745,traewelling-line-colors
+db-regio-nordost-rb22-rb-22,db-regio-nordost,RB22,10434,DB Regio AG Nordost,db-regio-ag-nordost,#009bd5,#ffffff,,rectangle,Q68006335,traewelling-line-colors
+db-regio-nordost-rb23-3-800165-23,db-regio-nordost,RB23,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb23-rb-23,db-regio-nordost,RB23,10434,DB Regio AG Nordost,db-regio-ag-nordost,#0066ad,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb24-3-800165-24,db-regio-nordost,RB24,10434,DB Regio AG Nordost,db-regio-ag-nordost,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb24-rb-24,db-regio-nordost,RB24,10434,DB Regio AG Nordost,db-regio-ag-nordost,#e2001a,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb25-rb-25,db-regio-nordost,RB25,10434,DB Regio AG Nordost,db-regio-ag-nordost,#00a998,#ffffff,,rectangle,Q63484785,traewelling-line-colors
+db-regio-nordost-rb28-rb-28,db-regio-nordost,RB28,10434,DB Regio AG Nordost,db-regio-ag-nordost,#ee7000,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb31-rb-31,db-regio-nordost,RB31,10434,DB Regio AG Nordost,db-regio-ag-nordost,#66aa22,#ffffff,,rectangle,Q66439830,traewelling-line-colors
+db-regio-nordost-rb32-rb-32,db-regio-nordost,RB32,10434,DB Regio AG Nordost,db-regio-ag-nordost,#697c8a,#ffffff,,rectangle,Q112802971,traewelling-line-colors
+db-regio-nordost-rb43-rb-43,db-regio-nordost,RB43,10434,DB Regio AG Nordost,db-regio-ag-nordost,#009bd5,#ffffff,,rectangle,Q84429153,traewelling-line-colors
+db-regio-nordost-rb49-rb-49,db-regio-nordost,RB49,10434,DB Regio AG Nordost,db-regio-ag-nordost,#992746,#ffffff,,rectangle,Q84436359,traewelling-line-colors
+db-regio-nordost-rb55-rb-55,db-regio-nordost,RB55,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,Q63224617,traewelling-line-colors
+db-regio-nordost-rb92-rb-92,db-regio-nordost,RB92,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-rb93-rb-93,db-regio-nordost,RB93,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re1-re-1,db-regio-nordost,RE1,10434,DB Regio AG Nordost,db-regio-ag-nordost,#108449,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re2-re-2,db-regio-nordost,RE2,10434,DB Regio AG Nordost,db-regio-ag-nordost,#ffd502,#000000,,rectangle,,traewelling-line-colors
+db-regio-nordost-re3-re-3,db-regio-nordost,RE3,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re4-3-800158-4,db-regio-nordost,RE4,10434,DB Regio AG Nordost,db-regio-ag-nordost,#992746,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re4-re-4,db-regio-nordost,RE4,10434,DB Regio AG Nordost,db-regio-ag-nordost,#66aa22,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re5-re-5,db-regio-nordost,RE5,10434,DB Regio AG Nordost,db-regio-ag-nordost,#0066ad,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re6-re-6,db-regio-nordost,RE6,10434,DB Regio AG Nordost,db-regio-ag-nordost,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re7-re-7,db-regio-nordost,RE7,10434,DB Regio AG Nordost,db-regio-ag-nordost,#007734,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re7-re-7-2,db-regio-nordost,RE7,10434,DB Regio AG Nordost,db-regio-ag-nordost,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re10-re-10,db-regio-nordost,RE10,10434,DB Regio AG Nordost,db-regio-ag-nordost,#5e5e5d,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re11-re-11,db-regio-nordost,RE11,10434,DB Regio AG Nordost,db-regio-ag-nordost,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re13-re-13,db-regio-nordost,RE13,10434,DB Regio AG Nordost,db-regio-ag-nordost,#009686,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re15-re-15,db-regio-nordost,RE15,10434,DB Regio AG Nordost,db-regio-ag-nordost,#ffd502,#000000,,rectangle,,traewelling-line-colors
+db-regio-nordost-re18-re-18,db-regio-nordost,RE18,10434,DB Regio AG Nordost,db-regio-ag-nordost,#eb7405,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re50-re-50,db-regio-nordost,RE50,10434,DB Regio AG Nordost,db-regio-ag-nordost,#2785d0,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-re51-re-51,db-regio-nordost,RE51,10434,DB Regio AG Nordost,db-regio-ag-nordost,#00998a,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-s1-4-800156-1,db-regio-nordost,S1,10434,DB Regio AG Nordost,db-regio-ag-nordost,#00a998,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-s2-4-800156-2,db-regio-nordost,S2,10434,DB Regio AG Nordost,db-regio-ag-nordost,#a0138e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-s2x-4-800156-2x,db-regio-nordost,S2X,10434,DB Regio AG Nordost,db-regio-ag-nordost,#a0138e,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-nordost-s3-4-800156-3,db-regio-nordost,S3,10434,DB Regio AG Nordost,db-regio-ag-nordost,#a64c35,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-sudost-rb-51-rb-51,db-regio-sudost,RB 51,10437,DB Regio AG Südost,db-regio-ag-suedost,#469cd7,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-sudost-re-7-re-7,db-regio-sudost,RE 7,10437,DB Regio AG Südost,db-regio-ag-suedost,#992e00,#ffffff,,rectangle,Q1885609,traewelling-line-colors
+db-regio-sudost-re-13-re-13,db-regio-sudost,RE 13,10437,DB Regio AG Südost,db-regio-ag-suedost,#ebaa3b,#ffffff,,rectangle,Q113505112,traewelling-line-colors
+db-regio-sudost-re-14-re-14,db-regio-sudost,RE 14,10437,DB Regio AG Südost,db-regio-ag-suedost,#a98956,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-sudost-re-57-re-57,db-regio-sudost,RE 57,10437,DB Regio AG Südost,db-regio-ag-suedost,#992e00,#ffffff,,rectangle,,traewelling-line-colors
+db-regio-sudost-s1-4-800486-1,db-regio-sudost,S1,10437,DB Regio AG Südost,db-regio-ag-suedost,#f5de2b,#000000,,pill,Q56600177,traewelling-line-colors
+db-regio-sudost-s2-4-8004a9-2,db-regio-sudost,S2,10437,DB Regio AG Südost,db-regio-ag-suedost,#18a2e3,#ffffff,,pill,Q56809294,traewelling-line-colors
+db-regio-sudost-s3-4-800486-3,db-regio-sudost,S3,10437,DB Regio AG Südost,db-regio-ag-suedost,#e1001e,#ffffff,,pill,Q62749908,traewelling-line-colors
+db-regio-sudost-s30-4-800486-3,db-regio-sudost,S30,10437,DB Regio AG Südost,db-regio-ag-suedost,#e1001e,#ffffff,,pill,Q137527225,traewelling-line-colors
+db-regio-sudost-s4-4-800486-4,db-regio-sudost,S4,10437,DB Regio AG Südost,db-regio-ag-suedost,#109644,#ffffff,,pill,Q63215993,traewelling-line-colors
+db-regio-sudost-s5-4-800486-5,db-regio-sudost,S5,10437,DB Regio AG Südost,db-regio-ag-suedost,#ed7c1c,#ffffff,,pill,Q63216051,traewelling-line-colors
+db-regio-sudost-s5x-4-800486-5x,db-regio-sudost,S5X,10437,DB Regio AG Südost,db-regio-ag-suedost,#fdce5c,#ffffff,,pill,Q63216058,traewelling-line-colors
+db-regio-sudost-s6-4-800486-6,db-regio-sudost,S6,10437,DB Regio AG Südost,db-regio-ag-suedost,#5c1239,#ffffff,,pill,Q63217185,traewelling-line-colors
+db-regio-sudost-s8-4-8004a9-8,db-regio-sudost,S8,10437,DB Regio AG Südost,db-regio-ag-suedost,#5c2582,#ffffff,,pill,Q63213955,traewelling-line-colors
+db-regio-sudost-s9-4-8004a9-9,db-regio-sudost,S9,10437,DB Regio AG Südost,db-regio-ag-suedost,#be006b,#ffffff,,pill,Q63217750,traewelling-line-colors
+db-regio-sudost-s11,db-regio-sudost,S11,10437,DB Regio AG Südost,db-regio-ag-suedost,#309f98,#ffffff,,pill,Q131460494,traewelling-line-colors
+db-regionetz-kurhessenbahn-rb4,db-regionetz-kurhessenbahn,RB4,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#ec1f25,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-rb38,db-regionetz-kurhessenbahn,RB38,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#73c15f,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-rb39,db-regionetz-kurhessenbahn,RB39,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#0bb14c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-re39,db-regionetz-kurhessenbahn,RE39,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#0bb14c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-rb94,db-regionetz-kurhessenbahn,RB94,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#fecb09,#000000,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-rb97,db-regionetz-kurhessenbahn,RB97,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#0072bc,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-kurhessenbahn-re97,db-regionetz-kurhessenbahn,RE97,10441,DB RegioNetz Verkehrs GmbH Kurhessenbahn,db-regionetz-verkehrs-gmbh-kurhessenbahn,#0072bc,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-re-4-re-4,db-regionetz-sudostbayernbahn,RE 4,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#ffffff,#992e00,#992e00,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-32-rb-32,db-regionetz-sudostbayernbahn,RB 32,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-40-rb-40,db-regionetz-sudostbayernbahn,RB 40,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-41-rb-41,db-regionetz-sudostbayernbahn,RB 41,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-42-rb-42,db-regionetz-sudostbayernbahn,RB 42,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#00ace5,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-44-rb-44,db-regionetz-sudostbayernbahn,RB 44,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#90bf26,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-45-rb-45,db-regionetz-sudostbayernbahn,RB 45,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-46-rb-46,db-regionetz-sudostbayernbahn,RB 46,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#24b27d,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-47-rb-47,db-regionetz-sudostbayernbahn,RB 47,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-48-rb-48,db-regionetz-sudostbayernbahn,RB 48,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-49-rb-49,db-regionetz-sudostbayernbahn,RB 49,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-52-rb-52,db-regionetz-sudostbayernbahn,RB 52,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#bf73bf,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-sudostbayernbahn-rb-59-rb-59,db-regionetz-sudostbayernbahn,RB 59,10448,DB RegioNetz Verkehrs GmbH Südostbayernbahn,db-regionetz-verkehrs-gmbh-suedostbayernbahn,#e5a05c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-56-rb-56,db-regionetz-westfrankenbahn,RB 56,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#fab23c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-83-rb-83,db-regionetz-westfrankenbahn,RB 83,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#fdd245,#000000,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-84-rb-84,db-regionetz-westfrankenbahn,RB 84,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#e29c57,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-85-rb-85,db-regionetz-westfrankenbahn,RB 85,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#fff200,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-88-rb-88,db-regionetz-westfrankenbahn,RB 88,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#47359c,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-re-80-re-80,db-regionetz-westfrankenbahn,RE 80,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#423f41,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-re-87-re-87,db-regionetz-westfrankenbahn,RE 87,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#ff2e17,#ffffff,,rectangle,,traewelling-line-colors
+db-regionetz-westfrankenbahn-rb-87-rb-87,db-regionetz-westfrankenbahn,RB 87,10442,DB RegioNetz Verkehrs GmbH Westfrankenbahn,db-regionetz-verkehrs-gmbh-westfrankenbahn,#ff2e17,#ffffff,,rectangle,,traewelling-line-colors
+enno-re30,enno,RE30,10930,enno,enno,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+enno-re50,enno,RE50,10930,enno,enno,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+erfurter-bahn-re12,erfurter-bahn,RE12,10866,Erfurter Bahn Express,erfurter-bahn-express,#ec6607,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb13,erfurter-bahn,RB13,8654,Erfurter Bahn,erfurter-bahn,#12a537,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb21,erfurter-bahn,RB21,8654,Erfurter Bahn,erfurter-bahn,#e30513,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-re21,erfurter-bahn,RE21,10866,Erfurter Bahn Express,erfurter-bahn-express,#e30513,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb22,erfurter-bahn,RB22,8654,Erfurter Bahn,erfurter-bahn,#f39200,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb23,erfurter-bahn,RB23,8654,Erfurter Bahn,erfurter-bahn,#0096d7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb26,erfurter-bahn,RB26,8654,Erfurter Bahn,erfurter-bahn,#355b17,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb27,erfurter-bahn,RB27,8654,Erfurter Bahn,erfurter-bahn,#bb7bb3,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb28,erfurter-bahn,RB28,8654,Erfurter Bahn,erfurter-bahn,#12a537,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb32,erfurter-bahn,RB32,8654,Erfurter Bahn,erfurter-bahn,#e30513,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb40,erfurter-bahn,RB40,8654,Erfurter Bahn,erfurter-bahn,#12a537,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb50,erfurter-bahn,RB50,8654,Erfurter Bahn,erfurter-bahn,#008136,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erfurter-bahn-rb76,erfurter-bahn,RB76,8654,Erfurter Bahn,erfurter-bahn,#822b86,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+erixx-rb32,erixx,RB32,10966,erixx,erixx,#014895,#ffffff,,rectangle,,traewelling-line-colors
+erixx-rb42,erixx,RB42,10966,erixx,erixx,#014895,#ffffff,,rectangle,,traewelling-line-colors
+erixx-rb43,erixx,RB43,10966,erixx,erixx,#014895,#ffffff,,rectangle,,traewelling-line-colors
+erixx-rb47,erixx,RB47,10966,erixx,erixx,#014895,#ffffff,,rectangle,,traewelling-line-colors
+erixx-re10,erixx,RE10,10966,erixx,erixx,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+hans-rb16-rb-16,hans,RB16,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#775fb0,#ffffff,,rectangle,,traewelling-line-colors
+hans-rb33-rb-33,hans,RB33,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#ed1c24,#ffffff,,rectangle,,traewelling-line-colors
+hans-rb34-rb-34,hans,RB34,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#0066ad,#ffffff,,rectangle,,traewelling-line-colors
+hans-rb73-rb-73,hans,RB73,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#009686,#ffffff,,rectangle,,traewelling-line-colors
+hans-rb74-rb-74,hans,RB74,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#0066ad,#ffffff,,rectangle,,traewelling-line-colors
+hans-re27-re27,hans,RE27,10927,Hanseatische Eisenbahn GmbH,hanseatische-eisenbahn-gmbh,#399fdf,#ffffff,,rectangle,,traewelling-line-colors
+hlb-rb21-hlb-rb21,hlb,RB21,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#007ec5,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb29-hlb-rb29,hlb,RB29,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#c77db4,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb37-hlb-rb37,hlb,RB37,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#970c7e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb40-hlb-rb40,hlb,RB40,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#970c7e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb41-hlb-rb41,hlb,RB41,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#970c7e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb45-hlb-rb45,hlb,RB45,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#007ec5,#ffffff,,rectangle-rounded-corner,Q125770469,traewelling-line-colors
+hlb-rb46-hlb-rb46,hlb,RB46,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#94522e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb47-hlb-rb47,hlb,RB47,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#cf7db2,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb48-hlb-rb48,hlb,RB48,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb49-hlb-rb49,hlb,RB49,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#2175bb,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb52-hlb-rb52,hlb,RB52,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb58-hlb-rb58,hlb,RB58,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#970c7e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb61-hlb-rb61,hlb,RB61,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#2175bb,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb75-hlb-rb75,hlb,RB75,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#2175bb,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-rb90-hlb-rb90,hlb,RB90,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#90268f,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-re9-hlb-re9,hlb,RE9,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-re59-hlb-re59,hlb,RE59,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#970c7e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-re24-hlb-re24,hlb,RE24,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#007ec5,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-re98-hlb-re98,hlb,RE98,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hlb-re99-hlb-re99,hlb,RE99,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+hvv-db-sbhh-s-1,hvv-db-sbhh,S 1,10375,S-Bahn Hamburg,s-bahn-hamburg,#4da553,#ffffff,,pill,Q19377130,traewelling-line-colors
+hvv-db-sbhh-s-2,hvv-db-sbhh,S 2,10375,S-Bahn Hamburg,s-bahn-hamburg,#95334a,#ffffff,,pill,Q19390036,traewelling-line-colors
+hvv-db-sbhh-s-3,hvv-db-sbhh,S 3,10375,S-Bahn Hamburg,s-bahn-hamburg,#512c75,#ffffff,,pill,Q19368685,traewelling-line-colors
+hvv-db-sbhh-s-5,hvv-db-sbhh,S 5,10375,S-Bahn Hamburg,s-bahn-hamburg,#3b87a9,#ffffff,,pill,Q63451353,traewelling-line-colors
+hvv-db-sbhh-s-7,hvv-db-sbhh,S 7,10375,S-Bahn Hamburg,s-bahn-hamburg,#c07b35,#ffffff,,pill,Q136881945,traewelling-line-colors
+metronom-rb31-me-rb31,metronom,RB31,10931,metronom,metronom,#7f257b,#ffffff,,rectangle,,traewelling-line-colors
+metronom-rb41-me-rb41,metronom,RB41,10931,metronom,metronom,#2eb273,#ffffff,,rectangle,,traewelling-line-colors
+metronom-re2-me-re2,metronom,RE2,10931,metronom,metronom,#b22236,#ffffff,,rectangle,,traewelling-line-colors
+metronom-re3-me-re3,metronom,RE3,10931,metronom,metronom,#7f257b,#ffffff,,rectangle,,traewelling-line-colors
+metronom-re4-me-re4,metronom,RE4,10931,metronom,metronom,#2eb273,#ffffff,,rectangle,,traewelling-line-colors
+mitteldeutsche-regiobahn-re-3-re-3,mitteldeutsche-regiobahn,RE 3,10853,Mitteldeutsche Regiobahn,mitteldeutsche-regiobahn,#0093d4,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+mitteldeutsche-regiobahn-re-6-re-6,mitteldeutsche-regiobahn,RE 6,10853,Mitteldeutsche Regiobahn,mitteldeutsche-regiobahn,#9e60a4,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+mitteldeutsche-regiobahn-rb-30-rb-30,mitteldeutsche-regiobahn,RB 30,10853,Mitteldeutsche Regiobahn,mitteldeutsche-regiobahn,#ed9126,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+mitteldeutsche-regiobahn-rb-45-rb-45,mitteldeutsche-regiobahn,RB 45,10853,Mitteldeutsche Regiobahn,mitteldeutsche-regiobahn,#ed694a,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+mitteldeutsche-regiobahn-rb-110-rb-110,mitteldeutsche-regiobahn,RB 110,10853,Mitteldeutsche Regiobahn,mitteldeutsche-regiobahn,#a2cbba,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+mvv-db-sbm-s1-4-800725-1,mvv-db-sbm,S1,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#1fbce6,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s2-4-800725-2,mvv-db-sbm,S2,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#79b833,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s3-4-800725-3,mvv-db-sbm,S3,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#962a85,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s4-4-800725-4,mvv-db-sbm,S4,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#e41f28,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s5-4-800725-5,mvv-db-sbm,S5,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#00527f,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s6-4-800725-6,mvv-db-sbm,S6,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#008f5c,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s7-4-800725-7,mvv-db-sbm,S7,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#8a372f,#ffffff,,pill,,traewelling-line-colors
+mvv-db-sbm-s8-4-800725-8,mvv-db-sbm,S8,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#2d2b29,#ffcd01,,pill,,traewelling-line-colors
+mvv-db-sbm-s20-4-800725-20,mvv-db-sbm,S20,15017,DB Regio AG S-Bahn München,db-regio-ag-s-bahn-muenchen,#f05972,#ffffff,,pill,,traewelling-line-colors
+nah-sh-re-6-re-6,nah-sh,RE 6,10435,DB Regio AG Nord,db-regio-ag-nord,#00975f,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-61-nbe-rb61,nah-sh,RB 61,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#174094,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-62-rb-62,nah-sh,RB 62,10435,DB Regio AG Nord,db-regio-ag-nord,#00aeca,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-63-nbe-rb63,nah-sh,RB 63,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#ffdc00,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-64-nbe-rb64,nah-sh,RB 64,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#ea899a,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-65-neg-rb65,nah-sh,RB 65,10905,Norddeutsche Eisenbahn Gesellschaft,norddeutsche-eisenbahn-gesellschaft,#dedd00,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-66-neg-rb66,nah-sh,RB 66,10905,Norddeutsche Eisenbahn Gesellschaft,norddeutsche-eisenbahn-gesellschaft,#798e0e,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-re-7-re-7,nah-sh,RE 7,10435,DB Regio AG Nord,db-regio-ag-nord,#ef7c00,#000000,,rectangle,,traewelling-line-colors
+nah-sh-re-70-re-70,nah-sh,RE 70,10435,DB Regio AG Nord,db-regio-ag-nord,#c30732,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-71-nbe-rb71,nah-sh,RB 71,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#008bd2,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-re-72-nbe-re72,nah-sh,RE 72,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#adce6d,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-73-nbe-re73,nah-sh,RB 73,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#008c57,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-re-74-nbe-re74,nah-sh,RE 74,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#693b58,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-75-nbe-re75,nah-sh,RB 75,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#ba731a,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-76-erx-rb76,nah-sh,RB 76,10966,erixx,erixx,#ffdc00,#000000,,rectangle,,traewelling-line-colors
+nah-sh-re-8-re-8,nah-sh,RE 8,10435,DB Regio AG Nord,db-regio-ag-nord,#a3d9f0,#000000,,rectangle,,traewelling-line-colors
+nah-sh-re-80-re-80,nah-sh,RE 80,10435,DB Regio AG Nord,db-regio-ag-nord,#d9338a,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-81-re-81,nah-sh,RB 81,10435,DB Regio AG Nord,db-regio-ag-nord,#798e0e,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-82-nbe-rb82,nah-sh,RB 82,10919,Nordbahn Eisenbahngesellschaft,nordbahn-eisenbahngesellschaft,#9c9c9c,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-re-83-erx-re83,nah-sh,RE 83,10966,erixx,erixx,#2d53a0,#ffffff,,rectangle,,traewelling-line-colors
+nah-sh-rb-84-erx-rb84,nah-sh,RB 84,10966,erixx,erixx,#e4afd2,#000000,,rectangle,,traewelling-line-colors
+nah-sh-rb-85-rb-85,nah-sh,RB 85,10435,DB Regio AG Nord,db-regio-ag-nord,#fbb902,#000000,,rectangle,,traewelling-line-colors
+nah-sh-x-85-3-b1-x85,nah-sh,X 85,10435,DB Regio AG Nord,db-regio-ag-nord,#a9b85d,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb12-rb-12,neb-niederbarnimer-eisenbahn,RB12,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#a5027d,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb25-rb-25,neb-niederbarnimer-eisenbahn,RB25,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#007cb0,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb26-rb-26,neb-niederbarnimer-eisenbahn,RB26,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#009686,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb27-rb-27,neb-niederbarnimer-eisenbahn,RB27,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#e2001a,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb35-rb-35,neb-niederbarnimer-eisenbahn,RB35,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#816da6,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb36-rb-36,neb-niederbarnimer-eisenbahn,RB36,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#ad5937,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb54-rb-54,neb-niederbarnimer-eisenbahn,RB54,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#816da6,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb60-rb-60,neb-niederbarnimer-eisenbahn,RB60,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#66aa22,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb61-rb-61,neb-niederbarnimer-eisenbahn,RB61,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#992746,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb62-rb-62,neb-niederbarnimer-eisenbahn,RB62,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-rb63-rb-63,neb-niederbarnimer-eisenbahn,RB63,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#ffd502,#000000,,rectangle,,traewelling-line-colors
+neb-niederbarnimer-eisenbahn-tes-rb-tes,neb-niederbarnimer-eisenbahn,TES,10912,NEB Niederbarnimer Eisenbahn,neb-niederbarnimer-eisenbahn,#d70000,#ffffff,,rectangle,,traewelling-line-colors
+nrw-regional-re-1-re-1,nrw-regional,RE 1,10913,National Express,national-express,#e20714,#ffffff,,rectangle-rounded-corner,Q874359,traewelling-line-colors
+nrw-regional-re-2-re-2,nrw-regional,RE 2,10436,DB Regio AG NRW,db-regio-ag-nrw,#009de2,#ffffff,,rectangle-rounded-corner,Q382591,traewelling-line-colors
+nrw-regional-re-3-re-3,nrw-regional,RE 3,11049,Eurobahn,eurobahn,#d46e16,#ffffff,,rectangle-rounded-corner,Q871573,traewelling-line-colors
+nrw-regional-re-4-re-4,nrw-regional,RE 4,10913,National Express,national-express,#da9400,#ffffff,,rectangle-rounded-corner,Q872372,traewelling-line-colors
+nrw-regional-re-5-re-5,nrw-regional,RE 5,10913,National Express,national-express,#0076b3,#ffffff,,rectangle-rounded-corner,Q872615,traewelling-line-colors
+nrw-regional-re-6-re-6,nrw-regional,RE 6,10913,National Express,national-express,#a61680,#ffffff,,rectangle-rounded-corner,Q870341,traewelling-line-colors
+nrw-regional-re-7-re-7,nrw-regional,RE 7,10913,National Express,national-express,#112d68,#ffffff,,rectangle-rounded-corner,Q832962,traewelling-line-colors
+nrw-regional-re-8-re-8,nrw-regional,RE 8,10436,DB Regio AG NRW,db-regio-ag-nrw,#0062ae,#ffffff,,rectangle-rounded-corner,Q875596,traewelling-line-colors
+nrw-regional-re-9-re-9,nrw-regional,RE 9,10436,DB Regio AG NRW,db-regio-ag-nrw,#521949,#ffffff,,rectangle-rounded-corner,Q882593,traewelling-line-colors
+nrw-regional-re-10-rrb-re10,nrw-regional,RE 10,14173,RheinRuhrBahn,rheinruhrbahn,#da5c99,#ffffff,,rectangle-rounded-corner,Q100456656,traewelling-line-colors
+nrw-regional-re-11-re-11,nrw-regional,RE 11,10913,National Express,national-express,#65c0be,#ffffff,,rectangle-rounded-corner,Q835014,traewelling-line-colors
+nrw-regional-re-12-re-12,nrw-regional,RE 12,10436,DB Regio AG NRW,db-regio-ag-nrw,#a92248,#ffffff,,rectangle-rounded-corner,Q84931378,traewelling-line-colors
+nrw-regional-re-13-re-13,nrw-regional,RE 13,11049,Eurobahn,eurobahn,#856314,#ffffff,,rectangle-rounded-corner,Q869881,traewelling-line-colors
+nrw-regional-re-14-rrb-re14,nrw-regional,RE 14,14173,RheinRuhrBahn,rheinruhrbahn,#003328,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-16-via-re16,nrw-regional,RE 16,10933,VIAS Rail GmbH,vias-rail-gmbh,#005c76,#ffffff,,rectangle-rounded-corner,Q429055,traewelling-line-colors
+nrw-regional-re-17-re-17,nrw-regional,RE 17,10436,DB Regio AG NRW,db-regio-ag-nrw,#489234,#ffffff,,rectangle-rounded-corner,Q2227173,traewelling-line-colors
+nrw-regional-re-18-re-18,nrw-regional,RE 18,10436,DB Regio AG NRW,db-regio-ag-nrw,#00b1b1,#ffffff,,rectangle-rounded-corner,Q20737324,traewelling-line-colors
+nrw-regional-re-19-via-re19,nrw-regional,RE 19,10933,VIAS Rail GmbH,vias-rail-gmbh,#22601f,#ffffff,,rectangle-rounded-corner,Q24355686,traewelling-line-colors
+nrw-regional-rb-20-rb-20,nrw-regional,RB 20,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-21-rtb-rb21,nrw-regional,RB 21,10858,Rurtalbahn,rurtalbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-22-re-22,nrw-regional,RE 22,10436,DB Regio AG NRW,db-regio-ag-nrw,#f9b123,#ffffff,,rectangle-rounded-corner,Q84931440,traewelling-line-colors
+nrw-regional-rb-24-rb-24,nrw-regional,RB 24,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-25-rb-25,nrw-regional,RB 25,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-26-rb-26,nrw-regional,RB 26,10946,MittelrheinBahn (Trans Regio),mittelrheinbahn-trans-regio,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-27-rb-27,nrw-regional,RB 27,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-28-rtb-rb28,nrw-regional,RB 28,10858,Rurtalbahn,rurtalbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-30-rb-30,nrw-regional,RB 30,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-31-rrb-rb31,nrw-regional,RB 31,14173,RheinRuhrBahn,rheinruhrbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-32-rb-32,nrw-regional,RB 32,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-33-rb-33,nrw-regional,RB 33,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-34-re-34,nrw-regional,RE 34,10918,DB Fernverkehr (Codesharing),db-fernverkehr-codesharing,#985f85,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-34-re-34-2,nrw-regional,RE 34,10436,DB Regio AG NRW,db-regio-ag-nrw,#985f85,#ffffff,,rectangle-rounded-corner,Q115660992,traewelling-line-colors
+nrw-regional-re-34-hlb-re34,nrw-regional,RE 34,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#8c467d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-34,nrw-regional,RE 34,10933,VIAS Rail GmbH,vias-rail-gmbh,#985f85,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-34-via-rb34,nrw-regional,RB 34,10933,VIAS Rail GmbH,vias-rail-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-35-via-rb35,nrw-regional,RB 35,10933,VIAS Rail GmbH,vias-rail-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-36-rrb-rb36,nrw-regional,RB 36,14173,RheinRuhrBahn,rheinruhrbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-37-tri-rb37,nrw-regional,RB 37,13122,TRI Train Rental GmbH,tri-train-rental-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-38-rb-38,nrw-regional,RB 38,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-39-via-rb39,nrw-regional,RB 39,10933,VIAS Rail GmbH,vias-rail-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-40-rb-40,nrw-regional,RB 40,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-41-re-41,nrw-regional,RE 41,10436,DB Regio AG NRW,db-regio-ag-nrw,#604696,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-42-re-42,nrw-regional,RE 42,10436,DB Regio AG NRW,db-regio-ag-nrw,#d7bd00,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-43-rb-43,nrw-regional,RB 43,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-44-rrb-re44,nrw-regional,RE 44,14173,RheinRuhrBahn,rheinruhrbahn,#6799b5,#ffffff,,rectangle-rounded-corner,Q84307934,traewelling-line-colors
+nrw-regional-rb-46-via-rb46,nrw-regional,RB 46,10933,VIAS Rail GmbH,vias-rail-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-47-r-re-47,nrw-regional,RE 47,10894,REGIOBAHN,regiobahn,#5dc3e9,#ffffff,,rectangle-rounded-corner,Q113173486,traewelling-line-colors
+nrw-regional-rb-48-rb-48,nrw-regional,RB 48,10913,National Express,national-express,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-49-re-49,nrw-regional,RE 49,10436,DB Regio AG NRW,db-regio-ag-nrw,#cb977d,#ffffff,,rectangle-rounded-corner,Q76883133,traewelling-line-colors
+nrw-regional-rb-50-rb-50,nrw-regional,RB 50,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-51-rb-51,nrw-regional,RB 51,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-52-rb-52,nrw-regional,RB 52,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-53-rb-53,nrw-regional,RB 53,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-54-rb-54,nrw-regional,RB 54,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-57-re-57,nrw-regional,RE 57,10436,DB Regio AG NRW,db-regio-ag-nrw,#3d6ca3,#ffffff,,rectangle-rounded-corner,Q68193119,traewelling-line-colors
+nrw-regional-rb-58-nwb-rb58,nrw-regional,RB 58,12638,NordWestBahn,nordwestbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-59-rb-59,nrw-regional,RB 59,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-61-rb-61,nrw-regional,RB 61,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-62-re-62,nrw-regional,RE 62,10435,DB Regio AG Nord,db-regio-ag-nord,#004c99,#ffffff,,rectangle-rounded-corner,Q123758235,traewelling-line-colors
+nrw-regional-rb-63-rb-63,nrw-regional,RB 63,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-64-rb-64,nrw-regional,RB 64,10436,DB Regio AG NRW,db-regio-ag-nrw,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-65-rb-65,nrw-regional,RB 65,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-66-rb-66,nrw-regional,RB 66,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-67-rb-67,nrw-regional,RB 67,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-69-rb-69,nrw-regional,RB 69,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-71-rb-71,nrw-regional,RB 71,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-72-rb-72,nrw-regional,RB 72,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-73-rb-73,nrw-regional,RB 73,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-74-nwb-rb74,nrw-regional,RB 74,12638,NordWestBahn,nordwestbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-75-nwb-rb75,nrw-regional,RB 75,12638,NordWestBahn,nordwestbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-78-re-78,nrw-regional,RE 78,11049,Eurobahn,eurobahn,#60b1cc,#ffffff,,rectangle-rounded-corner,Q1804703,traewelling-line-colors
+nrw-regional-re-82-re-82,nrw-regional,RE 82,11049,Eurobahn,eurobahn,#489b40,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-84-nwb-rb84,nrw-regional,RB 84,12638,NordWestBahn,nordwestbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-85-nwb-rb85,nrw-regional,RB 85,12638,NordWestBahn,nordwestbahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-89-rb-89,nrw-regional,RB 89,11049,Eurobahn,eurobahn,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-90-hlb-rb90,nrw-regional,RB 90,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-91,nrw-regional,RB 91,10933,VIAS Rail GmbH,vias-rail-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-92-hlb-rb92,nrw-regional,RB 92,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-93-hlb-rb93,nrw-regional,RB 93,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-95-hlb-rb95,nrw-regional,RB 95,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-rb-96-hlb-rb96,nrw-regional,RB 96,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#7a7c80,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+nrw-regional-re-99-hlb-re99,nrw-regional,RE 99,11046,Hessische Landesbahn GmbH,hessische-landesbahn-gmbh,#00a13b,#ffffff,,rectangle-rounded-corner,Q1885503,traewelling-line-colors
+nrw-sbahn-s-1-4-800337-1,nrw-sbahn,S 1,10436,DB Regio AG NRW,db-regio-ag-nrw,#0cb14b,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-2-4-8003l1-2,nrw-sbahn,S 2,10436,DB Regio AG NRW,db-regio-ag-nrw,#0074bc,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-3-4-8003l1-3,nrw-sbahn,S 3,10436,DB Regio AG NRW,db-regio-ag-nrw,#fff200,#000000,,pill,,traewelling-line-colors
+nrw-sbahn-s-4-4-800337-4,nrw-sbahn,S 4,10436,DB Regio AG NRW,db-regio-ag-nrw,#f5821f,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-5-4-800354-5,nrw-sbahn,S 5,10436,DB Regio AG NRW,db-regio-ag-nrw,#80c342,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-6-4-8003s-6,nrw-sbahn,S 6,10436,DB Regio AG NRW,db-regio-ag-nrw,#e21d3c,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-8-4-800354-8,nrw-sbahn,S 8,10436,DB Regio AG NRW,db-regio-ag-nrw,#b23815,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-9-4-8003l1-9,nrw-sbahn,S 9,10436,DB Regio AG NRW,db-regio-ag-nrw,#c6168d,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-11-4-8003s-11,nrw-sbahn,S 11,10436,DB Regio AG NRW,db-regio-ag-nrw,#f26522,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-12-4-8003s-12,nrw-sbahn,S 12,10436,DB Regio AG NRW,db-regio-ag-nrw,#4db857,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-19-4-8003s-19,nrw-sbahn,S 19,10436,DB Regio AG NRW,db-regio-ag-nrw,#00658e,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-23-4-800352-23,nrw-sbahn,S 23,10436,DB Regio AG NRW,db-regio-ag-nrw,#8c2a77,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-28-4-m2-28,nrw-sbahn,S 28,10894,REGIOBAHN,regiobahn,#4a0b4d,#ffffff,,pill,,traewelling-line-colors
+nrw-sbahn-s-68,nrw-sbahn,S 68,10436,DB Regio AG NRW,db-regio-ag-nrw,#468432,#ffffff,,pill,,traewelling-line-colors
+nvv-kassel-tram-1,nvv-kassel-tram,1,9142,KVG Tram,kvg-tram,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-2,nvv-kassel-tram,2,9142,KVG Tram,kvg-tram,#ffffff,#0069b4,#0069b4,rectangle,,traewelling-line-colors
+nvv-kassel-tram-3,nvv-kassel-tram,3,9142,KVG Tram,kvg-tram,#94c11e,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-4,nvv-kassel-tram,4,9142,KVG Tram,kvg-tram,#f08100,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-5,nvv-kassel-tram,5,9142,KVG Tram,kvg-tram,#7e5ca3,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-6,nvv-kassel-tram,6,9142,KVG Tram,kvg-tram,#894e37,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-7,nvv-kassel-tram,7,9142,KVG Tram,kvg-tram,#fbb900,#ffffff,,rectangle,,traewelling-line-colors
+nvv-kassel-tram-8,nvv-kassel-tram,8,9142,KVG Tram,kvg-tram,#00a4df,#ffffff,,rectangle,,traewelling-line-colors
+nvv-rt-rt1,nvv-rt,RT1,9142,KVG Tram,kvg-tram,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+nvv-rt-rt4,nvv-rt,RT4,9142,KVG Tram,kvg-tram,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+nvv-rt-rt5,nvv-rt,RT5,9142,KVG Tram,kvg-tram,#e30513,#ffffff,,rectangle,,traewelling-line-colors
+oberpfalzbahn-dlb-rb-23-rb23,oberpfalzbahn-dlb,RB 23,10923,oberpfalzbahn - Die Länderbahn GmbH DLB,oberpfalzbahn-die-laenderbahn-gmbh-dlb,#6cc3d9,#ffffff,,rectangle,,traewelling-line-colors
+oberpfalzbahn-dlb-rb-27-rb27,oberpfalzbahn-dlb,RB 27,10923,oberpfalzbahn - Die Länderbahn GmbH DLB,oberpfalzbahn-die-laenderbahn-gmbh-dlb,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+oberpfalzbahn-dlb-rb-28-rb28,oberpfalzbahn-dlb,RB 28,10923,oberpfalzbahn - Die Länderbahn GmbH DLB,oberpfalzbahn-die-laenderbahn-gmbh-dlb,#90bf26,#ffffff,,rectangle,,traewelling-line-colors
+oberpfalzbahn-dlb-rb-29-rb29,oberpfalzbahn-dlb,RB 29,10923,oberpfalzbahn - Die Länderbahn GmbH DLB,oberpfalzbahn-die-laenderbahn-gmbh-dlb,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb10,odeg,RB10,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#5cb445,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb13-rb-13,odeg,RB13,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#3f4545,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb14-rb-14,odeg,RB14,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#196e76,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb15-rb-15,odeg,RB15,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#00a998,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb17-rb-17,odeg,RB17,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#dd4daf,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb18-rb-18,odeg,RB18,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#399fdf,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb19-rb-19,odeg,RB19,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#f46717,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb33-rb-33,odeg,RB33,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#a5027d,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb37-rb-37,odeg,RB37,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#ad5937,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb46-rb-46,odeg,RB46,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb51-rb-51,odeg,RB51,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#da6ba2,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb64-rb-64,odeg,RB64,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#006552,#ffffff,,rectangle,,traewelling-line-colors
+odeg-rb65-rb-65,odeg,RB65,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#0066ad,#ffffff,,rectangle,,traewelling-line-colors
+odeg-re1-re-1,odeg,RE1,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#e2001a,#ffffff,,rectangle,,traewelling-line-colors
+odeg-re3,odeg,RE3,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#f37a22,#ffffff,,rectangle,,traewelling-line-colors
+odeg-re8-re-8,odeg,RE8,8569,ODEG Ostdeutsche Eisenbahn GmbH,odeg-ostdeutsche-eisenbahn-gmbh,#775fb0,#ffffff,,rectangle,,traewelling-line-colors
+odeg-re9-re-9,odeg,RE9,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#b51d48,#ffffff,,rectangle,,traewelling-line-colors
+odeg-re50,odeg,RE50,8569,Ostdeutsche Eisenbahn GmbH,ostdeutsche-eisenbahn-gmbh,#0087cb,#ffffff,,rectangle,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-2,regio-s-bahn-donau-iller,RS 2,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#901411,#ffffff,,pill,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-21,regio-s-bahn-donau-iller,RS 21,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#e92a1c,#ffffff,,pill,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-5,regio-s-bahn-donau-iller,RS 5,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00622e,#ffffff,,pill,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-51,regio-s-bahn-donau-iller,RS 51,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#43aa2c,#ffffff,,pill,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-7,regio-s-bahn-donau-iller,RS 7,10446,DB Regio AG Bayern,db-regio-ag-bayern,#234997,#ffffff,,pill,,traewelling-line-colors
+regio-s-bahn-donau-iller-rs-71,regio-s-bahn-donau-iller,RS 71,10446,DB Regio AG Bayern,db-regio-ag-bayern,#1398d3,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s1-4-800528-1,rmv-db-sbahn,S1,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#009edd,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s2-4-800528-2,rmv-db-sbahn,S2,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#ff2e17,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s3-4-800528-3,rmv-db-sbahn,S3,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#00b098,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s4-4-800528-4,rmv-db-sbahn,S4,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#ffc734,#2c2e35,#2c2e35,pill,,traewelling-line-colors
+rmv-db-sbahn-s5-4-800528-5,rmv-db-sbahn,S5,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#95542a,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s6-4-800528-6,rmv-db-sbahn,S6,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#ff7322,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s7-4-800528-7,rmv-db-sbahn,S7,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#214d36,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s8-4-800528-8,rmv-db-sbahn,S8,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#88c946,#ffffff,,pill,,traewelling-line-colors
+rmv-db-sbahn-s9-4-800528-9,rmv-db-sbahn,S9,12201,DB Regio AG S-Bahn Rhein-Main,db-regio-ag-s-bahn-rhein-main,#872996,#ffffff,,pill,,traewelling-line-colors
+rvf-sbahn-re-s1-re-s1,rvf-sbahn,RE S1,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#d30630,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s1-4-8006c6-1,rvf-sbahn,S1,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#d30630,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s1-4-8006c4-1,rvf-sbahn,S1,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#d30630,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s2-4-s6-s2,rvf-sbahn,S2,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#afca0b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s3-4-s6-s3,rvf-sbahn,S3,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#b15a9e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s5-4-s6-s5,rvf-sbahn,S5,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#0069b4,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s10-4-8006c6-10,rvf-sbahn,S10,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#d30630,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s11-4-8006c6-11,rvf-sbahn,S11,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#f69795,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sbahn-s11-4-8006c4-11,rvf-sbahn,S11,10443,DB Regio AG Baden-Württemberg,db-regio-ag-baden-wuerttemberg,#f69795,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+rvf-sweg-sudwest-1-5-swg099-sb1,rvf-sweg-sudwest,1,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#a3238e,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-1-9-swg099-1,rvf-sweg-sudwest,1,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#a3238e,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-2-5-swg099-sb2,rvf-sweg-sudwest,2,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#fab383,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-2-9-swg099-2,rvf-sweg-sudwest,2,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#fab383,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-3-5-swg099-sb3,rvf-sweg-sudwest,3,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f68b1e,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-3-9-swg099-3,rvf-sweg-sudwest,3,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f68b1e,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-4-9-swg099-4,rvf-sweg-sudwest,4,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#009a4e,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-5-5-swg099-sb5,rvf-sweg-sudwest,5,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ed1c24,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-5-9-swg099-5,rvf-sweg-sudwest,5,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ed1c24,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-6-5-swg099-sb6,rvf-sweg-sudwest,6,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#74714c,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-6-9-swg099-6,rvf-sweg-sudwest,6,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#74714c,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-7-9-swg099-7,rvf-sweg-sudwest,7,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ffdd00,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-9-5-swg099-sb9,rvf-sweg-sudwest,9,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#008a90,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-9-9-swg099-9,rvf-sweg-sudwest,9,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#008a90,#ffffff,,rectangle,,traewelling-line-colors
+rvf-sweg-sudwest-10-9-swg099-10,rvf-sweg-sudwest,10,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#cf9c50,#ffffff,,rectangle,,traewelling-line-colors
+s-bahn-hannover-transdev-s-1-4-tdhs-1,s-bahn-hannover-transdev,S 1,13776,S-Bahn Hannover,s-bahn-hannover,#846daa,#ffffff,,pill,Q63433445,traewelling-line-colors
+s-bahn-hannover-transdev-s-2-4-tdhs-2,s-bahn-hannover-transdev,S 2,13776,S-Bahn Hannover,s-bahn-hannover,#007a3d,#ffffff,,pill,Q63433449,traewelling-line-colors
+s-bahn-hannover-transdev-s-21-4-tdhs-21,s-bahn-hannover-transdev,S 21,13776,S-Bahn Hannover,s-bahn-hannover,#007a3d,#ffffff,,pill,Q63433451,traewelling-line-colors
+s-bahn-hannover-transdev-s-3-4-tdhs-3,s-bahn-hannover-transdev,S 3,13776,S-Bahn Hannover,s-bahn-hannover,#cc69a6,#ffffff,,pill,Q63433452,traewelling-line-colors
+s-bahn-hannover-transdev-s-4-4-tdhs-4,s-bahn-hannover-transdev,S 4,13776,S-Bahn Hannover,s-bahn-hannover,#9b2b48,#ffffff,,pill,Q63433455,traewelling-line-colors
+s-bahn-hannover-transdev-s-5-4-tdhs-5,s-bahn-hannover-transdev,S 5,13776,S-Bahn Hannover,s-bahn-hannover,#f18700,#ffffff,,pill,Q63433456,traewelling-line-colors
+s-bahn-hannover-transdev-s-51-4-tdhs-51,s-bahn-hannover-transdev,S 51,13776,S-Bahn Hannover,s-bahn-hannover,#f18700,#ffffff,,pill,Q63433457,traewelling-line-colors
+s-bahn-hannover-transdev-s-6-4-tdhs-6,s-bahn-hannover-transdev,S 6,13776,S-Bahn Hannover,s-bahn-hannover,#004f9f,#ffffff,,pill,Q63433460,traewelling-line-colors
+s-bahn-hannover-transdev-s-7-4-tdhs-7,s-bahn-hannover-transdev,S 7,13776,S-Bahn Hannover,s-bahn-hannover,#afcb27,#ffffff,,pill,Q63433461,traewelling-line-colors
+s-bahn-hannover-transdev-s-8-4-tdhs-8,s-bahn-hannover-transdev,S 8,13776,S-Bahn Hannover,s-bahn-hannover,#1794ca,#ffffff,,pill,Q63433462,traewelling-line-colors
+sued-thueringen-bahn-rb41,sued-thueringen-bahn,RB41,10942,Süd-Thüringen-Bahn,sued-thueringen-bahn,#006eab,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-rb43,sued-thueringen-bahn,RB43,10942,Süd-Thüringen-Bahn,sued-thueringen-bahn,#e30513,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-rb44,sued-thueringen-bahn,RB44,10942,Süd-Thüringen-Bahn,sued-thueringen-bahn,#f39200,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-re45,sued-thueringen-bahn,RE45,10941,Süd-Thüringen-Bahn Express,sued-thueringen-bahn-express,#008136,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-rb46,sued-thueringen-bahn,RB46,10942,Süd-Thüringen-Bahn,sued-thueringen-bahn,#12a537,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-rb48,sued-thueringen-bahn,RB48,10942,Süd-Thüringen-Bahn,sued-thueringen-bahn,#0096d7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sued-thueringen-bahn-re50,sued-thueringen-bahn,RE50,10941,Süd-Thüringen-Bahn Express,sued-thueringen-bahn-express,#ec6607,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svg-stuttgart-re4,svg-stuttgart,RE4,10954,Nebenbahn Vaihingen-Enzweihingen,nebenbahn-vaihingen-enzweihingen,#a05a2c,#ffffff,,rectangle,,traewelling-line-colors
+svv-brb-s3-4-l8-s3,svv-brb,S3,10969,Bayerische Regiobahn,bayerische-regiobahn,#3ab048,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-brb-s4-4-l8-s4,svv-brb,S4,10969,Bayerische Regiobahn,bayerische-regiobahn,#9764ac,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-r3-r-3,svv-oebb,R3,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#99be41,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-r9-r-9,svv-oebb,R9,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#e4be3d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-r21-r-21,svv-oebb,R21,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#44bccf,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-rex21-rex-21,svv-oebb,REX21,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#ff8124,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-s2-4-81-2-1451275-5318936,svv-oebb,S2,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#0077bd,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+svv-oebb-s3-4-81-3-1451275-5318936,svv-oebb,S3,13396,Österreichische Bundesbahnen,oesterreichische-bundesbahnen,#3ab048,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+sweg-sudwest-re4,sweg-sudwest,RE4,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#a05a2c,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb42,sweg-sudwest,RB42,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#088c3c,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb42a,sweg-sudwest,RB42a,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f06c1c,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-re42,sweg-sudwest,RE42,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#088c3c,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb43,sweg-sudwest,RB43,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#089ce4,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb43a,sweg-sudwest,RB43a,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#b8941c,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb59a,sweg-sudwest,RB59a,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ffc734,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb66,sweg-sudwest,RB66,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#014f9f,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-re66,sweg-sudwest,RE66,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#014f9f,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb67,sweg-sudwest,RB67,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00a9df,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb68,sweg-sudwest,RB68,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ec2933,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb68a,sweg-sudwest,RB68a,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#d30630,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb69,sweg-sudwest,RB69,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f27320,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rb76,sweg-sudwest,RB76,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#aa0044,#ffffff,,rectangle,,traewelling-line-colors
+sweg-sudwest-rs1,sweg-sudwest,RS1,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#1d4e9e,#ffffff,,pill,,traewelling-line-colors
+sweg-sudwest-rs11,sweg-sudwest,RS11,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#009ddb,#ffffff,,pill,,traewelling-line-colors
+sweg-sudwest-rs12,sweg-sudwest,RS12,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#74ba24,#ffffff,,pill,,traewelling-line-colors
+sweg-sudwest-rs2,sweg-sudwest,RS2,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#fbc707,#ffffff,,pill,,traewelling-line-colors
+sweg-sudwest-rs4,sweg-sudwest,RS4,10939,Südwestdeutsche Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#d91338,#ffffff,,pill,,traewelling-line-colors
+tlx-l2-tl-l2,tlx,L2,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#0f7ec0,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-l24-tl-l24,tlx,L24,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#6eae47,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-l4-tl-l4,tlx,L4,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#242320,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-l7-tl-l7,tlx,L7,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#ea7b09,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-rb60-tl-rb60,tlx,RB60,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#569b6d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-rb61-tl-rb61,tlx,RB61,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#438577,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-re1-tlx-re1,tlx,RE1,10890,trilex-express - Die Länderbahn GmbH DLB,trilex-express-die-laenderbahn-gmbh-dlb,#e97b3b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-re2-tlx-re2,tlx,RE2,10890,trilex-express - Die Länderbahn GmbH DLB,trilex-express-die-laenderbahn-gmbh-dlb,#db031c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+tlx-t9-tl-t9,tlx,T9,10892,trilex  - Die Länderbahn GmbH DLB,trilex-die-laenderbahn-gmbh-dlb,#f6b90b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+trans-regio-re2,trans-regio,RE2,10946,MittelrheinBahn (Trans Regio),mittelrheinbahn-trans-regio,#7a52a1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+trans-regio-rb32,trans-regio,RB32,10946,MittelrheinBahn (Trans Regio),mittelrheinbahn-trans-regio,#da8a9b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbb-db-sbahn-s1-4-08-1,vbb-db-sbahn,S1,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#eb588f,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s15-4-08-15,vbb-db-sbahn,S15,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#d474ae,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s2-4-08-2,vbb-db-sbahn,S2,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#047939,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s25-4-08-25,vbb-db-sbahn,S25,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#047939,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s26-4-08-26,vbb-db-sbahn,S26,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#047939,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s3-4-08-3,vbb-db-sbahn,S3,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#026597,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s41-4-08-41,vbb-db-sbahn,S41,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#aa3c1f,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s42-4-08-42,vbb-db-sbahn,S42,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#ba622d,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s46-4-08-46,vbb-db-sbahn,S46,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#ca8539,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s47-4-08-47,vbb-db-sbahn,S47,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#ca8539,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s5-4-08-5,vbb-db-sbahn,S5,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#ea561c,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s7-4-08-7,vbb-db-sbahn,S7,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#764d9a,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s75-4-08-75,vbb-db-sbahn,S75,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#764d9a,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s8-4-08-8,vbb-db-sbahn,S8,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#4fa433,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s85-4-08-85,vbb-db-sbahn,S85,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#4fa433,#ffffff,,pill,,traewelling-line-colors
+vbb-db-sbahn-s9-4-08-9,vbb-db-sbahn,S9,1,S-Bahn Berlin GmbH,s-bahn-berlin-gmbh,#951732,#ffffff,,pill,,traewelling-line-colors
+vbg-rb-1-vbg-rb1,vbg,RB 1,10382,vogtlandbahn - Die Länderbahn GmbH DLB,vogtlandbahn-die-laenderbahn-gmbh-dlb,#e30613,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbg-rb-2-vbg-rb2,vbg,RB 2,10382,vogtlandbahn - Die Länderbahn GmbH DLB,vogtlandbahn-die-laenderbahn-gmbh-dlb,#0067b0,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbg-rb-4-vbg-rb4,vbg,RB 4,10382,vogtlandbahn - Die Länderbahn GmbH DLB,vogtlandbahn-die-laenderbahn-gmbh-dlb,#954b3f,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbg-rb-5-vbg-rb5,vbg,RB 5,10382,vogtlandbahn - Die Länderbahn GmbH DLB,vogtlandbahn-die-laenderbahn-gmbh-dlb,#009641,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-1-4-n1-rs1,vbn-nwb-regio-s-bahn,RS 1,12638,NordWestBahn,nordwestbahn,#00448b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-2-4-n1-rs2,vbn-nwb-regio-s-bahn,RS 2,12638,NordWestBahn,nordwestbahn,#e89023,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-3-4-n1-rs3,vbn-nwb-regio-s-bahn,RS 3,12638,NordWestBahn,nordwestbahn,#93bf30,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-30-4-n1-rs30,vbn-nwb-regio-s-bahn,RS 30,12638,NordWestBahn,nordwestbahn,#4faf3b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-4-4-n1-rs4,vbn-nwb-regio-s-bahn,RS 4,12638,NordWestBahn,nordwestbahn,#e2000b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vbn-nwb-regio-s-bahn-rs-6-4-n1-rs6,vbn-nwb-regio-s-bahn,RS 6,12638,NordWestBahn,nordwestbahn,#899bb9,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vgn-db-sbn-s-1-4-800721-1,vgn-db-sbn,S 1,10446,DB Regio AG Bayern,db-regio-ag-bayern,#92292e,#ffffff,,rectangle,,traewelling-line-colors
+vgn-db-sbn-s-2-4-800721-2,vgn-db-sbn,S 2,10446,DB Regio AG Bayern,db-regio-ag-bayern,#4dbd38,#ffffff,,rectangle,,traewelling-line-colors
+vgn-db-sbn-s-3-4-800721-3,vgn-db-sbn,S 3,10446,DB Regio AG Bayern,db-regio-ag-bayern,#f1471d,#ffffff,,rectangle,,traewelling-line-colors
+vgn-db-sbn-s-4-4-800721-4,vgn-db-sbn,S 4,10446,DB Regio AG Bayern,db-regio-ag-bayern,#2c3797,#ffffff,,rectangle,,traewelling-line-colors
+vgn-db-sbn-s-5-4-800721-5,vgn-db-sbn,S 5,10446,DB Regio AG Bayern,db-regio-ag-bayern,#0c7bc1,#ffffff,,rectangle,,traewelling-line-colors
+vgn-db-sbn-s-6-4-800721-6,vgn-db-sbn,S 6,10446,DB Regio AG Bayern,db-regio-ag-bayern,#95af33,#ffffff,,rectangle,,traewelling-line-colors
+vias-rb10-via-rb10,vias,RB10,10932,VIAS GmbH,vias-gmbh,#e3a02e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vias-re80,vias,RE80,10933,VIAS Rail GmbH,vias-rail-gmbh,#ec1f25,#ffffff,,pill,,traewelling-line-colors
+vias-re85,vias,RE85,10933,VIAS Rail GmbH,vias-rail-gmbh,#e3a026,#ffffff,,pill,,traewelling-line-colors
+vias-rb86,vias,RB86,10933,VIAS Rail GmbH,vias-rail-gmbh,#e3a026,#ffffff,,pill,,traewelling-line-colors
+vias-rb82,vias,RB82,10933,VIAS Rail GmbH,vias-rail-gmbh,#ec1f25,#ffffff,,pill,,traewelling-line-colors
+vias-rb81,vias,RB81,10933,VIAS Rail GmbH,vias-rail-gmbh,#ec1f25,#ffffff,,pill,,traewelling-line-colors
+vias-rb66,vias,RB66,10933,VIAS Rail GmbH,vias-rail-gmbh,#007dc5,#ffffff,,pill,,traewelling-line-colors
+vias-rb61,vias,RB61,10933,VIAS Rail GmbH,vias-rail-gmbh,#007dc5,#ffffff,,pill,,traewelling-line-colors
+vlexx-ex,vlexx,EX,10952,vlexx1,vlexx,#0a9641,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re2,vlexx,RE2,10952,vlexx1,vlexx,#ec174c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re3,vlexx,RE3,10952,vlexx1,vlexx,#d12025,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re4,vlexx,RE4,10952,vlexx1,vlexx,#f8941d,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re13,vlexx,RE13,10952,vlexx1,vlexx,#b91525,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re15,vlexx,RE15,10952,vlexx1,vlexx,#6d2983,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re17,vlexx,RE17,10952,vlexx1,vlexx,#f37050,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb31,vlexx,RB31,10951,vlexx,vlexx,#005c95,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb33,vlexx,RB33,10951,vlexx,vlexx,#004685,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb34,vlexx,RB34,10951,vlexx,vlexx,#0688ca,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-re34,vlexx,RE34,10952,vlexx1,vlexx,#0688ca,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb35,vlexx,RB35,10951,vlexx,vlexx,#0d9ad7,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb44,vlexx,RB44,10951,vlexx,vlexx,#004666,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb53,vlexx,RB53,10951,vlexx,vlexx,#a1cd3a,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb72,vlexx,RB72,10951,vlexx,vlexx,#6d8c51,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb73,vlexx,RB73,10951,vlexx,vlexx,#00785b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb74,vlexx,RB74,10951,vlexx,vlexx,#40b98c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vlexx-rb76,vlexx,RB76,10951,vlexx,vlexx,#92c83e,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vms-chemnitzbahn-c11,vms-chemnitzbahn,C11,14974,Chemnitzer Modell1,chemnitzer-modell,#ab98c4,#ffffff,,pill,,traewelling-line-colors
+vms-chemnitzbahn-c13,vms-chemnitzbahn,C13,14974,Chemnitzer Modell1,chemnitzer-modell,#62b9bd,#ffffff,,pill,,traewelling-line-colors
+vms-chemnitzbahn-c14,vms-chemnitzbahn,C14,14974,Chemnitzer Modell1,chemnitzer-modell,#edab53,#ffffff,,pill,,traewelling-line-colors
+vms-chemnitzbahn-c15,vms-chemnitzbahn,C15,14974,Chemnitzer Modell1,chemnitzer-modell,#a8342e,#ffffff,,pill,,traewelling-line-colors
+vms-chemnitzbahn-rb37,vms-chemnitzbahn,RB37,10851,City-Bahn Chemnitz,city-bahn-chemnitz,#2e4e95,#ffffff,,rectangle,,traewelling-line-colors
+vms-chemnitzbahn-rb92,vms-chemnitzbahn,RB92,10851,City-Bahn Chemnitz,city-bahn-chemnitz,#1c2851,#ffffff,,rectangle,,traewelling-line-colors
+vrn-sbahn-rn-s1,vrn-sbahn-rn,S1,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#ed1c24,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s2,vrn-sbahn-rn,S2,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#1575c5,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-re2,vrn-sbahn-rn,RE2,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#1575c5,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s3,vrn-sbahn-rn,S3,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#fddd04,#231f20,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s4,vrn-sbahn-rn,S4,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#00a650,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s5,vrn-sbahn-rn,S5,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#9d4d23,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s6,vrn-sbahn-rn,S6,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#40c1f3,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s7,vrn-sbahn-rn,S7,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#f79837,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-re7,vrn-sbahn-rn,RE7,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#f79837,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s8,vrn-sbahn-rn,S8,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#ed4b9b,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s9,vrn-sbahn-rn,S9,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#73c82c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-re9,vrn-sbahn-rn,RE9,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#73c82c,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s10,vrn-sbahn-rn,S10,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#a26fa9,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s12,vrn-sbahn-rn,S12,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#f4a9ca,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s33,vrn-sbahn-rn,S33,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#833aa1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-s44,vrn-sbahn-rn,S44,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#0e8d86,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sbahn-rn-rb67,vrn-sbahn-rn,RB67,10449,DB Regio AG Mitte Region Südwest,db-regio-ag-mitte-region-suedwest,#406bb1,#ffffff,,rectangle-rounded-corner,,traewelling-line-colors
+vrn-sweg-675,vrn-sweg,675,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#854896,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-701,vrn-sweg,701,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#5c2e91,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-702,vrn-sweg,702,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f36e2b,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-703,vrn-sweg,703,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#cb6c28,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-704,vrn-sweg,704,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f3b928,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-705,vrn-sweg,705,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f496bf,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-706,vrn-sweg,706,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00a94b,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-707,vrn-sweg,707,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#312b71,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-708,vrn-sweg,708,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ee322a,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-709,vrn-sweg,709,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ffcc2a,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-712,vrn-sweg,712,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#9e0933,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-713,vrn-sweg,713,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#e93e70,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-718,vrn-sweg,718,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#62b7d2,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-728,vrn-sweg,728,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#bcbec0,#58585a,#58585a,pill,,traewelling-line-colors
+vrn-sweg-730,vrn-sweg,730,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#8a5d3b,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-741,vrn-sweg,741,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00a24b,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-750,vrn-sweg,750,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#923474,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-761,vrn-sweg,761,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#84af3f,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-762,vrn-sweg,762,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#7c77ac,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-763,vrn-sweg,763,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#fdb315,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-765,vrn-sweg,765,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00635d,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-767,vrn-sweg,767,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00635d,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-768,vrn-sweg,768,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#00a79e,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-771,vrn-sweg,771,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#7c77ac,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-772,vrn-sweg,772,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#ec5ea2,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-791,vrn-sweg,791,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#91c83e,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-792,vrn-sweg,792,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#f295a0,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-793,vrn-sweg,793,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#004ebe,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-794,vrn-sweg,794,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#94050b,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-798,vrn-sweg,798,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#eedb00,#ffffff,,pill,,traewelling-line-colors
+vrn-sweg-799,vrn-sweg,799,7916,Südwestdeutsche-Verkehrs-AG,suedwestdeutsche-verkehrs-ag,#009ddc,#ffffff,,pill,,traewelling-line-colors
+vvo-db-regio-u-28-rb-u28,vvo-db-regio,U 28,10437,DB Regio AG Südost,db-regio-ag-suedost,#014d6f,#ffffff,,pill,,traewelling-line-colors
+vvo-db-regio-rb-33-rb-33,vvo-db-regio,RB 33,10437,DB Regio AG Südost,db-regio-ag-suedost,#ec7797,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-regio-rb-71-rb-71,vvo-db-regio,RB 71,10437,DB Regio AG Südost,db-regio-ag-suedost,#ad006f,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-regio-rb-72-rb-72,vvo-db-regio,RB 72,10437,DB Regio AG Südost,db-regio-ag-suedost,#9c321b,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-regio-re-19-re-19,vvo-db-regio,RE 19,10437,DB Regio AG Südost,db-regio-ag-suedost,#00895d,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-regio-re-20-re-20,vvo-db-regio,RE 20,10437,DB Regio AG Südost,db-regio-ag-suedost,#575756,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-regio-re-50-re-50,vvo-db-regio,RE 50,10437,DB Regio AG Südost,db-regio-ag-suedost,#b60d1c,#ffffff,,rectangle,,traewelling-line-colors
+vvo-db-sbd-s-1-4-800469-1,vvo-db-sbd,S 1,10437,DB Regio AG Südost,db-regio-ag-suedost,#4f9551,#ffffff,,pill,Q56378877,traewelling-line-colors
+vvo-db-sbd-s-2-4-800469-2,vvo-db-sbd,S 2,10437,DB Regio AG Südost,db-regio-ag-suedost,#f58220,#ffffff,,pill,Q56378880,traewelling-line-colors
+vvo-db-sbd-s-3-4-800469-3,vvo-db-sbd,S 3,10437,DB Regio AG Südost,db-regio-ag-suedost,#00b3ef,#ffffff,,pill,Q56378881,traewelling-line-colors
+vvo-db-sbd-s-8-4-8004l1-8,vvo-db-sbd,S 8,10437,DB Regio AG Südost,db-regio-ag-suedost,#2d92ad,#ffffff,,pill,Q115244230,traewelling-line-colors
+vvs-db-sbs-rb11-rb-11,vvs-db-sbs,RB11,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#02aa9e,#ffffff,,rectangle,,traewelling-line-colors
+vvs-db-sbs-rb64-rb-64,vvs-db-sbs,RB64,14827,DB-Zug  (nicht VVS)1,db-zug-nicht-vvs,#b6931d,#ffffff,,rectangle,,traewelling-line-colors
+vvs-db-sbs-s1-4-800643-1,vvs-db-sbs,S1,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#59af41,#ffffff,,rectangle,Q18946157,traewelling-line-colors
+vvs-db-sbs-s2-4-800643-2,vvs-db-sbs,S2,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#ee1c28,#ffffff,,rectangle,Q66537943,traewelling-line-colors
+vvs-db-sbs-s3-4-800643-3,vvs-db-sbs,S3,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#f36e31,#ffffff,,rectangle,Q67504621,traewelling-line-colors
+vvs-db-sbs-s4-4-800643-4,vvs-db-sbs,S4,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#0166b3,#ffffff,,rectangle,,traewelling-line-colors
+vvs-db-sbs-s5-4-800643-5,vvs-db-sbs,S5,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#00acdd,#ffffff,,rectangle,,traewelling-line-colors
+vvs-db-sbs-s6-4-800643-6,vvs-db-sbs,S6,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#844c00,#ffffff,,rectangle,Q67501804,traewelling-line-colors
+vvs-db-sbs-s11-4-800643-11,vvs-db-sbs,S11,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#59af41,#ffffff,,rectangle,Q107020232,traewelling-line-colors
+vvs-db-sbs-s60-4-800643-60,vvs-db-sbs,S60,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#8a8d06,#ffffff,,rectangle,Q63952011,traewelling-line-colors
+vvs-db-sbs-s62-4-800643-62,vvs-db-sbs,S62,15337,DB Regio AG S-Bahn Stuttgart,db-regio-ag-s-bahn-stuttgart,#c3792e,#ffffff,,rectangle,Q130343355,traewelling-line-colors
+vvs-weg-rb-46-weg-rb46,vvs-weg,RB 46,7992,NE-Zug (VVS),ne-zug-vvs,#561c6f,#ffffff,,rectangle,,traewelling-line-colors
+vvs-weg-rb-47-weg-rb47,vvs-weg,RB 47,7992,NE-Zug (VVS),ne-zug-vvs,#b0599e,#ffffff,,rectangle,,traewelling-line-colors
+vvs-weg-rb-61-weg-rb61,vvs-weg,RB 61,7992,NE-Zug (VVS),ne-zug-vvs,#561c6f,#ffffff,,rectangle,,traewelling-line-colors
+vvs-weg-rb-65-weg-rb65,vvs-weg,RB 65,7992,NE-Zug (VVS),ne-zug-vvs,#b0599e,#ffffff,,rectangle,,traewelling-line-colors
+vvt-db-regio-bayern-s7-4-800790-7,vvt-db-regio-bayern,S7,10446,DB Regio AG Bayern,db-regio-ag-bayern,#d09eba,#ffffff,,rectangle,,traewelling-line-colors
+waldbahn-dlb-rb-35-rb35,waldbahn-dlb,RB 35,10964,waldbahn - Die Länderbahn GmbH DLB,waldbahn-die-laenderbahn-gmbh-dlb,#006629,#ffffff,,rectangle,,traewelling-line-colors
+waldbahn-dlb-rb-36-rb36,waldbahn-dlb,RB 36,10964,waldbahn - Die Länderbahn GmbH DLB,waldbahn-die-laenderbahn-gmbh-dlb,#90bf26,#ffffff,,rectangle,,traewelling-line-colors
+waldbahn-dlb-rb-37-rb37,waldbahn-dlb,RB 37,10964,waldbahn - Die Länderbahn GmbH DLB,waldbahn-die-laenderbahn-gmbh-dlb,#ffb200,#ffffff,,rectangle,,traewelling-line-colors
+waldbahn-dlb-rb-38-rb38,waldbahn-dlb,RB 38,10964,waldbahn - Die Länderbahn GmbH DLB,waldbahn-die-laenderbahn-gmbh-dlb,#ff6600,#ffffff,,rectangle,,traewelling-line-colors
+westfalenbahn-re-15-wfb-re15,westfalenbahn,RE 15,13291,WestfalenBahn,westfalenbahn,#ea9d22,#ffffff,,rectangle,,traewelling-line-colors
+westfalenbahn-re-60-wfb-re60,westfalenbahn,RE 60,13291,WestfalenBahn,westfalenbahn,#00a3de,#ffffff,,rectangle,Q1339624,traewelling-line-colors
+westfalenbahn-re-70-wfb-re70,westfalenbahn,RE 70,13291,WestfalenBahn,westfalenbahn,#005174,#ffffff,,rectangle,Q1806487,traewelling-line-colors

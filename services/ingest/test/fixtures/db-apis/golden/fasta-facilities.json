@@ -1,0 +1,98 @@
+[
+  {
+    "equipmentNumber": 10906606,
+    "type": "ELEVATOR",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "description": "zu Gleis 6/7",
+    "stationNumber": 2060,
+    "operatorName": "DB InfraGO",
+    "lon": 9.7005148,
+    "lat": 50.0494346,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10018524,
+    "type": "ESCALATOR",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "description": "zu Gleis 1/2",
+    "stationNumber": 1693,
+    "operatorName": "DB InfraGO",
+    "lon": 6.9803912,
+    "lat": 51.45429495,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10855569,
+    "type": "ELEVATOR",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "description": "Aufzug zu Bstg. 2",
+    "stationNumber": 1223,
+    "operatorName": "DB InfraGO",
+    "lon": 6.7381006,
+    "lat": 51.5676806,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10453206,
+    "type": "ELEVATOR",
+    "state": "INACTIVE",
+    "stateExplanation": "not available",
+    "description": "BSTG. 1 - GL.1",
+    "stationNumber": 144,
+    "operatorName": "DB InfraGO",
+    "lon": 7.4042739,
+    "lat": 50.4346823,
+    "operationalResumeDate": "2026-10-30"
+  },
+  {
+    "equipmentNumber": 10900965,
+    "type": "ELEVATOR",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "description": "Aufzug zu Gl.102/103",
+    "stationNumber": 649,
+    "operatorName": "Stadt Bingen",
+    "lon": null,
+    "lat": null,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10861132,
+    "type": "ELEVATOR",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "description": null,
+    "stationNumber": 3191,
+    "operatorName": "DB InfraGO",
+    "lon": 8.92127,
+    "lat": 50.8239,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10903300,
+    "type": "ESCALATOR",
+    "state": "INACTIVE",
+    "stateExplanation": "not available",
+    "description": "von Gl. 7/8 zum Südsteg aufw.",
+    "stationNumber": 2514,
+    "operatorName": "DB InfraGO",
+    "lon": 10.00726,
+    "lat": 53.55214,
+    "operationalResumeDate": null
+  },
+  {
+    "equipmentNumber": 10307731,
+    "type": "ELEVATOR",
+    "state": "UNKNOWN",
+    "stateExplanation": "monitoring not available",
+    "description": "zu Gleis 2/3",
+    "stationNumber": 5682,
+    "operatorName": "DB InfraGO",
+    "lon": 9.5260327,
+    "lat": 48.8070748,
+    "operationalResumeDate": null
+  }
+]

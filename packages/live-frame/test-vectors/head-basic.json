@@ -1,0 +1,14 @@
+{
+  "name": "head-basic",
+  "description": "Head at sequence 1001, latest keyframe 1000, deltas kept from 900.",
+  "decoder": "head",
+  "expected": {
+    "kind": "head",
+    "sequence": 1001,
+    "timetableVersion": 7,
+    "timeBase": 1793000004,
+    "keyframeSequence": 1000,
+    "oldestSequence": 900
+  },
+  "byteLength": 68
+}

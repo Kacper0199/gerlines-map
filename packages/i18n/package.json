@@ -1,0 +1,56 @@
+{
+  "name": "@gerlines/i18n",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Messages in English, German and Polish",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./messages": "./src/paraglide/messages.js",
+    "./react": "./src/react.ts",
+    "./stats": "./src/stats.ts",
+    "./legal": "./src/legal.ts",
+    "./journeys": "./src/journeys.ts",
+    "./predict": "./src/predict.ts",
+    "./playback": "./src/playback.ts",
+    "./profile": "./src/profile.ts",
+    "./status": "./src/status.ts",
+    "./a11y": "./src/a11y.ts",
+    "./inview": "./src/inview.ts",
+    "./signature": "./src/signature.ts",
+    "./vehicle": "./src/vehicle.ts",
+    "./colour-key": "./src/colour-key.ts"
+  },
+  "scripts": {
+    "compile": "paraglide-js compile --project ./project.inlang --silent",
+    "lint": "biome check . && node ../../scripts/lint-copy.ts",
+    "lint:copy": "node ../../scripts/lint-copy.ts",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^19.3.1"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@inlang/paraglide-js": "catalog:",
+    "@inlang/plugin-message-format": "4.5.7",
+    "@testing-library/dom": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "happy-dom": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

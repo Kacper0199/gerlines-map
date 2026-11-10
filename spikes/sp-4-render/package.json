@@ -1,0 +1,40 @@
+{
+  "name": "@gerlines/sp-4-render",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Spike SP-4: render performance of MapLibre 6 plus deck.gl 9.4 with worker motion",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:fixture": "node scripts/build-fixture.mjs",
+    "dev": "vite --host 127.0.0.1",
+    "lint": "biome check .",
+    "measure": "bash scripts/measure.sh",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@deck.gl/core": "catalog:",
+    "@deck.gl/layers": "catalog:",
+    "@deck.gl/maplibre": "catalog:",
+    "@deck.gl/mesh-layers": "catalog:",
+    "@loaders.gl/core": "catalog:",
+    "@luma.gl/core": "catalog:",
+    "@luma.gl/engine": "catalog:",
+    "@luma.gl/gltf": "catalog:",
+    "@luma.gl/shadertools": "catalog:",
+    "@luma.gl/webgl": "catalog:",
+    "@math.gl/web-mercator": "4.1.0",
+    "maplibre-gl": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@gerlines/config/tsconfig/dom.json",
+  "compilerOptions": {
+    "types": ["node", "vite/client"]
+  },
+  "include": ["src", "tools", "vite.config.ts", "scripts/**/*.mjs"]
+}

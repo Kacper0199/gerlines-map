@@ -1,0 +1,10 @@
+{
+  "extends": "@gerlines/config/tsconfig/dom.json",
+  "compilerOptions": {
+    "types": ["vite/client", "node"],
+    "paths": { "@/*": ["./src/*"] },
+    "allowJs": true,
+    "checkJs": false
+  },
+  "include": ["src", "sheet", "scripts", "vite.config.ts"]
+}

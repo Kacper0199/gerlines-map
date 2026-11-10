@@ -1,0 +1,111 @@
+{
+  "ok": true,
+  "feedVersion": "2026-10-17T14:46:34",
+  "feedTimestamp": 1792929820,
+  "events": [
+    {
+      "kind": "alert",
+      "source": "delfi-gtfs-sa",
+      "entityId": "vbn-dds-prod-736-245537_____vbn-dds",
+      "observedAt": 1792929950194,
+      "cause": null,
+      "effect": null,
+      "severity": null,
+      "activePeriods": [
+        {
+          "start": 1743372000,
+          "end": 1793487540
+        }
+      ],
+      "selectors": [
+        {
+          "agencyId": "12123",
+          "routeId": "de:VBN-VSN:140:_3",
+          "routeType": null,
+          "sourceTripId": null,
+          "startDate": null,
+          "stop": null
+        }
+      ],
+      "header": [
+        {
+          "text": "Sperrung Ballenhausen Bauerweg",
+          "language": "DE"
+        }
+      ],
+      "description": [
+        {
+          "text": "Von Montag, 31. März 2025 bis Ende Oktober 2026 wird der Bauerweg in Ballenhausen, wegen Bauarbeiten voll gesperrt.Die Haltestellen Solkweg und Wiesenstraße können nicht bedient werden, eine Ersatzhaltestelle wird in der Rhienstraße eingerichtet.",
+          "language": "DE"
+        }
+      ],
+      "url": []
+    },
+    {
+      "kind": "alert",
+      "source": "delfi-gtfs-sa",
+      "entityId": "rcsued-server-736-prod-8909a68a-1312-5997-93e1-d43d43284d49_____rcsued-server",
+      "observedAt": 1792929950194,
+      "cause": null,
+      "effect": null,
+      "severity": null,
+      "activePeriods": [
+        {
+          "start": 1792378800,
+          "end": 1794002400
+        }
+      ],
+      "selectors": [
+        {
+          "agencyId": "15313",
+          "routeId": "de:vpe:04731_:_3",
+          "routeType": null,
+          "sourceTripId": null,
+          "startDate": null,
+          "stop": null
+        }
+      ],
+      "header": [
+        {
+          "text": "Linie 731: Umleitung wegen Bauarbeiten",
+          "language": "DE"
+        }
+      ],
+      "description": [],
+      "url": []
+    },
+    {
+      "kind": "alert",
+      "source": "delfi-gtfs-sa",
+      "entityId": "vbn-dds-prod-736-290623_____vbn-dds",
+      "observedAt": 1792929950194,
+      "cause": null,
+      "effect": null,
+      "severity": null,
+      "activePeriods": [
+        {
+          "start": 1793930400,
+          "end": 1796079540
+        }
+      ],
+      "selectors": [
+        {
+          "agencyId": "12108",
+          "routeId": "de:VBN:N25:1_3",
+          "routeType": null,
+          "sourceTripId": null,
+          "startDate": null,
+          "stop": null
+        }
+      ],
+      "header": [
+        {
+          "text": "Linie N25: Keine Fahrten mehr am Wochenende - Einstellung der Fahrten ab 6.11.26",
+          "language": "DE"
+        }
+      ],
+      "description": [],
+      "url": []
+    }
+  ]
+}

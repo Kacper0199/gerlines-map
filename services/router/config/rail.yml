@@ -1,0 +1,33 @@
+server:
+  host: 127.0.0.1
+  port: "@PORT@"
+  web_folder: "@WEB_FOLDER@"
+  n_threads: 8
+osm: "@OSM@"
+street_routing: true
+timetable:
+  first_day: "@FIRST_DAY@"
+  num_days: @NUM_DAYS@
+  railviz: true
+  with_shapes: true
+  route_shapes:
+    mode: all
+    n_threads: 8
+    clasz:
+      AIR: false
+      COACH: false
+      RIDESHARING: false
+      SUBWAY: false
+      TRAM: false
+      BUS: false
+      SHIP: false
+      ODM: false
+      AERIALLIFT: false
+      OTHER: false
+  datasets:
+    de-DELFI:
+      path: "@DELFI_ZIP@"
+geocoding: false
+reverse_geocoding: false
+logging:
+  log_level: info

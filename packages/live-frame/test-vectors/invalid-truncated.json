@@ -1,0 +1,7 @@
+{
+  "name": "invalid-truncated",
+  "description": "keyframe-basic without its last 9 bytes.",
+  "decoder": "keyframe",
+  "error": "truncated",
+  "byteLength": 476
+}

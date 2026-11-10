@@ -1,0 +1,35 @@
+{
+  "name": "@gerlines/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "HTTP API with OpenAPI from zod",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./limits": "./src/limits.ts"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=../../.env src/server.ts",
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests --exclude \"**/*.integration.test.ts\"",
+    "test:integration": "node --env-file-if-exists=../../.env node_modules/vitest/vitest.mjs run --test-timeout=60000 --hook-timeout=60000 integration",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@gerlines/db": "workspace:*",
+    "@gerlines/schema": "workspace:*",
+    "@hono/node-server": "catalog:",
+    "hono": "catalog:",
+    "iovalkey": "catalog:",
+    "kysely": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

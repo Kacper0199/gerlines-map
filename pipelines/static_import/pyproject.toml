@@ -1,0 +1,24 @@
+[project]
+name = "gerlines-static-import"
+version = "0.1.0"
+description = "Weekly DELFI timetable import for GerLines: download, validate, categorise, load, enrich for MOTIS"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "gerlines-common",
+  "numpy==2.5.4",
+  "psycopg[binary]==3.3.6",
+  "pyogrio==0.13.0",
+  "pyproj==3.8.0",
+  "shapely==2.2.0",
+]
+
+[project.scripts]
+gerlines-static-import = "gerlines_static_import.cli:main"
+
+[tool.uv.sources]
+gerlines-common = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

@@ -1,0 +1,4 @@
+{
+  "extends": "@gerlines/config/tsconfig/node.json",
+  "include": ["src", "test", "bench", "scripts", "vitest.config.ts"]
+}

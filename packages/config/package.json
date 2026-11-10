@@ -1,0 +1,28 @@
+{
+  "name": "@gerlines/config",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared TypeScript configuration and the tests of the repository secret rules",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/dom.json": "./tsconfig/dom.json",
+    "./tsconfig/node.json": "./tsconfig/node.json"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@secretlint/node": "catalog:",
+    "@secretlint/secretlint-rule-pattern": "catalog:",
+    "@secretlint/secretlint-rule-preset-recommend": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

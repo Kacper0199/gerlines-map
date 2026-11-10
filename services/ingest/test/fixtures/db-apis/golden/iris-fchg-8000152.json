@@ -1,0 +1,186 @@
+{
+  "station": "Hannover Hbf",
+  "eva": 8000152,
+  "stops": [
+    {
+      "id": "6161405535149816642-2610260406-5",
+      "eva": 8000152,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-26T03:51:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": null,
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "S5",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": []
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "1767422951519870524-2610252151-20",
+      "eva": 8000152,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:08:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "1",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RB38",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": []
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "2810195840507242816-2610252132-5",
+      "eva": 8000152,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:46:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": null,
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "7071551368623384147-5664866768097215324",
+            "type": "d",
+            "code": 47,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T20:29:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "8205116904917690951-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T20:42:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "-3840934826685621445-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:28:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-3511439655951240562-2610260705-100",
+      "eva": 8000152,
+      "tripLabel": {
+        "category": "ENO",
+        "number": "83596",
+        "owner": "R0",
+        "filter": null,
+        "tripType": "p"
+      },
+      "arrival": {
+        "plannedTime": "2026-10-26T06:50:00.000Z",
+        "changedTime": null,
+        "delayMinutes": null,
+        "plannedPlatform": "11 D-G",
+        "changedPlatform": null,
+        "plannedPath": [
+          "Gifhorn",
+          "Leiferde(b Gifhorn)",
+          "Meinersen",
+          "Dedenhausen",
+          "Dollbergen",
+          "Immensen-Arpke",
+          "Lehrte"
+        ],
+        "changedPath": [
+          "Gifhorn",
+          "Leiferde(b Gifhorn)",
+          "Meinersen",
+          "Dedenhausen",
+          "Dollbergen",
+          "Immensen-Arpke",
+          "Lehrte"
+        ],
+        "plannedStatus": "added",
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RE30",
+        "displayName": "RE30",
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-7650260030006190048",
+            "type": "d",
+            "code": 1,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T10:30:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    }
+  ]
+}

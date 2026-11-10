@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GerLines, Stellwerk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="a-stellwerk/style.css">
+</head>
+<body data-ready="0">
+<div class="app">
+  <aside class="panel" id="panel" aria-label="GerLines panel">
+    <header class="brand-row">
+      <div class="brand">
+        <svg class="mark" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 1.5v17M15 1.5v17M5 5.5h10M5 10h10M5 14.5h10" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square"/></svg>
+        <div>
+          <h1 class="wordmark">GerLines</h1>
+          <p class="tagline">Every train in Germany, live</p>
+        </div>
+      </div>
+      <button type="button" class="top-search" id="topSearch" aria-label="Search trains"><i data-lucide="search"></i></button>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" aria-pressed="true">EN</button>
+        <button type="button" aria-disabled="true">DE</button>
+        <button type="button" aria-disabled="true">PL</button>
+      </div>
+    </header>
+    <button type="button" class="sheet-handle" id="sheetHandle" aria-label="Show more details" aria-expanded="false"><span></span></button>
+    <div class="panel-top" id="panelTop">
+      <div class="seg seg-main" role="tablist" aria-label="Panel mode">
+        <button type="button" role="tab" aria-selected="true" id="tabLive">Live</button>
+        <button type="button" role="tab" aria-selected="false" id="tabSearch">Search</button>
+        <button type="button" role="tab" aria-selected="false" aria-disabled="true">Statistics</button>
+      </div>
+    </div>
+    <div class="panel-body" id="panelBody">
+      <section class="view" id="viewLive" aria-label="All trains"></section>
+      <section class="view" id="viewCard" aria-label="Selected train" hidden></section>
+    </div>
+  </aside>
+
+  <main class="map-wrap">
+    <div id="map" role="application" aria-label="Map of trains in Germany"></div>
+    <div class="stage" id="stage" aria-live="polite"><span id="stageText">Germany, all trains</span><span class="zoom" id="zoomText">Zoom 5.9</span></div>
+    <div class="controls">
+      <div class="zoombox" role="group" aria-label="Zoom">
+        <button type="button" id="zoomIn" aria-label="Zoom in"><i data-lucide="plus"></i></button>
+        <button type="button" id="zoomOut" aria-label="Zoom out"><i data-lucide="minus"></i></button>
+      </div>
+      <button type="button" class="layers-btn" id="layersBtn" aria-label="Map style" aria-expanded="false"><i data-lucide="layers"></i></button>
+      <div class="styles" id="styles" role="radiogroup" aria-label="Map style">
+        <button type="button" role="radio" aria-checked="true" data-style="dark">Dark</button>
+        <button type="button" role="radio" aria-checked="false" data-style="light">Light</button>
+        <button type="button" role="radio" aria-checked="false" aria-disabled="true">Satellite</button>
+        <button type="button" role="radio" aria-checked="false" aria-disabled="true">Terrain</button>
+      </div>
+    </div>
+    <details class="attrib" id="attrib">
+      <summary>Attribution</summary>
+      <p>Map data <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, <a href="https://openfreemap.org">OpenFreeMap</a>, <a href="https://openmaptiles.org">OpenMapTiles</a>. Trains <a href="https://transitous.org">Transitous</a>, <a href="https://www.delfi.de">DELFI</a>. Coach sequence bahn.de.</p>
+    </details>
+  </main>
+</div>
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="a-stellwerk/style.js"></script>
+<script src="a-stellwerk/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "invalid-delta-base",
+  "description": "delta-basic with baseSequence 999 for sequence 1001 (the base must be sequence - 1).",
+  "decoder": "delta",
+  "error": "corrupt",
+  "byteLength": 416
+}

@@ -1,0 +1,34 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271400738 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 27-27, 156-187; references removed. -->
+== Aktuelle Linien ==
+=== Linie 76 ===
+Zwischen Flensburg und Fredericia verkehren die Züge im Zweistundentakt. Es werden dänische Dieseltriebzüge der Bauart ''IC3'' ([[DSB MF|DSB-Baureihe MF]]) eingesetzt, welche eine PZB-Ausrüstung und somit eine Zulassung für das deutsche Netz besitzen. Sukzessive werden alle Züge durch neue Talgo230-Züge ersetzt.
+{| class="wikitable"
+|-
+! Linie !! Linienverlauf !! Fahrzeuge
+|-
+| <span style="color:#0094D9">'''IC&nbsp;76'''</span> || [[Bahnhof Flensburg|Flensburg]]&nbsp;– [[Padborg]]&nbsp;– [[Tinglev#Wirtschaft und Verkehr|Tinglev]]&nbsp;– [[Rødekro#Verkehr|Rødekro]]&nbsp;– [[Vojens]]&nbsp;– [[Vamdrup]]&nbsp;– [[Lunderskov (Kolding Kommune)|Lunderskov]]&nbsp;– [[Kolding#Wirtschaft und Verkehr|Kolding]]&nbsp;– [[Fredericia#Verkehr|Fredericia]]
+| [[DSB MF|DSB-Baureihe MF]]
+|}
+
+=== Linie 87 ===
+Bis 2010 wurde diese Linie als ICE-Linie 87 geführt, aber da aufgrund von mehreren Problemen nicht genügend [[ICE&nbsp;T]] zur Verfügung standen, kamen lokbespannte Intercity-Züge zum Einsatz.
+
+Von 2010 bis 2022 wurde zwischen Stuttgart und Singen ein Stundentakt angeboten. Zu jeder zweiten Stunde gab es eine durchgehende Verbindung von Stuttgart nach Zürich, allerdings mit weniger Zwischenhalten. Zwei der Zugpaare verkehrten montags bis freitags über Singen hinaus nach Konstanz. In den IC-Zügen werden bis einschließlich Singen auch alle Nahverkehrstickets anerkannt. Vereinzelte Züge wurden verlängert bis Frankfurt Hbf. Ein Zugpaar (IC 460/461) verkehrte auf einem Seitenast der Linie Richtung Wien Hbf. Die Schweizerischen Bundesbahnen führten die Linie im Abschnitt Zürich–Schaffhausen bis zum [[Fahrplanjahr]] 2022 nach dem [[InterCity (Schweiz)#Streckennetz 2017 bis 2024|schweizerischen Nummernsystem]] unter der Linienbezeichnung IC&nbsp;4.
+
+Seit Ende 2022 wurden die IC2-Garnituren von Bombardier sukzessive durch IC2-Triebzüge vom Typ [[Stadler KISS]] ersetzt, welche durchgehend nach Zürich fahren. Hierfür stehen acht Einheiten zur Verfügung. Jeder zweite Zug fährt dabei beschleunigt mit weniger Halten. (Zum Ausgleich fährt in ähnlicher Zeitlage ein RE zwischen Stuttgart und Rottweil.) Die Anerkennung von Nahverkehrskarten gilt für den IC zu jeder Stunde gleichermaßen.
+
+Da die auf der IC-Linie 87 eingesetzten und von der österreichischen [[Westbahn (Unternehmen)|Westbahn]] übernommenen Triebzüge des Typs [[Stadler KISS#DB Fernverkehr|Stadler KISS]] in Wien gewartet werden, verkehrte täglich ein Zugpaar [[Liste der Nachtzugverbindungen in Deutschland#IC Stuttgart – Wien|über Nacht]] zwischen Stuttgart und Wien über München und Salzburg. Zum kleinen Fahrplanwechsel am 9. Juni 2025 wurden die KISS von der DB an die [[Österreichische Bundesbahnen|ÖBB]] verkauft und die Linie 87 wieder auf IC2-Garnituren von Bombardier umgestellt. Das nächtliche Zugpaar Stuttgart – Wien wurde daher eingestellt.
+
+{| class="wikitable"
+|-
+! Linie !! Linienverlauf
+!Fahrzeuge
+|-
+|rowspan="2" style="color:#A60053"| '''IC&nbsp;87'''
+| [[Stuttgart Hauptbahnhof|Stuttgart]]&nbsp;– [[Bahnhof Böblingen|Böblingen]]&nbsp;– [[Bahnhof Horb|Horb]]&nbsp;– [[Bahnhof Rottweil|Rottweil]]&nbsp;– [[Bahnhof Tuttlingen|Tuttlingen]]&nbsp;– [[Bahnhof Singen (Hohentwiel)|Singen]]&nbsp;– [[Bahnhof Schaffhausen|Schaffhausen]]&nbsp;– [[Zürich Hauptbahnhof|Zürich]]
+|rowspan="2"|[[Intercity 2 (Deutsche Bahn)|IC2]]
+|-
+| ([[Frankfurt am Main Hauptbahnhof|Frankfurt]]&nbsp;– [[Darmstadt Hauptbahnhof|Darmstadt]]&nbsp;– [[Bahnhof Bensheim|Bensheim]]&nbsp;– [[Weinheim (Bergstraße) Hauptbahnhof|Weinheim]]&nbsp;– [[Heidelberg Hauptbahnhof|Heidelberg]]&nbsp;– {{nowrap|[[Bahnhof Wiesloch-Walldorf|Wiesloch-Walldorf]]&nbsp;–)}} [[Stuttgart Hauptbahnhof|Stuttgart]]&nbsp;– [[Bahnhof Böblingen|Böblingen]]&nbsp;– [[Bahnhof Herrenberg|Herrenberg]]*&nbsp;– [[Gäufelden#Eisenbahn|Gäufelden]]*&nbsp;– [[Bahnhof Bondorf (b Herrenberg)|Bondorf]]*&nbsp;– [[Bahnhof Horb|Horb]]&nbsp;– [[Sulz am Neckar#Verkehr|Sulz]]*&nbsp;– [[Oberndorf am Neckar#Verkehr|Oberndorf]]*&nbsp;– [[Bahnhof Rottweil|Rottweil]]&nbsp;– [[Bahnhof Spaichingen|Spaichingen]]*&nbsp;– [[Bahnhof Tuttlingen|Tuttlingen]]&nbsp;– [[Bahnhof Engen|Engen]]*&nbsp;– [[Bahnhof Singen (Hohentwiel)|Singen]]&nbsp;– [[Bahnhof Schaffhausen|Schaffhausen]]&nbsp;– [[Zürich Hauptbahnhof|Zürich]] (* Halt nur zu jeder zweiten Stunde)
+|}
+
+== Eingestellte Linien ==

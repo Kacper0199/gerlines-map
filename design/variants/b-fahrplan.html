@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GerLines Fahrplan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&family=Overpass+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="b-fahrplan/app.css">
+</head>
+<body data-theme="dark">
+<div id="map" aria-label="Map of trains in Germany"></div>
+
+<div class="ui">
+  <div class="left">
+    <section class="card search-card" aria-label="Search and colour mode">
+      <div class="brand-row">
+        <h1 class="wordmark">GerLines</h1>
+        <p class="tagline">Every train in Germany, live</p>
+      </div>
+      <label class="search">
+        <i data-lucide="search" aria-hidden="true"></i>
+        <input type="search" placeholder="Train, line or station" aria-label="Search for a train, line or station" autocomplete="off">
+      </label>
+      <div class="modes" role="group" aria-label="Colour trains by">
+        <span class="modes-label">Colour by</span>
+        <button type="button" class="mode" data-mode="category" aria-pressed="true">Category</button>
+        <button type="button" class="mode" data-mode="delay" aria-pressed="false">Delay</button>
+        <button type="button" class="mode" data-mode="operator" aria-disabled="true" title="Operator is not in the sample data">Operator</button>
+      </div>
+    </section>
+
+    <article class="card train-card" id="card" data-state="collapsed" aria-label="Selected train"></article>
+  </div>
+
+  <button type="button" class="card layers-btn" id="layers-btn" aria-label="Layers and filters" aria-expanded="false">
+    <i data-lucide="layers" aria-hidden="true"></i>
+  </button>
+
+  <div class="right" id="right">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" aria-pressed="true" lang="en">EN</button>
+      <button type="button" aria-pressed="false" lang="de" aria-disabled="true">DE</button>
+      <button type="button" aria-pressed="false" lang="pl" aria-disabled="true">PL</button>
+    </div>
+    <section class="card layers" aria-label="Map style">
+      <h2>Map style</h2>
+      <div class="thumbs" id="thumbs"></div>
+    </section>
+    <section class="card cats" aria-label="Trains on the map" id="cats"></section>
+  </div>
+
+  <div class="zoomctl card" role="group" aria-label="Zoom">
+    <button type="button" id="zin" aria-label="Zoom in"><i data-lucide="plus" aria-hidden="true"></i></button>
+    <button type="button" id="zout" aria-label="Zoom out"><i data-lucide="minus" aria-hidden="true"></i></button>
+  </div>
+
+  <div class="card livebar" id="livebar">
+    <span class="live"><span class="live-dot" aria-hidden="true"></span>Live</span>
+    <span class="live-time num" id="live-time"></span>
+    <span class="live-date" id="live-date"></span>
+    <span class="live-stage" id="stage"></span>
+  </div>
+
+  <p class="attrib" id="attrib">
+    Map data
+    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>,
+    <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>,
+    <a href="https://openmaptiles.org" target="_blank" rel="noopener">OpenMapTiles</a>.
+    Trains
+    <a href="https://transitous.org" target="_blank" rel="noopener">Transitous</a>,
+    <a href="https://www.delfi.de" target="_blank" rel="noopener">DELFI</a>.
+  </p>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="b-fahrplan/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+{
+  "query": {
+    "from": "de:04011:13927",
+    "to": "de:02000:10950",
+    "time": "2026-11-10T06:00:00.000Z",
+    "arriveBy": false,
+    "categories": ["hsr", "ld", "night", "rfast", "reg", "sbahn", "urban", "bus", "other"],
+    "exclude": [],
+    "operators": [],
+    "avoidOperators": [],
+    "maxChanges": null,
+    "sort": "earliestArrival",
+    "results": 5,
+    "geometry": true
+  },
+  "journeys": [
+    {
+      "id": "fcbc4318a776cfcc",
+      "departure": "2026-11-10T06:22:00Z",
+      "arrival": "2026-11-10T07:18:00Z",
+      "durationS": 3360,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "42",
+          "tripNumber": "001028",
+          "headsign": "Hamburg-Altona",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_04:00_de-DELFI_3448686413",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:04011:13927::9",
+            "name": "Bremen Hbf",
+            "lat": 53.083501,
+            "lon": 8.81418,
+            "time": "2026-11-10T06:22:00Z",
+            "scheduledTime": "2026-11-10T06:22:00Z",
+            "track": "9",
+            "scheduledTrack": "9",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:02000:10950",
+            "name": "Hamburg Hbf",
+            "lat": 53.552736,
+            "lon": 10.006909,
+            "time": "2026-11-10T07:18:00Z",
+            "scheduledTime": "2026-11-10T07:18:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "departure": "2026-11-10T06:22:00Z",
+          "arrival": "2026-11-10T07:18:00Z",
+          "scheduledDeparture": "2026-11-10T06:22:00Z",
+          "scheduledArrival": "2026-11-10T07:18:00Z",
+          "durationS": 3360,
+          "geometry": {
+            "polyline": "{z~bIqoxt@iDnJeChKmA~DqFvN}GbN_D`F_[n`@gDvDmBxA_FlBmEZyEk@{DcBuDgDeCoDoCyGeBqHm@oEc@{GiFavAMeILwHfb@k`JrCii@`LupAr[qkD~BiRzRwoAhBiOxBaXdAyY\\}f@f@mXdM}lFL{TG}Qk@iRqAmVmj@_vHoZygEgBkXcA{W_\\elNYmPiJyjOuCaeF]qY}@qXcg@sbI_Ci[uFq|@{BqXsF_v@kE{[kCaOsKug@qE{QoE{Nm`Cq`HmGaQaFaMaIuOsHkMg_F_nHaHkLkHwNwFqM{EqM_IqWcDmMoDuPe}@ciF_GiYkD{MsEkOmhHc`SkkG_dQuq@ckBqj@_{A{IwTyHcQc]qs@aGyOmBcHqB{JsAyI}@{I{HsnA{Dgk@oPcqCi@aGaAwGkBwIgAcDqCeHoDsGm|BsgD{JmLyy@k~@wJuH{HsDyhAc`@aIeDiJ}F_E{CoPuPqK}JiCwCoD{FqEqKwCgK}@kEkLqw@wB{KsDuMwEmLkFqIoEaFqNkN_e@_b@}M}MqDwE}B_EcDgIo@}B}AwH}@uHe@_JEeJd@eLhEsi@tAeTN{PMwF[{Gg@aGiAsImB{JyEkOyEkJeFaHoEaE}CsBwGmCeFy@{CQcGHchA|JiTxB{J`CyFvCyDrCaSdRiH|H}DhFwFxIel@`cAwDtFeEdFgDvCsC|A_DbAcEj@oFIuEaAeu@sZgQeGcf@aSoP_G}SwFwRqDgJoA_m@eGo[sGmTkDeGm@sK_@mVB{D[iIqB{m@mSaEsBmHcGsN{JsRwQwb@o_@wBsA_Ck@eDHyCvAeC`D{AdEcAbHwHn|@kArFgAlDiA~BgD~EwB~AkDj@eCMaLuCsDU}IZsCb@yEQgCRkDjA",
+            "precision": 5,
+            "points": 209
+          }
+        }
+      ],
+      "tags": ["fastest", "fewestChanges", "earliestArrival"]
+    },
+    {
+      "id": "162d6d3c56695837",
+      "departure": "2026-11-10T06:33:00Z",
+      "arrival": "2026-11-10T07:45:00Z",
+      "durationS": 4320,
+      "transfers": 0,
+      "categories": ["rfast"],
+      "operators": ["metronom"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "rfast",
+          "motisMode": "REGIONAL_RAIL",
+          "line": "RE4",
+          "tripNumber": "082012",
+          "headsign": "Hamburg Hbf",
+          "operator": "metronom",
+          "tripId": "20261110_07:33_de-DELFI_3448592695",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:04011:13927::9",
+            "name": "Bremen Hbf",
+            "lat": 53.083501,
+            "lon": 8.81418,
+            "time": "2026-11-10T06:33:00Z",
+            "scheduledTime": "2026-11-10T06:33:00Z",
+            "track": "9",
+            "scheduledTrack": "9",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:02000:10950",
+            "name": "Hamburg Hbf",
+            "lat": 53.552736,
+            "lon": 10.006909,
+            "time": "2026-11-10T07:45:00Z",
+            "scheduledTime": "2026-11-10T07:45:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "departure": "2026-11-10T06:33:00Z",
+          "arrival": "2026-11-10T07:45:00Z",
+          "scheduledDeparture": "2026-11-10T06:33:00Z",
+          "scheduledArrival": "2026-11-10T07:45:00Z",
+          "durationS": 4320,
+          "geometry": {
+            "polyline": "{z~bIqoxt@iDnJeChKmA~DqFvN}GbN_D`F_[n`@gDvDmBxA_FlBmEZyEk@{DcBuDgDeCoDoCyGeBqHm@oEc@{GiFavAMeILwHfb@k`JrCii@`LupAr[qkD~BiRzRwoAhBiOxBaXdAyY\\}f@f@mXdM}lFL{TG}Qk@iRqAmVmj@_vHoZygEgBkXcA{W_\\elNYmPiJyjOuCaeF]qY}@qXqa@gwGgEqo@iBcVaO{_CmAuL{BcQcD_RmKuh@}GoXsE{N{`CqaH}Mc^eIwOuHmMaaFqpHcHyLmFsKsFoM}EqM_IqWcDmMoDuP__AwoF}CcOyCuLmGcTmhHg`SwbGiqPiz@w}Baq@ehBeMwYc]os@eDgIaCsHeB_HsA}GyA{Js@cHgAgOaG_bAmC}_@qQiyCwAwMmAeG}BgIkEeKsBmDo|BsgDqCsD{|@{aAyGiGeFsD_DgBymAob@_IgDgJyF_E}CsPyPoKwJgC{CmDwFkByDgBwEwCoK{@_EkLsw@wB{KsDwM}EsLgFmIkE_FoLiLcc@{`@mUqU_EmGaD_ImAqE_BcJs@eIU_G?oHb@gLlE{i@tAsTLcPM{F[yGi@eGgAsIoB}JaBaGwBeGyEoJgFeHmE_EaDsBoBeAkGkBaHk@cGHk`ApI{]rDiIvBqEzB{EfDiSpR_LpM_KpOui@~_A{DxFeEdFgDvCsC|A_DbAcEj@oFIuEaAeu@sZgQeGcf@aSoP_G}SwFwRqDgJoA_m@eGo[sGmTkDeGm@sK_@mVB{D[iIqB{m@mSaEsBmHcGsN{JsRwQwb@o_@wBsA_Ck@eDHyCvAeC`D{AdEcAbHwHn|@kArFgAlDiA~BgD~EwB~AkDj@eCMaLuCsDU}IZsCb@yEQgCRkDjA",
+            "precision": 5,
+            "points": 209
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "9983056a57262dad",
+      "departure": "2026-11-10T07:17:00Z",
+      "arrival": "2026-11-10T08:15:00Z",
+      "durationS": 3480,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "43",
+          "tripNumber": "000208",
+          "headsign": "Hamburg-Altona",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_05:11_de-DELFI_3448687722",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:04011:13927::10",
+            "name": "Bremen Hbf",
+            "lat": 53.083563999999996,
+            "lon": 8.814259999999999,
+            "time": "2026-11-10T07:17:00Z",
+            "scheduledTime": "2026-11-10T07:17:00Z",
+            "track": "10",
+            "scheduledTrack": "10",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:02000:10950",
+            "name": "Hamburg Hbf",
+            "lat": 53.552736,
+            "lon": 10.006909,
+            "time": "2026-11-10T08:15:00Z",
+            "scheduledTime": "2026-11-10T08:15:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "departure": "2026-11-10T07:17:00Z",
+          "arrival": "2026-11-10T08:15:00Z",
+          "scheduledDeparture": "2026-11-10T07:17:00Z",
+          "scheduledArrival": "2026-11-10T08:15:00Z",
+          "durationS": 3480,
+          "geometry": {
+            "polyline": "k{~bIgpxt@qCvHmCvMmA~DqFvN}GbN_D`F_[n`@gDvDmBxA_FlBmEZyEk@{DcBuDgDeCoDoCyGeBqHm@oEc@{GiFavAMeILwHfb@k`JrCii@`LupAr[qkD~BiRzRwoAhBiOxBaXdAyY\\}f@f@mXdM}lFL{TG}Qk@iRqAmVmj@_vHoZygEgBkXcA{W_\\elNYmPiJyjOuCaeF]qY}@qXcg@sbI_Ci[uFq|@{BqXsF_v@kE{[kCaOsKug@qE{QoE{Nm`Cq`HmGaQaFaMaIuOsHkMg_F_nHaHkLkHwNwFqM{EqM_IqWcDmMoDuPe}@ciF_GiYkD{MsEkOmhHc`SkkG_dQuq@ckBqj@_{A{IwTyHcQc]qs@aGyOmBcHqB{JsAyI}@{I{HsnA{Dgk@oPcqCi@aGaAwGkBwIgAcDqCeHoDsGm|BsgD{JmLyy@k~@wJuH{HsDyhAc`@aIeDiJ}F_E{CoPuPqK}JiCwCoD{FqEqKwCgK}@kEkLqw@wB{KsDuMwEmLkFqIoEaFqNkN_e@_b@}M}MqDwE}B_EcDgIo@}B}AwH}@uHe@_JEeJd@eLhEsi@tAeTN{PMwF[{Gg@aGiAsImB{JyEkOyEkJeFaHoEaE}CsBwGmCeFy@{CQcGHchA|JiTxB{J`CyFvCyDrCaSdRiH|H}DhFwFxIel@`cAwDtFeEdFgDvCsC|A_DbAcEj@oFIuEaAeu@sZgQeGcf@aSoP_G}SwFwRqDgJoA_m@eGo[sGmTkDeGm@sK_@mVB{D[iIqB{m@mSaEsBmHcGsN{JsRwQwb@o_@wBsA_Ck@eDHyCvAeC`D{AdEcAbHwHn|@kArFgAlDiA~BgD~EwB~AkDj@eCMaLuCsDU}IZsCb@yEQgCRkDjA",
+            "precision": 5,
+            "points": 209
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "508e45964ba6d01c",
+      "departure": "2026-11-10T07:33:00Z",
+      "arrival": "2026-11-10T08:45:00Z",
+      "durationS": 4320,
+      "transfers": 0,
+      "categories": ["rfast"],
+      "operators": ["metronom"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "rfast",
+          "motisMode": "REGIONAL_RAIL",
+          "line": "RE4",
+          "tripNumber": "082014",
+          "headsign": "Hamburg Hbf",
+          "operator": "metronom",
+          "tripId": "20261110_08:33_de-DELFI_3448592715",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:04011:13927_G",
+            "name": "Bremen Hbf",
+            "lat": 53.08348099999999,
+            "lon": 8.813834000000002,
+            "time": "2026-11-10T07:33:00Z",
+            "scheduledTime": "2026-11-10T07:33:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:02000:10950",
+            "name": "Hamburg Hbf",
+            "lat": 53.552736,
+            "lon": 10.006909,
+            "time": "2026-11-10T08:45:00Z",
+            "scheduledTime": "2026-11-10T08:45:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "departure": "2026-11-10T07:33:00Z",
+          "arrival": "2026-11-10T08:45:00Z",
+          "scheduledDeparture": "2026-11-10T07:33:00Z",
+          "scheduledArrival": "2026-11-10T08:45:00Z",
+          "durationS": 4320,
+          "geometry": {
+            "polyline": "_{~bIymxt@wDlKuBtIoAzDiFfNiHrNgBvCeG`IcT~WmD~DwCrBoDpAoE\\}Ek@_EeBwDiDwDgGsByFcBiI_AeLoFqyAC{Hd@iNja@wwItCei@jAsOhe@ugF~CmWpSisAvBiRrAmQl@yMX{Jn@gu@zMaxFLyTG{Qk@mRsAiVkj@cvHqZahEsA{RiAkWm\\}qNWmP}FchJcGsgK]mY{@uXac@kaHiLqcBg@iNkHuiAmAuL{BcQcD_RmKuh@}GoXsE{N{`CqaH}Mc^eIwOuHmMaaFqpHcHyLmFsKsFoM}EqM_IqWcDmMoDuP__AwoF}CcOyCuLmGcTmhHg`SwbGiqPiz@w}Baq@ehBeMwYc]os@eDgIaCsHeB_HsA}GyA{Js@cHgAgOaG_bAmC}_@qQiyCwAwMmAeG}BgIkEeKsBmDo|BsgDqCsD{|@{aAyGiGeFsD_DgBymAob@_IgDgJyF_E}CsPyPoKwJgC{CmDwFkByDgBwEwCoK{@_EkLsw@wB{KsDwM}EsLgFmIkE_FoLiLcc@{`@mUqU_EmGaD_ImAqE_BcJs@eIU_G?oHb@gLlE{i@tAsTLcPM{F[yGi@eGgAsIoB}JaBaGwBeGyEoJgFeHmE_EaDsBoBeAkGkBaHk@cGHk`ApI{]rDiIvBqEzB{EfDiSpR_LpM_KpOui@~_A{DxFeEdFgDvCsC|A_DbAcEj@oFIuEaAeu@sZgQeGcf@aSoP_G}SwFwRqDgJoA_m@eGo[sGmTkDeGm@sK_@mVB{D[iIqB{m@mSaEsBmHcGsN{JsRwQwb@o_@wBsA_Ck@eDHyCvAeC`D{AdEcAbHwHn|@kArFgAlDiA~BgD~EwB~AkDj@eCMaLuCsDU}IZsCb@yEQgCRkDjA",
+            "precision": 5,
+            "points": 209
+          }
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "740090944d366b86",
+      "departure": "2026-11-10T08:17:00Z",
+      "arrival": "2026-11-10T09:15:00Z",
+      "durationS": 3480,
+      "transfers": 0,
+      "categories": ["hsr"],
+      "operators": ["DB Fernverkehr AG"],
+      "legs": [
+        {
+          "kind": "transit",
+          "category": "hsr",
+          "motisMode": "HIGHSPEED_RAIL",
+          "line": "42",
+          "tripNumber": "000618",
+          "headsign": "Hamburg-Altona",
+          "operator": "DB Fernverkehr AG",
+          "tripId": "20261110_00:01_de-DELFI_3448685866",
+          "realtime": false,
+          "cancelled": false,
+          "staySeated": false,
+          "from": {
+            "stopId": "de:04011:13927::10",
+            "name": "Bremen Hbf",
+            "lat": 53.083563999999996,
+            "lon": 8.814259999999999,
+            "time": "2026-11-10T08:17:00Z",
+            "scheduledTime": "2026-11-10T08:17:00Z",
+            "track": "10",
+            "scheduledTrack": "10",
+            "cancelled": false
+          },
+          "to": {
+            "stopId": "de:02000:10950",
+            "name": "Hamburg Hbf",
+            "lat": 53.552736,
+            "lon": 10.006909,
+            "time": "2026-11-10T09:15:00Z",
+            "scheduledTime": "2026-11-10T09:15:00Z",
+            "track": null,
+            "scheduledTrack": null,
+            "cancelled": false
+          },
+          "departure": "2026-11-10T08:17:00Z",
+          "arrival": "2026-11-10T09:15:00Z",
+          "scheduledDeparture": "2026-11-10T08:17:00Z",
+          "scheduledArrival": "2026-11-10T09:15:00Z",
+          "durationS": 3480,
+          "geometry": {
+            "polyline": "k{~bIgpxt@qCvHmCvMmA~DqFvN}GbN_D`F_[n`@gDvDmBxA_FlBmEZyEk@{DcBuDgDeCoDoCyGeBqHm@oEc@{GiFavAMeILwHfb@k`JrCii@`LupAr[qkD~BiRzRwoAhBiOxBaXdAyY\\}f@f@mXdM}lFL{TG}Qk@iRqAmVmj@_vHoZygEgBkXcA{W_\\elNYmPiJyjOuCaeF]qY}@qXcg@sbI_Ci[uFq|@{BqXsF_v@kE{[kCaOsKug@qE{QoE{Nm`Cq`HmGaQaFaMaIuOsHkMg_F_nHaHkLkHwNwFqM{EqM_IqWcDmMoDuPe}@ciF_GiYkD{MsEkOmhHc`SkkG_dQuq@ckBqj@_{A{IwTyHcQc]qs@aGyOmBcHqB{JsAyI}@{I{HsnA{Dgk@oPcqCi@aGaAwGkBwIgAcDqCeHoDsGm|BsgD{JmLyy@k~@wJuH{HsDyhAc`@aIeDiJ}F_E{CoPuPqK}JiCwCoD{FqEqKwCgK}@kEkLqw@wB{KsDuMwEmLkFqIoEaFqNkN_e@_b@}M}MqDwE}B_EcDgIo@}B}AwH}@uHe@_JEeJd@eLhEsi@tAeTN{PMwF[{Gg@aGiAsImB{JyEkOyEkJeFaHoEaE}CsBwGmCeFy@{CQcGHchA|JiTxB{J`CyFvCyDrCaSdRiH|H}DhFwFxIel@`cAwDtFeEdFgDvCsC|A_DbAcEj@oFIuEaAeu@sZgQeGcf@aSoP_G}SwFwRqDgJoA_m@eGo[sGmTkDeGm@sK_@mVB{D[iIqB{m@mSaEsBmHcGsN{JsRwQwb@o_@wBsA_Ck@eDHyCvAeC`D{AdEcAbHwHn|@kArFgAlDiA~BgD~EwB~AkDj@eCMaLuCsDU}IZsCb@yEQgCRkDjA",
+            "precision": 5,
+            "points": 209
+          }
+        }
+      ],
+      "tags": ["latestDeparture"]
+    }
+  ],
+  "removedByFilter": 0,
+  "removedBy": { "category": 0, "product": 0, "operator": 0 },
+  "earlierCursor": "EARLIER|1794290400",
+  "laterCursor": "LATER|1794298680",
+  "routerCalls": 1,
+  "partial": false
+}

@@ -1,0 +1,7 @@
+{
+  "extends": "@gerlines/config/tsconfig/dom.json",
+  "compilerOptions": {
+    "lib": ["es2024", "dom", "dom.iterable"]
+  },
+  "include": ["browser", "src", "test/golden.ts"]
+}

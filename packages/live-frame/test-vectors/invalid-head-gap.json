@@ -1,0 +1,7 @@
+{
+  "name": "invalid-head-gap",
+  "description": "A head with keyframe 990 and oldest delta 995: deltas 991 to 994 are missing, so no path leads from the keyframe to 1001.",
+  "decoder": "head",
+  "error": "corrupt",
+  "byteLength": 68
+}

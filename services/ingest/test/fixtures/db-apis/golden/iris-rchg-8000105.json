@@ -1,0 +1,533 @@
+{
+  "station": "Frankfurt(Main)Hbf",
+  "eva": 8000105,
+  "stops": [
+    {
+      "id": "5926473462606976417-2610251926-15",
+      "eva": 8000105,
+      "tripLabel": {
+        "category": "ICE",
+        "number": "619",
+        "owner": "80",
+        "filter": "F",
+        "tripType": "p"
+      },
+      "arrival": {
+        "plannedTime": "2026-10-26T00:06:00.000Z",
+        "changedTime": "2026-10-26T01:10:00.000Z",
+        "delayMinutes": 64,
+        "plannedPlatform": "3",
+        "changedPlatform": null,
+        "plannedPath": [
+          "Hamburg-Altona",
+          "Hamburg Dammtor",
+          "Hamburg Hbf",
+          "Hamburg-Harburg",
+          "Bremen Hbf",
+          "Osnabrück Hbf",
+          "Münster(Westf)Hbf",
+          "Dortmund Hbf",
+          "Hagen Hbf",
+          "Wuppertal Hbf",
+          "Solingen Hbf",
+          "Köln Hbf",
+          "Siegburg/Bonn",
+          "Frankfurt(M) Flughafen Fernbf"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "ICE 619",
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-6966630711659276262--2335454024662805568",
+            "type": "d",
+            "code": 47,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T17:57:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "-5970307302206692584-2120145902091121908",
+            "type": "d",
+            "code": 10,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T20:06:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "2715859596224550741--3919592748083893938",
+            "type": "d",
+            "code": 38,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:05:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "7307716225379622461-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:51:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": {
+        "plannedTime": "2026-10-26T00:17:00.000Z",
+        "changedTime": "2026-10-26T01:16:00.000Z",
+        "delayMinutes": 59,
+        "plannedPlatform": "3",
+        "changedPlatform": null,
+        "plannedPath": [
+          "Mannheim Hbf",
+          "Heidelberg Hbf",
+          "Stuttgart Hbf",
+          "Ulm Hbf",
+          "Günzburg",
+          "Augsburg Hbf",
+          "München Hbf"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "ICE 619",
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-6966630711659276262--2335454024662805568",
+            "type": "d",
+            "code": 47,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T17:57:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "-5970307302206692584-2120145902091121908",
+            "type": "d",
+            "code": 10,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T20:06:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "2715859596224550741--3919592748083893938",
+            "type": "d",
+            "code": 38,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:05:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "4590348664184739076-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:45:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "7307716225379622461-",
+            "type": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:51:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "8573811631662133764-2610252045-5",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:13:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "8",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": []
+      },
+      "departure": null,
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "7582314568044505717-2610252043-12",
+      "eva": 8000105,
+      "tripLabel": {
+        "category": "IC",
+        "number": "60403",
+        "owner": "NZ",
+        "filter": "F",
+        "tripType": "p"
+      },
+      "arrival": {
+        "plannedTime": "2026-10-26T01:17:00.000Z",
+        "changedTime": "2026-10-26T01:59:00.000Z",
+        "delayMinutes": 42,
+        "plannedPlatform": "19",
+        "changedPlatform": "8",
+        "plannedPath": [
+          "Amsterdam Centraal",
+          "Utrecht Centraal",
+          "Arnhem Centraal",
+          "Emmerich",
+          "Duisburg Hbf",
+          "Düsseldorf Hbf",
+          "Köln Hbf",
+          "Bonn Hbf",
+          "Koblenz Hbf",
+          "Mainz Hbf",
+          "Frankfurt(M) Flughafen Fernbf"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "IC 60403",
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-3591111476902816862--3906184837907719259",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": {
+        "plannedTime": "2026-10-26T01:45:00.000Z",
+        "changedTime": "2026-10-26T02:17:00.000Z",
+        "delayMinutes": 32,
+        "plannedPlatform": "19",
+        "changedPlatform": "8",
+        "plannedPath": [
+          "Mannheim Hbf",
+          "Karlsruhe Hbf",
+          "Baden-Baden",
+          "Offenburg",
+          "Freiburg(Breisgau) Hbf",
+          "Basel Bad Bf",
+          "Basel SBB",
+          "Zürich HB"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "IC 60403",
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-3591111476902816862--3906184837907719259",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-8170529235403740838-2610252212-14",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:05:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": "4",
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RE50",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-693963919229583384--5980629984255290610",
+            "type": "d",
+            "code": 43,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:27:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "4174125059124873127-5660230929236963130",
+            "type": "d",
+            "code": 31,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:23:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          },
+          {
+            "id": "1641769912256615690-",
+            "type": "f",
+            "code": 2000,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:35:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [
+        {
+          "id": "840ca05c-e9b3-43b4-9550-fb9b9eb6334a",
+          "type": "h",
+          "code": null,
+          "category": "BAUARBEITEN",
+          "priority": 1,
+          "timestamp": "2026-10-25T00:30:00.000Z",
+          "validFrom": "2026-10-22T07:44:00.000Z",
+          "validTo": "2026-11-09T01:00:00.000Z",
+          "deleted": false
+        }
+      ],
+      "references": []
+    },
+    {
+      "id": "-5851721557238592488-2610252043-12",
+      "eva": 8000105,
+      "tripLabel": {
+        "category": "NJ",
+        "number": "403",
+        "owner": "84",
+        "filter": null,
+        "tripType": "p"
+      },
+      "arrival": {
+        "plannedTime": "2026-10-26T01:17:00.000Z",
+        "changedTime": "2026-10-26T01:59:00.000Z",
+        "delayMinutes": 42,
+        "plannedPlatform": "19",
+        "changedPlatform": "8",
+        "plannedPath": [
+          "Amsterdam Centraal",
+          "Utrecht Centraal",
+          "Arnhem Centraal",
+          "Emmerich",
+          "Duisburg Hbf",
+          "Düsseldorf Hbf",
+          "Köln Hbf",
+          "Bonn Hbf",
+          "Koblenz Hbf",
+          "Mainz Hbf",
+          "Frankfurt(M) Flughafen Fernbf"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "NJ 403",
+        "hidden": true,
+        "wings": ["7582314568044505717-2610252043"],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "8747978737684680119-7784004222645903186",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": {
+        "plannedTime": "2026-10-26T01:45:00.000Z",
+        "changedTime": "2026-10-26T02:17:00.000Z",
+        "delayMinutes": 32,
+        "plannedPlatform": "19",
+        "changedPlatform": "8",
+        "plannedPath": [
+          "Mannheim Hbf",
+          "Karlsruhe Hbf",
+          "Baden-Baden",
+          "Offenburg",
+          "Freiburg(Breisgau) Hbf",
+          "Basel Bad Bf",
+          "Basel SBB",
+          "Zürich HB"
+        ],
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": null,
+        "displayName": "NJ 403",
+        "hidden": true,
+        "wings": ["7582314568044505717-2610252043"],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "8747978737684680119-7784004222645903186",
+            "type": "d",
+            "code": 5,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T21:48:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "messages": [],
+      "references": []
+    },
+    {
+      "id": "-7776488363957091076-2610252312-14",
+      "eva": 8000105,
+      "tripLabel": null,
+      "arrival": {
+        "plannedTime": null,
+        "changedTime": "2026-10-25T23:41:00.000Z",
+        "delayMinutes": null,
+        "plannedPlatform": null,
+        "changedPlatform": null,
+        "plannedPath": null,
+        "changedPath": null,
+        "plannedStatus": null,
+        "changedStatus": null,
+        "cancellationTime": null,
+        "line": "RE50",
+        "displayName": null,
+        "hidden": false,
+        "wings": [],
+        "transition": null,
+        "distantEndpointChanged": null,
+        "distantChange": null,
+        "messages": [
+          {
+            "id": "-5751012814742180427-3710984775778268087",
+            "type": "d",
+            "code": 48,
+            "category": null,
+            "priority": null,
+            "timestamp": "2026-10-25T22:07:00.000Z",
+            "validFrom": null,
+            "validTo": null,
+            "deleted": false
+          }
+        ]
+      },
+      "departure": null,
+      "messages": [
+        {
+          "id": "840ca05c-e9b3-43b4-9550-fb9b9eb6334a",
+          "type": "h",
+          "code": null,
+          "category": "BAUARBEITEN",
+          "priority": 1,
+          "timestamp": "2026-10-25T02:30:00.000Z",
+          "validFrom": "2026-10-22T07:44:00.000Z",
+          "validTo": "2026-11-09T01:00:00.000Z",
+          "deleted": false
+        }
+      ],
+      "references": []
+    }
+  ]
+}

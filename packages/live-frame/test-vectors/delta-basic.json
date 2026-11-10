@@ -1,0 +1,87 @@
+{
+  "name": "delta-basic",
+  "description": "A delta from 1000 to 1001: one changed trip, one new trip, two removals.",
+  "decoder": "delta",
+  "expected": {
+    "kind": "delta",
+    "sequence": 1001,
+    "baseSequence": 1000,
+    "timetableVersion": 7,
+    "shapeEpoch": 0,
+    "timeBase": 1793000003,
+    "trips": [
+      {
+        "key": 10,
+        "shapeId": "00112233445566aa",
+        "category": "rfast",
+        "realtime": true,
+        "cancelled": false,
+        "foreign": false,
+        "delay": 240,
+        "line": "RE 1",
+        "trainNumber": 4711,
+        "firstStop": 2,
+        "stops": [
+          {
+            "arrival": 1792999940,
+            "departure": 1793000000,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793000300,
+            "departure": 1793000360,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          },
+          {
+            "arrival": 1793000900,
+            "departure": null,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          }
+        ]
+      },
+      {
+        "key": 50,
+        "shapeId": "00112233445566aa",
+        "category": "night",
+        "realtime": true,
+        "cancelled": false,
+        "foreign": false,
+        "delay": 120,
+        "line": "NJ",
+        "trainNumber": 4711,
+        "firstStop": 2,
+        "stops": [
+          {
+            "arrival": 1792999940,
+            "departure": 1793000000,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793000300,
+            "departure": 1793000360,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          },
+          {
+            "arrival": 1793000900,
+            "departure": null,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          }
+        ]
+      }
+    ],
+    "removed": [20, 40]
+  },
+  "byteLength": 416
+}

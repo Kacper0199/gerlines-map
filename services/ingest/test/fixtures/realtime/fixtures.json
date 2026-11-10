@@ -1,0 +1,56 @@
+[
+  {
+    "name": "delfi-gtfs-rt-2026-10-25T120021Z.pb",
+    "source": "delfi-gtfs-rt",
+    "observedAt": "2026-10-25T12:00:21.983Z",
+    "objectKey": "delfi-gtfs-rt/2026-10-25/12/00000",
+    "payloadSha256": "fa427993c401d5cbbffc3f5e8009c3a65bce7316d516677bdd399935b4845e34",
+    "entities": 7,
+    "sha256": "21640d76655e9c86591b8c089adecf763749d2bc0fb84db5fd36f7c8eefbdd39"
+  },
+  {
+    "name": "gtfsde-rt-2026-10-25T120037Z.pb",
+    "source": "gtfsde-rt",
+    "observedAt": "2026-10-25T12:00:37.664Z",
+    "objectKey": "gtfsde-rt/2026-10-25/12/00000",
+    "payloadSha256": "48bf2032461cce245a9bc330a3ae35c74894bf5b30e65ac71d9d60d1c6e54244",
+    "entities": 5,
+    "sha256": "750323f8a71d672c7237648b0cf64c50a9de5db2320e5aa2806a78039b980055"
+  },
+  {
+    "name": "fr-sncf-gtfs-rt-2026-10-25T120053Z.pb",
+    "source": "fr-sncf-gtfs-rt",
+    "observedAt": "2026-10-25T12:00:53.711Z",
+    "objectKey": "fr-sncf-gtfs-rt/2026-10-25/12/00000",
+    "payloadSha256": "fbefe1662cd18c0ffaaca466f06ce337eddeeda79bfb9c787f750984b3304e7c",
+    "entities": 3,
+    "sha256": "0fa7ba589f9c1fd199090d6aee95dc6a6ed97ffd50af549bc7e47a32637a1969"
+  },
+  {
+    "name": "pl-pkpic-gtfs-rt-2026-10-25T120140Z.pb",
+    "source": "pl-pkpic-gtfs-rt",
+    "observedAt": "2026-10-25T12:01:40.354Z",
+    "objectKey": "pl-pkpic-gtfs-rt/2026-10-25/12/00000",
+    "payloadSha256": "1eea4ac0aa3f30f0a205ac1c64bc8caa01139124ecf50cc2f7f6050faa17c8b8",
+    "entities": 3,
+    "sha256": "8acba6f60fe08a0a5d684eb0a07f73d0b3796e3b7910ddba646afbea6ef01761"
+  },
+  {
+    "name": "ch-otd-gtfs-rt-2026-10-25T120057Z.pb",
+    "source": "ch-otd-gtfs-rt",
+    "observedAt": "2026-10-25T12:00:57.566Z",
+    "objectKey": "ch-otd-gtfs-rt/2026-10-25/12/00000",
+    "payloadSha256": "0280ee638ad419162915d1dbcf5428f91ea0b28bb2d9e2d4b2094b037ff84117",
+    "entities": 2,
+    "sha256": "ca66fd6b2b8f0bd9964f2e13220011ef07dccc65a4bbd4f0458ff6f5830afbda"
+  },
+  {
+    "name": "delfi-gtfs-sa-2026-10-25T120550Z.pb",
+    "source": "delfi-gtfs-sa",
+    "observedAt": "2026-10-25T12:05:50.194Z",
+    "objectKey": "delfi-gtfs-sa/2026-10-25/12/00000",
+    "payloadSha256": "b8188136b7b4d8e5a24ad5c98638a98c1954979ade50780dc9599c54036359bf",
+    "entities": 3,
+    "sha256": "f3ee53645367a88d4b30e5ef8bd53db46eecff98b74aaf51c7fbef4ed2d6fb2b"
+  }
+]

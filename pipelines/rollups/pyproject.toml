@@ -1,0 +1,32 @@
+[project]
+name = "gerlines-rollups"
+version = "0.1.0"
+description = "GerLines statistics rollups: Land areas from BKG VG250, ordered refresh, recomputation check"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "gerlines-common",
+  "gerlines-geo-base",
+  "numpy==2.5.4",
+  "psycopg[binary]==3.3.6",
+  "pyogrio==0.13.0",
+  "shapely==2.2.0",
+]
+
+[project.scripts]
+gerlines-rollups = "gerlines_rollups.cli:main"
+
+[tool.uv.sources]
+gerlines-common = { workspace = true }
+gerlines-geo-base = { workspace = true }
+
+[tool.ruff]
+extend = "../../pyproject.toml"
+
+[tool.ruff.lint.per-file-ignores]
+"src/gerlines_rollups/check.py" = ["S608"]
+"tests/**" = ["S101", "PLR2004", "S311"]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

@@ -1,0 +1,10 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "inputs": ["$TURBO_DEFAULT$", "!README.md", "!Dockerfile", "!Dockerfile.dockerignore"],
+      "passThroughEnv": ["TMPDIR"]
+    }
+  }
+}

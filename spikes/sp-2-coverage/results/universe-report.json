@@ -1,0 +1,24 @@
+{
+  "feed": "data/inputs/delfi/2026-10-26/delfi-gtfs.zip",
+  "window": ["2026-10-29T13:35:00+00:00", "2026-10-29T16:10:00+00:00"],
+  "routes_by_category": {
+    "sbahn": 232,
+    "reg": 511,
+    "rfast": 275,
+    "hsr": 49,
+    "ld": 63,
+    "night": 29
+  },
+  "trips_by_category_all_dates": {
+    "sbahn": 71152,
+    "reg": 40792,
+    "rfast": 24164,
+    "hsr": 6057,
+    "ld": 2419,
+    "night": 1286
+  },
+  "trips_active_on_days": 45239,
+  "dropped_trips": 0,
+  "universe_trips": 8818,
+  "universe_stop_times": 127781
+}

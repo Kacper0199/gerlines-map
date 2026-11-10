@@ -1,0 +1,20 @@
+{
+  "tag": "talent2",
+  "model": "db-442-4",
+  "source": "side-end-20260918.Bahn_bergang.Papierm_hlengasse.-034.jpg (true side-on), digitised on a 200 px grid, scale 73 px/m from body height 4.2 m",
+  "side": {
+    "zmin": 0.85,
+    "xmax": 2.2,
+    "top": [
+      [3.0, 3.97],
+      [2.51, 3.97],
+      [1.82, 3.84],
+      [1.27, 3.42],
+      [0.86, 2.81],
+      [0.52, 2.12],
+      [0.25, 1.58],
+      [0.04, 1.3]
+    ],
+    "front": [[0.0, 1.2], [0.07, 0.96], [0.18, 0.85]]
+  }
+}

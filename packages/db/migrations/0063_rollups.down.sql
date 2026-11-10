@@ -1,0 +1,7 @@
+DROP VIEW land_hour;
+DROP VIEW land_day;
+DROP MATERIALIZED VIEW segment_day;
+DROP MATERIALIZED VIEW line_day;
+DROP MATERIALIZED VIEW train_day;
+DROP MATERIALIZED VIEW station_hour;
+DROP MATERIALIZED VIEW station_day;

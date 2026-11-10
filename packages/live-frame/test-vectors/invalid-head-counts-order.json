@@ -1,0 +1,7 @@
+{
+  "name": "invalid-head-counts-order",
+  "description": "A 1.1 head whose count codes descend (0x02ff before 0x01ff).",
+  "decoder": "head",
+  "error": "corrupt",
+  "byteLength": 96
+}

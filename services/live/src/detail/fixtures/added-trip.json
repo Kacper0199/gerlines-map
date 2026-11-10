@@ -1,0 +1,194 @@
+{
+  "fixture": {
+    "name": "added-trip",
+    "note": "a trip DELFI realtime added, no timetable trip, category other",
+    "database": "gerlines_wp32b (template gerlines_wp23, migrated to 0055, catalogue loaded)",
+    "replay": "WP-2.3 deterministic replay 2026-10-27T02:28Z to 02:58Z, all default sources",
+    "feedVersions": {
+      "1": "DELFI 2026-10-19",
+      "3": "DELFI 2026-10-26"
+    },
+    "asOf": "2026-10-27T02:57:40.000Z",
+    "mode": "history",
+    "builder": "services/live/src/detail/cli.ts render",
+    "sources": "DELFI e.V. (CC-BY-4.0, realtime via the traines.eu mirror), GTFS.de (CC-BY-SA-4.0), PKP Intercity via gtfs.kasznia.net (CC-BY-4.0), DB station names via mirror.traines.eu (CC-BY-4.0 AND ODbL-1.0)"
+  },
+  "detail": {
+    "tripInstanceId": "6c4a196e-1b4e-504f-bc1f-c4ab8416a1e6",
+    "frameKey": null,
+    "serviceDate": "2026-10-27",
+    "timetableVersion": "3",
+    "version": 1793069860,
+    "asOf": "2026-10-27T02:57:40.000Z",
+    "category": "other",
+    "productName": null,
+    "line": null,
+    "trainNumber": null,
+    "foreign": false,
+    "added": true,
+    "cancelled": false,
+    "operator": null,
+    "destination": {
+      "stopPlaceId": "1913ef57-6314-558c-b635-3d41b6a46741",
+      "name": "Oberhausen Hbf"
+    },
+    "headsign": null,
+    "delaySeconds": 0,
+    "provenance": {
+      "kind": "realtime",
+      "sourceId": "delfi-gtfs-rt",
+      "sourceName": "DELFI GTFS-RT (Prognosedaten) via the traines.eu community mirror",
+      "attribution": "DELFI e.V., mirrored by traines.eu",
+      "predictionChangedAt": "2026-10-27T02:28:22.428Z",
+      "feedObservedAt": "2026-10-27T02:57:21.432Z",
+      "holders": [
+        {
+          "name": "DELFI e.V.",
+          "role": "publisher",
+          "url": "https://www.delfi.de/"
+        },
+        {
+          "name": "traines.eu",
+          "role": "mirror",
+          "url": "https://mirror.traines.eu/"
+        }
+      ],
+      "licence": {
+        "id": "LicenseRef-dcat-ap-de-cc-by-sa",
+        "url": null
+      }
+    },
+    "geometry": {
+      "available": false,
+      "reason": "no_shape"
+    },
+    "progress": {
+      "lastPassedIndex": 3,
+      "nextIndex": 4
+    },
+    "stops": [
+      {
+        "index": 0,
+        "stopPlaceId": "f37ffebe-f972-549b-9f61-f0eec8846c16",
+        "name": "Dortmund Hbf",
+        "scheduledArrival": null,
+        "scheduledDeparture": "2026-10-27T02:03:00.000Z",
+        "predictedArrival": null,
+        "predictedDeparture": "2026-10-27T02:03:00.000Z",
+        "arrivalDelaySeconds": null,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "16",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 1,
+        "stopPlaceId": "fe2dada6-357d-5f55-b04f-2fc562fe6cd3",
+        "name": "Dortmund Mengede Bf",
+        "scheduledArrival": "2026-10-27T02:23:00.000Z",
+        "scheduledDeparture": "2026-10-27T02:24:00.000Z",
+        "predictedArrival": "2026-10-27T02:23:00.000Z",
+        "predictedDeparture": "2026-10-27T02:24:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "2",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 2,
+        "stopPlaceId": "57b4bdd0-fdf2-5963-a523-d9c278c111a9",
+        "name": "Castrop-Rauxel Hbf",
+        "scheduledArrival": "2026-10-27T02:38:00.000Z",
+        "scheduledDeparture": "2026-10-27T02:39:00.000Z",
+        "predictedArrival": "2026-10-27T02:38:00.000Z",
+        "predictedDeparture": "2026-10-27T02:39:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "01",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 3,
+        "stopPlaceId": "200279d4-0c83-5630-9828-0a2c9bfe34a5",
+        "name": "Herne Bf",
+        "scheduledArrival": "2026-10-27T02:49:00.000Z",
+        "scheduledDeparture": "2026-10-27T02:50:00.000Z",
+        "predictedArrival": "2026-10-27T02:49:00.000Z",
+        "predictedDeparture": "2026-10-27T02:50:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "3",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 4,
+        "stopPlaceId": "1d3aefa1-a62f-5235-9c88-5d2e74154a40",
+        "name": "Herne Wanne-Eickel Hbf",
+        "scheduledArrival": "2026-10-27T03:01:00.000Z",
+        "scheduledDeparture": "2026-10-27T03:02:00.000Z",
+        "predictedArrival": "2026-10-27T03:01:00.000Z",
+        "predictedDeparture": "2026-10-27T03:02:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "6",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 5,
+        "stopPlaceId": "dbb4fbb2-9223-56f1-bf43-cc33d375ea54",
+        "name": "Gelsenkirchen Hbf",
+        "scheduledArrival": "2026-10-27T03:19:00.000Z",
+        "scheduledDeparture": "2026-10-27T03:20:00.000Z",
+        "predictedArrival": "2026-10-27T03:19:00.000Z",
+        "predictedDeparture": "2026-10-27T03:20:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "6",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 6,
+        "stopPlaceId": "b1e6bfd0-fb2c-58cc-b713-b01bfa13dd49",
+        "name": "Essen Altenessen Bf",
+        "scheduledArrival": "2026-10-27T03:40:00.000Z",
+        "scheduledDeparture": "2026-10-27T03:41:00.000Z",
+        "predictedArrival": "2026-10-27T03:40:00.000Z",
+        "predictedDeparture": "2026-10-27T03:41:00.000Z",
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": 0,
+        "platformScheduled": "1",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      },
+      {
+        "index": 7,
+        "stopPlaceId": "1913ef57-6314-558c-b635-3d41b6a46741",
+        "name": "Oberhausen Hbf",
+        "scheduledArrival": "2026-10-27T04:06:00.000Z",
+        "scheduledDeparture": null,
+        "predictedArrival": "2026-10-27T04:06:00.000Z",
+        "predictedDeparture": null,
+        "arrivalDelaySeconds": 0,
+        "departureDelaySeconds": null,
+        "platformScheduled": "6",
+        "platformActual": null,
+        "cancelled": false,
+        "prediction": "explicit"
+      }
+    ],
+    "vehicle": null,
+    "photo": null
+  }
+}

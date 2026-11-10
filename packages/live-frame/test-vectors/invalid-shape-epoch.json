@@ -1,0 +1,7 @@
+{
+  "name": "invalid-shape-epoch",
+  "description": "keyframe-shape-numbers with shapeEpoch 0 (numbers need an epoch of 1 or more).",
+  "decoder": "keyframe",
+  "error": "corrupt",
+  "byteLength": 477
+}

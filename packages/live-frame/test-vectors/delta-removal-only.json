@@ -1,0 +1,16 @@
+{
+  "name": "delta-removal-only",
+  "description": "A delta from 1000 to 1001 without trips that removes three keys, 0 and 4294967295 among them.",
+  "decoder": "delta",
+  "expected": {
+    "kind": "delta",
+    "sequence": 1001,
+    "baseSequence": 1000,
+    "timetableVersion": 7,
+    "shapeEpoch": 0,
+    "timeBase": 1793000003,
+    "trips": [],
+    "removed": [0, 40, 4294967295]
+  },
+  "byteLength": 276
+}

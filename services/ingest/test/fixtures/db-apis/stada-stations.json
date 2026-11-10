@@ -1,0 +1,747 @@
+{
+  "offset": 0,
+  "limit": 10000,
+  "total": 6,
+  "result": [
+    {
+      "number": 1866,
+      "ifopt": "de:06412:10",
+      "name": "Frankfurt (Main) Hbf",
+      "mailingAddress": {
+        "city": "Frankfurt am Main",
+        "zipcode": "60329",
+        "street": "Im Hauptbahnhof"
+      },
+      "category": 1,
+      "priceCategory": 1,
+      "hasParking": true,
+      "hasBicycleParking": true,
+      "hasLocalPublicTransport": true,
+      "hasPublicFacilities": true,
+      "hasLockerSystem": true,
+      "hasTaxiRank": true,
+      "hasTravelNecessities": true,
+      "hasSteplessAccess": "yes",
+      "hasMobilityService": "Nur nach Voranmeldung unter 030 65 21 28 88 (Ortstarif)",
+      "hasWiFi": true,
+      "hasTravelCenter": true,
+      "hasRailwayMission": true,
+      "hasDBLounge": true,
+      "hasLostAndFound": true,
+      "hasCarRental": true,
+      "federalState": "Hessen",
+      "federalStateCode": "DE-HE",
+      "countryCode": "DE",
+      "municipalityCode": "06412000",
+      "regionalbereich": {
+        "number": 5,
+        "name": "RB Mitte",
+        "shortName": "RB Mitte"
+      },
+      "aufgabentraeger": {
+        "shortName": "RMV",
+        "name": "Rhein-Main-Verkehrsverbund GmbH"
+      },
+      "DBinformation": {
+        "availability": {
+          "monday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "holiday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "localServiceStaff": {
+        "availability": {
+          "monday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "holiday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "mobilityServiceStaff": {
+        "staffOnSite": true,
+        "serviceOnBehalf": false,
+        "meetingPoint": "DB Information Mitte Bahnhofshalle",
+        "availability": {
+          "monday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "timeTableOffice": {
+        "email": "Fahrplanzentrum-RB.Mitte@deutschebahn.com",
+        "name": "Frankfurt(M)"
+      },
+      "szentrale": {
+        "number": 45,
+        "publicPhoneNumber": "069/2651055",
+        "name": "Frankfurt (Main) Hbf"
+      },
+      "stationManagement": {
+        "number": 161,
+        "name": "Frankfurt a. M."
+      },
+      "evaNumbers": [
+        {
+          "number": 8000105,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [8.66282825, 50.1066819]
+          },
+          "isMain": true
+        },
+        {
+          "number": 8098105,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [8.6625612, 50.1071101]
+          },
+          "isMain": false
+        }
+      ],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "FF",
+          "isMain": true,
+          "hasSteamPermission": true,
+          "steamPermission": "unrestricted",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [8.663789, 50.107145]
+          },
+          "primaryLocationCode": "DE13276"
+        },
+        {
+          "rilIdentifier": "FFT",
+          "isMain": false,
+          "hasSteamPermission": false,
+          "steamPermission": "entryBan",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [8.664137, 50.107407]
+          },
+          "primaryLocationCode": "DE13277"
+        }
+      ],
+      "productLine": {
+        "productLine": "Metropolbahnhof",
+        "segment": "Metropolbahnhof"
+      },
+      "wirelessLan": {}
+    },
+    {
+      "number": 7263,
+      "ifopt": "de:01059:9034567",
+      "name": "Lindaunis",
+      "mailingAddress": {
+        "city": "Boren",
+        "zipcode": "24392",
+        "street": "Schleistraße"
+      },
+      "category": 7,
+      "priceCategory": 7,
+      "hasParking": false,
+      "hasBicycleParking": false,
+      "hasLocalPublicTransport": false,
+      "hasPublicFacilities": false,
+      "hasLockerSystem": false,
+      "hasTaxiRank": false,
+      "hasTravelNecessities": false,
+      "hasSteplessAccess": "yes",
+      "hasMobilityService": "no",
+      "hasWiFi": false,
+      "hasTravelCenter": false,
+      "hasRailwayMission": false,
+      "hasDBLounge": false,
+      "hasLostAndFound": false,
+      "hasCarRental": false,
+      "federalState": "Schleswig-Holstein",
+      "federalStateCode": "DE-SH",
+      "countryCode": "DE",
+      "municipalityCode": "01059187",
+      "regionalbereich": {
+        "number": 3,
+        "name": "RB Nord",
+        "shortName": "RB Nord"
+      },
+      "aufgabentraeger": {
+        "shortName": "NAH.SH",
+        "name": "Nahverkehrsverbund Schleswig-Holstein GmbH"
+      },
+      "szentrale": {
+        "number": 3,
+        "publicPhoneNumber": "0431-2479-1055",
+        "name": "Schleswig-Holstein"
+      },
+      "stationManagement": {
+        "number": 4,
+        "name": "Schleswig-Holstein"
+      },
+      "evaNumbers": [],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "ALIN",
+          "isMain": true,
+          "hasSteamPermission": true,
+          "steamPermission": "unrestricted",
+          "primaryLocationCode": "DE25259"
+        }
+      ],
+      "productLine": {
+        "productLine": "Zubringerbahnhof",
+        "segment": "Ländlicher Zubringer"
+      }
+    },
+    {
+      "number": 374,
+      "ifopt": "de:12066:900435800",
+      "name": "Bahnsdorf",
+      "localizedNames": {
+        "dsb": "Bobošojce"
+      },
+      "mailingAddress": {
+        "city": "Neu-Seeland",
+        "zipcode": "03103",
+        "street": "Zollhausstr."
+      },
+      "category": 6,
+      "priceCategory": 6,
+      "hasParking": false,
+      "hasBicycleParking": true,
+      "hasLocalPublicTransport": false,
+      "hasPublicFacilities": false,
+      "hasLockerSystem": false,
+      "hasTaxiRank": false,
+      "hasTravelNecessities": false,
+      "hasSteplessAccess": "yes",
+      "hasMobilityService": "no",
+      "hasWiFi": false,
+      "hasTravelCenter": false,
+      "hasRailwayMission": false,
+      "hasDBLounge": false,
+      "hasLostAndFound": false,
+      "hasCarRental": false,
+      "federalState": "Brandenburg",
+      "federalStateCode": "DE-BB",
+      "countryCode": "DE",
+      "municipalityCode": "12066226",
+      "regionalbereich": {
+        "number": 1,
+        "name": "RB Ost",
+        "shortName": "RB Ost"
+      },
+      "aufgabentraeger": {
+        "shortName": "VBB",
+        "name": "Verkehrsverbund Berlin-Brandenburg GmbH für Brandenburg"
+      },
+      "timeTableOffice": {
+        "email": "Fahrplanzentrum-Ost@deutschebahn.com",
+        "name": "Berlin Ostbahnhof Fahrplanzentrum Ost"
+      },
+      "szentrale": {
+        "number": 67,
+        "publicPhoneNumber": "0331/2357520",
+        "name": "Potsdam"
+      },
+      "stationManagement": {
+        "number": 94,
+        "name": "Cottbus"
+      },
+      "evaNumbers": [
+        {
+          "number": 8011098,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [14.112288, 51.581745]
+          },
+          "isMain": true
+        }
+      ],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "BBO",
+          "isMain": true,
+          "hasSteamPermission": true,
+          "steamPermission": "unrestricted",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [14.112288, 51.581745]
+          },
+          "primaryLocationCode": "DE10586"
+        }
+      ],
+      "productLine": {
+        "productLine": "Zubringerbahnhof",
+        "segment": "ländlicher Zubringer"
+      }
+    },
+    {
+      "number": 442,
+      "ifopt": "de:15089:8011119",
+      "name": "Bebitz",
+      "mailingAddress": {
+        "city": "Könnern",
+        "zipcode": "06420",
+        "street": "Am Bahnhof 1"
+      },
+      "category": 7,
+      "priceCategory": 7,
+      "hasParking": false,
+      "hasBicycleParking": false,
+      "hasLocalPublicTransport": true,
+      "hasPublicFacilities": false,
+      "hasLockerSystem": false,
+      "hasTaxiRank": false,
+      "hasTravelNecessities": false,
+      "hasMobilityService": "no",
+      "hasWiFi": false,
+      "hasTravelCenter": false,
+      "hasRailwayMission": false,
+      "hasDBLounge": false,
+      "hasLostAndFound": false,
+      "hasCarRental": false,
+      "federalState": "Sachsen-Anhalt",
+      "federalStateCode": "DE-ST",
+      "countryCode": "DE",
+      "municipalityCode": "15089195",
+      "regionalbereich": {
+        "number": 2,
+        "name": "RB Südost",
+        "shortName": "RB Südost"
+      },
+      "aufgabentraeger": {
+        "shortName": "NASA",
+        "name": "Nahverkehrsservice Sachsen-Anhalt GmbH"
+      },
+      "timeTableOffice": {
+        "email": "Fahrplanzentrum-Suedost-DBInfraGOAG@deutschebahn.com                         ",
+        "name": "Fahrplanzentrum RB Südost"
+      },
+      "szentrale": {
+        "number": 59,
+        "publicPhoneNumber": "0391/5491055",
+        "name": "Magdeburg Hbf"
+      },
+      "stationManagement": {
+        "number": 77,
+        "name": "Magdeburg"
+      },
+      "evaNumbers": [
+        {
+          "number": 8011119,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [11.763967, 51.724136]
+          },
+          "isMain": true
+        }
+      ],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "LBBZ",
+          "isMain": true,
+          "hasSteamPermission": true,
+          "steamPermission": "unrestricted",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [11.76362365, 51.7240405]
+          },
+          "primaryLocationCode": "DE10701"
+        }
+      ]
+    },
+    {
+      "number": 1071,
+      "ifopt": "de:11000:900003201",
+      "name": "Berlin Hauptbahnhof",
+      "mailingAddress": {
+        "city": "Berlin",
+        "zipcode": "10557",
+        "street": "Europaplatz 1"
+      },
+      "category": 1,
+      "priceCategory": 1,
+      "hasParking": true,
+      "hasBicycleParking": true,
+      "hasLocalPublicTransport": true,
+      "hasPublicFacilities": true,
+      "hasLockerSystem": true,
+      "hasTaxiRank": true,
+      "hasTravelNecessities": true,
+      "hasSteplessAccess": "partial",
+      "hasMobilityService": "Nur nach Voranmeldung unter 030 65 21 28 88 (Ortstarif)",
+      "hasWiFi": true,
+      "hasTravelCenter": true,
+      "hasRailwayMission": true,
+      "hasDBLounge": true,
+      "hasLostAndFound": true,
+      "hasCarRental": true,
+      "federalState": "Berlin",
+      "federalStateCode": "DE-BE",
+      "countryCode": "DE",
+      "municipalityCode": "11000000",
+      "regionalbereich": {
+        "number": 1,
+        "name": "RB Ost",
+        "shortName": "RB Ost"
+      },
+      "aufgabentraeger": {
+        "shortName": "VBB Berlin",
+        "name": "Verkehrsverbund Berlin-Brandenburg GmbH für Berlin"
+      },
+      "DBinformation": {
+        "availability": {
+          "monday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "holiday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "localServiceStaff": {
+        "availability": {
+          "monday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "holiday": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "mobilityServiceStaff": {
+        "staffOnSite": true,
+        "serviceOnBehalf": false,
+        "meetingPoint": "DB Information Europaplatz (Nord)",
+        "availability": {
+          "monday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "tuesday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "wednesday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "thursday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "friday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "saturday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          },
+          "sunday1": {
+            "fromTime": "00:00",
+            "toTime": "24:00"
+          }
+        }
+      },
+      "timeTableOffice": {
+        "email": "Fahrplanzentrum-Ost@deutschebahn.com",
+        "name": "Berlin Ostbahnhof Fahrplanzentrum Ost"
+      },
+      "szentrale": {
+        "number": 73,
+        "publicPhoneNumber": "030/2971055",
+        "name": "Berlin Ostbahnhof"
+      },
+      "stationManagement": {
+        "number": 90,
+        "name": "Berlin Fernbahnhöfe"
+      },
+      "evaNumbers": [
+        {
+          "number": 8011160,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "isMain": true
+        },
+        {
+          "number": 8089021,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "isMain": false
+        },
+        {
+          "number": 8098160,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "isMain": false
+        }
+      ],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "BHBF",
+          "isMain": true,
+          "hasSteamPermission": false,
+          "steamPermission": "entryBan",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "primaryLocationCode": "DE10872"
+        },
+        {
+          "rilIdentifier": "BHBT",
+          "isMain": false,
+          "hasSteamPermission": false,
+          "steamPermission": "entryBan",
+          "primaryLocationCode": "DE10873"
+        },
+        {
+          "rilIdentifier": "BL",
+          "isMain": false,
+          "hasSteamPermission": false,
+          "steamPermission": "entryBan",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "primaryLocationCode": "DE10871"
+        },
+        {
+          "rilIdentifier": "BLS",
+          "isMain": false,
+          "hasSteamPermission": false,
+          "steamPermission": "entryBan",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [13.369545, 52.525592]
+          },
+          "primaryLocationCode": "DE10874"
+        }
+      ],
+      "productLine": {
+        "productLine": "Metropolbahnhof",
+        "segment": "Metropolbahnhof"
+      },
+      "wirelessLan": {}
+    },
+    {
+      "number": 6275,
+      "name": "Tromsdorf",
+      "mailingAddress": {
+        "city": "Tromsdorf",
+        "zipcode": "06648",
+        "street": "Am Bahnhof 1"
+      },
+      "category": 7,
+      "priceCategory": 7,
+      "hasParking": false,
+      "hasBicycleParking": false,
+      "hasLocalPublicTransport": false,
+      "hasPublicFacilities": false,
+      "hasLockerSystem": false,
+      "hasTaxiRank": false,
+      "hasTravelNecessities": false,
+      "hasSteplessAccess": "yes",
+      "hasMobilityService": "no",
+      "hasWiFi": false,
+      "hasTravelCenter": false,
+      "hasRailwayMission": false,
+      "hasDBLounge": false,
+      "hasLostAndFound": false,
+      "hasCarRental": false,
+      "federalState": "Sachsen-Anhalt",
+      "federalStateCode": "DE-ST",
+      "countryCode": "DE",
+      "municipalityCode": "15084125",
+      "regionalbereich": {
+        "number": 2,
+        "name": "RB Südost",
+        "shortName": "RB Südost"
+      },
+      "aufgabentraeger": {
+        "shortName": "NASA",
+        "name": "Nahverkehrsservice Sachsen-Anhalt GmbH"
+      },
+      "timeTableOffice": {
+        "email": "  Fahrplanzentrum-Suedost-DBInfraGOAG@deutschebahn.com",
+        "name": "Fahrplanzentrum RB Südost"
+      },
+      "szentrale": {
+        "number": 50,
+        "publicPhoneNumber": "0361/3001055",
+        "name": "Erfurt Hbf"
+      },
+      "stationManagement": {
+        "number": 139,
+        "name": "Erfurt"
+      },
+      "evaNumbers": [
+        {
+          "number": 8013152,
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [11.481268, 51.118495]
+          },
+          "isMain": true
+        }
+      ],
+      "ril100Identifiers": [
+        {
+          "rilIdentifier": "UTRO",
+          "isMain": true,
+          "hasSteamPermission": true,
+          "steamPermission": "unrestricted",
+          "geographicCoordinates": {
+            "type": "Point",
+            "coordinates": [11.481188779, 51.118526098]
+          },
+          "primaryLocationCode": "DE20372"
+        }
+      ],
+      "productLine": {
+        "productLine": "nicht anwendbar",
+        "segment": "nicht anwendbar"
+      }
+    }
+  ]
+}

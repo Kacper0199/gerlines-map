@@ -1,0 +1,51 @@
+{
+  "name": "head-counts",
+  "description": "head-basic as version 1.1 with legend counts (section 0x61): running trips in total and for hsr, trips without track geometry in total and for reg and sbahn, cancelled trips 0, realtime trips; decoded in code order.",
+  "decoder": "head",
+  "expected": {
+    "kind": "head",
+    "sequence": 1001,
+    "timetableVersion": 7,
+    "timeBase": 1793000004,
+    "keyframeSequence": 1000,
+    "oldestSequence": 900,
+    "counts": [
+      {
+        "metric": "running",
+        "category": "hsr",
+        "count": 212
+      },
+      {
+        "metric": "running",
+        "category": null,
+        "count": 3012
+      },
+      {
+        "metric": "untracked",
+        "category": "reg",
+        "count": 30
+      },
+      {
+        "metric": "untracked",
+        "category": "sbahn",
+        "count": 11
+      },
+      {
+        "metric": "untracked",
+        "category": null,
+        "count": 41
+      },
+      {
+        "metric": "cancelled",
+        "category": null,
+        "count": 0
+      },
+      {
+        "metric": "realtime",
+        "category": null,
+        "count": 2718
+      }
+    ]
+  },
+  "byteLength": 136
+}

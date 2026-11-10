@@ -1,0 +1,1526 @@
+# Train operators of the DELFI feed, keyed by the static import slug (pipelines/static_import).
+# Facts come from Wikidata (CC0) for the item in wikidata_qid; wikidata_basis names how the item
+# was chosen. Rows without an item say why in missing.
+- operator_id: s-bahn-berlin-gmbh
+  feed_name: S-Bahn Berlin GmbH
+  brand_name: S-Bahn Berlin GmbH
+  country: DE
+  wikidata_qid: Q12374454
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://sbahn.berlin
+  valid_from: '1995-01-01'
+  # The item has no parent organisation (P749); its owner (P127) is DB Regio.
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-nrw
+  feed_name: DB Regio AG NRW
+  brand_name: DB Regio NRW
+  country: DE
+  wikidata_qid: Q1152084
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://regional.bahn.de/regionen/nrw
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-s-bahn-muenchen
+  feed_name: DB Regio AG S-Bahn München
+  brand_name: S-Bahn München
+  country: DE
+  wikidata_qid: Q256524
+  wikidata_role: network
+  wikidata_basis: traewelling-operator-matching
+  # The item has no parent organisation (P749); its operator (P137) is DB Regio Bayern.
+  parents:
+  - name: DB Regio Bayern
+    wikidata_qid: Q1152076
+  source: wikidata
+  missing:
+    website: Wikidata lists 2 websites
+- operator_id: s-bahn-hamburg
+  feed_name: S-Bahn Hamburg
+  brand_name: S-Bahn Hamburg GmbH
+  country: DE
+  wikidata_qid: Q99869216
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.s-bahn-hamburg.de/s_hamburg/view/index.shtml
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-fernverkehr-ag
+  feed_name: DB Fernverkehr AG
+  brand_name: DB Fernverkehr
+  country: DE
+  wikidata_qid: Q452140
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.deutschebahn.com/de/konzern/konzernprofil/Konzernunternehmen/dbfernverkehr-6879486
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  valid_from: '1999-01-01'
+  source: wikidata
+- operator_id: db-regio-ag-bayern
+  feed_name: DB Regio AG Bayern
+  brand_name: DB Regio Bayern
+  country: DE
+  wikidata_qid: Q1152076
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://regional.bahn.de/regionen/bayern
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-suedost
+  feed_name: DB Regio AG Südost
+  brand_name: DB Regio Südost
+  country: DE
+  wikidata_qid: Q1152091
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://regional.bahn.de/regionen/sachsen/wir
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-baden-wuerttemberg
+  feed_name: DB Regio AG Baden-Württemberg
+  brand_name: DB Regio Baden-Württemberg
+  country: DE
+  wikidata_qid: Q64504641
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://regional.bahn.de/regionen/baden-wuerttemberg/ueb/ueber-uns
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-s-bahn-rhein-main
+  feed_name: DB Regio AG S-Bahn Rhein-Main
+  brand_name: S-Bahn Rhein-Main
+  country: DE
+  wikidata_qid: Q705684
+  wikidata_role: network
+  wikidata_basis: traewelling-operator-matching
+  website: https://microsites.rmv.de/s-bahn
+  # The item has no parent organisation (P749); its operator (P137) is Deutsche Bahn.
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  source: wikidata
+- operator_id: db-regio-ag-nordost
+  feed_name: DB Regio AG Nordost
+  brand_name: DB Regio Nordost
+  country: DE
+  wikidata_qid: Q50300033
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-mitte-region-suedwest
+  feed_name: DB Regio AG Mitte Region Südwest
+  brand_name: DB Regio Mitte
+  country: DE
+  wikidata_qid: Q60894917
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-nord
+  feed_name: DB Regio AG Nord
+  brand_name: DB Regio Nord
+  country: DE
+  wikidata_qid: Q62594047
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.dbregio.de/
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: db-regio-ag-s-bahn-stuttgart
+  feed_name: DB Regio AG S-Bahn Stuttgart
+  brand_name: S-Bahn Stuttgart
+  country: DE
+  wikidata_qid: Q81001
+  wikidata_role: network
+  wikidata_basis: wikidata-search
+  website: https://www.s-bahn-stuttgart.de/
+  # The item has no parent organisation (P749); its operator (P137) is DB Regio.
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: tram-vbk
+  feed_name: Tram VBK
+  brand_name: Verkehrsbetriebe Karlsruhe
+  legal_name: Verkehrsbetriebe Karlsruhe GmbH
+  country: DE
+  wikidata_qid: Q644958
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.vbk.info/
+  parents:
+  - name: KVVH
+    wikidata_qid: Q15822360
+  aliases:
+  - alias: Verkehrsbetriebe Karlsruhe GmbH
+    source: wikidata
+  source: wikidata
+- operator_id: albtal-verkehrs-gesellschaft
+  feed_name: Albtal-Verkehrs-Gesellschaft
+  brand_name: Albtal-Verkehrs-Gesellschaft
+  legal_name: Albtal-Verkehrs-Gesellschaft mbH
+  country: DE
+  wikidata_qid: Q896547
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.avg.info/
+  parents:
+  - name: KVVH
+    wikidata_qid: Q15822360
+  aliases:
+  - alias: Albtal-Verkehrs-Gesellschaft mbH
+    source: wikidata
+  source: wikidata
+- operator_id: hessische-landesbahn-gmbh
+  feed_name: Hessische Landesbahn GmbH
+  brand_name: Hessische Landesbahn
+  country: DE
+  wikidata_qid: Q896102
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.hlb-online.de/
+  source: wikidata
+- operator_id: bayerische-regiobahn
+  feed_name: Bayerische Regiobahn
+  brand_name: Bayerische Regiobahn
+  country: DE
+  wikidata_qid: Q812270
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.brb.de/
+  parents:
+  - name: Transdev GmbH
+    wikidata_qid: Q897024
+  source: wikidata
+- operator_id: national-express
+  feed_name: National Express
+  brand_name: National Express
+  country: DE
+  wikidata_qid: Q19296997
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.nationalexpress.de
+  parents:
+  - name: National Express Group
+    wikidata_qid: Q60188
+  source: wikidata
+  field_sources:
+    brand_name: delfi-gtfs
+  missing:
+    legal_name: Wikidata Q19296997 has no official name (P1448), its labels differ by language
+- operator_id: suedwestdeutsche-verkehrs-ag
+  feed_name: Südwestdeutsche-Verkehrs-AG
+  brand_name: SWEG Südwestdeutsche Landesverkehrs-GmbH
+  legal_name: SWEG Südwestdeutsche Landesverkehrs-GmbH
+  country: DE
+  wikidata_qid: Q2381732
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.sweg.de
+  aliases:
+  - alias: SWEG Südwestdeutsche Landesverkehrs-AG
+    valid_from: '2018-03-20'
+    valid_to: '2021-10-07'
+    source: wikidata
+  - alias: SWEG Südwestdeutsche Verkehrs-Aktiengesellschaft
+    valid_to: '2018-03-20'
+    source: wikidata
+  source: wikidata
+- operator_id: chemnitzer-modell
+  feed_name: Chemnitzer Modell
+  brand_name: Chemnitzer Modell
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: the agency name is the Chemnitz tram-train concept (Q1069578), not a company; the feed
+      does not name the operator
+- operator_id: db-regio-ag-mitte-region-hessen
+  feed_name: DB Regio AG Mitte Region Hessen
+  brand_name: DB Regio Mitte
+  country: DE
+  wikidata_qid: Q60894917
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: cd
+  feed_name: CD
+  brand_name: České dráhy
+  country: CZ
+  wikidata_qid: Q304944
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.cd.cz/
+  source: wikidata
+- operator_id: nordwestbahn
+  feed_name: NordWestBahn
+  brand_name: NordWestBahn
+  country: DE
+  wikidata_qid: Q314293
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.nordwestbahn.de
+  parents:
+  - name: Transdev GmbH
+    wikidata_qid: Q897024
+  - name: Transdev Group
+    wikidata_qid: Q104185516
+  source: wikidata
+  field_sources:
+    brand_name: delfi-gtfs
+- operator_id: oesterreichische-bundesbahnen
+  feed_name: Österreichische Bundesbahnen
+  brand_name: Österreichische Bundesbahnen
+  country: AT
+  wikidata_qid: Q83822
+  wikidata_role: parent_company
+  wikidata_basis: traewelling-operator-matching
+  source: wikidata
+  missing:
+    website: Wikidata lists 2 websites
+    legal_name: the Wikidata item is the parent company, its official name is not the train operator's
+- operator_id: ostdeutsche-eisenbahn-gmbh
+  feed_name: Ostdeutsche Eisenbahn GmbH
+  brand_name: Ostdeutsche Eisenbahn
+  country: DE
+  wikidata_qid: Q145188
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.odeg.de/
+  parents:
+  - name: BeNEX
+    wikidata_qid: Q473581
+  - name: Netinera
+    wikidata_qid: Q558401
+  valid_from: '2002-06-06'
+  source: wikidata
+- operator_id: s-bahn-hannover
+  feed_name: S-Bahn Hannover
+  brand_name: Transdev Hannover GmbH
+  country: DE
+  wikidata_qid: Q79876049
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.sbahn-hannover-2022.de/
+  source: wikidata
+- operator_id: db-regio-ag-mitte
+  feed_name: DB Regio AG Mitte
+  brand_name: DB Regio Mitte
+  country: DE
+  wikidata_qid: Q60894917
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: sbb
+  feed_name: SBB
+  brand_name: Schweizerische Bundesbahnen
+  legal_name: Schweizerische Bundesbahnen SBB
+  country: CH
+  wikidata_qid: Q83835
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  valid_from: '1902-01-01'
+  aliases:
+  - alias: Schweizerische Bundesbahnen SBB
+    source: wikidata
+  - alias: Swiss federal railways SFR
+    source: wikidata
+  source: wikidata
+  missing:
+    website: Wikidata lists 4 websites
+- operator_id: vias-rail-gmbh
+  feed_name: VIAS Rail GmbH
+  brand_name: Vias
+  country: DE
+  wikidata_qid: Q2521737
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.vias-online.de/
+  parents:
+  - name: Danske Statsbaner
+    wikidata_qid: Q83824
+  - name: Rurtalbahn GmbH
+    wikidata_qid: Q895592
+  source: wikidata
+- operator_id: agilis
+  feed_name: agilis
+  brand_name: Agilis
+  country: DE
+  wikidata_qid: Q393786
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.agilis.de/
+  parents:
+  - name: BeNEX
+    wikidata_qid: Q473581
+  source: wikidata
+- operator_id: eurobahn
+  feed_name: Eurobahn
+  brand_name: Eurobahn
+  country: DE
+  wikidata_qid: Q589575
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.eurobahn.de
+  parents:
+  - name: Zweckverband Nahverkehr Westfalen-Lippe
+    wikidata_qid: Q231853
+  source: wikidata
+- operator_id: akn-eisenbahn-gmbh
+  feed_name: AKN Eisenbahn GmbH
+  brand_name: AKN Eisenbahn GmbH
+  country: DE
+  wikidata_qid: Q266805
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.akn.de/
+  source: wikidata
+- operator_id: nordbahn-eisenbahngesellschaft
+  feed_name: Nordbahn Eisenbahngesellschaft
+  brand_name: NBE nordbahn Eisenbahngesellschaft mbH & Co. KG
+  country: DE
+  wikidata_qid: Q1997636
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://nordbahn.de/
+  source: wikidata
+- operator_id: ne-zug-vvs
+  feed_name: NE-Zug (VVS)
+  brand_name: Württembergische Eisenbahn-Gesellschaft
+  country: DE
+  wikidata_qid: Q2596833
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.weg-bahn.de
+  parents:
+  - name: Deutsche Eisenbahn-Gesellschaft
+    wikidata_qid: Q3024830
+  source: wikidata
+- operator_id: db-regionetz-verkehrs-gmbh-suedostbayernbahn
+  feed_name: DB RegioNetz Verkehrs GmbH Südostbayernbahn
+  brand_name: Südostbayernbahn
+  country: DE
+  wikidata_qid: Q1660947
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.suedostbayernbahn.de/
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  source: wikidata
+- operator_id: rheinruhrbahn
+  feed_name: RheinRuhrBahn
+  brand_name: RheinRuhrBahn
+  country: DE
+  wikidata_qid: Q113553865
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: https://www.rhein-ruhr-bahn.de/
+  parents:
+  - name: Transdev GmbH
+    wikidata_qid: Q897024
+  source: wikidata
+- operator_id: arverio-bayern-gmbh
+  feed_name: Arverio Bayern GmbH
+  brand_name: Arverio Bayern
+  country: DE
+  wikidata_qid: Q64212479
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.arverio-by.de/
+  valid_from: '2019-03-21'
+  source: wikidata
+- operator_id: erfurter-bahn
+  feed_name: Erfurter Bahn
+  brand_name: Erfurter Bahn
+  country: DE
+  wikidata_qid: Q1350200
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://erfurter-bahn.de
+  source: wikidata
+- operator_id: arverio-baden-wuerttemberg-gmbh
+  feed_name: Arverio Baden-Württemberg GmbH
+  brand_name: Arverio Baden-Württemberg
+  country: DE
+  wikidata_qid: Q64212458
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.arverio-bw.de/
+  valid_from: '2017-04-10'
+  source: wikidata
+- operator_id: regiobahn
+  feed_name: REGIOBAHN
+  brand_name: Regiobahn GmbH
+  legal_name: Regionale Bahngesellschaft Kaarst-Neuss-Düsseldorf-Erkrath-Mettmann-Wuppertal mbH
+  country: DE
+  wikidata_qid: Q2138160
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.regio-bahn.de/
+  valid_from: '1992-08-08'
+  aliases:
+  - alias: Regionale Bahngesellschaft Kaarst-Neuss-Düsseldorf-Erkrath-Mettmann-Wuppertal mbH
+    source: wikidata
+  source: wikidata
+- operator_id: vlexx
+  feed_name: vlexx
+  brand_name: vlexx
+  country: DE
+  wikidata_qid: Q18536938
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.vlexx.de/
+  aliases:
+  - alias: DNSW GmbH
+    source: wikidata
+  - alias: vlexx GmbH
+    source: wikidata
+  source: wikidata
+- operator_id: neb-niederbarnimer-eisenbahn
+  feed_name: NEB Niederbarnimer Eisenbahn
+  brand_name: Niederbarnimer Eisenbahn
+  country: DE
+  wikidata_qid: Q1438506
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.neb.de/
+  parents:
+  - name: Captrain
+    wikidata_qid: Q318618
+  source: wikidata
+- operator_id: db-regionetz-verkehrs-gmbh-westfrankenbahn
+  feed_name: DB RegioNetz Verkehrs GmbH Westfrankenbahn
+  brand_name: Westfrankenbahn
+  country: DE
+  wikidata_qid: Q1662213
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.westfrankenbahn.de
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  valid_from: '2006-01-01'
+  source: wikidata
+- operator_id: kvg-tram
+  feed_name: KVG Tram
+  brand_name: Kasseler Verkehrs-Gesellschaft
+  country: DE
+  wikidata_qid: Q1578639
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.kvg.de/
+  parents:
+  - name: Kasseler Verkehrs- und Versorgungs-GmbH
+    wikidata_qid: Q1735222
+  source: wikidata
+- operator_id: db-fernverkehr-codesharing
+  feed_name: DB Fernverkehr (Codesharing)
+  brand_name: DB Fernverkehr
+  country: DE
+  wikidata_qid: Q452140
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.deutschebahn.com/de/konzern/konzernprofil/Konzernunternehmen/dbfernverkehr-6879486
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  valid_from: '1999-01-01'
+  source: wikidata
+- operator_id: erixx
+  feed_name: erixx
+  brand_name: Erixx
+  country: DE
+  wikidata_qid: Q1354909
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.erixx.de/
+  valid_from: '2011-04-18'
+  source: wikidata
+- operator_id: mitteldeutsche-regiobahn
+  feed_name: Mitteldeutsche Regiobahn
+  brand_name: Mitteldeutsche Regiobahn
+  country: DE
+  wikidata_qid: Q33895860
+  wikidata_role: brand
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.mitteldeutsche-regiobahn.de
+  # The item has no parent organisation (P749); its owner (P127) and operator (P137) are Transdev Regio Ost and Bayerische Oberlandbahn, which both have Transdev GmbH as their parent (P749).
+  parents:
+  - name: Transdev Regio Ost
+    wikidata_qid: Q1382191
+  - name: Bayerische Oberlandbahn
+    wikidata_qid: Q259805
+  source: wikidata
+- operator_id: abellio-rail-mitteldeutschland-gmbh
+  feed_name: Abellio Rail Mitteldeutschland GmbH
+  brand_name: Abellio Rail Mitteldeutschland
+  country: DE
+  wikidata_qid: Q15781311
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.abellio.de
+  source: wikidata
+- operator_id: cantus-verkehrsgesellschaft
+  feed_name: cantus Verkehrsgesellschaft
+  brand_name: cantus Verkehrsgesellschaft
+  country: DE
+  wikidata_qid: Q1033911
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.cantus-bahn.de/
+  source: wikidata
+- operator_id: thurbo
+  feed_name: THURBO
+  brand_name: Thurbo
+  legal_name: Thurbo AG
+  country: CH
+  wikidata_qid: Q432448
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.thurbo.ch/
+  parents:
+  - name: Schweizerische Bundesbahnen
+    wikidata_qid: Q83835
+  valid_from: '2001-09-20'
+  aliases:
+  - alias: Thurbo AG
+    source: wikidata
+  source: wikidata
+- operator_id: suewex
+  feed_name: SÜWEX
+  brand_name: SÜWEX
+  country: DE
+  wikidata_qid: Q20007080
+  wikidata_role: brand
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.suewex.de/
+  source: wikidata
+- operator_id: vogtlandbahn-die-laenderbahn-gmbh-dlb
+  feed_name: vogtlandbahn - Die Länderbahn GmbH DLB
+  brand_name: Vogtlandbahn
+  country: DE
+  wikidata_qid: Q67203450
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: http://www.vogtlandbahn.de/
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  valid_from: '1997-11-23'
+  source: wikidata
+- operator_id: db-regionetz-verkehrs-gmbh-kurhessenbahn
+  feed_name: DB RegioNetz Verkehrs GmbH Kurhessenbahn
+  brand_name: Kurhessenbahn
+  country: DE
+  wikidata_qid: Q1793083
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.kurhessenbahn.de/
+  source: wikidata
+- operator_id: metronom
+  feed_name: metronom
+  brand_name: Metronom Eisenbahngesellschaft
+  legal_name: metronom Eisenbahngesellschaft mbH
+  country: DE
+  wikidata_qid: Q265228
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.der-metronom.de/
+  aliases:
+  - alias: metronom Eisenbahngesellschaft mbH
+    source: wikidata
+  source: wikidata
+- operator_id: sued-thueringen-bahn
+  feed_name: Süd-Thüringen-Bahn
+  brand_name: Süd-Thüringen-Bahn
+  country: DE
+  wikidata_qid: Q2380325
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.sued-thueringen-bahn.de/
+  source: wikidata
+- operator_id: westfalenbahn
+  feed_name: WestfalenBahn
+  brand_name: WestfalenBahn
+  country: DE
+  wikidata_qid: Q2024025
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.westfalenbahn.de/
+  source: wikidata
+- operator_id: trilex-die-laenderbahn-gmbh-dlb
+  feed_name: trilex - Die Länderbahn GmbH DLB
+  brand_name: Trilex
+  wikidata_qid: Q19310185
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: http://www.trilex.de
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  source: wikidata
+  missing:
+    country: Wikidata lists CZ, DE
+- operator_id: nederlandse-spoorwegen
+  feed_name: Nederlandse Spoorwegen
+  brand_name: Nederlandse Spoorwegen
+  country: NL
+  wikidata_qid: Q23076
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.ns.nl/
+  source: wikidata
+  field_sources:
+    country: gerlines
+- operator_id: trilex-express-die-laenderbahn-gmbh-dlb
+  feed_name: trilex-express - Die Länderbahn GmbH DLB
+  brand_name: Trilex
+  wikidata_qid: Q19310185
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: http://www.trilex.de
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  source: wikidata
+  missing:
+    country: Wikidata lists CZ, DE
+- operator_id: mittelrheinbahn-trans-regio
+  feed_name: MittelrheinBahn (Trans Regio)
+  brand_name: Trans regio
+  country: DE
+  wikidata_qid: Q2448840
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: Transdev GmbH
+    wikidata_qid: Q897024
+  source: wikidata
+  missing:
+    website: Wikidata lists 2 websites
+- operator_id: ceske-drahy
+  feed_name: Ceske Drahy
+  brand_name: České dráhy
+  country: CZ
+  wikidata_qid: Q304944
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.cd.cz/
+  source: wikidata
+- operator_id: enno
+  feed_name: enno
+  brand_name: Enno
+  country: DE
+  wikidata_qid: Q22674548
+  wikidata_role: brand
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.der-enno.de/
+  source: wikidata
+- operator_id: rurtalbahn
+  feed_name: Rurtalbahn
+  brand_name: Rurtalbahn GmbH
+  country: DE
+  wikidata_qid: Q895592
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.rurtalbahn.de/
+  source: wikidata
+- operator_id: sncb
+  feed_name: SNCB
+  brand_name: Nationale Gesellschaft der Belgischen Eisenbahnen
+  country: BE
+  wikidata_qid: Q524255
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.belgiantrain.be/
+  valid_from: '1926-09-01'
+  source: wikidata
+- operator_id: db-regionetz-verkehrs-gmbh-erzgebirgsbahn
+  feed_name: DB RegioNetz Verkehrs GmbH Erzgebirgsbahn
+  brand_name: Erzgebirgsbahn
+  country: DE
+  wikidata_qid: Q1366149
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.erzgebirgsbahn.de/
+  # The item has no parent organisation (P749); its owner (P127) is Deutsche Bahn.
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  source: wikidata
+- operator_id: agilis-schnellzug
+  feed_name: agilis-Schnellzug
+  brand_name: Agilis
+  country: DE
+  wikidata_qid: Q393786
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.agilis.de/
+  parents:
+  - name: BeNEX
+    wikidata_qid: Q473581
+  source: wikidata
+- operator_id: pkp-intercity
+  feed_name: PKP Intercity
+  brand_name: PKP Intercity
+  legal_name: PKP INTERCITY S.A.
+  country: PL
+  wikidata_qid: Q590406
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.intercity.pl/
+  parents:
+  - name: Polskie Koleje Państwowe
+    wikidata_qid: Q249591
+  valid_from: '2001-09-01'
+  aliases:
+  - alias: PKP INTERCITY S.A.
+    source: wikidata
+  source: wikidata
+- operator_id: waldbahn-die-laenderbahn-gmbh-dlb
+  feed_name: waldbahn - Die Länderbahn GmbH DLB
+  brand_name: Waldbahn
+  country: DE
+  wikidata_qid: Q2541126
+  wikidata_role: brand
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.laenderbahn.com/waldbahn/
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  valid_from: '1996-09-29'
+  source: wikidata
+- operator_id: oberpfalzbahn-die-laenderbahn-gmbh-dlb
+  feed_name: oberpfalzbahn - Die Länderbahn GmbH DLB
+  brand_name: Oberpfalzbahn
+  country: DE
+  wikidata_qid: Q1542795
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  source: wikidata
+- operator_id: evb-elbe-weser-gmbh
+  feed_name: EVB ELBE-WESER GmbH
+  brand_name: Eisenbahnen und Verkehrsbetriebe Elbe-Weser
+  country: DE
+  wikidata_qid: Q1311594
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  valid_from: '1981-01-01'
+  source: wikidata
+  missing:
+    website: Wikidata lists 2 websites
+- operator_id: hanseatische-eisenbahn-gmbh
+  feed_name: Hanseatische Eisenbahn GmbH
+  brand_name: Hanseatische Eisenbahn
+  country: DE
+  wikidata_qid: Q22979891
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.hanseatische-eisenbahn.de/
+  source: wikidata
+- operator_id: sncf
+  feed_name: SNCF
+  brand_name: Société nationale des chemins de fer français
+  country: FR
+  wikidata_qid: Q13646
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.groupe-sncf.com/
+  valid_from: '1938-01-01'
+  source: wikidata
+- operator_id: tri-train-rental-gmbh
+  feed_name: TRI Train Rental GmbH
+  brand_name: TRI Train Rental
+  country: DE
+  wikidata_qid: Q98848266
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.train-rental.com/
+  source: wikidata
+- operator_id: db-regionetz-verkehrs-gmbh-oberweisbacher-berg-schwarzatalb
+  feed_name: DB RegioNetz Verkehrs GmbH Oberweisbacher Berg+Schwarzatalb
+  brand_name: DB RegioNetz Verkehrs GmbH Oberweisbacher Berg+Schwarzatalb
+  source: delfi-gtfs
+  country: DE
+  missing:
+    wikidata_qid: Wikidata has the line (Q2011467) but no item for the DB RegioNetz business unit
+- operator_id: sbb-gmbh
+  feed_name: SBB GmbH
+  brand_name: SBB GmbH
+  country: DE
+  wikidata_qid: Q1254047
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.sbb-deutschland.de/
+  parents:
+  - name: Schweizerische Bundesbahnen
+    wikidata_qid: Q83835
+  source: wikidata
+- operator_id: mav
+  feed_name: MAV
+  brand_name: Magyar Államvasutak
+  country: HU
+  wikidata_qid: Q168082
+  wikidata_role: parent_company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.mavcsoport.hu/
+  source: wikidata
+  missing:
+    legal_name: the Wikidata item is the parent company, its official name is not the train operator's
+- operator_id: eurostar
+  feed_name: EUROSTAR
+  brand_name: Eurostar International
+  country: GB
+  wikidata_qid: Q5413836
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.eurostar.com/
+  parents:
+  - name: Eurostar Group
+    wikidata_qid: Q111765476
+  source: wikidata
+- operator_id: cfl
+  feed_name: CFL
+  brand_name: Société Nationale des Chemins de Fer Luxembourgeois
+  country: LU
+  wikidata_qid: Q525359
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.cfl.lu/
+  valid_from: '1946-05-14'
+  source: wikidata
+- operator_id: vias-gmbh
+  feed_name: VIAS GmbH
+  brand_name: Vias
+  country: DE
+  wikidata_qid: Q2521737
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.vias-online.de/
+  parents:
+  - name: Danske Statsbaner
+    wikidata_qid: Q83824
+  - name: Rurtalbahn GmbH
+    wikidata_qid: Q895592
+  source: wikidata
+- operator_id: flixtrain-de
+  feed_name: FlixTrain-de
+  brand_name: FlixTrain-de
+  wikidata_qid: Q55499626
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: Flix SE
+    wikidata_qid: Q15712258
+  source: wikidata
+  field_sources:
+    brand_name: delfi-gtfs
+  missing:
+    country: Wikidata lists CH, DE, SE
+    website: Wikidata lists 2 websites
+- operator_id: european-sleeper
+  feed_name: European Sleeper
+  brand_name: European Sleeper
+  country: NL
+  wikidata_qid: Q112134716
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.europeansleeper.eu/
+  valid_from: '2021-01-14'
+  source: wikidata
+  field_sources:
+    brand_name: delfi-gtfs
+    country: gerlines
+- operator_id: erfurter-bahn-express
+  feed_name: Erfurter Bahn Express
+  brand_name: Erfurter Bahn
+  country: DE
+  wikidata_qid: Q1350200
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://erfurter-bahn.de
+  source: wikidata
+- operator_id: db-zug-nicht-vvs
+  feed_name: DB-Zug (nicht VVS)
+  brand_name: DB-Zug (nicht VVS)
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: the agency name is a tariff label for DB trains outside the VVS area, not a company
+- operator_id: city-bahn-chemnitz
+  feed_name: City-Bahn Chemnitz
+  brand_name: City-Bahn Chemnitz
+  country: DE
+  wikidata_qid: Q1093772
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.city-bahn.de/
+  source: wikidata
+- operator_id: daenische-staatsbahnen
+  feed_name: Dänische Staatsbahnen
+  brand_name: Danske Statsbaner
+  country: DK
+  wikidata_qid: Q83824
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.dsb.dk
+  source: wikidata
+- operator_id: pressnitztalbahn
+  feed_name: Pressnitztalbahn
+  brand_name: Eisenbahn-Bau- und Betriebsgesellschaft Pressnitztalbahn
+  country: DE
+  wikidata_qid: Q1311329
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.pressnitztalbahn.com/
+  source: wikidata
+- operator_id: rhenus-veniro
+  feed_name: Rhenus Veniro
+  brand_name: Rhenus Veniro
+  country: DE
+  wikidata_qid: Q1121384
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.rhenus-veniro.de/
+  parents:
+  - name: Transdev S.A.
+    wikidata_qid: Q442637
+  source: wikidata
+- operator_id: nahreisezug
+  feed_name: Nahreisezug
+  brand_name: Nahreisezug
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: norddeutsche-eisenbahn-gesellschaft
+  feed_name: Norddeutsche Eisenbahn Gesellschaft
+  brand_name: Norddeutsche Eisenbahngesellschaft Niebüll
+  country: DE
+  wikidata_qid: Q1997732
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.neg-niebuell.de/
+  parents:
+  - name: Railroad Development Corporation
+    wikidata_qid: Q2127665
+  - name: Société Nationale des Chemins de Fer Luxembourgeois
+    wikidata_qid: Q525359
+  source: wikidata
+- operator_id: schwaebische-alb-bahn
+  feed_name: Schwäbische Alb-Bahn
+  brand_name: Schwäbische Alb-Bahn
+  country: DE
+  wikidata_qid: Q104903413
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.alb-bahn.com
+  source: wikidata
+- operator_id: saechsisch-oberlausitzer-eisenbahngesellschaft
+  feed_name: Sächsisch-Oberlausitzer Eisenbahngesellschaft
+  brand_name: Sächsisch-Oberlausitzer Eisenbahngesellschaft
+  country: DE
+  wikidata_qid: Q160404
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.soeg-zittau.de/cms/
+  source: wikidata
+- operator_id: freiberger-eisenbahngesellschaft
+  feed_name: Freiberger Eisenbahngesellschaft
+  brand_name: Freiberger Eisenbahn
+  country: DE
+  wikidata_qid: Q1399165
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.freiberger-eisenbahn.de/
+  source: wikidata
+- operator_id: bodensee-oberschwaben-bahn
+  feed_name: Bodensee-Oberschwaben-Bahn
+  brand_name: Bodensee-Oberschwaben-Bahn
+  country: DE
+  wikidata_qid: Q889679
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: http://www.bob-fn.de/
+  source: wikidata
+- operator_id: alex-die-laenderbahn-gmbh-dlb
+  feed_name: alex - Die Länderbahn GmbH DLB
+  brand_name: alex
+  legal_name: Arriva-Länderbahn-Express
+  country: DE
+  wikidata_qid: Q265582
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: http://www.mobil-mit-alex.de/
+  aliases:
+  - alias: Arriva-Länderbahn-Express
+    source: wikidata
+  # The item has no parent organisation (P749); its operator (P137) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  source: wikidata
+- operator_id: bayerische-zugspitzbahn
+  feed_name: Bayerische Zugspitzbahn
+  brand_name: Bayerische Zugspitzbahn Bergbahn
+  country: DE
+  wikidata_qid: Q15787250
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.zugspitze.de/
+  parents:
+  - name: Aktiengesellschaft für Industrie und Verkehrswesen
+    wikidata_qid: Q422108
+  - name: Allgemeine Lokalbahn- und Kraftwerke AG
+    wikidata_qid: Q2648820
+  source: wikidata
+- operator_id: hzpp
+  feed_name: HZPP
+  brand_name: HŽ Putnički prijevoz
+  country: HR
+  wikidata_qid: Q124357728
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.hzpp.hr/
+  parents:
+  - name: HŽ Hrvatske Željeznice Holding
+    wikidata_qid: Q127578589
+  source: wikidata
+- operator_id: sued-thueringen-bahn-express
+  feed_name: Süd-Thüringen-Bahn Express
+  brand_name: Süd-Thüringen-Bahn
+  country: DE
+  wikidata_qid: Q2380325
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.sued-thueringen-bahn.de/
+  source: wikidata
+- operator_id: db-nahverkehr
+  feed_name: DB-Nahverkehr
+  brand_name: DB Regio
+  legal_name: DB Regio Aktiengesellschaft
+  country: DE
+  wikidata_qid: Q18853
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.dbregio.de/
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  valid_from: '1999-06-01'
+  aliases:
+  - alias: DB Regio Aktiengesellschaft
+    source: wikidata
+  source: wikidata
+- operator_id: brohltalbahn
+  feed_name: Brohltalbahn
+  brand_name: Brohltalbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the line (Q925233) and a preservation society, no item for the operating
+      company
+- operator_id: harzer-schmalspurbahnen
+  feed_name: Harzer Schmalspurbahnen
+  brand_name: Harzer Schmalspurbahnen
+  country: DE
+  wikidata_qid: Q481535
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.hsb-wr.de/
+  valid_from: '1993-02-01'
+  source: wikidata
+- operator_id: bentheimer-eisenbahn
+  feed_name: Bentheimer Eisenbahn
+  brand_name: Bentheimer Eisenbahn
+  country: DE
+  wikidata_qid: Q818256
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.bentheimer-eisenbahn.de
+  source: wikidata
+- operator_id: daadetalbahn
+  feed_name: Daadetalbahn
+  brand_name: Daadetalbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item for an operating company of this name found
+- operator_id: parkeisenbahn-vatterode
+  feed_name: Parkeisenbahn Vatterode
+  brand_name: Parkeisenbahn Vatterode
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the railway (Q1523524), not its operator
+- operator_id: die-laenderbahn-gmbh
+  feed_name: Die Länderbahn GmbH
+  brand_name: Die Länderbahn
+  country: DE
+  wikidata_qid: Q315339
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.laenderbahn.com/
+  parents:
+  - name: Regentalbahn
+    wikidata_qid: Q882263
+  source: wikidata
+- operator_id: harzer-schmalspurbahn
+  feed_name: Harzer Schmalspurbahn
+  brand_name: Harzer Schmalspurbahnen
+  country: DE
+  wikidata_qid: Q481535
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.hsb-wr.de/
+  valid_from: '1993-02-01'
+  source: wikidata
+- operator_id: waldeisenbahn-muskau
+  feed_name: Waldeisenbahn Muskau
+  brand_name: Waldeisenbahn Muskau
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the heritage monument (Q2541284), not its operator
+- operator_id: sdg-saechsische-dampfeisenbahngesellschaft-mbh
+  feed_name: SDG Sächsische Dampfeisenbahngesellschaft mbH
+  brand_name: Sächsische Dampfeisenbahngesellschaft
+  country: DE
+  wikidata_qid: Q2378451
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.sdg-bahn.de/
+  source: wikidata
+- operator_id: cargo-logistik-rail-service
+  feed_name: Cargo Logistik Rail Service
+  brand_name: Cargo Logistik Rail Service
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: montafoner-bahn
+  feed_name: Montafoner Bahn
+  brand_name: Montafonerbahn
+  country: AT
+  wikidata_qid: Q351860
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.montafonerbahn.at/
+  source: wikidata
+- operator_id: traditionsverein-kleinbahn-des-kreises-jerichow-i-e-v
+  feed_name: Traditionsverein Kleinbahn des Kreises Jerichow I e.V.
+  brand_name: Traditionsverein Kleinbahn des Kreises Jerichow I e.V.
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: bernburger-freizeit-parkeisenbahn-krumbholz
+  feed_name: Bernburger Freizeit - Parkeisenbahn Krumbholz
+  brand_name: Bernburger Freizeit - Parkeisenbahn Krumbholz
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the railway (Q15965145), not its operator
+- operator_id: mecklenburgische-baederbahn-molli
+  feed_name: Mecklenburgische Bäderbahn Molli
+  brand_name: Mecklenburgische Bäderbahn Molli GmbH
+  legal_name: Mecklenburgische Bäderbahn Molli GmbH
+  country: DE
+  wikidata_qid: Q28053964
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.molli-bahn.de
+  valid_from: '1995-10-01'
+  source: wikidata
+- operator_id: autozug-sylt
+  feed_name: AUTOZUG Sylt
+  brand_name: RDC Autozug Sylt
+  country: DE
+  wikidata_qid: Q104848082
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  source: wikidata
+- operator_id: kasbachtalbahn
+  feed_name: Kasbachtalbahn
+  brand_name: Kasbachtalbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the line (Q1734832), not its operator
+- operator_id: chiemsee-schiffahrt-ludwig-fessler
+  feed_name: Chiemsee-Schiffahrt Ludwig Feßler
+  brand_name: Chiemsee-Schifffahrt
+  country: DE
+  wikidata_qid: Q1072450
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  source: wikidata
+- operator_id: chiemseebahn
+  feed_name: Chiemseebahn
+  brand_name: Chiemseebahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the railway (Q659425); its operator is not named in the feed
+- operator_id: db-regio-mitte
+  feed_name: DB Regio Mitte
+  brand_name: DB Regio Mitte
+  country: DE
+  wikidata_qid: Q60894917
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  parents:
+  - name: DB Regio
+    wikidata_qid: Q18853
+  source: wikidata
+- operator_id: westbahn
+  feed_name: WESTbahn
+  brand_name: Westbahn
+  country: AT
+  wikidata_qid: Q266280
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://westbahn.at/
+  parents:
+  - name: RAIL Holding AG
+    wikidata_qid: Q111064279
+  source: wikidata
+- operator_id: dessau-woerlitzer-eisenbahn
+  feed_name: Dessau-Wörlitzer Eisenbahn
+  brand_name: Dessau-Wörlitzer Eisenbahn-Gesellschaft
+  legal_name: Dessau-Wörlitzer Eisenbahn-Gesellschaft
+  country: DE
+  wikidata_qid: Q107138918
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  source: wikidata
+- operator_id: dessauer-verkehrs-und-eisenbahngesellschaft
+  feed_name: Dessauer Verkehrs- und Eisenbahngesellschaft
+  brand_name: Dessauer Verkehrs- und Eisenbahngesellschaft
+  country: DE
+  wikidata_qid: Q1200905
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.dvg-dessau.de/v1/index.php?article_id=8
+  source: wikidata
+- operator_id: bahntouristikexpress
+  feed_name: BahnTouristikExpress
+  brand_name: Bahntouristikexpress
+  country: DE
+  wikidata_qid: Q14531576
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.bahntouristikexpress.de
+  valid_from: '2004-04-04'
+  source: wikidata
+- operator_id: mainschleifenbahn
+  feed_name: Mainschleifenbahn
+  brand_name: Mainschleifenbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the line (Q1796430), not its operator
+- operator_id: ilztalbahn
+  feed_name: Ilztalbahn
+  brand_name: Ilztalbahn GmbH
+  country: DE
+  wikidata_qid: Q1659285
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.ilztalbahn.eu/
+  valid_from: '2006-11-06'
+  source: wikidata
+- operator_id: ulmer-eisenbahnfreunde
+  feed_name: Ulmer Eisenbahnfreunde
+  brand_name: Ulmer Eisenbahnfreunde
+  country: DE
+  wikidata_qid: Q1252372
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  source: wikidata
+- operator_id: trenitalia
+  feed_name: Trenitalia
+  brand_name: Trenitalia
+  country: IT
+  wikidata_qid: Q286650
+  wikidata_role: company
+  wikidata_basis: traewelling-operator-matching
+  website: https://www.trenitalia.com
+  parents:
+  - name: Ferrovie dello Stato Italiane
+    wikidata_qid: Q83823
+  source: wikidata
+- operator_id: nebenbahn-vaihingen-enzweihingen
+  feed_name: Nebenbahn Vaihingen-Enzweihingen
+  brand_name: Nebenbahn Vaihingen-Enzweihingen
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: nebenbahn-gaildorf-untergroeningen
+  feed_name: Nebenbahn Gaildorf-Untergröningen
+  brand_name: Nebenbahn Gaildorf-Untergröningen
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: regionale-oe-bahn-der-stadt-pfullendorf
+  feed_name: Regionale ö. Bahn der Stadt Pfullendorf
+  brand_name: Regionale ö. Bahn der Stadt Pfullendorf
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: bayernbahn-betriebs-gmbh
+  feed_name: BayernBahn Betriebs-GmbH
+  brand_name: BayernBahn
+  country: DE
+  wikidata_qid: Q27767999
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.bayernbahn.de/
+  source: wikidata
+- operator_id: kandertalbahn
+  feed_name: Kandertalbahn
+  brand_name: Kandertalbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the line (Q897250), not its operator
+- operator_id: rhoen-zuegle
+  feed_name: Rhön-Zügle
+  brand_name: Rhön-Zügle
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: oechsle-bahn-betriebsgesellschaft-mbh
+  feed_name: Öchsle-Bahn-Betriebsgesellschaft mbH
+  brand_name: Öchsle-Bahn-Betriebsgesellschaft mbH
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the railway (Q293903), not its operating company
+- operator_id: wanderbahn-im-regental
+  feed_name: Wanderbahn im Regental
+  brand_name: Wanderbahn im Regental
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: zssk
+  feed_name: ZSSK
+  brand_name: Železničná spoločnosť Slovensko
+  country: SK
+  wikidata_qid: Q393557
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.zssk.sk/
+  valid_from: '2004-12-13'
+  source: wikidata
+- operator_id: sonstige-eisenbahnen
+  feed_name: Sonstige Eisenbahnen
+  brand_name: Sonstige Eisenbahnen
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: the agency name means other railways, not a company
+- operator_id: museumsbahn-ges
+  feed_name: Museumsbahn (GES)
+  brand_name: Museumsbahn (GES)
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: no Wikidata item found for this agency name
+- operator_id: leo-express
+  feed_name: LEO Express
+  brand_name: Leo Express
+  country: CZ
+  wikidata_qid: Q126679362
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.leoexpress.com/cs
+  valid_from: '2017-12-06'
+  source: wikidata
+- operator_id: nachtzug
+  feed_name: Nachtzug
+  brand_name: Nachtzug
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: the agency name means night train, not a company
+- operator_id: mansfelder-bergwerksbahn
+  feed_name: Mansfelder Bergwerksbahn
+  brand_name: Mansfelder Bergwerksbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the heritage railway (Q1891103), not its operating association
+- operator_id: bus-sev-nur-abellio-db-regio-go-ahead
+  feed_name: Bus SEV, nur Abellio, DB Regio, Go-Ahead
+  brand_name: Bus SEV, nur Abellio, DB Regio, Go-Ahead
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: the agency name is a rail replacement bus label shared by several companies
+- operator_id: chemnitztalbahn
+  feed_name: Chemnitztalbahn
+  brand_name: Chemnitztalbahn
+  source: delfi-gtfs
+  missing:
+    wikidata_qid: Wikidata has the line (Q803438), not its operator
+- operator_id: trilex
+  feed_name: Trilex
+  brand_name: Trilex
+  wikidata_qid: Q19310185
+  wikidata_role: brand
+  wikidata_basis: wikidata-search
+  website: http://www.trilex.de
+  # The item has no parent organisation (P749); its owner (P127) is Die Länderbahn.
+  parents:
+  - name: Die Länderbahn
+    wikidata_qid: Q315339
+  source: wikidata
+  missing:
+    country: Wikidata lists CZ, DE
+- operator_id: db-regio-ag
+  feed_name: DB Regio AG
+  brand_name: DB Regio
+  legal_name: DB Regio Aktiengesellschaft
+  country: DE
+  wikidata_qid: Q18853
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: https://www.dbregio.de/
+  parents:
+  - name: Deutsche Bahn
+    wikidata_qid: Q9322
+  valid_from: '1999-06-01'
+  source: wikidata
+- operator_id: odeg-ostdeutsche-eisenbahn-gmbh
+  feed_name: ODEG Ostdeutsche Eisenbahn GmbH
+  brand_name: Ostdeutsche Eisenbahn
+  country: DE
+  wikidata_qid: Q145188
+  wikidata_role: company
+  wikidata_basis: wikidata-search
+  website: http://www.odeg.de/
+  parents:
+  - name: BeNEX
+    wikidata_qid: Q473581
+  - name: Netinera
+    wikidata_qid: Q558401
+  valid_from: '2002-06-06'
+  source: wikidata

@@ -1,0 +1,29 @@
+{
+  "name": "@gerlines/live-frame",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Binary live frame codec",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "browser:serve": "node scripts/browser-serve.ts",
+    "lint": "biome check .",
+    "sizes": "node scripts/sizes.ts",
+    "test": "vitest run --coverage",
+    "typecheck": "tsc && tsc -p tsconfig.tools.json && tsc -p tsconfig.browser.json",
+    "vectors": "node scripts/write-vectors.ts && biome format --write test-vectors"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@gerlines/geo": "workspace:*",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "fast-check": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

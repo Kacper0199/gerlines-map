@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`platform-independent arithmetic > gives the same bits as on the machine that pinned them 1`] = `"6cd5739a14440de1ac9d7b32ea8a25c892128bdbb34950626c803c4ab68257eb"`;

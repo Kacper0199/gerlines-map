@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+repository="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+data="${GERLINES_DATA:-$repository/data}"
+cd "$repository"
+exec uv run gerlines-catalog --data "$data" photos review --port "${PORT:-8791}"

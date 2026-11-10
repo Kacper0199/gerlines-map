@@ -1,0 +1,14 @@
+{
+  "name": "keyframe-empty",
+  "description": "A keyframe without trips: every table present and empty.",
+  "decoder": "keyframe",
+  "expected": {
+    "kind": "keyframe",
+    "sequence": 1000,
+    "timetableVersion": 7,
+    "shapeEpoch": 0,
+    "timeBase": 1793000000,
+    "trips": []
+  },
+  "byteLength": 256
+}

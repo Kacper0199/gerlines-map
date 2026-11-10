@@ -1,0 +1,38 @@
+[
+  {
+    "name": "runtime only, 3 locales",
+    "raw": 3780,
+    "gzip": 1557,
+    "brotli": 1395
+  },
+  {
+    "name": "1 locale (en)",
+    "raw": 15328,
+    "gzip": 3994,
+    "brotli": 3494
+  },
+  {
+    "name": "2 locales (en, de)",
+    "raw": 17803,
+    "gzip": 4794,
+    "brotli": 4218
+  },
+  {
+    "name": "3 locales (en, de, pl)",
+    "raw": 22283,
+    "gzip": 5707,
+    "brotli": 5074
+  },
+  {
+    "name": "4 locales (en, de, pl, fr as a copy of de)",
+    "raw": 24946,
+    "gzip": 5974,
+    "brotli": 5310
+  },
+  {
+    "name": "3 locales, locale-modules output",
+    "raw": 27109,
+    "gzip": 6773,
+    "brotli": 5617
+  }
+]

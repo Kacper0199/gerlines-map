@@ -1,0 +1,65 @@
+<timetable station="Frankfurt(Main)Hbf" eva="8000105">
+
+<s id="5926473462606976417-2610251926-15" eva="8000105">
+    <ar ppth="Hamburg-Altona|Hamburg Dammtor|Hamburg Hbf|Hamburg-Harburg|Bremen Hbf|Osnabrück Hbf|Münster(Westf)Hbf|Dortmund Hbf|Hagen Hbf|Wuppertal Hbf|Solingen Hbf|Köln Hbf|Siegburg/Bonn|Frankfurt(M) Flughafen Fernbf" pp="3" ct="2610260210" pt="2610260106" fb="ICE 619">
+        <m id="-6966630711659276262--2335454024662805568" t="d" c="47" ts="2610251857" ts-tts="26-10-25 18:57:20.892"/>
+        <m id="-5970307302206692584-2120145902091121908" t="d" c="10" ts="2610252106" ts-tts="26-10-25 21:06:36.863"/>
+        <m id="2715859596224550741--3919592748083893938" t="d" c="38" ts="2610252305" ts-tts="26-10-25 23:05:51.068"/>
+        <m id="7307716225379622461-" t="f" c="0" ts="2610252351" ts-tts="26-10-25 23:51:06.474"/>
+    </ar>
+    <dp ppth="Mannheim Hbf|Heidelberg Hbf|Stuttgart Hbf|Ulm Hbf|Günzburg|Augsburg Hbf|München Hbf" pp="3" ct="2610260216" pt="2610260117" fb="ICE 619">
+        <m id="-6966630711659276262--2335454024662805568" t="d" c="47" ts="2610251857" ts-tts="26-10-25 18:57:20.892"/>
+        <m id="-5970307302206692584-2120145902091121908" t="d" c="10" ts="2610252106" ts-tts="26-10-25 21:06:36.863"/>
+        <m id="2715859596224550741--3919592748083893938" t="d" c="38" ts="2610252305" ts-tts="26-10-25 23:05:51.068"/>
+        <m id="4590348664184739076-" t="f" c="0" ts="2610252345" ts-tts="26-10-25 23:45:57.405"/>
+        <m id="7307716225379622461-" t="f" c="0" ts="2610252351" ts-tts="26-10-25 23:51:06.474"/>
+    </dp>
+    <tl f="F" t="p" o="80" c="ICE" n="619"/>
+</s>
+
+
+<s id="8573811631662133764-2610252045-5" eva="8000105">
+    <ar cp="8" ct="2610260013"/>
+</s>
+
+
+<s id="7582314568044505717-2610252043-12" eva="8000105">
+    <ar ppth="Amsterdam Centraal|Utrecht Centraal|Arnhem Centraal|Emmerich|Duisburg Hbf|Düsseldorf Hbf|Köln Hbf|Bonn Hbf|Koblenz Hbf|Mainz Hbf|Frankfurt(M) Flughafen Fernbf" cp="8" pp="19" ct="2610260259" pt="2610260217" fb="IC 60403">
+        <m id="-3591111476902816862--3906184837907719259" t="d" c="5" ts="2610252248" ts-tts="26-10-25 22:48:22.538"/>
+    </ar>
+    <dp ppth="Mannheim Hbf|Karlsruhe Hbf|Baden-Baden|Offenburg|Freiburg(Breisgau) Hbf|Basel Bad Bf|Basel SBB|Zürich HB" cp="8" pp="19" ct="2610260317" pt="2610260245" fb="IC 60403">
+        <m id="-3591111476902816862--3906184837907719259" t="d" c="5" ts="2610252248" ts-tts="26-10-25 22:48:22.538"/>
+    </dp>
+    <tl f="F" t="p" o="NZ" c="IC" n="60403"/>
+</s>
+
+
+<s id="-8170529235403740838-2610252212-14" eva="8000105">
+    <m id="840ca05c-e9b3-43b4-9550-fb9b9eb6334a" t="h" from="2610220944" to="2611090200" cat="BAUARBEITEN" ts="2610250230" ts-tts="26-10-25 02:30:01.206" pr="1"/>
+    <ar cp="4" ct="2610260005" l="RE50">
+        <m id="-693963919229583384--5980629984255290610" t="d" c="43" ts="2610252227" ts-tts="26-10-25 22:27:20.421"/>
+        <m id="4174125059124873127-5660230929236963130" t="d" c="31" ts="2610252323" ts-tts="26-10-25 23:23:04.803"/>
+        <m id="1641769912256615690-" t="f" c="2000" ts="2610252335" ts-tts="26-10-25 23:35:21.650"/>
+    </ar>
+</s>
+
+
+<s id="-5851721557238592488-2610252043-12" eva="8000105">
+    <ar ppth="Amsterdam Centraal|Utrecht Centraal|Arnhem Centraal|Emmerich|Duisburg Hbf|Düsseldorf Hbf|Köln Hbf|Bonn Hbf|Koblenz Hbf|Mainz Hbf|Frankfurt(M) Flughafen Fernbf" cp="8" pp="19" ct="2610260259" pt="2610260217" hi="1" wings="7582314568044505717-2610252043" fb="NJ 403">
+        <m id="8747978737684680119-7784004222645903186" t="d" c="5" ts="2610252248" ts-tts="26-10-25 22:48:22.478"/>
+    </ar>
+    <dp ppth="Mannheim Hbf|Karlsruhe Hbf|Baden-Baden|Offenburg|Freiburg(Breisgau) Hbf|Basel Bad Bf|Basel SBB|Zürich HB" cp="8" pp="19" ct="2610260317" pt="2610260245" hi="1" wings="7582314568044505717-2610252043" fb="NJ 403">
+        <m id="8747978737684680119-7784004222645903186" t="d" c="5" ts="2610252248" ts-tts="26-10-25 22:48:22.478"/>
+    </dp>
+    <tl t="p" o="84" c="NJ" n="403"/>
+</s>
+
+
+<s id="-7776488363957091076-2610252312-14" eva="8000105">
+    <m id="840ca05c-e9b3-43b4-9550-fb9b9eb6334a" t="h" from="2610220944" to="2611090200" cat="BAUARBEITEN" ts="2610250330" ts-tts="26-10-25 03:30:00.962" pr="1"/>
+    <ar ct="2610260041" l="RE50">
+        <m id="-5751012814742180427-3710984775778268087" t="d" c="48" ts="2610252307" ts-tts="26-10-25 23:07:10.029"/>
+    </ar>
+</s>
+
+</timetable>

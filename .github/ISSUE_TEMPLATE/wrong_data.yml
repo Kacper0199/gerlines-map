@@ -1,0 +1,31 @@
+name: Wrong train data
+description: A train, stop, delay, platform, category or operator is shown wrongly.
+labels: ["data"]
+body:
+  - type: input
+    id: train
+    attributes:
+      label: Train
+      description: Category and number as the operator writes it, for example ICE 70 or RE 5.
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: Date and time
+      description: Local time in Germany when you saw it.
+    validations:
+      required: true
+  - type: textarea
+    id: shown
+    attributes:
+      label: What GerLines showed
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What is correct
+      description: Link an official source if you have one (operator timetable, station display, DB Navigator).
+    validations:
+      required: true

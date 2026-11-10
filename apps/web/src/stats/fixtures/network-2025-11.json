@@ -1,0 +1,947 @@
+{
+  "kind": "network",
+  "period": { "from": "2025-11-01", "to": "2025-11-30", "days": 30 },
+  "freshness": {
+    "refreshedAt": null,
+    "maxLagMinutes": 40,
+    "note": "Statistics are up to about 40 minutes behind the live map, because they are read from rollups refreshed every 30 minutes."
+  },
+  "generatedAt": "2026-11-08T01:00:47.428Z",
+  "categories": null,
+  "summary": {
+    "stops": 226108,
+    "cancelled": 10670,
+    "additional": 0,
+    "noData": 0,
+    "observed": 215414,
+    "observedArrivals": 193870,
+    "punctual6": 0.5278,
+    "punctual16": 0.7544,
+    "cancelledShare": 0.0472,
+    "meanDelayS": 662.2,
+    "medianDelayS": 278.3,
+    "p90DelayS": 1940.2,
+    "maxDelayS": 17940,
+    "platformChanged": 0,
+    "observedCarried": 0,
+    "observedPropagated": 0
+  },
+  "byCategory": [
+    {
+      "category": "hsr",
+      "summary": {
+        "stops": 163444,
+        "cancelled": 6078,
+        "additional": 0,
+        "noData": 0,
+        "observed": 157343,
+        "observedArrivals": 142038,
+        "punctual6": 0.5271,
+        "punctual16": 0.7481,
+        "cancelledShare": 0.0372,
+        "meanDelayS": 680,
+        "medianDelayS": 278.5,
+        "p90DelayS": 2002.1,
+        "maxDelayS": 17940,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "category": "ld",
+      "summary": {
+        "stops": 60959,
+        "cancelled": 4590,
+        "additional": 0,
+        "noData": 0,
+        "observed": 56368,
+        "observedArrivals": 50982,
+        "punctual6": 0.5268,
+        "punctual16": 0.769,
+        "cancelledShare": 0.0753,
+        "meanDelayS": 628.7,
+        "medianDelayS": 288.2,
+        "p90DelayS": 1795.6,
+        "maxDelayS": 11640,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "category": "night",
+      "summary": {
+        "stops": 1705,
+        "cancelled": 2,
+        "additional": 0,
+        "noData": 0,
+        "observed": 1703,
+        "observedArrivals": 850,
+        "punctual6": 0.7082,
+        "punctual16": 0.9294,
+        "cancelledShare": 0.0012,
+        "meanDelayS": 130.9,
+        "medianDelayS": 42.6,
+        "p90DelayS": 542.3,
+        "maxDelayS": 3120,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    }
+  ],
+  "byDay": [
+    {
+      "day": "2025-11-01",
+      "stops": 7777,
+      "cancelled": 263,
+      "observedArrivals": 6775,
+      "punctual6": 0.5337,
+      "punctual16": 0.7647,
+      "meanDelayS": 614.6
+    },
+    {
+      "day": "2025-11-02",
+      "stops": 7686,
+      "cancelled": 194,
+      "observedArrivals": 6758,
+      "punctual6": 0.6252,
+      "punctual16": 0.8159,
+      "meanDelayS": 496.2
+    },
+    {
+      "day": "2025-11-03",
+      "stops": 8056,
+      "cancelled": 222,
+      "observedArrivals": 7061,
+      "punctual6": 0.4829,
+      "punctual16": 0.7139,
+      "meanDelayS": 796.3
+    },
+    {
+      "day": "2025-11-04",
+      "stops": 8099,
+      "cancelled": 331,
+      "observedArrivals": 7009,
+      "punctual6": 0.5068,
+      "punctual16": 0.7418,
+      "meanDelayS": 657.1
+    },
+    {
+      "day": "2025-11-05",
+      "stops": 8053,
+      "cancelled": 572,
+      "observedArrivals": 6737,
+      "punctual6": 0.4735,
+      "punctual16": 0.7157,
+      "meanDelayS": 751
+    },
+    {
+      "day": "2025-11-06",
+      "stops": 8379,
+      "cancelled": 659,
+      "observedArrivals": 6965,
+      "punctual6": 0.4119,
+      "punctual16": 0.6323,
+      "meanDelayS": 894.7
+    },
+    {
+      "day": "2025-11-07",
+      "stops": 8562,
+      "cancelled": 665,
+      "observedArrivals": 7135,
+      "punctual6": 0.4607,
+      "punctual16": 0.7011,
+      "meanDelayS": 780.6
+    },
+    {
+      "day": "2025-11-08",
+      "stops": 7670,
+      "cancelled": 591,
+      "observedArrivals": 6393,
+      "punctual6": 0.5271,
+      "punctual16": 0.7441,
+      "meanDelayS": 673.7
+    },
+    {
+      "day": "2025-11-09",
+      "stops": 7429,
+      "cancelled": 456,
+      "observedArrivals": 6289,
+      "punctual6": 0.6133,
+      "punctual16": 0.8259,
+      "meanDelayS": 508.2
+    },
+    {
+      "day": "2025-11-10",
+      "stops": 8209,
+      "cancelled": 525,
+      "observedArrivals": 6942,
+      "punctual6": 0.52,
+      "punctual16": 0.737,
+      "meanDelayS": 696.2
+    },
+    {
+      "day": "2025-11-11",
+      "stops": 8137,
+      "cancelled": 449,
+      "observedArrivals": 6927,
+      "punctual6": 0.5035,
+      "punctual16": 0.7615,
+      "meanDelayS": 631.5
+    },
+    {
+      "day": "2025-11-12",
+      "stops": 8063,
+      "cancelled": 531,
+      "observedArrivals": 6780,
+      "punctual6": 0.4718,
+      "punctual16": 0.7019,
+      "meanDelayS": 828.5
+    },
+    {
+      "day": "2025-11-13",
+      "stops": 7691,
+      "cancelled": 234,
+      "observedArrivals": 6705,
+      "punctual6": 0.4464,
+      "punctual16": 0.6756,
+      "meanDelayS": 830.4
+    },
+    {
+      "day": "2025-11-14",
+      "stops": 7451,
+      "cancelled": 298,
+      "observedArrivals": 6430,
+      "punctual6": 0.5064,
+      "punctual16": 0.7593,
+      "meanDelayS": 644.2
+    },
+    {
+      "day": "2025-11-15",
+      "stops": 6363,
+      "cancelled": 126,
+      "observedArrivals": 5600,
+      "punctual6": 0.6368,
+      "punctual16": 0.8375,
+      "meanDelayS": 453.3
+    },
+    {
+      "day": "2025-11-16",
+      "stops": 6430,
+      "cancelled": 217,
+      "observedArrivals": 5562,
+      "punctual6": 0.6321,
+      "punctual16": 0.8326,
+      "meanDelayS": 559.2
+    },
+    {
+      "day": "2025-11-17",
+      "stops": 6888,
+      "cancelled": 134,
+      "observedArrivals": 6065,
+      "punctual6": 0.5387,
+      "punctual16": 0.7914,
+      "meanDelayS": 534.1
+    },
+    {
+      "day": "2025-11-18",
+      "stops": 6908,
+      "cancelled": 230,
+      "observedArrivals": 5998,
+      "punctual6": 0.4942,
+      "punctual16": 0.7503,
+      "meanDelayS": 640.8
+    },
+    {
+      "day": "2025-11-19",
+      "stops": 7043,
+      "cancelled": 325,
+      "observedArrivals": 6028,
+      "punctual6": 0.5159,
+      "punctual16": 0.7618,
+      "meanDelayS": 655.2
+    },
+    {
+      "day": "2025-11-20",
+      "stops": 7055,
+      "cancelled": 187,
+      "observedArrivals": 6175,
+      "punctual6": 0.5185,
+      "punctual16": 0.7483,
+      "meanDelayS": 655.3
+    },
+    {
+      "day": "2025-11-21",
+      "stops": 7226,
+      "cancelled": 430,
+      "observedArrivals": 6112,
+      "punctual6": 0.4449,
+      "punctual16": 0.6886,
+      "meanDelayS": 837
+    },
+    {
+      "day": "2025-11-22",
+      "stops": 6867,
+      "cancelled": 304,
+      "observedArrivals": 5896,
+      "punctual6": 0.6069,
+      "punctual16": 0.8284,
+      "meanDelayS": 468.2
+    },
+    {
+      "day": "2025-11-23",
+      "stops": 6810,
+      "cancelled": 380,
+      "observedArrivals": 5782,
+      "punctual6": 0.5713,
+      "punctual16": 0.766,
+      "meanDelayS": 735.3
+    },
+    {
+      "day": "2025-11-24",
+      "stops": 7854,
+      "cancelled": 615,
+      "observedArrivals": 6506,
+      "punctual6": 0.482,
+      "punctual16": 0.6935,
+      "meanDelayS": 830.3
+    },
+    {
+      "day": "2025-11-25",
+      "stops": 7981,
+      "cancelled": 342,
+      "observedArrivals": 6885,
+      "punctual6": 0.5329,
+      "punctual16": 0.7667,
+      "meanDelayS": 637.7
+    },
+    {
+      "day": "2025-11-26",
+      "stops": 7982,
+      "cancelled": 412,
+      "observedArrivals": 6817,
+      "punctual6": 0.5755,
+      "punctual16": 0.8149,
+      "meanDelayS": 516.4
+    },
+    {
+      "day": "2025-11-27",
+      "stops": 8019,
+      "cancelled": 256,
+      "observedArrivals": 6995,
+      "punctual6": 0.5597,
+      "punctual16": 0.8026,
+      "meanDelayS": 538
+    },
+    {
+      "day": "2025-11-28",
+      "stops": 8090,
+      "cancelled": 290,
+      "observedArrivals": 7031,
+      "punctual6": 0.5261,
+      "punctual16": 0.7313,
+      "meanDelayS": 711.2
+    },
+    {
+      "day": "2025-11-29",
+      "stops": 7181,
+      "cancelled": 260,
+      "observedArrivals": 6220,
+      "punctual6": 0.6031,
+      "punctual16": 0.7916,
+      "meanDelayS": 601.4
+    },
+    {
+      "day": "2025-11-30",
+      "stops": 6149,
+      "cancelled": 172,
+      "observedArrivals": 5292,
+      "punctual6": 0.5847,
+      "punctual16": 0.7918,
+      "meanDelayS": 581.8
+    }
+  ],
+  "byHour": [
+    {
+      "hour": 0,
+      "stops": 2535,
+      "cancelled": 103,
+      "observedArrivals": 2367,
+      "punctual6": 0.3663,
+      "meanDelayS": 1346.6
+    },
+    {
+      "hour": 1,
+      "stops": 869,
+      "cancelled": 24,
+      "observedArrivals": 845,
+      "punctual6": 0.3101,
+      "meanDelayS": 1450.7
+    },
+    {
+      "hour": 2,
+      "stops": 636,
+      "cancelled": 15,
+      "observedArrivals": 597,
+      "punctual6": 0.4305,
+      "meanDelayS": 1213.1
+    },
+    {
+      "hour": 3,
+      "stops": 871,
+      "cancelled": 21,
+      "observedArrivals": 718,
+      "punctual6": 0.624,
+      "meanDelayS": 594.3
+    },
+    {
+      "hour": 4,
+      "stops": 1764,
+      "cancelled": 63,
+      "observedArrivals": 1352,
+      "punctual6": 0.7212,
+      "meanDelayS": 375.5
+    },
+    {
+      "hour": 5,
+      "stops": 5284,
+      "cancelled": 215,
+      "observedArrivals": 3330,
+      "punctual6": 0.7871,
+      "meanDelayS": 229.6
+    },
+    {
+      "hour": 6,
+      "stops": 9996,
+      "cancelled": 425,
+      "observedArrivals": 7622,
+      "punctual6": 0.7551,
+      "meanDelayS": 274.6
+    },
+    {
+      "hour": 7,
+      "stops": 11660,
+      "cancelled": 539,
+      "observedArrivals": 9693,
+      "punctual6": 0.6896,
+      "meanDelayS": 340.7
+    },
+    {
+      "hour": 8,
+      "stops": 12692,
+      "cancelled": 593,
+      "observedArrivals": 10697,
+      "punctual6": 0.6305,
+      "meanDelayS": 417.7
+    },
+    {
+      "hour": 9,
+      "stops": 13491,
+      "cancelled": 568,
+      "observedArrivals": 11600,
+      "punctual6": 0.5823,
+      "meanDelayS": 489.6
+    },
+    {
+      "hour": 10,
+      "stops": 13417,
+      "cancelled": 583,
+      "observedArrivals": 11676,
+      "punctual6": 0.5583,
+      "meanDelayS": 567.4
+    },
+    {
+      "hour": 11,
+      "stops": 13993,
+      "cancelled": 584,
+      "observedArrivals": 12125,
+      "punctual6": 0.5421,
+      "meanDelayS": 593.3
+    },
+    {
+      "hour": 12,
+      "stops": 13553,
+      "cancelled": 659,
+      "observedArrivals": 11761,
+      "punctual6": 0.5263,
+      "meanDelayS": 628.5
+    },
+    {
+      "hour": 13,
+      "stops": 13310,
+      "cancelled": 643,
+      "observedArrivals": 11358,
+      "punctual6": 0.5419,
+      "meanDelayS": 618
+    },
+    {
+      "hour": 14,
+      "stops": 12858,
+      "cancelled": 606,
+      "observedArrivals": 11086,
+      "punctual6": 0.537,
+      "meanDelayS": 618.5
+    },
+    {
+      "hour": 15,
+      "stops": 13554,
+      "cancelled": 656,
+      "observedArrivals": 11558,
+      "punctual6": 0.5334,
+      "meanDelayS": 609.5
+    },
+    {
+      "hour": 16,
+      "stops": 14086,
+      "cancelled": 667,
+      "observedArrivals": 11975,
+      "punctual6": 0.5196,
+      "meanDelayS": 638.4
+    },
+    {
+      "hour": 17,
+      "stops": 13663,
+      "cancelled": 732,
+      "observedArrivals": 11692,
+      "punctual6": 0.4818,
+      "meanDelayS": 727.6
+    },
+    {
+      "hour": 18,
+      "stops": 13992,
+      "cancelled": 757,
+      "observedArrivals": 12061,
+      "punctual6": 0.4762,
+      "meanDelayS": 748.3
+    },
+    {
+      "hour": 19,
+      "stops": 12641,
+      "cancelled": 657,
+      "observedArrivals": 11233,
+      "punctual6": 0.4234,
+      "meanDelayS": 868.6
+    },
+    {
+      "hour": 20,
+      "stops": 11359,
+      "cancelled": 598,
+      "observedArrivals": 10222,
+      "punctual6": 0.4075,
+      "meanDelayS": 966.2
+    },
+    {
+      "hour": 21,
+      "stops": 8974,
+      "cancelled": 457,
+      "observedArrivals": 8266,
+      "punctual6": 0.4035,
+      "meanDelayS": 1039.7
+    },
+    {
+      "hour": 22,
+      "stops": 6682,
+      "cancelled": 328,
+      "observedArrivals": 6130,
+      "punctual6": 0.353,
+      "meanDelayS": 1254.6
+    },
+    {
+      "hour": 23,
+      "stops": 4228,
+      "cancelled": 177,
+      "observedArrivals": 3906,
+      "punctual6": 0.3566,
+      "meanDelayS": 1280.3
+    }
+  ],
+  "delayHistogram": [
+    { "fromS": -1800, "toS": -300, "count": 1615 },
+    { "fromS": -300, "toS": 0, "count": 19221 },
+    { "fromS": 0, "toS": 60, "count": 31854 },
+    { "fromS": 60, "toS": 120, "count": 20908 },
+    { "fromS": 120, "toS": 180, "count": 14805 },
+    { "fromS": 180, "toS": 240, "count": 12514 },
+    { "fromS": 240, "toS": 300, "count": 10642 },
+    { "fromS": 300, "toS": 360, "count": 8984 },
+    { "fromS": 360, "toS": 420, "count": 7617 },
+    { "fromS": 420, "toS": 480, "count": 6577 },
+    { "fromS": 480, "toS": 540, "count": 5664 },
+    { "fromS": 540, "toS": 600, "count": 5001 },
+    { "fromS": 600, "toS": 660, "count": 4477 },
+    { "fromS": 660, "toS": 720, "count": 3844 },
+    { "fromS": 720, "toS": 780, "count": 3487 },
+    { "fromS": 780, "toS": 840, "count": 3281 },
+    { "fromS": 840, "toS": 900, "count": 3125 },
+    { "fromS": 900, "toS": 960, "count": 2905 },
+    { "fromS": 960, "toS": 1200, "count": 9385 },
+    { "fromS": 1200, "toS": 1500, "count": 8752 },
+    { "fromS": 1500, "toS": 1800, "count": 6864 },
+    { "fromS": 1800, "toS": 2100, "count": 5029 },
+    { "fromS": 2100, "toS": 2400, "count": 3730 },
+    { "fromS": 2400, "toS": 2700, "count": 2988 },
+    { "fromS": 2700, "toS": 3000, "count": 2299 },
+    { "fromS": 3000, "toS": 3300, "count": 1846 },
+    { "fromS": 3300, "toS": 3600, "count": 1513 },
+    { "fromS": 3600, "toS": 5400, "count": 4478 },
+    { "fromS": 5400, "toS": 7200, "count": 1229 },
+    { "fromS": 7200, "toS": null, "count": 780 }
+  ],
+  "byLand": [
+    {
+      "landCode": "DE-BB",
+      "name": "Brandenburg",
+      "summary": {
+        "stops": 2497,
+        "cancelled": 93,
+        "additional": 0,
+        "noData": 0,
+        "observed": 2404,
+        "observedArrivals": 2380,
+        "punctual6": 0.684,
+        "punctual16": 0.8697,
+        "cancelledShare": 0.0372,
+        "meanDelayS": 392,
+        "medianDelayS": 167.9,
+        "p90DelayS": 1166.2,
+        "maxDelayS": 7200,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-BE",
+      "name": "Berlin",
+      "summary": {
+        "stops": 17055,
+        "cancelled": 558,
+        "additional": 0,
+        "noData": 0,
+        "observed": 16490,
+        "observedArrivals": 12774,
+        "punctual6": 0.4881,
+        "punctual16": 0.684,
+        "cancelledShare": 0.0327,
+        "meanDelayS": 792.5,
+        "medianDelayS": 268.9,
+        "p90DelayS": 2391.8,
+        "maxDelayS": 16380,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-BW",
+      "name": "Baden-Württemberg",
+      "summary": {
+        "stops": 28799,
+        "cancelled": 892,
+        "additional": 0,
+        "noData": 0,
+        "observed": 27906,
+        "observedArrivals": 25841,
+        "punctual6": 0.573,
+        "punctual16": 0.8181,
+        "cancelledShare": 0.031,
+        "meanDelayS": 551,
+        "medianDelayS": 264.7,
+        "p90DelayS": 1509.6,
+        "maxDelayS": 13560,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-BY",
+      "name": "Bayern",
+      "summary": {
+        "stops": 29816,
+        "cancelled": 1361,
+        "additional": 0,
+        "noData": 0,
+        "observed": 28453,
+        "observedArrivals": 24395,
+        "punctual6": 0.5051,
+        "punctual16": 0.7344,
+        "cancelledShare": 0.0456,
+        "meanDelayS": 693.5,
+        "medianDelayS": 292.4,
+        "p90DelayS": 2007.4,
+        "maxDelayS": 15420,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-HB",
+      "name": "Bremen",
+      "summary": {
+        "stops": 1887,
+        "cancelled": 187,
+        "additional": 0,
+        "noData": 0,
+        "observed": 1700,
+        "observedArrivals": 1389,
+        "punctual6": 0.5428,
+        "punctual16": 0.7351,
+        "cancelledShare": 0.0991,
+        "meanDelayS": 667,
+        "medianDelayS": 231.8,
+        "p90DelayS": 2093.2,
+        "maxDelayS": 15000,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-HE",
+      "name": "Hessen",
+      "summary": {
+        "stops": 25973,
+        "cancelled": 1200,
+        "additional": 0,
+        "noData": 0,
+        "observed": 24770,
+        "observedArrivals": 22673,
+        "punctual6": 0.5218,
+        "punctual16": 0.7621,
+        "cancelledShare": 0.0462,
+        "meanDelayS": 628.7,
+        "medianDelayS": 291.6,
+        "p90DelayS": 1792.7,
+        "maxDelayS": 17940,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-HH",
+      "name": "Hamburg",
+      "summary": {
+        "stops": 14030,
+        "cancelled": 683,
+        "additional": 0,
+        "noData": 0,
+        "observed": 13344,
+        "observedArrivals": 11041,
+        "punctual6": 0.5967,
+        "punctual16": 0.776,
+        "cancelledShare": 0.0487,
+        "meanDelayS": 586,
+        "medianDelayS": 170,
+        "p90DelayS": 1880.7,
+        "maxDelayS": 11640,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-MV",
+      "name": "Mecklenburg-Vorpommern",
+      "summary": {
+        "stops": 4227,
+        "cancelled": 170,
+        "additional": 0,
+        "noData": 0,
+        "observed": 4057,
+        "observedArrivals": 3565,
+        "punctual6": 0.7501,
+        "punctual16": 0.8881,
+        "cancelledShare": 0.0402,
+        "meanDelayS": 308.6,
+        "medianDelayS": 89.6,
+        "p90DelayS": 967.6,
+        "maxDelayS": 7860,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-NI",
+      "name": "Niedersachsen",
+      "summary": {
+        "stops": 26487,
+        "cancelled": 2289,
+        "additional": 0,
+        "noData": 0,
+        "observed": 24195,
+        "observedArrivals": 23678,
+        "punctual6": 0.54,
+        "punctual16": 0.7678,
+        "cancelledShare": 0.0864,
+        "meanDelayS": 656.9,
+        "medianDelayS": 298,
+        "p90DelayS": 1907.8,
+        "maxDelayS": 14040,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-NW",
+      "name": "Nordrhein-Westfalen",
+      "summary": {
+        "stops": 44754,
+        "cancelled": 1732,
+        "additional": 0,
+        "noData": 0,
+        "observed": 43020,
+        "observedArrivals": 40143,
+        "punctual6": 0.4211,
+        "punctual16": 0.6842,
+        "cancelledShare": 0.0387,
+        "meanDelayS": 853.6,
+        "medianDelayS": 449.9,
+        "p90DelayS": 2300.4,
+        "maxDelayS": 17220,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-RP",
+      "name": "Rheinland-Pfalz",
+      "summary": {
+        "stops": 3843,
+        "cancelled": 206,
+        "additional": 0,
+        "noData": 0,
+        "observed": 3637,
+        "observedArrivals": 3597,
+        "punctual6": 0.4676,
+        "punctual16": 0.6856,
+        "cancelledShare": 0.0536,
+        "meanDelayS": 876.1,
+        "medianDelayS": 411.2,
+        "p90DelayS": 2517.6,
+        "maxDelayS": 9360,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-SH",
+      "name": "Schleswig-Holstein",
+      "summary": {
+        "stops": 3959,
+        "cancelled": 172,
+        "additional": 0,
+        "noData": 0,
+        "observed": 3787,
+        "observedArrivals": 2396,
+        "punctual6": 0.626,
+        "punctual16": 0.8063,
+        "cancelledShare": 0.0434,
+        "meanDelayS": 372.3,
+        "medianDelayS": 77.2,
+        "p90DelayS": 1331.9,
+        "maxDelayS": 10200,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-SL",
+      "name": "Saarland",
+      "summary": {
+        "stops": 441,
+        "cancelled": 33,
+        "additional": 0,
+        "noData": 0,
+        "observed": 408,
+        "observedArrivals": 328,
+        "punctual6": 0.7591,
+        "punctual16": 0.875,
+        "cancelledShare": 0.0748,
+        "meanDelayS": 279.4,
+        "medianDelayS": 92.6,
+        "p90DelayS": 964,
+        "maxDelayS": 4560,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-SN",
+      "name": "Sachsen",
+      "summary": {
+        "stops": 7885,
+        "cancelled": 311,
+        "additional": 0,
+        "noData": 0,
+        "observed": 7571,
+        "observedArrivals": 6233,
+        "punctual6": 0.6443,
+        "punctual16": 0.8198,
+        "cancelledShare": 0.0394,
+        "meanDelayS": 460,
+        "medianDelayS": 118.4,
+        "p90DelayS": 1446.4,
+        "maxDelayS": 16560,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-ST",
+      "name": "Sachsen-Anhalt",
+      "summary": {
+        "stops": 8258,
+        "cancelled": 320,
+        "additional": 0,
+        "noData": 0,
+        "observed": 7938,
+        "observedArrivals": 7825,
+        "punctual6": 0.6069,
+        "punctual16": 0.816,
+        "cancelledShare": 0.0388,
+        "meanDelayS": 515,
+        "medianDelayS": 224,
+        "p90DelayS": 1647.5,
+        "maxDelayS": 16680,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "landCode": "DE-TH",
+      "name": "Thüringen",
+      "summary": {
+        "stops": 6197,
+        "cancelled": 463,
+        "additional": 0,
+        "noData": 0,
+        "observed": 5734,
+        "observedArrivals": 5612,
+        "punctual6": 0.6434,
+        "punctual16": 0.8067,
+        "cancelledShare": 0.0747,
+        "meanDelayS": 497.1,
+        "medianDelayS": 152.7,
+        "p90DelayS": 1557,
+        "maxDelayS": 16980,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    }
+  ],
+  "outsideGermany": { "foreignStops": 23144, "unassignedStops": 0 }
+}

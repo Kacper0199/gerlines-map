@@ -1,0 +1,2 @@
+DROP MATERIALIZED VIEW stat_segment;
+DROP MATERIALIZED VIEW stat_stop;

@@ -1,0 +1,38 @@
+{
+  "name": "@gerlines/schema",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Shared contracts and request helpers",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./ids": "./src/ids.ts",
+    "./service-day": "./src/service-day.ts",
+    "./source-priority": "./src/source-priority.ts",
+    "./train-progress": "./src/train-progress.ts",
+    "./search": "./src/search.ts",
+    "./stats": "./src/stats.ts",
+    "./journeys": "./src/journeys.ts",
+    "./vehicle-resolver": "./src/vehicle-resolver.ts",
+    "./photos": "./src/photos.ts",
+    "./platform": "./src/platform.ts",
+    "./status": "./src/status.ts",
+    "./constants": "./src/constants.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

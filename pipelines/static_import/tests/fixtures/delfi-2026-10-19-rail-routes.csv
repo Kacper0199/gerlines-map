@@ -1,0 +1,1094 @@
+route_type,route_short_name,agency_name,routes,category,rule
+2,20,Regionalbuslinien,1,bus,agency:^regionalbuslinien$|^omnibus$
+2,85711548,DB Regio AG1,1,reg,type:2
+2,C13,Chemnitzer Modell1,1,reg,name:C
+2,C14,Chemnitzer Modell1,1,reg,name:C
+2,C15,Chemnitzer Modell1,1,reg,name:C
+2,CD 030,CD,1,reg,name:CD
+2,CD 034,CD,1,reg,name:CD
+2,CD 035,CD,1,reg,name:CD
+2,CD 036,CD,2,reg,name:CD
+2,CD 037,CD,1,reg,name:CD
+2,CD 038,CD,1,reg,name:CD
+2,CD 040,CD,1,reg,name:CD
+2,CD 041,CD,1,reg,name:CD
+2,CD 042,CD,1,reg,name:CD
+2,CD 044,CD,1,reg,name:CD
+2,CD 064,CD,2,reg,name:CD
+2,CD 070,CD,1,reg,name:CD
+2,CD 076,CD,1,reg,name:CD
+2,CD 080,CD,1,reg,name:CD
+2,CD 081,CD,1,reg,name:CD
+2,CD 083,CD,1,reg,name:CD
+2,CD 084,CD,1,reg,name:CD
+2,CD 085,CD,1,reg,name:CD
+2,CD 086,CD,1,reg,name:CD
+2,CD 087,CD,1,reg,name:CD
+2,Chiemseebahn,Chiemsee-Schiffahrt Ludwig Feßler,1,reg,name:CHIEMSEEBAHN
+2,DWE,Dessauer Verkehrs- und Eisenbahngesellschaft,1,reg,name:DWE
+2,HSB,Harzer Schmalspurbahnen,2,reg,name:HSB
+2,KJ1,Traditionsverein Kleinbahn des Kreises Jerichow I e.V.,1,reg,name:KJ
+2,Kuckucksbähnel,Sonstige Eisenbahnen1,1,reg,name:KUCKUCKSBÄHNEL
+2,L24,Trilex,1,reg,name:L
+2,Linie A,Waldeisenbahn Muskau,1,reg,name:LINIE
+2,Linie B,Waldeisenbahn Muskau,1,reg,name:LINIE
+2,Lößnitzgrundbahn,DB-Nahverkehr,1,reg,name:LÖSSNITZGRUNDBAHN
+2,MBB,Mansfelder Bergwerksbahn,1,reg,name:MBB
+2,PE,Bernburger Freizeit - Parkeisenbahn Krumbholz,1,reg,name:PE
+2,PE,Parkeisenbahn Vatterode,1,reg,name:PE
+2,RB46,NE-Zug (VVS),1,reg,name:RB
+2,RB47,NE-Zug (VVS),1,reg,name:RB
+2,RB61,NE-Zug (VVS),1,reg,name:RB
+2,RB64,DB-Zug  (nicht VVS)1,1,reg,name:RB
+2,RB65,NE-Zug (VVS),1,reg,name:RB
+2,S1,Nahreisezug,1,sbahn,name:S
+2,S3,Nahreisezug,1,sbahn,name:S
+2,SWB,Museumsbahn (GES),1,reg,name:SWB
+2,WIP,Cargo Logistik Rail Service,1,reg,name:WIP
+2,Weißeritztalbahn,DB-Nahverkehr,1,reg,name:WEISSERITZTALBAHN
+100,527,Chemnitztalbahn,1,reg,type:100
+100,C11,Chemnitzer Modell1,1,reg,name:C
+100,C13,Chemnitzer Modell1,1,reg,name:C
+100,C14,Chemnitzer Modell1,1,reg,name:C
+100,C15,Chemnitzer Modell1,1,reg,name:C
+100,RB54,Regionale ö. Bahn der Stadt Pfullendorf,1,reg,name:RB
+101,1,DB Fernverkehr AG,1,hsr,type:101
+101,10,DB Fernverkehr AG,1,hsr,type:101
+101,11,DB Fernverkehr AG,1,hsr,type:101
+101,12,DB Fernverkehr AG,1,hsr,type:101
+101,13,DB Fernverkehr AG,1,hsr,type:101
+101,14,DB Fernverkehr AG,1,hsr,type:101
+101,15,DB Fernverkehr AG,1,hsr,type:101
+101,18,DB Fernverkehr AG,1,hsr,type:101
+101,19,DB Fernverkehr AG,1,hsr,type:101
+101,20,DB Fernverkehr AG,1,hsr,type:101
+101,22,DB Fernverkehr AG,1,hsr,type:101
+101,24,DB Fernverkehr AG,1,hsr,type:101
+101,25,DB Fernverkehr AG,1,hsr,type:101
+101,26,DB Fernverkehr AG,1,hsr,type:101
+101,27,Ceske Drahy,1,ld,line:foreign-numeric-101
+101,27,DB Fernverkehr AG,1,ld,line:db-ec-27-89
+101,27,ZSSK,1,ld,line:foreign-numeric-101
+101,28,DB Fernverkehr AG,1,hsr,type:101
+101,29,DB Fernverkehr AG,1,hsr,type:101
+101,3,DB Fernverkehr AG,1,hsr,type:101
+101,33,DB Fernverkehr AG,1,hsr,type:101
+101,4,DB Fernverkehr AG,1,hsr,type:101
+101,41,DB Fernverkehr AG,1,hsr,type:101
+101,42,DB Fernverkehr AG,1,hsr,type:101
+101,43,DB Fernverkehr AG,1,hsr,type:101
+101,45,DB Fernverkehr AG,1,hsr,type:101
+101,47,DB Fernverkehr AG,1,hsr,type:101
+101,49,DB Fernverkehr AG,1,hsr,type:101
+101,50,DB Fernverkehr AG,1,hsr,type:101
+101,51,DB Fernverkehr AG,1,hsr,type:101
+101,55,DB Fernverkehr AG,1,hsr,type:101
+101,6,DB Fernverkehr AG,1,hsr,type:101
+101,60,DB Fernverkehr AG,1,hsr,type:101
+101,62,DB Fernverkehr AG,1,hsr,type:101
+101,77,DB Fernverkehr AG,1,hsr,type:101
+101,78,DB Fernverkehr AG,1,hsr,type:101
+101,79,DB Fernverkehr AG,1,hsr,type:101
+101,82,DB Fernverkehr AG,1,hsr,type:101
+101,82,SNCF,1,hsr,type:101
+101,83,DB Fernverkehr AG,1,hsr,type:101
+101,83,SNCF,1,hsr,type:101
+101,84,DB Fernverkehr AG,1,hsr,type:101
+101,84,SNCF,1,hsr,type:101
+101,89,DB Fernverkehr AG,1,ld,line:db-ec-27-89
+101,89,Österreichische Bundesbahnen,1,ld,line:foreign-numeric-101
+101,90,DB Fernverkehr AG,1,hsr,type:101
+101,91,DB Fernverkehr AG,1,hsr,type:101
+101,ICE,Nederlandse Spoorwegen,1,hsr,name:ICE
+101,ICE,SBB,1,hsr,name:ICE
+101,ICE,Österreichische Bundesbahnen,1,hsr,name:ICE
+101,RE25,Ceske Drahy,1,rfast,name:RE
+101,RE25,vogtlandbahn - Die Länderbahn GmbH DLB,1,rfast,name:RE
+101,RJ,Ceske Drahy,1,ld,name:RJ
+101,RJ,Dänische Staatsbahnen,1,ld,name:RJ
+101,RJ,MAV,1,ld,name:RJ
+101,RJ,ZSSK,1,ld,name:RJ
+101,RJ,Österreichische Bundesbahnen,1,ld,name:RJ
+101,THA,EUROSTAR,1,hsr,name:THA
+102,1,SBB,1,ld,type:102
+102,12N,Ceske Drahy,1,night,name:night-line
+102,12N,DB Fernverkehr (Codesharing),1,night,name:night-line
+102,12N,DB Fernverkehr AG,1,night,name:night-line
+102,12N,Österreichische Bundesbahnen,1,night,name:night-line
+102,17,DB Fernverkehr AG,1,ld,type:102
+102,20,DB Fernverkehr AG,1,ld,type:102
+102,20N,DB Fernverkehr (Codesharing),1,night,name:night-line
+102,20N,Österreichische Bundesbahnen,1,night,name:night-line
+102,24,DB Fernverkehr AG,1,ld,type:102
+102,27,DB Fernverkehr AG,1,ld,type:102
+102,27N,DB Fernverkehr AG,1,night,name:night-line
+102,27N,MAV,1,night,name:night-line
+102,27N,PKP Intercity,1,night,name:night-line
+102,27N,Österreichische Bundesbahnen,1,night,name:night-line
+102,3,SBB,1,ld,type:102
+102,33,DB Fernverkehr AG,1,ld,type:102
+102,35,DB Fernverkehr AG,1,ld,type:102
+102,43N,DB Fernverkehr (Codesharing),1,night,name:night-line
+102,43N,Österreichische Bundesbahnen,1,night,name:night-line
+102,55,DB Fernverkehr AG,1,ld,type:102
+102,56,DB Fernverkehr AG,1,ld,type:102
+102,57,DB Fernverkehr AG,1,ld,type:102
+102,6,SBB,1,ld,type:102
+102,60,DB Fernverkehr AG,1,ld,type:102
+102,61,DB Fernverkehr AG,1,ld,type:102
+102,61,SBB,1,ld,type:102
+102,62,DB Fernverkehr AG,1,ld,type:102
+102,62,Österreichische Bundesbahnen,1,ld,type:102
+102,62N,HZPP,1,night,name:night-line
+102,62N,MAV,1,night,name:night-line
+102,62N,Österreichische Bundesbahnen,1,night,name:night-line
+102,75,DB Fernverkehr AG,1,ld,type:102
+102,76,DB Fernverkehr AG,1,ld,type:102
+102,85,DB Fernverkehr AG,1,ld,type:102
+102,87,DB Fernverkehr AG,1,ld,type:102
+102,88,DB Fernverkehr AG,1,ld,type:102
+102,90,DB Fernverkehr AG,1,ld,type:102
+102,90,Österreichische Bundesbahnen,1,ld,type:102
+102,90N,Österreichische Bundesbahnen,1,night,name:night-line
+102,91N,Österreichische Bundesbahnen,1,night,name:night-line
+102,95,DB Fernverkehr AG,1,ld,type:102
+102,95,PKP Intercity,1,ld,type:102
+102,96,DB Fernverkehr AG,1,ld,type:102
+102,96,PKP Intercity,1,ld,type:102
+102,97,DB Fernverkehr AG,1,ld,type:102
+102,EC,Ceske Drahy,1,ld,name:EC
+102,EC,HZPP,1,ld,name:EC
+102,EC,MAV,1,ld,name:EC
+102,EC,SBB,1,ld,name:EC
+102,EC,Österreichische Bundesbahnen,1,ld,name:EC
+102,ECE,Dänische Staatsbahnen,1,ld,name:ECE
+102,ECM,DB Fernverkehr AG,1,ld,name:ECM
+102,ECM,SBB,1,ld,name:ECM
+102,ECM,Trenitalia,1,ld,name:ECM
+102,EN,BahnTouristikExpress,1,night,name:EN
+102,EN,Ceske Drahy,1,night,name:EN
+102,EN,HZPP,1,night,name:EN
+102,EN,MAV,1,night,name:EN
+102,EN,PKP Intercity,1,night,name:EN
+102,EN,ZSSK,1,night,name:EN
+102,EN,Österreichische Bundesbahnen,1,night,name:EN
+102,FLX10,FlixTrain-de,1,ld,name:FLX
+102,FLX20,FlixTrain-de,1,ld,name:FLX
+102,FLX30,FlixTrain-de,1,ld,name:FLX
+102,IC,Ceske Drahy,1,ld,name:IC
+102,IC,DB Fernverkehr (Codesharing),1,ld,name:IC
+102,IC,Dänische Staatsbahnen,1,ld,name:IC
+102,IC,PKP Intercity,2,ld,name:IC
+102,IC,SBB,1,ld,name:IC
+102,IC,Österreichische Bundesbahnen,1,ld,name:IC
+102,NJ,SBB,1,night,name:NJ
+102,NJ,SNCB,1,night,name:NJ
+102,NJ,Österreichische Bundesbahnen,1,night,name:NJ
+102,RJX,MAV,1,hsr,name:RJX
+102,RJX,Österreichische Bundesbahnen,1,hsr,name:RJX
+103,16,SBB,1,rfast,type:103
+103,75,SBB,1,rfast,type:103
+103,75,THURBO,1,rfast,type:103
+106,1,THURBO,1,reg,type:106
+106,1,Österreichische Bundesbahnen,1,reg,type:106
+106,13,THURBO,1,reg,type:106
+106,140,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,type:106
+106,145,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,type:106
+106,2,Österreichische Bundesbahnen,1,reg,type:106
+106,3,Österreichische Bundesbahnen,1,reg,type:106
+106,48,SBB,1,reg,type:106
+106,50,Österreichische Bundesbahnen,1,reg,type:106
+106,51,Österreichische Bundesbahnen,1,reg,type:106
+106,6,Österreichische Bundesbahnen,1,reg,type:106
+106,7,Österreichische Bundesbahnen,1,reg,type:106
+106,75,THURBO,1,reg,type:106
+106,A1,AKN Eisenbahn GmbH,1,reg,name:A
+106,A2,AKN Eisenbahn GmbH,1,reg,name:A
+106,A3,AKN Eisenbahn GmbH,1,reg,name:A
+106,Chiemsee,Chiemseebahn,1,reg,name:CHIEMSEE
+106,DPN,Pressnitztalbahn,1,reg,name:DPN
+106,DRB,Ostdeutsche Eisenbahn GmbH,1,reg,name:DRB
+106,DRB,SDG Sächsische Dampfeisenbahngesellschaft mbH,1,reg,name:DRB
+106,DRB,Sächsisch-Oberlausitzer Eisenbahngesellschaft,1,reg,name:DRB
+106,DRB,Ulmer Eisenbahnfreunde,1,reg,name:DRB
+106,DRB,Öchsle-Bahn-Betriebsgesellschaft mbH1,1,reg,name:DRB
+106,DRF,AUTOZUG Sylt,1,reg,agency:autozug sylt|gaildorf-untergröningen
+106,DRF,BahnTouristikExpress,1,ld,agency:leo express|westbahn|bahntouristikexpress
+106,DRF,European Sleeper,1,night,agency:european sleeper|^nachtzug|nightjet
+106,DRF,LEO Express,1,ld,agency:leo express|westbahn|bahntouristikexpress
+106,DRF,Nachtzug,1,night,agency:european sleeper|^nachtzug|nightjet
+106,DRF,Nebenbahn Gaildorf-Untergröningen,1,reg,agency:autozug sylt|gaildorf-untergröningen
+106,DRF,WESTbahn,1,ld,agency:leo express|westbahn|bahntouristikexpress
+106,DWE,Dessau-Wörlitzer Eisenbahn,1,reg,name:DWE
+106,EX,vlexx1,1,rfast,name:EX
+106,FEX,DB Regio AG Nordost,1,rfast,name:FEX
+106,HBX,DB Regio AG Südost,1,rfast,name:HBX
+106,HSB,Harzer Schmalspurbahn,1,reg,name:HSB
+106,IC17,DB Fernverkehr (Codesharing),1,ld,name:IC
+106,IC35,DB Fernverkehr (Codesharing),1,ld,name:IC
+106,IC56,DB Fernverkehr (Codesharing),1,ld,name:IC
+106,IC87,DB Fernverkehr (Codesharing),1,ld,name:IC
+106,ITB,Ilztalbahn,1,reg,name:ITB
+106,KTB,Kandertalbahn,1,reg,name:KTB
+106,L2,trilex - Die Länderbahn GmbH DLB1,1,reg,name:L
+106,L7,trilex - Die Länderbahn GmbH DLB1,1,reg,name:L
+106,MBB,Mecklenburgische Bäderbahn Molli,1,reg,name:MBB
+106,MEX,EVB ELBE-WESER GmbH,1,rfast,name:MEX
+106,MEX12,DB Regio AG Baden-Württemberg,1,rfast,name:MEX
+106,MEX13,Arverio Baden-Württemberg GmbH,1,rfast,name:MEX
+106,MEX16,Arverio Baden-Württemberg GmbH,1,rfast,name:MEX
+106,MEX17,DB Regio AG Baden-Württemberg,1,rfast,name:MEX
+106,MEX18,DB Regio AG Baden-Württemberg,1,rfast,name:MEX
+106,MEX19,DB Regio AG Baden-Württemberg,1,rfast,name:MEX
+106,MEX90,DB Regio AG Baden-Württemberg,1,rfast,name:MEX
+106,MSB,Mainschleifenbahn,1,reg,name:MSB
+106,Os,Ceske Drahy,1,reg,name:OS
+106,P,BayernBahn Betriebs-GmbH,1,reg,name:P
+106,P,Brohltalbahn,1,reg,name:P
+106,P,Kasbachtalbahn,1,reg,name:P
+106,P,Rhön-Zügle,1,reg,name:P
+106,P,Wanderbahn im Regental,1,reg,name:P
+106,R,SNCB,1,reg,name:R
+106,R,Österreichische Bundesbahnen,1,reg,name:R
+106,RB1,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB10,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB10,VIAS GmbH,1,reg,name:RB
+106,RB10a,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB11,DB Regio AG Bayern,1,reg,name:RB
+106,RB11,DB Regio AG Nordost,1,reg,name:RB
+106,RB11,DB Regio AG S-Bahn Stuttgart,1,reg,name:RB
+106,RB110,Mitteldeutsche Regiobahn,1,reg,name:RB
+106,RB110,Nahreisezug,1,reg,name:RB
+106,RB113,DB Regio AG Südost,1,reg,name:RB
+106,RB12,DB Regio AG Bayern,1,reg,name:RB
+106,RB12,DB Regio AG Mitte,1,reg,name:RB
+106,RB12,DB Regio AG Nordost,1,reg,name:RB
+106,RB12,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB13,Bayerische Regiobahn,1,reg,name:RB
+106,RB13,Erfurter Bahn,1,reg,name:RB
+106,RB13,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB14,Bayerische Regiobahn,1,reg,name:RB
+106,RB14,DB Regio AG Nordost,1,reg,name:RB
+106,RB14,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB14a,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB15,DB Regio AG Mitte,1,reg,name:RB
+106,RB15,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB15,agilis,1,reg,name:RB
+106,RB16,DB Regio AG Bayern,1,reg,name:RB
+106,RB16,DB Regio AG Mitte,1,reg,name:RB
+106,RB16,Hanseatische Eisenbahn GmbH,1,reg,name:RB
+106,RB17,agilis,1,reg,name:RB
+106,RB18,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB18,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB18,agilis,1,reg,name:RB
+106,RB2,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB20,Abellio Rail Mitteldeutschland GmbH,1,reg,name:RB
+106,RB20,DB Regio AG NRW,1,reg,name:RB
+106,RB20,DB Regio AG Nordost,1,reg,name:RB
+106,RB21,DB Regio AG Bayern,1,reg,name:RB
+106,RB21,DB Regio AG Nordost,1,reg,name:RB
+106,RB21,Erfurter Bahn,1,reg,name:RB
+106,RB21,Erfurter Bahn Express,1,reg,name:RB
+106,RB21,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB21,Rurtalbahn,1,reg,name:RB
+106,RB22,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB22,DB Regio AG Nordost,1,reg,name:RB
+106,RB22,Erfurter Bahn,1,reg,name:RB
+106,RB22,agilis,1,reg,name:RB
+106,RB23,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB23,DB Regio AG Nordost,1,reg,name:RB
+106,RB23,Erfurter Bahn,1,reg,name:RB
+106,RB23,oberpfalzbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB24,DB Regio AG NRW,1,reg,name:RB
+106,RB24,DB Regio AG Nordost,2,reg,name:RB
+106,RB24,agilis,1,reg,name:RB
+106,RB25,Abellio Rail Mitteldeutschland GmbH,1,reg,name:RB
+106,RB25,DB Regio AG Bayern,1,reg,name:RB
+106,RB25,DB Regio AG NRW,1,reg,name:RB
+106,RB25,DB Regio AG Nordost,1,reg,name:RB
+106,RB25,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB26,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB26,Erfurter Bahn,1,reg,name:RB
+106,RB26,MittelrheinBahn (Trans Regio),1,reg,name:RB
+106,RB26,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB26,Pressnitztalbahn,1,reg,name:RB
+106,RB26,agilis,1,reg,name:RB
+106,RB27,Ceske Drahy,1,reg,name:RB
+106,RB27,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB27,DB Regio AG NRW,1,reg,name:RB
+106,RB27,Erfurter Bahn,1,reg,name:RB
+106,RB27,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB27,oberpfalzbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB27,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB27s,oberpfalzbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB28,DB Regio AG Nordost,1,reg,name:RB
+106,RB28,Erfurter Bahn,1,reg,name:RB
+106,RB28,Rurtalbahn,1,reg,name:RB
+106,RB28,oberpfalzbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB29,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB29,oberpfalzbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB30,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB30,DB Regio AG Bayern,1,reg,name:RB
+106,RB30,DB Regio AG NRW,1,reg,name:RB
+106,RB30,Mitteldeutsche Regiobahn,1,reg,name:RB
+106,RB31,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB31,DB Regio AG Bayern,1,reg,name:RB
+106,RB31,DB Regio AG Nordost,1,reg,name:RB
+106,RB31,RheinRuhrBahn,1,reg,name:RB
+106,RB31,metronom,1,reg,name:RB
+106,RB31,vlexx,1,reg,name:RB
+106,RB32,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB32,DB Regio AG NRW,1,reg,name:RB
+106,RB32,DB Regio AG Nordost,1,reg,name:RB
+106,RB32,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB32,Erfurter Bahn,1,reg,name:RB
+106,RB32,MittelrheinBahn (Trans Regio),1,reg,name:RB
+106,RB32,Pressnitztalbahn,1,reg,name:RB
+106,RB32,erixx,1,reg,name:RB
+106,RB33,DB Regio AG Bayern,1,reg,name:RB
+106,RB33,DB Regio AG Mitte,1,reg,name:RB
+106,RB33,DB Regio AG NRW,1,reg,name:RB
+106,RB33,DB Regio AG Südost,1,reg,name:RB
+106,RB33,EVB ELBE-WESER GmbH,1,reg,name:RB
+106,RB33,Hanseatische Eisenbahn GmbH,1,reg,name:RB
+106,RB33,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB33,vlexx,1,reg,name:RB
+106,RB34,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB34,VIAS Rail GmbH,1,reg,name:RB
+106,RB34,agilis,1,reg,name:RB
+106,RB34,vlexx,1,reg,name:RB
+106,RB34,vlexx1,1,reg,name:RB
+106,RB35,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB35,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB35,VIAS Rail GmbH,1,reg,name:RB
+106,RB35,vlexx,1,reg,name:RB
+106,RB35,waldbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB36,DB Regio AG Südost,1,reg,name:RB
+106,RB36,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB36,RheinRuhrBahn,1,reg,name:RB
+106,RB36,waldbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB37,City-Bahn Chemnitz,1,reg,name:RB
+106,RB37,DB Regio AG Nord,1,reg,name:RB
+106,RB37,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB37,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB37,Rhenus Veniro,1,reg,name:RB
+106,RB37,TRI Train Rental GmbH,1,reg,name:RB
+106,RB37,waldbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB38,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB38,DB Regio AG NRW,1,reg,name:RB
+106,RB38,DB Regio AG Nord,1,reg,name:RB
+106,RB38,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,reg,name:RB
+106,RB38,waldbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB39,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,reg,name:RB
+106,RB39,VIAS Rail GmbH,1,reg,name:RB
+106,RB4,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,reg,name:RB
+106,RB4,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB40,DB Regio AG NRW,1,reg,name:RB
+106,RB40,DB Regio AG Südost,1,reg,name:RB
+106,RB40,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB40,Erfurter Bahn,1,reg,name:RB
+106,RB40,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB41,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB41,DB Regio AG Südost,1,reg,name:RB
+106,RB41,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB41,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB41,Süd-Thüringen-Bahn,1,reg,name:RB
+106,RB41,metronom,1,reg,name:RB
+106,RB42,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB42,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB42,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB42,erixx,1,reg,name:RB
+106,RB42a,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB43,DB Regio AG NRW,1,reg,name:RB
+106,RB43,DB Regio AG Nordost,1,reg,name:RB
+106,RB43,DB Regio AG Südost,1,reg,name:RB
+106,RB43,Süd-Thüringen-Bahn,1,reg,name:RB
+106,RB43,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB43,erixx,1,reg,name:RB
+106,RB43a,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB44,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB44,DB Regio AG Nord,1,reg,name:RB
+106,RB44,DB Regio AG Südost,1,reg,name:RB
+106,RB44,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB44,Süd-Thüringen-Bahn,1,reg,name:RB
+106,RB44,vlexx,1,reg,name:RB
+106,RB45,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB45,DB Regio AG Nord,1,reg,name:RB
+106,RB45,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB45,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB45,Mitteldeutsche Regiobahn,2,reg,name:RB
+106,RB46,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB46,DB Regio AG Nord,1,reg,name:RB
+106,RB46,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB46,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB46,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB46,Süd-Thüringen-Bahn,1,reg,name:RB
+106,RB46,VIAS Rail GmbH,1,reg,name:RB
+106,RB47,DB Regio AG Südost,1,reg,name:RB
+106,RB47,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB47,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB47,erixx,1,reg,name:RB
+106,RB48,DB Regio AG Nord,1,reg,name:RB
+106,RB48,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB48,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB48,National Express,1,reg,name:RB
+106,RB48,Süd-Thüringen-Bahn,1,reg,name:RB
+106,RB49,DB Regio AG Nordost,1,reg,name:RB
+106,RB49,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB49,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB5,cantus Verkehrsgesellschaft,1,reg,name:RB
+106,RB5,vogtlandbahn - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB50,DB Regio AG Südost,1,reg,name:RB
+106,RB50,Erfurter Bahn,1,reg,name:RB
+106,RB50,Eurobahn,1,reg,name:RB
+106,RB51,DB Regio AG Mitte,1,reg,name:RB
+106,RB51,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB51,DB Regio AG NRW,1,reg,name:RB
+106,RB51,DB Regio AG Südost,1,reg,name:RB
+106,RB51,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB51,agilis,1,reg,name:RB
+106,RB52,DB Regio AG Mitte,1,reg,name:RB
+106,RB52,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB52,DB Regio AG NRW,1,reg,name:RB
+106,RB52,DB Regio AG Südost,1,reg,name:RB
+106,RB52,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB52,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB53,Bayerische Regiobahn,1,reg,name:RB
+106,RB53,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB53,DB Regio AG Bayern,1,reg,name:RB
+106,RB53,DB Regio AG Mitte,1,reg,name:RB
+106,RB53,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB53,DB Regio AG NRW,1,reg,name:RB
+106,RB53,DB Regio AG Südost,1,reg,name:RB
+106,RB53,vlexx,1,reg,name:RB
+106,RB53a,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB54,Bayerische Regiobahn,1,reg,name:RB
+106,RB54,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB54,DB Regio AG Mitte,1,reg,name:RB
+106,RB54,DB Regio AG NRW,1,reg,name:RB
+106,RB54,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB55,Bayerische Regiobahn,1,reg,name:RB
+106,RB55,DB Regio AG Mitte,1,reg,name:RB
+106,RB55,DB Regio AG Nordost,1,reg,name:RB
+106,RB56,Bayerische Regiobahn,1,reg,name:RB
+106,RB56,Bentheimer Eisenbahn,1,reg,name:RB
+106,RB56,DB Regio AG Mitte,1,reg,name:RB
+106,RB56,DB RegioNetz Verkehrs GmbH Westfrankenbahn,2,reg,name:RB
+106,RB57,Abellio Rail Mitteldeutschland GmbH,1,reg,name:RB
+106,RB57,Bayerische Regiobahn,1,reg,name:RB
+106,RB58,Bayerische Regiobahn,1,reg,name:RB
+106,RB58,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB58,NordWestBahn,1,reg,name:RB
+106,RB59,Abellio Rail Mitteldeutschland GmbH,1,reg,name:RB
+106,RB59,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,reg,name:RB
+106,RB59,Eurobahn,1,reg,name:RB
+106,RB59,NordWestBahn,1,reg,name:RB
+106,RB59,TRI Train Rental GmbH,1,reg,name:RB
+106,RB6,DB Regio AG Bayern,1,reg,name:RB
+106,RB6,cantus Verkehrsgesellschaft,1,reg,name:RB
+106,RB6,Österreichische Bundesbahnen,1,reg,name:RB
+106,RB60,DB Regio AG Bayern,1,reg,name:RB
+106,RB60,DB RegioNetz Verkehrs GmbH Oberweisbacher Berg+Schwarzatalb,1,reg,name:RB
+106,RB60,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB60,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB60,trilex - Die Länderbahn GmbH DLB1,1,reg,name:RB
+106,RB60,trilex-express - Die Länderbahn GmbH DLB,1,reg,name:RB
+106,RB61,DB Regio AG Bayern,1,reg,name:RB
+106,RB61,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB61,DB RegioNetz Verkehrs GmbH Oberweisbacher Berg+Schwarzatalb,2,reg,name:RB
+106,RB61,Eurobahn,1,reg,name:RB
+106,RB61,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB61,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB61,VIAS Rail GmbH,1,reg,name:RB
+106,RB61,trilex - Die Länderbahn GmbH DLB1,1,reg,name:RB
+106,RB62,DB Regio AG Bayern,1,reg,name:RB
+106,RB62,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB62,DB Regio AG Nord,1,reg,name:RB
+106,RB63,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB63,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB63,DB Regio AG NRW,1,reg,name:RB
+106,RB63,NEB Niederbarnimer Eisenbahn,1,reg,name:RB
+106,RB63,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB64,Bayerische Zugspitzbahn,1,reg,name:RB
+106,RB64,DB Regio AG Mitte,1,reg,name:RB
+106,RB64,DB Regio AG NRW,1,reg,name:RB
+106,RB64,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB64,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB65,DB Regio AG Bayern,1,reg,name:RB
+106,RB65,DB Regio AG Mitte,2,reg,name:RB
+106,RB65,Eurobahn,1,reg,name:RB
+106,RB65,Norddeutsche Eisenbahn Gesellschaft,1,reg,name:RB
+106,RB65,ODEG Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB65,Ostdeutsche Eisenbahn GmbH,1,reg,name:RB
+106,RB65,vlexx,1,reg,name:RB
+106,RB66,DB Regio AG Bayern,1,reg,name:RB
+106,RB66,DB Regio AG Mitte,1,reg,name:RB
+106,RB66,Eurobahn,1,reg,name:RB
+106,RB66,Norddeutsche Eisenbahn Gesellschaft,1,reg,name:RB
+106,RB66,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB66,VIAS Rail GmbH,1,reg,name:RB
+106,RB67,Bayerische Regiobahn,1,reg,name:RB
+106,RB67,DB Regio AG Mitte,1,reg,name:RB
+106,RB67,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB67,Eurobahn,1,reg,name:RB
+106,RB67,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB68,Bayerische Regiobahn,1,reg,name:RB
+106,RB68,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB68,DB Regio AG Mitte,1,reg,name:RB
+106,RB68,DB Regio AG Mitte Region Hessen,1,reg,name:RB
+106,RB68,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB68a,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB69,Bayerische Regiobahn,1,reg,name:RB
+106,RB69,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB69,Eurobahn,1,reg,name:RB
+106,RB69,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB70,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB71,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB71,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB71,DB Regio AG Südost,1,reg,name:RB
+106,RB71,Eurobahn,1,reg,name:RB
+106,RB71,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB71,vlexx,1,reg,name:RB
+106,RB72,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB72,DB Regio AG Südost,1,reg,name:RB
+106,RB72,Eurobahn,1,reg,name:RB
+106,RB72,vlexx,1,reg,name:RB
+106,RB73,DB Regio AG Bayern,1,reg,name:RB
+106,RB73,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB73,Eurobahn,1,reg,name:RB
+106,RB73,Hanseatische Eisenbahn GmbH,1,reg,name:RB
+106,RB73,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB73,vlexx,1,reg,name:RB
+106,RB74,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB74,DB Regio AG Bayern,1,reg,name:RB
+106,RB74,Hanseatische Eisenbahn GmbH,1,reg,name:RB
+106,RB74,NordWestBahn,1,reg,name:RB
+106,RB74,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB74,vlexx,1,reg,name:RB
+106,RB75,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB75,NordWestBahn,1,reg,name:RB
+106,RB75,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB76,Erfurter Bahn,1,reg,name:RB
+106,RB76,Südwestdeutsche Verkehrs-AG,1,reg,name:RB
+106,RB76,erixx,1,reg,name:RB
+106,RB76,vlexx,1,reg,name:RB
+106,RB77,Bayerische Regiobahn,1,reg,name:RB
+106,RB77,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB77,DB Regio AG Nord,1,reg,name:RB
+106,RB77,DB Regio AG Südost,1,reg,name:RB
+106,RB78,DB Regio AG Bayern,1,reg,name:RB
+106,RB79,DB Regio AG Bayern,1,reg,name:RB
+106,RB79,DB Regio AG Nord,1,reg,name:RB
+106,RB79,DB Regio Mitte,1,reg,name:RB
+106,RB8,Arverio Baden-Württemberg GmbH,1,reg,name:RB
+106,RB80,Arverio Bayern GmbH,1,reg,name:RB
+106,RB80,DB Regio AG Bayern,1,reg,name:RB
+106,RB80,DB Regio AG Nord,1,reg,name:RB
+106,RB80,DB RegioNetz Verkehrs GmbH Erzgebirgsbahn,1,reg,name:RB
+106,RB81,DB Regio AG Bayern,1,reg,name:RB
+106,RB81,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB81,DB Regio AG Nord,2,reg,name:RB
+106,RB81,DB RegioNetz Verkehrs GmbH Erzgebirgsbahn,1,reg,name:RB
+106,RB81,VIAS Rail GmbH,1,reg,name:RB
+106,RB82,DB Regio AG Bayern,1,reg,name:RB
+106,RB82,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB82,DB Regio AG Nord,1,reg,name:RB
+106,RB82,Nordbahn Eisenbahngesellschaft,1,reg,name:RB
+106,RB82,VIAS Rail GmbH,1,reg,name:RB
+106,RB83,Bayerische Regiobahn,1,reg,name:RB
+106,RB83,CFL1,1,reg,name:RB
+106,RB83,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB83,DB RegioNetz Verkehrs GmbH Westfrankenbahn,1,reg,name:RB
+106,RB83,Freiberger Eisenbahngesellschaft,1,reg,name:RB
+106,RB83,cantus Verkehrsgesellschaft,1,reg,name:RB
+106,RB84,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB84,DB RegioNetz Verkehrs GmbH Westfrankenbahn,1,reg,name:RB
+106,RB84,NordWestBahn,1,reg,name:RB
+106,RB84,erixx,1,reg,name:RB
+106,RB85,DB Regio AG Bayern,1,reg,name:RB
+106,RB85,DB Regio AG Nord,1,reg,name:RB
+106,RB85,DB RegioNetz Verkehrs GmbH Westfrankenbahn,2,reg,name:RB
+106,RB85,NordWestBahn,1,reg,name:RB
+106,RB85,Rhenus Veniro,1,reg,name:RB
+106,RB86,Arverio Bayern GmbH,1,reg,name:RB
+106,RB86,DB Regio AG Nord,1,reg,name:RB
+106,RB86,VIAS Rail GmbH,1,reg,name:RB
+106,RB87,Arverio Bayern GmbH,1,reg,name:RB
+106,RB87,CFL1,1,reg,name:RB
+106,RB87,DB Regio AG Mitte Region Südwest,1,reg,name:RB
+106,RB87,DB RegioNetz Verkehrs GmbH Westfrankenbahn,1,reg,name:RB
+106,RB87,cantus Verkehrsgesellschaft,1,reg,name:RB
+106,RB88,DB RegioNetz Verkehrs GmbH Westfrankenbahn,3,reg,name:RB
+106,RB89,Arverio Bayern GmbH,1,reg,name:RB
+106,RB89,Eurobahn,1,reg,name:RB
+106,RB89,TRI Train Rental GmbH,1,reg,name:RB
+106,RB90,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB91,Bodensee-Oberschwaben-Bahn,1,reg,name:RB
+106,RB91,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB91,DB Regio AG Bayern,1,reg,name:RB
+106,RB91,DB Regio AG Nordost,1,reg,name:RB
+106,RB91,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB91,VIAS Rail GmbH,1,reg,name:RB
+106,RB92,Arverio Bayern GmbH,1,reg,name:RB
+106,RB92,City-Bahn Chemnitz,1,reg,name:RB
+106,RB92,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB93,DB Regio AG Baden-Württemberg,1,reg,name:RB
+106,RB93,DB Regio AG Nordost,1,reg,name:RB
+106,RB93,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB94,DB Regio AG Bayern,1,reg,name:RB
+106,RB94,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,reg,name:RB
+106,RB95,DB RegioNetz Verkehrs GmbH Erzgebirgsbahn,1,reg,name:RB
+106,RB95,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB95,agilis,1,reg,name:RB
+106,RB96,Hessische Landesbahn GmbH,1,reg,name:RB
+106,RB96,agilis,1,reg,name:RB
+106,RB97,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,reg,name:RB
+106,RB97,Daadetalbahn,1,reg,name:RB
+106,RB97,agilis,1,reg,name:RB
+106,RB98,agilis,1,reg,name:RB
+106,RB99,agilis,1,reg,name:RB
+106,RE,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE,THURBO,1,rfast,name:RE
+106,RE1,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE1,CFL1,1,rfast,name:RE
+106,RE1,DB Regio AG Bayern,1,rfast,name:RE
+106,RE1,DB Regio AG Nord,1,rfast,name:RE
+106,RE1,DB Regio AG Nordost,1,rfast,name:RE
+106,RE1,DB Regio AG Südost,1,rfast,name:RE
+106,RE1,National Express,1,rfast,name:RE
+106,RE1,Ostdeutsche Eisenbahn GmbH,1,rfast,name:RE
+106,RE1,SÜWEX,1,rfast,name:RE
+106,RE1,TRI Train Rental GmbH,1,rfast,name:RE
+106,RE1,trilex-express - Die Länderbahn GmbH DLB,1,rfast,name:RE
+106,RE10,DB Regio AG Bayern,1,rfast,name:RE
+106,RE10,DB Regio AG NRW,1,rfast,name:RE
+106,RE10,DB Regio AG Nordost,1,rfast,name:RE
+106,RE10,DB Regio AG Südost,1,rfast,name:RE
+106,RE10,RheinRuhrBahn,1,rfast,name:RE
+106,RE10,erixx,1,rfast,name:RE
+106,RE100,TRI Train Rental GmbH,1,rfast,name:RE
+106,RE10a,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE10b,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE11,CFL1,1,rfast,name:RE
+106,RE11,DB Regio AG Nordost,1,rfast,name:RE
+106,RE11,DB Regio AG Südost,2,rfast,name:RE
+106,RE11,National Express,2,rfast,name:RE
+106,RE11,SÜWEX,1,rfast,name:RE
+106,RE12,DB Regio AG NRW,1,rfast,name:RE
+106,RE12,Erfurter Bahn Express,1,rfast,name:RE
+106,RE13,DB Regio AG Nordost,1,rfast,name:RE
+106,RE13,DB Regio AG Südost,1,rfast,name:RE
+106,RE13,Eurobahn,1,rfast,name:RE
+106,RE13,vlexx1,1,rfast,name:RE
+106,RE14,DB Regio AG Bayern,1,rfast,name:RE
+106,RE14,DB Regio AG Südost,1,rfast,name:RE
+106,RE14,RheinRuhrBahn,1,rfast,name:RE
+106,RE14,SÜWEX,1,rfast,name:RE
+106,RE14a,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE14b,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE15,Abellio Rail Mitteldeutschland GmbH,1,rfast,name:RE
+106,RE15,DB Regio AG Mitte,1,rfast,name:RE
+106,RE15,DB Regio AG Nordost,1,rfast,name:RE
+106,RE15,WestfalenBahn,1,rfast,name:RE
+106,RE15,vlexx1,1,rfast,name:RE
+106,RE15A,DB Regio AG Mitte,1,rfast,name:RE
+106,RE16,Abellio Rail Mitteldeutschland GmbH,1,rfast,name:RE
+106,RE16,DB Regio AG Bayern,1,rfast,name:RE
+106,RE16,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE16,SNCF,1,rfast,name:RE
+106,RE16,VIAS Rail GmbH,1,rfast,name:RE
+106,RE17,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE17,DB Regio AG Bayern,1,rfast,name:RE
+106,RE17,DB Regio AG Mitte,1,rfast,name:RE
+106,RE17,DB Regio AG NRW,1,rfast,name:RE
+106,RE17,vlexx1,1,rfast,name:RE
+106,RE18,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE18,DB Regio AG NRW,1,rfast,name:RE
+106,RE18,DB Regio AG Nordost,1,rfast,name:RE
+106,RE18,NordWestBahn,1,rfast,name:RE
+106,RE18,agilis,1,rfast,name:RE
+106,RE19,DB Regio AG Bayern,1,rfast,name:RE
+106,RE19,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE19,DB Regio AG Südost,1,rfast,name:RE
+106,RE19,VIAS Rail GmbH,1,rfast,name:RE
+106,RE2,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE2,DB Regio AG Bayern,3,rfast,name:RE
+106,RE2,DB Regio AG NRW,1,rfast,name:RE
+106,RE2,DB Regio AG Nord,1,rfast,name:RE
+106,RE2,DB Regio AG Nordost,1,rfast,name:RE
+106,RE2,MittelrheinBahn (Trans Regio),1,rfast,name:RE
+106,RE2,SÜWEX,1,rfast,name:RE
+106,RE2,TRI Train Rental GmbH,1,rfast,name:RE
+106,RE2,trilex-express - Die Länderbahn GmbH DLB,1,rfast,name:RE
+106,RE2,vlexx1,1,rfast,name:RE
+106,RE20,Ceske Drahy,2,rfast,name:RE
+106,RE20,DB Regio AG Bayern,1,rfast,name:RE
+106,RE20,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE20,DB Regio AG Nordost,1,rfast,name:RE
+106,RE20,DB Regio AG Südost,3,rfast,name:RE
+106,RE200,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE21,DB Regio AG Mitte,1,rfast,name:RE
+106,RE21,DB Regio AG Südost,1,rfast,name:RE
+106,RE22,DB Regio AG Bayern,1,rfast,name:RE
+106,RE22,DB Regio AG NRW,1,rfast,name:RE
+106,RE22,agilis,1,rfast,name:RE
+106,RE22,agilis-Schnellzug,1,rfast,name:RE
+106,RE23,alex - Die Länderbahn GmbH DLB,1,rfast,name:RE
+106,RE24,DB Regio AG Südost,1,rfast,name:RE
+106,RE24,Hessische Landesbahn GmbH,1,rfast,name:RE
+106,RE25,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE25,alex - Die Länderbahn GmbH DLB,1,rfast,name:RE
+106,RE27,Hanseatische Eisenbahn GmbH,1,rfast,name:RE
+106,RE28,DB Regio AG Bayern,1,rfast,name:RE
+106,RE29,DB Regio AG Bayern,1,rfast,name:RE
+106,RE3,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE3,DB Regio AG Bayern,1,rfast,name:RE
+106,RE3,DB Regio AG Nordost,1,rfast,name:RE
+106,RE3,DB Regio AG Südost,1,rfast,name:RE
+106,RE3,Eurobahn,1,rfast,name:RE
+106,RE3,Mitteldeutsche Regiobahn,1,rfast,name:RE
+106,RE3,Nebenbahn Vaihingen-Enzweihingen,1,rfast,name:RE
+106,RE3,Ostdeutsche Eisenbahn GmbH,1,rfast,name:RE
+106,RE3,metronom,1,rfast,name:RE
+106,RE3,vlexx1,1,rfast,name:RE
+106,RE30,DB Regio AG Bayern,1,rfast,name:RE
+106,RE30,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE30,DB Regio AG Nordost,1,rfast,name:RE
+106,RE30,DB Regio AG Südost,1,rfast,name:RE
+106,RE30,enno,1,rfast,name:RE
+106,RE31,DB Regio AG Bayern,1,rfast,name:RE
+106,RE31,DB Regio AG Südost,1,rfast,name:RE
+106,RE32,DB Regio AG Bayern,1,rfast,name:RE
+106,RE33,DB Regio AG Bayern,1,rfast,name:RE
+106,RE34,DB Regio AG NRW,1,rfast,name:RE
+106,RE34,Hessische Landesbahn GmbH,2,rfast,name:RE
+106,RE34,VIAS Rail GmbH,1,rfast,name:RE
+106,RE35,DB Regio AG Bayern,1,rfast,name:RE
+106,RE38,DB Regio AG Bayern,1,rfast,name:RE
+106,RE39,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,rfast,name:RE
+106,RE4,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE4,DB Regio AG Nordost,2,rfast,name:RE
+106,RE4,DB Regio AG Südost,1,rfast,name:RE
+106,RE4,DB RegioNetz Verkehrs GmbH Südostbayernbahn,1,rfast,name:RE
+106,RE4,National Express,1,rfast,name:RE
+106,RE4,Nebenbahn Vaihingen-Enzweihingen,1,rfast,name:RE
+106,RE4,SÜWEX,1,rfast,name:RE
+106,RE4,Südwestdeutsche Verkehrs-AG,1,rfast,name:RE
+106,RE4,metronom,1,rfast,name:RE
+106,RE4,vlexx1,1,rfast,name:RE
+106,RE40,DB Regio AG Bayern,2,rfast,name:RE
+106,RE40,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE41,DB Regio AG Bayern,1,rfast,name:RE
+106,RE41,DB Regio AG NRW,1,rfast,name:RE
+106,RE42,DB Regio AG NRW,1,rfast,name:RE
+106,RE42,Südwestdeutsche Verkehrs-AG,1,rfast,name:RE
+106,RE43,DB Regio AG Bayern,1,rfast,name:RE
+106,RE44,RheinRuhrBahn,1,rfast,name:RE
+106,RE45,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE45,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE45,Süd-Thüringen-Bahn Express,1,rfast,name:RE
+106,RE47,DB Regio AG Bayern,1,rfast,name:RE
+106,RE47,REGIOBAHN,1,rfast,name:RE
+106,RE49,DB Regio AG NRW,1,rfast,name:RE
+106,RE5,Bayerische Regiobahn,1,rfast,name:RE
+106,RE5,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE5,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE5,DB Regio AG Nord,1,rfast,name:RE
+106,RE5,DB Regio AG Nordost,1,rfast,name:RE
+106,RE5,National Express,2,rfast,name:RE
+106,RE5,cantus Verkehrsgesellschaft,1,rfast,name:RE
+106,RE50,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE50,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE50,DB Regio AG Südost,1,rfast,name:RE
+106,RE50,Ostdeutsche Eisenbahn GmbH,1,rfast,name:RE
+106,RE50,Süd-Thüringen-Bahn Express,1,rfast,name:RE
+106,RE50,agilis-Schnellzug,1,rfast,name:RE
+106,RE50,enno,1,rfast,name:RE
+106,RE50X,DB Regio AG Südost,1,rfast,name:RE
+106,RE51,DB Regio AG Nordost,1,rfast,name:RE
+106,RE54,DB Regio AG Bayern,1,rfast,name:RE
+106,RE55,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE55,DB Regio AG Bayern,1,rfast,name:RE
+106,RE55,DB Regio AG Südost,1,rfast,name:RE
+106,RE56,DB Regio AG Südost,1,rfast,name:RE
+106,RE57,DB Regio AG NRW,1,rfast,name:RE
+106,RE59,Hessische Landesbahn GmbH,1,rfast,name:RE
+106,RE59,TRI Train Rental GmbH,1,rfast,name:RE
+106,RE6,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE6,DB Regio AG Mitte,1,rfast,name:RE
+106,RE6,DB Regio AG Nord,1,rfast,name:RE
+106,RE6,DB Regio AG Nordost,1,rfast,name:RE
+106,RE6,DB Regio AG Südost,1,rfast,name:RE
+106,RE6,Mitteldeutsche Regiobahn,1,rfast,name:RE
+106,RE6,National Express,2,rfast,name:RE
+106,RE60,DB Regio AG Bayern,1,rfast,name:RE
+106,RE60,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE60,WestfalenBahn,1,rfast,name:RE
+106,RE61,DB Regio AG Bayern,1,rfast,name:RE
+106,RE62,DB Regio AG Bayern,1,rfast,name:RE
+106,RE62,DB Regio AG Nord,1,rfast,name:RE
+106,RE66,Südwestdeutsche Verkehrs-AG,1,rfast,name:RE
+106,RE6a,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE6b,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE6x,DB Regio AG Nord,1,rfast,name:RE
+106,RE7,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE7,DB Regio AG Bayern,1,rfast,name:RE
+106,RE7,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+106,RE7,DB Regio AG Nord,1,rfast,name:RE
+106,RE7,DB Regio AG Nordost,1,rfast,name:RE
+106,RE7,DB Regio AG Südost,1,rfast,name:RE
+106,RE7,National Express,1,rfast,name:RE
+106,RE70,DB Regio AG Bayern,1,rfast,name:RE
+106,RE70,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE70,DB Regio AG Nord,1,rfast,name:RE
+106,RE70,WestfalenBahn,1,rfast,name:RE
+106,RE71,DB Regio AG Baden-Württemberg,1,rfast,name:RE
+106,RE71,DB Regio AG Bayern,1,rfast,name:RE
+106,RE72,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE72,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE72,Nordbahn Eisenbahngesellschaft,1,rfast,name:RE
+106,RE73,DB Regio AG Bayern,1,rfast,name:RE
+106,RE73,DB Regio AG Mitte Region Hessen,1,rfast,name:RE
+106,RE74,Nordbahn Eisenbahngesellschaft,1,rfast,name:RE
+106,RE75,DB Regio AG Bayern,1,rfast,name:RE
+106,RE76,DB Regio AG Bayern,1,rfast,name:RE
+106,RE78,Eurobahn,1,rfast,name:RE
+106,RE79,DB Regio AG Bayern,1,rfast,name:RE
+106,RE8,Abellio Rail Mitteldeutschland GmbH,1,rfast,name:RE
+106,RE8,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE8,DB Regio AG NRW,1,rfast,name:RE
+106,RE8,DB Regio AG Nord,2,rfast,name:RE
+106,RE8,Ostdeutsche Eisenbahn GmbH,1,rfast,name:RE
+106,RE80,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE80,DB Regio AG Nord,1,rfast,name:RE
+106,RE80,DB RegioNetz Verkehrs GmbH Westfrankenbahn,1,rfast,name:RE
+106,RE80,VIAS Rail GmbH,1,rfast,name:RE
+106,RE82,Eurobahn,1,rfast,name:RE
+106,RE83,erixx,1,rfast,name:RE
+106,RE85,VIAS Rail GmbH,1,rfast,name:RE
+106,RE86,DB Regio AG Nord,1,rfast,name:RE
+106,RE89,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE8X,DB Regio AG Nord,1,rfast,name:RE
+106,RE9,Abellio Rail Mitteldeutschland GmbH,1,rfast,name:RE
+106,RE9,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE9,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE9,DB Regio AG NRW,1,rfast,name:RE
+106,RE9,DB Regio AG Nord,2,rfast,name:RE
+106,RE9,DB Regio AG Nordost,1,rfast,name:RE
+106,RE9,Ostdeutsche Eisenbahn GmbH,1,rfast,name:RE
+106,RE90,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE92,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE96,Arverio Baden-Württemberg GmbH,1,rfast,name:RE
+106,RE96,Arverio Bayern GmbH,1,rfast,name:RE
+106,RE97,DB RegioNetz Verkehrs GmbH Kurhessenbahn,1,rfast,name:RE
+106,RE98,Hessische Landesbahn GmbH,1,rfast,name:RE
+106,RE99,Hessische Landesbahn GmbH,1,rfast,name:RE
+106,REX,Österreichische Bundesbahnen,1,rfast,name:REX
+106,RR,Ceske Drahy,1,rfast,name:RR
+106,RS1,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS11,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS12,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS2,DB Regio AG Baden-Württemberg,1,sbahn,name:RS
+106,RS2,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS21,DB Regio AG Baden-Württemberg,1,sbahn,name:RS
+106,RS3,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS4,SNCF,1,sbahn,name:RS
+106,RS4,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS5,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS51,Südwestdeutsche Verkehrs-AG,1,sbahn,name:RS
+106,RS7,DB Regio AG Bayern,1,sbahn,name:RS
+106,RS71,DB Regio AG Bayern,1,sbahn,name:RS
+106,S1,DB Regio AG Baden-Württemberg,1,sbahn,name:S
+106,S1,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+106,S12,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+106,S2,DB Regio AG Bayern,1,sbahn,name:S
+106,S2,Südwestdeutsche Verkehrs-AG,1,sbahn,name:S
+106,S3,Nahreisezug,1,sbahn,name:S
+106,S3,Südwestdeutsche Verkehrs-AG,1,sbahn,name:S
+106,S4,Bayerische Regiobahn,1,sbahn,name:S
+106,S4,DB Regio AG Bayern,1,sbahn,name:S
+106,S5,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+106,S5,Südwestdeutsche Verkehrs-AG,1,sbahn,name:S
+106,S6,DB Regio AG Bayern,1,sbahn,name:S
+106,S6,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+106,S7,RheinRuhrBahn,1,sbahn,name:S
+106,S8,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+106,SAB,Schwäbische Alb-Bahn,1,reg,name:SAB
+106,Sp,Ceske Drahy,1,rfast,name:SP
+106,T7,Die Länderbahn GmbH,1,reg,name:T
+106,T9,trilex - Die Länderbahn GmbH DLB1,1,reg,name:T
+106,U28,Ceske Drahy,1,reg,name:U
+106,U28,DB Regio AG Südost,1,reg,name:U
+109,1,THURBO,1,sbahn,type:109
+109,1,Österreichische Bundesbahnen,1,sbahn,type:109
+109,14,THURBO,1,sbahn,type:109
+109,2,Österreichische Bundesbahnen,1,sbahn,type:109
+109,27,SBB,1,sbahn,type:109
+109,3,Österreichische Bundesbahnen,1,sbahn,type:109
+109,36,THURBO,1,sbahn,type:109
+109,4,Montafoner Bahn,1,sbahn,type:109
+109,44,THURBO,1,sbahn,type:109
+109,6,Österreichische Bundesbahnen,1,sbahn,type:109
+109,65,THURBO,1,sbahn,type:109
+109,7,THURBO,1,sbahn,type:109
+109,9,SBB,1,sbahn,type:109
+109,E,Albtal-Verkehrs-Gesellschaft,2,rfast,name:E
+109,FEX,Albtal-Verkehrs-Gesellschaft,1,rfast,name:FEX
+109,LEER,S-Bahn Hannover,1,sbahn,type:109
+109,N14,THURBO,1,sbahn,type:109
+109,N65,THURBO,1,sbahn,type:109
+109,N71,THURBO,1,sbahn,type:109
+109,RB6,DB Regio AG Bayern,1,reg,name:RB
+109,RB63E,"Bus SEV, nur Abellio, DB Regio, Go-Ahead",1,reg,name:RB
+109,RE1,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+109,RE10,DB Regio AG Nordost,1,rfast,name:RE
+109,RE6,DB Regio AG Mitte Region Südwest,1,rfast,name:RE
+109,RS1,NordWestBahn,1,sbahn,name:RS
+109,RS2,NordWestBahn,1,sbahn,name:RS
+109,RS3,NordWestBahn,1,sbahn,name:RS
+109,RS30,NordWestBahn,1,sbahn,name:RS
+109,RS4,NordWestBahn,1,sbahn,name:RS
+109,RS6,NordWestBahn,1,sbahn,name:RS
+109,RT1,KVG Tram,1,reg,name:RT
+109,RT4,KVG Tram,1,reg,name:RT
+109,RT5,KVG Tram,1,reg,name:RT
+109,S1,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S1,DB Regio AG Baden-Württemberg,1,sbahn,name:S
+109,S1,DB Regio AG Bayern,1,sbahn,name:S
+109,S1,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S1,DB Regio AG NRW,1,sbahn,name:S
+109,S1,DB Regio AG Nordost,1,sbahn,name:S
+109,S1,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S1,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S1,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S1,DB Regio AG Südost,3,sbahn,name:S
+109,S1,S-Bahn Berlin GmbH,4,sbahn,name:S
+109,S1,S-Bahn Hamburg,1,sbahn,name:S
+109,S1,S-Bahn Hannover,1,sbahn,name:S
+109,S10,DB Regio AG Baden-Württemberg,1,sbahn,name:S
+109,S10,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S11,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S11,DB Regio AG Baden-Württemberg,1,sbahn,name:S
+109,S11,DB Regio AG NRW,1,sbahn,name:S
+109,S11,DB Regio AG Südost,1,sbahn,name:S
+109,S12,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S12,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S12,DB Regio AG NRW,1,sbahn,name:S
+109,S15,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S19,DB Regio AG NRW,1,sbahn,name:S
+109,S2,DB Regio AG Bayern,1,sbahn,name:S
+109,S2,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S2,DB Regio AG NRW,1,sbahn,name:S
+109,S2,DB Regio AG Nordost,1,sbahn,name:S
+109,S2,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S2,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S2,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S2,DB Regio AG Südost,2,sbahn,name:S
+109,S2,S-Bahn Berlin GmbH,3,sbahn,name:S
+109,S2,S-Bahn Hamburg,1,sbahn,name:S
+109,S2,S-Bahn Hannover,1,sbahn,name:S
+109,S2,Tram VBK,1,sbahn,name:S
+109,S20,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S21,S-Bahn Hannover,1,sbahn,name:S
+109,S23,DB Regio AG NRW,1,sbahn,name:S
+109,S25,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S26,S-Bahn Berlin GmbH,1,sbahn,name:S
+109,S28,REGIOBAHN,1,sbahn,name:S
+109,S3,DB Regio AG Bayern,1,sbahn,name:S
+109,S3,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S3,DB Regio AG NRW,1,sbahn,name:S
+109,S3,DB Regio AG Nordost,1,sbahn,name:S
+109,S3,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S3,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S3,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S3,DB Regio AG Südost,2,sbahn,name:S
+109,S3,S-Bahn Berlin GmbH,7,sbahn,name:S
+109,S3,S-Bahn Hamburg,1,sbahn,name:S
+109,S3,S-Bahn Hannover,1,sbahn,name:S
+109,S30,DB Regio AG Südost,1,sbahn,name:S
+109,S31,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S32,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S33,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S35,DB Regio AG Südost,1,sbahn,name:S
+109,S4,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S4,Bayerische Regiobahn,1,sbahn,name:S
+109,S4,DB Regio AG Bayern,1,sbahn,name:S
+109,S4,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S4,DB Regio AG NRW,1,sbahn,name:S
+109,S4,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S4,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S4,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S4,DB Regio AG Südost,1,sbahn,name:S
+109,S4,S-Bahn Hannover,1,sbahn,name:S
+109,S41,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S41,DB Regio AG NRW,1,sbahn,name:S
+109,S41,S-Bahn Berlin GmbH,3,sbahn,name:S
+109,S41,SNCB,1,sbahn,name:S
+109,S42,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S42,S-Bahn Berlin GmbH,3,sbahn,name:S
+109,S44,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S46,S-Bahn Berlin GmbH,3,sbahn,name:S
+109,S47,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S5,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S5,DB Regio AG Bayern,1,sbahn,name:S
+109,S5,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S5,DB Regio AG NRW,1,sbahn,name:S
+109,S5,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S5,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S5,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S5,DB Regio AG Südost,1,sbahn,name:S
+109,S5,Die Länderbahn GmbH,1,sbahn,name:S
+109,S5,S-Bahn Berlin GmbH,5,sbahn,name:S
+109,S5,S-Bahn Hamburg,1,sbahn,name:S
+109,S5,S-Bahn Hannover,1,sbahn,name:S
+109,S5,SBB,1,sbahn,name:S
+109,S51,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S51,S-Bahn Hannover,1,sbahn,name:S
+109,S52,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S5X,DB Regio AG Südost,1,sbahn,name:S
+109,S5X,Die Länderbahn GmbH,1,sbahn,name:S
+109,S6,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S6,DB Regio AG Bayern,3,sbahn,name:S
+109,S6,DB Regio AG Mitte Region Südwest,2,sbahn,name:S
+109,S6,DB Regio AG NRW,1,sbahn,name:S
+109,S6,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S6,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S6,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S6,DB Regio AG Südost,1,sbahn,name:S
+109,S6,S-Bahn Hannover,1,sbahn,name:S
+109,S6,SBB,2,sbahn,name:S
+109,S6,Österreichische Bundesbahnen,1,sbahn,name:S
+109,S60,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S61,DB Regio AG Baden-Württemberg,1,sbahn,name:S
+109,S62,DB Regio AG S-Bahn Stuttgart,1,sbahn,name:S
+109,S62,SBB GmbH,1,sbahn,name:S
+109,S64,SBB GmbH,1,sbahn,name:S
+109,S68,DB Regio AG NRW,1,sbahn,name:S
+109,S7,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S7,DB Regio AG Bayern,1,sbahn,name:S
+109,S7,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S7,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S7,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S7,RheinRuhrBahn,1,sbahn,name:S
+109,S7,S-Bahn Berlin GmbH,4,sbahn,name:S
+109,S7,S-Bahn Hamburg,1,sbahn,name:S
+109,S7,S-Bahn Hannover,1,sbahn,name:S
+109,S71,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S75,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S8,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S8,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S8,DB Regio AG NRW,1,sbahn,name:S
+109,S8,DB Regio AG S-Bahn München,1,sbahn,name:S
+109,S8,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S8,DB Regio AG Südost,2,sbahn,name:S
+109,S8,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S81,Albtal-Verkehrs-Gesellschaft,1,sbahn,name:S
+109,S85,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,S9,DB Regio AG Mitte Region Südwest,1,sbahn,name:S
+109,S9,DB Regio AG NRW,1,sbahn,name:S
+109,S9,DB Regio AG S-Bahn Rhein-Main,1,sbahn,name:S
+109,S9,DB Regio AG Südost,1,sbahn,name:S
+109,S9,S-Bahn Berlin GmbH,2,sbahn,name:S
+109,SEV3,S-Bahn Hannover,1,bus,name:SEV
+109,SEV7,S-Bahn Hannover,1,bus,name:SEV
+109,s,Österreichische Bundesbahnen,1,sbahn,name:S

@@ -1,0 +1,5 @@
+first 50 of the recomputed cover against the 50 cover stations polled now
+kept 44, added 6, dropped 6
+added (look up their meta EVAs): 8000183,8000073,8000664,8001774,8000128,8000294
+dropped: 8000225 Leer(Ostfriesl),8010304 Rostock Hbf,8000199 Kiel Hbf,8011113 Berlin Südkreuz,8000118 Gelsenkirchen Hbf,8000316 Rheine
+EVAs polled with the kept stations' meta EVAs: 55 (meta of added stations not counted), 19.25 requests a minute of 41

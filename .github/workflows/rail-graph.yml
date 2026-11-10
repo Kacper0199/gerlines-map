@@ -1,0 +1,48 @@
+name: Rail graph
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pipelines/rail_graph/**"
+      - "pipelines/common/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/rail-graph.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "pipelines/rail_graph/**"
+      - "pipelines/common/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/rail-graph.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rail-graph-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  rail-graph:
+    name: Rail graph tests (osmium, scipy)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          version: "0.13.5"
+          enable-cache: true
+          cache-python: true
+
+      - name: Install the rail graph group
+        run: uv sync --locked --group rail-graph
+
+      - name: Pytest
+        run: uv run --frozen --group rail-graph pytest pipelines/rail_graph

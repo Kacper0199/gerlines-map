@@ -1,0 +1,148 @@
+{
+  "name": "keyframe-shape-numbers",
+  "description": "keyframe-basic with shapes named by stable numbers (section 0x31).",
+  "decoder": "keyframe",
+  "expected": {
+    "kind": "keyframe",
+    "sequence": 1000,
+    "timetableVersion": 7,
+    "shapeEpoch": 3,
+    "timeBase": 1793000000,
+    "trips": [
+      {
+        "key": 10,
+        "shapeId": 17,
+        "category": "rfast",
+        "realtime": true,
+        "cancelled": false,
+        "foreign": false,
+        "delay": 120,
+        "line": "RE 1",
+        "trainNumber": 4711,
+        "firstStop": 2,
+        "stops": [
+          {
+            "arrival": 1792999940,
+            "departure": 1793000000,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793000300,
+            "departure": 1793000360,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          },
+          {
+            "arrival": 1793000900,
+            "departure": null,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          }
+        ]
+      },
+      {
+        "key": 20,
+        "shapeId": 17,
+        "category": "rfast",
+        "realtime": true,
+        "cancelled": true,
+        "foreign": true,
+        "delay": 120,
+        "line": "Zürich HB – Łódź",
+        "trainNumber": null,
+        "firstStop": 2,
+        "stops": [
+          {
+            "arrival": 1792999800,
+            "departure": 1792999900,
+            "cancelled": false,
+            "realtime": false,
+            "s": 1000.25
+          },
+          {
+            "arrival": 1793000400,
+            "departure": 1793000400,
+            "cancelled": false,
+            "realtime": false,
+            "s": 5230.5
+          }
+        ]
+      },
+      {
+        "key": 30,
+        "shapeId": 4021,
+        "category": "hsr",
+        "realtime": false,
+        "cancelled": false,
+        "foreign": false,
+        "delay": null,
+        "line": "ICE",
+        "trainNumber": 379,
+        "firstStop": 0,
+        "stops": [
+          {
+            "arrival": null,
+            "departure": 1793000030,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793001800,
+            "departure": 1793001920,
+            "cancelled": true,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793004000,
+            "departure": null,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          }
+        ]
+      },
+      {
+        "key": 40,
+        "shapeId": 17,
+        "category": "sbahn",
+        "realtime": true,
+        "cancelled": false,
+        "foreign": false,
+        "delay": 120,
+        "line": null,
+        "trainNumber": 4711,
+        "firstStop": 2,
+        "stops": [
+          {
+            "arrival": 1792999940,
+            "departure": 1793000000,
+            "cancelled": false,
+            "realtime": false,
+            "s": null
+          },
+          {
+            "arrival": 1793000300,
+            "departure": 1793000360,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          },
+          {
+            "arrival": 1793000900,
+            "departure": null,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          }
+        ]
+      }
+    ]
+  },
+  "byteLength": 477
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "equipmentnumber": 10906606,
+    "type": "ELEVATOR",
+    "description": "zu Gleis 6/7",
+    "geocoordX": 9.7005148,
+    "geocoordY": 50.0494346,
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "stationnumber": 2060,
+    "operatorname": "DB InfraGO"
+  },
+  {
+    "equipmentnumber": 10018524,
+    "type": "ESCALATOR",
+    "description": "zu Gleis 1/2",
+    "geocoordX": 6.9803912,
+    "geocoordY": 51.45429495,
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "stationnumber": 1693,
+    "operatorname": "DB InfraGO"
+  },
+  {
+    "equipmentnumber": 10855569,
+    "type": "ELEVATOR",
+    "description": "Aufzug zu Bstg. 2",
+    "geocoordX": 6.7381006,
+    "geocoordY": 51.5676806,
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "stationnumber": 1223,
+    "operatorname": "DB InfraGO"
+  },
+  {
+    "equipmentnumber": 10453206,
+    "type": "ELEVATOR",
+    "description": "BSTG. 1 - GL.1",
+    "geocoordX": 7.4042739,
+    "geocoordY": 50.4346823,
+    "state": "INACTIVE",
+    "stateExplanation": "not available",
+    "stationnumber": 144,
+    "operatorname": "DB InfraGO",
+    "operationalResumeDate": "2026-10-30"
+  },
+  {
+    "equipmentnumber": 10900965,
+    "type": "ELEVATOR",
+    "description": "Aufzug zu Gl.102/103",
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "stationnumber": 649,
+    "operatorname": "Stadt Bingen"
+  },
+  {
+    "equipmentnumber": 10861132,
+    "type": "ELEVATOR",
+    "geocoordX": 8.92127,
+    "geocoordY": 50.8239,
+    "state": "ACTIVE",
+    "stateExplanation": "available",
+    "stationnumber": 3191,
+    "operatorname": "DB InfraGO"
+  },
+  {
+    "equipmentnumber": 10903300,
+    "type": "ESCALATOR",
+    "description": "von Gl. 7/8 zum Südsteg aufw.",
+    "geocoordX": 10.00726,
+    "geocoordY": 53.55214,
+    "state": "INACTIVE",
+    "stateExplanation": "not available",
+    "stationnumber": 2514,
+    "operatorname": "DB InfraGO"
+  },
+  {
+    "equipmentnumber": 10307731,
+    "type": "ELEVATOR",
+    "description": "zu Gleis 2/3",
+    "geocoordX": 9.5260327,
+    "geocoordY": 48.8070748,
+    "state": "UNKNOWN",
+    "stateExplanation": "monitoring not available",
+    "stationnumber": 5682,
+    "operatorname": "DB InfraGO"
+  }
+]

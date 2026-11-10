@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`the recorded table sample > forecasts ICE 619 from Stuttgart with the quantiles of 2026-08 to 2026-10 1`] = `
+[
+  {
+    "basis": "b1",
+    "expectedDelayMinutes": 2,
+    "index": 18,
+    "level": "stop",
+    "runs": 3123,
+    "stopsAhead": 1,
+    "upperDelayMinutes": 4,
+  },
+  {
+    "basis": "b1",
+    "expectedDelayMinutes": 3,
+    "index": 19,
+    "level": "stop",
+    "runs": 965,
+    "stopsAhead": 2,
+    "upperDelayMinutes": 7,
+  },
+  {
+    "basis": "b1",
+    "expectedDelayMinutes": 1,
+    "index": 20,
+    "level": "train",
+    "runs": 35,
+    "stopsAhead": 3,
+    "upperDelayMinutes": 2,
+  },
+  {
+    "basis": "b1",
+    "expectedDelayMinutes": 0,
+    "index": 21,
+    "level": "train",
+    "runs": 32,
+    "stopsAhead": 4,
+    "upperDelayMinutes": 5,
+  },
+]
+`;

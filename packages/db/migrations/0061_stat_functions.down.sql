@@ -1,0 +1,11 @@
+DROP FUNCTION stat_hist_quantile(bigint[], text, double precision);
+DROP FUNCTION stat_hist_counts(bigint[]);
+DROP AGGREGATE stat_hist_sum(bigint[]);
+DROP FUNCTION stat_hist_add(bigint[], bigint[]);
+DROP FUNCTION stat_speed_bin(double precision);
+DROP FUNCTION stat_gain_bin(integer);
+DROP FUNCTION stat_delay_bin(integer);
+DROP TABLE stat_bin;
+DROP FUNCTION stat_source_key(text, text, text);
+DROP FUNCTION stat_source_member_order(text);
+DROP FUNCTION stat_source_rank(text, text);

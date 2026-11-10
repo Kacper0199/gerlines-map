@@ -1,0 +1,6 @@
+category,runs,live_mirror,delay_mirror,nonzero_mirror,live_mobilithek,delay_mobilithek,nonzero_mobilithek,live_deincr,delay_deincr,nonzero_deincr,live_gtfsde,delay_gtfsde,nonzero_gtfsde,live_any_delfi,live_any_gtfsrt
+hsr,291,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,58.8,57.4,58.1,0.0,58.8
+ld,199,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,23.1,21.6,22.1,0.0,23.1
+rfast,1683,64.4,59.4,59.8,64.6,59.5,60.1,68.3,67.7,63.7,89.5,85.5,84.2,68.3,93.3
+reg,3543,59.4,55.4,51.7,60.1,55.7,52.0,62.2,61.7,54.8,85.5,82.0,76.3,62.2,86.4
+sbahn,3094,69.4,62.5,64.1,70.5,62.7,64.5,73.2,70.5,67.1,88.0,83.6,82.9,73.2,92.3

@@ -1,0 +1,13 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "inputs": ["$TURBO_EXTENDS$", "$TURBO_ROOT$/design/variants/data/ice379.json"],
+      "passThroughEnv": ["TMPDIR"]
+    },
+    "typecheck": {
+      "inputs": ["$TURBO_EXTENDS$", "$TURBO_ROOT$/design/variants/data/ice379.json"]
+    }
+  }
+}

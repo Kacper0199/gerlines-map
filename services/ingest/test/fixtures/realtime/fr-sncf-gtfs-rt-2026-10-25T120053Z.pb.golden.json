@@ -1,0 +1,670 @@
+{
+  "ok": true,
+  "feedVersion": null,
+  "feedTimestamp": 1792929640,
+  "events": [
+    {
+      "kind": "trip",
+      "source": "fr-sncf-gtfs-rt",
+      "entityId": "OCESN5300F1187_F:OUI:FR:Line::3544567F-7F17-4253-85BB-D1E6A7B27A9A::87481002:87688887:8:1121:20261025",
+      "observedAt": 1792929653711,
+      "feedTimestamp": 1792929640,
+      "updateTimestamp": 1792929400,
+      "sourceTripId": "OCESN5300F1187_F:OUI:FR:Line::3544567F-7F17-4253-85BB-D1E6A7B27A9A::87481002:87688887:8:1121:20261025",
+      "routeId": null,
+      "directionId": null,
+      "startDate": "2026-10-25",
+      "startTime": "04:50:00",
+      "trainNumber": "5300",
+      "relationship": "scheduled",
+      "vehicleId": null,
+      "vehicleLabel": null,
+      "delaySeconds": null,
+      "stops": [
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8748100
+          },
+          "arrival": null,
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792900200,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8748400
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792902360,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792902540,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8757124
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792905780,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792906020,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8739370
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792909500,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 3600,
+            "time": 1792913280,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8772319
+          },
+          "arrival": {
+            "delaySeconds": 4800,
+            "time": 1792921800,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 4800,
+            "time": 1792922400,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8776302
+          },
+          "arrival": {
+            "delaySeconds": 4800,
+            "time": 1792924500,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 6600,
+            "time": 1792926600,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8770397
+          },
+          "arrival": {
+            "delaySeconds": 7200,
+            "time": 1792929420,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 7200,
+            "time": 1792929600,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8768888
+          },
+          "arrival": {
+            "delaySeconds": 7200,
+            "time": 1792930860,
+            "uncertaintySeconds": null
+          },
+          "departure": null,
+          "relationship": "scheduled",
+          "assignedStop": null
+        }
+      ]
+    },
+    {
+      "kind": "trip",
+      "source": "fr-sncf-gtfs-rt",
+      "entityId": "OCESN9898F1187_F:OUI:FR:Line::4FA25873-A63A-4A2D-B62F-EF950E45D8A9::87688887:82001000:13:1415:20261025",
+      "observedAt": 1792929653711,
+      "feedTimestamp": 1792929640,
+      "updateTimestamp": 1792927809,
+      "sourceTripId": "OCESN9898F1187_F:OUI:FR:Line::4FA25873-A63A-4A2D-B62F-EF950E45D8A9::87688887:82001000:13:1415:20261025",
+      "routeId": null,
+      "directionId": null,
+      "startDate": "2026-10-25",
+      "startTime": "06:29:00",
+      "trainNumber": "9898",
+      "relationship": "scheduled",
+      "vehicleId": null,
+      "vehicleLabel": null,
+      "delaySeconds": null,
+      "stops": [
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8768888
+          },
+          "arrival": null,
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792906140,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8770397
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792907880,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792908060,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8776302
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792910580,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792910880,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8772319
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792913040,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792913520,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8771304
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792918620,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792919220,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8730086
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792926240,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792926360,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8730082
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792927620,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792927740,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8718206
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792929060,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792929240,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8718201
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792930740,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792930920,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8721202
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792932840,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792933260,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8719203
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792936380,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792936680,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8719100
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792937880,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 5400,
+            "time": 1792938060,
+            "uncertaintySeconds": null
+          },
+          "relationship": "skipped",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8200100
+          },
+          "arrival": {
+            "delaySeconds": 5400,
+            "time": 1792939500,
+            "uncertaintySeconds": null
+          },
+          "departure": null,
+          "relationship": "skipped",
+          "assignedStop": null
+        }
+      ]
+    },
+    {
+      "kind": "trip",
+      "source": "fr-sncf-gtfs-rt",
+      "entityId": "OCESN9711F1187_F:OUI:FR:Line::6667353C-75C7-4A33-8ADE-EBA7FFC003C6::87686006:71718010:10:1336:20261025",
+      "observedAt": 1792929653711,
+      "feedTimestamp": 1792929640,
+      "updateTimestamp": 1792927809,
+      "sourceTripId": "OCESN9711F1187_F:OUI:FR:Line::6667353C-75C7-4A33-8ADE-EBA7FFC003C6::87686006:71718010:10:1336:20261025",
+      "routeId": null,
+      "directionId": null,
+      "startDate": "2026-10-25",
+      "startTime": "06:42:00",
+      "trainNumber": "9711",
+      "relationship": "scheduled",
+      "vehicleId": null,
+      "vehicleLabel": null,
+      "delaySeconds": null,
+      "stops": [
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8768600
+          },
+          "arrival": null,
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792906920,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8776302
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792914780,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792914960,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8770397
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792917720,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792917720,
+            "uncertaintySeconds": null
+          },
+          "relationship": "skipped",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "source",
+            "id": "StopArea:OCE87703975"
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792917720,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792917960,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8768888
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792919460,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792919460,
+            "uncertaintySeconds": null
+          },
+          "relationship": "skipped",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "source",
+            "id": "StopArea:OCE87688887"
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792919460,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792919820,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8778100
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792922640,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792922820,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8778110
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792923660,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792923840,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 8778400
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792925820,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792926360,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 7104307
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792927620,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792927800,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 7179300
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792928640,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792928820,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": null,
+          "stop": {
+            "kind": "uic",
+            "code": 7171801
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792931760,
+            "uncertaintySeconds": null
+          },
+          "departure": null,
+          "relationship": "scheduled",
+          "assignedStop": null
+        }
+      ]
+    }
+  ]
+}

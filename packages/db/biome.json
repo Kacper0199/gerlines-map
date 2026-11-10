@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": "//",
+  "overrides": [
+    {
+      "includes": ["src/generated/**"],
+      "formatter": { "enabled": false },
+      "linter": { "enabled": false },
+      "assist": { "enabled": false }
+    }
+  ]
+}

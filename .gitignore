@@ -1,0 +1,64 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.envrc
+.dev.vars
+.wrangler/
+*.pem
+*.key
+*.p12
+*.pfx
+/secrets/
+
+# Research raw material (scraped pages, screenshots, API samples, dumps)
+raw/
+
+# Local data volumes and generated datasets (root only; package folders named data are tracked)
+/data/
+*.osm.pbf
+*.pmtiles
+*.mbtiles
+*.parquet
+!/pipelines/backfill/tests/fixtures/piebro-*.parquet
+*.duckdb
+
+# Tooling output
+node_modules/
+dist/
+build/
+coverage/
+.turbo/
+.next/
+.vite/
+.cache/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+playwright-report/
+test-results/
+.playwright-cli/
+
+# Personal git hook overrides
+lefthook-local.yml
+
+# OS and editors
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+
+# Third-party screenshots (design record, not publishable in a public repo)
+design/references/
+
+# Rendered variant screenshots (regenerable from design/variants/*.html)
+design/variants/shots/
+
+# paraglide 3 no longer writes its own ignore file
+**/*.inlang/cache/
+infra/production/*.env
+!infra/production/production.env.example

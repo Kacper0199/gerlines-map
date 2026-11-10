@@ -1,0 +1,7 @@
+{
+  "name": "invalid-magic",
+  "description": "keyframe-basic with the magic changed to GLFX.",
+  "decoder": "keyframe",
+  "error": "bad_magic",
+  "byteLength": 485
+}

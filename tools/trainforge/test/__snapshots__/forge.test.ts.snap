@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`the committed catalogue > keeps a golden hash of every output file 1`] = `"06097a44dd97fb2759596e5cc173fd384c3d7f9de6629575e5f26ada3dd7f361"`;

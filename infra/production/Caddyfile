@@ -1,0 +1,96 @@
+# Edge of the production stack (infra/compose.production.yaml, service edge). Only this listens publicly.
+# Cloudflare proxies every request: TLS with a Cloudflare Origin CA certificate, per-hostname Authenticated Origin
+# Pulls with our own client certificate (only a certificate issued by our own CA, origin-pull-own-ca.pem, completes a
+# handshake; never Cloudflare's shared zone-level certificate), no ACME and no port 80.
+# Environment: PUBLIC_HOST (the site's host name), CLOUDFLARE_RANGES (space separated, from
+# infra/production/cloudflare-ips.txt through cloudflare-ranges.sh). Steps: docs/runbooks/deploy.md.
+{
+	admin off
+	persist_config off
+	auto_https disable_redirects
+	servers :443 {
+		protocols h1 h2
+		trusted_proxies static {$CLOUDFLARE_RANGES}
+		trusted_proxies_strict
+		client_ip_headers CF-Connecting-IP
+		max_header_size 16KB
+		timeouts {
+			read_header 10s
+			read_body 30s
+			idle 2m
+		}
+	}
+}
+
+http://127.0.0.1:8081 {
+	bind 127.0.0.1
+	respond /healthz 200
+	respond 404
+}
+
+https://{$PUBLIC_HOST} {
+	tls /etc/caddy/tls/origin.pem /etc/caddy/tls/origin.key {
+		protocols tls1.2 tls1.3
+		client_auth {
+			mode require_and_verify
+			trust_pool file /etc/caddy/tls/origin-pull-own-ca.pem
+		}
+	}
+
+	@notCloudflare not remote_ip {$CLOUDFLARE_RANGES}
+	request_header @notCloudflare -CF-Connecting-IP
+	request_header @notCloudflare -X-Forwarded-For
+	request_header @notCloudflare -X-Real-IP
+	request_header @notCloudflare -Forwarded
+	request_header @notCloudflare -True-Client-IP
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		Referrer-Policy no-referrer
+		Cross-Origin-Opener-Policy same-origin
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+		Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tiles.openfreemap.org https://tiles.versatiles.org https://tiles.mapterhorn.com; connect-src 'self' https://tiles.openfreemap.org https://tiles.versatiles.org https://tiles.mapterhorn.com wss://{$PUBLIC_HOST}; worker-src 'self' blob:; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+		-Server
+	}
+
+	encode zstd gzip
+
+	handle /api/dev/* {
+		respond 404
+	}
+
+	handle /api/* {
+		reverse_proxy api:8787
+	}
+
+	handle /live/v1/* {
+		reverse_proxy live:8790
+	}
+
+	handle /playback/v1/* {
+		reverse_proxy live:8790
+	}
+
+	handle /connection/websocket {
+		reverse_proxy centrifugo:8000
+	}
+
+	handle /assets/* {
+		root * /srv/web
+		header Cache-Control "public, max-age=31536000, immutable"
+		file_server {
+			precompressed br zstd gzip
+		}
+	}
+
+	handle {
+		root * /srv/web
+		header Cache-Control "no-cache"
+		try_files {path} /index.html
+		file_server {
+			precompressed br zstd gzip
+		}
+	}
+}

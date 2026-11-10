@@ -1,0 +1,941 @@
+{
+  "kind": "trainSegments",
+  "period": {
+    "from": "2026-09-28",
+    "to": "2026-10-27",
+    "days": 30
+  },
+  "freshness": {
+    "refreshedAt": "2026-11-07T14:05:00.000Z",
+    "maxLagMinutes": 40,
+    "note": "Statistics are up to about 40 minutes behind the live map, because they are read from rollups refreshed every 30 minutes."
+  },
+  "generatedAt": "2026-10-27T05:00:00.000Z",
+  "number": "619",
+  "operatorId": "db-fernverkehr-ag",
+  "categories": ["hsr"],
+  "groups": [
+    {
+      "category": "hsr",
+      "operator": {
+        "id": "db-fernverkehr-ag",
+        "name": "DB Fernverkehr AG"
+      },
+      "runs": 26,
+      "shown": true
+    },
+    {
+      "category": "reg",
+      "operator": null,
+      "runs": 9,
+      "shown": false
+    }
+  ],
+  "route": {
+    "runs": 26,
+    "patternRuns": 24
+  },
+  "minRuns": 5,
+  "note": "Delay gain is the arrival delay at the end of a segment minus the departure delay at its start, in whole minutes like the sources. Median and p80 are the smallest gains at which half and 80 percent of the legs are reached, so a gain of exactly 0 counts as 0. Legs after a feed stopped reporting keep a gain of exactly 0, so more legs show 0 than ran exactly on time.",
+  "gainBins": [
+    {
+      "fromS": null,
+      "toS": -600
+    },
+    {
+      "fromS": -600,
+      "toS": -300
+    },
+    {
+      "fromS": -300,
+      "toS": -240
+    },
+    {
+      "fromS": -240,
+      "toS": -180
+    },
+    {
+      "fromS": -180,
+      "toS": -120
+    },
+    {
+      "fromS": -120,
+      "toS": -60
+    },
+    {
+      "fromS": -60,
+      "toS": 0
+    },
+    {
+      "fromS": 0,
+      "toS": 60
+    },
+    {
+      "fromS": 60,
+      "toS": 120
+    },
+    {
+      "fromS": 120,
+      "toS": 180
+    },
+    {
+      "fromS": 180,
+      "toS": 240
+    },
+    {
+      "fromS": 240,
+      "toS": 300
+    },
+    {
+      "fromS": 300,
+      "toS": 360
+    },
+    {
+      "fromS": 360,
+      "toS": 420
+    },
+    {
+      "fromS": 420,
+      "toS": 480
+    },
+    {
+      "fromS": 480,
+      "toS": 540
+    },
+    {
+      "fromS": 540,
+      "toS": 600
+    },
+    {
+      "fromS": 600,
+      "toS": 900
+    },
+    {
+      "fromS": 900,
+      "toS": 1800
+    },
+    {
+      "fromS": 1800,
+      "toS": 3600
+    },
+    {
+      "fromS": 3600,
+      "toS": null
+    }
+  ],
+  "segments": [
+    {
+      "position": 0,
+      "onRoute": true,
+      "from": {
+        "id": "07d45fba-4bcb-58e1-8162-11a19164dbac",
+        "name": "Hamburg-Altona"
+      },
+      "to": {
+        "id": "d9306f74-e0a3-5894-8011-7e5d8304ca7a",
+        "name": "Hamburg Dammtor"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 0,
+        "meanGainS": 3.3,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 22, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 700, 160, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 1,
+      "onRoute": true,
+      "from": {
+        "id": "d9306f74-e0a3-5894-8011-7e5d8304ca7a",
+        "name": "Hamburg Dammtor"
+      },
+      "to": {
+        "id": "efa75307-7081-52d9-90a7-49ccda1ff516",
+        "name": "Hamburg Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 0,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 0,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 820, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 2,
+      "onRoute": true,
+      "from": {
+        "id": "efa75307-7081-52d9-90a7-49ccda1ff516",
+        "name": "Hamburg Hbf"
+      },
+      "to": {
+        "id": "71e2c8ad-e1f5-5c6a-9de5-a1deaa99849e",
+        "name": "Hamburg-Harburg"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 31.7,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 10, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 360, 300, 160, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 3,
+      "onRoute": true,
+      "from": {
+        "id": "71e2c8ad-e1f5-5c6a-9de5-a1deaa99849e",
+        "name": "Hamburg-Harburg"
+      },
+      "to": {
+        "id": "e8278339-81d9-5653-888a-65dea36f07bc",
+        "name": "Bremen Hbf"
+      },
+      "train": {
+        "status": "missing",
+        "runs": 3,
+        "reason": "too_few_runs"
+      },
+      "all": {
+        "status": "known",
+        "runs": 880,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 500, 280, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 4,
+      "onRoute": true,
+      "from": {
+        "id": "e8278339-81d9-5653-888a-65dea36f07bc",
+        "name": "Bremen Hbf"
+      },
+      "to": {
+        "id": "5eb5ce58-ca54-5fb5-aa4a-3a1766e73138",
+        "name": "Osnabrück Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 6, 12, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 100, 560, 200, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 5,
+      "onRoute": true,
+      "from": {
+        "id": "5eb5ce58-ca54-5fb5-aa4a-3a1766e73138",
+        "name": "Osnabrück Hbf"
+      },
+      "to": {
+        "id": "c2060856-6590-5d17-813e-b60f9d982f02",
+        "name": "Münster Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 38.3,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 14, 6, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 420, 300, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 6,
+      "onRoute": true,
+      "from": {
+        "id": "c2060856-6590-5d17-813e-b60f9d982f02",
+        "name": "Münster Hauptbahnhof"
+      },
+      "to": {
+        "id": "6a153571-a445-5a4e-b93c-5db616528723",
+        "name": "Hamm (Westf), Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 23.3,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 12, 8, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 460, 280, 160, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 7,
+      "onRoute": true,
+      "from": {
+        "id": "6a153571-a445-5a4e-b93c-5db616528723",
+        "name": "Hamm (Westf), Hauptbahnhof"
+      },
+      "to": {
+        "id": "b9862478-ffa7-54f9-b2a3-4fab74ce21d7",
+        "name": "Hagen Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 120,
+        "p80GainS": 180,
+        "meanGainS": 91.7,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 0, 10, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 380, 280, 160, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 8,
+      "onRoute": true,
+      "from": {
+        "id": "b9862478-ffa7-54f9-b2a3-4fab74ce21d7",
+        "name": "Hagen Hbf"
+      },
+      "to": {
+        "id": "ed24ca67-b3f5-512d-a0b1-b7e00cc20052",
+        "name": "Wuppertal Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 120,
+        "p80GainS": 240,
+        "meanGainS": 95.8,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 6, 0, 12, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 60, 360, 300, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 9,
+      "onRoute": true,
+      "from": {
+        "id": "ed24ca67-b3f5-512d-a0b1-b7e00cc20052",
+        "name": "Wuppertal Hbf"
+      },
+      "to": {
+        "id": "6d351cb8-9da9-5ad8-8e3e-c54a988e375f",
+        "name": "Solingen, Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 31.7,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 10, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 460, 260, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 10,
+      "onRoute": true,
+      "from": {
+        "id": "6d351cb8-9da9-5ad8-8e3e-c54a988e375f",
+        "name": "Solingen, Hauptbahnhof"
+      },
+      "to": {
+        "id": "4eda9b92-2ddf-5610-b59b-ed665a8b2610",
+        "name": "Köln Hbf"
+      },
+      "train": {
+        "status": "missing",
+        "runs": 0,
+        "reason": "no_runs"
+      },
+      "all": {
+        "status": "known",
+        "runs": 890,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 500, 250, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 11,
+      "onRoute": true,
+      "from": {
+        "id": "4eda9b92-2ddf-5610-b59b-ed665a8b2610",
+        "name": "Köln Hbf"
+      },
+      "to": {
+        "id": "0e302b55-5ffe-5653-b9bf-a0b8548ed435",
+        "name": "Siegburg Bf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": -60,
+        "p80GainS": 0,
+        "meanGainS": -17.5,
+        "gainCounts": [0, 0, 0, 0, 0, 4, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 120, 560, 220, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 12,
+      "onRoute": true,
+      "from": {
+        "id": "0e302b55-5ffe-5653-b9bf-a0b8548ed435",
+        "name": "Siegburg Bf"
+      },
+      "to": {
+        "id": "1327fb01-77c8-54ce-b7f5-97f7957e8725",
+        "name": "Frankfurt (Main) Flughafen Fernbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 15,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 18, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 540, 260, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 13,
+      "onRoute": true,
+      "from": {
+        "id": "1327fb01-77c8-54ce-b7f5-97f7957e8725",
+        "name": "Frankfurt (Main) Flughafen Fernbahnhof"
+      },
+      "to": {
+        "id": "30a23232-6791-5f12-b051-9eeb831b14e8",
+        "name": "Frankfurt (Main) Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 60,
+        "p80GainS": 180,
+        "meanGainS": 61.7,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 8, 10, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 440, 280, 120, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 14,
+      "onRoute": true,
+      "from": {
+        "id": "30a23232-6791-5f12-b051-9eeb831b14e8",
+        "name": "Frankfurt (Main) Hauptbahnhof"
+      },
+      "to": {
+        "id": "0e16b66f-3fcc-5745-8c9d-590191b59e57",
+        "name": "Mannheim, Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 180,
+        "p80GainS": 300,
+        "meanGainS": 145.8,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 8, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 300, 260, 200, 140, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 15,
+      "onRoute": true,
+      "from": {
+        "id": "0e16b66f-3fcc-5745-8c9d-590191b59e57",
+        "name": "Mannheim, Hauptbahnhof"
+      },
+      "to": {
+        "id": "6830a53c-4781-5945-a933-9a504c724ac1",
+        "name": "Heidelberg, Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 0,
+        "meanGainS": 10,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 20, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 600, 220, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 16,
+      "onRoute": true,
+      "from": {
+        "id": "6830a53c-4781-5945-a933-9a504c724ac1",
+        "name": "Heidelberg, Hauptbahnhof"
+      },
+      "to": {
+        "id": "4e542447-68e4-5228-9b4a-a7cc7b9a1072",
+        "name": "Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 23.3,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 12, 8, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 480, 260, 160, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 17,
+      "onRoute": true,
+      "from": {
+        "id": "4e542447-68e4-5228-9b4a-a7cc7b9a1072",
+        "name": "Hauptbahnhof"
+      },
+      "to": {
+        "id": "22d3ddf2-8eaa-57f2-b309-6fb16c445143",
+        "name": "Ulm Hauptbahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 5,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 4, 14, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 100, 520, 240, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 18,
+      "onRoute": true,
+      "from": {
+        "id": "22d3ddf2-8eaa-57f2-b309-6fb16c445143",
+        "name": "Ulm Hauptbahnhof"
+      },
+      "to": {
+        "id": "b44161da-9c73-5ca3-87e9-7fd1fdcbd172",
+        "name": "Günzburg, Bahnhof"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 20,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 16, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 500, 280, 120, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 19,
+      "onRoute": true,
+      "from": {
+        "id": "b44161da-9c73-5ca3-87e9-7fd1fdcbd172",
+        "name": "Günzburg, Bahnhof"
+      },
+      "to": {
+        "id": "ee75219a-2cfe-5607-9e66-b0e7b53be9c5",
+        "name": "Augsburg Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 83.3,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 0, 12, 8, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 60,
+        "p80GainS": 120,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 380, 260, 180, 80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 20,
+      "onRoute": true,
+      "from": {
+        "id": "ee75219a-2cfe-5607-9e66-b0e7b53be9c5",
+        "name": "Augsburg Hbf"
+      },
+      "to": {
+        "id": "3349710b-e1ee-5c92-847b-6760904e5135",
+        "name": "München Hbf"
+      },
+      "train": {
+        "status": "known",
+        "runs": 24,
+        "medianGainS": 0,
+        "p80GainS": 0,
+        "meanGainS": -5,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 8, 12, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      },
+      "all": {
+        "status": "known",
+        "runs": 900,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 100, 560, 240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    },
+    {
+      "position": 21,
+      "onRoute": false,
+      "from": {
+        "id": "efa75307-7081-52d9-90a7-49ccda1ff516",
+        "name": "Hamburg Hbf"
+      },
+      "to": {
+        "id": "e8278339-81d9-5653-888a-65dea36f07bc",
+        "name": "Bremen Hbf"
+      },
+      "train": {
+        "status": "missing",
+        "runs": 2,
+        "reason": "too_few_runs"
+      },
+      "all": {
+        "status": "known",
+        "runs": 40,
+        "medianGainS": 0,
+        "p80GainS": 60,
+        "meanGainS": 0,
+        "gainCounts": [0, 0, 0, 0, 0, 0, 0, 30, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "speed": {
+          "status": "missing",
+          "legs": 0,
+          "reason": "no_distance"
+        }
+      }
+    }
+  ],
+  "truncated": false
+}

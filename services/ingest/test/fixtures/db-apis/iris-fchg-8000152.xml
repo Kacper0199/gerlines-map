@@ -1,0 +1,21 @@
+<timetable station="Hannover Hbf" eva="8000152">
+
+<s id="6161405535149816642-2610260406-5" eva="8000152">
+    <ar ct="2610260451" l="S5"/>
+</s>
+<s id="1767422951519870524-2610252151-20" eva="8000152">
+    <ar cp="1" ct="2610260008" l="RB38"/>
+</s>
+<s id="2810195840507242816-2610252132-5" eva="8000152">
+    <ar ct="2610260046">
+        <m id="7071551368623384147-5664866768097215324" t="d" c="47" ts="2610252129" ts-tts="26-10-25 21:29:50.909"/>
+        <m id="8205116904917690951-" t="f" c="0" ts="2610252142" ts-tts="26-10-25 21:42:37.720"/>
+        <m id="-3840934826685621445-" t="f" c="0" ts="2610252228" ts-tts="26-10-25 22:28:21.052"/>
+    </ar>
+</s>
+<s id="-3511439655951240562-2610260705-100" eva="8000152">
+    <ar cpth="Gifhorn|Leiferde(b Gifhorn)|Meinersen|Dedenhausen|Dollbergen|Immensen-Arpke|Lehrte" ppth="Gifhorn|Leiferde(b Gifhorn)|Meinersen|Dedenhausen|Dollbergen|Immensen-Arpke|Lehrte" pp="11 D-G" pt="2610260750" ps="a" l="RE30" fb="RE30">
+        <m id="-7650260030006190048" t="d" c="1" ts="2610251130" ts-tts="26-10-25 11:30:03.928"/>
+    </ar>
+    <tl t="p" o="R0" c="ENO" n="83596"/>
+</s></timetable>

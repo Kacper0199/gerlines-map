@@ -1,0 +1,13 @@
+*
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!packages/config/
+!packages/db/
+!packages/schema/
+!services/ingest/
+**/node_modules
+**/dist
+**/.turbo
+services/ingest/test
+**/*.test.ts

@@ -1,0 +1,52 @@
+{
+  "name": "shape-pack-compact",
+  "description": "shape-pack-stubs in the compact vertex coding (version 1.4, critical sections 0x84 to 0x87): zigzag varints of the x and y steps, of whole centimetre z steps and of each M step less the step predicted from x and y. Decodes to the same shapes.",
+  "decoder": "shapePack",
+  "expected": {
+    "kind": "shapePack",
+    "timetableVersion": 7,
+    "shapeEpoch": 3,
+    "shapes": [
+      {
+        "hash": "00112233445566aa000000000000000000000000000000000000000000000000",
+        "number": 17,
+        "x": [1492000.12, 1492100.5, 1492250],
+        "y": [6894000.01, 6893900, 6893800.99],
+        "z": [34.5, 35.25, 36],
+        "m": [0, 150.5, 312.4],
+        "length": 312.4,
+        "stops": [0, 150.5, 312.4],
+        "tunnels": [[20, 80.75]],
+        "stubs": {
+          "before": {
+            "x": [1491900.12, 1491800],
+            "y": [6894100.01, 6894250.5],
+            "d": [100.5, 250.75]
+          },
+          "after": {
+            "x": [1492400],
+            "y": [6893700.99],
+            "d": [180.25]
+          }
+        }
+      },
+      {
+        "hash": "ffeeddccbbaa9988111111111111111111111111111111111111111111111111",
+        "number": 4021,
+        "x": [-20037508.34, -20037000],
+        "y": [20037508.34, 20037000],
+        "z": null,
+        "m": [0, 508.34],
+        "length": 508.34,
+        "stops": [],
+        "tunnels": [],
+        "stubs": {
+          "before": null,
+          "after": null
+        }
+      }
+    ],
+    "coding": "compact"
+  },
+  "byteLength": 513
+}

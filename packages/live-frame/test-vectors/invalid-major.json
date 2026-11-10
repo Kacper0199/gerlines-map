@@ -1,0 +1,7 @@
+{
+  "name": "invalid-major",
+  "description": "keyframe-basic with major version 2 and a valid CRC.",
+  "decoder": "keyframe",
+  "error": "unsupported_version",
+  "byteLength": 485
+}

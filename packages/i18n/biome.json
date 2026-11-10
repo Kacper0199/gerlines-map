@@ -1,0 +1,7 @@
+{
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
+  "extends": "//",
+  "files": {
+    "includes": ["**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,json,jsonc,css}", "!src/paraglide"]
+  }
+}

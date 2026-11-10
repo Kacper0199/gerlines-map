@@ -1,0 +1,37 @@
+{
+  "name": "@gerlines/ingest",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Source polling, recording, adapters, matching",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "rolldown --config rolldown.config.mjs",
+    "db-apis": "node --env-file-if-exists=../../.env src/db-apis/cli.ts",
+    "lint": "biome check .",
+    "recorder": "node --env-file-if-exists=../../.env src/cli.ts",
+    "recorder:status": "node --env-file-if-exists=../../.env src/cli.ts status",
+    "test": "vitest run --exclude \"**/*.integration.test.ts\"",
+    "test:integration": "node --env-file-if-exists=../../.env node_modules/vitest/vitest.mjs run --test-timeout=120000 --hook-timeout=120000 integration",
+    "typecheck": "tsc",
+    "realtime": "node --env-file-if-exists=../../.env src/realtime/cli.ts"
+  },
+  "dependencies": {
+    "@gerlines/db": "workspace:*",
+    "@gerlines/schema": "workspace:*",
+    "kysely": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/pg": "catalog:",
+    "pg": "catalog:",
+    "rolldown": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

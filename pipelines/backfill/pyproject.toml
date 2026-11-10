@@ -1,0 +1,31 @@
+[project]
+name = "gerlines-backfill"
+version = "0.1.0"
+description = "GerLines history backfill: piebro/deutsche-bahn-data monthly Parquet to stop events and segments"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "gerlines-common",
+  "gerlines-rollups",
+  "gerlines-static-import",
+  "polars==1.44.2",
+  "psycopg[binary]==3.3.6",
+]
+
+[project.scripts]
+gerlines-backfill = "gerlines_backfill.cli:main"
+
+[tool.uv.sources]
+gerlines-common = { workspace = true }
+gerlines-rollups = { workspace = true }
+gerlines-static-import = { workspace = true }
+
+[tool.ruff]
+extend = "../../pyproject.toml"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "PLR2004"]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

@@ -1,0 +1,32 @@
+{
+  "window": ["2026-10-29T13:35:00+00:00", "2026-10-29T16:10:00+00:00"],
+  "ages": {
+    "mirror": {
+      "payloads": 31,
+      "median_age_s": 106.0,
+      "p90_age_s": 129.0
+    },
+    "mobilithek": {
+      "payloads": 31,
+      "median_age_s": 87.0,
+      "p90_age_s": 98.0
+    },
+    "deincr": {
+      "payloads": 3,
+      "median_age_s": 18.0,
+      "p90_age_s": 18.0
+    },
+    "gtfsde": {
+      "payloads": 31,
+      "median_age_s": 40.0,
+      "p90_age_s": 42.0
+    },
+    "iris": {
+      "fchg_payloads": 966,
+      "stations": 20,
+      "median_poll_gap_s": 180.0
+    }
+  },
+  "universe": [8818, 8810],
+  "sources": ["mirror", "mobilithek", "deincr", "gtfsde", "iris"]
+}

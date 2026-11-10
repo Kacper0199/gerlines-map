@@ -1,0 +1,34 @@
+{
+ "capturedAt": "2026-10-23T19:34:00Z",
+ "capturedLocal": "Friday 23 October 2026, 21:34",
+ "trainsTotal": 2665,
+ "trainsRealtime": 2234,
+ "trainsInFile": 2042,
+ "trainsInFileNote": "Counts describe the whole capture. trains.json keeps only trains from feeds whose licence allows redistribution: DELFI, VBB, KVV, VBN, SNCF, OpenOV, Luxembourg ATP and Trafiklab. Trains from other neighbouring feeds were removed.",
+ "countsByCategory": {
+  "hsr": 151,
+  "foreign": 777,
+  "ld": 40,
+  "night": 3,
+  "rfast": 463,
+  "reg": 610,
+  "sbahn": 621
+ },
+ "categoryCodes": {
+  "hsr": "ICE and other high-speed",
+  "ld": "IC, EC, FLX and other long distance",
+  "night": "Night trains",
+  "rfast": "RE, IRE, MEX and other fast regional",
+  "reg": "RB and other regional",
+  "sbahn": "S-Bahn",
+  "foreign": "Trains from neighbouring countries' feeds (display only)"
+ },
+ "positionMethod": "Each train placed along its current stop-to-stop segment polyline by elapsed time (static snapshot for design only; the product uses motion plans along matched shapes, ADR-0001).",
+ "attribution": [
+  "Train data: Transitous (MOTIS) over DELFI e.V. timetable and realtime (CC BY 4.0, CC BY-SA)",
+  "Coach sequence: bahn.de",
+  "Map data: OpenFreeMap, OpenMapTiles, OpenStreetMap contributors (ODbL)",
+  "Germany outline: Natural Earth (public domain)",
+  "Photo: ICE 4 9032 at Basel SBB by NAC, CC BY-SA 4.0, via Wikimedia Commons"
+ ]
+}

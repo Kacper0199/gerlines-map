@@ -1,0 +1,4 @@
+{
+  "extends": "@gerlines/config/tsconfig/base.json",
+  "include": ["src"]
+}

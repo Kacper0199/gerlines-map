@@ -1,0 +1,16 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/.secretlintrc.json",
+        "$TURBO_ROOT$/.env.example",
+        "$TURBO_ROOT$/docs/KEYS.md",
+        "$TURBO_ROOT$/docs/development.md",
+        "$TURBO_ROOT$/scripts/check-keys.sh"
+      ]
+    }
+  }
+}

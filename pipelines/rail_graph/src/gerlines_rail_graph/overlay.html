@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SP-3 overlay</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css"
+  integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous">
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"
+  integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp"
+  crossorigin="anonymous"></script>
+<style>
+html, body, #map { margin: 0; height: 100%; background: #fff; font: 13px/1.35 system-ui, sans-serif; }
+#legend { position: absolute; top: 10px; left: 10px; background: #fffffff0; padding: 8px 10px;
+  border: 1px solid #999; max-width: 520px; }
+#legend b { display: block; margin-bottom: 4px; }
+.key { display: inline-block; width: 26px; height: 0; border-top-style: solid; vertical-align: middle;
+  margin-right: 6px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="legend"></div>
+<script>
+const name = new URLSearchParams(location.search).get("c");
+fetch(`data/${name}.json`).then((r) => r.json()).then((d) => {
+  const map = new maplibregl.Map({
+    container: "map", style: "https://tiles.openfreemap.org/styles/positron",
+    ...(d.center ? { center: d.center, zoom: d.zoom } : { bounds: d.bounds, fitBoundsOptions: { padding: 30 } }),
+    attributionControl: { compact: false },
+  });
+  map.on("load", () => {
+    map.addSource("rail", { type: "geojson", data: d.rail });
+    map.addLayer({ id: "rail", type: "line", source: "rail",
+      paint: { "line-color": ["match", ["get", "cls"], "sbahn", "#e7298a", "main", "#222",
+        "shared", "#2b8cbe", "#999"], "line-width": 1.5, "line-opacity": 0.9 } });
+    for (const m of d.methods) {
+      map.addSource(m.name, { type: "geojson", data: m.data });
+      map.addLayer({ id: m.name, type: "line", source: m.name, layout: { "line-cap": "round" },
+        paint: { "line-color": m.color, "line-width": m.width, "line-opacity": m.opacity } });
+    }
+    map.addSource("stops", { type: "geojson", data: d.stops });
+    map.addLayer({ id: "stops", type: "circle", source: "stops",
+      paint: { "circle-radius": 4, "circle-color": "#fff", "circle-stroke-color": "#000",
+        "circle-stroke-width": 1.5 } });
+    map.once("idle", () => { document.body.dataset.ready = "1"; });
+  });
+  const keys = d.methods.map((m) =>
+    `<div><span class="key" style="border-color:${m.color};` +
+    `border-top-width:${Math.max(2, m.width)}px;opacity:${m.opacity}"></span>${m.label}</div>`);
+  for (const [color, label] of [["#222", "OSM track, main-line relations only"],
+      ["#e7298a", "OSM track, S-Bahn relations only"], ["#2b8cbe", "OSM track, both"],
+      ["#999", "OSM track, no passenger relation"]]) {
+    keys.push(`<div><span class="key" style="border-color:${color};border-top-width:2px"></span>` +
+      `${label}</div>`);
+  }
+  document.getElementById("legend").innerHTML = `<b>${d.title}</b>` + keys.join("") +
+    `<div style="margin-top:4px">${d.trips.join("<br>")}</div>`;
+});
+</script>
+</body>
+</html>

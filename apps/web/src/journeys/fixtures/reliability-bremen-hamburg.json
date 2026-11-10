@@ -1,0 +1,103 @@
+{
+  "period": { "from": "2026-10-10", "to": "2026-11-08", "days": 30 },
+  "refreshedAt": null,
+  "trains": [
+    {
+      "status": "known",
+      "category": "hsr",
+      "number": "001028",
+      "operator": "DB Fernverkehr AG",
+      "punctual6": 0.8333333333333334,
+      "observedArrivals": 12,
+      "runs": 2,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "rfast",
+      "number": "082012",
+      "operator": "metronom",
+      "punctual6": 1,
+      "observedArrivals": 4,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "hsr",
+      "number": "000208",
+      "operator": "DB Fernverkehr AG",
+      "punctual6": 0.36363636363636365,
+      "observedArrivals": 11,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "rfast",
+      "number": "082014",
+      "operator": "metronom",
+      "punctual6": 1,
+      "observedArrivals": 4,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "hsr",
+      "number": "000618",
+      "operator": "DB Fernverkehr AG",
+      "punctual6": 0.25925925925925924,
+      "observedArrivals": 27,
+      "runs": 2,
+      "firstDay": "2026-10-26"
+    },
+    {
+      "status": "known",
+      "category": "rfast",
+      "number": "082016",
+      "operator": "metronom",
+      "punctual6": 1,
+      "observedArrivals": 4,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "hsr",
+      "number": "000206",
+      "operator": "DB Fernverkehr AG",
+      "punctual6": 0.18181818181818182,
+      "observedArrivals": 11,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "rfast",
+      "number": "082018",
+      "operator": "metronom",
+      "punctual6": 1,
+      "observedArrivals": 4,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "known",
+      "category": "hsr",
+      "number": "000616",
+      "operator": "DB Fernverkehr AG",
+      "punctual6": 0.6923076923076923,
+      "observedArrivals": 13,
+      "runs": 1,
+      "firstDay": "2026-10-27"
+    },
+    {
+      "status": "missing",
+      "category": "rfast",
+      "number": "082020",
+      "operator": "metronom",
+      "reason": "no_observations"
+    }
+  ]
+}

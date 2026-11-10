@@ -1,0 +1,38 @@
+{
+  "name": "@gerlines/trainforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vehicle forge: parametric glTF models of German train series from catalog/vehicles.yaml",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "node src/cli.ts build --out dist --validate-catalog",
+    "lint": "biome check .",
+    "preview": "vite --config preview/vite.config.ts",
+    "test": "vitest run",
+    "typecheck": "tsc && tsc -p preview/tsconfig.json"
+  },
+  "dependencies": {
+    "@gltf-transform/core": "4.5.1",
+    "@gltf-transform/extensions": "4.5.1",
+    "@gltf-transform/functions": "4.5.1",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "js-yaml": "catalog:",
+    "meshoptimizer": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/js-yaml": "catalog:",
+    "@types/node": "catalog:",
+    "@types/three": "0.186.0",
+    "fast-check": "catalog:",
+    "three": "0.186.1",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}

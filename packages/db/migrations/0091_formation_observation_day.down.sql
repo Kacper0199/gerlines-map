@@ -1,0 +1,1 @@
+DROP INDEX formation_observation_day_idx;

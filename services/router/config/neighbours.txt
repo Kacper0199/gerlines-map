@@ -1,0 +1,28 @@
+# Geofabrik extracts of the neighbouring regions that hold the cross-border corridors (D-028).
+# One region per line: Geofabrik id and URL. Chosen from the 2026-11-02 feed's cross-border legs up to 300 km beyond
+# the German border, the smallest Geofabrik regions that hold them (6.29 GB on 2026-11-08; limburg and noord-brabant
+# added later for Venlo, Heerlen, Maastricht and Eindhoven). The corridor beyond these regions is not held:
+# `neighbours` writes the held part as held.geojson, the only area evaluate-all measures beyond Germany.
+czech-republic https://download.geofabrik.de/europe/czech-republic-latest.osm.pbf
+austria https://download.geofabrik.de/europe/austria-latest.osm.pbf
+switzerland https://download.geofabrik.de/europe/switzerland-latest.osm.pbf
+belgium https://download.geofabrik.de/europe/belgium-latest.osm.pbf
+luxembourg https://download.geofabrik.de/europe/luxembourg-latest.osm.pbf
+denmark https://download.geofabrik.de/europe/denmark-latest.osm.pbf
+lubuskie https://download.geofabrik.de/europe/poland/lubuskie-latest.osm.pbf
+dolnoslaskie https://download.geofabrik.de/europe/poland/dolnoslaskie-latest.osm.pbf
+wielkopolskie https://download.geofabrik.de/europe/poland/wielkopolskie-latest.osm.pbf
+zachodniopomorskie https://download.geofabrik.de/europe/poland/zachodniopomorskie-latest.osm.pbf
+opolskie https://download.geofabrik.de/europe/poland/opolskie-latest.osm.pbf
+slaskie https://download.geofabrik.de/europe/poland/slaskie-latest.osm.pbf
+lorraine https://download.geofabrik.de/europe/france/lorraine-latest.osm.pbf
+alsace https://download.geofabrik.de/europe/france/alsace-latest.osm.pbf
+champagne-ardenne https://download.geofabrik.de/europe/france/champagne-ardenne-latest.osm.pbf
+gelderland https://download.geofabrik.de/europe/netherlands/gelderland-latest.osm.pbf
+overijssel https://download.geofabrik.de/europe/netherlands/overijssel-latest.osm.pbf
+utrecht https://download.geofabrik.de/europe/netherlands/utrecht-latest.osm.pbf
+noord-holland https://download.geofabrik.de/europe/netherlands/noord-holland-latest.osm.pbf
+flevoland https://download.geofabrik.de/europe/netherlands/flevoland-latest.osm.pbf
+limburg https://download.geofabrik.de/europe/netherlands/limburg-latest.osm.pbf
+noord-brabant https://download.geofabrik.de/europe/netherlands/noord-brabant-latest.osm.pbf
+nord-est https://download.geofabrik.de/europe/italy/nord-est-latest.osm.pbf

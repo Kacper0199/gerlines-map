@@ -1,0 +1,7 @@
+{
+  "name": "invalid-wrong-kind",
+  "description": "A head given to the keyframe decoder.",
+  "decoder": "keyframe",
+  "error": "wrong_kind",
+  "byteLength": 68
+}

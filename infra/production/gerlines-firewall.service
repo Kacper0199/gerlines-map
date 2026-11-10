@@ -1,0 +1,22 @@
+# Loads the origin firewall at boot from /etc/gerlines/firewall.nft (made by infra/production/firewall.sh print).
+# Its own unit and its own table: the stock nftables.service and /etc/nftables.conf stay untouched, because their
+# `flush ruleset` would also drop Docker's rules. Install: docs/runbooks/deploy.md, step 2.
+[Unit]
+Description=GerLines origin firewall (nftables table inet gerlines_origin)
+Wants=network-pre.target
+Before=network-pre.target docker.service
+DefaultDependencies=no
+Conflicts=shutdown.target
+Before=shutdown.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=/usr/sbin/nft -c -f /etc/gerlines/firewall.nft
+ExecStart=/usr/sbin/nft -f /etc/gerlines/firewall.nft
+ExecStop=/usr/sbin/nft delete table inet gerlines_origin
+ProtectSystem=full
+ProtectHome=yes
+
+[Install]
+WantedBy=sysinit.target

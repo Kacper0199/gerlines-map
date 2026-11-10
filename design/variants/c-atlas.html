@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GerLines Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:FLAR,VOLM,wght@0..100,0..100,100..900&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="c-atlas/atlas.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="g-long" viewBox="0 0 16 16"><path d="M3 12.5V7.2C3 4.4 5.1 2.5 8 2.5s5 1.9 5 4.7v5.3z"/><path d="M5.2 7h5.6M5.5 10h.01M10.5 10h.01"/><path d="M4.5 14l-1 1M11.5 14l1 1"/></symbol>
+  <symbol id="g-fast" viewBox="0 0 16 16"><rect x="3" y="2.5" width="10" height="10" rx="2"/><path d="M3 7h10M5.5 10h.01M10.5 10h.01M4.5 14l-1 1M11.5 14l1 1"/></symbol>
+  <symbol id="g-reg" viewBox="0 0 16 16"><rect x="3" y="2.5" width="10" height="10" rx="1.2"/><path d="M3 6.5h10M8 6.5v-4M5.5 10h.01M10.5 10h.01M4.5 14l-1 1M11.5 14l1 1"/></symbol>
+  <symbol id="g-s" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.8"/><path d="M10.2 5.9C9.7 5.2 8.9 4.9 8 4.9c-1.2 0-2 .6-2 1.5 0 2.1 4.2 1 4.2 3.2 0 .9-.9 1.5-2.2 1.5-.9 0-1.8-.4-2.3-1.1"/></symbol>
+</svg>
+
+<div id="map" role="application" aria-label="Map of trains in Germany"></div>
+<svg id="leader" aria-hidden="true"><line x1="0" y1="0" x2="0" y2="0" hidden></line><circle r="2.5" cx="0" cy="0" hidden></circle></svg>
+
+<header class="bar">
+  <a class="brand" href="#" aria-label="GerLines home">
+    <svg viewBox="0 0 26 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 19.5c4.2 0 4.8-10 10-10s5.2 7 11 7"/><circle cx="12.5" cy="9.5" r="2.4" fill="currentColor" stroke="none"/></svg>
+    <span>GerLines</span>
+  </a>
+  <label class="search">
+    <i data-lucide="search"></i>
+    <input type="search" id="q" placeholder="Train, line or station" aria-label="Search trains, lines and stations" autocomplete="off">
+  </label>
+  <div class="bar-controls" id="barControls">
+    <div class="group" role="group" aria-label="Colour by" id="modes">
+      <span class="lbl">Colour</span>
+      <button class="chip" data-mode="category" aria-pressed="true">Category</button>
+      <button class="chip" data-mode="delay" aria-pressed="false">Delay</button>
+      <button class="chip" data-mode="operator" aria-pressed="false" disabled title="Needs operator data in the feed">Operator</button>
+    </div>
+    <span class="spacer"></span>
+    <div class="group seg" role="group" aria-label="Map style" id="styles">
+      <button class="chip" data-style="dark" aria-pressed="true">Dark</button>
+      <button class="chip" data-style="light" aria-pressed="false">Light</button>
+      <button class="chip" data-style="satellite" aria-pressed="false" disabled title="Coming later">Satellite</button>
+      <button class="chip" data-style="terrain" aria-pressed="false" disabled title="Coming later">Terrain</button>
+    </div>
+    <div class="group seg" role="group" aria-label="Language">
+      <button class="chip" aria-pressed="true" lang="en">EN</button>
+      <button class="chip" aria-pressed="false" disabled lang="de" title="Coming later">DE</button>
+      <button class="chip" aria-pressed="false" disabled lang="pl" title="Coming later">PL</button>
+    </div>
+  </div>
+  <button class="search-btn" id="searchBtn" aria-label="Search"><i data-lucide="search"></i></button>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+</header>
+
+<aside class="ctrl" aria-label="Map controls">
+  <button id="zin" aria-label="Zoom in"><i data-lucide="plus"></i></button>
+  <button id="zout" aria-label="Zoom out"><i data-lucide="minus"></i></button>
+  <button id="north" aria-label="Reset north"><i data-lucide="compass"></i></button>
+</aside>
+
+<p class="attrib" id="attrib">
+  <span id="attribText"></span>
+</p>
+<button class="attr-btn" id="attrBtn" aria-label="Map data sources" aria-expanded="false"><i data-lucide="info"></i></button>
+
+<aside class="card" id="card" hidden aria-label="Selected train"></aside>
+<div class="tag" id="tag" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Train details"></aside>
+
+<footer class="strip" id="strip">
+  <div class="keys" id="keys" role="group" aria-label="Categories shown"></div>
+  <span class="vsep"></span>
+  <button class="key foreign" id="foreign" role="switch" aria-checked="true"><span class="sw"></span><span>Foreign trains</span><span class="n num" id="foreignN"></span><span class="track"></span></button>
+  <span class="grow" style="flex:1"></span>
+  <span class="stage" id="stage">Germany, all trains</span>
+  <span class="data"><i data-lucide="clock"></i><span id="dataTime"></span></span>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="c-atlas/style.js"></script>
+<script src="c-atlas/app.js"></script>
+</body>
+</html>

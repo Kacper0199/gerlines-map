@@ -1,0 +1,4 @@
+Natural Earth vector and raster map data is in the public domain.
+
+Terms of use: https://www.naturalearthdata.com/about/terms-of-use/ (retrieved 2026-10-24).
+Source used here: nvkelso/natural-earth-vector v5.1.2, geojson/ne_50m_admin_0_countries.geojson.

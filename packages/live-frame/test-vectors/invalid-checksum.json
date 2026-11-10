@@ -1,0 +1,7 @@
+{
+  "name": "invalid-checksum",
+  "description": "keyframe-basic with one bit of the last byte flipped.",
+  "decoder": "keyframe",
+  "error": "checksum",
+  "byteLength": 485
+}

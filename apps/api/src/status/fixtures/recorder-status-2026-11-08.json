@@ -1,0 +1,246 @@
+{
+  "capturedAt": "2026-11-08T07:09:53.331Z",
+  "command": "docker exec gerlines-recorder-1 node /app/recorder.mjs status --json --days 0, trimmed to the fields below",
+  "mode": "full",
+  "sources": [
+    {
+      "source": "delfi-mobilithek-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 600,
+      "lastSuccess": "2026-11-08T07:09:13.185Z",
+      "feedTimestamp": "2026-11-08T07:08:36.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "delfi-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 600,
+      "lastSuccess": "2026-11-08T07:09:20.454Z",
+      "feedTimestamp": "2026-11-08T07:07:55.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "delfi-gtfs-rt-deincr",
+      "cadenceSeconds": 3600,
+      "staleAfterSeconds": 10800,
+      "lastSuccess": "2026-11-08T06:25:40.986Z",
+      "feedTimestamp": "2026-11-08T06:25:05.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "delfi-gtfs-sa",
+      "cadenceSeconds": 300,
+      "staleAfterSeconds": 3600,
+      "lastSuccess": "2026-11-08T07:05:50.503Z",
+      "feedTimestamp": "2026-11-08T07:00:28.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "delfi-gtfs",
+      "cadenceSeconds": 86400,
+      "staleAfterSeconds": 259200,
+      "lastSuccess": "2026-11-07T08:20:13.402Z",
+      "feedTimestamp": null,
+      "condition": "ok"
+    },
+    {
+      "source": "gtfsde-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:35.800Z",
+      "feedTimestamp": "2026-11-08T07:09:22.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "gtfsde-static-rv",
+      "cadenceSeconds": 86400,
+      "staleAfterSeconds": 259200,
+      "lastSuccess": "2026-11-08T06:32:38.935Z",
+      "feedTimestamp": null,
+      "condition": "ok"
+    },
+    {
+      "source": "gtfsde-static-fv",
+      "cadenceSeconds": 86400,
+      "staleAfterSeconds": 259200,
+      "lastSuccess": "2026-11-08T06:32:55.407Z",
+      "feedTimestamp": null,
+      "condition": "ok"
+    },
+    {
+      "source": "vbb-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:06.017Z",
+      "feedTimestamp": "2026-11-08T07:08:58.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "vbn-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:11.643Z",
+      "feedTimestamp": "2026-11-08T07:09:07.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "ovapi-train-updates",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 1200,
+      "lastSuccess": "2026-11-08T07:09:15.752Z",
+      "feedTimestamp": "2026-11-08T07:08:26.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "cz-czptt-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:25.910Z",
+      "feedTimestamp": "2026-11-08T07:09:16.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "pl-trains-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:31.255Z",
+      "feedTimestamp": "2026-11-08T07:09:02.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "pl-pkpic-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 600,
+      "lastSuccess": "2026-11-08T07:09:40.887Z",
+      "feedTimestamp": "2026-11-08T07:08:29.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "be-sncb-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:09:46.617Z",
+      "feedTimestamp": "2026-11-08T07:09:14.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "be-sncb-gtfs-sa",
+      "cadenceSeconds": 300,
+      "staleAfterSeconds": 900,
+      "lastSuccess": "2026-11-08T07:07:16.779Z",
+      "feedTimestamp": "2026-11-08T07:06:56.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "fr-sncf-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:08:53.891Z",
+      "feedTimestamp": "2026-11-08T07:07:47.000Z",
+      "condition": "ok"
+    },
+    {
+      "source": "ch-otd-gtfs-rt",
+      "cadenceSeconds": 60,
+      "staleAfterSeconds": 300,
+      "lastSuccess": "2026-11-08T07:08:56.492Z",
+      "feedTimestamp": "2026-11-08T07:08:43.000Z",
+      "condition": "ok"
+    }
+  ],
+  "database": {
+    "query": "per row of source: max(raw_object.observed_at) and a running record run in ingest_run, read only on gerlines",
+    "rows": [
+      {
+        "source": "be-sncb-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:46.617Z",
+        "recording": true
+      },
+      {
+        "source": "be-sncb-gtfs-sa",
+        "recordedAt": "2026-11-08T07:07:16.779Z",
+        "recording": true
+      },
+      {
+        "source": "ch-otd-gtfs-rt",
+        "recordedAt": "2026-11-08T07:08:56.492Z",
+        "recording": true
+      },
+      {
+        "source": "cz-czptt-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:25.910Z",
+        "recording": true
+      },
+      {
+        "source": "delfi-gtfs",
+        "recordedAt": "2026-11-05T19:02:33.008Z",
+        "recording": true
+      },
+      {
+        "source": "delfi-gtfs-rt",
+        "recordedAt": "2026-11-08T07:08:20.144Z",
+        "recording": true
+      },
+      {
+        "source": "delfi-gtfs-rt-deincr",
+        "recordedAt": "2026-11-08T06:25:40.986Z",
+        "recording": true
+      },
+      {
+        "source": "delfi-gtfs-sa",
+        "recordedAt": "2026-11-08T07:05:50.503Z",
+        "recording": true
+      },
+      {
+        "source": "delfi-mobilithek-rt",
+        "recordedAt": "2026-11-08T07:09:13.185Z",
+        "recording": true
+      },
+      {
+        "source": "fr-sncf-gtfs-rt",
+        "recordedAt": "2026-11-08T07:07:54.223Z",
+        "recording": true
+      },
+      {
+        "source": "gtfsde-rt",
+        "recordedAt": "2026-11-08T07:09:35.800Z",
+        "recording": true
+      },
+      {
+        "source": "gtfsde-static-fv",
+        "recordedAt": "2026-11-08T06:32:55.407Z",
+        "recording": true
+      },
+      {
+        "source": "gtfsde-static-rv",
+        "recordedAt": "2026-11-08T06:32:38.935Z",
+        "recording": true
+      },
+      {
+        "source": "ovapi-train-updates",
+        "recordedAt": "2026-11-08T07:09:15.752Z",
+        "recording": true
+      },
+      {
+        "source": "pl-pkpic-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:40.887Z",
+        "recording": true
+      },
+      {
+        "source": "pl-trains-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:31.255Z",
+        "recording": true
+      },
+      {
+        "source": "vbb-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:06.017Z",
+        "recording": true
+      },
+      {
+        "source": "vbn-gtfs-rt",
+        "recordedAt": "2026-11-08T07:09:11.643Z",
+        "recording": true
+      }
+    ]
+  }
+}

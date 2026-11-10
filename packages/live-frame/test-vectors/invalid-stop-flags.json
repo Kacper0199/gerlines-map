@@ -1,0 +1,7 @@
+{
+  "name": "invalid-stop-flags",
+  "description": "keyframe-basic with a stop flagged both arrival unknown and departure unknown.",
+  "decoder": "keyframe",
+  "error": "corrupt",
+  "byteLength": 485
+}

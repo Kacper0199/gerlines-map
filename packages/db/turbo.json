@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "test": {
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "!README.md",
+        "$TURBO_ROOT$/infra/compose.yaml",
+        "$TURBO_ROOT$/.github/workflows/db.yml"
+      ],
+      "passThroughEnv": ["TMPDIR"]
+    }
+  }
+}

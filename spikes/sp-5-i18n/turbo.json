@@ -1,0 +1,27 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "@gerlines/i18n#compile"]
+    },
+    "typecheck": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/apps/web/src/copy.ts",
+        "$TURBO_ROOT$/apps/web/src/motion/categories.ts",
+        "$TURBO_ROOT$/apps/web/src/motion/protocol.ts"
+      ]
+    },
+    "test": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/apps/web/src/copy.ts",
+        "$TURBO_ROOT$/apps/web/src/motion/categories.ts",
+        "$TURBO_ROOT$/apps/web/src/motion/protocol.ts"
+      ]
+    }
+  }
+}

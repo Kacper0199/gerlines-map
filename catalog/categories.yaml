@@ -1,0 +1,42 @@
+# Canonical categories of docs/architecture.md section 9, in the order and with the codes of
+# migration 0010. English names as in that migration; German and Polish names wait for the
+# user's review.
+- code: hsr
+  name: {en: High-speed rail, de: Hochgeschwindigkeitsverkehr, pl: Koleje dużych prędkości}
+  sort_order: 1
+  source: gerlines
+- code: ld
+  name: {en: Long-distance rail, de: Fernverkehr, pl: Pociągi dalekobieżne}
+  sort_order: 2
+  source: gerlines
+- code: night
+  name: {en: Night train, de: Nachtzug, pl: Pociąg nocny}
+  sort_order: 3
+  source: gerlines
+- code: rfast
+  name: {en: Fast regional rail, de: Schneller Regionalverkehr, pl: Szybkie pociągi regionalne}
+  sort_order: 4
+  source: gerlines
+- code: reg
+  name: {en: Regional rail, de: Regionalverkehr, pl: Pociągi regionalne}
+  sort_order: 5
+  source: gerlines
+- code: sbahn
+  name: {en: S-Bahn, de: S-Bahn, pl: S-Bahn}
+  sort_order: 6
+  source: gerlines
+- code: urban
+  name: {en: U-Bahn and tram, de: U-Bahn und Straßenbahn, pl: Metro i tramwaj}
+  sort_order: 7
+  source: gerlines
+- code: bus
+  name: {en: Bus and coach, de: Bus und Fernbus, pl: Autobus i autokar}
+  sort_order: 8
+  source: gerlines
+- code: other
+  name:
+    en: Ferry, cable car and other
+    de: Fähre, Seilbahn und Sonstiges
+    pl: Prom, kolej linowa i inne
+  sort_order: 9
+  source: gerlines

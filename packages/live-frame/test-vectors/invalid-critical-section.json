@@ -1,0 +1,7 @@
+{
+  "name": "invalid-critical-section",
+  "description": "keyframe-basic as version 1.1 with an unknown critical section.",
+  "decoder": "keyframe",
+  "error": "unsupported_version",
+  "byteLength": 501
+}

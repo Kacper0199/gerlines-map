@@ -1,0 +1,11 @@
+opentransportdata.swiss: General Terms and Conditions of Use for the data defined as Open Data
+(https://opentransportdata.swiss/en/terms-of-use/), operated by SBB AG on behalf of the Swiss Federal Office of
+Transport FOT.
+
+Terms as read by GerLines on 2026-10-29: the open data may be obtained, processed, analysed and published, including
+together with other data (clause 1); service-based data need registration and an access code with a request limit
+(clauses 2 to 4); publications and analyses cite the URL opentransportdata.swiss as the source of the raw data, once in
+the list of sources for a database of many sources (clauses 5.1 and 5.1.1); published data are kept as current as the
+raw data (5.2); processed data and analyses are published under the data user's name (5.3); no liability or guarantee
+by SBB (7); Swiss law, place of jurisdiction Bern, the German version binding (10). Check the current terms before
+republishing the data.

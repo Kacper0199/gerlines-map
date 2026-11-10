@@ -1,0 +1,78 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271807924 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 167, 176-183, 210-217, 382, 391-398, 437-449, 514, 523-530, 555-562, 607, 616-623, 683-690; references removed. -->
+=== Linien 10–19 ===
+{| class="wikitable toptextcells" style="font-size:91%; width:100%;"
+! style="width:55px;"| Linie
+! Linienname<br />Teilnetz der Linie
+! colspan="2"| Linienweg
+! Länge
+! style="width:20px;"| [[Kursbuch|KBS]]
+! [[Verkehrsunternehmen|Betreiber]]
+! [[Eisenbahn#Fahrzeuge|Fahrzeuge im Regelbetrieb]]
+|-
+|style="font-size:111%;"| {{Bahnlinie NRW|RE|13}}
+|class="hintergrundfarbe8"| '''[[Maas-Wupper-Express]]'''<br />''Maas-Rhein-Lippe-Netz''
+|colspan="2"| <small>[[Bahnhof Venlo|Venlo]]</small>&nbsp;– [[Bahnhof Viersen|Viersen]]&nbsp;– Mönchengladbach&nbsp;– Neuss&nbsp;– Düsseldorf&nbsp;– Wuppertal&nbsp;– Schwelm&nbsp;– Ennepetal&nbsp;– Hagen&nbsp;– Schwerte (Ruhr)&nbsp;– Unna&nbsp;– Hamm
+| 160&nbsp;km
+| 485, 455
+| [[Eurobahn]]
+| 1–2× [[Stadler Flirt|Stadler Flirt 1]] (428&#x202F;/&#x2009;429)
+|}
+=== Linien 30–39 ===
+{| class="wikitable toptextcells" style="font-size:91%; width:100%;"
+! style="width:55px;"| Linie
+! Linienname<br />Teilnetz der Linie
+! colspan="2"| Linienweg
+!Länge
+! style="width:20px;"| [[Kursbuch|KBS]]
+! [[Verkehrsunternehmen|Betreiber]]
+! [[Eisenbahn#Fahrzeuge|Fahrzeuge im Regelbetrieb]]
+|-
+| rowspan="2" style="font-size:111%;" | {{Bahnlinie NRW|RB|33}}
+| rowspan="2" | '''[[Rhein-Niers-Bahn]]'''<br />''RE 8/RB 33''
+| rowspan="2" | Aachen&nbsp;– [[Bahnhof Lindern|Lindern]]
+<small>Flügelung in Lindern</small>
+|<small>Vorderer Zugteil:</small><br />Lindern&nbsp;– Mönchengladbach&nbsp;– Krefeld&nbsp;– Duisburg&nbsp;– Essen&nbsp;Hbf&nbsp;– [[Bahnhof Essen-Steele|Essen-Steele]]<br /> <small>(spätabends nicht zwischen Duisburg und Essen, frühmorgens und frühabends an Samstagen sowie sonntags ganztägig nur bis Essen&nbsp;Hbf, in den Wochenendnächten nur zwischen Mönchengladbach und Duisburg)</small>
+|130&nbsp;km
+| rowspan="2" | 485
+| rowspan="2" | [[DB Regio NRW]]
+| rowspan="2" | 2× [[Alstom Coradia Continental]] (1440)<br /><small>(Essen–Aachen 5-teilig, Heinsberg–Aachen 3-teilig) (Häufig auch ohne Flügelung, dann Pendelbetrieb Lindern–Heinsberg)</small>
+|-
+|<small>Hinterer Zugteil:</small><br />Lindern&nbsp;– [[Bahnhof Heinsberg (Rheinland)|Heinsberg]]
+|45&nbsp;km
+|}
+=== Linien 40–49 ===
+{| class="wikitable toptextcells" style="font-size:91%; width:100%;"
+! style="width:55px;"| Linie
+! Linienname<br />Teilnetz der Linie
+! Linienweg
+! Länge
+! style="width:20px;"| [[Kursbuch|KBS]]
+! [[Verkehrsunternehmen|Betreiber]]
+! [[Eisenbahn#Fahrzeuge|Fahrzeuge im Regelbetrieb]]
+|-
+|style="font-size:111%;"| {{Bahnlinie NRW|RB|43}}
+| [[Emschertal-Bahn|'''Emschertal-Bahn'''<br />''Sauerland-Netz'']]
+| [[Bahnhof Dorsten|Dorsten]]&nbsp;– [[Bahnhof Gladbeck Ost|Gladbeck Ost]]&nbsp;– [[Bahnhof Gelsenkirchen-Buer Süd|Gelsenkirchen-Buer Süd]]&nbsp;– [[Wanne-Eickel Hauptbahnhof|Wanne-Eickel]]&nbsp;– [[Bahnhof Herne|Herne]]&nbsp;– [[Castrop-Rauxel Süd]]&nbsp;– Dortmund
+|53&nbsp;km
+| 426
+| [[DB Regio NRW]]
+| 1× [[Pesa Link II]] (632)<br />1× [[Pesa Link III]] (633)<br />1× [[Bombardier Talent]] (644)
+|}
+=== Linien 50–59 ===
+{| class="wikitable toptextcells" style="font-size:91%; width:100%;"
+! style="width:55px;"| Linie
+! Linienname<br />Teilnetz der Linie
+! colspan="2"| Linienweg
+! Länge
+! style="width:20px;"| [[Kursbuch|KBS]]
+! [[Verkehrsunternehmen|Betreiber]]
+! [[Eisenbahn#Fahrzeuge|Fahrzeuge im Regelbetrieb]]
+|-
+|style="font-size: 111%;"| {{Bahnlinie NRW|RB|59}}
+| '''[[Hellweg-Netz|Hellweg-Bahn]]'''<br />''Hellweg-Netz''
+|colspan="2"| '''Dortmund&nbsp;– Unna&nbsp; – [[Werl]] – [[Soest]]'''<br /><small>(sonntags Stundentakt)</small>
+|54&nbsp;km
+| [[Bahnstrecke Dortmund–Soest|431]]
+| [[Eurobahn]]
+| [[Stadler Flirt|Stadler Flirt 1]] (428)
+|}

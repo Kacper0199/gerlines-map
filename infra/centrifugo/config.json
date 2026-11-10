@@ -1,0 +1,29 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "health": {
+    "enabled": true
+  },
+  "admin": {
+    "enabled": true
+  },
+  "client": {
+    "allowed_origins": ["http://localhost:5173", "http://127.0.0.1:5173"],
+    "allow_anonymous_connect_without_token": true
+  },
+  "channel": {
+    "namespaces": [
+      {
+        "name": "live",
+        "allow_subscribe_for_anonymous": true,
+        "allow_subscribe_for_client": true
+      },
+      {
+        "name": "train",
+        "allow_subscribe_for_anonymous": true,
+        "allow_subscribe_for_client": true
+      }
+    ]
+  }
+}

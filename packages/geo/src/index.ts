@@ -1,0 +1,85 @@
+export {
+  articulatedConsist,
+  BOGIE_POINT_STRIDE,
+  CAR_POSE_STRIDE,
+  type CarSpec,
+  type Consist,
+  conventionalConsist,
+  joinConsists,
+  placeBogies,
+  placeCars,
+} from "./consist.ts";
+export {
+  ContinuityMeter,
+  type ContinuityReport,
+  type ContinuityThresholds,
+  DEFAULT_CONTINUITY,
+} from "./continuity.ts";
+export {
+  type ControllerParams,
+  type CrossfadeReason,
+  DEFAULT_CONTROLLER,
+  type UpdateResult,
+} from "./controller.ts";
+export { HEAD_STRIDE, MotionFleet } from "./fleet.ts";
+export {
+  groundDistance,
+  type LonLat,
+  latitudeFromMercatorY,
+  lonLatToMercator,
+  type MercatorPoint,
+  mercatorToLonLat,
+  WEB_MERCATOR_RADIUS,
+} from "./mercator.ts";
+export { TrainMotion } from "./motion.ts";
+export {
+  buildMotionPlan,
+  createTargetState,
+  evaluateLegs,
+  evaluateLegsAt,
+  evaluatePlan,
+  FEASIBLE_ACCELERATION,
+  MIN_LEG_DURATION,
+  type MotionPlan,
+  type PlanInput,
+  type PlanStop,
+  planEndedAt,
+  planSpeed,
+  type TargetState,
+} from "./plan.ts";
+export {
+  CATEGORY_DYNAMICS,
+  createLegState,
+  evaluateLeg,
+  evaluateLegData,
+  fitLeg,
+  LEG_STRIDE,
+  type Leg,
+  type LegKind,
+  type LegState,
+  minimumLegDuration,
+  type TrainCategory,
+  type TrainDynamics,
+  writeLegData,
+} from "./profile.ts";
+export {
+  createShape,
+  createShapeSample,
+  type MercatorPolyline,
+  type ProjectionResult,
+  projectOntoShape,
+  RECORD_DOUBLES,
+  RECORD_FLOATS,
+  SHAPE_RECORD_BYTES,
+  type Shape,
+  type ShapeSample,
+  sampleShape,
+  sampleShapeArrays,
+  segmentAt,
+  segmentIn,
+  shapeFromLonLat,
+  vertexS,
+  vertexX,
+  vertexY,
+  vertexZ,
+} from "./shape.ts";

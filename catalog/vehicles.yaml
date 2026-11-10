@@ -1,0 +1,5210 @@
+# Geometry of the vehicle forge (tools/trainforge): per model the car sequence of one typical
+# unit, per car type the measures the forge needs. Every value names its source (source, and
+# field_sources for single fields, rows of sources.yaml) or stays empty with the reason in
+# missing; the forge then uses a stylisation default and lists the field as estimated in the
+# glTF extras. Lengths are over couplers (articulated cars: joint to joint), heights above top of
+# rail, positions along the car in metres from the car centre with forward positive. nose_shape
+# is our classification of the cab front (source gerlines). Lengths a source gives only for the
+# whole unit, or that follow from two sourced unit lengths, are explained in the source note.
+# Validated by gerlines-catalog.
+
+# ---- Generic models per category (layer L4): dimensions of one named series, generic shape.
+
+- model_id: generic-hsr
+  name: Generic high speed train
+  generic: true
+  category: hsr
+  unit_length_m: 200.84
+  length_gap_reason: &ice3-gap the article gives car lengths that add up to 200,32 m against its unit length of 200,84 m, the forge keeps the car lengths
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-403
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+  car_types:
+    - car_type: end
+      name: End car with cab, measures of the ICE 3
+      role: cab
+      length_m: 25.835
+      width_m: 2.95
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      nose_shape: streamlined
+      front:
+        source: commons-velaro-407-stuttgart-kopf
+        view_source: siemens-velaro-d-factsheet
+        length_m: 6.6
+        tip_height_m: 0.86
+        bottom_m: 0.3
+        bottom_setback_m: 1.6
+        screen_bottom_m: 2.0
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 0.95
+        screen_top_setback_m: 3.45
+        screen_width: 0.5
+        plan: round
+        stripe: none
+        screen_widths: [[2.0, 0.42], [2.6, 0.55], [3.1, 0.5], [3.45, 0.3]]
+        screen_round: 4.0
+        side_profile: [[1.6, 0.3], [0.9, 0.33], [0.6, 0.37], [0.35, 0.45], [0.2, 0.53], [0.08, 0.63], [0.02, 0.74], [0, 0.86], [0.04, 1.0], [0.09, 1.1], [0.14, 1.18], [0.24, 1.31], [0.34, 1.43], [0.54, 1.64], [0.75, 1.84], [0.95, 2.02], [1.16, 2.19], [1.46, 2.4], [1.87, 2.7], [2.27, 2.91], [2.68, 3.11], [3.09, 3.3], [3.49, 3.48], [4.0, 3.63], [4.5, 3.72], [5.0, 3.79], [5.5, 3.84], [6.0, 3.875], [6.6, 3.89]]
+        plan_widths: [[0.3, 0.51], [0.6, 0.65], [0.9, 0.73], [1.2, 0.8], [1.5, 0.84], [1.8, 0.88], [2.1, 0.92], [2.4, 0.96], [2.7, 0.99], [2.9, 1.0]]
+        decals:
+          - {slot: light, bottom_m: 1.68, top_m: 1.94, inner: 0.4, outer: 0.62, round: 4, tilt_deg: 30, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0.012}
+        estimated: [screen_width, screen_widths, screen_round, plan, bottom_setback_m, stripe, decals]
+      source: wikipedia-de-403
+      field_sources:
+        nose_shape: gerlines
+      missing:
+        floor_height_m: &no-floor the cited source gives no floor height
+        wheel_diameter_m: &no-wheel the cited source gives no wheel diameter
+        bogie_offset_m: &no-offset the cited source gives the pivot distance, not where the pivots sit in the car
+        nose_length_m: &unmeasured not measured yet, no side drawing or photo measured in WP-5.1
+        doors_per_side: &no-doors the cited source does not count the doors per car and side
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_count: &generic-no-pantograph a generic model draws no pantographs
+        bogie_wheelbase_m: &no-wheelbase the cited source gives no bogie wheelbase
+        door_width_m: &no-door-width the cited source gives no door width
+    - car_type: middle
+      name: Middle car, measures of the ICE 3
+      role: middle
+      length_m: 24.775
+      width_m: 2.95
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      source: wikipedia-de-403
+      missing:
+        floor_height_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_count: *generic-no-pantograph
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+
+- model_id: generic-ld
+  name: Generic long-distance train, locomotive and single-deck coaches
+  generic: true
+  category: ld
+  formation:
+    - car_type: locomotive
+    - car_type: coach
+    - car_type: coach
+    - car_type: coach
+    - car_type: coach
+    - car_type: coach
+    - car_type: coach
+  source: wikipedia-de-101
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+    unit_length_m: &no-coach-length no source of WP-5.1 gives the length of a long-distance single-deck coach
+  car_types:
+    - car_type: locomotive
+      name: Locomotive, measures of class 101
+      role: locomotive
+      length_m: 19.1
+      double_deck: false
+      bogies: [own, own]
+      bogie_wheelbase_m: 2.65
+      wheel_diameter_m: 1.25
+      nose_shape: locomotive
+      doors_per_side: 0
+      pantograph_count: 2
+      source: wikipedia-de-101
+      field_sources:
+        nose_shape: gerlines
+        doors_per_side: gerlines
+        pantograph_count: gerlines
+      missing:
+        width_m: &no-width the cited source gives no width
+        height_m: &no-height the cited source gives no height
+        floor_height_m: *no-floor
+        bogie_pitch_m: &no-pitch the cited source gives no pivot distance
+        bogie_offset_m: *no-offset
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_positions_m: &no-pantograph-place the source names the car, not where its pantograph sits
+        front: &no-front no licensed side or front view of this front is measured yet, the forge draws the nose_shape class
+    - car_type: coach
+      name: Single-deck coach
+      role: coach
+      double_deck: false
+      bogies: [own, own]
+      pantograph_count: 0
+      source: gerlines
+      missing:
+        length_m: *no-coach-length
+        width_m: *no-coach-length
+        height_m: *no-coach-length
+        floor_height_m: *no-coach-length
+        bogie_pitch_m: *no-coach-length
+        wheel_diameter_m: *no-coach-length
+        doors_per_side: *no-coach-length
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+
+- model_id: generic-dd-coach
+  name: Generic double-deck push-pull train
+  generic: true
+  category: rfast
+  formation:
+    - car_type: locomotive
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: driving-trailer
+      reversed: true
+  source: wikipedia-de-doppelstockwagen
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+    unit_length_m: &no-loco-length no source of WP-5.1 gives the locomotive length
+  car_types:
+    - car_type: locomotive
+      name: Locomotive
+      role: locomotive
+      double_deck: false
+      bogies: [own, own]
+      nose_shape: locomotive
+      doors_per_side: 0
+      pantograph_count: 2
+      source: gerlines
+      missing:
+        length_m: *no-loco-length
+        width_m: *no-loco-length
+        height_m: *no-loco-length
+        floor_height_m: *no-loco-length
+        bogie_pitch_m: *no-loco-length
+        bogie_offset_m: *no-loco-length
+        wheel_diameter_m: *no-loco-length
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_positions_m: *no-pantograph-place
+        bogie_wheelbase_m: *no-wheelbase
+        front: *no-front
+    - car_type: middle
+      name: Double-deck middle car
+      role: coach
+      length_m: 26.8
+      double_deck: true
+      bogies: [own, own]
+      pantograph_count: 0
+      source: wikipedia-de-doppelstockwagen
+      missing: &dosto-missing
+        width_m: *no-width
+        height_m: *no-height
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+    - car_type: driving-trailer
+      name: Double-deck driving trailer
+      role: driving_trailer
+      length_m: 26.8
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: cab_car
+      pantograph_count: 0
+      source: wikipedia-de-doppelstockwagen
+      field_sources:
+        nose_shape: gerlines
+      missing:
+        <<: *dosto-missing
+        bogie_offset_m: *no-offset
+        nose_length_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+        front: *no-front
+
+- model_id: generic-reg-emu
+  name: Generic regional electric multiple unit, single deck
+  generic: true
+  category: reg
+  unit_length_m: 56.9
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-continental
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+  car_types:
+    - car_type: end
+      name: End car, measures of the Coradia Continental 1440
+      role: cab
+      length_m: 20.25
+      width_m: 2.92
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_wheelbase_m: 2.44
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: rounded
+      pantograph_count: 0
+      source: wikipedia-de-coradia-continental
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+      missing: &jacobs-end-missing
+        bogie_pitch_m: *no-pitch
+        nose_length_m: *unmeasured
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        door_width_m: *no-door-width
+        front: *no-front
+    - car_type: middle
+      name: Middle car, measures of the Coradia Continental 1440
+      role: middle
+      length_m: 16.4
+      width_m: 2.92
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      pantograph_count: 1
+      source: wikipedia-de-coradia-continental
+      field_sources:
+        pantograph_count: gerlines
+      missing: &jacobs-middle-missing
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_positions_m: *no-pantograph-place
+        door_width_m: *no-door-width
+
+- model_id: generic-reg-dd
+  name: Generic regional double-deck multiple unit
+  generic: true
+  category: rfast
+  formation:
+    - car_type: power-car
+    - car_type: middle
+    - car_type: middle
+    - car_type: driving-trailer
+      reversed: true
+  source: wikipedia-de-twindexx-vario
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+    unit_length_m: the cited source gives car lengths, not a unit
+  car_types:
+    - car_type: power-car
+      name: Power car with cab, measures of the Twindexx Vario
+      role: cab
+      length_m: 25.98
+      width_m: 2.784
+      height_m: 4.631
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: cab_car
+      pantograph_count: 1
+      source: wikipedia-de-twindexx-vario
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        nose_length_m: *unmeasured
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_positions_m: *no-pantograph-place
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+        front: *no-front
+    - car_type: middle
+      name: Middle car, measures of the Twindexx Vario
+      role: middle
+      length_m: 26.8
+      width_m: 2.784
+      height_m: 4.632
+      double_deck: true
+      bogies: [own, own]
+      pantograph_count: 0
+      source: wikipedia-de-twindexx-vario
+      missing: &twindexx-middle-missing
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+    - car_type: driving-trailer
+      name: Driving trailer, measures of the Twindexx Vario
+      role: driving_trailer
+      length_m: 27.27
+      width_m: 2.784
+      height_m: 4.632
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: cab_car
+      pantograph_count: 0
+      source: wikipedia-de-twindexx-vario
+      field_sources:
+        nose_shape: gerlines
+      missing:
+        <<: *twindexx-middle-missing
+        bogie_offset_m: *no-offset
+        nose_length_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+        front: *no-front
+
+- model_id: generic-dmu
+  name: Generic diesel multiple unit
+  generic: true
+  category: reg
+  unit_length_m: 41.81
+  formation:
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-lint
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+  car_types:
+    - car_type: end
+      name: End car, measures of the LINT 41
+      role: cab
+      length_m: 20.905
+      width_m: 2.75
+      height_m: 4.34
+      floor_height_m: 0.598
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 16.5
+      bogie_wheelbase_m: 1.9
+      jacobs_wheelbase_m: 2.7
+      nose_shape: rounded
+      doors_per_side: 1
+      pantograph_count: 0
+      source: wikipedia-de-coradia-lint
+      field_sources:
+        nose_shape: gerlines
+      missing:
+        wheel_diameter_m: *no-wheel
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        door_width_m: *no-door-width
+        front: *no-front
+
+- model_id: generic-sbahn
+  name: Generic S-Bahn multiple unit
+  generic: true
+  category: sbahn
+  unit_length_m: 67.4
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-423
+  missing:
+    livery_id: a generic model shows the category colours of DESIGN.md, not an operator livery
+  car_types:
+    - car_type: end
+      name: End car, measures of class 423
+      role: cab
+      length_m: 18.24
+      width_m: 3.02
+      height_m: 4.295
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 15.14
+      bogie_wheelbase_m: 2.2
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: blunt
+      doors_per_side: 3
+      door_width_m: 1.3
+      pantograph_count: 0
+      source: wikipedia-de-423
+      field_sources:
+        nose_shape: gerlines
+      missing: &s423-end-missing
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        front: *no-front
+    - car_type: middle
+      name: Middle car, measures of class 423
+      role: middle
+      length_m: 15.46
+      width_m: 3.02
+      height_m: 4.295
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      doors_per_side: 3
+      door_width_m: 1.3
+      pantograph_count: 0
+      source: wikipedia-de-423
+      missing: &s423-middle-missing
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+
+# ---- High speed
+
+- model_id: db-412-7
+  name: ICE 4, seven cars (412.2)
+  series_id: db-412
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 202.0
+  formation:
+    - car_type: end
+    - car_type: powered
+    - car_type: trailer-pantograph
+    - car_type: powered
+    - car_type: powered-pantograph
+    - car_type: trailer
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-ice-4
+  car_types: &ice4-cars
+    - car_type: end
+      name: End car, class 812
+      role: cab
+      length_m: 29.106
+      width_m: 2.852
+      tumblehome_m: 0.06
+      roof_exponent: 2.0
+      height_m: 3.87
+      floor_height_m: 1.22
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.5
+      bogie_wheelbase_m: 2.3
+      wheel_diameter_m: 0.825
+      nose_shape: wedge
+      front:
+        source: commons-foobian-ice-4-side
+        view_source: commons-renardo-ice-4-three-quarter
+        length_m: 6.2
+        tip_height_m: 0.88
+        face_top_m: 1.06
+        bottom_m: 0.36
+        bottom_setback_m: 0.8
+        screen_bottom_m: 2.45
+        screen_top_m: 3.47
+        screen_bottom_setback_m: 1.83
+        screen_top_setback_m: 3.74
+        profile_by_height: [[0.36, 0.8], [0.405, 0.28], [0.57, 0.05], [0.88, 0.0], [0.98, 0.013], [1.06, 0.03], [1.22, 0.157], [1.5, 0.469], [1.8, 0.845], [2.1, 1.175], [2.45, 1.831], [2.8, 2.317], [3.1, 2.891], [3.4, 3.548], [3.6, 4.085], [3.72, 4.652], [3.8, 5.031], [3.86, 5.996]]
+        screen_width: 0.58
+        plan: round
+        plan_exponents: [3.0, 2.1]
+        straight_m: 0.8
+        lamp_bottom_m: 1.5
+        lamp_top_m: 2.03
+        lamp_inner: 0.42
+        lamp_outer: 0.72
+        stripe: dive
+        stripe_bottom_m: 1.72
+        stripe_top_m: 1.9
+        front_stripe_bottom_m: 0.84
+        front_stripe_top_m: 0.99
+        cab_window: true
+        side_window_from_m: 1.9
+        side_window_to_m: 8.1
+        cab_length_m: 8.4
+        loft:
+          waist_m: 1.2
+          top_m: 4.0
+          bottom_m: 0.1
+          exponent: 2.2
+          taper: 0.7
+          widths: [[0.3, 0.6], [0.6, 0.83], [1.2, 0.98], [1.85, 0.9], [2.3, 0.8], [3.3, 0.66], [3.87, 0.5]]
+        screen_widths: [[2.45, 0.56], [2.95, 0.6], [3.47, 0.5]]
+        screen_round: 10.0
+        decals:
+          - {slot: mask, bottom_m: 2.25, top_m: 3.52, inner: 0, outer: 0.66, round: 10, under: true}
+          - {slot: light, bottom_m: 3.43, top_m: 3.5, inner: 0, outer: 0.05, round: 2.4}
+          - {slot: mask, bottom_m: 1.5, top_m: 2.03, inner: 0.42, outer: 0.72, round: 8, slant: 0.16}
+          - {slot: light, bottom_m: 1.54, top_m: 1.83, inner: 0.455, outer: 0.675, round: 5, slant: 0.09, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0}
+          - {slot: glass, bottom_m: 1.87, top_m: 1.99, inner: 0.535, outer: 0.7, round: 3, slant: 0.035}
+          - {slot: mask, bottom_m: 2.07, top_m: 2.25, inner: 0.51, outer: 0.54, round: 12, slant: 0.03}
+          - {slot: mask, bottom_m: 2.07, top_m: 2.25, inner: 0.575, outer: 0.605, round: 12, slant: 0.03}
+          - {slot: mask, bottom_m: 2.07, top_m: 2.25, inner: 0.64, outer: 0.67, round: 12, slant: 0.03}
+          - {slot: mask, bottom_m: 2.07, top_m: 2.25, inner: 0.705, outer: 0.735, round: 12, slant: 0.03}
+          - {slot: stripe, bottom_m: 1.79, top_m: 1.94, inner: 0, outer: 0.14, round: 10}
+          - {slot: light, bottom_m: 1.805, top_m: 1.925, inner: 0, outer: 0.122, round: 10}
+          - {slot: stripe, bottom_m: 1.825, top_m: 1.905, inner: 0.012, outer: 0.09, round: 6}
+          - {slot: housing, bottom_m: 1.45, top_m: 1.465, inner: 0, outer: 0.75, round: 20}
+          - {slot: equipment, bottom_m: 1.1, top_m: 1.46, inner: 0.735, outer: 0.75, round: 20, slant: 0.01}
+          - {slot: equipment, bottom_m: 0.78, top_m: 1.1, inner: 0.735, outer: 0.75, round: 20}
+          - {slot: equipment, bottom_m: 0.45, top_m: 0.78, inner: 0.73, outer: 0.745, round: 20, slant: -0.005}
+          - {slot: housing, bottom_m: 0.42, top_m: 0.74, inner: 0, outer: 0.045, round: 6}
+        band_curve: [[1.82, 2.43, 2.45], [2.12, 2.32, 2.55], [2.7, 2.2, 2.68], [3.49, 2.21, 2.84], [4.47, 2.25, 2.9], [7.9, 2.25, 2.93]]
+        estimated: [plan, plan_exponents, straight_m, loft, band_curve, screen_widths, screen_round, decals, screen_top_m, screen_top_setback_m, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer]
+      window_sill_m: 2.25
+      window_top_m: 2.95
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.04, -13.35]
+      door_width_m: 1.25
+      source: wikipedia-de-ice-4
+      field_sources:
+        nose_shape: gerlines
+        window_sill_m: commons-tewebs-ice-4-side
+        window_top_m: commons-tewebs-ice-4-side
+        doors_per_side: db-emb-412-7
+        door_positions_m: db-emb-412-7
+        door_width_m: db-emb-412-7
+      missing:
+        bogie_offset_m: *no-offset
+    - car_type: powered
+      name: Powered middle car, class 412
+      role: middle
+      length_m: 28.75
+      width_m: 2.852
+      tumblehome_m: 0.06
+      roof_exponent: 2.0
+      height_m: 4.115
+      floor_height_m: 1.22
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.5
+      bogie_wheelbase_m: 2.6
+      wheel_diameter_m: 0.92
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [13.1, -13.1]
+      door_width_m: 1.25
+      source: wikipedia-de-ice-4
+      window_sill_m: 2.25
+      window_top_m: 2.95
+      field_sources: &ice4-middle-measured
+        window_sill_m: commons-tewebs-ice-4-side
+        window_top_m: commons-tewebs-ice-4-side
+        doors_per_side: db-emb-412-7
+        door_positions_m: db-emb-412-7
+        door_width_m: db-emb-412-7
+    - car_type: trailer-pantograph
+      name: Middle car with pantograph, class 812
+      role: middle
+      length_m: 28.75
+      width_m: 2.852
+      tumblehome_m: 0.06
+      roof_exponent: 2.0
+      height_m: 4.115
+      floor_height_m: 1.22
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.5
+      bogie_wheelbase_m: 2.3
+      wheel_diameter_m: 0.825
+      pantograph_count: 1
+      window_sill_m: 2.25
+      window_top_m: 2.95
+      doors_per_side: 2
+      door_positions_m: [13.1, -13.1]
+      door_width_m: 1.25
+      source: wikipedia-de-ice-4
+      field_sources: *ice4-middle-measured
+      missing:
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: powered-pantograph
+      name: Powered service car with pantograph, class 412
+      role: middle
+      length_m: 28.75
+      width_m: 2.852
+      tumblehome_m: 0.06
+      roof_exponent: 2.0
+      height_m: 4.115
+      floor_height_m: 1.22
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.5
+      bogie_wheelbase_m: 2.6
+      wheel_diameter_m: 0.92
+      pantograph_count: 1
+      window_sill_m: 2.25
+      window_top_m: 2.95
+      doors_per_side: 2
+      door_positions_m: [13.1, -13.1]
+      door_width_m: 1.25
+      source: wikipedia-de-ice-4
+      field_sources: *ice4-middle-measured
+      missing:
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: trailer
+      name: Middle car, class 812
+      role: middle
+      length_m: 28.75
+      width_m: 2.852
+      tumblehome_m: 0.06
+      roof_exponent: 2.0
+      height_m: 4.115
+      floor_height_m: 1.22
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.5
+      bogie_wheelbase_m: 2.3
+      wheel_diameter_m: 0.825
+      pantograph_count: 0
+      window_sill_m: 2.25
+      window_top_m: 2.95
+      door_positions_m: [13.1, -13.1]
+      door_width_m: 1.25
+      source: wikipedia-de-ice-4
+      field_sources: *ice4-middle-measured
+      missing:
+        doors_per_side: one of the unpowered middle cars is the restaurant car with loading doors, the forge has one type for both
+
+- model_id: db-412-12
+  name: ICE 4, twelve cars (412.0)
+  series_id: db-412
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 346.0
+  length_gap_reason: the article rounds the twelve-car length to whole metres (2 × 29,106 m and 10 × 28,75 m give 345,71 m)
+  formation:
+    - car_type: end
+    - car_type: powered
+    - car_type: powered
+    - car_type: trailer-pantograph
+    - car_type: powered
+    - car_type: powered
+    - car_type: trailer
+    - car_type: powered-pantograph
+    - car_type: trailer
+    - car_type: powered
+    - car_type: trailer
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-ice-4
+  car_types: *ice4-cars
+
+- model_id: db-403
+  name: ICE 3 (403)
+  series_id: db-403
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 200.84
+  length_gap_reason: *ice3-gap
+  formation: &ice3-formation
+    - car_type: end
+    - car_type: transformer
+    - car_type: powered
+    - car_type: trailer
+    - car_type: trailer
+    - car_type: powered
+    - car_type: transformer
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-403
+  car_types: &ice3-cars
+    - car_type: end
+      name: Powered end car
+      role: cab
+      length_m: 25.835
+      width_m: 2.95
+      tumblehome_m: 0.08
+      roof_exponent: 2.0
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      nose_shape: streamlined
+      front:
+        source: commons-ice-3-oberhaider
+        length_m: 6.5
+        tip_height_m: 0.75
+        bottom_m: 0.3
+        bottom_setback_m: 0.35
+        screen_bottom_m: 2.25
+        screen_top_m: 3.35
+        screen_bottom_setback_m: 1.3
+        screen_top_setback_m: 4.2
+        screen_width: 0.6
+        plan: round
+        straight_m: 0.5
+        lamp_bottom_m: 1.48
+        lamp_top_m: 1.74
+        lamp_inner: 0.26
+        lamp_outer: 0.58
+        stripe: dive
+        stripe_bottom_m: 1.66
+        stripe_top_m: 1.83
+        front_stripe_bottom_m: 0.8
+        front_stripe_top_m: 0.95
+        cab_window: true
+        side_window_from_m: 2.4
+        side_window_to_m: 6.1
+        cab_length_m: 6.6
+        screen_widths: [[2.25, 0.6], [2.6, 0.74], [3.0, 0.74], [3.35, 0.6]]
+        screen_round: 4.5
+        screen_columns: true
+        stripe_curve: [[6.5, 1.66, 1.83], [6.3, 1.64, 1.81], [4.1, 1.56, 1.72], [2.94, 1.44, 1.6], [2.2, 1.33, 1.49], [1.5, 1.18, 1.34], [0.9, 1.02, 1.17], [0.4, 0.9, 1.04], [0, 0.8, 0.95]]
+        decals:
+          - {slot: equipment, bottom_m: 1.43, top_m: 1.8, inner: 0.23, outer: 0.5, round: 6, slant: 0.1}
+          - {slot: housing, bottom_m: 1.482, top_m: 1.518, inner: 0.215, outer: 0.280, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.552, top_m: 1.588, inner: 0.234, outer: 0.299, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.622, top_m: 1.657, inner: 0.253, outer: 0.318, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.692, top_m: 1.728, inner: 0.272, outer: 0.337, round: 12, slant: 0.009}
+          - {slot: light, bottom_m: 1.456, top_m: 1.636, inner: 0.312, outer: 0.462, round: 4, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0}
+          - {slot: equipment, bottom_m: 1.9, top_m: 2.24, inner: 0, outer: 0.09, round: 12}
+          - {slot: light, bottom_m: 1.98, top_m: 2.12, inner: 0, outer: 0.045, round: 2.4}
+          - {slot: stripe, bottom_m: 1.47, top_m: 1.63, inner: 0, outer: 0.125, round: 20}
+          - {slot: upper_body, bottom_m: 1.485, top_m: 1.615, inner: 0, outer: 0.112, round: 20}
+          - {slot: stripe, bottom_m: 1.5, top_m: 1.6, inner: 0.008, outer: 0.09, round: 20}
+          - {slot: stripe, bottom_m: 0.8, top_m: 0.95, inner: 0, outer: 0.3, round: 12}
+        side_window_bottom_m: 2.05
+        side_window_top_m: 2.8
+        side_window_round_m: 0.35
+        side_window_rake: 0.6
+        loft:
+          waist_m: 1.15
+          top_m: 4.0
+          bottom_m: 0.1
+          exponent: 2.2
+          taper: 0.75
+          widths: [[0.3, 0.7], [0.68, 0.92], [1.15, 0.95], [1.95, 0.75], [3.2, 0.55], [3.89, 0.45]]
+        estimated: [length_m, plan, straight_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, loft, screen_widths, screen_round, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, decals, side_window_from_m, side_window_bottom_m, side_window_top_m, side_window_round_m, side_window_rake]
+      window_sill_m: 2.03
+      window_top_m: 2.82
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [4.29]
+      door_width_m: 1.15
+      source: wikipedia-de-403
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: wikipedia-de-intercity-express
+        window_sill_m: commons-ice-3-oberhaider
+        window_top_m: commons-ice-3-oberhaider
+        doors_per_side: db-emb-403
+        door_positions_m: db-emb-403
+        door_width_m: db-emb-403
+      missing:
+        floor_height_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        bogie_offset_m: *no-offset
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: transformer
+      name: Transformer car with pantograph
+      role: middle
+      length_m: 24.775
+      width_m: 2.95
+      tumblehome_m: 0.08
+      roof_exponent: 2.0
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      pantograph_count: 1
+      window_sill_m: 2.03
+      window_top_m: 2.82
+      doors_per_side: 2
+      door_positions_m: [11.16, -11.16]
+      door_width_m: 1.15
+      source: wikipedia-de-403
+      field_sources:
+        pantograph_count: wikipedia-de-intercity-express
+        window_sill_m: commons-ice-3-oberhaider
+        window_top_m: commons-ice-3-oberhaider
+        doors_per_side: db-emb-403
+        door_positions_m: db-emb-403
+        door_width_m: db-emb-403
+      missing: &ice3-middle-missing
+        floor_height_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        pantograph_positions_m: *no-pantograph-place
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: powered
+      name: Powered middle car
+      role: middle
+      length_m: 24.775
+      width_m: 2.95
+      tumblehome_m: 0.08
+      roof_exponent: 2.0
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      pantograph_count: 0
+      window_sill_m: 2.03
+      window_top_m: 2.82
+      doors_per_side: 2
+      door_positions_m: [11.16, -11.16]
+      door_width_m: 1.15
+      source: wikipedia-de-403
+      field_sources:
+        pantograph_count: wikipedia-de-intercity-express
+        window_sill_m: commons-ice-3-oberhaider
+        window_top_m: commons-ice-3-oberhaider
+        doors_per_side: db-emb-403
+        door_positions_m: db-emb-403
+        door_width_m: db-emb-403
+      missing: &ice3-plain-missing
+        floor_height_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: trailer
+      name: Middle car
+      role: middle
+      length_m: 24.775
+      width_m: 2.95
+      tumblehome_m: 0.08
+      roof_exponent: 2.0
+      height_m: 3.89
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      pantograph_count: 0
+      window_sill_m: 2.03
+      window_top_m: 2.82
+      doors_per_side: 2
+      door_positions_m: [11.16, -11.16]
+      door_width_m: 1.15
+      source: wikipedia-de-403
+      field_sources:
+        pantograph_count: wikipedia-de-intercity-express
+        window_sill_m: commons-ice-3-oberhaider
+        window_top_m: commons-ice-3-oberhaider
+        doors_per_side: db-emb-403
+        door_positions_m: db-emb-403
+        door_width_m: db-emb-403
+      missing:
+        <<: *ice3-plain-missing
+        bogie_wheelbase_m: *no-wheelbase
+
+- model_id: db-406
+  name: ICE 3M (406)
+  series_id: db-406
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 200.84
+  length_gap_reason: *ice3-gap
+  formation: *ice3-formation
+  source: wikipedia-de-406
+  car_types: *ice3-cars
+
+- model_id: db-407
+  name: Velaro D (407)
+  series_id: db-407
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 200.72
+  formation:
+    - car_type: end
+    - car_type: transformer
+    - car_type: converter
+    - car_type: pantograph
+    - car_type: pantograph
+      reversed: true
+    - car_type: converter
+      reversed: true
+    - car_type: transformer
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-407
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 26.26
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      bogie_offset_m: -0.85
+      nose_shape: streamlined
+      front: &velaro-front
+        source: commons-velaro-407-stuttgart-kopf
+        view_source: siemens-velaro-d-factsheet
+        length_m: 6.6
+        tip_gap_m: 0.25
+        tip_height_m: 0.86
+        bottom_m: 0.3
+        bottom_setback_m: 1.6
+        screen_bottom_m: 2.2
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 1.16
+        screen_top_setback_m: 3.45
+        screen_width: 0.6
+        plan: round
+        plan_exponents: [3.2, 2.0]
+        straight_m: 0.5
+        lamp_bottom_m: 1.8
+        lamp_top_m: 2.05
+        lamp_inner: 0.36
+        lamp_outer: 0.68
+        stripe: dive
+        stripe_bottom_m: 1.66
+        stripe_top_m: 1.82
+        front_stripe_bottom_m: 0.8
+        front_stripe_top_m: 0.95
+        cab_window: true
+        side_window_from_m: 3.3
+        side_window_to_m: 7.3
+        cab_length_m: 7.0
+        screen_widths: [[2.2, 0.45], [2.45, 0.6], [2.8, 0.64], [3.2, 0.56], [3.45, 0.45]]
+        screen_round: 3.0
+        side_profile: [[1.6, 0.3], [0.9, 0.33], [0.6, 0.37], [0.35, 0.45], [0.2, 0.53], [0.08, 0.63], [0.02, 0.74], [0, 0.86], [0.04, 1.0], [0.09, 1.1], [0.14, 1.18], [0.24, 1.31], [0.34, 1.43], [0.54, 1.64], [0.75, 1.84], [0.95, 2.02], [1.16, 2.19], [1.46, 2.4], [1.87, 2.7], [2.27, 2.91], [2.68, 3.11], [3.09, 3.3], [3.49, 3.48], [4.0, 3.63], [4.5, 3.72], [5.0, 3.79], [5.5, 3.84], [6.0, 3.875], [6.6, 3.89]]
+        stripe_curve: [[6.6, 1.66, 1.82], [5.4, 1.55, 1.71], [4.33, 1.44, 1.61], [3.57, 1.39, 1.54], [2.66, 1.25, 1.41], [2.1, 1.09, 1.26], [1.48, 1.01, 1.15], [0.98, 0.94, 1.08], [0.44, 0.87, 1.01], [0.14, 0.8, 0.95], [0, 0.8, 0.95]]
+        plan_widths: [[0.3, 0.51], [0.6, 0.65], [0.9, 0.73], [1.2, 0.8], [1.5, 0.84], [1.8, 0.88], [2.1, 0.92], [2.4, 0.96], [2.7, 0.99], [2.9, 1.0]]
+        decals:
+          - {slot: light, bottom_m: 1.8, top_m: 2.05, inner: 0.36, outer: 0.68, round: 4, tilt_deg: 45, fill: true, tail: 0.15, tail_side: inner, lens_margin_m: 0.012}
+          - {slot: mask, bottom_m: 2.22, top_m: 2.245, inner: 0.5, outer: 0.7, round: 12}
+          - {slot: mask, bottom_m: 2.275, top_m: 2.3, inner: 0.51, outer: 0.71, round: 12}
+          - {slot: mask, bottom_m: 2.33, top_m: 2.355, inner: 0.52, outer: 0.72, round: 12}
+          - {slot: stripe, bottom_m: 0.8, top_m: 0.95, inner: 0, outer: 0.1, round: 12}
+          - {slot: equipment, bottom_m: 1.95, top_m: 2.3, inner: 0, outer: 0.42, round: 12, under: true}
+          - {slot: stripe, bottom_m: 1.2, top_m: 1.4, inner: 0, outer: 0.11, round: 20}
+          - {slot: upper_body, bottom_m: 1.215, top_m: 1.385, inner: 0, outer: 0.097, round: 20}
+          - {slot: stripe, bottom_m: 1.235, top_m: 1.365, inner: 0.008, outer: 0.08, round: 20}
+        band_curve: [[3.29, 2.36, 2.37], [3.7, 1.78, 2.47], [4.24, 1.85, 2.59], [5.37, 1.93, 2.7], [7.3, 2.01, 2.79]]
+        cab_glass_curve: [[3.41, 2.32, 2.34], [3.75, 1.82, 2.44], [4.25, 1.9, 2.54]]
+        lettering: {text: ICE, from_m: 4.47, to_m: 5.75, bottom_m: 1.19, top_m: 1.81, italic: 0.2, stripe_gap_m: [4.35, 5.84]}
+        side_window_bottom_m: 2.0
+        side_window_top_m: 2.79
+        side_window_round_m: 0.2
+        side_window_rake: 0.15
+        estimated: [plan, plan_exponents, straight_m, bottom_setback_m, screen_bottom_m, screen_bottom_setback_m, lamp_bottom_m, lamp_top_m, screen_width, screen_widths, screen_round, decals, side_window_round_m, side_window_rake]
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [4.59]
+      door_width_m: 1.07
+      source: wikipedia-de-407
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        bogie_offset_m: commons-velaro-407-stuttgart-kopf
+        nose_shape: gerlines
+        doors_per_side: db-emb-407
+        door_positions_m: db-emb-407
+        door_width_m: db-emb-407
+      missing:
+        wheel_diameter_m: *no-wheel
+    - car_type: transformer
+      name: Transformer car with the direct current pantograph (cars 2 and 7)
+      role: middle
+      length_m: 24.7
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      pantograph_count: 1
+      doors_per_side: 1
+      door_positions_m: [11.18]
+      door_width_m: 1.07
+      source: wikipedia-de-407
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        doors_per_side: db-emb-407
+        door_positions_m: db-emb-407
+        door_width_m: db-emb-407
+      missing: &velaro-middle-missing
+        wheel_diameter_m: *no-wheel
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: converter
+      name: Converter car with two doors per side (cars 3 and 6)
+      role: middle
+      length_m: 24.7
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [11.18, -11.18]
+      door_width_m: 1.07
+      source: wikipedia-de-407
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        doors_per_side: db-emb-407
+        door_positions_m: db-emb-407
+        door_width_m: db-emb-407
+      missing:
+        <<: *velaro-middle-missing
+    - car_type: pantograph
+      name: Middle car with two alternating current pantographs (cars 4 and 5)
+      role: middle
+      length_m: 24.7
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      pantograph_count: 2
+      doors_per_side: 1
+      door_positions_m: [-11.18]
+      door_width_m: 1.07
+      source: wikipedia-de-407
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        doors_per_side: db-emb-407
+        door_positions_m: db-emb-407
+        door_width_m: db-emb-407
+      missing:
+        <<: *velaro-middle-missing
+
+- model_id: db-408
+  name: ICE 3neo (408)
+  series_id: db-408
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 200.72
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-408
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 26.26
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      bogie_offset_m: -0.85
+      nose_shape: streamlined
+      front: &velaro-3neo-front
+        source: commons-velaro-407-stuttgart-kopf
+        view_source: commons-ice-3neo-hannover
+        length_m: 6.6
+        tip_gap_m: 0.25
+        tip_height_m: 0.86
+        bottom_m: 0.3
+        bottom_setback_m: 1.6
+        screen_bottom_m: 2.2
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 1.16
+        screen_top_setback_m: 3.45
+        screen_width: 0.6
+        plan: round
+        plan_exponents: [3.2, 2.0]
+        straight_m: 0.5
+        lamp_bottom_m: 1.7
+        lamp_top_m: 2.12
+        lamp_inner: 0.4
+        lamp_outer: 0.6
+        stripe: dive
+        stripe_bottom_m: 1.66
+        stripe_top_m: 1.82
+        front_stripe_bottom_m: 0.82
+        front_stripe_top_m: 0.99
+        cab_window: true
+        side_window_from_m: 3.3
+        side_window_to_m: 7.3
+        cab_length_m: 7.0
+        screen_widths: [[2.2, 0.45], [2.45, 0.6], [2.8, 0.64], [3.2, 0.56], [3.45, 0.45]]
+        screen_round: 3.0
+        side_profile: [[1.6, 0.3], [0.9, 0.33], [0.6, 0.37], [0.35, 0.45], [0.2, 0.53], [0.08, 0.63], [0.02, 0.74], [0, 0.86], [0.04, 1.0], [0.09, 1.1], [0.14, 1.18], [0.24, 1.31], [0.34, 1.43], [0.54, 1.64], [0.75, 1.84], [0.95, 2.02], [1.16, 2.19], [1.46, 2.4], [1.87, 2.7], [2.27, 2.91], [2.68, 3.11], [3.09, 3.3], [3.49, 3.48], [4.0, 3.63], [4.5, 3.72], [5.0, 3.79], [5.5, 3.84], [6.0, 3.875], [6.6, 3.89]]
+        stripe_curve: [[6.6, 1.66, 1.82], [5.4, 1.55, 1.71], [4.33, 1.44, 1.61], [3.57, 1.39, 1.54], [2.66, 1.25, 1.41], [2.1, 1.09, 1.26], [1.48, 1.01, 1.17], [0.98, 0.95, 1.12], [0.44, 0.88, 1.04], [0.14, 0.82, 0.99], [0, 0.82, 0.99]]
+        plan_widths: [[0.3, 0.51], [0.6, 0.65], [0.9, 0.73], [1.2, 0.8], [1.5, 0.84], [1.8, 0.88], [2.1, 0.92], [2.4, 0.96], [2.7, 0.99], [2.9, 1.0]]
+        decals:
+          - {slot: equipment, bottom_m: 1.63, top_m: 2.17, inner: 0.405, outer: 0.595, round: 4, tilt_deg: 25}
+          - {slot: light, bottom_m: 1.66, top_m: 2.14, inner: 0.425, outer: 0.575, round: 4, tilt_deg: 25, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0}
+          - {slot: mask, bottom_m: 2.22, top_m: 2.245, inner: 0.5, outer: 0.7, round: 12}
+          - {slot: mask, bottom_m: 2.275, top_m: 2.3, inner: 0.51, outer: 0.71, round: 12}
+          - {slot: mask, bottom_m: 2.33, top_m: 2.355, inner: 0.52, outer: 0.72, round: 12}
+          - {slot: stripe, bottom_m: 0.82, top_m: 0.99, inner: 0, outer: 0.1, round: 12}
+          - {slot: light, bottom_m: 3.36, top_m: 3.5, inner: 0, outer: 0.11, round: 12}
+          - {slot: equipment, bottom_m: 1.95, top_m: 2.3, inner: 0, outer: 0.42, round: 12, under: true}
+          - {slot: stripe, bottom_m: 1.2, top_m: 1.4, inner: 0, outer: 0.11, round: 20}
+          - {slot: upper_body, bottom_m: 1.215, top_m: 1.385, inner: 0, outer: 0.097, round: 20}
+          - {slot: stripe, bottom_m: 1.235, top_m: 1.365, inner: 0.008, outer: 0.08, round: 20}
+          - {slot: equipment, bottom_m: 1.6, top_m: 1.613, inner: 0, outer: 0.54, round: 20, seam: true}
+          - {slot: equipment, bottom_m: 1.45, top_m: 1.613, inner: 0.585, outer: 0.595, round: 20, slant: -0.1, seam: true}
+          - {slot: equipment, bottom_m: 0.5, top_m: 1.46, inner: 0.632, outer: 0.642, round: 20, seam: true}
+        lettering: {text: ICE, from_m: 4.47, to_m: 5.75, bottom_m: 1.19, top_m: 1.81, italic: 0.2, stripe_gap_m: [4.35, 5.84]}
+        side_window_bottom_m: 2.0
+        side_window_top_m: 2.79
+        side_window_round_m: 0.2
+        side_window_rake: 0.15
+        estimated: [plan, plan_exponents, straight_m, bottom_setback_m, screen_bottom_m, screen_bottom_setback_m, lamp_bottom_m, lamp_top_m, screen_width, screen_widths, screen_round, decals, side_window_round_m, side_window_rake]
+      doors_per_side: 1
+      door_positions_m: [4.63]
+      door_width_m: 1.1
+      source: wikipedia-de-408
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        bogie_offset_m: commons-velaro-407-stuttgart-kopf
+        length_m: siemens-velaro-ms-article
+        nose_shape: gerlines
+        doors_per_side: db-emb-408
+        door_positions_m: db-emb-408
+        door_width_m: db-emb-408
+      missing:
+        wheel_diameter_m: *no-wheel
+        pantograph_count: &no-pantograph-car the cited source does not say which cars carry pantographs
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 24.7
+      width_m: 2.924
+      tumblehome_m: 0.08
+      body_bottom_m: 0.84
+      roof_exponent: 2.0
+      height_m: 3.89
+      window_sill_m: 2.05
+      window_top_m: 2.79
+      floor_height_m: 1.24
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.375
+      bogie_wheelbase_m: 2.5
+      doors_per_side: 2
+      door_positions_m: [11.23, -11.23]
+      door_width_m: 1.1
+      source: wikipedia-de-408
+      field_sources:
+        height_m: commons-velaro-407-drawing
+        window_sill_m: commons-velaro-407-stuttgart-kopf
+        window_top_m: commons-velaro-407-stuttgart-kopf
+        body_bottom_m: commons-velaro-407-stuttgart-kopf
+        length_m: siemens-velaro-ms-article
+        doors_per_side: db-emb-408
+        door_positions_m: db-emb-408
+        door_width_m: db-emb-408
+      missing:
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+
+- model_id: db-401
+  name: ICE 1, two power heads and nine middle cars
+  series_id: db-401
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 279.0
+  length_gap_reason: the article rounds the nine-car length to whole metres (2 × 20,56 m and 9 × 26,4 m give 278,72 m)
+  formation:
+    - car_type: power-head
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: restaurant
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: power-head
+      reversed: true
+  source: wikipedia-de-ice-1
+  missing:
+    formation: the article gives the nine-car length, not where the restaurant car runs, so it sits in the middle
+  car_types:
+    - car_type: power-head
+      name: Power head, class 401
+      role: power_head
+      length_m: 20.56
+      width_m: 3.07
+      height_m: 3.84
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 11.46
+      bogie_wheelbase_m: 3.0
+      wheel_diameter_m: 1.04
+      nose_shape: blunt
+      front:
+        source: commons-nath-401-584-side
+        view_source: commons-terfloth-ice-1-front
+        length_m: 4.2
+        tip_height_m: 0.85
+        face_top_m: 1.0
+        bottom_m: 0.31
+        bottom_setback_m: 0.27
+        screen_bottom_m: 2.5
+        screen_top_m: 3.3
+        screen_bottom_setback_m: 1.25
+        screen_top_setback_m: 2.13
+        profile_by_height: [[0.28, 0.39], [0.42, 0.17], [0.64, 0.06], [0.85, 0.0], [1.03, 0.08], [1.25, 0.23], [1.53, 0.44], [1.87, 0.73], [2.2, 1.0], [2.53, 1.28], [2.87, 1.61], [3.14, 1.94], [3.42, 2.28], [3.64, 2.61], [3.75, 2.94], [3.8, 3.44]]
+        screen_width: 0.82
+        plan: flat
+        straight_m: 2.45
+        lamp_bottom_m: 1.34
+        lamp_top_m: 1.51
+        lamp_inner: 0.44
+        lamp_outer: 0.78
+        stripe: dive
+        stripe_bottom_m: 1.33
+        stripe_top_m: 1.68
+        front_stripe_bottom_m: 1.0
+        front_stripe_top_m: 1.17
+        screen_round: 8.0
+        decals:
+          - {slot: mask, bottom_m: 1.3, top_m: 1.55, inner: 0.4, outer: 0.82, round: 8}
+          - {slot: light, bottom_m: 1.35, top_m: 1.5, inner: 0.47, outer: 0.58, round: 3, tail: 1}
+          - {slot: light, bottom_m: 1.35, top_m: 1.5, inner: 0.64, outer: 0.75, round: 3, tail: 0}
+          - {slot: housing, bottom_m: 1.37, top_m: 1.39, inner: 0, outer: 0.3, round: 20}
+          - {slot: housing, bottom_m: 1.415, top_m: 1.435, inner: 0, outer: 0.3, round: 20}
+          - {slot: housing, bottom_m: 1.46, top_m: 1.48, inner: 0, outer: 0.3, round: 20}
+          - {slot: light, bottom_m: 2.28, top_m: 2.4, inner: 0, outer: 0.05, round: 2.4}
+          - {slot: housing, bottom_m: 2.45, top_m: 3.35, inner: 0, outer: 0.03, round: 20}
+          - {slot: light, bottom_m: 0.99, top_m: 1.18, inner: 0, outer: 0.1, round: 10}
+          - {slot: stripe, bottom_m: 1.02, top_m: 1.15, inner: 0, outer: 0.085, round: 10}
+          - {slot: light, bottom_m: 1.035, top_m: 1.135, inner: 0, outer: 0.072, round: 10}
+          - {slot: stripe, bottom_m: 1.05, top_m: 1.12, inner: 0.01, outer: 0.055, round: 6}
+        cab_window: true
+        side_window_from_m: 1.67
+        side_window_to_m: 2.6
+        estimated: [plan, straight_m, screen_round, decals]
+      doors_per_side: 0
+      window_sill_m: 2.52
+      window_top_m: 3.18
+      body_bottom_m: 0.7
+      side_panels_m: [[4.05, 5.06, 2.62, 3.33], [5.1, 6.12, 2.62, 3.33]]
+      pantograph_count: 1
+      source: wikipedia-de-ice-1
+      field_sources:
+        nose_shape: gerlines
+        doors_per_side: gerlines
+        window_sill_m: commons-nath-401-584-side
+        window_top_m: commons-nath-401-584-side
+        body_bottom_m: commons-nath-401-584-side
+        side_panels_m: commons-nath-401-584-side
+      missing:
+        floor_height_m: a power head has no passenger floor
+        bogie_offset_m: *no-offset
+        door_positions_m: a power head has no passenger doors
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: middle
+      name: Middle car, classes 801 to 804
+      role: middle
+      length_m: 26.4
+      width_m: 3.02
+      height_m: 3.84
+      floor_height_m: 1.21
+      double_deck: false
+      bogies: [own, own]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [12.04, -12.04]
+      door_width_m: 1.14
+      source: wikipedia-de-ice-1
+      field_sources:
+        doors_per_side: db-emb-402
+        door_positions_m: db-emb-402
+        door_width_m: db-emb-402
+      missing: &ice1-middle-missing
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: restaurant
+      name: Restaurant car with the higher roof
+      role: middle
+      length_m: 26.4
+      width_m: 3.02
+      height_m: 4.295
+      floor_height_m: 1.21
+      double_deck: false
+      bogies: [own, own]
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [3]
+      source: wikipedia-de-ice-1
+      field_sources:
+        doors_per_side: db-emb-401
+        door_positions_m: db-emb-401
+      missing:
+        <<: *ice1-middle-missing
+        bogie_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+
+- model_id: db-402
+  name: ICE 2, power car, six middle cars and driving trailer (402)
+  series_id: db-402
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 205.36
+  formation:
+    - car_type: power-car
+    - car_type: middle
+    - car_type: middle
+    - car_type: restaurant
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: driving-trailer
+      reversed: true
+  source: wikipedia-de-ice-2
+  missing:
+    formation: the operator sheet db-emb-402 names the cars 402, 805.3, 805.0, 807.0, 806.0, 806.3, 806.6 and 808.0 in this order; first and second class middle cars share one car type here
+  car_types:
+    - car_type: power-car
+      name: Power car, class 402
+      role: power_head
+      length_m: 20.56
+      width_m: 3.07
+      height_m: 3.84
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 11.46
+      bogie_offset_m: -1.0
+      bogie_wheelbase_m: 3.0
+      nose_shape: blunt
+      front:
+        source: commons-clic-402-005-nienburg
+        view_source: commons-falk2-402-025-hannover
+        length_m: 4.2
+        tip_height_m: 0.85
+        face_top_m: 1.0
+        bottom_m: 0.31
+        bottom_setback_m: 0.27
+        screen_bottom_m: 2.5
+        screen_top_m: 3.3
+        screen_bottom_setback_m: 1.25
+        screen_top_setback_m: 2.13
+        profile_by_height: [[0.28, 0.39], [0.42, 0.17], [0.64, 0.06], [0.85, 0.0], [1.03, 0.08], [1.25, 0.23], [1.53, 0.44], [1.87, 0.73], [2.2, 1.0], [2.53, 1.28], [2.87, 1.61], [3.14, 1.94], [3.42, 2.28], [3.64, 2.61], [3.75, 2.94], [3.8, 3.44]]
+        screen_width: 0.82
+        plan: flat
+        straight_m: 2.45
+        lamp_bottom_m: 1.33
+        lamp_top_m: 1.52
+        lamp_inner: 0.4
+        lamp_outer: 0.78
+        stripe: dive
+        stripe_bottom_m: 1.38
+        stripe_top_m: 1.66
+        front_stripe_bottom_m: 1.0
+        front_stripe_top_m: 1.17
+        screen_round: 8.0
+        decals:
+          - {slot: equipment, bottom_m: 1.33, top_m: 1.52, inner: 0.4, outer: 0.78, round: 6}
+          - {slot: housing, bottom_m: 1.35, top_m: 1.5, inner: 0.56, outer: 0.78, round: 6}
+          - {slot: light, bottom_m: 1.35, top_m: 1.5, inner: 0.58, outer: 0.76, round: 4, fill: true, tail: 0.4, tail_side: outer, lens_margin_m: 0.012}
+          - {slot: housing, bottom_m: 1.37, top_m: 1.39, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.415, top_m: 1.435, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.46, top_m: 1.48, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.37, top_m: 1.39, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 1.415, top_m: 1.435, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 1.46, top_m: 1.48, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 2.26, top_m: 2.42, inner: 0, outer: 0.07, round: 12}
+          - {slot: light, bottom_m: 2.29, top_m: 2.39, inner: 0, outer: 0.035, round: 2.4}
+          - {slot: equipment, bottom_m: 0.42, top_m: 1.3, inner: 0, outer: 0.0045, round: 20, seam: true}
+          - {slot: equipment, bottom_m: 1.300, top_m: 1.313, inner: 0, outer: 0.740, round: 20, seam: true}
+          - {slot: housing, bottom_m: 0.62, top_m: 0.7, inner: 0, outer: 0.03, round: 4}
+        cab_window: true
+        side_window_from_m: 1.79
+        side_window_to_m: 2.78
+        side_window_bottom_m: 2.57
+        side_window_top_m: 3.22
+        side_window_rake: 1.52
+        lettering: {text: ICE, from_m: 8.99, to_m: 11.7, bottom_m: 1.99, top_m: 3.26, italic: 0.2}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, profile_by_height, screen_width, plan, straight_m, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, front_stripe_bottom_m, front_stripe_top_m, screen_round, decals]
+      doors_per_side: 0
+      window_sill_m: 2.57
+      window_top_m: 3.22
+      body_bottom_m: 0.7
+      side_panels_m: [[4.2, 5.21, 2.62, 3.3], [5.24, 6.28, 2.62, 3.3], [-6.76, -5.55, 2.62, 3.3], [-7.56, -6.84, 2.62, 3.3]]
+      pantograph_count: 1
+      source: wikipedia-de-ice-2
+      field_sources:
+        bogie_pitch_m: db-emb-402
+        bogie_offset_m: db-emb-402
+        nose_shape: gerlines
+        doors_per_side: gerlines
+        window_sill_m: commons-clic-402-005-nienburg
+        window_top_m: commons-clic-402-005-nienburg
+        body_bottom_m: commons-nath-401-584-side
+        side_panels_m: commons-clic-402-005-nienburg
+        pantograph_count: commons-falk2-402-025-hannover
+      missing:
+        floor_height_m: a power car has no passenger floor
+        wheel_diameter_m: the cited source gives the carrying wheels of the middle cars only
+        door_positions_m: a power car has no passenger doors
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: middle
+      name: Middle car, classes 805 (first class) and 806 (second class)
+      role: middle
+      length_m: 26.4
+      width_m: 3.02
+      height_m: 3.84
+      floor_height_m: 1.226
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.26
+      bogie_wheelbase_m: 2.5
+      wheel_diameter_m: 0.92
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [12.04, -12.04]
+      door_width_m: 1.14
+      window_sill_m: 1.96
+      window_top_m: 2.75
+      source: wikipedia-de-ice-2
+      field_sources:
+        height_m: wikipedia-de-ice-1
+        bogie_pitch_m: db-emb-402
+        pantograph_count: db-emb-402
+        doors_per_side: db-emb-402
+        door_positions_m: db-emb-402
+        door_width_m: db-emb-402
+        window_sill_m: db-emb-402
+        window_top_m: db-emb-402
+    - car_type: restaurant
+      name: Restaurant car, class 807, without the raised roof of the ICE 1
+      role: middle
+      length_m: 26.4
+      width_m: 3.02
+      height_m: 3.84
+      floor_height_m: 1.226
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.26
+      bogie_wheelbase_m: 2.5
+      wheel_diameter_m: 0.92
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [3.65, -11.92]
+      door_width_m: 1.14
+      window_sill_m: 1.96
+      window_top_m: 2.75
+      source: wikipedia-de-ice-2
+      field_sources:
+        height_m: wikipedia-de-ice-1
+        bogie_pitch_m: db-emb-402
+        pantograph_count: db-emb-402
+        doors_per_side: db-emb-402
+        door_positions_m: db-emb-402
+        door_width_m: db-emb-402
+        window_sill_m: db-emb-402
+        window_top_m: db-emb-402
+    - car_type: driving-trailer
+      name: Driving trailer, class 808
+      role: driving_trailer
+      length_m: 26.4
+      width_m: 3.02
+      height_m: 3.84
+      floor_height_m: 1.226
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 18.08
+      bogie_offset_m: -0.65
+      bogie_wheelbase_m: 2.5
+      wheel_diameter_m: 0.92
+      nose_shape: blunt
+      front:
+        source: db-emb-402
+        view_source: commons-falk2-808-003-hannover
+        length_m: 4.0
+        tip_height_m: 0.85
+        face_top_m: 0.97
+        bottom_m: 0.25
+        bottom_setback_m: 0.55
+        screen_bottom_m: 2.49
+        screen_top_m: 3.18
+        screen_bottom_setback_m: 1.3
+        screen_top_setback_m: 2.22
+        profile_by_height: [[0.25, 0.55], [0.36, 0.32], [0.48, 0.18], [0.6, 0.09], [0.73, 0.04], [0.85, 0.0], [0.97, 0.0], [1.1, 0.01], [1.22, 0.05], [1.47, 0.21], [1.71, 0.45], [1.96, 0.7], [2.21, 0.97], [2.45, 1.25], [2.7, 1.56], [2.95, 1.88], [3.19, 2.24], [3.44, 2.61], [3.69, 3.12], [3.81, 3.63]]
+        screen_width: 0.82
+        plan: flat
+        straight_m: 2.45
+        lamp_bottom_m: 1.33
+        lamp_top_m: 1.52
+        lamp_inner: 0.4
+        lamp_outer: 0.78
+        stripe: dive
+        stripe_bottom_m: 1.39
+        stripe_top_m: 1.71
+        front_stripe_bottom_m: 1.02
+        front_stripe_top_m: 1.17
+        screen_round: 8.0
+        decals:
+          - {slot: equipment, bottom_m: 1.33, top_m: 1.52, inner: 0.4, outer: 0.78, round: 6}
+          - {slot: housing, bottom_m: 1.35, top_m: 1.5, inner: 0.56, outer: 0.78, round: 6}
+          - {slot: light, bottom_m: 1.35, top_m: 1.5, inner: 0.58, outer: 0.76, round: 4, fill: true, tail: 0.4, tail_side: outer, lens_margin_m: 0.012}
+          - {slot: housing, bottom_m: 1.37, top_m: 1.39, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.415, top_m: 1.435, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.46, top_m: 1.48, inner: 0, outer: 0.16, round: 20}
+          - {slot: housing, bottom_m: 1.37, top_m: 1.39, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 1.415, top_m: 1.435, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 1.46, top_m: 1.48, inner: 0.2, outer: 0.33, round: 20}
+          - {slot: housing, bottom_m: 2.25, top_m: 2.41, inner: 0, outer: 0.07, round: 12}
+          - {slot: light, bottom_m: 2.28, top_m: 2.38, inner: 0, outer: 0.035, round: 2.4}
+          - {slot: equipment, bottom_m: 0.46, top_m: 1.3, inner: 0, outer: 0.0045, round: 20, seam: true}
+          - {slot: equipment, bottom_m: 1.300, top_m: 1.313, inner: 0, outer: 0.740, round: 20, seam: true}
+        cab_window: true
+        side_window_from_m: 2.26
+        side_window_to_m: 3.22
+        side_window_bottom_m: 2.57
+        side_window_top_m: 3.19
+        side_window_rake: 1.55
+        cab_length_m: 9.1
+        plain_cab_side: true
+        lettering: {text: ICE, from_m: 4.76, to_m: 6.68, bottom_m: 2.03, top_m: 2.92, italic: 0.2}
+        estimated: [screen_width, plan, straight_m, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, screen_round, decals]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [5.24, -12.04]
+      door_width_m: 1.14
+      window_sill_m: 2.04
+      window_top_m: 2.83
+      source: wikipedia-de-ice-2
+      field_sources:
+        height_m: wikipedia-de-ice-1
+        bogie_pitch_m: db-emb-402
+        bogie_offset_m: db-emb-402
+        nose_shape: gerlines
+        pantograph_count: db-emb-402
+        doors_per_side: db-emb-402
+        door_positions_m: db-emb-402
+        door_width_m: db-emb-402
+        window_sill_m: db-emb-402
+        window_top_m: db-emb-402
+
+- model_id: db-411
+  name: ICE T, seven cars (411)
+  series_id: db-411
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 184.4
+  formation:
+    - car_type: end
+    - car_type: converter
+    - car_type: motor
+    - car_type: middle
+    - car_type: motor
+    - car_type: converter
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-ice-t
+  car_types: &ice-t-cars
+    - car_type: end
+      name: Transformer end car with cab and pantograph
+      role: cab
+      length_m: 27.45
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      nose_shape: streamlined
+      front: &ice-t-front
+        source: commons-gruenich-ice-td-side
+        view_source: commons-ice-t-kinding
+        length_m: 3.4
+        tip_height_m: 0.9
+        face_top_m: 0.9
+        bottom_m: 0.36
+        bottom_setback_m: 0.7
+        screen_bottom_m: 2.05
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 0.45
+        screen_top_setback_m: 2.23
+        profile_by_height: [[0.36, 0.7], [0.42, 0.36], [0.52, 0.15], [0.68, 0.04], [0.9, 0.0], [1.14, 0.05], [1.43, 0.13], [1.71, 0.25], [2.0, 0.42], [2.24, 0.62], [2.45, 0.82], [2.69, 1.11], [2.93, 1.44], [3.22, 1.84], [3.46, 2.25], [3.65, 2.66], [3.79, 3.27], [3.84, 3.38]]
+        screen_width: 0.8
+        plan: round
+        plan_exponents: [2.2, 1.7]
+        straight_m: 0.2
+        lamp_bottom_m: 1.24
+        lamp_top_m: 1.76
+        lamp_inner: 0.37
+        lamp_outer: 0.72
+        stripe: sides
+        stripe_bottom_m: 1.45
+        stripe_top_m: 1.72
+        cab_window: true
+        side_window_from_m: 1.6
+        side_window_to_m: 2.87
+        cab_length_m: 3.6
+        loft:
+          waist_m: 2.4
+          top_m: 4.2
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.7
+          widths: [[0.36, 0.5], [0.6, 0.56], [0.9, 0.62], [1.5, 0.72], [2.2, 0.8], [3.0, 0.8], [3.6, 0.7], [3.91, 0.55]]
+        screen_round: 3.0
+        screen_columns: true
+        screen_widths: [[2.05, 0.8], [2.75, 0.9], [3.45, 0.7]]
+        side_window_bottom_m: 1.9
+        side_window_top_m: 2.74
+        side_window_round_m: 0.3
+        band_from_curve_start: true
+        band_curve: [[0.75, 1.92, 1.94], [0.87, 1.9, 2.08], [1.04, 1.92, 2.2], [1.22, 1.93, 2.29], [1.39, 1.95, 2.39], [1.56, 1.96, 2.46], [1.73, 1.96, 2.53], [1.9, 1.96, 2.59], [2.07, 1.97, 2.63], [2.24, 1.96, 2.67], [2.41, 1.95, 2.7], [2.59, 1.95, 2.72], [2.85, 1.95, 2.74]]
+        lettering: {text: ICE, from_m: 4.22, to_m: 5.59, bottom_m: 1.14, top_m: 1.77, italic: 0.2, stripe_gap_m: [4.1, 5.65]}
+        decals:
+          - {slot: mask, bottom_m: 1.24, top_m: 1.76, inner: 0.37, outer: 0.72, round: 6, slant: 0.1}
+          - {slot: upper_body, bottom_m: 1.265, top_m: 1.735, inner: 0.385, outer: 0.47, round: 12, slant: 0.09}
+          - {slot: equipment, bottom_m: 1.265, top_m: 1.735, inner: 0.485, outer: 0.705, round: 4, slant: 0.09}
+          - {slot: light, bottom_m: 1.29, top_m: 1.6, inner: 0.497, outer: 0.69, round: 4, slant: 0.06, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0.012}
+          - {slot: housing, bottom_m: 1.31, top_m: 1.355, inner: 0.367, outer: 0.423, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.39, top_m: 1.435, inner: 0.383, outer: 0.439, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.47, top_m: 1.515, inner: 0.398, outer: 0.454, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.55, top_m: 1.595, inner: 0.413, outer: 0.469, round: 12, slant: 0.009}
+          - {slot: housing, bottom_m: 1.63, top_m: 1.675, inner: 0.429, outer: 0.485, round: 12, slant: 0.009}
+          - {slot: light, bottom_m: 3.52, top_m: 3.66, inner: 0, outer: 0.07, round: 3}
+          - {slot: stripe, bottom_m: 1.46, top_m: 1.65, inner: 0, outer: 0.105, round: 10}
+          - {slot: light, bottom_m: 1.48, top_m: 1.63, inner: 0, outer: 0.09, round: 10}
+          - {slot: stripe, bottom_m: 1.505, top_m: 1.605, inner: 0.01, outer: 0.068, round: 6}
+          - {slot: mask, bottom_m: 0.45, top_m: 1.235, inner: 0, outer: 0.003, round: 20}
+        estimated: [plan, plan_exponents, straight_m, loft, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, screen_round, screen_widths, side_window_round_m, decals]
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      bogie_skirt_m: 1.0
+      pantograph_count: 1
+      doors_per_side: 1
+      door_positions_m: [5.78]
+      door_width_m: 1.1
+      source: wikipedia-de-ice-t
+      field_sources:
+        tumblehome_m: commons-terfloth-ice-td-neustadt
+        bogie_skirt_m: commons-gruenich-ice-td-side
+        nose_shape: gerlines
+        window_sill_m: commons-ice-t-kinding
+        window_top_m: commons-ice-t-kinding
+        window_width_m: commons-ice-t-kinding
+        window_pillar_m: commons-ice-t-kinding
+        window_pillars: commons-ice-t-kinding
+        doors_per_side: db-emb-411
+        door_positions_m: db-emb-411
+        door_width_m: db-emb-411
+      missing:
+        wheel_diameter_m: *no-wheel
+        bogie_offset_m: *no-offset
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: converter
+      name: Powered converter car
+      role: middle
+      length_m: 25.9
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.65, -11.64]
+      door_width_m: 1.1
+      source: wikipedia-de-ice-t
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      field_sources: &ice-t-middle-measured
+        tumblehome_m: commons-terfloth-ice-td-neustadt
+        window_sill_m: commons-ice-t-kinding
+        window_top_m: commons-ice-t-kinding
+        window_width_m: commons-ice-t-kinding
+        window_pillar_m: commons-ice-t-kinding
+        window_pillars: commons-ice-t-kinding
+        doors_per_side: db-emb-411
+        door_positions_m: db-emb-411
+        door_width_m: db-emb-411
+      missing: &ice-t-middle-missing
+        wheel_diameter_m: *no-wheel
+    - car_type: motor
+      name: Powered motor car
+      role: middle
+      length_m: 25.9
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      pantograph_count: 0
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-2.18]
+      door_width_m: 1.1
+      source: wikipedia-de-ice-t
+      field_sources: *ice-t-middle-measured
+      missing:
+        <<: *ice-t-middle-missing
+    - car_type: middle
+      name: Middle car without drive
+      role: middle
+      length_m: 25.9
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      pantograph_count: 0
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      doors_per_side: 2
+      door_positions_m: [6.65, -11.64]
+      door_width_m: 1.1
+      source: wikipedia-de-ice-t
+      field_sources: *ice-t-middle-measured
+      missing:
+        <<: *ice-t-middle-missing
+
+- model_id: db-415
+  name: ICE T, five cars (415)
+  series_id: db-415
+  generic: false
+  category: hsr
+  livery_id: db-ice-verkehrsweiss
+  unit_length_m: 132.6
+  formation:
+    - car_type: end
+    - car_type: converter
+    - car_type: motor
+    - car_type: converter
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-ice-t
+  car_types:
+    - car_type: end
+      name: Transformer end car with cab and pantograph
+      role: cab
+      length_m: 27.45
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      nose_shape: streamlined
+      front: *ice-t-front
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      bogie_skirt_m: 1.0
+      pantograph_count: 1
+      doors_per_side: 1
+      door_positions_m: [5.78]
+      door_width_m: 1.05
+      source: wikipedia-de-ice-t
+      field_sources:
+        tumblehome_m: commons-terfloth-ice-td-neustadt
+        bogie_skirt_m: commons-gruenich-ice-td-side
+        nose_shape: gerlines
+        window_sill_m: commons-ice-t-kinding
+        window_top_m: commons-ice-t-kinding
+        window_width_m: commons-ice-t-kinding
+        window_pillar_m: commons-ice-t-kinding
+        window_pillars: commons-ice-t-kinding
+        doors_per_side: db-emb-415
+        door_positions_m: db-emb-415
+        door_width_m: db-emb-415
+      missing:
+        wheel_diameter_m: *no-wheel
+        bogie_offset_m: *no-offset
+        pantograph_positions_m: *no-pantograph-place
+    - car_type: converter
+      name: Powered converter car
+      role: middle
+      length_m: 25.9
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      pantograph_count: 0
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      doors_per_side: 2
+      door_positions_m: [6.52, -11.75]
+      door_width_m: 1.05
+      source: wikipedia-de-ice-t
+      field_sources:
+        tumblehome_m: commons-terfloth-ice-td-neustadt
+        window_sill_m: commons-ice-t-kinding
+        window_top_m: commons-ice-t-kinding
+        window_width_m: commons-ice-t-kinding
+        window_pillar_m: commons-ice-t-kinding
+        window_pillars: commons-ice-t-kinding
+        doors_per_side: db-emb-415
+        door_positions_m: db-emb-415
+        door_width_m: db-emb-415
+      missing:
+        <<: *ice-t-middle-missing
+    - car_type: motor
+      name: Powered motor car
+      role: middle
+      length_m: 25.9
+      width_m: 2.85
+      tumblehome_m: 0.15
+      roof_exponent: 2.2
+      height_m: 3.91
+      floor_height_m: 1.25
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 19.0
+      bogie_wheelbase_m: 2.7
+      pantograph_count: 0
+      window_sill_m: 1.91
+      window_top_m: 2.71
+      window_width_m: 1.9
+      window_pillar_m: 0.16
+      window_pillars: body
+      doors_per_side: 2
+      door_positions_m: [6.52, -11.75]
+      door_width_m: 1.05
+      source: wikipedia-de-ice-t
+      field_sources:
+        tumblehome_m: commons-terfloth-ice-td-neustadt
+        window_sill_m: commons-ice-t-kinding
+        window_top_m: commons-ice-t-kinding
+        window_width_m: commons-ice-t-kinding
+        window_pillar_m: commons-ice-t-kinding
+        window_pillars: commons-ice-t-kinding
+        doors_per_side: db-emb-415
+        door_positions_m: db-emb-415
+        door_width_m: db-emb-415
+      missing:
+        <<: *ice-t-middle-missing
+
+# ---- Long distance and regional double deck
+
+- model_id: db-intercity-2
+  name: Intercity 2, class 146.5 and five Twindexx Vario cars
+  series_id: db-intercity-2
+  generic: false
+  category: ld
+  formation:
+    - car_type: locomotive
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: driving-trailer
+      reversed: true
+  livery_id: db-intercity-2-sampled
+  source: wikipedia-de-intercity-2
+  missing:
+    unit_length_m: the article gives 134,50 m without the locomotive and no locomotive length
+  car_types:
+    - car_type: locomotive
+      name: Locomotive, class 146.5 (Traxx P160 AC2)
+      role: locomotive
+      double_deck: false
+      bogies: [own, own]
+      nose_shape: locomotive
+      front:
+        source: commons-falk2-146-560-ic2
+        length_m: 1.2
+        tip_height_m: 1.0
+        face_top_m: 2.6
+        bottom_setback_m: 0.05
+        screen_bottom_m: 2.75
+        screen_top_m: 3.95
+        screen_bottom_setback_m: 0.12
+        screen_top_setback_m: 0.95
+        screen_width: 0.9
+        plan: flat
+        plan_widths: [[0, 0.92], [0.12, 0.98], [0.3, 1.0]]
+        straight_m: 0.9
+        lamp_bottom_m: 1.22
+        lamp_top_m: 1.57
+        lamp_inner: 0.62
+        lamp_outer: 0.9
+        stripe: across
+        stripe_bottom_m: 1.85
+        stripe_top_m: 2.3
+        screen_round: 8.0
+        buffers: true
+        decals:
+          - {slot: mask, bottom_m: 2.62, top_m: 4.05, inner: 0, outer: 0.95, round: 12, under: true}
+          - {slot: mask, bottom_m: 1.18, top_m: 1.62, inner: 0.58, outer: 0.93, round: 6}
+          - {slot: light, bottom_m: 1.28, top_m: 1.5, inner: 0.63, outer: 0.73, round: 2.4}
+          - {slot: light, bottom_m: 1.28, top_m: 1.5, inner: 0.78, outer: 0.88, round: 2.4}
+          - {slot: doors, bottom_m: 1.9, top_m: 2.25, inner: 0, outer: 0.15, logo: true}
+          - {slot: mask, bottom_m: 2.4, top_m: 2.66, inner: 0, outer: 0.1, round: 6}
+          - {slot: light, bottom_m: 2.45, top_m: 2.61, inner: 0, outer: 0.06, round: 2.4, tail: 0}
+          - {slot: mask, bottom_m: 0.75, top_m: 1.15, inner: 0, outer: 0.98, round: 12}
+          - {slot: mask, bottom_m: 2.7, top_m: 4.0, inner: 0, outer: 0.035, round: 20}
+        estimated: [length_m, straight_m, plan, plan_widths, bottom_setback_m, screen_top_setback_m, screen_round, decals]
+      side_panels_m: [[7.5, 8.1, 2.6, 3.5], [-8.1, -7.5, 2.6, 3.5], [-6.6, 6.6, 3.2, 3.5]]
+      doors_per_side: 0
+      source: wikipedia-de-intercity-2
+      field_sources:
+        nose_shape: gerlines
+        doors_per_side: gerlines
+        side_panels_m: commons-falk2-146-560-ic2
+      missing: &traxx-missing
+        length_m: &no-146-length no source of WP-5.1 gives the length of class 146
+        width_m: *no-146-length
+        height_m: *no-146-length
+        floor_height_m: *no-146-length
+        bogie_pitch_m: *no-146-length
+        bogie_offset_m: *no-146-length
+        wheel_diameter_m: *no-146-length
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: middle
+      name: Double-deck middle car (DBpza 682.2, DApza 687.2)
+      role: coach
+      length_m: 26.8
+      width_m: 2.784
+      height_m: 4.632
+      double_deck: true
+      bogies: [own, own]
+      door_width_m: 1.8
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [9.93, -9.94]
+      window_sill_m: 3.12
+      window_top_m: 3.98
+      window_pillars: mask
+      source: wikipedia-de-twindexx-vario
+      field_sources:
+        door_width_m: wikipedia-de-intercity-2
+        pantograph_count: gerlines
+        doors_per_side: db-emb-ic2
+        door_positions_m: db-emb-ic2
+        window_sill_m: db-emb-ic2
+        window_top_m: db-emb-ic2
+        window_pillars: commons-falk2-dbpbzfa-668-hannover
+      missing: &ic2-middle-missing
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: driving-trailer
+      name: Double-deck driving trailer (DBpbzfa 668.2)
+      role: driving_trailer
+      length_m: 27.27
+      width_m: 2.784
+      height_m: 4.632
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: cab_car
+      front:
+        source: commons-falk2-dbpbzfa-668-side
+        view_source: commons-falk2-dbpbzfa-668-hannover
+        length_m: 2.5
+        tip_height_m: 1.1
+        face_top_m: 1.32
+        bottom_m: 0.12
+        bottom_setback_m: 0.6
+        screen_bottom_m: 2.3
+        screen_top_m: 3.6
+        screen_bottom_setback_m: 0.17
+        screen_top_setback_m: 0.63
+        profile_by_height: [[0.12, 0.6], [0.23, 0.43], [0.47, 0.18], [0.77, 0.03], [1.1, 0.0], [1.32, 0.0], [1.8, 0.08], [2.24, 0.15], [2.6, 0.24], [2.97, 0.34], [3.3, 0.47], [3.58, 0.61], [4.01, 0.98], [4.34, 1.46], [4.52, 1.95], [4.6, 2.3]]
+        screen_width: 0.54
+        plan: round
+        straight_m: 0.4
+        mask_bottom_m: 1.7
+        mask_top_m: 4.5
+        mask_width: 0.8
+        mask_slot: equipment
+        stripe: dive
+        front_stripe_bottom_m: 1.08
+        front_stripe_top_m: 1.24
+        screen_round: 6.0
+        buffers: true
+        decals:
+          - {slot: mask, bottom_m: 2.17, top_m: 4.17, inner: 0, outer: 0.6, round: 6, under: true}
+          - {slot: mask, bottom_m: 1.76, top_m: 2.1, inner: 0.24, outer: 0.58, round: 6}
+          - {slot: light, bottom_m: 1.81, top_m: 2.05, inner: 0.29, outer: 0.54, round: 4, fill: true, tail: 0.25, lens_margin_m: 0.025}
+          - {slot: housing, bottom_m: 1.85, top_m: 1.87, inner: 0, outer: 0.18, round: 20}
+          - {slot: housing, bottom_m: 1.9, top_m: 1.92, inner: 0, outer: 0.18, round: 20}
+          - {slot: housing, bottom_m: 1.95, top_m: 1.97, inner: 0, outer: 0.18, round: 20}
+          - {slot: stripe, bottom_m: 1.48, top_m: 1.66, inner: 0, outer: 0.11, round: 10}
+          - {slot: light, bottom_m: 1.5, top_m: 1.64, inner: 0, outer: 0.095, round: 10}
+          - {slot: stripe, bottom_m: 1.52, top_m: 1.62, inner: 0.008, outer: 0.068, round: 6}
+          - {slot: mask, bottom_m: 0.5, top_m: 1.15, inner: 0, outer: 0.5, round: 8}
+          - {slot: display, bottom_m: 3.28, top_m: 3.4, inner: 0, outer: 0.3, round: 12}
+        estimated: [screen_bottom_m, screen_top_m, plan, straight_m, mask_top_m, screen_round]
+      door_width_m: 1.3
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.49, -6.86]
+      window_sill_m: 3.12
+      window_top_m: 3.98
+      window_pillars: mask
+      source: wikipedia-de-twindexx-vario
+      field_sources:
+        nose_shape: gerlines
+        door_width_m: wikipedia-de-intercity-2
+        pantograph_count: gerlines
+        doors_per_side: db-emb-ic2
+        door_positions_m: db-emb-ic2
+        window_sill_m: db-emb-ic2
+        window_top_m: db-emb-ic2
+        window_pillars: commons-falk2-dbpbzfa-668-hannover
+      missing:
+        <<: *ic2-middle-missing
+        bogie_offset_m: *no-offset
+
+- model_id: doppelstockwagen-re
+  name: Regional double-deck train, class 146 and Görlitz double-deck cars
+  series_id: doppelstockwagen
+  generic: false
+  category: rfast
+  livery_id: db-regio-verkehrsrot
+  formation:
+    - car_type: locomotive
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: driving-trailer
+      reversed: true
+  source: wikipedia-de-doppelstockwagen
+  missing:
+    unit_length_m: no source of WP-5.1 gives the locomotive length
+    formation: three middle cars and a driving trailer is our typical consist, the article names no number
+  car_types:
+    - car_type: locomotive
+      name: Locomotive, class 146 (Traxx P160 AC)
+      role: locomotive
+      double_deck: false
+      bogies: [own, own]
+      height_m: 3.85
+      nose_shape: locomotive
+      front:
+        source: commons-146-273-koeln-front
+        length_m: 1.2
+        tip_height_m: 1.0
+        face_top_m: 2.6
+        bottom_setback_m: 0.05
+        screen_bottom_m: 2.67
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 0.12
+        screen_top_setback_m: 0.77
+        screen_width: 0.76
+        plan: flat
+        plan_widths: [[0, 0.92], [0.12, 0.98], [0.3, 1.0]]
+        straight_m: 0.9
+        stripe: none
+        screen_round: 10.0
+        buffers: true
+        decals:
+          - {slot: mask, bottom_m: 2.64, top_m: 3.68, inner: 0, outer: 0.74, round: 10, under: true}
+          - {slot: mask, bottom_m: 2.64, top_m: 3.5, inner: 0, outer: 0.035, round: 20}
+          - {slot: display, bottom_m: 3.5, top_m: 3.64, inner: 0, outer: 0.4, round: 12}
+          - {slot: accent, bottom_m: 1.93, top_m: 2.2, inner: 0.22, outer: 0.72, round: 20}
+          - {slot: accent, bottom_m: 1.9, top_m: 2.19, inner: 0, outer: 0.15, logo: true}
+          - {slot: light, bottom_m: 1.46, top_m: 1.66, inner: 0.39, outer: 0.67, round: 4}
+          - {slot: mask, bottom_m: 2.28, top_m: 2.5, inner: 0, outer: 0.1, round: 6}
+          - {slot: light, bottom_m: 2.31, top_m: 2.47, inner: 0, outer: 0.06, round: 2.4, tail: 0}
+          - {slot: mask, bottom_m: 0.6, top_m: 1.38, inner: 0, outer: 0.98, round: 12}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, plan, plan_widths, straight_m, screen_round]
+      side_panels_m: [[7.5, 8.1, 2.45, 3.26], [-8.1, -7.5, 2.45, 3.26], [-6.6, 6.6, 3.03, 3.31]]
+      doors_per_side: 0
+      source: wikipedia-de-doppelstockwagen
+      field_sources:
+        nose_shape: gerlines
+        doors_per_side: gerlines
+        height_m: commons-146-273-koeln-front
+        side_panels_m: commons-146-273-koeln-front
+      missing:
+        length_m: *no-146-length
+        width_m: *no-146-length
+        floor_height_m: *no-146-length
+        bogie_pitch_m: *no-146-length
+        bogie_offset_m: *no-146-length
+        wheel_diameter_m: *no-146-length
+        nose_length_m: *unmeasured
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+    - &do2010-middle
+      car_type: middle
+      name: Double-deck middle car
+      role: coach
+      length_m: 26.8
+      double_deck: true
+      bogies: [own, own]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.66, -6.72]
+      door_width_m: 1.59
+      window_width_m: 1.45
+      window_pillar_m: 0.18
+      source: wikipedia-de-doppelstockwagen
+      field_sources:
+        window_width_m: commons-falk2-dabpbzfa-connewitz
+        window_pillar_m: commons-falk2-dabpbzfa-connewitz
+        pantograph_count: gerlines
+        doors_per_side: db-emb-dosto-d
+        door_positions_m: db-emb-dosto-d
+        door_width_m: db-emb-dosto-d
+      missing:
+        width_m: *no-width
+        height_m: *no-height
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: driving-trailer
+      name: Double-deck driving trailer with low entrance
+      role: driving_trailer
+      length_m: 26.8
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: cab_car
+      front: &do2010-front
+        source: commons-falk2-dabpbzfa-connewitz
+        length_m: 1.1
+        tip_height_m: 1.0
+        face_top_m: 1.6
+        bottom_m: 0.6
+        bottom_setback_m: 0.05
+        screen_bottom_m: 2.39
+        screen_top_m: 3.72
+        screen_bottom_setback_m: 0.2
+        screen_top_setback_m: 0.6
+        screen_width: 0.77
+        plan: flat
+        plan_exponents: [4.0, 2.2]
+        straight_m: 0.3
+        mask_bottom_m: 1.56
+        mask_top_m: 4.38
+        mask_width: 0.85
+        mask_slot: equipment
+        stripe: none
+        screen_round: 10.0
+        screen_tone: light
+        skirt_top_m: 0.95
+        front_skirt_top_m: 0.6
+        buffers: true
+        decals:
+          - {slot: mask, bottom_m: 1.9, top_m: 3.86, inner: 0, outer: 0.82, round: 8, under: true}
+          - {slot: light, bottom_m: 1.97, top_m: 2.17, inner: 0.18, outer: 0.34, round: 2.4, tail: 0, tail_mode: combined}
+          - {slot: light, bottom_m: 1.97, top_m: 2.17, inner: 0.44, outer: 0.6, round: 2.4, tail: 0}
+          - {slot: light, bottom_m: 3.97, top_m: 4.17, inner: 0, outer: 0.08, round: 2.4}
+          - {slot: doors, bottom_m: 1.28, top_m: 1.56, inner: 0, outer: 0.13, logo: true}
+          - {slot: mask, bottom_m: 0.83, top_m: 1.17, inner: 0, outer: 0.98, round: 12}
+          - {slot: display, bottom_m: 3.44, top_m: 3.6, inner: 0, outer: 0.6, round: 12}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, plan, plan_exponents, straight_m, screen_round, screen_top_m, screen_width, skirt_top_m, front_skirt_top_m]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.06, -7.2]
+      door_width_m: 1.51
+      window_width_m: 1.45
+      window_pillar_m: 0.18
+      source: wikipedia-de-doppelstockwagen
+      field_sources:
+        window_width_m: commons-falk2-dabpbzfa-connewitz
+        window_pillar_m: commons-falk2-dabpbzfa-connewitz
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-dosto2010
+        door_positions_m: db-emb-dosto2010
+        door_width_m: db-emb-dosto2010
+      missing:
+        width_m: *no-width
+        height_m: *no-height
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_offset_m: *no-offset
+        bogie_wheelbase_m: *no-wheelbase
+
+- model_id: siemens-desiro-hc-4
+  name: Desiro HC, four cars (462)
+  series_id: siemens-desiro-hc
+  generic: false
+  category: rfast
+  unit_length_m: 105.252
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  livery_id: db-regio-verkehrsrot
+  source: wikipedia-de-desiro-hc
+  car_types:
+    - car_type: end
+      name: Single-deck powered end car
+      role: cab
+      length_m: 26.826
+      width_m: 2.82
+      height_m: 4.64
+      double_deck: false
+      bogies: [own, own]
+      door_width_m: 1.4
+      nose_shape: rounded
+      front:
+        source: commons-desiro-hc-strullendorf-front
+        length_m: 1.6
+        tip_height_m: 1.2
+        face_top_m: 1.9
+        bottom_m: 0.45
+        bottom_setback_m: 0.1
+        screen_bottom_m: 2.38
+        screen_top_m: 3.73
+        screen_bottom_setback_m: 0.25
+        screen_top_setback_m: 1.0
+        screen_width: 0.72
+        plan: round
+        straight_m: 0.6
+        mask_bottom_m: 2.14
+        mask_top_m: 4.4
+        mask_width: 0.76
+        lamp_bottom_m: 1.57
+        lamp_top_m: 1.82
+        lamp_inner: 0.42
+        lamp_outer: 0.6
+        stripe: none
+        chin_bottom_m: 0.46
+        chin_top_m: 1.25
+        chin_width: 0.5
+        screen_round: 5.0
+        skirt_top_m: 0.81
+        screen_widths: [[2.38, 0.72], [3.1, 0.74], [3.73, 0.68]]
+        decals:
+          - {slot: mask, bottom_m: 1.52, top_m: 1.88, inner: 0.39, outer: 0.88, round: 4}
+          - {slot: light, bottom_m: 1.57, top_m: 1.82, inner: 0.42, outer: 0.6, round: 6}
+          - {slot: light, bottom_m: 1.58, top_m: 1.78, inner: 0, outer: 0.11, round: 10}
+          - {slot: mask, bottom_m: 0.7, top_m: 1.2, inner: 0.56, outer: 0.85, round: 8}
+          - {slot: display, bottom_m: 3.41, top_m: 3.53, inner: 0, outer: 0.3, round: 12}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, plan, straight_m, mask_top_m, screen_round, screen_widths]
+      doors_per_side: 2
+      door_positions_m: [5.11, -6.41]
+      source: wikipedia-de-desiro-hc
+      field_sources:
+        nose_shape: gerlines
+        doors_per_side: db-emb-1462
+        door_positions_m: db-emb-1462
+      missing:
+        floor_height_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: middle
+      name: Double-deck middle car
+      role: middle
+      length_m: 25.8
+      width_m: 2.82
+      height_m: 4.64
+      double_deck: true
+      bogies: [own, own]
+      door_width_m: 1.8
+      doors_per_side: 2
+      door_positions_m: [-7.6, 4.4]
+      window_sill_m: 3.17
+      window_top_m: 3.8
+      source: wikipedia-de-desiro-hc
+      field_sources:
+        doors_per_side: commons-desiro-hc-nuremberg-side
+        door_positions_m: commons-desiro-hc-nuremberg-side
+        window_sill_m: commons-desiro-hc-nuremberg-side
+        window_top_m: commons-desiro-hc-nuremberg-side
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+
+# ---- Regional single deck
+
+- model_id: db-442-4
+  name: Talent 2, four cars (442)
+  series_id: db-442
+  generic: false
+  category: reg
+  livery_id: db-regio-442
+  unit_length_m: 72.3
+  formation: &talent2-4-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-talent-2
+  car_types: &talent2-4-cars
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 20.05
+      width_m: 2.925
+      tumblehome_m: 0.08
+      roof_exponent: 2.4
+      height_m: 4.26
+      floor_height_m: 0.695
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_wheelbase_m: 2.3
+      jacobs_wheelbase_m: 2.8
+      wheel_diameter_m: 0.84
+      nose_shape: rounded
+      front:
+        source: commons-ingolfbln-442-cottbus
+        view_source: commons-meskens-442-652-front
+        length_m: 3.0
+        tip_height_m: 1.2
+        bottom_m: 0.3
+        bottom_setback_m: 1.2
+        screen_bottom_m: 2.35
+        screen_top_m: 3.74
+        screen_bottom_setback_m: 0.63
+        screen_top_setback_m: 1.62
+        screen_width: 0.63
+        plan: round
+        mask_bottom_m: 2.2
+        mask_top_m: 4.2
+        mask_width: 0.9
+        lamp_bottom_m: 1.8
+        lamp_top_m: 2.3
+        lamp_inner: 0.46
+        lamp_outer: 0.7
+        stripe: none
+        cab_window: true
+        side_window_from_m: 3.0
+        side_window_to_m: 3.65
+        cab_length_m: 3.9
+        loft:
+          waist_m: 1.2
+          top_m: 4.4
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.3, 0.78], [0.8, 0.94], [1.4, 1.0], [2.7, 0.97], [3.8, 0.8]]
+        side_profile: [[1.2, 0.3], [0.7, 0.34], [0.4, 0.42], [0.22, 0.55], [0.12, 0.7], [0.06, 0.85], [0.02, 1.02], [0, 1.2], [0.04, 1.3], [0.25, 1.58], [0.52, 2.12], [0.9, 2.81], [1.33, 3.42], [1.9, 3.84], [2.5, 3.97], [3.0, 3.99]]
+        plan_widths: [[0, 0.611], [0.15, 0.779], [0.4, 0.866], [0.8, 0.969], [1.5, 1.0]]
+        skirt_top_m: 0.5
+        screen_widths: [[2.35, 0.6], [3.0, 0.64], [3.74, 0.66]]
+        screen_round: 5.0
+        screen_tone: light
+        mask_slot: equipment
+        decals:
+          - {slot: accent, bottom_m: 0.55, top_m: 0.62, inner: 0, outer: 1.0, round: 20}
+          - {slot: equipment, bottom_m: 0.28, top_m: 0.55, inner: 0, outer: 0.98, round: 10}
+          - {slot: equipment, bottom_m: 2.2, top_m: 3.9, inner: 0, outer: 0.9, round: 2.6, under: true}
+          - {slot: light, bottom_m: 1.78, top_m: 2.32, inner: 0.44, outer: 0.7, round: 3.5, slant: 0.06, tail: 0.5, tail_side: below}
+          - {slot: doors, bottom_m: 1.82, top_m: 2.12, inner: 0, outer: 0.16, logo: true}
+          - {slot: mask, bottom_m: 1.45, top_m: 1.62, inner: 0.1, outer: 0.4, round: 6}
+          - {slot: mask, bottom_m: 0.62, top_m: 1.12, inner: 0.52, outer: 0.82, round: 6}
+          - {slot: display, bottom_m: 3.42, top_m: 3.56, inner: 0, outer: 0.32, round: 12}
+        estimated: [plan, bottom_setback_m, mask_bottom_m, lamp_bottom_m, lamp_top_m, loft, side_profile, plan_widths, screen_widths, screen_round, decals, mask_slot, skirt_top_m]
+      door_width_m: 1.3
+      roof_equipment_m: [[-2.675, 0.625], [0.625, 3.525]]
+      window_sill_m: 1.73
+      window_top_m: 3.1
+      window_width_m: 1.73
+      window_pillar_m: 0.62
+      window_pillars: mask
+      doors_per_side: 1
+      door_positions_m: [-2.07]
+      source: wikipedia-de-talent-2
+      field_sources:
+        nose_shape: gerlines
+        window_sill_m: commons-ingolfbln-442-cottbus
+        window_top_m: commons-ingolfbln-442-cottbus
+        roof_equipment_m: commons-ingolfbln-442-cottbus
+        window_width_m: commons-ingolfbln-442-cottbus
+        window_pillar_m: commons-ingolfbln-442-cottbus
+        window_pillars: commons-ingolfbln-442-cottbus
+        doors_per_side: db-emb-442
+        door_positions_m: db-emb-442
+      missing:
+        bogie_pitch_m: *no-pitch
+        pantograph_count: *no-pantograph-car
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 16.1
+      width_m: 2.925
+      tumblehome_m: 0.08
+      roof_exponent: 2.4
+      height_m: 4.26
+      floor_height_m: 0.695
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.8
+      wheel_diameter_m: 0.84
+      door_width_m: 1.3
+      window_sill_m: 1.73
+      window_top_m: 3.1
+      window_width_m: 1.73
+      window_pillar_m: 0.62
+      window_pillars: mask
+      doors_per_side: 2
+      door_positions_m: [4.17, -4.17]
+      source: wikipedia-de-talent-2
+      field_sources:
+        window_sill_m: commons-ingolfbln-442-cottbus
+        window_top_m: commons-ingolfbln-442-cottbus
+        window_width_m: commons-ingolfbln-442-cottbus
+        window_pillar_m: commons-ingolfbln-442-cottbus
+        window_pillars: commons-ingolfbln-442-cottbus
+        doors_per_side: db-emb-442
+        door_positions_m: db-emb-442
+      missing:
+        pantograph_count: *no-pantograph-car
+
+- model_id: coradia-continental-440-4
+  name: Coradia Continental, four cars with short end cars (440.0)
+  series_id: alstom-coradia-continental
+  generic: false
+  category: reg
+  livery_id: db-regio-440-sampled
+  unit_length_m: 70.9
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-continental
+  car_types:
+    - car_type: end
+      name: Short end car with cab
+      role: cab
+      length_m: 19.05
+      width_m: 2.92
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_wheelbase_m: 2.44
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: rounded
+      front:
+        source: commons-440-aalen-side
+        view_source: commons-440-039-nuernberg-front
+        length_m: 1.33
+        tip_height_m: 1.5
+        face_top_m: 2.0
+        bottom_m: 0.45
+        bottom_setback_m: 0.06
+        screen_bottom_m: 2.12
+        screen_top_m: 3.72
+        screen_bottom_setback_m: 0.03
+        screen_top_setback_m: 0.5
+        screen_width: 0.81
+        screen_round: 9
+        screen_tone: light
+        plan: flat
+        straight_m: 0.9
+        mask_bottom_m: 1.97
+        mask_top_m: 4.26
+        mask_width: 0.84
+        mask_slot: equipment
+        lamp_bottom_m: 1.27
+        lamp_top_m: 1.6
+        lamp_inner: 0.5
+        lamp_outer: 0.92
+        skirt_top_m: 1.11
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.61
+        side_window_to_m: 2.28
+        cab_length_m: 2.5
+        decals:
+          - {slot: mask, bottom_m: 0.5, top_m: 0.7, inner: 0, outer: 0.9, round: 12}
+          - {slot: housing, bottom_m: 0.5, top_m: 1.02, inner: 0, outer: 0.46, round: 8}
+          - {slot: lower_body, bottom_m: 0.52, top_m: 0.9, inner: 0, outer: 0.3, round: 8}
+          - {slot: mask, bottom_m: 2.12, top_m: 2.4, inner: 0, outer: 0.16, round: 5}
+          - {slot: light, bottom_m: 1.27, top_m: 1.6, inner: 0.5, outer: 0.92, round: 4, tail: 0, tail_mode: combined, clear_lens: outer}
+          - {slot: doors, bottom_m: 1.08, top_m: 1.38, inner: 0, outer: 0.15, logo: true}
+          - {slot: light, bottom_m: 3.86, top_m: 4.04, inner: 0, outer: 0.08, round: 2.4}
+          - {slot: mask, bottom_m: 4.08, top_m: 4.18, inner: 0, outer: 0.1, round: 10}
+          - {slot: display, bottom_m: 3.42, top_m: 3.6, inner: 0, outer: 0.4, round: 12}
+        estimated: [plan, straight_m, screen_round, mask_bottom_m, mask_width, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, decals]
+      door_width_m: 1.61
+      window_sill_m: 1.77
+      window_top_m: 2.7
+      window_width_m: 1.15
+      window_pillar_m: 0.51
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [1.89]
+      source: wikipedia-de-coradia-continental
+      field_sources:
+        nose_shape: gerlines
+        door_width_m: commons-440-aalen-side
+        window_sill_m: commons-440-aalen-side
+        window_top_m: commons-440-aalen-side
+        window_width_m: commons-440-aalen-side
+        window_pillar_m: commons-440-aalen-side
+        window_pillars: commons-440-aalen-side
+        doors_per_side: db-emb-440
+        door_positions_m: db-emb-440
+      missing:
+        bogie_pitch_m: *no-pitch
+        pantograph_count: *no-pantograph-car
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 16.4
+      width_m: 2.92
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      window_sill_m: 1.77
+      window_top_m: 2.7
+      window_width_m: 1.15
+      window_pillar_m: 0.51
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [3.42]
+      door_width_m: 1.62
+      source: wikipedia-de-coradia-continental
+      field_sources: &coradia-middle-measured
+        window_sill_m: commons-440-aalen-side
+        window_top_m: commons-440-aalen-side
+        window_width_m: commons-440-aalen-side
+        window_pillar_m: commons-440-aalen-side
+        window_pillars: commons-440-aalen-side
+        doors_per_side: db-emb-440
+        door_positions_m: db-emb-440
+        door_width_m: db-emb-440
+      missing: &coradia-middle-missing
+        pantograph_count: *no-pantograph-car
+
+- model_id: db-1440-4
+  name: Coradia Continental, four cars with the new head (1440)
+  series_id: db-1440
+  generic: false
+  category: reg
+  livery_id: db-regio-1440-sampled
+  unit_length_m: 73.3
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-continental
+  car_types:
+    - car_type: end
+      name: End car with the EN 15227 head
+      role: cab
+      length_m: 20.25
+      width_m: 2.92
+      tumblehome_m: 0.06
+      roof_exponent: 2.4
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_wheelbase_m: 2.44
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: rounded
+      front:
+        source: commons-1440-buttenheim-front
+        view_source: commons-1440-side
+        length_m: 1.9
+        tip_height_m: 1.2
+        face_top_m: 1.5
+        bottom_m: 0.34
+        bottom_setback_m: 0.08
+        screen_bottom_m: 2.08
+        screen_top_m: 3.72
+        screen_bottom_setback_m: 0.27
+        screen_top_setback_m: 1.43
+        screen_width: 0.69
+        screen_widths: [[2.08, 0.5], [2.9, 0.72], [3.72, 0.92]]
+        screen_round: 5.0
+        screen_tone: light
+        plan: round
+        straight_m: 0.7
+        mask_bottom_m: 3.3
+        mask_top_m: 4.2
+        mask_width: 0.9
+        mask_slot: equipment
+        lamp_bottom_m: 2.05
+        lamp_top_m: 2.2
+        lamp_inner: 0.54
+        lamp_outer: 0.67
+        skirt_top_m: 1.11
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.9
+        side_window_to_m: 2.5
+        cab_length_m: 3.4
+        loft:
+          waist_m: 1.2
+          top_m: 4.4
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.68, 0.94], [2.13, 1.0], [3.29, 0.9], [4.34, 0.56]]
+        decals:
+          - {slot: equipment, bottom_m: 1.85, top_m: 2.4, inner: 0.01, outer: 0.44, round: 5, tilt_deg: 28, under: true}
+          - {slot: housing, bottom_m: 0.74, top_m: 1.3, inner: 0, outer: 0.3, round: 6}
+          - {slot: mask, bottom_m: 1.62, top_m: 2.15, inner: 0.58, outer: 0.8, round: 3, slant: 0.08}
+          - {slot: light, bottom_m: 1.86, top_m: 2.08, inner: 0.62, outer: 0.76, round: 2.2, tail: 0, tail_mode: combined}
+          - {slot: doors, bottom_m: 1.54, top_m: 1.84, inner: 0, outer: 0.15, logo: true}
+          - {slot: equipment, bottom_m: 0.3, top_m: 0.74, inner: 0, outer: 0.99, round: 10}
+          - {slot: display, bottom_m: 3.6, top_m: 3.72, inner: 0, outer: 0.3, round: 12}
+        estimated: [length_m, plan, straight_m, tip_height_m, face_top_m, screen_bottom_setback_m, screen_top_setback_m, side_window_from_m, side_window_to_m, loft, screen_widths, screen_round, decals]
+      window_sill_m: 1.77
+      window_top_m: 2.7
+      window_width_m: 1.15
+      window_pillar_m: 0.51
+      window_pillars: body
+      source: wikipedia-de-coradia-continental
+      field_sources:
+        nose_shape: gerlines
+        window_sill_m: commons-1440-side
+        window_top_m: commons-1440-side
+        window_width_m: commons-1440-side
+        window_pillar_m: commons-1440-side
+        window_pillars: commons-1440-side
+      missing:
+        bogie_pitch_m: *no-pitch
+        doors_per_side: *no-doors
+        door_positions_m: *unmeasured
+        pantograph_count: *no-pantograph-car
+        door_width_m: *no-door-width
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 16.4
+      width_m: 2.92
+      tumblehome_m: 0.06
+      roof_exponent: 2.4
+      height_m: 4.28
+      floor_height_m: 0.73
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      window_sill_m: 1.77
+      window_top_m: 2.7
+      window_width_m: 1.15
+      window_pillar_m: 0.51
+      window_pillars: body
+      source: wikipedia-de-coradia-continental
+      field_sources: *coradia-middle-measured
+      missing:
+        <<: *coradia-middle-missing
+        doors_per_side: the 440 sheet (db-emb-440) does not cover the 1440 with the new head
+        door_positions_m: *unmeasured
+        door_width_m: *no-door-width
+
+- model_id: db-428-flirt3
+  name: FLIRT 3, four cars (428)
+  series_id: db-428
+  generic: false
+  category: reg
+  unit_length_m: 74.7
+  formation: &flirt3-4-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  livery_id: db-regio-verkehrsrot
+  source: wikipedia-de-flirt
+  field_sources:
+    livery_id: commons-1428-duisburg-side
+  car_types: &flirt3-cars
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 21.25
+      height_m: 4.12
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [own, jacobs]
+      nose_shape: rounded
+      front: &flirt3-front
+        source: commons-1428-duisburg-side
+        view_source: commons-1428-werdenfels-front
+        length_m: 2.29
+        tip_height_m: 1.55
+        bottom_m: 0.55
+        bottom_setback_m: 0.07
+        screen_bottom_m: 2.0
+        screen_top_m: 3.88
+        screen_bottom_setback_m: 0.1
+        screen_top_setback_m: 1.45
+        screen_width: 0.86
+        screen_widths: [[2.0, 0.88], [3.0, 0.9], [3.85, 0.66]]
+        screen_round: 5.0
+        screen_tone: light
+        plan: round
+        straight_m: 0.4
+        lamp_bottom_m: 1.15
+        lamp_top_m: 1.5
+        lamp_inner: 0.45
+        lamp_outer: 0.85
+        skirt_top_m: 1.24
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.12
+        side_window_to_m: 2.06
+        cab_length_m: 3.3
+        loft:
+          waist_m: 1.55
+          top_m: 4.2
+          bottom_m: 0.3
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.3, 0.97], [1.62, 1.0], [3.4, 0.85], [4.1, 0.63]]
+        chin_bottom_m: 0.19
+        chin_top_m: 1.14
+        chin_width: 0.55
+        decals:
+          - {slot: equipment, bottom_m: 1.92, top_m: 3.95, inner: 0, outer: 0.95, round: 5, under: true}
+          - {slot: equipment, bottom_m: 1.8, top_m: 2.2, inner: 0.01, outer: 0.55, round: 5, tilt_deg: 14, under: true}
+          - {slot: mask, bottom_m: 1.16, top_m: 1.46, inner: 0.46, outer: 0.92, round: 3, tilt_deg: 10}
+          - {slot: light, bottom_m: 1.22, top_m: 1.42, inner: 0.5, outer: 0.64, round: 2.2, tail: 0, tail_mode: combined}
+          - {slot: doors, bottom_m: 1.34, top_m: 1.64, inner: 0, outer: 0.15, logo: true}
+          - {slot: display, bottom_m: 3.56, top_m: 3.68, inner: 0, outer: 0.3, round: 12}
+          - {slot: housing, bottom_m: 0.3, top_m: 1.06, inner: 0, outer: 0.48, round: 8}
+        estimated: [plan, straight_m, loft, screen_width, screen_widths, screen_round, decals]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-5.57]
+      door_width_m: 1.3
+      source: wikipedia-de-flirt
+      field_sources:
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        nose_shape: gerlines
+        doors_per_side: stadler-flirt-db-nrw
+        door_positions_m: stadler-flirt-db-nrw
+        door_width_m: stadler-flirt-db-nrw
+      missing:
+        width_m: the article gives a range of 2820 to 2880 mm across FLIRT variants
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: &no-jacobs-wheelbase the cited source gives no wheelbase for the Jacobs bogie
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 16.1
+      height_m: 4.12
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-2.68]
+      door_width_m: 1.3
+      source: wikipedia-de-flirt
+      field_sources:
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        doors_per_side: stadler-flirt-db-nrw
+        door_positions_m: stadler-flirt-db-nrw
+        door_width_m: stadler-flirt-db-nrw
+      missing:
+        width_m: the article gives a range of 2820 to 2880 mm across FLIRT variants
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+
+- model_id: db-429-flirt3
+  name: FLIRT 3, five cars (429)
+  series_id: db-429
+  generic: false
+  category: reg
+  unit_length_m: 90.8
+  formation: &flirt3-5-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: middle-centre
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  livery_id: db-regio-verkehrsrot
+  source: wikipedia-de-flirt
+  field_sources:
+    livery_id: commons-1428-duisburg-side
+  car_types: &flirt3-5-cars
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 21.25
+      height_m: 4.12
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [own, jacobs]
+      nose_shape: rounded
+      front:
+        source: commons-1428-duisburg-side
+        view_source: commons-1428-werdenfels-front
+        length_m: 2.29
+        tip_height_m: 1.55
+        bottom_m: 0.55
+        bottom_setback_m: 0.07
+        screen_bottom_m: 2.0
+        screen_top_m: 3.88
+        screen_bottom_setback_m: 0.07
+        screen_top_setback_m: 1.61
+        screen_width: 0.86
+        screen_widths: [[2.0, 0.88], [3.0, 0.9], [3.85, 0.66]]
+        screen_round: 5.0
+        screen_tone: light
+        plan: round
+        straight_m: 0.4
+        lamp_bottom_m: 1.46
+        lamp_top_m: 1.77
+        lamp_inner: 0.45
+        lamp_outer: 0.85
+        skirt_top_m: 1.24
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.12
+        side_window_to_m: 2.06
+        cab_length_m: 3.3
+        loft:
+          waist_m: 1.55
+          top_m: 4.2
+          bottom_m: 0.3
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.3, 0.97], [1.62, 1.0], [3.4, 0.85], [4.1, 0.63]]
+        chin_bottom_m: 0.19
+        chin_top_m: 1.14
+        chin_width: 0.55
+        decals:
+          - {slot: equipment, bottom_m: 1.92, top_m: 3.95, inner: 0, outer: 0.95, round: 5, under: true}
+          - {slot: equipment, bottom_m: 1.8, top_m: 2.2, inner: 0.01, outer: 0.55, round: 5, tilt_deg: 14, under: true}
+          - {slot: mask, bottom_m: 1.5, top_m: 1.78, inner: 0.46, outer: 0.92, round: 3, tilt_deg: 10}
+          - {slot: light, bottom_m: 1.56, top_m: 1.74, inner: 0.5, outer: 0.64, round: 2.2, tail: 0, tail_mode: combined}
+          - {slot: doors, bottom_m: 1.34, top_m: 1.64, inner: 0, outer: 0.15, logo: true}
+          - {slot: display, bottom_m: 3.56, top_m: 3.68, inner: 0, outer: 0.3, round: 12}
+          - {slot: housing, bottom_m: 0.3, top_m: 1.06, inner: 0, outer: 0.48, round: 8}
+        estimated: [plan, straight_m, loft, screen_width, screen_widths, screen_round, decals]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-0.32]
+      door_width_m: 1.3
+      source: wikipedia-de-flirt
+      field_sources:
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        nose_shape: gerlines
+        doors_per_side: stadler-flirt-db-esw
+        door_positions_m: stadler-flirt-db-esw
+        door_width_m: stadler-flirt-db-esw
+      missing:
+        width_m: the article gives a range of 2820 to 2880 mm across FLIRT variants
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: the cited source gives no wheelbase for the Jacobs bogie
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 16.1
+      height_m: 4.12
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-2.66]
+      door_width_m: 1.3
+      source: wikipedia-de-flirt
+      field_sources:
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        doors_per_side: stadler-flirt-db-esw
+        door_positions_m: stadler-flirt-db-esw
+        door_width_m: stadler-flirt-db-esw
+      missing:
+        width_m: the article gives a range of 2820 to 2880 mm across FLIRT variants
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+    - car_type: middle-centre
+      name: Middle car without passenger doors (car 3 of 429)
+      role: middle
+      length_m: 16.1
+      height_m: 4.12
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 0
+      door_positions_m: []
+      source: wikipedia-de-flirt
+      field_sources:
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        doors_per_side: stadler-flirt-db-esw
+        door_positions_m: stadler-flirt-db-esw
+      missing:
+        width_m: the article gives a range of 2820 to 2880 mm across FLIRT variants
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+        door_width_m: *no-door-width
+
+- model_id: db-463-3
+  name: Mireo, three cars (463)
+  series_id: db-463
+  generic: false
+  category: reg
+  livery_id: db-regio-verkehrsrot
+  formation: &mireo3-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-mireo
+  missing:
+    unit_length_m: the article gives 47 m for two cars and a range for the others
+  car_types: &mireo3-cars
+    - &mireo-end
+      car_type: end
+      name: Powered end car with cab
+      role: cab
+      length_m: 23.5
+      width_m: 2.808
+      tumblehome_m: 0.1
+      roof_exponent: 2.4
+      height_m: 4.208
+      floor_height_m: 0.705
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 19.68
+      bogie_wheelbase_m: 2.3
+      jacobs_wheelbase_m: 2.6
+      wheel_diameter_m: 0.88
+      nose_shape: rounded
+      front:
+        source: commons-mireo-hausach-side
+        view_source: commons-mireo-karlsruhe-front
+        length_m: 2.6
+        tip_height_m: 1.0
+        bottom_m: 0.2
+        face_top_m: 1.7
+        bottom_setback_m: 0.2
+        screen_bottom_m: 2.05
+        screen_top_m: 3.5
+        screen_bottom_setback_m: 0.15
+        screen_top_setback_m: 1.3
+        screen_width: 0.7
+        plan: round
+        straight_m: 0.5
+        mask_bottom_m: 2.7
+        mask_top_m: 3.95
+        mask_width: 0.82
+        lamp_bottom_m: 1.77
+        lamp_top_m: 2.0
+        lamp_inner: 0.65
+        lamp_outer: 0.87
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.3
+        side_window_to_m: 2.5
+        cab_length_m: 3.3
+        loft:
+          waist_m: 1.45
+          top_m: 4.4
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.39, 0.94], [1.89, 1.0], [2.59, 0.94], [3.38, 0.81], [4.17, 0.67]]
+        chin_bottom_m: 0.45
+        chin_top_m: 1.38
+        chin_width: 0.38
+        cheeks: {bottom_m: 0.3, top_m: 1.5, inner: 0.36, outer: 0.98, reach_m: 0.55, recess_m: 0.6}
+        skirt_top_m: 0.85
+        screen_widths: [[2.0, 0.72], [2.8, 0.8], [3.55, 0.7]]
+        screen_round: 5.0
+        screen_tone: light
+        decals:
+          - {slot: stripe, bottom_m: 1.55, top_m: 3.95, inner: 0, outer: 0.97, round: 3, under: true}
+          - {slot: mask, bottom_m: 1.62, top_m: 3.6, inner: 0, outer: 0.7, round: 2.6, under: true}
+          - {slot: light, bottom_m: 1.8, top_m: 2.04, inner: 0.5, outer: 0.86, round: 8, slant: 0.05, tilt_deg: 8}
+          - {slot: doors, bottom_m: 1.94, top_m: 2.24, inner: 0, outer: 0.15, logo: true}
+          - {slot: display, bottom_m: 3.18, top_m: 3.3, inner: 0, outer: 0.3, round: 12}
+          - {slot: equipment, bottom_m: 0.66, top_m: 1.06, inner: 0, outer: 0.15, round: 5}
+        estimated: [length_m, plan, straight_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, mask_bottom_m, mask_top_m, mask_width, side_window_from_m, side_window_to_m, loft, chin_bottom_m, chin_top_m, chin_width, screen_widths, screen_round, decals, skirt_top_m, cheeks]
+      window_sill_m: 1.8
+      window_top_m: 2.92
+      window_pillars: mask
+      doors_per_side: 1
+      door_positions_m: [0.99]
+      door_width_m: 1.6
+      source: wikipedia-de-mireo
+      field_sources:
+        window_sill_m: commons-mireo-hausach-side
+        window_top_m: commons-mireo-hausach-side
+        window_pillars: commons-mireo-hausach-side
+        nose_shape: gerlines
+        doors_per_side: siemens-mireo-rheintal-los2
+        door_positions_m: db-emb-463
+        door_width_m: db-emb-463
+      missing:
+        pantograph_count: *no-pantograph-car
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 19.8
+      width_m: 2.808
+      tumblehome_m: 0.1
+      roof_exponent: 2.4
+      height_m: 4.208
+      floor_height_m: 0.705
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.6
+      wheel_diameter_m: 0.88
+      window_sill_m: 1.8
+      window_top_m: 2.92
+      window_pillars: mask
+      doors_per_side: 2
+      door_positions_m: [5.99, -6.02]
+      door_width_m: 1.6
+      source: wikipedia-de-mireo
+      field_sources:
+        window_sill_m: commons-mireo-hausach-side
+        window_top_m: commons-mireo-hausach-side
+        window_pillars: commons-mireo-hausach-side
+        doors_per_side: db-emb-463
+        door_positions_m: db-emb-463
+        door_width_m: db-emb-463
+      missing:
+        pantograph_count: *no-pantograph-car
+
+# ---- S-Bahn
+
+- model_id: db-423
+  name: S-Bahn class 423
+  series_id: db-423
+  generic: false
+  category: sbahn
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 67.4
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-423
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 18.24
+      width_m: 3.02
+      height_m: 4.295
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 15.14
+      bogie_wheelbase_m: 2.2
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: blunt
+      front:
+        source: commons-423-telephoto
+        view_source: commons-423-sprite
+        length_m: 1.3
+        tip_height_m: 1.2
+        face_top_m: 1.7
+        bottom_m: 0.25
+        bottom_setback_m: 0.05
+        screen_bottom_m: 1.85
+        screen_top_m: 3.9
+        screen_bottom_setback_m: 0.12
+        screen_top_setback_m: 0.8
+        screen_width: 0.78
+        plan: flat
+        plan_widths: [[0, 0.6], [0.1, 0.8], [0.25, 0.93], [0.45, 1.0]]
+        straight_m: 0.35
+        mask_bottom_m: 1.73
+        mask_top_m: 4.16
+        mask_width: 0.9
+        lamp_bottom_m: 1.36
+        lamp_top_m: 1.56
+        lamp_inner: 0.54
+        lamp_outer: 0.8
+        skirt_top_m: 1.19
+        mask_slot: equipment
+        screen_round: 6.0
+        screen_tone: light
+        screen_widths: [[1.85, 0.78], [3.0, 0.8], [3.9, 0.74]]
+        decals:
+          - {slot: housing, bottom_m: 0.5, top_m: 1.2, inner: 0, outer: 0.3, round: 8}
+          - {slot: equipment, bottom_m: 0.8, top_m: 1.05, inner: 0, outer: 0.12, round: 10}
+          - {slot: light, bottom_m: 1.36, top_m: 1.56, inner: 0.54, outer: 0.8, round: 2.2}
+          - {slot: doors, bottom_m: 1.18, top_m: 1.44, inner: 0, outer: 0.12, logo: true}
+          - {slot: display, bottom_m: 3.58, top_m: 3.7, inner: 0, outer: 0.3, round: 12}
+        stripe: none
+        estimated: [length_m, tip_height_m, face_top_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, plan_widths, straight_m, mask_slot, screen_round, screen_widths, decals]
+      door_width_m: 1.3
+      pantograph_count: 1
+      pantograph_positions_m: [-7.9]
+      window_sill_m: 1.34
+      window_top_m: 3.38
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [3.73, -1.51, -6.39]
+      source: wikipedia-de-423
+      field_sources:
+        pantograph_count: commons-423-sprite
+        pantograph_positions_m: commons-423-sprite
+        window_sill_m: commons-423-telephoto
+        window_top_m: commons-423-telephoto
+        window_pillars: commons-423-telephoto
+        nose_shape: gerlines
+        doors_per_side: db-emb-423
+        door_positions_m: db-emb-423
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 15.46
+      width_m: 3.02
+      height_m: 4.295
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      door_width_m: 1.3
+      pantograph_count: 0
+      window_sill_m: 1.34
+      window_top_m: 3.38
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [5, 0.11, -4.77]
+      source: wikipedia-de-423
+      field_sources:
+        pantograph_count: commons-423-sprite
+        window_sill_m: commons-423-telephoto
+        window_top_m: commons-423-telephoto
+        window_pillars: commons-423-telephoto
+        doors_per_side: db-emb-423
+        door_positions_m: db-emb-423
+
+- model_id: db-430
+  name: S-Bahn class 430
+  series_id: db-430
+  generic: false
+  category: sbahn
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 68.3
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-430
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 19.256
+      width_m: 3.02
+      tumblehome_m: 0.05
+      roof_exponent: 2.6
+      height_m: 4.273
+      floor_height_m: 1.03
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 15.14
+      bogie_wheelbase_m: 2.2
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: rounded
+      front:
+        source: commons-430-vaihingen-front
+        view_source: commons-430-schorndorf-side
+        length_m: 1.5
+        tip_height_m: 1.3
+        face_top_m: 1.6
+        bottom_m: 0.5
+        bottom_setback_m: 0.1
+        screen_bottom_m: 2.3
+        screen_top_m: 3.75
+        screen_bottom_setback_m: 0.3
+        screen_top_setback_m: 1.1
+        screen_width: 0.75
+        plan: round
+        straight_m: 0.6
+        lamp_bottom_m: 1.6
+        lamp_top_m: 2.3
+        lamp_inner: 0.73
+        lamp_outer: 0.89
+        skirt_top_m: 1.24
+        screen_widths: [[2.3, 0.75], [3.0, 0.78], [3.75, 0.66]]
+        screen_round: 5.0
+        decals:
+          - {slot: equipment, bottom_m: 2.1, top_m: 4.4, inner: 0, outer: 0.95, round: 4, under: true}
+          - {slot: mask, bottom_m: 2.2, top_m: 3.9, inner: 0, outer: 0.86, round: 5, under: true}
+          - {slot: light, bottom_m: 1.62, top_m: 2.28, inner: 0.74, outer: 0.88, round: 6}
+          - {slot: light, bottom_m: 1.42, top_m: 1.58, inner: 0, outer: 0.11, round: 10}
+          - {slot: housing, bottom_m: 0.6, top_m: 1.32, inner: 0, outer: 0.27, round: 8}
+          - {slot: equipment, bottom_m: 0.86, top_m: 1.08, inner: 0, outer: 0.1, round: 10}
+          - {slot: display, bottom_m: 3.43, top_m: 3.55, inner: 0, outer: 0.3, round: 12}
+        stripe: none
+        loft:
+          waist_m: 1.3
+          top_m: 4.4
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.5
+          widths: [[0.22, 0.94], [1.95, 1.0], [3.1, 0.94], [4.26, 0.86]]
+        estimated: [length_m, tip_height_m, face_top_m, plan, straight_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, screen_bottom_m, screen_top_m, lamp_bottom_m, lamp_top_m, loft, screen_widths, screen_round, decals]
+      window_sill_m: 1.87
+      window_top_m: 2.82
+      window_pillar_m: 0.35
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [3.24, -2.01, -6.9]
+      door_width_m: 1.58
+      source: wikipedia-de-430
+      field_sources:
+        window_sill_m: commons-430-schorndorf-side
+        window_top_m: commons-430-schorndorf-side
+        window_pillar_m: commons-430-schorndorf-side
+        window_pillars: commons-430-schorndorf-side
+        nose_shape: gerlines
+        doors_per_side: db-emb-430
+        door_positions_m: db-emb-430
+        door_width_m: db-emb-430
+      missing:
+        pantograph_count: *no-pantograph-car
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 14.894
+      width_m: 3.02
+      tumblehome_m: 0.05
+      roof_exponent: 2.6
+      height_m: 4.273
+      floor_height_m: 1.03
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      window_sill_m: 1.87
+      window_top_m: 2.82
+      window_pillar_m: 0.35
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [4.73, 0.4, -4.46]
+      door_width_m: 1.58
+      source: wikipedia-de-430
+      field_sources:
+        window_sill_m: commons-430-schorndorf-side
+        window_top_m: commons-430-schorndorf-side
+        window_pillar_m: commons-430-schorndorf-side
+        window_pillars: commons-430-schorndorf-side
+        doors_per_side: db-emb-430
+        door_positions_m: db-emb-430
+        door_width_m: db-emb-430
+      missing:
+        pantograph_count: *no-pantograph-car
+
+- model_id: db-481
+  name: S-Bahn Berlin class 481, quarter train
+  series_id: db-481
+  generic: false
+  category: sbahn
+  livery_id: s-bahn-berlin-481-traditional
+  unit_length_m: 36.8
+  formation:
+    - car_type: car-a
+    - car_type: car-b
+      reversed: true
+  source: wikipedia-de-481
+  car_types:
+    - car_type: car-a
+      name: Car with cab on Bo' and 2' bogies (481)
+      role: cab
+      width_m: 3.0
+      height_m: 3.585
+      floor_height_m: 1.0
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 12.1
+      bogie_wheelbase_m: 2.2
+      wheel_diameter_m: 0.82
+      nose_shape: blunt
+      front: &s481-front
+        source: commons-481-hermsdorf-front
+        view_source: commons-481-sundgauer-side
+        length_m: 0.5
+        tip_height_m: 1.1
+        face_top_m: 1.5
+        bottom_m: 0.21
+        bottom_setback_m: 0.04
+        screen_bottom_m: 1.63
+        screen_top_m: 3.31
+        screen_bottom_setback_m: 0.03
+        screen_top_setback_m: 0.3
+        screen_width: 0.82
+        screen_round: 9
+        plan: flat
+        straight_m: 0.3
+        lamp_bottom_m: 1.8
+        lamp_top_m: 1.98
+        lamp_inner: 0.71
+        lamp_outer: 0.83
+        stripe: none
+        decals:
+          - {slot: housing, bottom_m: 1.6, top_m: 3.38, inner: 0, outer: 0.86, round: 9, under: true}
+          - {slot: mask, bottom_m: 0.21, top_m: 0.45, inner: 0, outer: 0.98, round: 14}
+          - {slot: housing, bottom_m: 0.42, top_m: 1.08, inner: 0, outer: 0.36, round: 10}
+          - {slot: equipment, bottom_m: 0.62, top_m: 0.9, inner: 0, outer: 0.14, round: 10}
+          - {slot: equipment, bottom_m: 0.72, top_m: 1.0, inner: 0.52, outer: 0.84, round: 2.6}
+          - {slot: housing, bottom_m: 0.8, top_m: 0.82, inner: 0.56, outer: 0.8, round: 20}
+          - {slot: housing, bottom_m: 0.85, top_m: 0.87, inner: 0.55, outer: 0.81, round: 20}
+          - {slot: housing, bottom_m: 0.9, top_m: 0.92, inner: 0.56, outer: 0.8, round: 20}
+          - {slot: accent, bottom_m: 1.3, top_m: 1.5, inner: 0, outer: 0.1, logo: true}
+          - {slot: housing, bottom_m: 1.5, top_m: 1.72, inner: 0, outer: 0.42, round: 2.2}
+          - {slot: display, bottom_m: 3.08, top_m: 3.28, inner: 0, outer: 0.55, round: 12}
+          - {slot: light, bottom_m: 1.685, top_m: 1.915, inner: 0.695, outer: 0.85, round: 2.4, fill: true, tail: 0, tail_mode: combined, lens_margin_m: 0.025}
+          - {slot: light, bottom_m: 1.9, top_m: 2.0, inner: 0, outer: 0.035, round: 2.4}
+          - {slot: light, bottom_m: 3.44, top_m: 3.55, inner: 0, outer: 0.045, round: 2.4}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, straight_m, screen_round, decals]
+      pantograph_count: 0
+      doors_per_side: 3
+      door_positions_m: [3.47, -1.47, -6.41]
+      door_width_m: 1.6
+      source: wikipedia-de-481
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-481
+        door_positions_m: db-emb-481
+        door_width_m: db-emb-481
+      missing: &s481-missing
+        length_m: the article gives the quarter-train length only, the forge shares it equally
+        bogie_offset_m: *no-offset
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+    - car_type: car-b
+      name: Car with cab on two Bo' bogies (482)
+      role: cab
+      width_m: 3.0
+      height_m: 3.585
+      floor_height_m: 1.0
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 12.1
+      bogie_wheelbase_m: 2.2
+      wheel_diameter_m: 0.82
+      nose_shape: blunt
+      front: *s481-front
+      pantograph_count: 0
+      doors_per_side: 3
+      door_positions_m: [3.47, -1.47, -6.41]
+      door_width_m: 1.6
+      source: wikipedia-de-481
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-481
+        door_positions_m: db-emb-481
+        door_width_m: db-emb-481
+      missing:
+        <<: *s481-missing
+
+- model_id: db-484
+  name: S-Bahn Berlin class 484, half train
+  series_id: db-483-484
+  generic: false
+  category: sbahn
+  unit_length_m: 73.6
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  livery_id: s-bahn-berlin-483-484
+  source: wikipedia-de-483-484
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      width_m: 3.14
+      height_m: 3.6
+      floor_height_m: 1.0
+      double_deck: false
+      bogies: [own, own]
+      bogie_wheelbase_m: 2.1
+      wheel_diameter_m: 0.82
+      nose_shape: blunt
+      front:
+        source: commons-484-schoeneweide-front
+        view_source: commons-484-zeuthen-side
+        length_m: 0.5
+        tip_height_m: 1.0
+        face_top_m: 1.3
+        bottom_m: 0.33
+        bottom_setback_m: 0.04
+        screen_bottom_m: 1.84
+        screen_top_m: 3.44
+        screen_bottom_setback_m: 0.04
+        screen_top_setback_m: 0.3
+        screen_width: 0.69
+        screen_round: 7
+        screen_tone: light
+        plan: flat
+        straight_m: 0.3
+        mask_bottom_m: 1.31
+        mask_top_m: 3.5
+        mask_width: 0.74
+        lamp_bottom_m: 1.57
+        lamp_top_m: 1.67
+        lamp_inner: 0.31
+        lamp_outer: 0.64
+        stripe: none
+        decals:
+          - {slot: housing, bottom_m: 0.33, top_m: 0.4, inner: 0, outer: 0.98, round: 14}
+          - {slot: housing, bottom_m: 0.44, top_m: 1.36, inner: 0, outer: 0.4, round: 8}
+          - {slot: equipment, bottom_m: 0.66, top_m: 1.0, inner: 0, outer: 0.15, round: 10}
+          - {slot: housing, bottom_m: 0.8, top_m: 1.16, inner: 0.47, outer: 0.93, round: 5}
+          - {slot: mask, bottom_m: 0.87, top_m: 0.9, inner: 0.5, outer: 0.9, round: 20}
+          - {slot: mask, bottom_m: 0.95, top_m: 0.98, inner: 0.5, outer: 0.9, round: 20}
+          - {slot: mask, bottom_m: 1.03, top_m: 1.06, inner: 0.5, outer: 0.9, round: 20}
+          - {slot: light, bottom_m: 1.57, top_m: 1.67, inner: 0.31, outer: 0.64, round: 6}
+          - {slot: doors, bottom_m: 1.54, top_m: 1.82, inner: 0, outer: 0.13, logo: true}
+          - {slot: display, bottom_m: 3.18, top_m: 3.36, inner: 0, outer: 0.39, round: 12}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, straight_m, screen_round, decals]
+      pantograph_count: 0
+      doors_per_side: 3
+      door_positions_m: [5.05, -0.09, -5.23]
+      door_width_m: 1.34
+      source: wikipedia-de-483-484
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-483-484
+        door_positions_m: db-emb-483-484
+        door_width_m: db-emb-483-484
+      missing:
+        length_m: &s484-length the article gives the half-train length only, the forge shares it equally
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+    - car_type: middle
+      name: Middle car
+      role: middle
+      width_m: 3.14
+      height_m: 3.6
+      floor_height_m: 1.0
+      double_deck: false
+      bogies: [own, own]
+      bogie_wheelbase_m: 2.1
+      wheel_diameter_m: 0.82
+      doors_per_side: 3
+      door_width_m: 1.3
+      pantograph_count: 0
+      source: wikipedia-de-483-484
+      field_sources:
+        pantograph_count: gerlines
+      missing:
+        length_m: *s484-length
+        bogie_pitch_m: *no-pitch
+        door_positions_m: *unmeasured
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+
+- model_id: db-490
+  name: S-Bahn Hamburg class 490
+  series_id: db-490
+  generic: false
+  category: sbahn
+  livery_id: s-bahn-hamburg-490
+  unit_length_m: 66.0
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-490
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      width_m: 3.014
+      height_m: 3.76
+      floor_height_m: 1.02
+      double_deck: false
+      bogies: [own, own]
+      bogie_wheelbase_m: 2.2
+      nose_shape: blunt
+      front:
+        source: commons-490-oberhafenkanal-front
+        length_m: 1.3
+        tip_height_m: 1.0
+        face_top_m: 1.9
+        bottom_m: 0.35
+        bottom_setback_m: 0.1
+        screen_bottom_m: 2.3
+        screen_top_m: 3.42
+        screen_bottom_setback_m: 0.15
+        screen_top_setback_m: 0.75
+        screen_width: 0.6
+        plan: round
+        straight_m: 0.5
+        stripe: none
+        screen_round: 6.0
+        decals:
+          - {slot: stripe, bottom_m: 0.35, top_m: 3.6, inner: 0, outer: 0.9, round: 10, under: true}
+          - {slot: mask, bottom_m: 2.1, top_m: 3.52, inner: 0, outer: 0.68, round: 6, under: true}
+          - {slot: mask, bottom_m: 1.61, top_m: 2.25, inner: 0.66, outer: 0.9, round: 4}
+          - {slot: light, bottom_m: 1.95, top_m: 2.15, inner: 0.7, outer: 0.86, round: 4}
+          - {slot: upper_body, bottom_m: 1.56, top_m: 1.76, inner: 0, outer: 0.1, round: 10}
+          - {slot: mask, bottom_m: 0.35, top_m: 1.52, inner: 0, outer: 0.45, round: 8}
+          - {slot: display, bottom_m: 3.1, top_m: 3.22, inner: 0, outer: 0.3, round: 12}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan, straight_m, screen_round, decals]
+      pantograph_count: 0
+      window_sill_m: 1.62
+      window_top_m: 2.56
+      doors_per_side: 3
+      door_positions_m: [2.73, -2.33, -7.39]
+      door_width_m: 1.54
+      source: wikipedia-de-490
+      field_sources:
+        window_sill_m: commons-490-603-dresden
+        window_top_m: commons-490-603-dresden
+        nose_shape: gerlines
+        doors_per_side: db-emb-490
+        door_positions_m: db-emb-490
+        door_width_m: db-emb-490
+      missing:
+        length_m: &s490-length the article gives the unit length only, the forge shares it equally
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+    - car_type: middle
+      name: Middle car (490.0, third rail only)
+      role: middle
+      width_m: 3.014
+      height_m: 3.76
+      floor_height_m: 1.02
+      double_deck: false
+      bogies: [own, own]
+      bogie_wheelbase_m: 2.2
+      pantograph_count: 0
+      window_sill_m: 1.62
+      window_top_m: 2.56
+      doors_per_side: 3
+      door_positions_m: [5.06, 0, -5.06]
+      door_width_m: 1.54
+      source: wikipedia-de-490
+      field_sources:
+        window_sill_m: commons-490-603-dresden
+        window_top_m: commons-490-603-dresden
+        doors_per_side: db-emb-490
+        door_positions_m: db-emb-490
+        door_width_m: db-emb-490
+      missing:
+        length_m: *s490-length
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+
+- model_id: db-474
+  name: S-Bahn Hamburg class 474
+  series_id: db-474
+  generic: false
+  category: sbahn
+  livery_id: s-bahn-hamburg-474-sampled
+  unit_length_m: 65.56
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-474
+  car_types:
+    - car_type: end
+      name: Powered end car with cab (474)
+      role: cab
+      length_m: 22.98
+      width_m: 3.008
+      height_m: 3.72
+      floor_height_m: 1.035
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 16.19
+      bogie_wheelbase_m: 2.3
+      wheel_diameter_m: 0.855
+      nose_shape: blunt
+      front:
+        source: commons-474-diebsteich-front
+        view_source: commons-474-ohlsdorf-front
+        length_m: 1.3
+        tip_height_m: 1.2
+        face_top_m: 1.85
+        bottom_m: 0.3
+        bottom_setback_m: 0.05
+        screen_bottom_m: 1.83
+        screen_top_m: 3.33
+        screen_bottom_setback_m: 0.1
+        screen_top_setback_m: 0.6
+        screen_width: 0.9
+        plan: round
+        straight_m: 0.5
+        skirt_top_m: 1.02
+        front_skirt_top_m: 1.12
+        chin_bottom_m: 0.51
+        chin_top_m: 1.22
+        chin_width: 0.58
+        stripe: none
+        screen_round: 6.0
+        screen_tone: light
+        decals:
+          - {slot: upper_body, bottom_m: 3.3, top_m: 3.75, inner: 0, outer: 1.0, round: 4, under: true}
+          - {slot: lower_body, bottom_m: 1.78, top_m: 1.99, inner: 0, outer: 0.32, round: 3}
+          - {slot: light, bottom_m: 1.47, top_m: 1.74, inner: 0.5, outer: 0.87, round: 2.4, tail: 0.5, tail_side: outer}
+          - {slot: doors, bottom_m: 1.46, top_m: 1.76, inner: 0, outer: 0.15, logo: true}
+          - {slot: display, bottom_m: 3.02, top_m: 3.22, inner: 0, outer: 0.58, round: 12}
+          - {slot: light, bottom_m: 3.5, top_m: 3.7, inner: 0, outer: 0.08, round: 2, tail: 0}
+        estimated: [length_m, tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan, straight_m, screen_round, screen_tone, decals]
+      pantograph_count: 0
+      roof_equipment_m: []
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [6.86, -0.05, -6.91]
+      door_width_m: 1.6
+      window_sill_m: 1.69
+      window_top_m: 2.94
+      window_width_m: 1.29
+      window_pillar_m: 0.3
+      source: wikipedia-de-474
+      field_sources:
+        length_m: db-emb-474
+        nose_shape: gerlines
+        pantograph_count: wikipedia-de-474
+        roof_equipment_m: db-emb-474
+        window_pillars: commons-474-elbbruecken-side
+        doors_per_side: db-emb-474
+        door_positions_m: db-emb-474
+        door_width_m: db-emb-474
+        window_sill_m: db-emb-474
+        window_top_m: db-emb-474
+        window_width_m: db-emb-474
+        window_pillar_m: db-emb-474
+      missing:
+        bogie_offset_m: *no-offset
+    - car_type: middle
+      name: Middle car without drive (474 middle car)
+      role: middle
+      length_m: 19.6
+      width_m: 3.008
+      height_m: 3.72
+      floor_height_m: 1.035
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 13.28
+      bogie_wheelbase_m: 1.8
+      wheel_diameter_m: 0.68
+      pantograph_count: 0
+      roof_equipment_m: []
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [6.83, -0.05, -6.93]
+      door_width_m: 1.6
+      window_sill_m: 1.69
+      window_top_m: 2.94
+      window_width_m: 1.29
+      window_pillar_m: 0.3
+      source: wikipedia-de-474
+      field_sources:
+        length_m: db-emb-474
+        pantograph_count: wikipedia-de-474
+        roof_equipment_m: db-emb-474
+        window_pillars: commons-474-elbbruecken-side
+        doors_per_side: db-emb-474
+        door_positions_m: db-emb-474
+        door_width_m: db-emb-474
+        window_sill_m: db-emb-474
+        window_top_m: db-emb-474
+        window_width_m: db-emb-474
+        window_pillar_m: db-emb-474
+      missing:
+        bogie_offset_m: *no-offset
+
+# ---- Diesel multiple units
+
+- model_id: db-648
+  name: Coradia LINT 41 (648)
+  series_id: db-648
+  generic: false
+  category: reg
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 41.81
+  formation: &lint41-formation
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-lint
+  car_types: &lint41-cars
+    - car_type: end
+      name: Car with cab on a powered and the Jacobs bogie
+      role: cab
+      length_m: 20.905
+      width_m: 2.75
+      tumblehome_m: 0.05
+      roof_exponent: 2.6
+      height_m: 4.34
+      floor_height_m: 0.598
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 16.5
+      bogie_wheelbase_m: 1.9
+      jacobs_wheelbase_m: 2.7
+      nose_shape: rounded
+      front:
+        source: commons-648-774-braunschweig
+        view_source: commons-648-luebeck-front
+        length_m: 2.5
+        tip_height_m: 1.2
+        face_top_m: 1.4
+        bottom_m: 0.25
+        bottom_setback_m: 0.15
+        screen_bottom_m: 1.95
+        screen_top_m: 3.6
+        screen_bottom_setback_m: 0.45
+        screen_top_setback_m: 1.8
+        screen_width: 0.8
+        plan: round
+        plan_widths: [[0, 0.6], [0.12, 0.8], [0.35, 0.93], [0.6, 1.0]]
+        straight_m: 0.5
+        mask_bottom_m: 2.6
+        mask_top_m: 3.85
+        mask_width: 0.92
+        lamp_bottom_m: 1.3
+        lamp_top_m: 1.6
+        lamp_inner: 0.6
+        lamp_outer: 0.88
+        skirt_top_m: 1.19
+        screen_widths: [[1.95, 0.8], [2.9, 0.84], [3.6, 0.7]]
+        screen_round: 5.0
+        decals:
+          - {slot: mask, bottom_m: 1.85, top_m: 3.4, inner: 0, outer: 0.92, round: 4, under: true}
+          - {slot: light, bottom_m: 1.38, top_m: 1.58, inner: 0.64, outer: 0.8, round: 2.4}
+          - {slot: doors, bottom_m: 1.42, top_m: 1.66, inner: 0, outer: 0.12, logo: true}
+          - {slot: housing, bottom_m: 0.62, top_m: 1.3, inner: 0, outer: 0.42, round: 6}
+          - {slot: lower_body, bottom_m: 0.84, top_m: 1.26, inner: 0, outer: 0.22, round: 8}
+          - {slot: display, bottom_m: 3.28, top_m: 3.4, inner: 0, outer: 0.3, round: 12}
+        stripe: none
+        loft:
+          waist_m: 1.2
+          top_m: 4.4
+          bottom_m: 0.2
+          exponent: 2.2
+          taper: 0.5
+          widths: [[0.39, 0.85], [1.45, 1.0], [3.14, 0.92], [4.31, 0.62]]
+        estimated: [length_m, tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan, plan_widths, straight_m, mask_bottom_m, mask_top_m, mask_width, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, loft, screen_widths, screen_round, decals]
+      pantograph_count: 0
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-0.31]
+      door_width_m: 1.58
+      window_sill_m: 1.51
+      window_top_m: 3.08
+      source: wikipedia-de-coradia-lint
+      field_sources:
+        window_pillars: commons-648-774-braunschweig
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-648
+        door_positions_m: db-emb-648
+        door_width_m: db-emb-648
+        window_sill_m: db-emb-648
+        window_top_m: db-emb-648
+      missing:
+        wheel_diameter_m: *no-wheel
+
+- model_id: db-622
+  name: Coradia LINT 54 (622)
+  series_id: db-622
+  generic: false
+  category: reg
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 54.27
+  formation:
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-lint
+  car_types:
+    - &lint54-end
+      car_type: end
+      name: Car with cab on two end bogies
+      role: cab
+      length_m: 27.135
+      width_m: 2.75
+      height_m: 4.31
+      floor_height_m: 0.8
+      double_deck: false
+      bogies: [own, own]
+      nose_shape: rounded
+      front:
+        <<: &lint-new-head-shape
+          length_m: 2.68
+          tip_height_m: 1.2
+          face_top_m: 1.75
+          bottom_m: 0.31
+          bottom_setback_m: 0.06
+          screen_bottom_m: 1.95
+          screen_top_m: 3.6
+          screen_bottom_setback_m: 0.4
+          screen_top_setback_m: 1.98
+          screen_width: 0.8
+          plan: round
+          plan_widths: [[0, 0.78], [0.1, 0.9], [0.28, 0.97], [0.5, 1.0]]
+          straight_m: 0.5
+          mask_bottom_m: 2.6
+          mask_top_m: 3.85
+          mask_width: 0.92
+          screen_widths: [[1.95, 0.8], [2.9, 0.84], [3.6, 0.7]]
+          screen_round: 5.0
+          stripe: none
+          loft:
+            waist_m: 1.2
+            top_m: 4.4
+            bottom_m: 0.2
+            exponent: 2.2
+            taper: 0.5
+            widths: [[0.31, 0.96], [0.6, 1.0], [1.45, 1.0], [3.14, 0.92], [4.31, 0.66]]
+          estimated: [tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan, plan_widths, straight_m, mask_bottom_m, mask_top_m, mask_width, front_skirt_top_m, loft, screen_widths, screen_round, decals]
+        source: commons-622-508-koeln-deutz-front
+        view_source: commons-622-004-wiehl
+        skirt_top_m: 1.18
+        front_skirt_top_m: 1.18
+        screen_tone: light
+        decals:
+          - {slot: equipment, bottom_m: 3.97, top_m: 4.31, inner: 0, outer: 0.8, round: 6}
+          - {slot: mask, bottom_m: 1.97, top_m: 3.45, inner: 0, outer: 0.86, round: 5, under: true}
+          - {slot: display, bottom_m: 2.03, top_m: 2.25, inner: 0, outer: 0.48, round: 12}
+          - {slot: light, bottom_m: 1.64, top_m: 1.85, inner: 0.5, outer: 0.66, round: 2.2, tail: 0, tail_mode: combined}
+          - {slot: light, bottom_m: 1.49, top_m: 1.66, inner: 0.36, outer: 0.48, round: 2.2, tail: 0}
+          - {slot: doors, bottom_m: 1.55, top_m: 1.79, inner: 0, outer: 0.126, logo: true}
+          - {slot: housing, bottom_m: 0.55, top_m: 1.39, inner: 0, outer: 0.59, round: 8}
+          - {slot: equipment, bottom_m: 0.75, top_m: 1.16, inner: 0, outer: 0.28, round: 5}
+          - {slot: mask, bottom_m: 3.98, top_m: 4.12, inner: 0.4, outer: 0.62, round: 6}
+          - {slot: light, bottom_m: 4.02, top_m: 4.2, inner: 0, outer: 0.07, round: 2, tail: 0}
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [3.27, -3.04]
+      door_width_m: 1.65
+      source: wikipedia-de-coradia-lint
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-622
+        door_positions_m: db-emb-622
+        door_width_m: db-emb-622
+      missing:
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+
+- model_id: db-642
+  name: Desiro Classic (642)
+  series_id: db-642
+  generic: false
+  category: reg
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 41.7
+  formation: &desiro-classic-formation
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-642
+  car_types: &desiro-classic-cars
+    - car_type: end
+      name: Car with cab on a powered and the Jacobs bogie
+      role: cab
+      length_m: 20.85
+      width_m: 2.83
+      floor_height_m: 0.575
+      double_deck: false
+      bogies: [own, jacobs]
+      nose_shape: rounded
+      front:
+        source: commons-642-werkstatt-side
+        view_source: commons-642-schoena-front
+        length_m: 2.6
+        tip_height_m: 1.2
+        face_top_m: 1.5
+        bottom_m: 0.35
+        bottom_setback_m: 0.55
+        screen_bottom_m: 1.6
+        screen_top_m: 3.38
+        screen_bottom_setback_m: 0.0
+        screen_top_setback_m: 1.6
+        screen_width: 0.9
+        plan: round
+        plan_widths: [[0, 0.5], [0.12, 0.7], [0.35, 0.86], [0.7, 0.96], [1.1, 1.0]]
+        side_profile: [[0.55, 0.35], [0.32, 0.52], [0.12, 0.65], [0, 0.85], [0, 1.5], [0, 1.6], [0.09, 1.74], [0.22, 2.0], [0.39, 2.26], [0.52, 2.45], [0.66, 2.68], [0.86, 2.9], [1.19, 3.15], [1.53, 3.32], [1.87, 3.52], [2.2, 3.65], [2.54, 3.76], [2.6, 3.8]]
+        straight_m: 0.5
+        mask_bottom_m: 3.38
+        mask_top_m: 3.84
+        mask_width: 0.93
+        mask_slot: equipment
+        skirt_top_m: 1.13
+        front_skirt_top_m: 1.13
+        stripe: none
+        screen_round: 5.0
+        screen_tone: light
+        decals:
+          - {slot: mask, bottom_m: 2.3, top_m: 2.38, inner: 0, outer: 0.95, round: 20}
+          - {slot: display, bottom_m: 2.06, top_m: 2.18, inner: 0, outer: 0.34, round: 12}
+          - {slot: light, bottom_m: 1.66, top_m: 1.88, inner: 0.58, outer: 0.84, round: 2.2, tail: 0.5}
+          - {slot: doors, bottom_m: 1.68, top_m: 1.88, inner: 0, outer: 0.11, logo: true}
+          - {slot: accent, bottom_m: 1.5, top_m: 1.6, inner: 0, outer: 0.82, round: 20}
+          - {slot: housing, bottom_m: 0.97, top_m: 1.5, inner: 0, outer: 0.84, round: 6}
+          - {slot: equipment, bottom_m: 0.35, top_m: 0.97, inner: 0, outer: 1.0, round: 8}
+          - {slot: equipment, bottom_m: 0.98, top_m: 1.28, inner: 0, outer: 0.13, round: 4}
+          - {slot: lower_body, bottom_m: 0.53, top_m: 1.22, inner: 0, outer: 0.55, round: 4}
+        estimated: [tip_height_m, face_top_m, screen_width, plan, plan_widths, straight_m, mask_top_m, mask_width, mask_slot, screen_round, decals]
+      height_m: 3.85
+      bogie_pitch_m: 15.25
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [-1.14]
+      door_width_m: 1.45
+      window_sill_m: 1.99
+      window_top_m: 3.13
+      source: wikipedia-de-642
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-642
+        door_positions_m: db-emb-642
+        door_width_m: db-emb-642
+        window_sill_m: db-emb-642
+        window_top_m: db-emb-642
+        bogie_pitch_m: commons-642-werkstatt-side
+        height_m: commons-642-werkstatt-side
+      missing:
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+
+- model_id: db-650
+  name: Regio-Shuttle RS1 (650)
+  series_id: db-650
+  generic: false
+  category: reg
+  livery_id: db-regio-verkehrsrot
+  unit_length_m: 25.5
+  formation: &rs1-formation
+    - car_type: railcar
+  source: wikipedia-de-rs1
+  car_types: &rs1-cars
+    - car_type: railcar
+      name: Single railcar with a cab at each end
+      role: railcar
+      length_m: 25.5
+      width_m: 2.9
+      height_m: 3.7
+      floor_height_m: 0.6
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.1
+      bogie_wheelbase_m: 1.8
+      wheel_diameter_m: 0.77
+      nose_shape: rounded
+      front:
+        source: commons-rs1-side
+        view_source: commons-650-radolfzell-front
+        length_m: 0.9
+        tip_height_m: 1.0
+        face_top_m: 1.4
+        bottom_m: 0.35
+        bottom_setback_m: 0.05
+        screen_bottom_m: 1.9
+        screen_top_m: 3.45
+        screen_bottom_setback_m: 0.12
+        screen_top_setback_m: 0.55
+        screen_width: 0.9
+        screen_round: 8
+        screen_tone: light
+        plan: flat
+        plan_widths: [[0, 0.72], [0.1, 0.87], [0.25, 0.97], [0.38, 1.0]]
+        straight_m: 0.4
+        lamp_bottom_m: 1.64
+        lamp_top_m: 1.86
+        lamp_inner: 0.62
+        lamp_outer: 0.8
+        stripe: none
+        cab_window: true
+        side_window_from_m: 0.65
+        side_window_to_m: 1.35
+        cab_length_m: 1.6
+        decals:
+          - {slot: mask, bottom_m: 0.35, top_m: 0.98, inner: 0, outer: 0.97, round: 12}
+          - {slot: housing, bottom_m: 0.97, top_m: 1.35, inner: 0.6, outer: 0.97, round: 4}
+          - {slot: housing, bottom_m: 0.5, top_m: 1.2, inner: 0, outer: 0.12, round: 6}
+          - {slot: light, bottom_m: 1.64, top_m: 1.86, inner: 0.62, outer: 0.8, round: 2.4}
+          - {slot: doors, bottom_m: 1.3, top_m: 1.58, inner: 0, outer: 0.13, logo: true}
+          - {slot: display, bottom_m: 3.22, top_m: 3.38, inner: 0, outer: 0.6, round: 12}
+          - {slot: light, bottom_m: 3.54, top_m: 3.66, inner: 0, outer: 0.05, round: 2.4}
+        estimated: [tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan_widths, straight_m, lamp_bottom_m, lamp_top_m, lamp_inner, lamp_outer, screen_round, decals]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [6.07, -6.07]
+      door_width_m: 1.71
+      window_sill_m: 1.73
+      window_top_m: 2.78
+      window_pillars: body
+      source: wikipedia-de-rs1
+      field_sources:
+        doors_per_side: commons-rs1-side
+        door_positions_m: commons-rs1-side
+        door_width_m: commons-rs1-side
+        window_sill_m: commons-rs1-side
+        window_top_m: commons-rs1-side
+        window_pillars: commons-rs1-side
+        nose_shape: gerlines
+        pantograph_count: gerlines
+      missing:
+        bogie_offset_m: a railcar with a cab at each end has its pivots around the middle
+
+# ---- Series drawn with the cars of a series of the same type: the car types are the
+# other model's (YAML aliases), the series and the livery are this row's. Operators that run one series in
+# their own colours get the neutral row (livery_id missing) until the web picks a model per operator.
+
+- model_id: db-1648
+  name: Coradia LINT 41 (1648) with the head built from 2011
+  series_id: db-1648
+  generic: false
+  category: reg
+  unit_length_m: 42.17
+  formation: *lint41-formation
+  source: wikipedia-de-coradia-lint-r13
+  missing:
+    livery_id: &mixed-liveries the fleet rules name several operators with their own liveries for this series and the web draws one model per series
+  car_types: &lint41-new-head-cars
+    - car_type: end
+      name: Car with the crash head of 2011 on a powered and the Jacobs bogie
+      role: cab
+      length_m: 21.085
+      width_m: 2.75
+      tumblehome_m: 0.05
+      roof_exponent: 2.6
+      height_m: 4.34
+      floor_height_m: 0.598
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 16.5
+      bogie_wheelbase_m: 1.9
+      jacobs_wheelbase_m: 2.7
+      nose_shape: rounded
+      front:
+        <<: *lint-new-head-shape
+        source: commons-623-010-weinheim-front
+        view_source: commons-nwb-648-379-1648-304-wilhelmshaven
+        skirt_top_m: 1.19
+        front_skirt_top_m: 0.42
+        decals:
+          - {slot: mask, bottom_m: 1.92, top_m: 3.45, inner: 0, outer: 0.86, round: 5, under: true}
+          - {slot: display, bottom_m: 2.0, top_m: 2.18, inner: 0, outer: 0.4, round: 12}
+          - {slot: light, bottom_m: 1.7, top_m: 1.88, inner: 0.5, outer: 0.64, round: 2.2, tail: 0, tail_mode: combined}
+          - {slot: light, bottom_m: 1.55, top_m: 1.67, inner: 0.37, outer: 0.46, round: 2.2, tail: 0}
+          - {slot: doors, bottom_m: 1.53, top_m: 1.68, inner: 0, outer: 0.075, logo: true}
+          - {slot: housing, bottom_m: 0.49, top_m: 1.4, inner: 0, outer: 0.68, round: 8}
+          - {slot: equipment, bottom_m: 0.76, top_m: 1.12, inner: 0, outer: 0.22, round: 5}
+          - {slot: mask, bottom_m: 3.98, top_m: 4.12, inner: 0.4, outer: 0.62, round: 6}
+          - {slot: light, bottom_m: 4.02, top_m: 4.2, inner: 0, outer: 0.07, round: 2, tail: 0}
+      pantograph_count: 0
+      window_pillars: body
+      doors_per_side: 1
+      door_positions_m: [-0.4]
+      door_width_m: 1.58
+      window_sill_m: 1.51
+      window_top_m: 3.08
+      source: wikipedia-de-coradia-lint
+      field_sources:
+        length_m: wikipedia-de-coradia-lint-r13
+        window_pillars: commons-648-774-braunschweig
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-648
+        door_positions_m: db-emb-648
+        door_width_m: db-emb-648
+        window_sill_m: db-emb-648
+        window_top_m: db-emb-648
+      missing:
+        wheel_diameter_m: *no-wheel
+
+- model_id: coradia-lint-41
+  name: Coradia LINT, drawn as the LINT 41 with the head built from 2011 (1648)
+  series_id: alstom-coradia-lint
+  generic: false
+  category: reg
+  unit_length_m: 42.17
+  formation: *lint41-formation
+  source: wikipedia-de-coradia-lint-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *lint41-new-head-cars
+
+- model_id: mireo-3
+  name: Mireo, drawn with the three cars of the 463
+  series_id: siemens-mireo
+  generic: false
+  category: reg
+  formation: *mireo3-formation
+  source: wikipedia-de-mireo
+  missing:
+    livery_id: *mixed-liveries
+    unit_length_m: the article gives 47 m for two cars and a range for the others
+  car_types: *mireo3-cars
+
+- model_id: db-563
+  name: Mireo Plus (563), two end cars of the 463
+  series_id: db-563
+  generic: false
+  category: reg
+  unit_length_m: 47.0
+  formation:
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-mireo
+  missing:
+    livery_id: *mixed-liveries
+  car_types:
+    - *mireo-end
+
+- model_id: talent-2-4
+  name: Talent 2, drawn with the four cars of the 442
+  series_id: bombardier-talent-2
+  generic: false
+  category: reg
+  unit_length_m: 72.3
+  formation: *talent2-4-formation
+  source: wikipedia-de-talent-2
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *talent2-4-cars
+
+- model_id: flirt-3-4
+  name: FLIRT 3, drawn with the four cars of the 1428
+  series_id: stadler-flirt-3
+  generic: false
+  category: reg
+  unit_length_m: 74.7
+  formation: *flirt3-4-formation
+  source: wikipedia-de-flirt-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *flirt3-cars
+
+- model_id: db-1428
+  name: FLIRT 3, four cars (1428)
+  series_id: db-1428
+  generic: false
+  category: reg
+  unit_length_m: 74.7
+  formation: *flirt3-4-formation
+  source: wikipedia-de-flirt-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *flirt3-cars
+
+- model_id: db-1429
+  name: FLIRT 3, five cars (1429), drawn with the cars of the 429
+  series_id: db-1429
+  generic: false
+  category: reg
+  unit_length_m: 90.8
+  formation: *flirt3-5-formation
+  source: wikipedia-de-flirt-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *flirt3-5-cars
+
+- model_id: rs1
+  name: Regio-Shuttle RS1, drawn as the 650
+  series_id: stadler-regio-shuttle-rs1
+  generic: false
+  category: reg
+  unit_length_m: 25.5
+  formation: *rs1-formation
+  source: wikipedia-de-rs1
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *rs1-cars
+
+- model_id: desiro-classic
+  name: Desiro Classic, drawn as the 642
+  series_id: siemens-desiro-classic
+  generic: false
+  category: reg
+  unit_length_m: 41.7
+  formation: *desiro-classic-formation
+  source: wikipedia-de-642
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *desiro-classic-cars
+
+- model_id: db-620
+  name: Coradia LINT 81 (620 and 621)
+  series_id: db-620
+  generic: false
+  category: reg
+  unit_length_m: 80.92
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-coradia-lint-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types:
+    - *lint54-end
+    - car_type: middle
+      name: Powered middle car on two bogies (621)
+      role: middle
+      length_m: 26.65
+      width_m: 2.75
+      height_m: 4.31
+      floor_height_m: 0.8
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 20.3
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [3.1, -3.08]
+      door_width_m: 1.53
+      source: wikipedia-de-coradia-lint-r13
+      field_sources:
+        bogie_pitch_m: db-emb-620
+        pantograph_count: gerlines
+        doors_per_side: db-emb-620
+        door_positions_m: db-emb-620
+        door_width_m: db-emb-620
+      missing:
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+
+- model_id: db-643
+  name: Talent, three cars (643 and 943)
+  series_id: db-643
+  generic: false
+  category: reg
+  unit_length_m: 48.36
+  formation: &talent-3-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-talent-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: &talent-3-cars
+    - car_type: end
+      name: End car with cab on a powered and the Jacobs bogie (643)
+      role: cab
+      length_m: 17.45
+      width_m: 2.925
+      height_m: 3.88
+      floor_height_m: 0.59
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 13.7
+      nose_shape: rounded
+      front:
+        source: commons-643-546-koeln-west-front
+        view_source: commons-643-002-front
+        length_m: 2.6
+        tip_height_m: 1.1
+        bottom_m: 0.3
+        bottom_setback_m: 0.45
+        screen_bottom_m: 1.93
+        screen_top_m: 3.48
+        screen_bottom_setback_m: 0.22
+        screen_top_setback_m: 1.5
+        screen_width: 0.8
+        plan: round
+        mask_bottom_m: 1.88
+        mask_top_m: 3.6
+        mask_width: 0.92
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.6
+        side_window_to_m: 3.2
+        cab_length_m: 3.4
+        loft:
+          waist_m: 1.2
+          top_m: 3.95
+          bottom_m: 0.25
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.3, 0.8], [0.8, 0.95], [1.4, 1.0], [2.7, 0.96], [3.6, 0.8]]
+        side_profile: [[0.45, 0.3], [0.2, 0.5], [0.05, 0.8], [0, 1.1], [0.03, 1.45], [0.1, 1.75], [0.22, 1.95], [0.5, 2.4], [0.85, 2.85], [1.25, 3.3], [1.65, 3.6], [2.1, 3.8], [2.6, 3.88]]
+        plan_widths: [[0, 0.62], [0.15, 0.8], [0.4, 0.9], [0.8, 0.97], [1.4, 1.0]]
+        chin_bottom_m: 0.8
+        chin_top_m: 1.43
+        chin_width: 0.47
+        screen_round: 4.0
+        decals:
+          - {slot: mask, bottom_m: 1.88, top_m: 3.6, inner: 0, outer: 0.92, round: 3, under: true}
+          - {slot: light, bottom_m: 2.15, top_m: 2.33, inner: 0.39, outer: 0.63, round: 2.4, tail: 0.5, tail_side: outer}
+          - {slot: doors, bottom_m: 1.46, top_m: 1.65, inner: 0, outer: 0.11, logo: true}
+          - {slot: display, bottom_m: 3.28, top_m: 3.42, inner: 0, outer: 0.35, round: 12}
+          - {slot: accent, bottom_m: 0.9, top_m: 1.09, inner: 0, outer: 1.0, round: 20}
+          - {slot: equipment, bottom_m: 0.28, top_m: 0.9, inner: 0, outer: 0.98, round: 10}
+        estimated: [length_m, tip_height_m, bottom_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, plan, mask_bottom_m, mask_top_m, mask_width, side_window_from_m, side_window_to_m, cab_length_m, loft, side_profile, plan_widths, screen_round, decals]
+      pantograph_count: 0
+      window_pillars: mask
+      doors_per_side: 1
+      door_positions_m: [-1.76]
+      door_width_m: 1.3
+      window_sill_m: 1.45
+      window_top_m: 2.8
+      source: wikipedia-de-talent-r13
+      field_sources:
+        length_m: db-emb-643
+        height_m: db-emb-643
+        bogie_pitch_m: db-emb-643
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        window_pillars: commons-643-002-front
+        doors_per_side: db-emb-643
+        door_positions_m: db-emb-643
+        door_width_m: db-emb-643
+        window_sill_m: db-emb-643
+        window_top_m: db-emb-643
+      missing:
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: *no-wheelbase
+    - car_type: middle
+      name: Middle car between two Jacobs bogies (943)
+      role: middle
+      length_m: 13.46
+      width_m: 2.925
+      height_m: 3.88
+      floor_height_m: 0.59
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      pantograph_count: 0
+      window_pillars: mask
+      doors_per_side: 1
+      door_positions_m: [0.1]
+      door_width_m: 1.3
+      window_sill_m: 1.45
+      window_top_m: 2.8
+      source: wikipedia-de-talent-r13
+      field_sources:
+        length_m: db-emb-643
+        height_m: db-emb-643
+        pantograph_count: gerlines
+        window_pillars: commons-643-002-front
+        doors_per_side: db-emb-643
+        door_positions_m: db-emb-643
+        door_width_m: db-emb-643
+        window_sill_m: db-emb-643
+        window_top_m: db-emb-643
+      missing:
+        wheel_diameter_m: *no-wheel
+        jacobs_wheelbase_m: *no-wheelbase
+
+- model_id: flirt-3-xl
+  name: FLIRT 3 XL, three cars (3427), S-Bahn Hannover
+  series_id: stadler-flirt-3-xl
+  generic: false
+  category: sbahn
+  livery_id: s-bahn-hannover-flirt-3-xl-sampled
+  unit_length_m: 67.6
+  formation: &flirt3xl-3-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: mobil-nrw-flirt-3
+  car_types: &flirt3xl-cars
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 24.25
+      width_m: 2.882
+      height_m: 4.27
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [own, jacobs]
+      nose_shape: rounded
+      front: *flirt3-front
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 2
+      door_positions_m: [6.03, -7.0]
+      door_width_m: 1.3
+      source: mobil-nrw-flirt-3
+      field_sources:
+        length_m: gerlines
+        width_m: wikipedia-de-flirt-r13
+        height_m: wikipedia-de-flirt-r13
+        nose_shape: gerlines
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        door_positions_m: commons-3427-nienburg-side
+        door_width_m: stadler-flirt-db-nrw
+      missing:
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+    - car_type: middle
+      name: Middle car
+      role: middle
+      length_m: 19.1
+      width_m: 2.882
+      height_m: 4.27
+      floor_height_m: 0.78
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      window_sill_m: 1.79
+      window_top_m: 2.79
+      window_width_m: 1.5
+      window_pillars: body
+      doors_per_side: 2
+      door_positions_m: [5.05, -5.05]
+      door_width_m: 1.3
+      source: mobil-nrw-flirt-3
+      field_sources:
+        length_m: gerlines
+        width_m: wikipedia-de-flirt-r13
+        height_m: wikipedia-de-flirt-r13
+        window_sill_m: commons-1428-duisburg-side
+        window_top_m: commons-1428-duisburg-side
+        window_width_m: commons-1428-duisburg-side
+        window_pillars: commons-1428-duisburg-side
+        door_positions_m: gerlines
+        door_width_m: stadler-flirt-db-nrw
+      missing:
+        wheel_diameter_m: *no-wheel
+        pantograph_count: *no-pantograph-car
+        jacobs_wheelbase_m: *no-jacobs-wheelbase
+
+- model_id: talent-3
+  name: Talent, drawn with the three cars of the 643
+  series_id: bombardier-talent
+  generic: false
+  category: reg
+  unit_length_m: 48.36
+  formation: *talent-3-formation
+  source: wikipedia-de-talent-r13
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *talent-3-cars
+
+- model_id: db-3429
+  name: FLIRT 3 XL, five cars (3429), drawn with the cars of the three-car XL
+  series_id: db-3429
+  generic: false
+  category: sbahn
+  unit_length_m: 106.2
+  length_gap_reason: the forge adds two middle cars of the three-car XL (105.8 m), the five-car unit is 106.2 m
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: mobil-nrw-flirt-3
+  missing:
+    livery_id: the VRR livery of the class 3429 is not sampled from a licensed photo yet
+  car_types: *flirt3xl-cars
+
+- model_id: db-612
+  name: RegioSwinger (612), two cars
+  series_id: db-612
+  generic: false
+  category: reg
+  livery_id: db-regio-612-sampled
+  unit_length_m: 51.75
+  formation:
+    - car_type: end
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-612
+  car_types:
+    - car_type: end
+      name: Car with cab on a powered and a running bogie
+      role: cab
+      length_m: 25.875
+      width_m: 2.852
+      height_m: 4.124
+      floor_height_m: 1.29
+      double_deck: false
+      bogies: [own, own]
+      bogie_pitch_m: 17.7
+      bogie_offset_m: -1.15
+      bogie_wheelbase_m: 2.45
+      wheel_diameter_m: 0.89
+      nose_shape: rounded
+      front:
+        source: commons-612-639-saarbruecken-front
+        view_source: commons-612-105-dresden-front
+        length_m: 2.4
+        tip_height_m: 1.2
+        bottom_m: 0.38
+        bottom_setback_m: 0.4
+        screen_bottom_m: 2.59
+        screen_top_m: 3.78
+        screen_bottom_setback_m: 0.55
+        screen_top_setback_m: 1.0
+        screen_width: 0.72
+        plan: round
+        mask_bottom_m: 1.92
+        mask_top_m: 4.0
+        mask_width: 0.92
+        mask_slot: equipment
+        stripe: none
+        cab_window: true
+        side_window_from_m: 1.3
+        side_window_to_m: 2.6
+        cab_length_m: 3.2
+        side_profile: [[0.4, 0.38], [0.1, 0.8], [0, 1.2], [0.12, 1.6], [0.3, 2.1], [0.5, 2.6], [0.72, 3.1], [0.95, 3.5], [1.3, 3.85], [1.8, 4.05], [2.4, 4.124]]
+        plan_widths: [[0, 0.7], [0.15, 0.85], [0.4, 0.95], [0.8, 1.0]]
+        loft:
+          waist_m: 1.3
+          top_m: 4.2
+          bottom_m: 0.3
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.4, 0.95], [1.3, 1.0], [3.0, 0.95], [4.0, 0.78]]
+        chin_bottom_m: 0.38
+        chin_top_m: 1.31
+        chin_width: 0.73
+        skirt_top_m: 1.23
+        screen_round: 4.0
+        decals:
+          - {slot: equipment, bottom_m: 1.92, top_m: 4.0, inner: 0, outer: 0.92, round: 3, under: true}
+          - {slot: mask, bottom_m: 2.13, top_m: 2.56, inner: 0, outer: 0.72, round: 4}
+          - {slot: light, bottom_m: 2.24, top_m: 2.44, inner: 0, outer: 0.08, round: 2, tail: 0}
+          - {slot: light, bottom_m: 1.47, top_m: 1.79, inner: 0.29, outer: 0.76, round: 3, tail: 0.5, tail_side: outer}
+          - {slot: doors, bottom_m: 1.52, top_m: 1.76, inner: 0, outer: 0.15, logo: true}
+          - {slot: accent, bottom_m: 0.97, top_m: 1.23, inner: 0, outer: 1.0, round: 20}
+          - {slot: display, bottom_m: 3.6, top_m: 3.72, inner: 0, outer: 0.4, round: 12}
+        estimated: [length_m, tip_height_m, bottom_setback_m, screen_bottom_setback_m, screen_top_setback_m, plan, mask_top_m, mask_width, side_window_from_m, side_window_to_m, cab_length_m, side_profile, plan_widths, loft, screen_round, decals]
+      pantograph_count: 0
+      doors_per_side: 2
+      door_positions_m: [5.03, -12.05]
+      door_width_m: 1.13
+      window_sill_m: 2.18
+      window_top_m: 3.08
+      window_width_m: 1.25
+      window_pillar_m: 0.5
+      window_pillars: body
+      source: wikipedia-de-612
+      field_sources:
+        bogie_pitch_m: db-emb-612
+        bogie_offset_m: db-emb-612
+        nose_shape: gerlines
+        pantograph_count: gerlines
+        doors_per_side: db-emb-612
+        door_positions_m: db-emb-612
+        door_width_m: db-emb-612
+        window_sill_m: db-emb-612
+        window_top_m: db-emb-612
+        window_width_m: db-emb-612
+        window_pillar_m: db-emb-612
+        window_pillars: commons-612-105-dresden-front
+
+- model_id: db-422
+  name: S-Bahn class 422, VRR design
+  series_id: db-422
+  generic: false
+  category: sbahn
+  livery_id: vrr-s-bahn-422-sampled
+  unit_length_m: 69.43
+  formation:
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+      reversed: true
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-422
+  car_types:
+    - car_type: end
+      name: End car with cab
+      role: cab
+      length_m: 19.255
+      width_m: 3.02
+      height_m: 4.33
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [own, jacobs]
+      bogie_pitch_m: 15.14
+      bogie_wheelbase_m: 2.2
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      nose_shape: blunt
+      front:
+        source: db-emb-422
+        view_source: commons-422-027-westerfilde-front
+        length_m: 1.75
+        tip_height_m: 1.2
+        face_top_m: 1.7
+        bottom_m: 0.25
+        bottom_setback_m: 0.05
+        screen_bottom_m: 1.95
+        screen_top_m: 3.9
+        screen_bottom_setback_m: 0.02
+        screen_top_setback_m: 0.88
+        screen_width: 0.66
+        plan: flat
+        plan_widths: [[0, 0.6], [0.12, 0.8], [0.3, 0.93], [0.55, 1.0]]
+        straight_m: 0.35
+        mask_bottom_m: 1.73
+        mask_top_m: 4.16
+        mask_width: 0.73
+        mask_slot: equipment
+        screen_round: 6.0
+        screen_tone: light
+        decals:
+          - {slot: accent, bottom_m: 0.3, top_m: 4.2, inner: 0.72, outer: 1.0, round: 8, under: true}
+          - {slot: housing, bottom_m: 0.5, top_m: 1.2, inner: 0, outer: 0.3, round: 8}
+          - {slot: light, bottom_m: 1.42, top_m: 1.66, inner: 0.52, outer: 0.7, round: 2.2}
+          - {slot: lower_body, bottom_m: 1.22, top_m: 1.46, inner: 0, outer: 0.12, logo: true, logo_red_letters: true}
+          - {slot: display, bottom_m: 3.62, top_m: 3.74, inner: 0, outer: 0.3, round: 12}
+        stripe: none
+        estimated: [tip_height_m, face_top_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_width, plan_widths, straight_m, mask_bottom_m, mask_top_m, mask_slot, screen_round, decals]
+      door_width_m: 1.66
+      pantograph_count: 0
+      window_sill_m: 1.34
+      window_top_m: 3.38
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [4.27, -1.38, -6.62]
+      source: wikipedia-de-422
+      field_sources:
+        length_m: wikipedia-de-422
+        nose_shape: gerlines
+        pantograph_count: db-emb-422
+        window_sill_m: commons-423-telephoto
+        window_top_m: commons-423-telephoto
+        window_pillars: commons-422-045-dortmund-vrr
+        doors_per_side: db-emb-422
+        door_positions_m: db-emb-422
+        door_width_m: db-emb-422
+    - car_type: middle
+      name: Middle car with pantograph
+      role: middle
+      length_m: 15.46
+      width_m: 3.02
+      height_m: 4.33
+      floor_height_m: 1.025
+      double_deck: false
+      bogies: [jacobs, jacobs]
+      jacobs_wheelbase_m: 2.7
+      wheel_diameter_m: 0.85
+      door_width_m: 1.66
+      pantograph_count: 1
+      pantograph_positions_m: [-6.25]
+      window_sill_m: 1.34
+      window_top_m: 3.38
+      window_pillars: body
+      doors_per_side: 3
+      door_positions_m: [4.97, 0.0, -4.99]
+      source: wikipedia-de-422
+      field_sources:
+        pantograph_count: db-emb-422
+        pantograph_positions_m: db-emb-422
+        window_sill_m: commons-423-telephoto
+        window_top_m: commons-423-telephoto
+        window_pillars: commons-422-045-dortmund-vrr
+        doors_per_side: db-emb-422
+        door_positions_m: db-emb-422
+        door_width_m: db-emb-422
+
+- model_id: db-445
+  name: Twindexx Vario multiple unit (445), four cars
+  series_id: db-445
+  generic: false
+  category: rfast
+  unit_length_m: 105.56
+  formation: &twindexx-4-formation
+    - car_type: end
+    - car_type: middle
+    - car_type: middle
+    - car_type: end
+      reversed: true
+  source: wikipedia-de-twindexx-vario
+  field_sources:
+    unit_length_m: gerlines
+  missing:
+    livery_id: *mixed-liveries
+  car_types: &twindexx-cars
+    - car_type: end
+      name: Power car with cab (445)
+      role: cab
+      length_m: 25.98
+      width_m: 2.784
+      height_m: 4.631
+      double_deck: true
+      bogies: [own, own]
+      nose_shape: rounded
+      front:
+        source: db-emb-445
+        view_source: commons-445-007-rostock-front
+        length_m: 2.0
+        tip_height_m: 1.14
+        bottom_m: 0.45
+        bottom_setback_m: 0.45
+        screen_bottom_m: 2.35
+        screen_top_m: 3.95
+        screen_bottom_setback_m: 0.2
+        screen_top_setback_m: 1.1
+        cab_length_m: 7.12
+        screen_width: 0.62
+        plan: round
+        plan_widths: [[0, 0.62], [0.15, 0.8], [0.4, 0.92], [0.8, 0.98], [1.3, 1.0]]
+        straight_m: 0.3
+        mask_bottom_m: 2.2
+        mask_top_m: 4.25
+        mask_width: 0.72
+        stripe: none
+        screen_round: 5.0
+        screen_tone: light
+        skirt_top_m: 0.95
+        chin_bottom_m: 0.35
+        chin_top_m: 1.25
+        chin_width: 0.5
+        loft:
+          waist_m: 1.2
+          top_m: 4.5
+          bottom_m: 0.3
+          exponent: 2.2
+          taper: 0.6
+          widths: [[0.4, 0.92], [1.2, 1.0], [3.4, 0.95], [4.4, 0.75]]
+        decals:
+          - {slot: mask, bottom_m: 2.2, top_m: 4.25, inner: 0, outer: 0.72, round: 4, under: true}
+          - {slot: light, bottom_m: 1.98, top_m: 2.22, inner: 0.5, outer: 0.76, round: 2.4, tail: 0.5, tail_side: outer}
+          - {slot: doors, bottom_m: 1.58, top_m: 1.8, inner: 0, outer: 0.11, logo: true}
+          - {slot: display, bottom_m: 3.72, top_m: 3.86, inner: 0, outer: 0.38, round: 12}
+        estimated: [screen_bottom_m, screen_top_m, screen_width, plan, plan_widths, straight_m, mask_bottom_m, mask_top_m, mask_width, screen_round, skirt_top_m, loft, decals]
+      pantograph_count: 1
+      pantograph_positions_m: [-10.2]
+      doors_per_side: 2
+      door_positions_m: [4.96, -6.06]
+      door_width_m: 1.37
+      side_panels_m: [[7.14, 9.08, 1.53, 2.97], [7.86, 9.49, 3.48, 4.1]]
+      window_width_m: 1.45
+      window_pillar_m: 0.18
+      source: wikipedia-de-twindexx-vario
+      field_sources:
+        nose_shape: gerlines
+        pantograph_count: db-emb-445
+        pantograph_positions_m: db-emb-445
+        doors_per_side: db-emb-445
+        door_positions_m: db-emb-445
+        door_width_m: db-emb-445
+        side_panels_m: db-emb-445
+        window_width_m: commons-falk2-dabpbzfa-connewitz
+        window_pillar_m: commons-falk2-dabpbzfa-connewitz
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_wheelbase_m: *no-wheelbase
+    # The Twindexx Vario cars are the Dosto 2010 (wikipedia-de-twindexx-vario, section Geschichte).
+    - *do2010-middle
+
+- model_id: db-446
+  name: Twindexx Vario multiple unit (446), drawn with the cars of the 445
+  series_id: db-446
+  generic: false
+  category: rfast
+  unit_length_m: 105.56
+  formation: *twindexx-4-formation
+  source: wikipedia-de-twindexx-vario
+  field_sources:
+    unit_length_m: gerlines
+  missing:
+    livery_id: *mixed-liveries
+  car_types: *twindexx-cars
+
+- model_id: sncf-tgv-duplex
+  name: TGV Euroduplex 2N2 3UA (SNCF, 310)
+  series_id: sncf-tgv-duplex
+  generic: false
+  category: hsr
+  livery_id: sncf-tgv-carmillon-sampled
+  unit_length_m: 200.19
+  formation:
+    - car_type: power-car
+    - car_type: end-trailer
+    - car_type: middle
+    - car_type: middle
+    - car_type: bar
+    - car_type: middle
+      reversed: true
+    - car_type: middle
+      reversed: true
+    - car_type: middle
+      reversed: true
+    - car_type: end-trailer
+      reversed: true
+    - car_type: power-car
+      reversed: true
+  source: wikipedia-de-tgv-duplex
+  car_types:
+    - car_type: power-car
+      name: Power car (310)
+      role: power_head
+      length_m: 21.49
+      width_m: 2.904
+      double_deck: false
+      bogies: [own, own]
+      nose_shape: streamlined
+      front:
+        source: commons-tgv-4702-offenburg-side
+        view_source: commons-tgv-4702-offenburg-front
+        length_m: 5.6
+        tip_height_m: 0.95
+        bottom_m: 0.35
+        bottom_setback_m: 0.6
+        screen_bottom_m: 2.35
+        screen_top_m: 3.35
+        screen_bottom_setback_m: 2.2
+        screen_top_setback_m: 3.9
+        screen_width: 0.62
+        plan: round
+        side_profile: [[0.6, 0.35], [0.25, 0.5], [0.06, 0.72], [0, 0.95], [0.12, 1.25], [0.45, 1.6], [0.95, 1.95], [1.6, 2.35], [2.3, 2.75], [3.1, 3.15], [3.9, 3.45], [4.6, 3.7], [5.2, 3.85], [5.6, 3.9]]
+        plan_widths: [[0, 0.4], [0.3, 0.62], [0.8, 0.8], [1.6, 0.92], [2.6, 0.98], [3.6, 1.0]]
+        mask_bottom_m: 1.15
+        mask_top_m: 3.9
+        mask_width: 0.8
+        mask_slot: equipment
+        stripe: none
+        stripe_bottom_m: 0.3
+        stripe_top_m: 0.32
+        stripe_curve: [[0.2, 1.05, 1.4], [1.0, 1.45, 1.95], [2.2, 2.2, 2.75], [3.4, 2.9, 3.4], [4.6, 3.4, 3.8], [5.6, 3.7, 3.92]]
+        front_skirt_top_m: 0.55
+        cab_window: true
+        side_window_from_m: 4.0
+        side_window_to_m: 5.2
+        cab_length_m: 6.6
+        screen_round: 4.0
+        decals:
+          - {slot: equipment, bottom_m: 1.15, top_m: 3.9, inner: 0, outer: 0.8, round: 3, under: true}
+          - {slot: housing, bottom_m: 1.15, top_m: 1.4, inner: 0, outer: 0.9, round: 6}
+          - {slot: light, bottom_m: 1.18, top_m: 1.37, inner: 0.5, outer: 0.82, round: 2.4, tail: 0.5, tail_side: outer}
+          - {slot: equipment, bottom_m: 1.18, top_m: 1.37, inner: 0, outer: 0.32, round: 4}
+          - {slot: display, bottom_m: 1.55, top_m: 1.7, inner: 0, outer: 0.16, round: 4}
+        estimated: [length_m, tip_height_m, bottom_m, bottom_setback_m, screen_bottom_m, screen_top_m, screen_bottom_setback_m, screen_top_setback_m, screen_width, plan, side_profile, plan_widths, mask_bottom_m, mask_top_m, mask_width, stripe_bottom_m, stripe_top_m, stripe_curve, front_skirt_top_m, side_window_from_m, side_window_to_m, cab_length_m, screen_round, decals]
+      pantograph_count: 1
+      pantograph_positions_m: [-6.2]
+      doors_per_side: 1
+      source: wikipedia-de-tgv-duplex
+      field_sources:
+        length_m: db-emb-310
+        doors_per_side: db-emb-310
+        nose_shape: gerlines
+        pantograph_count: db-emb-310
+        pantograph_positions_m: db-emb-310
+      missing:
+        height_m: *no-height
+        floor_height_m: *no-floor
+        door_positions_m: *unmeasured
+        door_width_m: *no-door-width
+        window_sill_m: *unmeasured
+        window_top_m: *unmeasured
+        bogie_pitch_m: *no-pitch
+        bogie_offset_m: *no-offset
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+    - car_type: end-trailer
+      name: End trailer on its own and a Jacobs bogie (R1, R8)
+      role: middle
+      length_m: 20.23
+      width_m: 2.904
+      height_m: 4.303
+      double_deck: true
+      bogies: [own, jacobs]
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [-6.2]
+      window_sill_m: 2.3
+      window_top_m: 3.15
+      source: wikipedia-de-tgv-duplex
+      field_sources:
+        length_m: db-emb-310
+        window_sill_m: commons-tgv-4710-side
+        window_top_m: commons-tgv-4710-side
+        pantograph_count: db-emb-310
+        doors_per_side: db-emb-310
+        door_positions_m: db-emb-310
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        bogie_pitch_m: *no-pitch
+        wheel_diameter_m: *no-wheel
+        bogie_wheelbase_m: *no-wheelbase
+        jacobs_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+    - car_type: middle
+      name: Middle trailer between two Jacobs bogies (R2, R3, R5 to R7)
+      role: middle
+      length_m: 19.458
+      width_m: 2.904
+      height_m: 4.303
+      double_deck: true
+      bogies: [jacobs, jacobs]
+      pantograph_count: 0
+      doors_per_side: 1
+      door_positions_m: [-5.0]
+      window_sill_m: 2.3
+      window_top_m: 3.15
+      source: wikipedia-de-tgv-duplex
+      field_sources:
+        length_m: db-emb-310
+        window_sill_m: commons-tgv-4710-side
+        window_top_m: commons-tgv-4710-side
+        pantograph_count: db-emb-310
+        doors_per_side: db-emb-310
+        door_positions_m: db-emb-310
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        jacobs_wheelbase_m: *no-wheelbase
+        door_width_m: *no-door-width
+    - car_type: bar
+      name: Bar car without doors (R4)
+      role: middle
+      length_m: 19.458
+      width_m: 2.904
+      height_m: 4.303
+      double_deck: true
+      bogies: [jacobs, jacobs]
+      pantograph_count: 0
+      doors_per_side: 0
+      door_positions_m: []
+      window_sill_m: 2.3
+      window_top_m: 3.15
+      source: wikipedia-de-tgv-duplex
+      field_sources:
+        length_m: db-emb-310
+        window_sill_m: commons-tgv-4710-side
+        window_top_m: commons-tgv-4710-side
+        pantograph_count: db-emb-310
+        doors_per_side: db-emb-310
+        door_positions_m: db-emb-310
+      missing:
+        floor_height_m: *no-floor
+        lower_deck_floor_m: *no-floor
+        wheel_diameter_m: *no-wheel
+        jacobs_wheelbase_m: *no-wheelbase

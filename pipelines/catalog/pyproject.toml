@@ -1,0 +1,25 @@
+[project]
+name = "gerlines-catalog"
+version = "0.1.0"
+description = "GerLines catalogue seeds: validate, research caches, load into the database, coverage report"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "gerlines-common",
+  "gerlines-static-import",
+  "pillow==13.0.0",
+  "psycopg[binary]==3.3.6",
+  "pydantic==2.14.2",
+  "pyyaml==6.0.3",
+]
+
+[project.scripts]
+gerlines-catalog = "gerlines_catalog.cli:main"
+
+[tool.uv.sources]
+gerlines-common = { workspace = true }
+gerlines-static-import = { workspace = true }
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

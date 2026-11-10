@@ -1,0 +1,49 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271702837 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 80-80, 219-219, 224-239, 473-473, 476-489, 526-526, 529-542; references removed. -->
+=== Regionalverkehr ===
+==== RE 4 ====
+{| class="wikitable"
+|-
+! style="width:5%"| Linie
+! style="width:20%"| Bahnstrecke
+! style="width:5%"| Betreiber
+! style="width:38%"| Verlauf
+! style="width:12%"| Fahrzeuge
+<!-- ! style="width:20%"| Karte -->
+|-
+|style="text-align:center;"| {{Bahnlinie-BB|RE|4}}
+| [[Bahnstrecke Berlin–Lehrte|Berlin–Lehrte]];<br />[[Berliner Ringbahn]];<br />[[Nord-Süd-Fernbahn]];<br />[[Bahnstrecke Berlin–Halle|Berlin–Halle]];<br />[[Bahnstrecke Jüterbog–Röderau|Jüterbog–Röderau]]
+| DB Regio Nordost
+| ''[[Stendal Hauptbahnhof|Stendal Hbf]]&nbsp;–'' [[Bahnhof Rathenow|Rathenow]]&nbsp;– Nennhausen&nbsp;– Buschow&nbsp;– [[Bahnhof Wustermark|Wustermark]]&nbsp;– [[Bahnhof Elstal|Elstal]]&nbsp;– Dallgow-Döberitz&nbsp;– [[Bahnhof Berlin-Staaken|Berlin-Staaken]]&nbsp;– [[Bahnhof Berlin-Spandau|Berlin-Spandau]]&nbsp;– [[Bahnhof Berlin Jungfernheide|Berlin Jungfernheide]]&nbsp;– [[Berlin Hauptbahnhof|Berlin Hbf]]&nbsp;– [[Bahnhof Berlin Potsdamer Platz|Berlin Potsdamer Platz]]&nbsp;– [[Bahnhof Berlin Südkreuz|Berlin Südkreuz]]&nbsp;– [[Bahnhof Berlin-Lichterfelde Ost|Berlin-Lichterfelde Ost]]&nbsp;– [[Bahnhof Ludwigsfelde|Ludwigsfelde]]&nbsp;– Thyrow – Trebbin – [[Bahnhof Luckenwalde|Luckenwalde]]&nbsp;– [[Bahnhof Jüterbog|Jüterbog]] – Oehna – Zellendorf – ''Linda (Elster) – Holzdorf (Elster)'' – Herzberg (Elster) – [[Bahnhof Falkenberg (Elster)|Falkenberg (Elster)]]
+| [[Bombardier Traxx#P160 AC2|146]] / [[DR-Baureihe 243|112]] + 4–5 [[Doppelstockwagen]] / [[Siemens Mireo|463]] [Mireo, dreiteilig] (Verstärker Falkenberg – Jüterbog)
+<!-- |style="text-align:center;" style="padding:0"| -->
+|}
+==== RB 10 ====
+{| class="wikitable"
+|-
+! style="width:5%"| Linie
+! style="width:20%"| Bahnstrecke
+! style="width:5%"| Betreiber
+! style="width:38%"| Verlauf
+! style="width:12%"| Fahrzeuge
+|-
+| style="text-align:center;" | {{Bahnlinie-BB|RB|10}}
+| [[Nord-Süd-Fernbahn]];<br />[[Bahnstrecke Berlin–Hamburg|Berlin–Hamburg]]
+| ODEG
+| [[Bahnhof Rangsdorf|Rangsdorf]]&nbsp;– [[Dahlewitz#Bahnverkehr|Dahlewitz]]&nbsp;– [[Bahnhof Blankenfelde (Kr Teltow-Fläming)|Blankenfelde]]&nbsp;– [[Bahnhof Berlin Südkreuz|Berlin Südkreuz]]&#160;– [[Bahnhof Berlin Potsdamer Platz|Berlin Potsdamer Platz]]&#160;– [[Berlin Hauptbahnhof|Berlin Hbf]]&nbsp;– [[Bahnhof Berlin Jungfernheide|Berlin Jungfernheide]]&nbsp;– [[Bahnhof Berlin-Spandau|Berlin-Spandau]]&nbsp;– [[Bahnhof Berlin-Albrechtshof|Berlin-Albrechtshof]]&nbsp;– Seegefeld&nbsp;– [[Falkensee#Bahnhof|Falkensee]]&nbsp;– Finkenkrug&nbsp;– Brieselang&nbsp;– [[Bahnhof Nauen|Nauen]]
+| [[Stadler KISS|445.1]] [KISS, vierteilig]
+|}
+==== RB 20 ====
+{| class="wikitable"
+|-
+! style="width:5%"| Linie
+! style="width:20%"| Bahnstrecke
+! style="width:5%"| Betreiber
+! style="width:38%"| Verlauf
+! style="width:12%"| Fahrzeuge
+|-
+|style="text-align:center;"| {{Bahnlinie-BB|RB|20}}
+| [[Bahnstrecke Berlin–Magdeburg|Berlin–Magdeburg]];<br />[[Berliner Außenring]];<br />[[Berliner Nordbahn]]
+| DB Regio Nordost
+| [[Bahnhof Oranienburg|Oranienburg]]&nbsp;– [[Bahnhof Birkenwerder (b Berlin)|Birkenwerder]]&nbsp;– [[Bahnhof Hohen Neuendorf West|Hohen Neuendorf West]]&nbsp;– [[Bahnhof Hennigsdorf (b Berlin)|Hennigsdorf]]&nbsp;– Priort&nbsp;– [[Haltepunkt Marquardt|Marquardt]]&nbsp;– [[Bahnhof Golm|Golm]]&nbsp;– [[Bahnhof Potsdam Park Sanssouci|Potsdam Park Sanssouci]]&nbsp;– [[Bahnhof Potsdam Charlottenhof|Potsdam Charlottenhof]]&nbsp;– [[Potsdam Hauptbahnhof|Potsdam Hbf]]&nbsp;– [[Bahnhof Potsdam Griebnitzsee|Potsdam Griebnitzsee]]
+| [[Bombardier Talent 2|442.1]] [Talent 2, dreiteilig]
+|}

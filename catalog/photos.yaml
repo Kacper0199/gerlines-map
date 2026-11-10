@@ -1,0 +1,3778 @@
+# Vehicle photos from Wikimedia Commons, one record per reviewed file (WP-6.3). Written by
+# `gerlines-catalog photos` and the review tool (tools/photo-review); edit decisions there.
+# Facts about each file (author, licence, links) come from the Commons API at retrieved_at;
+# files stay under their own licence, named per record. Approved files are stored outside git
+# in data/photos/ at 330 and 960 px, with the SHA-256 of each copy in files.
+- photo_id: alstom-coradia-continental-p1
+  series_id: alstom-coradia-continental
+  rank: 1
+  file_title: File:440 524 Donauwörth.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:440_524_Donauw%C3%B6rth.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/8a/440_524_Donauw%C3%B6rth.JPG
+  original_width: 2600
+  original_height: 1949
+  mime: image/jpeg
+  commons_sha1: 55e879322525edcee49fbd2d37d80b11568e1f92
+  author: Muellean at German Wikipedia (Andreas Müller)
+  author_url: https://en.wikipedia.org/wiki/de:User:Muellean
+  licence: CC-BY-SA-3.0-DE
+  licence_name: CC BY-SA 3.0 de
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:05Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 34000
+    sha256: 91cb13374a2d2aa509ba109d9c33e507c2fc4b0ed250b189237d468cafd41a41
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 236046
+    sha256: cc05187ca022c4039ebe472cd979136427cb701d1266fdd933a5cdca2121629d
+- photo_id: alstom-coradia-ilint-p1
+  series_id: alstom-coradia-ilint
+  rank: 1
+  file_title: File:BR554 001.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:BR554_001.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/b/bd/BR554_001.jpg
+  original_width: 4032
+  original_height: 3024
+  mime: image/jpeg
+  commons_sha1: 42495b9707bb0ffe2f699955b735a8613e2c5d81
+  author: DanielK.
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:48Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 32753
+    sha256: 49e29e8ea3eb6b2ffcc3a850cd100ae53d16e672d344e2ccc281a9979d5724e6
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 202842
+    sha256: 2249fdb1a2f951fee4a1f5891f268e541347200c2630826400246943d5cc5186
+- photo_id: alstom-coradia-ilint-p2
+  series_id: alstom-coradia-ilint
+  rank: 2
+  file_title: File:Alstom Coradia iLint in service with Train de Charlevoix.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Alstom_Coradia_iLint_in_service_with_Train_de_Charlevoix.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/32/Alstom_Coradia_iLint_in_service_with_Train_de_Charlevoix.jpg
+  original_width: 4000
+  original_height: 3000
+  mime: image/jpeg
+  commons_sha1: e76f871a8b280e2e6e677e229a2217a89e0f15a1
+  author: Scarlett Kang
+  author_url: https://commons.wikimedia.org/wiki/User:Kyy0602
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:36Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:49Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 32602
+    sha256: 12444923b4700285e24b8d14e0f88525d3f1db0800fdfb68f3da08fdc80c2ddc
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 215526
+    sha256: 9948a3acf32820b6438731fabadf3ea30928c5e49bf07c3b45d665861ba436eb
+- photo_id: alstom-coradia-lint-p1
+  series_id: alstom-coradia-lint
+  rank: 1
+  file_title: File:DreiLänderBahn Finnentrop.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DreiL%C3%A4nderBahn_Finnentrop.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/58/DreiL%C3%A4nderBahn_Finnentrop.jpg
+  original_width: 1280
+  original_height: 892
+  mime: image/jpeg
+  commons_sha1: 46beee7b15b0ae0a7b61b8d373e68c3005fb5f47
+  author: Stefan Flöper
+  author_url: https://commons.wikimedia.org/wiki/User:Stefan_Fl%C3%B6per
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:40Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 230
+    bytes: 33711
+    sha256: daa0cbc17c391d430773a4bb882e76b8b1e41f5d983eb94135baa250332d01f8
+  - width_class: 960
+    width: 960
+    height: 669
+    bytes: 242955
+    sha256: 132352f7e9a9da02f1a4e0339ae716a4d635ad3782b4fc400c82091055084b1f
+- photo_id: alstom-coradia-stream-p1
+  series_id: alstom-coradia-stream
+  rank: 1
+  file_title: File:Hulten NSR ICN 3137 en 3222 IC 1139 Eindhoven (53191032580).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Hulten_NSR_ICN_3137_en_3222_IC_1139_Eindhoven_(53191032580).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/81/Hulten_NSR_ICN_3137_en_3222_IC_1139_Eindhoven_%2853191032580%29.jpg
+  original_width: 6048
+  original_height: 4024
+  mime: image/jpeg
+  commons_sha1: 9f29e0043bfd01d39273ac3e73c19c42db904ec2
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/robdammers/
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:02Z'
+    reason: the series image on Wikidata (P18), a Coradia Stream of NS, illustrates the series shape
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 31481
+    sha256: f2c541b2abf9651aec483449ebb5db38a8897e0e0eea851fd22b2ef8b67772a1
+  - width_class: 960
+    width: 960
+    height: 639
+    bytes: 253283
+    sha256: 400e3e94498cec522537c4f9ea2632a9a6d9b4de786303e828984c2752a9d3fa
+- photo_id: avg-gt8-100d-2s-m-p1
+  series_id: avg-gt8-100d-2s-m
+  rank: 1
+  file_title: File:Ubstadt-Weiher - Ubstadt Ort - Duewag-Siemens GT8-100D-2S-M - 2017-09-03 19-24-59.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Ubstadt-Weiher_-_Ubstadt_Ort_-_Duewag-Siemens_GT8-100D-2S-M_-_2017-09-03_19-24-59.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/43/Ubstadt-Weiher_-_Ubstadt_Ort_-_Duewag-Siemens_GT8-100D-2S-M_-_2017-09-03_19-24-59.jpg
+  original_width: 2151
+  original_height: 1944
+  mime: image/jpeg
+  commons_sha1: c239b8ebbba91dd5466654a159eb1f58ef04be78
+  author: Photographs by Radosław Drożdżewski (User:Zwiadowca21)
+  author_url: https://commons.wikimedia.org/wiki/User:Zwiadowca21
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:04Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 298
+    bytes: 46942
+    sha256: 73f909247d2ab28ef43ad1b0efa4c42c979982d4a85283f90303c2d25718d192
+  - width_class: 960
+    width: 960
+    height: 868
+    bytes: 279276
+    sha256: d833a8cd14543c7eed7480df062bc393f9ef395dfbead3498b1a48636983524b
+- photo_id: bombardier-talent-p1
+  series_id: bombardier-talent
+  rank: 1
+  file_title: File:MAV Talent.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:MAV_Talent.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/50/MAV_Talent.jpg
+  original_width: 1280
+  original_height: 960
+  mime: image/jpeg
+  commons_sha1: b7a6532ea8e137194e8348a1cfee8b1d37c4e5e9
+  author: Fazekas Attila
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:50Z'
+    reason: the series image on Wikidata (P18), a Talent of MAV, illustrates the series shape
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 29668
+    sha256: 8df288728e8d7bfc15677e3e2879b6f80611d82d21ddc62c4a35a6b228d5dbe7
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 201643
+    sha256: 103402d5d7fdc11d3f826979beae305ed2b7d7d18e20db247dfcf10101950869
+- photo_id: bombardier-talent-2-p1
+  series_id: bombardier-talent-2
+  rank: 1
+  file_title: File:Kronach - Franken-Thüringen-Express - Bombardier Talent 2.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Kronach_-_Franken-Th%C3%BCringen-Express_-_Bombardier_Talent_2.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Kronach_-_Franken-Th%C3%BCringen-Express_-_Bombardier_Talent_2.jpg
+  original_width: 3000
+  original_height: 2000
+  mime: image/jpeg
+  commons_sha1: 74a930da1d92ffdc7fded83a7364468e4a4ac1d6
+  author: Tors
+  author_url: https://commons.wikimedia.org/wiki/User:Tors
+  licence: CC-BY-SA-3.0-DE
+  licence_name: CC BY-SA 3.0 de
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:05Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 34734
+    sha256: 8fe4799e37815a89444962beb38c2079677200edb2011f34cb32dd639d036f3e
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 229042
+    sha256: 0a9d9f08305ca2917b9197dca2b333259c511532ca9137a400cdf7a7de23d634
+- photo_id: bombardier-twindexx-vario-p1
+  series_id: bombardier-twindexx-vario
+  rank: 1
+  file_title: File:I20 044 Bf Leipzig Hbf, DBpbzfa 668.2.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:I20_044_Bf_Leipzig_Hbf,_DBpbzfa_668.2.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/49/I20_044_Bf_Leipzig_Hbf%2C_DBpbzfa_668.2.jpg
+  original_width: 4413
+  original_height: 2942
+  mime: image/jpeg
+  commons_sha1: 2b52b58b74afcfcf7881fc8eeb982b13a045fc86
+  author: Falk2
+  author_url: https://commons.wikimedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:20Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 35507
+    sha256: 601ba568a020e0496831a823e024cf2801db9e4f2ac09a6e15b0dfa90ada679f
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 223680
+    sha256: 190e3572526be2f80cec0c2167c036c01c62990a58b3f8ea83a21544b90799a8
+- photo_id: db-101-p1
+  series_id: db-101
+  rank: 1
+  file_title: File:Baureihe 101 092-5.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Baureihe_101_092-5.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Baureihe_101_092-5.jpg
+  original_width: 3405
+  original_height: 2268
+  mime: image/jpeg
+  commons_sha1: 244469d248b40cb022af39ddd95ca5dd762ad499
+  author: Thomas Wolf (Der Wolf im Wald)
+  author_url: https://commons.wikimedia.org/wiki/User:Der_Wolf_im_Wald
+  licence: CC-BY-SA-2.5
+  licence_name: CC BY-SA 2.5
+  licence_url: https://creativecommons.org/licenses/by-sa/2.5
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:51Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 29976
+    sha256: 35bd8e589068a3012d557d0e6626776d5da57ac0618781bff0397a40daa75525
+  - width_class: 960
+    width: 960
+    height: 639
+    bytes: 187730
+    sha256: 06212049144f11be96c9383922537a397c44e57cf3bbd178d43047125746bc7b
+- photo_id: db-101-p2
+  series_id: db-101
+  rank: 2
+  file_title: File:101 001-6 E-Lok.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:101_001-6_E-Lok.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/30/101_001-6_E-Lok.jpg
+  original_width: 4320
+  original_height: 3240
+  mime: image/jpeg
+  commons_sha1: ed1c872bc69d997fbb2d941b32d2141a45e44723
+  author: Pedalito
+  author_url: https://commons.wikimedia.org/wiki/User:Pedalito
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:56Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:52Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 36025
+    sha256: 1835f8e9d0fca293e2441c781c542fa5b4e57b7d5ff91b4d8b59bf13ff6f8bad
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 197422
+    sha256: 6e05af6c191a70035cd0d9751792ae61079b6bbbcb51627081be745329c34193
+- photo_id: db-111-p1
+  series_id: db-111
+  rank: 1
+  file_title: File:BR 111 147 IMGP7151.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:BR_111_147_IMGP7151.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/44/BR_111_147_IMGP7151.jpg
+  original_width: 2406
+  original_height: 1600
+  mime: image/jpeg
+  commons_sha1: b3c06a2f44d347b019f1b6ab79ab63499f5c8a44
+  author: Smial
+  author_url: https://de.wikipedia.org/wiki/Benutzer:Smial
+  licence: CC-BY-SA-2.0-DE
+  licence_name: CC BY-SA 2.0 de
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0/de/deed.en
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:57Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 30822
+    sha256: 61f5da2859d21cfe94df894dcc14562a5952668d4c6c9b8f5946d4f294d467ee
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 228458
+    sha256: d507dee202570b617cbac9dd14a68dd54505583838d98a979f5c372ab8a2edd2
+- photo_id: db-1440-p1
+  series_id: db-1440
+  rank: 1
+  file_title: File:Altendorf-Buttenheim Bahnhof S-Bahn-20230625-RM-161914.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Altendorf-Buttenheim_Bahnhof_S-Bahn-20230625-RM-161914.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Altendorf-Buttenheim_Bahnhof_S-Bahn-20230625-RM-161914.jpg
+  original_width: 5184
+  original_height: 3888
+  mime: image/jpeg
+  commons_sha1: b9c20cc077f4686a69eb33e9ba08ebfc03af60ac
+  author: Ermell
+  author_url: https://commons.wikimedia.org/wiki/User:Ermell
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:32Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:06Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 37252
+    sha256: 03c9c719722dea98591630d846310ff60b4c7970a0601d7ee3ff27d333380f5e
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 262031
+    sha256: de6c9f0aca54839cf5e17f9784f361ef318cfbabae9b7a353fe843d307f8fa0f
+- photo_id: db-1440-p2
+  series_id: db-1440
+  rank: 2
+  file_title: File:Altendorf-Buttenheim Bahnhof S-Bahn-20230625-RM-161923.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Altendorf-Buttenheim_Bahnhof_S-Bahn-20230625-RM-161923.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/00/Altendorf-Buttenheim_Bahnhof_S-Bahn-20230625-RM-161923.jpg
+  original_width: 5184
+  original_height: 3888
+  mime: image/jpeg
+  commons_sha1: dced72face30fddff3b73233481936cbc2983e4c
+  author: Ermell
+  author_url: https://commons.wikimedia.org/wiki/User:Ermell
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:32Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:07Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 30743
+    sha256: 770801bff544484339dd02c1cb595e6211eff44d9279c890f6c78318e37c1423
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 208221
+    sha256: 4c27e19a4d4ba681dff1c33d3d869d5bfb061ec40b74dc9dd9772717258f0c9c
+- photo_id: db-146-p1
+  series_id: db-146
+  rank: 1
+  file_title: File:Electroloc-BR146-208.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:Electroloc-BR146-208.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/02/Electroloc-BR146-208.JPG
+  original_width: 1600
+  original_height: 1200
+  mime: image/jpeg
+  commons_sha1: 9bcf3bdad9af70e7b11f9e28d46979fce55502ef
+  author: Alexander Tutubalin
+  licence: LicenseRef-Public-Domain
+  licence_name: Public domain
+  attribution_required: false
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:53Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight, a date stamp sits in the corner
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 33297
+    sha256: 59ad605f64683669cd92282d661fd20359d6f347bd57171d75387ed8e54b2b2f
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 197786
+    sha256: cef53958e83a206eaf4763531aabc333b1d04da45383214e5e8890768a6421fc
+- photo_id: db-146-5-p1
+  series_id: db-146-5
+  rank: 1
+  file_title: File:DB 146 553 Nienburg.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_146_553_Nienburg.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/49/DB_146_553_Nienburg.jpg
+  original_width: 2048
+  original_height: 1152
+  mime: image/jpeg
+  commons_sha1: 19ffc433114e9cf2ca2c1a4eb5096718f6baced2
+  author: Clic17
+  author_url: https://commons.wikimedia.org/wiki/User:Clic17
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:54Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 30207
+    sha256: 76bc95492040a5e39b2c9cdecab845140140658cbf08ca3db47d51fe03a89792
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 146996
+    sha256: 7c463bf9044d8d8fdcec2a3341e20cd6d4486325e889819c249510bbc482f804
+- photo_id: db-146-5-p2
+  series_id: db-146-5
+  rank: 2
+  file_title: File:BR 146 leipzig Hbf.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:BR_146_leipzig_Hbf.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/7/74/BR_146_leipzig_Hbf.jpg
+  original_width: 4000
+  original_height: 3000
+  mime: image/jpeg
+  commons_sha1: 6439e22e80339718ed56ecbcb10022ac324cc7da
+  author: Bettenburg
+  author_url: https://commons.wikimedia.org/wiki/User:Bettenburg
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:00Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:55Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 34893
+    sha256: b5600c42c933d61c1b364b1e5f97a0977947e3bce27f33480c667d268b8dcd1e
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 240237
+    sha256: e5c0f6171114d81c60ddd0beb7746d5e51c335c60e8a07affa3473ac5d6d41c5
+- photo_id: db-147-p1
+  series_id: db-147
+  rank: 1
+  file_title: File:J38 369 Bf Leipzig Hbf, 147 575.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:J38_369_Bf_Leipzig_Hbf,_147_575.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/81/J38_369_Bf_Leipzig_Hbf%2C_147_575.jpg
+  original_width: 5802
+  original_height: 3868
+  mime: image/jpeg
+  commons_sha1: f7d25dcfdff8415de9314318637febf1782b9541
+  author: Falk2
+  author_url: https://de.wikipedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:56Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 31487
+    sha256: bf16709d60f25c94fa369eae4ed72b2f4988f3f88b0ddd53d567b1519de6207e
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 207701
+    sha256: 7072deeb6b90169a51fb3109a2c7d77ad404ad6bba5514e58e514adb6aa075f4
+- photo_id: db-218-p1
+  series_id: db-218
+  rank: 1
+  file_title: File:Db-218395-01-c.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Db-218395-01-c.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/e2/Db-218395-01-c.jpg
+  original_width: 1155
+  original_height: 768
+  mime: image/jpeg
+  commons_sha1: 905329b79d9392b1df44527acda330700aa56715
+  author: K. Jähne
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:57Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 34702
+    sha256: be5126fe5f81ee6bd1d273762d43e8c930b7c6faa973c326eecc0b6ea13e36b4
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 223327
+    sha256: 7a413573dc1a55afc21ce92225a1081d93f88a6d3890ad3aedaea50a4c70545d
+- photo_id: db-401-p1
+  series_id: db-401
+  rank: 1
+  file_title: File:DB ICE1 401 590 (52508715939).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_ICE1_401_590_(52508715939).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/0d/DB_ICE1_401_590_%2852508715939%29.jpg
+  original_width: 3840
+  original_height: 2560
+  mime: image/jpeg
+  commons_sha1: e3b163a8d1593f9c22d1bb874734e59c79d44320
+  author: Nelso Silva from Porto, Portugal
+  author_url: https://www.flickr.com/people/53768422@N08
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:12Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 29708
+    sha256: 423e2cfddf11d0284bf9b4f84ac5153a9291a514784dd47746958b0233dc6efd
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 245293
+    sha256: 84f7e53d905a4d2159fbd4163f1a22309516ea282b710f4731ade57b326340b2
+- photo_id: db-401-p2
+  series_id: db-401
+  rank: 2
+  file_title: File:30 Jahre ICE, Berlin (IMG 20230515 102332).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:30_Jahre_ICE,_Berlin_(IMG_20230515_102332).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/e2/30_Jahre_ICE%2C_Berlin_%28IMG_20230515_102332%29.jpg
+  original_width: 4080
+  original_height: 3056
+  mime: image/jpeg
+  commons_sha1: 57ac49b5a35b41233293dd416e4c70c5530a0065
+  author: Matti Blume
+  author_url: https://commons.wikimedia.org/wiki/User:MB-one
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/deed.en
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:18Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:15Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 27950
+    sha256: 64d3f98fdee6a009fea6bf00b818ab9f6b47ad7daef92bb872b4eb80d03a6d60
+  - width_class: 960
+    width: 960
+    height: 719
+    bytes: 169720
+    sha256: 488201f9bcae2d57608b08c918eb0b70ec2bdaa0c569a1509a1c9f9e9fa46110
+- photo_id: db-402-p1
+  series_id: db-402
+  rank: 1
+  file_title: File:Angermund ICE2 duo 402 031-030 als ICE 942 Berlin Hbf-Köln Hbf (33754015610).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Angermund_ICE2_duo_402_031-030_als_ICE_942_Berlin_Hbf-K%C3%B6ln_Hbf_(33754015610).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/51/Angermund_ICE2_duo_402_031-030_als_ICE_942_Berlin_Hbf-K%C3%B6ln_Hbf_%2833754015610%29.jpg
+  original_width: 5709
+  original_height: 3881
+  mime: image/jpeg
+  commons_sha1: 38750af7575820f62da44f6c5738b171b3468a02
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/93388157@N07
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:21Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 224
+    bytes: 35103
+    sha256: 22e5121f5cefb34f2f9f96ba393a1878bbd3efcf70b32ce8d5b155e50c73ca87
+  - width_class: 960
+    width: 960
+    height: 653
+    bytes: 263676
+    sha256: 141cc9564cedad8c7aaa77804624652e3a2d383e6f165b216c884d70c0e5989b
+- photo_id: db-403-p1
+  series_id: db-403
+  rank: 1
+  file_title: File:ICE 3 Oberhaider-Wald-Tunnel.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:ICE_3_Oberhaider-Wald-Tunnel.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a8/ICE_3_Oberhaider-Wald-Tunnel.jpg
+  original_width: 3456
+  original_height: 2304
+  mime: image/jpeg
+  commons_sha1: 578b155bc010acdf70167bfb7656ab4fd9c5b96d
+  author: Sebastian Terfloth User:Sese_Ingolstadt
+  author_url: https://commons.wikimedia.org/wiki/User:Sese_Ingolstadt
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:24Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 36385
+    sha256: c920e202ed31118ad6ead771d05b367f2507dd6ef29b8da5f7712375d7ddf64b
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 277537
+    sha256: 232f018d881e4d1475ffcd6c0d2495209e1216087be8a4f1f19ca9560ed5f2ad
+- photo_id: db-403-p2
+  series_id: db-403
+  rank: 2
+  file_title: File:403 004-5 Köln-Kalk Nord 2015-11-03-01.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:403_004-5_K%C3%B6ln-Kalk_Nord_2015-11-03-01.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/d/dd/403_004-5_K%C3%B6ln-Kalk_Nord_2015-11-03-01.JPG
+  original_width: 5056
+  original_height: 3616
+  mime: image/jpeg
+  commons_sha1: 143967804c6f6309db28b35f8be084cbadf7a2b2
+  author: Rolf Heinrich, Köln
+  author_url: https://commons.wikimedia.org/wiki/User:Rolf_H.
+  licence: CC-BY-3.0
+  licence_name: CC BY 3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:25Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:26Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 236
+    bytes: 36434
+    sha256: 97af86042e91564c8d2f0e48e32275ce7af081726668f05bc641b3c2265014b6
+  - width_class: 960
+    width: 960
+    height: 687
+    bytes: 251332
+    sha256: 8d041a804cb7316a4e40cb5d0e04b81373ec536b4a0248525ee0a34a4ab93505
+- photo_id: db-406-p1
+  series_id: db-406
+  rank: 1
+  file_title: File:'s-Hertogenbosch ICE treinstel 4610 als ICE 124 omgeleid naar Amsterdam Centraal (15972972041).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:'s-Hertogenbosch_ICE_treinstel_4610_als_ICE_124_omgeleid_naar_Amsterdam_Centraal_(15972972041).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/8c/%27s-Hertogenbosch_ICE_treinstel_4610_als_ICE_124_omgeleid_naar_Amsterdam_Centraal_%2815972972041%29.jpg
+  original_width: 5260
+  original_height: 2972
+  mime: image/jpeg
+  commons_sha1: 21b8cd7a75e3ae7d75fd7de65fdbe9c3323376fc
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/93388157@N07
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:29Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:28Z'
+    reason: the whole unit at a station in daylight, sharp and well lit, the Wikidata image is cropped
+      tighter
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 31579
+    sha256: 689cb782359d1c7052839e4c8a8c7178c5b7fa573e245f0548fb6d20ae6d310f
+  - width_class: 960
+    width: 960
+    height: 542
+    bytes: 220581
+    sha256: c780cf68a2fed2f0f34beb6198a9682b81fc1405d2f98b7280a49473f325f513
+- photo_id: db-406-p2
+  series_id: db-406
+  rank: 2
+  file_title: File:406 003-4 Köln Hauptbahnhof 2015-12-26-03.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:406_003-4_K%C3%B6ln_Hauptbahnhof_2015-12-26-03.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2d/406_003-4_K%C3%B6ln_Hauptbahnhof_2015-12-26-03.JPG
+  original_width: 5145
+  original_height: 3811
+  mime: image/jpeg
+  commons_sha1: e5e89e5e9798db25e2f4cf95db9158e942d3f28d
+  author: Rolf Heinrich, Köln
+  author_url: https://commons.wikimedia.org/wiki/User:Rolf_H.
+  licence: CC-BY-3.0
+  licence_name: CC BY 3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:29Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:30Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 244
+    bytes: 41921
+    sha256: c84224ce0a39389ae4a21c2fcb4188f9ffa7fe999f1d0ad302314d8a0cc52d8e
+  - width_class: 960
+    width: 960
+    height: 711
+    bytes: 262246
+    sha256: 67cc01a6574c223e89773bcfdc33828d5dcaa0de6d559d635460b4e24e7072a5
+- photo_id: db-407-p1
+  series_id: db-407
+  rank: 1
+  file_title: File:2025-03-05 ICE 3, Paris-Est.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:2025-03-05_ICE_3,_Paris-Est.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/10/2025-03-05_ICE_3%2C_Paris-Est.jpg
+  original_width: 6016
+  original_height: 4000
+  mime: image/jpeg
+  commons_sha1: a4fca75ec93a03b7f9d94cab7be21f4f76f28af6
+  author: RAIL P (RAIL.PHOTOGRAPHY)
+  author_url: https://commons.wikimedia.org/wiki/User:Rail01
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:33Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:32Z'
+    reason: the whole unit from the side at a station, the Wikidata image is a narrow crop
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 32950
+    sha256: 8c599bc7cab6278036d3bc5b38831de5534089b8cde70f0431f004f5704d1084
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 208388
+    sha256: 5b378b54e2e3cb7e4a97d4379aba4f40116f10a1f84e3bcc9ba01a0e511b62af
+- photo_id: db-407-p2
+  series_id: db-407
+  rank: 2
+  file_title: File:At Frankfurt am Main 2024 033.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:At_Frankfurt_am_Main_2024_033.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/3e/At_Frankfurt_am_Main_2024_033.jpg
+  original_width: 4032
+  original_height: 3024
+  mime: image/jpeg
+  commons_sha1: e17e69ee80b05373cf644c253ab77c490860d1c9
+  author: Photograph by Mike Peel (www.mikepeel.net).
+  author_url: https://commons.wikimedia.org/wiki/User:Mike_Peel
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:33Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:35Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 37447
+    sha256: 933ec57cb368d66a6f1c8175fff75377abdc495a79a31bab17d5965c1471a0f2
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 264240
+    sha256: 7db389544fc3b600bb5fe37b8bd2d18559ada089622653042e2efd9cbe7da54e
+- photo_id: db-408-p1
+  series_id: db-408
+  rank: 1
+  file_title: File:Praest ICE-3NEO 8010 (53845722138).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Praest_ICE-3NEO_8010_(53845722138).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Praest_ICE-3NEO_8010_%2853845722138%29.jpg
+  original_width: 5191
+  original_height: 2920
+  mime: image/jpeg
+  commons_sha1: e9ad7e46cff898d12b3e753d591041295f587d3b
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/robdammers/
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:40Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 30762
+    sha256: 1c8ed7900a95e38c2b89ad222ca631f23d5da9895602616bd9d9007c66c62256
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 250107
+    sha256: 3dc7462bffc9bc2e599895a4c55e749ade880d8354dea61ccefff660bcee5293
+- photo_id: db-408-p2
+  series_id: db-408
+  rank: 2
+  file_title: File:Arnhem ICE 8019 naar Amsterdam (54617346695).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Arnhem_ICE_8019_naar_Amsterdam_(54617346695).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/98/Arnhem_ICE_8019_naar_Amsterdam_%2854617346695%29.jpg
+  original_width: 10611
+  original_height: 5969
+  mime: image/jpeg
+  commons_sha1: 68e1d178ad07a44403392c197d42ede176ffdc1e
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/robdammers/
+  licence: CC-BY-4.0
+  licence_name: CC BY 4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:36Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:43Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 26857
+    sha256: 925c1a951dac5329c71bb7bdd4c5dacafbf8a1b611e95426facf4f24ef6c3e4e
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 174743
+    sha256: ea1d5802e1e4eff53dddd6aa171c6d7d0e5d1f18c71d170174678738e3a5c9ef
+- photo_id: db-411-p1
+  series_id: db-411
+  rank: 1
+  file_title: File:I20 681 Bf Lu Wittenberg Hbf, 411 xxx.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:I20_681_Bf_Lu_Wittenberg_Hbf,_411_xxx.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/c/c2/I20_681_Bf_Lu_Wittenberg_Hbf%2C_411_xxx.jpg
+  original_width: 4368
+  original_height: 2912
+  mime: image/jpeg
+  commons_sha1: a521958431acd31d66e8f20c1171b23d68161407
+  author: Falk2
+  author_url: https://de.wikipedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:44Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 34305
+    sha256: e3be6cc8e83ec886260cefed010f47eb02f9c9727e8fbfaac21a6daa9df887d1
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 207859
+    sha256: 6b2b59f94db2974f37f2332bb2c7805a1b7e04ca64f87043d0595298eea04bee
+- photo_id: db-411-p2
+  series_id: db-411
+  rank: 2
+  file_title: File:Altendorf DBAG Class 411-20240714-RM-151640.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Altendorf_DBAG_Class_411-20240714-RM-151640.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/54/Altendorf_DBAG_Class_411-20240714-RM-151640.jpg
+  original_width: 5184
+  original_height: 3888
+  mime: image/jpeg
+  commons_sha1: 44bbd8ebdcb378507be961e04e327a3563940e66
+  author: Reinhold Möller Ermell
+  author_url: https://commons.wikimedia.org/wiki/User:Ermell
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:40Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:45Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 35327
+    sha256: 0ff368b028adc4990a312ccc9edac1e5bc227bc6018e92cdc5486d4ff7e0701b
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 239652
+    sha256: 43bb4fa9ed7eb16a13123d413d0621d684dcf775fcdca88690bde935c8f2a362
+- photo_id: db-4110-p1
+  series_id: db-4110
+  rank: 1
+  file_title: File:J40 713 Bf Leipzig Berl Bf, 4110 615.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:J40_713_Bf_Leipzig_Berl_Bf,_4110_615.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/e8/J40_713_Bf_Leipzig_Berl_Bf%2C_4110_615.jpg
+  original_width: 5611
+  original_height: 3741
+  mime: image/jpeg
+  commons_sha1: d964f1aa26894ac96ff70efc36627b2070004ef4
+  author: Falk2
+  author_url: https://de.wikipedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:50Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 30251
+    sha256: d12d4ebcd7a0ee3a5e605bbe3f9731bebcbc76874955deab9197e0c10ff4df21
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 190321
+    sha256: c2d9b3642813208f85168766fd543176c38e3cd8da4b802316c6ea87279fc85b
+- photo_id: db-4110-p2
+  series_id: db-4110
+  file_title: File:(20250418) German train IC2174 01.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:(20250418)_German_train_IC2174_01.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/c/c7/%2820250418%29_German_train_IC2174_01.jpg
+  original_width: 4096
+  original_height: 3072
+  mime: image/jpeg
+  commons_sha1: b3c233dd255f75850f886ce45791e433b5fc4762
+  author: Roy Zuo
+  author_url: https://commons.wikimedia.org/wiki/User:RoyZuoMedia
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:52Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: reject
+    by: pick:A5
+    at: '2026-11-08T01:22:09Z'
+    reason: the interior, not the vehicle
+    user_review: pending
+  files: []
+- photo_id: db-412-p1
+  series_id: db-412
+  rank: 1
+  file_title: File:ICE 4 Berlin Südkreuz (20171004 144102).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:ICE_4_Berlin_S%C3%BCdkreuz_(20171004_144102).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/6/64/ICE_4_Berlin_S%C3%BCdkreuz_%2820171004_144102%29.jpg
+  original_width: 5312
+  original_height: 2988
+  mime: image/jpeg
+  commons_sha1: a20704b5ee827ce8bc9199e75c00972acb3a9801
+  author: DeffiSK
+  author_url: https://commons.wikimedia.org/wiki/User:DeffiSK
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:47Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 22875
+    sha256: 15d70ab1d8914109b4eb34acb1018b742a46fc1fb2d2e20a3e04aef328b0f7b1
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 154883
+    sha256: 2314ccdd7450f2a9559e2316d83e8c0443e7d47e26b1bb0c098fc0edf876b51d
+- photo_id: db-412-p2
+  series_id: db-412
+  file_title: File:Bamberg Unterführung Geisfelder Straße Luftbild-20240728-RM-154024.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Bamberg_Unterf%C3%BChrung_Geisfelder_Stra%C3%9Fe_Luftbild-20240728-RM-154024.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Bamberg_Unterf%C3%BChrung_Geisfelder_Stra%C3%9Fe_Luftbild-20240728-RM-154024.jpg
+  original_width: 3795
+  original_height: 3533
+  mime: image/jpeg
+  commons_sha1: 87edda788e941159bcc37a99f0ef15b8a8ec17c0
+  author: Reinhold Möller Ermell
+  author_url: https://commons.wikimedia.org/wiki/User:Ermell
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:46Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: reject
+    by: pick:A5
+    at: '2026-11-08T01:22:10Z'
+    reason: an aerial city view with the train far away
+    user_review: pending
+  files: []
+- photo_id: db-415-p1
+  series_id: db-415
+  rank: 1
+  file_title: File:Bornheim ICE-T 415 023 Hansestadt Greifswald (36117572072).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Bornheim_ICE-T_415_023_Hansestadt_Greifswald_(36117572072).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/7/7f/Bornheim_ICE-T_415_023_Hansestadt_Greifswald_%2836117572072%29.jpg
+  original_width: 5503
+  original_height: 3094
+  mime: image/jpeg
+  commons_sha1: 2a6fc70ef7dec8e4086b7371c602e44623835ed3
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/93388157@N07
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:46Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 25664
+    sha256: 78d5597087dde2c7af82025b77726bf032c78dc6785ba1d5adf49401efd13e46
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 191897
+    sha256: 1774fefdbecce079abee41c2d60480ee7cf4d2240290aa7fe7cd848efcefbd93
+- photo_id: db-415-p2
+  series_id: db-415
+  rank: 2
+  file_title: File:ICE-T, Ribnitz-Damgarten (LRM 20200219 155154).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:ICE-T,_Ribnitz-Damgarten_(LRM_20200219_155154).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/b/be/ICE-T%2C_Ribnitz-Damgarten_%28LRM_20200219_155154%29.jpg
+  original_width: 3211
+  original_height: 2140
+  mime: image/jpeg
+  commons_sha1: 809c63ed4aecd5805cc5b4833d81ff9ddf6f9e1c
+  author: Matti Blume
+  author_url: https://commons.wikimedia.org/wiki/User:MB-one
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:42Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:46Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 24179
+    sha256: 64e68fb3f68b58b18dc82580d366e9cfca6c4ea84fba0ced35ee6bb39f133c0b
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 148203
+    sha256: 92337553c7cd8d9f1faa5db8f42ad32422210bf65df68d22766c3a80d9e286bd
+- photo_id: db-420-p1
+  series_id: db-420
+  rank: 1
+  file_title: File:DB 420 001.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_420_001.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2f/DB_420_001.jpg
+  original_width: 3840
+  original_height: 2160
+  mime: image/jpeg
+  commons_sha1: 694f4f7fbea68fca0157231efd3e4d7743041af3
+  author: Michael Heimerl
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:26Z'
+    reason: the series image on Wikidata (P18), a 420 in the old orange and grey livery
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 24300
+    sha256: 76a829201fc23c78b06707783fcc74b6aa3290b38900621644e8617d53072d8a
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 165270
+    sha256: 2a83ce9ee837d0e1fbae9a9574eb4a65fb033fcbea9e80bf6f698a6e2dede0fa
+- photo_id: db-422-p1
+  series_id: db-422
+  rank: 1
+  file_title: File:422 027-3 S2 Dortmund-Westerfilde.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:422_027-3_S2_Dortmund-Westerfilde.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/422_027-3_S2_Dortmund-Westerfilde.jpg
+  original_width: 3716
+  original_height: 2792
+  mime: image/jpeg
+  commons_sha1: beb8f7640886b83aff9c0d1424e10d9b41a69a56
+  author: Jacek Rużyczka
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:04Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:23Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 248
+    bytes: 32327
+    sha256: be956fb352edd930181e54f26db58c558a3e0e3514a16bfa098b884287bd7b50
+  - width_class: 960
+    width: 960
+    height: 721
+    bytes: 238001
+    sha256: b6615fb1c03ae8ef55e40b1d10df7f9b68d054030e14425b847360b18633651d
+- photo_id: db-422-p2
+  series_id: db-422
+  rank: 2
+  file_title: File:15BahnhofWuppertalSteinbeck.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:15BahnhofWuppertalSteinbeck.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/0e/15BahnhofWuppertalSteinbeck.jpg
+  original_width: 4000
+  original_height: 2248
+  mime: image/jpeg
+  commons_sha1: 9155fa0d5b8c56301f2bc2caaa27949df1ab6592
+  author: wnwtal
+  author_url: https://commons.wikimedia.org/wiki/User:Wnwtal
+  licence: LicenseRef-Public-Domain
+  licence_name: Public domain
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:04Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:24Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 185
+    bytes: 24976
+    sha256: b1dd51db5aaff7acdd0e9b19dcf37d38dbd1ef45ec918497826a2a0caecb0ef2
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 171302
+    sha256: 360545715f234466fa3d19f8823b063e9b262d4ad0edca9b255143cb94e59d97
+- photo_id: db-423-p1
+  series_id: db-423
+  rank: 1
+  file_title: File:423-Vollzug Main-Weser-Bahn.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:423-Vollzug_Main-Weser-Bahn.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/fb/423-Vollzug_Main-Weser-Bahn.jpg
+  original_width: 2048
+  original_height: 1536
+  mime: image/jpeg
+  commons_sha1: 509222d21a2741f1814d5ea654651c1a6bfaa3cb
+  author: MdE
+  author_url: https://de.wikipedia.org/wiki/Benutzer:MdE
+  licence: CC-BY-SA-3.0-DE
+  licence_name: CC BY-SA 3.0 de
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/de/deed.en
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:23Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 30861
+    sha256: 550f20875b62f97f1da6147948c376f29092e001012fe486979c543427bf6960
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 231053
+    sha256: 0aba3f8a3d44904fa52ea2248bbf6127966e26ee96cce0cfe7735ea05777b8d3
+- photo_id: db-424-p1
+  series_id: db-424
+  rank: 1
+  file_title: File:S-Bahn Hannover Type 424.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:S-Bahn_Hannover_Type_424.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/ea/S-Bahn_Hannover_Type_424.jpg
+  original_width: 1000
+  original_height: 670
+  mime: image/jpeg
+  commons_sha1: 2cc964f40445f53c143adc20279e5fddf47a606b
+  author: Clic
+  author_url: https://de.wikipedia.org/wiki/Benutzer:Clic
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:27Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 221
+    bytes: 27687
+    sha256: c626ed5deac8cada257e0ea2a2db34dfe7ae8fee7ef759264012e8d312933966
+  - width_class: 960
+    width: 960
+    height: 643
+    bytes: 135471
+    sha256: 65abf5b43d81808b681d95d3c00431c2df235f7db49bf019900a9faee14be369
+- photo_id: db-425-p1
+  series_id: db-425
+  rank: 1
+  file_title: File:Baureihe 425 601-2.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Baureihe_425_601-2.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Baureihe_425_601-2.jpg
+  original_width: 3475
+  original_height: 2315
+  mime: image/jpeg
+  commons_sha1: f0c9d7dd251e779a2c86f8b57b7a6cb9c8ddf3bd
+  author: Thomas Wolf (Der Wolf im Wald)
+  author_url: https://commons.wikimedia.org/wiki/User:Der_Wolf_im_Wald
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:21Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 28323
+    sha256: 434c92c23eb6a700388360f1f31f7c7d50495b94334b788548a97c3762cc0886
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 172285
+    sha256: 7a6d32719ead087506495fb72d2e36772a2744e86d9d2588150dcebe35b6dcda
+- photo_id: db-425-p2
+  series_id: db-425
+  rank: 2
+  file_title: File:2026-10-15 DBAG 425 in Karlsruhe Hbf Track 102 (Z5-11378E) by Achim Lammerts.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:2026-10-15_DBAG_425_in_Karlsruhe_Hbf_Track_102_(Z5-11378E)_by_Achim_Lammerts.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/e8/2026-10-15_DBAG_425_in_Karlsruhe_Hbf_Track_102_%28Z5-11378E%29_by_Achim_Lammerts.jpg
+  original_width: 5780
+  original_height: 3250
+  mime: image/jpeg
+  commons_sha1: 1bbef7a35bdeed1756f53bc05462c62d143471da
+  author: © Achim Lammerts (Syntaxys) / Wikimedia Commons
+  author_url: https://commons.wikimedia.org/wiki/User:Syntaxys
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:53Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:22Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 28920
+    sha256: d6a9d4209b21a49898c8089f8a0c02fed090ee23f29764e1055d5f7958ae5b70
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 189297
+    sha256: ad03ce0be08a9b3841827d340adc851cdeebf5c0c99bb1260f4e3c32438f8155
+- photo_id: db-430-p1
+  series_id: db-430
+  rank: 1
+  file_title: File:120923-Innotrans-BR 430 Stuttgart.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:120923-Innotrans-BR_430_Stuttgart.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/1e/120923-Innotrans-BR_430_Stuttgart.JPG
+  original_width: 4000
+  original_height: 2672
+  mime: image/jpeg
+  commons_sha1: dbac8b5494c5f261aea7c8029f57ed0ee54e45dc
+  author: Muns
+  author_url: https://commons.wikimedia.org/wiki/User:Muns
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:25Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 25727
+    sha256: 3fe4b5444a7ccefe9ae01e3ed68a398144143fa734bc1efb7f394fb76ee1c070
+  - width_class: 960
+    width: 960
+    height: 641
+    bytes: 162540
+    sha256: bf13f9887d31caa316ff44bc0c999ac57526af0a4d1cc05ac7693afee198dc24
+- photo_id: db-442-p1
+  series_id: db-442
+  rank: 1
+  file_title: File:DBAG Class 442 Trier 442 502.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DBAG_Class_442_Trier_442_502.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/18/DBAG_Class_442_Trier_442_502.jpg
+  original_width: 4752
+  original_height: 3168
+  mime: image/jpeg
+  commons_sha1: d96c5caea5c078448611753c271d32d44f8392ba
+  author: User:Willem_90
+  author_url: https://commons.wikimedia.org/wiki/User:Willem_90
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:04Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 30828
+    sha256: bdc2f278024c7e3c5065036e24591044bac839c7099c0a64eb56b3e1d37399a1
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 185660
+    sha256: a17a8cd1dc9e780c7de8982dd9223856c01a22d4b5cf0f2e4812ced6c0b575b2
+- photo_id: db-445-p1
+  series_id: db-445
+  rank: 1
+  file_title: File:J33 404 Bf Ffm Hbf, 445 055.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:J33_404_Bf_Ffm_Hbf,_445_055.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/89/J33_404_Bf_Ffm_Hbf%2C_445_055.jpg
+  original_width: 5709
+  original_height: 3806
+  mime: image/jpeg
+  commons_sha1: 70fde9a72d2641e6a7bc815c167ecd5ea243d95f
+  author: Falk2
+  author_url: https://commons.wikimedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:17Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 34749
+    sha256: 7d9c51bf25c1bb58891f625853944fc14ccd28f0ef5e7233c7ae45b72ebe560c
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 242268
+    sha256: 511bdde1f4766d6e07595e23a2101cfba01f57d658a7d9895f20ece1712ff651
+- photo_id: db-445-p2
+  series_id: db-445
+  rank: 2
+  file_title: File:09.10.22 Würzburg Hbf 445063 (52436495151).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:09.10.22_W%C3%BCrzburg_Hbf_445063_(52436495151).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/13/09.10.22_W%C3%BCrzburg_Hbf_445063_%2852436495151%29.jpg
+  original_width: 5863
+  original_height: 3898
+  mime: image/jpeg
+  commons_sha1: d4782fe4403e50461641d7b74e5f983ecba82159
+  author: Phil Richards from London, UK
+  author_url: https://www.flickr.com/people/13035092@N00
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:45Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:18Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 24478
+    sha256: 81ab956126c81f2a8b18f947624e141d2e8723f6699520f2f8e9d3ae3e0a24ee
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 152105
+    sha256: 8b5d6149673e76f2f3799e81e206504152e523952be9c3940d07784d3761e20c
+- photo_id: db-446-p1
+  series_id: db-446
+  rank: 1
+  file_title: File:446 025 auf der Riedbahn.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:446_025_auf_der_Riedbahn.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/aa/446_025_auf_der_Riedbahn.jpg
+  original_width: 4272
+  original_height: 2403
+  mime: image/jpeg
+  commons_sha1: ec8c2c5379d43249d755ad76a8a91b1ddf501871
+  author: Henry Thiel
+  author_url: https://commons.wikimedia.org/wiki/User:Henry_Thiel
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:47Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:18Z'
+    reason: front three-quarter view of the whole unit, clearer than the Wikidata side view
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 26859
+    sha256: dab1a3296b2648e78d8250cf44bf170eceeb6be2632404f2e66e58593624bcab
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 166529
+    sha256: e129a2480ffa06f391dfb2d0ca698686b2b0fc18cee03b35132d0c444773e1c5
+- photo_id: db-446-p2
+  series_id: db-446
+  rank: 2
+  file_title: File:446 031 Rückansicht Dresden Neustadt.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:446_031_R%C3%BCckansicht_Dresden_Neustadt.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/c/cf/446_031_R%C3%BCckansicht_Dresden_Neustadt.jpg
+  original_width: 2816
+  original_height: 2112
+  mime: image/jpeg
+  commons_sha1: 0287aa22bddf31aa595a009f3e8318b32b842c6a
+  author: Rainerhaufe
+  author_url: https://commons.wikimedia.org/wiki/User:Rainerhaufe
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:19Z'
+    reason: the series image on Wikidata (P18), side view
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 29977
+    sha256: 5d01a97d08ab2b4c89fd000b9e4e5f7d3ba89534eb6018ebe098efa0ad420b81
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 213273
+    sha256: 6c38d50bb8d81396f7ece1c5e25f639424af8b0485ac5bf7cc1d193597102f27
+- photo_id: db-463-p1
+  series_id: db-463
+  rank: 1
+  file_title: File:J41 263 Bf Falkenberg (E), 463 608.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:J41_263_Bf_Falkenberg_(E),_463_608.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/0f/J41_263_Bf_Falkenberg_%28E%29%2C_463_608.jpg
+  original_width: 5534
+  original_height: 3630
+  mime: image/jpeg
+  commons_sha1: e887924b1a9f9fbbf0b82007642401016322e195
+  author: Falk2
+  author_url: https://de.wikipedia.org/wiki/User:Falk2
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:16Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 216
+    bytes: 30831
+    sha256: 273bbee0a96890deafded0a0d022b459bb627c77e59cc8c83549a5cac5f6e327
+  - width_class: 960
+    width: 960
+    height: 630
+    bytes: 198735
+    sha256: ec375f8b5271c13176cb342fc434bb8cffeb7adaafe8eaf61d317cd361a67784
+- photo_id: db-474-p1
+  series_id: db-474
+  rank: 1
+  file_title: File:Type 474 HH-Diebsteich.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Type_474_HH-Diebsteich.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/ee/Type_474_HH-Diebsteich.jpg
+  original_width: 3689
+  original_height: 2671
+  mime: image/jpeg
+  commons_sha1: 3cd674b933402b5e52c9940a4c745903136d52d6
+  author: Jacek Rużyczka
+  author_url: https://commons.wikimedia.org/wiki/User:Jacek79
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:35Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 239
+    bytes: 39312
+    sha256: f9d2b6abeffc0aba3fe3f137ce2cf5aa503fbf1a47d004011d0d219d51b0fbbe
+  - width_class: 960
+    width: 960
+    height: 695
+    bytes: 295753
+    sha256: f4c6a4519d50057e59c97abc8dcb3149c8074dd7e2a9d7b248c9128a2310a45c
+- photo_id: db-474-p2
+  series_id: db-474
+  rank: 2
+  file_title: File:Baureihe 474 auf S 1 HH Wandsbeker Chaussee.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Baureihe_474_auf_S_1_HH_Wandsbeker_Chaussee.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/39/Baureihe_474_auf_S_1_HH_Wandsbeker_Chaussee.jpg
+  original_width: 6000
+  original_height: 4000
+  mime: image/jpeg
+  commons_sha1: a9c8f7659abaf24c89529bc43d23ff8976a6816b
+  author: Fresoh
+  author_url: https://commons.wikimedia.org/wiki/User:Fresoh
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:21Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:36Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 37592
+    sha256: e8e018119447fc1559bb13ea175ef408dec77eb7a1894daf29a2611fb0e0479c
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 270559
+    sha256: d8a3b721c91c3e933d5c83c709c0b3d52dd8782c634fda8f0af7cb2435b359d6
+- photo_id: db-481-p1
+  series_id: db-481
+  rank: 1
+  file_title: File:Ahrensfelde S-Bahn eindpunt in 2016.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Ahrensfelde_S-Bahn_eindpunt_in_2016.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/97/Ahrensfelde_S-Bahn_eindpunt_in_2016.jpg
+  original_width: 3648
+  original_height: 2736
+  mime: image/jpeg
+  commons_sha1: f2a411a32baadd6ea1b39aefc3427deb816a1613
+  author: Smiley.toerist
+  author_url: https://commons.wikimedia.org/wiki/User:Smiley.toerist
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:27Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 30209
+    sha256: 0e6b204ea2b693f69676191154229cc6c47dc44c1482f967a8e68ed34e577802
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 187712
+    sha256: 47428b8450a4c6dd15293f4133a6486a8742c05f9cf9be0c4feebb7eef23ded2
+- photo_id: db-481-p2
+  series_id: db-481
+  rank: 2
+  file_title: File:2019-08-06 Bahnhofshalle Berlin Alexanderplatz.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:2019-08-06_Bahnhofshalle_Berlin_Alexanderplatz.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/97/2019-08-06_Bahnhofshalle_Berlin_Alexanderplatz.jpg
+  original_width: 4032
+  original_height: 3024
+  mime: image/jpeg
+  commons_sha1: f7b59389537c66d3dcc2080aa7bf3ddcf30b3309
+  author: Maksym Kozlenko
+  author_url: https://commons.wikimedia.org/wiki/User:Maxim75
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:28Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 37036
+    sha256: 8f4fd55b79c6134574f074d19c39eb80b17b26b0c1be2acc759db9cbe030e19b
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 264089
+    sha256: c9d8d1ccec4e3c2378a2dadc8db6908c74ab3ec50c7e5e7f08fed0189c2e6ad0
+- photo_id: db-483-p1
+  series_id: db-483
+  rank: 1
+  file_title: File:Baureihe 483-484 der S-Bahn Berlin.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Baureihe_483-484_der_S-Bahn_Berlin.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Baureihe_483-484_der_S-Bahn_Berlin.jpg
+  original_width: 5619
+  original_height: 3745
+  mime: image/jpeg
+  commons_sha1: 65f9fd37b0669e99c4bb7635875be089559a0810
+  author: Mirkone
+  author_url: https://commons.wikimedia.org/wiki/User:Mirkone
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:29Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 33521
+    sha256: da1e88613f99698c96a9dd4f6e51281854ab8e7b1107931407d422e4f1dfe77f
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 251400
+    sha256: b1bc2139423ab03684bc4f88183dc6b454300ba99fac7e444f033fca2c44704a
+- photo_id: db-483-p2
+  series_id: db-483
+  rank: 2
+  file_title: File:Bahnhof Berlin Neukölln S47.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Berlin_Neuk%C3%B6lln_S47.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Bahnhof_Berlin_Neuk%C3%B6lln_S47.jpg
+  original_width: 4000
+  original_height: 3000
+  mime: image/jpeg
+  commons_sha1: a69b4a0deb146bb7b03e564285967c4f35a2db65
+  author: Geoprofi Lars
+  author_url: https://commons.wikimedia.org/wiki/User:Geoprofi_Lars
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:16Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:31Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 31451
+    sha256: d27028f8d5dec13bd84b6c8e44dd60e93d05e62268c17d9f66d222b4d1d045f2
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 198943
+    sha256: 84ffa5278a9d6c0a784c4b6b601c72a769af3960d62f9753ec0d09d6a1f3542e
+- photo_id: db-483-484-p1
+  series_id: db-483-484
+  rank: 1
+  file_title: File:Baureihe 483-484 der S-Bahn Berlin.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Baureihe_483-484_der_S-Bahn_Berlin.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Baureihe_483-484_der_S-Bahn_Berlin.jpg
+  original_width: 5619
+  original_height: 3745
+  mime: image/jpeg
+  commons_sha1: 65f9fd37b0669e99c4bb7635875be089559a0810
+  author: Mirkone
+  author_url: https://commons.wikimedia.org/wiki/User:Mirkone
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:32Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 33521
+    sha256: da1e88613f99698c96a9dd4f6e51281854ab8e7b1107931407d422e4f1dfe77f
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 251400
+    sha256: b1bc2139423ab03684bc4f88183dc6b454300ba99fac7e444f033fca2c44704a
+- photo_id: db-483-484-p2
+  series_id: db-483-484
+  rank: 2
+  file_title: File:Berlin S-Bahn Ostkreuz electrical spark.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Berlin_S-Bahn_Ostkreuz_electrical_spark.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/b/bc/Berlin_S-Bahn_Ostkreuz_electrical_spark.jpg
+  original_width: 5880
+  original_height: 3910
+  mime: image/jpeg
+  commons_sha1: fc52c89a26ddef691174280bbf6bfa7f9e2c242a
+  author: RAIL P (RAIL.PHOTOGRAPHY)
+  author_url: https://commons.wikimedia.org/wiki/User:Rail01
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:17Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:33Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 31523
+    sha256: 2e3ee3530dbbfec61bb492c0134d5c5e7efab1e3472c75a65651e4071f0810c0
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 191095
+    sha256: 49dd95ca88b02fe3d85cee07e97cdd07bfd23107d9262931df482112ba666be4
+- photo_id: db-490-p1
+  series_id: db-490
+  rank: 1
+  file_title: File:DB 490117 Near Harburg.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_490117_Near_Harburg.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/DB_490117_Near_Harburg.jpg
+  original_width: 4606
+  original_height: 3070
+  mime: image/jpeg
+  commons_sha1: 1aca4b215234f880cd01474ee41e790edc817e3b
+  author: Superalbs
+  author_url: https://commons.wikimedia.org/wiki/User:Superalbs
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:37Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 37048
+    sha256: 1db635100bf9e209b660f1fdd04e127080d34e41e2b78685bbe1eef874ab8ff1
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 250069
+    sha256: 197e54c0e50ab82e720e5e670fd1d0a84ced98cef626a529c5b72be9e5646bbf
+- photo_id: db-490-p2
+  series_id: db-490
+  rank: 2
+  file_title: File:490 505 S21 Hamburg-Billwerder-Moorfleet.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:490_505_S21_Hamburg-Billwerder-Moorfleet.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/6/6e/490_505_S21_Hamburg-Billwerder-Moorfleet.jpg
+  original_width: 5058
+  original_height: 3363
+  mime: image/jpeg
+  commons_sha1: e715e29207d756e8b4fc5648fbd2d5f2870defd0
+  author: Jacek Rużyczka
+  author_url: https://commons.wikimedia.org/wiki/User:Jacek79
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:23Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:39Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 40235
+    sha256: 7b4c813997875998598d731856d30c50b95370d6760d4f82252103b78d74e604
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 308664
+    sha256: 262ef5e2afd3416d36159ed610ffabf74232b1fd1d00bfed77a30cc4aee3609f
+- photo_id: db-623-p1
+  series_id: db-623
+  rank: 1
+  file_title: File:Szczecin Gl. (623 do Lubeki).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Szczecin_Gl._(623_do_Lubeki).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Szczecin_Gl._%28623_do_Lubeki%29.jpg
+  original_width: 3648
+  original_height: 2736
+  mime: image/jpeg
+  commons_sha1: cc35a78476ec386130a7f5767323ff332b27e4ec
+  author: MOs810
+  author_url: https://commons.wikimedia.org/wiki/User:MOs810
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:45Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 28996
+    sha256: 4c6e5c4b09cd9e3ed18f6968f906b8b7c1ba61bb44ed053c76b6b7274ecead92
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 178333
+    sha256: 3a49ff52f003976005bd04aa3cd991524081dd2095946eb1fa9bb762aca68342
+- photo_id: db-623-p2
+  series_id: db-623
+  rank: 2
+  file_title: File:03.02.22 Worms Hbf 623001 (51865831193).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:03.02.22_Worms_Hbf_623001_(51865831193).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a3/03.02.22_Worms_Hbf_623001_%2851865831193%29.jpg
+  original_width: 4883
+  original_height: 3423
+  mime: image/jpeg
+  commons_sha1: ae8261da29e2f9b8a3c1a42890870bf5ec2fbf8d
+  author: Phil Richards from London, UK
+  author_url: https://www.flickr.com/people/13035092@N00
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:34Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:45Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 231
+    bytes: 27047
+    sha256: a5922b301e2c51fd872d5567e69aa93437f54fe09f0f7451a3a0f4921d31c3f2
+  - width_class: 960
+    width: 960
+    height: 673
+    bytes: 161029
+    sha256: 5dfc1223b324427b6d748cea9bd3eaced2cb605d811850732543c8d766582b77
+- photo_id: db-628-p1
+  series_id: db-628
+  rank: 1
+  file_title: File:Dingden DB (9)628 664 als RB 10282 naar Bocholt (27362159612).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Dingden_DB_(9)628_664_als_RB_10282_naar_Bocholt_(27362159612).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/17/Dingden_DB_%289%29628_664_als_RB_10282_naar_Bocholt_%2827362159612%29.jpg
+  original_width: 5940
+  original_height: 3908
+  mime: image/jpeg
+  commons_sha1: 3b43f95be743480868b99aa387a739694778cff5
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/93388157@N07
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:00Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 217
+    bytes: 31116
+    sha256: 822eacef4fc049a8ef1c12fb502a0dce0491d5c7487eeddbe78c6a732fcfb83d
+  - width_class: 960
+    width: 960
+    height: 632
+    bytes: 234954
+    sha256: bcbba5250578c32a62e731a2c8f2e4e63a58552979893a87dcb5d5fc263b47a3
+- photo_id: db-628-p2
+  series_id: db-628
+  rank: 2
+  file_title: File:2025-09-12 D500-0618 Achim-Lammerts Wörth-Bahnhof-Bahnsteige-928-916.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:2025-09-12_D500-0618_Achim-Lammerts_W%C3%B6rth-Bahnhof-Bahnsteige-928-916.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/13/2025-09-12_D500-0618_Achim-Lammerts_W%C3%B6rth-Bahnhof-Bahnsteige-928-916.jpg
+  original_width: 5568
+  original_height: 3132
+  mime: image/jpeg
+  commons_sha1: 6c7508e685a9674ae7084dcbdb0bd4c3b1f4b3ab
+  author: © Achim Lammerts (Syntaxys) / Wikimedia Commons
+  author_url: https://commons.wikimedia.org/wiki/User:Syntaxys
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:11:01Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:01Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 27130
+    sha256: f0d5a9f3f36ca33d0788629b3a7f2c1971074e95dc7c77328603e4ed98be8937
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 168030
+    sha256: a9a83264301713acafb590f4391395d237c516ed799ef265a600dc2ec664c6ae
+- photo_id: db-640-p1
+  series_id: db-640
+  rank: 1
+  file_title: File:640 021, 1, Einbeck, Landkreis Northeim.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:640_021,_1,_Einbeck,_Landkreis_Northeim.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/30/640_021%2C_1%2C_Einbeck%2C_Landkreis_Northeim.jpg
+  original_width: 4320
+  original_height: 3240
+  mime: image/jpeg
+  commons_sha1: 02db0b119862a55aceab59b5059087f4f9dc8694
+  author: GeorgDerReisende
+  author_url: https://commons.wikimedia.org/wiki/User:GeorgDerReisende
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:31Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:43Z'
+    reason: a single car LINT 27 in DB red at a platform, the only close view among the first four
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 27417
+    sha256: 00f09a78e5cf0fcc3186a00a5d52e0aa0ba24a4cb8f3dcc15296371561106981
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 172963
+    sha256: 63a1694c7bbf52b4699d9fa180d37a8fc542211abbe79df9630757f3ee42eb54
+- photo_id: db-642-p1
+  series_id: db-642
+  rank: 1
+  file_title: File:11.05.14 Zittau 642.037 (14050052368).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:11.05.14_Zittau_642.037_(14050052368).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/0a/11.05.14_Zittau_642.037_%2814050052368%29.jpg
+  original_width: 5877
+  original_height: 3908
+  mime: image/jpeg
+  commons_sha1: 23ff788ccf34acf3ad32a5d4cc11aeb52dd7ccaa
+  author: Phil Richards from London, UK
+  author_url: https://www.flickr.com/people/13035092@N00
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:52Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:54Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 38857
+    sha256: 78c9d9666520acbde807c511fb7157b5e80a8c67495ee3be1a9422981b958c7a
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 213946
+    sha256: ae2f399ab041099fe5f0ada3b98adeb4caf26fc96d60a159c398df6392106f4d
+- photo_id: db-642-p2
+  series_id: db-642
+  rank: 2
+  file_title: File:03.05.16 Wroclaw Główny ET22-914 and DB 642.033 (27032343065).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:03.05.16_Wroclaw_G%C5%82%C3%B3wny_ET22-914_and_DB_642.033_(27032343065).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/6/6f/03.05.16_Wroclaw_G%C5%82%C3%B3wny_ET22-914_and_DB_642.033_%2827032343065%29.jpg
+  original_width: 6016
+  original_height: 4000
+  mime: image/jpeg
+  commons_sha1: b783eeeeb851e8928184f7414e9ab6c5a1f121e8
+  author: Phil Richards from London, UK
+  author_url: https://www.flickr.com/people/13035092@N00
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:52Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:55Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 35036
+    sha256: 896c74b72e7f469613cb88e7cad4e06884b2cb01b263f040519cfcd9daa926a9
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 175109
+    sha256: 3210516e0729f5e2e655350f1c2ea066f536327ceb5ce2b0f57ff2cd8ad67a8d
+- photo_id: db-643-p1
+  series_id: db-643
+  rank: 1
+  file_title: File:Regio DB 643 521-8 at Saarbrücken.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:Regio_DB_643_521-8_at_Saarbr%C3%BCcken.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Regio_DB_643_521-8_at_Saarbr%C3%BCcken.JPG
+  original_width: 2920
+  original_height: 2188
+  mime: image/jpeg
+  commons_sha1: df48d48cd396b187856d68bddbccf44522b00461
+  author: Alf van Beem
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:50Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 30199
+    sha256: b618ed2aa6ac0bc1d4d01fd84b9d2df0958f79687c6206f0fc48504fc0ea9d10
+  - width_class: 960
+    width: 960
+    height: 719
+    bytes: 165518
+    sha256: 8b1dd829c08c64eef4ae6e38fd4207c901f7e59b2646b0af51e18784e216b76e
+- photo_id: db-643-p2
+  series_id: db-643
+  rank: 2
+  file_title: File:643 044 RB51 Glanerbrug.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:643_044_RB51_Glanerbrug.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/fb/643_044_RB51_Glanerbrug.JPG
+  original_width: 4199
+  original_height: 2704
+  mime: image/jpeg
+  commons_sha1: a1c4db5a42fb793634a1066682ac2273b4b039fd
+  author: Jacek Rużyczka
+  author_url: https://commons.wikimedia.org/wiki/User:Jacek79
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:43Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:51Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 213
+    bytes: 27672
+    sha256: 3ee41d124a648f1b053286443cda037ed81a521b7fa6583b8aa4488f735510c7
+  - width_class: 960
+    width: 960
+    height: 618
+    bytes: 171658
+    sha256: 9e950f1773069d2d0de9a62eec21a627155e0f53603c078fd817c1d31161d4cd
+- photo_id: db-644-p1
+  series_id: db-644
+  rank: 1
+  file_title: File:644 044 Köln-Deutz 2015-09-30.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:644_044_K%C3%B6ln-Deutz_2015-09-30.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/15/644_044_K%C3%B6ln-Deutz_2015-09-30.JPG
+  original_width: 5517
+  original_height: 3547
+  mime: image/jpeg
+  commons_sha1: b9880daffc3c79f030842117505d4cb36f9139fc
+  author: Rolf Heinrich, Köln
+  author_url: https://commons.wikimedia.org/wiki/User:Rolf_H.
+  licence: CC-BY-3.0
+  licence_name: CC BY 3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:48Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:52Z'
+    reason: the whole unit from the side in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 212
+    bytes: 35189
+    sha256: e2a9c8436b89e114543d721c67a002d01c871ee16056689e7b79459932645885
+  - width_class: 960
+    width: 960
+    height: 617
+    bytes: 240713
+    sha256: 1f8a9dfffcfd17aafdb7bc36a2901183e130ef4369c226ba3f5f2c1a371c484d
+- photo_id: db-644-p2
+  series_id: db-644
+  rank: 2
+  file_title: File:644 505 Köln-Deutz 2015-12-26-01.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:644_505_K%C3%B6ln-Deutz_2015-12-26-01.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/b/b8/644_505_K%C3%B6ln-Deutz_2015-12-26-01.JPG
+  original_width: 4598
+  original_height: 3422
+  mime: image/jpeg
+  commons_sha1: 5ebe1c837c7065a41a1071536a83ea69aa4714d9
+  author: Rolf Heinrich, Köln
+  author_url: https://commons.wikimedia.org/wiki/User:Rolf_H.
+  licence: CC-BY-3.0
+  licence_name: CC BY 3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:48Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:53Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 246
+    bytes: 36519
+    sha256: 9146756bff28615425de4e5e0892ba073cadf65e7633bb28e58c13ee0806d596
+  - width_class: 960
+    width: 960
+    height: 714
+    bytes: 255004
+    sha256: 3c5ef9b10424d11ee85f8beee3c9e726a4308db801cdf0496a4968222fb7333d
+- photo_id: db-648-p1
+  series_id: db-648
+  rank: 1
+  file_title: File:RB95 AuSieg.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:RB95_AuSieg.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2a/RB95_AuSieg.jpg
+  original_width: 1600
+  original_height: 1200
+  mime: image/jpeg
+  commons_sha1: ec94ede68b7114f3182b18a86e27a5cf9824344a
+  author: Qualle
+  author_url: https://commons.wikimedia.org/wiki/User:Qualle
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:41Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 32354
+    sha256: f65fe9482500c4dffc5645d488be836ebd633708fe56dc3158c4e2f28508e15d
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 206317
+    sha256: 3d599fbc60b8fe8b76f33efe94c2e56959a87a479735000097e82c7ae356b84c
+- photo_id: db-648-p2
+  series_id: db-648
+  rank: 2
+  file_title: File:04.02.22 Nürnberg Hbf 648320 (51865753926).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:04.02.22_N%C3%BCrnberg_Hbf_648320_(51865753926).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/af/04.02.22_N%C3%BCrnberg_Hbf_648320_%2851865753926%29.jpg
+  original_width: 6016
+  original_height: 4000
+  mime: image/jpeg
+  commons_sha1: fba988f6a270aa6dfa4c7ede01fa7a865a3440d1
+  author: Phil Richards from London, UK
+  author_url: https://www.flickr.com/people/13035092@N00
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:28Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:42Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 219
+    bytes: 24001
+    sha256: 2c71f04646b92fff6c50a3737c330ccd0fd9979f1201508100c26d7717812ea7
+  - width_class: 960
+    width: 960
+    height: 638
+    bytes: 149273
+    sha256: 0246ba46634faa272bc4f96e20f9edc986d3068fea74b9287a6756a83cce559a
+- photo_id: db-650-p1
+  series_id: db-650
+  rank: 1
+  file_title: File:650016Ammertalbahn P1110751.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:650016Ammertalbahn_P1110751.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/93/650016Ammertalbahn_P1110751.jpg
+  original_width: 2048
+  original_height: 1536
+  mime: image/jpeg
+  commons_sha1: 37b0031d3e84a346389c98e89637cab81794fd8c
+  author: JuergenG
+  author_url: https://de.wikipedia.org/wiki/Benutzer:JuergenG
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:58Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 33762
+    sha256: 426db3b2e4bff853fdb2d02a8bd6846f9fb199dbac27a43b4abfea144d8c6e25
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 217619
+    sha256: a4ec1008cb048da0aadce03c9ee309fe9ac2629e9775c01f5fa79d61c0b6db42
+- photo_id: db-650-p2
+  series_id: db-650
+  rank: 2
+  file_title: File:20250504 Bahnhof Bad Wurzach Bahnsteig.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:20250504_Bahnhof_Bad_Wurzach_Bahnsteig.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a1/20250504_Bahnhof_Bad_Wurzach_Bahnsteig.jpg
+  original_width: 4592
+  original_height: 3448
+  mime: image/jpeg
+  commons_sha1: 75faa8fc7d700e3553406fbbae0167e78f145ef8
+  author: Metrophil
+  author_url: https://commons.wikimedia.org/wiki/User:Metrophil
+  licence: CC-BY-4.0
+  licence_name: CC BY 4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:58Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:59Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 248
+    bytes: 18513
+    sha256: 277f70632740a8d5c84014e59e0fbc9aedb4f892dad9dc66d3057758f91182b2
+  - width_class: 960
+    width: 960
+    height: 721
+    bytes: 127474
+    sha256: acb741feb312cbdd360c4e141a1f89cfedd7bbfdcb3bd3b30a2502b923410106
+- photo_id: db-ice-l-p1
+  series_id: db-ice-l
+  rank: 1
+  file_title: File:ICE-L (Talgo 230) on Geislinger Steige, Germany, 10-11-2023.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:ICE-L_(Talgo_230)_on_Geislinger_Steige,_Germany,_10-11-2023.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/40/ICE-L_%28Talgo_230%29_on_Geislinger_Steige%2C_Germany%2C_10-11-2023.jpg
+  original_width: 5480
+  original_height: 3653
+  mime: image/jpeg
+  commons_sha1: 8127b6811aef646a44407b649d9a7af740cb2d94
+  author: Raphael Krammer
+  author_url: https://commons.wikimedia.org/wiki/User:Raphael_Krammer
+  licence: CC-BY-4.0
+  licence_name: CC BY 4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:48Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 33508
+    sha256: ad1a10a7cc8c7755e2c552abf70b7536ab53242e01213fbadd18e539c24666af
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 251855
+    sha256: 9e0cc2d19e3fb4deddfe44d9fe437797de249a6cae422e151d4c440ea67eead4
+- photo_id: db-ice-l-p2
+  series_id: db-ice-l
+  rank: 2
+  file_title: File:ICE L SteuerwagenLV 12.23.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:ICE_L_SteuerwagenLV_12.23.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/58/ICE_L_SteuerwagenLV_12.23.jpg
+  original_width: 6240
+  original_height: 4160
+  mime: image/jpeg
+  commons_sha1: 819a60a5a0060258d6449cf63bef99d6fd4370e9
+  author: E235JREMU
+  author_url: https://commons.wikimedia.org/wiki/User:E235JREMU
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:08:49Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:49Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 25136
+    sha256: 8051a681078b786b5d3cf0c443275112ff2d48eb3929f3669ab23905b54cbf78
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 185591
+    sha256: 0b653996b38cece9e4feed5c2317a21bcb051f3fbbece2ac480c7913defc691b
+- photo_id: doppelstockwagen-p1
+  series_id: doppelstockwagen
+  file_title: File:M6rijtuig.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:M6rijtuig.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/3c/M6rijtuig.JPG
+  original_width: 2288
+  original_height: 1712
+  mime: image/jpeg
+  commons_sha1: d07234ad1ab908e3c274ef92580a8f17b3a1fae4
+  author: Vitaly Volkov
+  author_url: https://en.wikipedia.org/wiki/ru:%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BD%D0%B8%D0%BA:Kneiphof
+  licence: CC-BY-2.5
+  licence_name: CC BY 2.5
+  licence_url: https://creativecommons.org/licenses/by/2.5
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: reject
+    by: pick:A5
+    at: '2026-11-08T01:22:05Z'
+    reason: an NS M6 coach of the Netherlands, not a German double deck coach
+    user_review: pending
+  files: []
+- photo_id: doppelstockwagen-p2
+  series_id: doppelstockwagen
+  file_title: File:New Mexico Rail Runner Express.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:New_Mexico_Rail_Runner_Express.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/7/77/New_Mexico_Rail_Runner_Express.jpg
+  original_width: 7714
+  original_height: 5511
+  mime: image/jpeg
+  commons_sha1: 29791698ec8c2041a8079736c24bc8fea67d6475
+  author: Quintin Soloviev
+  author_url: https://commons.wikimedia.org/wiki/User:Quintin_Soloviev
+  licence: CC-BY-4.0
+  licence_name: CC BY 4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:50Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: reject
+    by: pick:A5
+    at: '2026-11-08T01:22:06Z'
+    reason: the double deck coach is far away behind a city view
+    user_review: pending
+  files: []
+- photo_id: eurostar-e320-p1
+  series_id: eurostar-e320
+  rank: 1
+  file_title: File:Eurostar Class 374 on HS1 (cropped).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Eurostar_Class_374_on_HS1_(cropped).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/0/06/Eurostar_Class_374_on_HS1_%28cropped%29.jpg
+  original_width: 3685
+  original_height: 2263
+  mime: image/jpeg
+  commons_sha1: ed2d50c17abbe4ca881b13a24a85f001dec5863c
+  author: Kabelleger / David Gubler
+  author_url: https://commons.wikimedia.org/wiki/User:Kabelleger
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:01Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 203
+    bytes: 28605
+    sha256: d177ffa8db91d608a5d4b41f88066d273916944bd5147e2607acdc98913ca0e5
+  - width_class: 960
+    width: 960
+    height: 590
+    bytes: 225976
+    sha256: 9bd147dc148f458c30f3893fd868ed1aca548d3e78306d8bc41305a3b9fc942d
+- photo_id: eurostar-e320-p2
+  series_id: eurostar-e320
+  rank: 2
+  file_title: File:374 017 Hospital Lane.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:374_017_Hospital_Lane.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/96/374_017_Hospital_Lane.jpg
+  original_width: 4528
+  original_height: 3408
+  mime: image/jpeg
+  commons_sha1: 5a000805bc484d4d690cbcc47a3873f7a36e11fa
+  author: kitmasterbloke
+  licence: CC-BY-4.0
+  licence_name: CC BY 4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:02Z'
+    reason: front three-quarter view of the whole unit, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 248
+    bytes: 38370
+    sha256: ac4850bd9f30e31c7e8467983052953a5d259d1060f0cb7a6d741ccdd6610aa7
+  - width_class: 960
+    width: 960
+    height: 723
+    bytes: 320859
+    sha256: a18f8ef2586bb1cd3357737029c4d6c6411624b326eb3eab0a5f7dad30d7439d
+- photo_id: obb-railjet-2-p1
+  series_id: obb-railjet-2
+  rank: 1
+  file_title: File:Railjet 2. Generation in Landeck-Zams.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Railjet_2._Generation_in_Landeck-Zams.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/47/Railjet_2._Generation_in_Landeck-Zams.jpg
+  original_width: 3198
+  original_height: 2296
+  mime: image/jpeg
+  commons_sha1: 822409144a0dbb7511de2740c4304c0b98734098
+  author: Michael1884
+  author_url: https://commons.wikimedia.org/wiki/User:Michael1884
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:59Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 237
+    bytes: 24130
+    sha256: be57c7fc9e11683b501da4086f40ccb69855a954e607c6a5a00def406c181b5f
+  - width_class: 960
+    width: 960
+    height: 689
+    bytes: 150040
+    sha256: e0231be5344489c29c8a98df9450f6ef1fe4ce322539468a8a47616f4db32757
+- photo_id: obb-railjet-2-p2
+  series_id: obb-railjet-2
+  rank: 2
+  file_title: File:20250520 ÖBB 1293051.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:20250520_%C3%96BB_1293051.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/20250520_%C3%96BB_1293051.jpg
+  original_width: 6000
+  original_height: 4000
+  mime: image/jpeg
+  commons_sha1: 748f4b6eabbdb371e06bc732bb99ae3817f45439
+  author: Alex Noble
+  author_url: https://commons.wikimedia.org/wiki/User:Alex_Noble
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:12Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:00Z'
+    reason: the whole unit from the side in daylight, a second view next to the first photo
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 21205
+    sha256: 1eda191808b907cb5aed0fcbba9704684e1401814a520b587b5670faa49f4a38
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 166276
+    sha256: ffe9755f6000dcb13449904f5ac12d861d663b2e1ef473fc524205b38f533984
+- photo_id: sbb-rabe-501-p1
+  series_id: sbb-rabe-501
+  rank: 1
+  file_title: File:Stadler EC250 Innotrans 2016 09.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Stadler_EC250_Innotrans_2016_09.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/45/Stadler_EC250_Innotrans_2016_09.jpg
+  original_width: 2272
+  original_height: 1704
+  mime: image/jpeg
+  commons_sha1: 07bbb6d4f0a4e13b0d7fb0cdf201dc0856041f63
+  author: PetrS.
+  author_url: https://commons.wikimedia.org/wiki/User:PetrS.
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:03Z'
+    reason: the series image on Wikidata (P18), the unit at a trade fair in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 24182
+    sha256: 31ca64869d00190030680e0de0b5cf539ed314d3844d716a97a9f3bfe43e2cca
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 138450
+    sha256: 46b7b88231fddeedd0a5a5726da61629d1c968b22e42deda71e0e5c5a1c87a23
+- photo_id: siemens-desiro-classic-p1
+  series_id: siemens-desiro-classic
+  rank: 1
+  file_title: File:Liesel 28-11-10 642 055-8 im Bahnhof Scharfenstein.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:Liesel_28-11-10_642_055-8_im_Bahnhof_Scharfenstein.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/80/Liesel_28-11-10_642_055-8_im_Bahnhof_Scharfenstein.JPG
+  original_width: 3460
+  original_height: 2192
+  mime: image/jpeg
+  commons_sha1: b170d901452b37a14102c1c946ac6784cdb7861e
+  author: Liesel
+  author_url: https://commons.wikimedia.org/wiki/User:Liesel
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:56Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 209
+    bytes: 23402
+    sha256: 7dac57dcca669a747659b3672675dff86d7251ec65afaca2941f0272d5fe872d
+  - width_class: 960
+    width: 960
+    height: 608
+    bytes: 144651
+    sha256: 7c1e70281c9fd4d725798cec7833638427115ce7e0cd78ff39fae7cf29f41828
+- photo_id: siemens-desiro-classic-p2
+  series_id: siemens-desiro-classic
+  rank: 2
+  file_title: File:BR 642 (Desiro) Vlexx.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:BR_642_(Desiro)_Vlexx.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a9/BR_642_%28Desiro%29_Vlexx.jpg
+  original_width: 4912
+  original_height: 2760
+  mime: image/jpeg
+  commons_sha1: f4f9b6cf98d50eb0d1d6e89298a7966497194c7f
+  author: Nils-Saar
+  author_url: https://commons.wikimedia.org/wiki/User:Nils-Saar
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:53Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:57Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 185
+    bytes: 29323
+    sha256: b814289fcc35956d215f8d210996a3a57dead74f6e6145a46762d6a6fb6de11a
+  - width_class: 960
+    width: 960
+    height: 539
+    bytes: 178996
+    sha256: c5af9cc06852f39549963e3c0e742a5db717ebd0be492e4e7ffb6f7b56a59960
+- photo_id: siemens-desiro-hc-p1
+  series_id: siemens-desiro-hc
+  rank: 1
+  file_title: File:RRX 462 001.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:RRX_462_001.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/f4/RRX_462_001.jpg
+  original_width: 4000
+  original_height: 3000
+  mime: image/jpeg
+  commons_sha1: e3da0a7adf1a8d09dee9f12b1ed40ba0349669c0
+  author: Mnfred Kopka
+  author_url: https://commons.wikimedia.org/wiki/User:Bahnfan44789
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:14Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 247
+    bytes: 30148
+    sha256: 741736427737057be254e5c40a5e5932435dce5136543369b71d776319bbed56
+  - width_class: 960
+    width: 960
+    height: 720
+    bytes: 214255
+    sha256: f0fa4f5fcd25f05484f15360410afe9e9d93b6f8fad7651940592d201bdf31cf
+- photo_id: siemens-desiro-ml-p1
+  series_id: siemens-desiro-ml
+  rank: 1
+  file_title: File:Desiro ML Bonn.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Desiro_ML_Bonn.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/87/Desiro_ML_Bonn.jpg
+  original_width: 1878
+  original_height: 1018
+  mime: image/jpeg
+  commons_sha1: 834b5996624866098149d2971f4c76b8f5453b1c
+  author: Matthew Black from London, UK
+  author_url: https://www.flickr.com/people/60099286@N00
+  licence: CC-BY-3.0
+  licence_name: CC BY 3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:03Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 179
+    bytes: 22864
+    sha256: 99eea83e1816b9d14e3d8fc2377747d94f574129eecadf7ac69733a2d498e926
+  - width_class: 960
+    width: 960
+    height: 520
+    bytes: 133761
+    sha256: 8bbb5fb43b32b7be87a762e60e01e73b603ab8da5c4cc969f72b918689177412
+- photo_id: siemens-mireo-p1
+  series_id: siemens-mireo
+  rank: 1
+  file_title: File:DB Regio 463 510 (51872926725) (cropped).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_Regio_463_510_(51872926725)_(cropped).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/5/59/DB_Regio_463_510_%2851872926725%29_%28cropped%29.jpg
+  original_width: 2098
+  original_height: 1399
+  mime: image/jpeg
+  commons_sha1: 002bb1f0051bc6e89a1b6df9f51eca41fada0ab4
+  author: Nelso Silva from Porto, Portugal
+  author_url: https://www.flickr.com/people/53768422@N08
+  licence: CC-BY-SA-2.0
+  licence_name: CC BY-SA 2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:15Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 30739
+    sha256: 11b6fd64a7c98cb6652739499b722e9940402f3f0d9c71e09009a5aaae65f3e9
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 203929
+    sha256: b3ecd6d530bf5a87c058e9fd831582f39e9af2d156aa3b0cd4b155eb6873e2cd
+- photo_id: siemens-vectron-p1
+  series_id: siemens-vectron
+  rank: 1
+  file_title: File:DB Baureihe 248 (Siemens Vectron Dual Mode) in Stuttgart.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:DB_Baureihe_248_(Siemens_Vectron_Dual_Mode)_in_Stuttgart.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/f8/DB_Baureihe_248_%28Siemens_Vectron_Dual_Mode%29_in_Stuttgart.jpg
+  original_width: 5184
+  original_height: 3456
+  mime: image/jpeg
+  commons_sha1: 5ad6b5627173209174b4cdfda76c611383259be1
+  author: JoachimKohler-HB
+  author_url: https://commons.wikimedia.org/wiki/User:JoachimKohler-HB
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:58Z'
+    reason: a Vectron of DB Fernverkehr in Intercity livery, closest to what runs in Germany
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 35999
+    sha256: 7a7fbfd929d8c45b9ec6a6e8b73f0c604484e5c8c36fde1b9d1048adf5e948f1
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 238873
+    sha256: f86f97e6e2e3c28e24412c15d87899febe7273774a3b9bd0ca04d9ab88471a83
+- photo_id: siemens-vectron-p2
+  series_id: siemens-vectron
+  rank: 2
+  file_title: File:MRCE 193 850 münchen 2013 2.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:MRCE_193_850_m%C3%BCnchen_2013_2.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a1/MRCE_193_850_m%C3%BCnchen_2013_2.JPG
+  original_width: 2226
+  original_height: 1310
+  mime: image/jpeg
+  commons_sha1: ee5e83f3ee506243eb862208f855db1f0c4f944d
+  author: Hoff1980
+  author_url: https://commons.wikimedia.org/wiki/User:Hoff1980
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:20:59Z'
+    reason: the series image on Wikidata (P18), a Vectron of MRCE
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 194
+    bytes: 23429
+    sha256: 4f172cd7a00a57fe712d02352f29a514975014ece7b8c970d9b3a30337f81b00
+  - width_class: 960
+    width: 960
+    height: 565
+    bytes: 134530
+    sha256: f40d003ceed16ee38a1e01535071b4e275ac42e7f13363a6f2101bda237d388a
+- photo_id: sncf-tgv-duplex-p1
+  series_id: sncf-tgv-duplex
+  rank: 1
+  file_title: File:Duplex in Karlsruhe III.JPG
+  page_url: https://commons.wikimedia.org/wiki/File:Duplex_in_Karlsruhe_III.JPG
+  original_url: https://upload.wikimedia.org/wikipedia/commons/9/93/Duplex_in_Karlsruhe_III.JPG
+  original_width: 4000
+  original_height: 2248
+  mime: image/jpeg
+  commons_sha1: f437aa9e34f872677bb8a620c1ca28334bbb857c
+  author: Smiley.toerist
+  author_url: https://commons.wikimedia.org/wiki/User:Smiley.toerist
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:02Z'
+    reason: the series image on Wikidata (P18), a TGV Duplex at Karlsruhe Hbf, people far and small
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 185
+    bytes: 28579
+    sha256: d62b9007dd0a71d09db81b8891ac5eecc31b882e8ae24f37995b361180d8be2f
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 179937
+    sha256: 85e96fa83d3faaf10202f5774340cdde1203d3ec5962d005a80dc5636c7566bb
+- photo_id: stadler-flirt-p1
+  series_id: stadler-flirt
+  rank: 1
+  file_title: File:FFS RABe 522 205 Basel SBB 180611.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:FFS_RABe_522_205_Basel_SBB_180611.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/6/60/FFS_RABe_522_205_Basel_SBB_180611.jpg
+  original_width: 1280
+  original_height: 853
+  mime: image/jpeg
+  commons_sha1: d10e4d4406d74755acb134b78cec4623b8401234
+  author: NAC
+  author_url: https://commons.wikimedia.org/wiki/User:NAC
+  licence: CC-BY-SA-3.0
+  licence_name: CC BY-SA 3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:13Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:08Z'
+    reason: the series image on Wikidata (P18), a FLIRT of SBB, illustrates the series shape
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 28985
+    sha256: bc7a1564d8a8d9ab81c925564060ff968696868fbda85dc5badf51cbafc83514
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 160308
+    sha256: f8d62362ed9b59c6d8a915177fd534237cbc64f6db87deee9b77126c09dce322
+- photo_id: stadler-flirt-3-p1
+  series_id: stadler-flirt-3
+  rank: 1
+  file_title: File:WestfalenBahn ET413 Emden 170207.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:WestfalenBahn_ET413_Emden_170207.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/2/2c/WestfalenBahn_ET413_Emden_170207.jpg
+  original_width: 3840
+  original_height: 2160
+  mime: image/jpeg
+  commons_sha1: 9aa39afb482f79e27f5f52f0b5a0a50caf37a7a1
+  author: Clic
+  author_url: https://commons.wikimedia.org/wiki/User:Clic
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:09Z'
+    reason: the series image on Wikidata (P18), a WestfalenBahn unit in Germany
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 25234
+    sha256: 3c9c4f57789871d0593e8ca8bb000262675eb5c437dd0d8750acb977e475af85
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 138471
+    sha256: af8dc6e540ca41c7b1fdfabb3ceca61b9730b5544274b8af48946c4b9ccdc237
+- photo_id: stadler-flirt-3-p2
+  series_id: stadler-flirt-3
+  rank: 2
+  file_title: File:Augsburg Hbf 2026 5.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Augsburg_Hbf_2026_5.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/8/8b/Augsburg_Hbf_2026_5.jpg
+  original_width: 5472
+  original_height: 3648
+  mime: image/jpeg
+  commons_sha1: 913c8d904da68a4bf9836bad786b08c082db29b4
+  author: Smiley.toerist
+  author_url: https://commons.wikimedia.org/wiki/User:Smiley.toerist
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:09:35Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:10Z'
+    reason: the whole unit at a station in daylight, sharp and well lit
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 28311
+    sha256: 8cbf119e8864df3319374b93cffa188361dc53607d7c99a47c696b1c443f8766
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 186516
+    sha256: b626627c2358320db8f26513ee4d9f3cd827e87108d4eec721959b22de06b289
+- photo_id: stadler-flirt-3-xl-p1
+  series_id: stadler-flirt-3-xl
+  rank: 1
+  file_title: File:Bonn Oberkassel Flirt3 XL voor S-Bahn Rhein-Ruhr 3429 003 (48293301687).jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Bonn_Oberkassel_Flirt3_XL_voor_S-Bahn_Rhein-Ruhr_3429_003_(48293301687).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a9/Bonn_Oberkassel_Flirt3_XL_voor_S-Bahn_Rhein-Ruhr_3429_003_%2848293301687%29.jpg
+  original_width: 5701
+  original_height: 3207
+  mime: image/jpeg
+  commons_sha1: 872c98f32a920878ceac68d579d66d2ea83765dc
+  author: Rob Dammers
+  author_url: https://www.flickr.com/people/93388157@N07
+  licence: CC-BY-2.0
+  licence_name: CC BY 2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0
+  attribution_required: true
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:10Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:12Z'
+    reason: the series image on Wikidata (P18), the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 186
+    bytes: 28764
+    sha256: 98af177b3002db4314561418a7071b7cfa01151b76c7491922f66516c97b66a5
+  - width_class: 960
+    width: 960
+    height: 540
+    bytes: 226798
+    sha256: 2edbd6c88fc266dbeb4df8cff090ba73a2bd224218f3f1bbf6752a1d8fea10b3
+- photo_id: stadler-kiss-p1
+  series_id: stadler-kiss
+  rank: 1
+  file_title: File:RABe 511 001.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:RABe_511_001.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/4/4c/RABe_511_001.jpg
+  original_width: 4181
+  original_height: 2787
+  mime: image/jpeg
+  commons_sha1: aa7a961923b2a5976ffeb24d920479ede2aba41d
+  author: Alainkaa
+  author_url: https://commons.wikimedia.org/wiki/User:Alainkaa
+  licence: LicenseRef-Public-Domain
+  licence_name: Public domain
+  attribution_required: false
+  found_by: wikidata-p18
+  retrieved_at: '2026-11-08T01:08:14Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:22:03Z'
+    reason: the series image on Wikidata (P18), a KISS of SBB, illustrates the series shape
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 220
+    bytes: 28452
+    sha256: e0cb9f222f3ba36c0d3cb378cbb2199edac28a40a3a44b3025092da8556a0b55
+  - width_class: 960
+    width: 960
+    height: 640
+    bytes: 168825
+    sha256: 5dbd98dbbb44c194b0b6349dcf1c15cd2bb4f7e6de7e7ae8aa9dea626c65771f
+- photo_id: stadler-regio-shuttle-rs1-p1
+  series_id: stadler-regio-shuttle-rs1
+  rank: 1
+  file_title: File:Br 650 050-7 (VT 512) 2.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Br_650_050-7_(VT_512)_2.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/a/a6/Br_650_050-7_%28VT_512%29_2.jpg
+  original_width: 3431
+  original_height: 2245
+  mime: image/jpeg
+  commons_sha1: 1e646267c11d374a059dc561f56f7636fb424302
+  author: Pepe Deutsch
+  author_url: https://commons.wikimedia.org/wiki/User:Pepe_Deutsch
+  licence: CC-BY-SA-4.0
+  licence_name: CC BY-SA 4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:55Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: approve
+    by: pick:A5
+    at: '2026-11-08T01:21:57Z'
+    reason: the only exterior view among the candidates, the whole unit in daylight
+    user_review: pending
+  files:
+  - width_class: 330
+    width: 330
+    height: 216
+    bytes: 29286
+    sha256: 3867d25362ad5ee091ef30ee90a33ed7c67c9da2e802a2ab3a981b899676ef07
+  - width_class: 960
+    width: 960
+    height: 628
+    bytes: 223349
+    sha256: 2599f9ecf9117ffed32cad5a89eed7d672ff781e64601fa3ef6bf00168274f0c
+- photo_id: stadler-regio-shuttle-rs1-p2
+  series_id: stadler-regio-shuttle-rs1
+  file_title: File:Stadler RS1 railcar driving cab.jpg
+  page_url: https://commons.wikimedia.org/wiki/File:Stadler_RS1_railcar_driving_cab.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Stadler_RS1_railcar_driving_cab.jpg
+  original_width: 4608
+  original_height: 3072
+  mime: image/jpeg
+  commons_sha1: 6f788af9ee687cd0fd0e4f252775620cd722946a
+  author: Der-Hobbybahner-Sachsen
+  author_url: https://commons.wikimedia.org/wiki/User:Der-Hobbybahner-Sachsen
+  licence: CC0-1.0
+  licence_name: CC0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/deed.en
+  attribution_required: false
+  found_by: commons-category
+  retrieved_at: '2026-11-08T01:10:55Z'
+  focus:
+  - 0.5
+  - 0.5
+  approval:
+    decision: reject
+    by: pick:A5
+    at: '2026-11-08T01:22:08Z'
+    reason: the driving cab inside, not the vehicle
+    user_review: pending
+  files: []

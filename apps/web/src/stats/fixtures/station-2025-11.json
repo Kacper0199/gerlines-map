@@ -1,0 +1,584 @@
+{
+  "kind": "station",
+  "period": { "from": "2025-11-01", "to": "2025-11-30", "days": 30 },
+  "freshness": {
+    "refreshedAt": null,
+    "maxLagMinutes": 40,
+    "note": "Statistics are up to about 40 minutes behind the live map, because they are read from rollups refreshed every 30 minutes."
+  },
+  "generatedAt": "2026-11-08T01:01:22.825Z",
+  "categories": null,
+  "station": {
+    "id": "7caf6c52-407d-3f0f-ae57-e324480e9bf3",
+    "name": "EVA 8000284",
+    "landCode": "DE-BY"
+  },
+  "summary": {
+    "stops": 4777,
+    "cancelled": 219,
+    "additional": 0,
+    "noData": 0,
+    "observed": 4557,
+    "observedArrivals": 4034,
+    "punctual6": 0.504,
+    "punctual16": 0.7405,
+    "cancelledShare": 0.0458,
+    "meanDelayS": 688.7,
+    "medianDelayS": 307.4,
+    "p90DelayS": 1990,
+    "maxDelayS": 15360,
+    "platformChanged": 0,
+    "observedCarried": 0,
+    "observedPropagated": 0
+  },
+  "byCategory": [
+    {
+      "category": "hsr",
+      "summary": {
+        "stops": 4192,
+        "cancelled": 188,
+        "additional": 0,
+        "noData": 0,
+        "observed": 4003,
+        "observedArrivals": 3630,
+        "punctual6": 0.4876,
+        "punctual16": 0.73,
+        "cancelledShare": 0.0448,
+        "meanDelayS": 738.2,
+        "medianDelayS": 342.5,
+        "p90DelayS": 2099.1,
+        "maxDelayS": 15360,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    },
+    {
+      "category": "ld",
+      "summary": {
+        "stops": 585,
+        "cancelled": 31,
+        "additional": 0,
+        "noData": 0,
+        "observed": 554,
+        "observedArrivals": 404,
+        "punctual6": 0.651,
+        "punctual16": 0.8342,
+        "cancelledShare": 0.053,
+        "meanDelayS": 331,
+        "medianDelayS": 102.9,
+        "p90DelayS": 1193.1,
+        "maxDelayS": 5940,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    }
+  ],
+  "byDay": [
+    {
+      "day": "2025-11-01",
+      "stops": 154,
+      "cancelled": 5,
+      "observedArrivals": 142,
+      "punctual6": 0.6197,
+      "punctual16": 0.8169,
+      "meanDelayS": 414.4
+    },
+    {
+      "day": "2025-11-02",
+      "stops": 154,
+      "cancelled": 2,
+      "observedArrivals": 147,
+      "punctual6": 0.6939,
+      "punctual16": 0.8912,
+      "meanDelayS": 460.3
+    },
+    {
+      "day": "2025-11-03",
+      "stops": 171,
+      "cancelled": 6,
+      "observedArrivals": 154,
+      "punctual6": 0.4091,
+      "punctual16": 0.6688,
+      "meanDelayS": 796.7
+    },
+    {
+      "day": "2025-11-04",
+      "stops": 171,
+      "cancelled": 11,
+      "observedArrivals": 149,
+      "punctual6": 0.4295,
+      "punctual16": 0.745,
+      "meanDelayS": 680.6
+    },
+    {
+      "day": "2025-11-05",
+      "stops": 171,
+      "cancelled": 8,
+      "observedArrivals": 151,
+      "punctual6": 0.2781,
+      "punctual16": 0.5828,
+      "meanDelayS": 1003
+    },
+    {
+      "day": "2025-11-06",
+      "stops": 171,
+      "cancelled": 7,
+      "observedArrivals": 154,
+      "punctual6": 0.3506,
+      "punctual16": 0.5974,
+      "meanDelayS": 1004.3
+    },
+    {
+      "day": "2025-11-07",
+      "stops": 176,
+      "cancelled": 7,
+      "observedArrivals": 160,
+      "punctual6": 0.5063,
+      "punctual16": 0.7313,
+      "meanDelayS": 649
+    },
+    {
+      "day": "2025-11-08",
+      "stops": 154,
+      "cancelled": 5,
+      "observedArrivals": 142,
+      "punctual6": 0.5634,
+      "punctual16": 0.7958,
+      "meanDelayS": 610.1
+    },
+    {
+      "day": "2025-11-09",
+      "stops": 154,
+      "cancelled": 14,
+      "observedArrivals": 135,
+      "punctual6": 0.5333,
+      "punctual16": 0.8296,
+      "meanDelayS": 440.6
+    },
+    {
+      "day": "2025-11-10",
+      "stops": 167,
+      "cancelled": 16,
+      "observedArrivals": 141,
+      "punctual6": 0.461,
+      "punctual16": 0.7021,
+      "meanDelayS": 700.9
+    },
+    {
+      "day": "2025-11-11",
+      "stops": 158,
+      "cancelled": 4,
+      "observedArrivals": 116,
+      "punctual6": 0.2845,
+      "punctual16": 0.6207,
+      "meanDelayS": 764.4
+    },
+    {
+      "day": "2025-11-12",
+      "stops": 158,
+      "cancelled": 3,
+      "observedArrivals": 117,
+      "punctual6": 0.3162,
+      "punctual16": 0.5214,
+      "meanDelayS": 1143.9
+    },
+    {
+      "day": "2025-11-13",
+      "stops": 157,
+      "cancelled": 5,
+      "observedArrivals": 116,
+      "punctual6": 0.319,
+      "punctual16": 0.5431,
+      "meanDelayS": 958.4
+    },
+    {
+      "day": "2025-11-14",
+      "stops": 157,
+      "cancelled": 7,
+      "observedArrivals": 117,
+      "punctual6": 0.3932,
+      "punctual16": 0.6667,
+      "meanDelayS": 769.2
+    },
+    {
+      "day": "2025-11-15",
+      "stops": 141,
+      "cancelled": 2,
+      "observedArrivals": 106,
+      "punctual6": 0.6226,
+      "punctual16": 0.7736,
+      "meanDelayS": 407.1
+    },
+    {
+      "day": "2025-11-16",
+      "stops": 139,
+      "cancelled": 5,
+      "observedArrivals": 104,
+      "punctual6": 0.6058,
+      "punctual16": 0.7981,
+      "meanDelayS": 773.3
+    },
+    {
+      "day": "2025-11-17",
+      "stops": 155,
+      "cancelled": 8,
+      "observedArrivals": 114,
+      "punctual6": 0.3596,
+      "punctual16": 0.7193,
+      "meanDelayS": 642
+    },
+    {
+      "day": "2025-11-18",
+      "stops": 155,
+      "cancelled": 5,
+      "observedArrivals": 118,
+      "punctual6": 0.3983,
+      "punctual16": 0.7203,
+      "meanDelayS": 722
+    },
+    {
+      "day": "2025-11-19",
+      "stops": 155,
+      "cancelled": 12,
+      "observedArrivals": 117,
+      "punctual6": 0.5385,
+      "punctual16": 0.7094,
+      "meanDelayS": 773.7
+    },
+    {
+      "day": "2025-11-20",
+      "stops": 153,
+      "cancelled": 6,
+      "observedArrivals": 117,
+      "punctual6": 0.5043,
+      "punctual16": 0.735,
+      "meanDelayS": 685.7
+    },
+    {
+      "day": "2025-11-21",
+      "stops": 158,
+      "cancelled": 8,
+      "observedArrivals": 120,
+      "punctual6": 0.5083,
+      "punctual16": 0.6917,
+      "meanDelayS": 719.6
+    },
+    {
+      "day": "2025-11-22",
+      "stops": 152,
+      "cancelled": 5,
+      "observedArrivals": 140,
+      "punctual6": 0.6357,
+      "punctual16": 0.8786,
+      "meanDelayS": 365.3
+    },
+    {
+      "day": "2025-11-23",
+      "stops": 152,
+      "cancelled": 11,
+      "observedArrivals": 137,
+      "punctual6": 0.5182,
+      "punctual16": 0.7299,
+      "meanDelayS": 802.1
+    },
+    {
+      "day": "2025-11-24",
+      "stops": 171,
+      "cancelled": 11,
+      "observedArrivals": 150,
+      "punctual6": 0.5067,
+      "punctual16": 0.72,
+      "meanDelayS": 972.4
+    },
+    {
+      "day": "2025-11-25",
+      "stops": 171,
+      "cancelled": 9,
+      "observedArrivals": 152,
+      "punctual6": 0.5987,
+      "punctual16": 0.8224,
+      "meanDelayS": 499.3
+    },
+    {
+      "day": "2025-11-26",
+      "stops": 171,
+      "cancelled": 8,
+      "observedArrivals": 152,
+      "punctual6": 0.6118,
+      "punctual16": 0.9013,
+      "meanDelayS": 334.2
+    },
+    {
+      "day": "2025-11-27",
+      "stops": 171,
+      "cancelled": 8,
+      "observedArrivals": 153,
+      "punctual6": 0.5556,
+      "punctual16": 0.7908,
+      "meanDelayS": 587.9
+    },
+    {
+      "day": "2025-11-28",
+      "stops": 175,
+      "cancelled": 8,
+      "observedArrivals": 156,
+      "punctual6": 0.5833,
+      "punctual16": 0.7756,
+      "meanDelayS": 746.6
+    },
+    {
+      "day": "2025-11-29",
+      "stops": 154,
+      "cancelled": 6,
+      "observedArrivals": 141,
+      "punctual6": 0.7092,
+      "punctual16": 0.8511,
+      "meanDelayS": 442.7
+    },
+    {
+      "day": "2025-11-30",
+      "stops": 131,
+      "cancelled": 7,
+      "observedArrivals": 116,
+      "punctual6": 0.6293,
+      "punctual16": 0.7931,
+      "meanDelayS": 716.1
+    }
+  ],
+  "byHour": [
+    {
+      "hour": 0,
+      "stops": 48,
+      "cancelled": 1,
+      "observedArrivals": 47,
+      "punctual6": 0.2128,
+      "meanDelayS": 2036.2
+    },
+    {
+      "hour": 1,
+      "stops": 1,
+      "cancelled": 0,
+      "observedArrivals": 1,
+      "punctual6": 0,
+      "meanDelayS": 1320
+    },
+    {
+      "hour": 4,
+      "stops": 19,
+      "cancelled": 0,
+      "observedArrivals": 19,
+      "punctual6": 0.5263,
+      "meanDelayS": 1253.7
+    },
+    {
+      "hour": 5,
+      "stops": 181,
+      "cancelled": 17,
+      "observedArrivals": 66,
+      "punctual6": 0.6364,
+      "meanDelayS": 320.1
+    },
+    {
+      "hour": 6,
+      "stops": 205,
+      "cancelled": 22,
+      "observedArrivals": 121,
+      "punctual6": 0.4959,
+      "meanDelayS": 452.8
+    },
+    {
+      "hour": 7,
+      "stops": 176,
+      "cancelled": 5,
+      "observedArrivals": 132,
+      "punctual6": 0.6667,
+      "meanDelayS": 319.6
+    },
+    {
+      "hour": 8,
+      "stops": 327,
+      "cancelled": 7,
+      "observedArrivals": 313,
+      "punctual6": 0.5751,
+      "meanDelayS": 512.4
+    },
+    {
+      "hour": 9,
+      "stops": 227,
+      "cancelled": 7,
+      "observedArrivals": 181,
+      "punctual6": 0.6354,
+      "meanDelayS": 378.3
+    },
+    {
+      "hour": 10,
+      "stops": 289,
+      "cancelled": 10,
+      "observedArrivals": 255,
+      "punctual6": 0.549,
+      "meanDelayS": 583
+    },
+    {
+      "hour": 11,
+      "stops": 274,
+      "cancelled": 13,
+      "observedArrivals": 247,
+      "punctual6": 0.4777,
+      "meanDelayS": 644.6
+    },
+    {
+      "hour": 12,
+      "stops": 328,
+      "cancelled": 13,
+      "observedArrivals": 284,
+      "punctual6": 0.5141,
+      "meanDelayS": 643.4
+    },
+    {
+      "hour": 13,
+      "stops": 215,
+      "cancelled": 13,
+      "observedArrivals": 182,
+      "punctual6": 0.5275,
+      "meanDelayS": 673.4
+    },
+    {
+      "hour": 14,
+      "stops": 298,
+      "cancelled": 14,
+      "observedArrivals": 251,
+      "punctual6": 0.5538,
+      "meanDelayS": 605.1
+    },
+    {
+      "hour": 15,
+      "stops": 269,
+      "cancelled": 13,
+      "observedArrivals": 207,
+      "punctual6": 0.4976,
+      "meanDelayS": 584.1
+    },
+    {
+      "hour": 16,
+      "stops": 308,
+      "cancelled": 9,
+      "observedArrivals": 283,
+      "punctual6": 0.5406,
+      "meanDelayS": 547.4
+    },
+    {
+      "hour": 17,
+      "stops": 296,
+      "cancelled": 22,
+      "observedArrivals": 262,
+      "punctual6": 0.458,
+      "meanDelayS": 871.8
+    },
+    {
+      "hour": 18,
+      "stops": 380,
+      "cancelled": 14,
+      "observedArrivals": 345,
+      "punctual6": 0.5014,
+      "meanDelayS": 805.2
+    },
+    {
+      "hour": 19,
+      "stops": 213,
+      "cancelled": 14,
+      "observedArrivals": 176,
+      "punctual6": 0.375,
+      "meanDelayS": 1004.6
+    },
+    {
+      "hour": 20,
+      "stops": 274,
+      "cancelled": 6,
+      "observedArrivals": 247,
+      "punctual6": 0.4453,
+      "meanDelayS": 862.2
+    },
+    {
+      "hour": 21,
+      "stops": 205,
+      "cancelled": 10,
+      "observedArrivals": 190,
+      "punctual6": 0.3632,
+      "meanDelayS": 1132
+    },
+    {
+      "hour": 22,
+      "stops": 124,
+      "cancelled": 3,
+      "observedArrivals": 111,
+      "punctual6": 0.5135,
+      "meanDelayS": 894
+    },
+    {
+      "hour": 23,
+      "stops": 120,
+      "cancelled": 6,
+      "observedArrivals": 114,
+      "punctual6": 0.3333,
+      "meanDelayS": 1163.2
+    }
+  ],
+  "delayHistogram": [
+    { "fromS": -1800, "toS": -300, "count": 15 },
+    { "fromS": -300, "toS": 0, "count": 391 },
+    { "fromS": 0, "toS": 60, "count": 651 },
+    { "fromS": 60, "toS": 120, "count": 424 },
+    { "fromS": 120, "toS": 180, "count": 288 },
+    { "fromS": 180, "toS": 240, "count": 245 },
+    { "fromS": 240, "toS": 300, "count": 238 },
+    { "fromS": 300, "toS": 360, "count": 214 },
+    { "fromS": 360, "toS": 420, "count": 175 },
+    { "fromS": 420, "toS": 480, "count": 132 },
+    { "fromS": 480, "toS": 540, "count": 110 },
+    { "fromS": 540, "toS": 600, "count": 108 },
+    { "fromS": 600, "toS": 660, "count": 107 },
+    { "fromS": 660, "toS": 720, "count": 78 },
+    { "fromS": 720, "toS": 780, "count": 84 },
+    { "fromS": 780, "toS": 840, "count": 79 },
+    { "fromS": 840, "toS": 900, "count": 70 },
+    { "fromS": 900, "toS": 960, "count": 60 },
+    { "fromS": 960, "toS": 1200, "count": 215 },
+    { "fromS": 1200, "toS": 1500, "count": 193 },
+    { "fromS": 1500, "toS": 1800, "count": 154 },
+    { "fromS": 1800, "toS": 2100, "count": 111 },
+    { "fromS": 2100, "toS": 2400, "count": 88 },
+    { "fromS": 2400, "toS": 2700, "count": 79 },
+    { "fromS": 2700, "toS": 3000, "count": 55 },
+    { "fromS": 3000, "toS": 3300, "count": 41 },
+    { "fromS": 3300, "toS": 3600, "count": 29 },
+    { "fromS": 3600, "toS": 5400, "count": 78 },
+    { "fromS": 5400, "toS": 7200, "count": 26 },
+    { "fromS": 7200, "toS": null, "count": 19 }
+  ],
+  "departures": { "observed": 3974, "punctual6": 0.5664 },
+  "byOperator": [
+    {
+      "operator": { "id": "db-fernverkehr-ag", "name": "DB Fernverkehr AG" },
+      "summary": {
+        "stops": 4777,
+        "cancelled": 219,
+        "additional": 0,
+        "noData": 0,
+        "observed": 4557,
+        "observedArrivals": 4034,
+        "punctual6": 0.504,
+        "punctual16": 0.7405,
+        "cancelledShare": 0.0458,
+        "meanDelayS": 688.7,
+        "medianDelayS": 307.4,
+        "p90DelayS": 1990,
+        "maxDelayS": 15360,
+        "platformChanged": 0,
+        "observedCarried": 0,
+        "observedPropagated": 0
+      }
+    }
+  ]
+}

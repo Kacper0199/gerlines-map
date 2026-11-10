@@ -1,0 +1,21 @@
+{
+  "name": "head-counts-future",
+  "description": "A 1.1 head whose section 0x61 also holds a metric (code 0x05ff) and a category (code 0x0120) this version does not know: decoders skip those two rows.",
+  "decoder": "head",
+  "expected": {
+    "kind": "head",
+    "sequence": 1001,
+    "timetableVersion": 7,
+    "timeBase": 1793000004,
+    "keyframeSequence": 1000,
+    "oldestSequence": 900,
+    "counts": [
+      {
+        "metric": "running",
+        "category": null,
+        "count": 3012
+      }
+    ]
+  },
+  "byteLength": 104
+}

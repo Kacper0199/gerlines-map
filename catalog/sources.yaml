@@ -1,0 +1,2445 @@
+# Sources of the catalogue. Every row of every seed file names one of these (source, and
+# field_sources for single fields); the licence is an SPDX expression.
+- source_id: gerlines
+  name: GerLines catalogue curation
+  homepage_url: https://github.com/Kacper0199/gerlines-map
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: GerLines contributors
+  note: >-
+    Our own definitions and choices: category names, which Wikidata item fits an operator,
+    series keys and priorities chosen by hand, countries derived by the static import's
+    operator rules, the series family chosen by hand, and the mapping from Wikidata rail vehicle
+    classes to unit kind and traction (series_classes.py). Licence CC0-1.0.
+- source_id: delfi-gtfs
+  name: DELFI national GTFS timetable
+  homepage_url: https://www.opendata-oepnv.de/ht/de/organisation/delfi/startseite
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: DELFI e.V.
+  note: Same row as the static import writes. Agency names of the feed of 2026-10-19.
+- source_id: wikidata
+  name: Wikidata
+  homepage_url: https://www.wikidata.org/
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Wikidata contributors
+  note: >-
+    Read through the SPARQL endpoint on 2026-10-25; the queries and answers are cached under
+    data/catalog/wikidata/ with sidecars.
+- source_id: wikidata-search
+  name: Wikidata entity search, choice reviewed by a GerLines contributor
+  homepage_url: https://www.wikidata.org/w/api.php?action=help&modules=wbsearchentities
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Wikidata contributors and GerLines contributors
+  note: >-
+    The operator's agency name was searched (EntitySearch through the SPARQL endpoint,
+    2026-10-25, cached under data/catalog/wikidata/search-operators-*) and the item whose
+    label and description name the operating company or brand was chosen by hand.
+- source_id: traewelling-operator-matching
+  name: Träwelling transitous-wikidata-operator-matching, mapping.csv
+  homepage_url: https://github.com/Traewelling/transitous-wikidata-operator-matching/blob/7f63ac5a401345c4439a9217d86c9fdf314dd0dc/mapping.csv
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Träwelling contributors
+  note: Maps DELFI agency ids (as MOTIS operator ids) to Wikidata items. Commit 7f63ac5a.
+- source_id: traewelling-line-colors
+  name: Träwelling line-colors, line-colors.csv
+  homepage_url: https://github.com/Traewelling/line-colors/blob/1bb30909dda42e19214ca90470e0c5dc86cbc6ed/line-colors.csv
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Träwelling line-colors contributors
+  note: >-
+    Commit 1bb30909, sha256 ba135ca349a36f14b7e2acbd03137bc0d4b3bd575212b8330e38242715ddede9.
+    The contributors list a source per operator in sources.json of the same commit.
+- source_id: wikipedia-de-verbuende
+  name: Wikipedia (de), Liste deutscher Tarif- und Verkehrsverbünde
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269046240
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: Abbreviations, Länder and SPNV integration as listed in this revision.
+- source_id: wikipedia-de-series
+  name: Wikipedia (de), infoboxes of rail vehicle articles
+  homepage_url: https://de.wikipedia.org/
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Values from the lead section (with the infobox) of one article revision each, read on
+    2026-10-25. Speed and length: single plain values of Höchstgeschwindigkeit and
+    LängeÜberKupplung. Cars per unit and double deck: the statement named here.
+    DB-Baureihe 422 https://de.wikipedia.org/w/index.php?oldid=261414899 (length);
+    DB-Baureihe 430 https://de.wikipedia.org/w/index.php?oldid=271411329 (length);
+    DB-Baureihe 642 https://de.wikipedia.org/w/index.php?oldid=269149137 (speed, length);
+    Stadler Regio-Shuttle RS 1 https://de.wikipedia.org/w/index.php?oldid=269973713 (length);
+    Eurostar 320 https://de.wikipedia.org/w/index.php?oldid=270447409 (length);
+    Bombardier Talent 2 https://de.wikipedia.org/w/index.php?oldid=270887823 (speed, cars
+    2 to 6 from the Achsformel variants);
+    ICE 4 https://de.wikipedia.org/w/index.php?oldid=271410911 (cars 7 to 13, infobox Anzahl);
+    DB-Baureihe 407 https://de.wikipedia.org/w/index.php?oldid=271620671 (cars 8, Anzahl);
+    DB-Baureihe 408 https://de.wikipedia.org/w/index.php?oldid=271535198 (cars 8, Anzahl);
+    Siemens Desiro HC https://de.wikipedia.org/w/index.php?oldid=271144582 (cars 4 to 6, Anzahl);
+    Siemens Mireo https://de.wikipedia.org/w/index.php?oldid=271627446 (cars 2 to 4, Achsformel);
+    Siemens Desiro Classic https://de.wikipedia.org/w/index.php?oldid=270406545 (cars 2 to 5,
+    LängeÜberKupplung);
+    Bombardier Talent https://de.wikipedia.org/w/index.php?oldid=271620851 (cars 2 to 4,
+    Achsformel);
+    Stadler KISS https://de.wikipedia.org/w/index.php?oldid=271539061 (cars 3 to 7, the variants
+    built so far);
+    DB-Baureihe 474 https://de.wikipedia.org/w/index.php?oldid=271339625 (cars 3);
+    DB-Baureihe 425 (1999) https://de.wikipedia.org/w/index.php?oldid=269868696 (cars 4 for db-425
+    and 2 for db-426);
+    Intercity 2 (Deutsche Bahn) https://de.wikipedia.org/w/index.php?oldid=271290996 (double deck for db-intercity-2).
+- source_id: wikipedia-de-verkehrsrot
+  name: Wikipedia (de), Verkehrsrot, section Deutsche Bahn
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=267468939
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+- source_id: wikipedia-de-481
+  name: Wikipedia (de), DB-Baureihe 481
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271548147
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+# Sources of catalog/vehicles.yaml and the liveries the vehicle forge added (WP-5.1). One row
+# per article revision; the values used are named in the note.
+- source_id: wikipedia-de-ice-4
+  name: Wikipedia (de), ICE 4
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271410911
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: LängeÜberKupplung (seven cars 202 m, middle car 28,750 m, end car 29,106 m), Höhe
+    (middle car 4115 mm, end car 3870 mm), Breite 2852 mm, Drehzapfenabstand 19,50 m,
+    AchsabstandDerFahrgestelle (powered bogie 2600 mm, trailer bogie 2300 mm), Treibraddurchmesser
+    920 mm and Laufraddurchmesser 825 mm (new), Fußbodenhöhe 1220 mm. Section Aufbau der real
+    umgesetzten ICE 4: the car order of the seven-car unit, powered cars and cars with pantograph.
+- source_id: wikipedia-de-intercity-express
+  name: Wikipedia (de), Intercity-Express, section Design
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271610884
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    The ICE livery: verkehrsweiß body with a verkehrsrot stripe (RAL 9016 and 3020) and a
+    continuous black window band.
+- source_id: wikipedia-de-403
+  name: Wikipedia (de), DB-Baureihe 403 (1997)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271609684
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel (powered end cars, eight cars), LängeÜberKupplung (200,84 m, end car
+    25 835 mm, middle car 24 775 mm), Höhe 3890 mm, Breite bis 2950 mm, Drehzapfenabstand
+    17 375 mm, two pantographs.
+- source_id: wikipedia-de-406
+  name: Wikipedia (de), DB-Baureihe 406
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271586474
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel, LängeÜberKupplung (200 840 mm, end car 25 835 mm, middle car 24 775 mm),
+    Höhe 3890 mm, Breite bis 2950 mm, Drehzapfenabstand 17 375 mm.
+- source_id: wikipedia-de-407
+  name: Wikipedia (de), DB-Baureihe 407
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271629958
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel, LängeÜberKupplung 200 720 mm (eight cars), Breite 2924 mm,
+    Drehzapfenabstand 17,375 m, Fußbodenhöhe 1240 mm. Höhe 4343 mm is not used as the roof height
+    (commons-velaro-407-drawing gives 3.89 m).
+- source_id: wikipedia-de-408
+  name: Wikipedia (de), DB-Baureihe 408
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271535198
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel, LängeÜberKupplung 200,72 m (eight cars), Breite 2924 mm,
+    Drehzapfenabstand 17,375 m, Fußbodenhöhe 1240 mm.
+- source_id: wikipedia-de-ice-1
+  name: Wikipedia (de), ICE 1
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271470780
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: power head 20 560 mm, 358 m with twelve middle cars and 279 m with nine, Höhe
+    3840 mm (restaurant car 4295 mm), Breite 3020 mm, Fußbodenhöhe 1226 mm. The middle car
+    length 26,407 m is derived: (358 m minus two power heads) divided by twelve.
+- source_id: wikipedia-de-ice-t
+  name: Wikipedia (de), ICE T
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271655074
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: LängeÜberPuffer 184,4 m (411, seven cars) and 132,6 m (415, five cars), Höhe bis
+    3910 mm, Breite bis 2850 mm, Fußbodenhöhe 1250 mm, Drehzapfenabstand 19 000 mm, bogie
+    wheelbase 2700 mm. Section Technischer Aufbau: car order, powered cars, pantographs on the end
+    cars. Car lengths are derived from the two unit lengths: middle car (184,4 − 132,6) / 2 =
+    25,9 m, end car (132,6 − 3 × 25,9) / 2 = 27,45 m.
+- source_id: wikipedia-de-intercity-2
+  name: Wikipedia (de), Intercity 2 (Deutsche Bahn)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271290996
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Section Aufbau und technische Daten: five cars 134,50 m without the locomotive (driving
+    trailer DBpbzfa 668.2, three DBpza 682.2, one DApza 687.2), class 146.5 or 147.5
+    locomotive, door clear width 1300 mm (driving trailer) and 1800 mm (middle cars).
+- source_id: wikipedia-de-twindexx-vario
+  name: Wikipedia (de), Bombardier Twindexx Vario
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270924239
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infoboxes: power car 25 980 mm, Höhe 4631 mm, Breite 2784 mm; driving trailer 27 270 mm,
+    Höhe 4632 mm; middle car 26 800 mm, Höhe 4632 mm, Breite 2784 mm. Section Geschichte: the framework
+    contract of December 2008 covers 800 double-deck cars of the Twindexx Vario range, also called Dosto 2010,
+    so the 445 and 446 middle cars are Do2010 middle cars (drawn with the doppelstockwagen-re middle car, 26.8 m
+    like the infobox). Section Fahrzeugkonzept: middle cars come with low or high entrances; the Schleswig-Holstein
+    units have high entrances over the bogies, while the drawn car has the low entrances between the bogies
+    (db-emb-dosto-d). The infobox width and height of the middle car are not applied to the shared car.
+- source_id: wikipedia-de-doppelstockwagen
+  name: Wikipedia (de), Doppelstockwagen, section Deutsche Bahn
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271160875
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    The Görlitz double-deck cars are 26,8 m long; middle cars with low entrances in the lower deck
+    or high entrances over the bogies, driving trailers only with low entrances.
+- source_id: wikipedia-de-talent-2
+  name: Wikipedia (de), Bombardier Talent 2
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270887823
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel per variant, LängeÜberKupplung 40 100 mm (two cars) to 104 500 mm (six
+    cars) in steps of 16 100 mm, Höhe 4260 mm, Breite 2925 mm, bogie wheelbase 2300 mm (end) and
+    2800 mm (Jacobs), Raddurchmesser 840 mm, Fußbodenhöhe 695 mm. End car 20,05 m (half of the
+    two-car length) and middle car 16,1 m are derived.
+- source_id: wikipedia-de-coradia-continental
+  name: Wikipedia (de), Alstom Coradia Continental
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269970355
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel, Höhe 4280 mm, Breite 2920 mm, Fußbodenhöhe 730 mm. Section Varianten:
+    unit lengths per configuration (440.0 four cars short end 70 900 mm, three cars 54 500 mm;
+    1440 four cars 73 300 mm, three cars 56 900 mm, five cars 89 700 mm). Derived: middle car
+    16,4 m, end car 19,05 m (440 short) and 20,25 m (1440).
+- source_id: wikipedia-de-flirt
+  name: Wikipedia (de), Stadler Flirt
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271524810
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Section Variantenübersicht: Flirt 3 lengths 58 600 mm (three cars), 74 700 mm (four, DB 1428
+    and 428), 90 800 mm (five, DB 429), Höhe 4185 mm, Einstiegshöhe 580 or 780 mm, high floor
+    1120 mm; always one bogie more than cars (Jacobs). Derived: middle car 16,1 m, end car
+    21,25 m.
+- source_id: wikipedia-de-desiro-hc
+  name: Wikipedia (de), Siemens Desiro HC
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271144582
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: four cars 105 252 mm over couplers, car bodies 26 226 mm (end) and 25 200 mm
+    (middle), Achsformel, Höhe 4640 mm, Breite 2820 mm. Section Aufbau: single-deck end cars,
+    double-deck middle cars. Technical data: door width 1400 mm (end cars) and 1800 mm (middle
+    cars). Car lengths over couplers are derived: each body plus an equal share of the 2,4 m the
+    unit adds over couplers (26,826 m and 25,8 m).
+- source_id: wikipedia-de-mireo
+  name: Wikipedia (de), Siemens Mireo
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271712068
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel (three cars Bo'2'2'Bo'), length 47 m for two cars, Höhe 4208 mm, Breite
+    2,808 m, Drehzapfenabstand 19 800 mm (middle car) and 19 680 mm (end car), bogie wheelbase
+    2300 mm (powered) and 2600 mm (Jacobs), Raddurchmesser 880 mm, Fußbodenhöhe 705 mm. End car
+    23,5 m is derived (half of the two-car length); the middle car between two Jacobs pivots is
+    19,8 m long.
+- source_id: wikipedia-de-423
+  name: Wikipedia (de), DB-Baureihe 423
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271288671
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel Bo'(Bo')(2')(Bo')Bo', 67 400 mm, Höhe 4295 mm, Breite 3020 mm,
+    Drehzapfenabstand 15 140 mm (end car) and 15 460 mm (middle car), bogie wheelbase 2200 mm
+    (end) and 2700 mm (Jacobs), Raddurchmesser 850 mm, Fußbodenhöhe 1025 mm. End car 18,24 m is
+    derived: (67,4 m − 2 × 15,46 m) / 2.
+- source_id: wikipedia-de-430
+  name: Wikipedia (de), DB-Baureihe 430
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271411329
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel Bo'(Bo)(2)(Bo)Bo', 68 300 mm, Höhe 4273 mm, Breite 3020 mm,
+    Drehzapfenabstand 15 140 mm (end car) and 14 894 mm (middle car), Fußbodenhöhe 1030 mm. End car
+    19,256 m is derived: (68,3 m − 2 × 14,894 m) / 2.
+- source_id: wikipedia-de-483-484
+  name: Wikipedia (de), DB-Baureihe 483/484
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269920568
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel (cars on their own bogies), 36 800 mm (483) and 73 600 mm (484), Höhe
+    3600 mm, Breite 3140 mm, wheel 820 mm, bogie wheelbase 2100 mm, Fußbodenhöhe 1000 mm. Section
+    Aufbau: three doors 1300 mm wide per car and side; colours NCS S 2010-Y10R and S 1580-R, doors
+    RAL 9005.
+- source_id: wikipedia-de-490
+  name: Wikipedia (de), DB-Baureihe 490
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271260857
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel 2'Bo'+Bo'Bo'+Bo'2', 66 000 mm, Höhe 3760 mm, Breite 3014 mm, bogie
+    wheelbase 2200 mm, Fußbodenhöhe 1020 mm. Section Technik: three cars, three doors per car and
+    side, AC pantographs only on the middle car of 490.2. Section Gestaltung: verkehrsrot body,
+    white stripes, white doors.
+- source_id: wikipedia-de-coradia-lint
+  name: Wikipedia (de), Alstom Coradia LINT
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271323346
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Section LINT 41: two bodies on a central Jacobs bogie, four doors, Länge 41,81 m, Höhe
+    4340 mm, Breite 2750 mm, Drehzapfenabstand 16 500 mm, bogie wheelbase 1900 mm (powered) and
+    2700 mm (Jacobs), low floor 598 mm. Section LINT 54: two cars each on two end bogies, eight
+    doors, 54,270 m, Höhe 4,31 m, Breite 2,75 m, low floor 800 mm. Car lengths are half the unit
+    length (both cars are mirror images).
+- source_id: wikipedia-de-642
+  name: Wikipedia (de), DB-Baureihe 642
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269149137
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Achsformel B'2'B', 41 700 mm, Breite 2830 mm, Fußbodenhöhe 575 mm (entrance). Car
+    lengths are half the unit length.
+- source_id: wikipedia-de-rs1
+  name: Wikipedia (de), Stadler Regio-Shuttle RS 1
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269973713
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: B'B', 25 500 mm, Höhe 3700 mm, Breite 2900 mm, Drehzapfenabstand 17 100 mm,
+    Fußbodenhöhe 600 mm (low floor, also 760 mm).
+- source_id: wikipedia-de-101
+  name: Wikipedia (de), DB-Baureihe 101
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271681780
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: Bo'Bo', LängeÜberPuffer 19 100 mm, bogie wheelbase 2650 mm, wheel 1250 mm (new).
+- source_id: commons-falk2-dbpbzfa-668-side
+  name: Wikimedia Commons, J24 219 DBpbzfa 668.2, Führerstandsseite.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J24_219_DBpbzfa_668.2,_F%C3%BChrerstandsseite.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Side-on view of the cab end of an Intercity 2 driving trailer (nose to the left), read (method
+    measured) on the 3840 × 2560 rendition retrieved 2026-11-06, points taken on a 1400 px copy: 164 px
+    per metre there from the roof y 57 = 4.632 m (sourced height) and the rail y 817; body tip x
+    160 (the coupler head left out). Nose centreline (profile_by_height): the face stands almost upright
+    from 0.77 m to 2.24 m (0.15 m back), the cab roof curves back over 2.4 m to the roof height,
+    the grey lower nose reaches down to 0.12 m from 0.6 m behind the tip; the red stripe meets the
+    front at 1.08 m to 1.24 m, just above the coupler. A close photo: the wheels read smaller than
+    the sourced 0.92 m because they sit inside the side plane, so heights carry about 5 %
+    uncertainty.
+- source_id: commons-falk2-146-560-ic2
+  name: Wikimedia Commons, J24 223 Schönefelder Gruppe, 146 560.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J24_223_Sch%C3%B6nefelder_Gruppe,_146_560.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Colours sampled (method sampled) as the per-channel median of a pixel box of the 960 px wide
+    rendition, retrieved 2026-10-29: white body of the 146.5 in IC2 colours, box 440,250 to
+    520,300 (#e1ebea); red stripe, box 570,302 to 630,320 (#ff353c). Sunlit, so lighter and more
+    saturated than the paint; the caption says the locomotive wears the colours of the IC2 cars.
+    Front (method measured): three-quarter front view of locomotive 146 560 in Intercity 2 colours, read (method measured,
+    perspective) on the 960 × 640 rendition retrieved 2026-10-29. No source gives the height of
+    class 146, so heights use the forge's estimated locomotive height with the rail at y 490 and the
+    cab roof at y 160 (about 78 px per metre): windscreen (box 650,164 to 860,276) 2.75 m to about
+    3.95 m over 0.9 of the front width, sloping back about 0.95 m; red stripe across the front and
+    along the side (y 309 to 348) 1.85 m to 2.3 m; lamp boxes at the lower corners (boxes 715,368
+    to 755,395 and 840,368 to 880,395) 1.22 m to 1.57 m, 0.62 to 0.9 of the half width; a grey
+    lower body band below 1.22 m on the front and sides (not modelled, the skirt band applies to a
+    whole unit).
+    Pass 5 (by eye beside a render, estimated): black frame round the windscreen from
+    2.62 m to 4.05 m, windscreen pane with slightly rounded corners, lamp housings 1.18 m to 1.62 m
+    with two round lamps each side, the white DB logo 1.96 m to 2.2 m in the stripe, buffer beam
+    0.9 m to 1.15 m.
+- source_id: commons-versian-484-002
+  name: Wikimedia Commons, S8 nach Schönfließ als BR 483-48 im Bahnhof Grünau.jpg (Versian)
+  homepage_url: https://commons.wikimedia.org/wiki/File:S8_nach_Sch%C3%B6nflie%C3%9F_als_BR_483-48_im_Bahnhof_Gr%C3%BCnau.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Versian, via Wikimedia Commons
+  note: >-
+    Colours sampled (method sampled) as the per-channel median of a pixel box of the 960 px wide
+    rendition, retrieved 2026-10-29: senfgelb on the upper front frame of 484 002, box 260,101 to
+    430,109 (#d6b77a); rot on the lower front left of the coupler, box 196,322 to 214,342
+    (#b6212f). Overcast light.
+- source_id: commons-nath-401-584-side
+  name: Wikimedia Commons, 2007 07 29 Offenburg ICE Triebkopf 401 584-8.jpg (Peter Nath)
+  homepage_url: https://commons.wikimedia.org/wiki/File:2007_07_29_Offenburg_ICE_Triebkopf_401_584-8.jpg
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: Peter Nath, via Wikimedia Commons
+  note: >-
+    Side view of the ICE 1 power head, measured (method measured) on the 960 × 720 rendition
+    retrieved 2026-10-29. Scale 120 px per metre from the sourced height 3.84 m between the rail
+    (y 507) and the roof (y 46); the tip is at x 40. Silhouette setbacks from the tip: 0.05 m at
+    0.6 m, 0 at 0.85 m (the tip), 0.04 m at 1.0 m, 0.27 m at the skirt bottom 0.31 m (y 470), 0.30 m at 1.5 m, 0.72 m at 2.0 m, 1.48 m at
+    2.5 m, 1.96 m at 3.0 m, 2.70 m at 3.5 m; the roof reaches its full height 4.2 m behind the
+    tip (x 545). Cab side window, box 240,125 to 352,205: 1.67 m to 2.6 m behind the tip, 2.52 m
+    to 3.18 m high. Side stripe at the power head's constant section, box 700,305 to 900,347:
+    1.33 m to 1.68 m; at the tip the stripe runs 1.0 m to 1.17 m (box 40,367 to 60,387). Later reading: the nose
+    centreline re-read on a 1.5x crop with a 10 px grid as the front's profile_by_height (setback per
+    height: 0.39 m at 0.28 m, 0 at 0.85 m, 0.44 m at 1.53 m, 1.0 m at 2.2 m, 1.61 m at 2.87 m, 2.28 m
+    at 3.42 m, 2.94 m at 3.75 m, 3.44 m at 3.8 m); it replaces the knots above where they differ.
+- source_id: commons-terfloth-ice-1-front
+  name: Wikimedia Commons, ICE1 Fahlenbach.jpg (S. Terfloth)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE1_Fahlenbach.jpg
+  licence: CC-BY-SA-2.0-DE
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0/de/
+  attribution: S. Terfloth (Sese Ingolstadt), via Wikimedia Commons
+  note: >-
+    Front view of an ICE 1 power head, measured (method measured) on the 960 × 640 rendition
+    retrieved 2026-10-29. Centre line x 208 (logo and grille), half width at lamp height 108 px
+    (left edge x 100). Heights from 85 px per metre anchored on the front stripe (y 455 to 468,
+    1.0 m to 1.17 m in commons-nath-401-584-side); check: the roof at y 225 gives 3.87 m against
+    the sourced 3.84 m. Windscreen box 128,272 to 325,337: 2.5 m to 3.3 m high, half width
+    fraction 0.79 on the left and 0.89 on the right (the camera stands right of the axis), 0.82
+    used. Headlights boxes 125,422 to 160,440 and 255,422 to 295,440: 1.34 m to 1.51 m high,
+    0.44 to 0.78 of the half width.
+    Pass 5 (by eye beside a render, estimated): windscreen pane with slightly rounded
+    corners, two round lamps each side in a dark strip 1.3 m to 1.55 m, DB logo 1.62 m to 1.76 m.
+- source_id: wikipedia-de-ice-2
+  name: Wikipedia (de), ICE 2
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271770247
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox read 2026-11-06: power car (Triebkopf) 20 560 mm over couplers, 205,36 m for the power
+    car, six middle cars and the driving trailer, Höhe 3840 mm (power car), Breite 3070 mm (power
+    car) and 3020 mm (middle cars), bogie wheelbase 3000 mm (power car) and 2500 mm (middle cars),
+    carrying wheels 920 mm new, Fußbodenhöhe 1226 mm. Lead: one power car of class 402, six middle
+    cars of classes 805, 806 and 807 and a driving trailer of class 808; the section on the
+    differences to the ICE 1 says the trains look very much alike, the 402's front flap is split,
+    a coupler guide sticks out of its apron and the restaurant car has no raised roof. The middle
+    car and driving trailer length 26.4 m is derived: (205,36 m minus 20,56 m) divided by seven,
+    the ICE 1 middle car length (wikipedia-de-ice-1).
+- source_id: commons-clic-402-005-nienburg
+  name: Wikimedia Commons, DB ICE2 402 005 Nienburg 2105131545.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_ICE2_402_005_Nienburg_2105131545.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Side view of the ICE 2 power car 402 005 (green stripe livery), measured (method measured) on
+    the 3808 × 1759 original retrieved 2026-11-06, nose to the left. Scale 162.4 px per metre from
+    the roof (y 856, 3.84 m) to the skirt bottom (y 1366, 0.70 m as on the class 401 power head of
+    commons-nath-401-584-side); check: the stripe reads 1.38 m to 1.66 m and the grilles 2.62 m
+    to 3.30 m, as on the class 401. Tip at x 334. Cab side window a triangle 1.79 m to 2.78 m behind
+    the tip, 2.57 m to 3.22 m high; grilles 3.95 to 4.99 and 5.02 to 6.03 m behind the tip (front
+    pair) and 15.78 to 16.99 and 17.07 to 17.79 m (rear pair, cut by a shelter); ICE lettering 8.99
+    m to 11.70 m behind the tip, 1.99 m to 3.26 m high, leaning 0.2.
+- source_id: commons-falk2-402-025-hannover
+  name: Wikimedia Commons, J33 158 Bf Hannover Hbf, 402 025.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J33_158_Bf_Hannover_Hbf,_402_025.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Three-quarter view of the front of power car 402 025, retrieved 2026-11-06 (5760 × 3840), read
+    by eye: split windscreen with wipers, a trapezoid top light under it, one rectangular lamp
+    unit per side with a grille of three rows of slots between them (short, long, short), no DB
+    logo on the front, the coupler cover split down the middle with the coupler guide below the
+    red front stripe.
+- source_id: commons-falk2-808-003-hannover
+  name: Wikimedia Commons, J33 160 Bf Hannover Hbf, 808 003.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J33_160_Bf_Hannover_Hbf,_808_003.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Three-quarter view of the front of driving trailer 808 003, retrieved 2026-11-06 (5686 × 3734),
+    read by eye: the same face as the power car (windscreen, top light, lamp units, grille, split
+    coupler cover, front stripe), passenger windows right behind the cab section.
+- source_id: commons-tewebs-ice-4-side
+  name: Wikimedia Commons, BS Kurz-ICE P.JPG (TeWeBs)
+  homepage_url: https://commons.wikimedia.org/wiki/File:BS_Kurz-ICE_P.JPG
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: TeWeBs, via Wikimedia Commons
+  note: >-
+    Side panorama of a seven-car ICE 4, measured (method measured) on the 3840 × 1272 rendition
+    retrieved 2026-11-03. Heights on the end car at the right (nose to the right): 57 px per metre
+    from the sourced end car height 3.87 m (roof y 489) and the door sill taken as the floor 1.22 m
+    (door box 3313,515 to 3353,640), an assumption; rail then at y 709. Window band (box 3060,539
+    to 3290,582) 2.24 m to 3.0 m, side stripe (y 595 to 605) 1.83 m to 2.0 m, black cab window from
+    the door to its point (box 3367,543 to 3522,586) 2.17 m to 2.92 m. The panorama compresses
+    lengths towards its edges, so positions along the car are ratios: the door centre lies 1.17
+    times as far behind the tip as the rear edge of the black cab window (236 px against 202 px),
+    which gives 9.35 m from the tip for a window edge at 8.1 m (estimated); middle car doors at
+    both ends next to the gangway. Cross-check on commons-renardo-ice-4-three-quarter at the end
+    car door (128 px per metre between roof y 195 and rail y 690): window band 2.27 m to 2.81 m,
+    stripe 1.66 m to 1.84 m; the values used are the mean, 2.25 m to 2.95 m and 1.72 m to 1.9 m.
+- source_id: commons-foobian-ice-4-side
+  name: Wikimedia Commons, Female ICE driving end.jpg (Foobian)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Female_ICE_driving_end.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Foobian, via Wikimedia Commons
+  note: >-
+    Near side-on view of ICE 4 end car 9046 (nose to the left), read (method measured) on the
+    4000 × 3000 original retrieved 2026-11-06. Scale 77.5 px per metre, the same along and up the
+    car, from the roof crown y 1479 = 3.87 m (sourced end car height) and the rail y 1779 under the
+    leading bogie; tip x 1111. Nose centreline (profile_by_height, setback behind the tip per height):
+    white-body segmentation of the upper outline, least squares piecewise line with knots from 1.06
+    m to 3.86 m (residual 0.065 m rms); bumper and lower nose read by eye on a 4x crop: tip 0.88 m,
+    bottom 0.36 m from 0.8 m behind the tip; wiper base and windscreen bottom about 2.45 m at 1.83 m;
+    front stripe 0.84 m to 0.99 m at the tip. The photo was taken from a moving train about 25 m
+    away: the nose centreline lies 1.43 m further than the near side, so readings carry about 5 %
+    perspective uncertainty (the first door reads 9.0 m behind the tip against 8.51 m in the EMB
+    sheet). The roof box from 4.5 m back is not part of the nose and is left out.
+- source_id: commons-renardo-ice-4-three-quarter
+  name: Wikimedia Commons, DBAG 412 (9005) in München Hbf, 4.jpeg (Renardo la vulpo)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DBAG_412_(9005)_in_M%C3%BCnchen_Hbf,_4.jpeg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Renardo la vulpo, via Wikimedia Commons
+  note: >-
+    Three-quarter view of an ICE 4 end car, read (method measured, perspective, so heights are
+    rounded to 0.05 m) on the 3840 × 1285 rendition retrieved 2026-11-03, with
+    Berlin 20260627 Hauptbahnhof ICE 677.jpg (NutzerAusBerlin, CC0) as the front view. The nose is
+    a long sloped bonnet ending in a near vertical face from about 1.0 m to 1.55 m with the red
+    stripe sweeping down along the nose and across that face at about 1.1 m to 1.3 m; the windscreen spans about 0.7 of the half width from 2.3 m to 3.3 m, 2.1 m to 4.2 m behind the tip;
+    a lamp pod at each lower corner of the windscreen (1.85 m to 2.2 m, 0.5 to 0.86 of the half
+    width); a black cab window band runs from a point behind the windscreen back to the first
+    door. The nose length 6.2 m is where the roof reaches its full height, read against the door
+    position (estimated, the photo has no orthographic scale along the car). Nose loft read on the 1920 × 1440 front view (pixels of that file, scale from the face width at lamp
+    height x 1109 to 1600 = 2.852 m, 0.0058 m per pixel, perspective not corrected): windscreen
+    bottom x 1077 to 1387 (0.63 of the width on the face, wrapping back round the left corner to
+    x 971), windscreen top x 1024 to 1280 (0.52), coupler cover at the front band x 1178 to 1658
+    (0.98), chin x 1227 to 1632 (0.83) with its lower edge y 1141, 85 px (about 0.5 m) under the
+    front band, so the chin bottom is about 0.6 m. Tip-section widths in the catalogue are these
+    fractions pushed further to show on a lid whose plan already rounds (estimated). Cab window band
+    curve read on BS_Kurz-ICE_P.JPG (3840 × 1272, commons-tewebs-ice-4-side): tip
+    x 3569, door edge x 3355; band edge points (x, top y, bottom y) 3367 542 581, 3455 544 581,
+    3480 547 583, 3500 556 584, 3515 564 577, 3522 570 571 (point). Heights from the passenger
+    band 2.25 m to 2.95 m = 39 px (0.0177 m per pixel); setbacks from the tip to the door edge
+    taken as the 8.4 m cab length (0.039 m per pixel, the panorama is compressed along the car), so
+    the setbacks are estimated. Coupler cover bulge 0.12 m ahead of the tip estimated.
+    Body section: tumblehome and roof shoulder cannot be measured on these three-
+    quarter and front views without a perspective correction: the Berlin view is
+    three-quarter, so no bound was read. The front silhouette near the roof belongs to body sections 2 to
+    6 m behind the lamp row, so on an uncorrected photo it looks 10 to 25 % narrower from
+    perspective alone; the naive inset is an upper bound only. Values used: tumblehome 0.06 m, roof
+    shoulder exponent 2.0 (estimated).
+    Pass 5 (by eye on the CC0 Berlin Hauptbahnhof three-quarter view beside a render,
+    estimated): the windscreen with its black frame fills the upper front from about 1.95 m to
+    3.45 m over 0.84 to 0.88 of the half width with rounded corners, the lamp clusters sit in its
+    lower outer corners (2.0 m to 2.2 m), the DB logo on the bumper top at 1.62 m to 1.76 m; the
+    cab keeps more of its width towards the roof (0.66 at 3.3 m, 0.5 at the roof).
+- source_id: commons-terfloth-ice-td-neustadt
+  name: Wikimedia Commons, ICE-TD Neustadt(Dosse).jpg (Sebastian Terfloth)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE-TD_Neustadt(Dosse).jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Sebastian Terfloth (User:Sese_Ingolstadt), via Wikimedia Commons
+  note: >-
+    Head-on telephoto view of an ICE TD end car (class 605, same car body and cab as the ICE T), read
+    (method measured) on the 1000 × 667 rendition retrieved 2026-11-06 at a camera from the EXIF focal
+    length (200 mm on a 22.2 mm sensor, 9,009 px) and the body half width 1.425 m (127 px per metre).
+    Gives the side wall tumblehome (half width 1.43 m at the waist, 1.29 m at 3.0 m: 0.14 to 0.16 m) and
+    the lamp clusters, cab side window and logo positions on the face.
+- source_id: commons-gruenich-ice-td-side
+  name: Wikimedia Commons, ICE-TD im HBF HH.jpg (Grünich)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE-TD_im_HBF_HH.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Grünich, via Wikimedia Commons
+  note: >-
+    Side-on view of an ICE TD end car (class 605, nose to the right), which shares the ICE T car
+    body and cab, read (method measured) on the 4916 × 1222 original retrieved 2026-11-06. Scale
+    175.2 px per metre from the roof y 285 = 3.91 m (sourced ICE T end car height) and the rail
+    y 970 (wheels behind a barrier; checked against the passenger window band, which then reads
+    1.93 m to 2.75 m against 1.91 m to 2.71 m); tip x 4903. Nose centreline (profile_by_height) read by
+    eye on a 1.4x crop: tip 0.9 m, white lower nose bottom 0.49 m from 0.85 m behind the tip (the
+    plough under it is dark and not modelled), roof full height about 3.9 m behind the tip (the
+    front length 3.4 m keeps the passenger windows from 3.6 m, 0.08 m lower at most); cab side
+    window from 0.65 m to 2.87 m behind the tip, 1.9 m to 2.74 m high. The photo is close (perspective
+    between the centreline and the near side about 10 %). Read again by the N3 modeller on 2026-11-08 by
+    luminance (below 70) per column on the same original: the cab glazing is one wedge whose bottom stays at
+    1.90 m to 1.97 m from 2.85 m to 0.87 m behind the tip while its top falls from 2.74 m to 2.08 m, closing
+    at about 0.75 m; the side stripe reaches 0.30 m behind the tip, 1.48 m to 1.73 m, its top falling to
+    1.56 m in the last 0.15 m.
+- source_id: commons-ice-t-kinding
+  name: Wikimedia Commons, ICE-T Kinding.jpg (Sebastian Terfloth)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE-T_Kinding.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Sebastian Terfloth (Sese Ingolstadt), via Wikimedia Commons
+  note: >-
+    Three-quarter front view of an ICE T end car, read (method measured, perspective, values
+    rounded to 0.05 m) on the 960 × 640 rendition retrieved 2026-10-29. Heights from 63 px per
+    metre between the rail under the front (y 507) and the roof over the cab (y 262, sourced height
+    3.91 m). Windscreen box 147,288 to 285,379: 2.05 m to 3.45 m, nearly the full front width
+    (0.8 used, the pane wraps round the corners and the side measure is foreshortened). Lamp housings boxes 139,394 to 158,425 and 222,394 to 255,425: 1.38 m to 1.72 m,
+    0.5 to 0.82 of the half width. Bulbous coupler cover, the forward-most part, from 0.2 m to
+    1.3 m (box 135,425 to 250,495), tip taken at 0.8 m. Side stripe (box 380,397 to 560,416)
+    1.45 m to 1.72 m, ending on the nose side; it does not cross the front. Passenger window band
+    (box 389,336 to 535,387) 1.91 m to 2.71 m; cab side window, a trapezoid with a sloping front
+    edge (box 274,336 to 370,396). Passenger windows are large single panes between narrow white
+    pillars (pillar about 4 px against panes of 35 to 83 px, box 380,340 to 760,385): pane 1.9 m and
+    pillar 0.16 m from that ratio (estimated scale). Nose length, setbacks and plan are estimated
+    (oblique view).
+    Pass 5 (by eye beside a render, estimated): the windscreen is a pane with rounded
+    corners wrapping to 0.9 of the half width, the cab side window 2.1 m to 3.2 m with a rounded
+    front edge right behind it, lamp housings 1.36 m to 1.74 m leaning outwards, DB logo 1.78 m to
+    1.92 m on the centre line.
+- source_id: commons-ice-3-oberhaider
+  name: Wikimedia Commons, ICE 3 Oberhaider-Wald-Tunnel.jpg (Sebastian Terfloth)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE_3_Oberhaider-Wald-Tunnel.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Sebastian Terfloth (Sese Ingolstadt), via Wikimedia Commons
+  note: >-
+    Three-quarter front view of an ICE 3 end car, read (method measured, perspective, values
+    rounded to 0.05 m) on the 960 × 640 rendition retrieved 2026-10-29. Heights at the door
+    behind the cab from 65.5 px per metre between the roof (y 270, sourced height 3.89 m) and the
+    rail (y 525): side stripe (box 360,405 to 560,416) 1.66 m to 1.83 m, passenger window band
+    (box 410,340 to 535,392) 2.03 m to 2.82 m, cab side window a trapezoid with a sloping front
+    edge (box 283,335 to 383,410). The stripe sweeps down along the nose (from x 335 to x 255) and
+    runs across the front just above its lower edge, 0.6 m to 0.76 m read on the front plane at
+    about 70 px per metre. Oval windscreen from about 1.95 m to 3.2 m over 0.66 of the half width;
+    lamp slits low on the front (boxes 130,400 to 145,430 and 200,400 to 230,430), 1.05 m to 1.3 m,
+    0.25 to 0.55 of the half width. Nose length, plan and setbacks are estimated (oblique view). Nose loft read on the 960 × 640 file, a three-quarter view
+    (pixels of that file, perspective not corrected, so the widths are estimated): face width at
+    lamp height x 112 to 247 (y 413), at the front band x 115 to 240 (0.92, y 459), chin x 128 to
+    229 (0.75, y 496); windscreen and roof widths set by eye from the narrower upper cab (0.75 at
+    1.95 m, 0.55 at 3.2 m, 0.45 at the roof); the same loft is used for the Velaro D fronts of
+    407 and 408 (estimated).
+    Body section: on this three-quarter view no bound was read. The
+    front silhouette near the
+    roof belongs to body sections 2 to 6 m behind the lamp row, so on an uncorrected photo it looks
+    10 to 25 % narrower from perspective alone; the naive inset is an upper bound only. Values used:
+    tumblehome 0.08 m, roof shoulder exponent 2.0 (estimated).
+    Pass 5 (by eye on the same file beside a render from the same angle, estimated):
+    the windscreen is a pane with a rounded outline (superellipse exponent 4.5) from 1.85 m to
+    3.3 m that wraps to 0.8 to 0.88 of the half width, its bottom edge about 0.5 m above the DB
+    logo; lamp housings 0.98 m to 1.34 m leaning outwards with the lamps inside; the red DB logo
+    1.3 m to 1.44 m on the centre line; the cab side window 2.0 m to 3.1 m with a front edge that
+    rounds back by 0.35 m, right behind the windscreen with a narrow white pillar.
+- source_id: commons-velaro-407-paris-est
+  name: Wikimedia Commons, Velaro-ice-db-class-407-paris-est.jpg (Remontees)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Velaro-ice-db-class-407-paris-est.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Remontees, via Wikimedia Commons
+  note: >-
+    Close three-quarter front view of a class 407 end car on the 960 × 640 rendition retrieved
+    2026-10-29, read for the layout of the front (method measured, strong perspective, so the
+    heights are estimated against the measured ICE 3 front of commons-ice-3-oberhaider): a bulbous
+    bumper outlined in black (box 85,345 to 330,500) carries the red stripe across the front
+    (y 440 to 455, about 0.62 m to 0.78 m); the stripe climbs steeply along the nose side (from
+    x 280 to x 600) to the body band under the cab side window; lamp clusters with vent grilles sit
+    under the lower corners of the windscreen (box 270,290 to 330,335); the windscreen fills the
+    upper front (box 200,190 to 360,280); the cab side window is a large trapezoid (box 560,225 to
+    740,330) well behind the windscreen.
+    Pass 5 (by eye beside a render from a similar angle, estimated): windscreen
+    pane 2.15 m to 3.35 m wrapping to 0.82 to 0.9 of the half width with rounded corners; lamp
+    housings leaning outwards under the lower windscreen corners (1.74 m to 2.1 m) with dark vent
+    grilles above them (2.12 m to 2.3 m on the nose side); DB logo 1.12 m to 1.26 m on the bumper;
+    a fuller plan (exponents 3.2 and 2.0) and a bumper that keeps the full width down to 0.68 m;
+    cab side window 2.15 m to 3.2 m with a rounded front edge.
+    The black seam round the bumper is drawn as a line across the front at 1.42 m to 1.47 m and
+    a line on each nose side leaning back from 0.5 m to the front line (estimated).
+- source_id: commons-velaro-407-stuttgart-kopf
+  name: Wikimedia Commons, ICE 407 717 Stuttgart Hbf Kopf.JPG (Hoff1980)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE_407_717_Stuttgart_Hbf_Kopf.JPG
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Hoff1980, via Wikimedia Commons
+  note: >-
+    Near side-on view of the class 407 end car nose, 2304 × 1536 original retrieved 2026-11-06 (method
+    measured, fit harness tools/trainforge/scripts/fit). Pinhole camera from the EXIF focal
+    length (40 mm equivalent, 2560 px), the door (centre 4.59 m forward of the car centre, 1.07 m wide,
+    237 px) and the roof (3.89 m): camera 11.56 m off the car side, 2.1 m above rail, square to the side.
+    The silhouette, back-projected to the centre plane, gives the centreline profile as setback from the
+    tip and height: tip 0.86 m, 1.43 m at 0.34 m, 2.02 m at 0.95 m, 2.7 m at 1.87 m, 3.3 m at 3.09 m,
+    3.63 m at 4.0 m, full roof height about 6.6 m behind the tip; the lower nose 0.45 m at 0.35 m and
+    0.3 m at the skirt; the windscreen glass from 2.0 m (0.95 m behind the tip) to 3.45 m (3.45 m
+    behind it); the side stripe 1.66 m to 1.82 m. The profile above 3 m agrees with the side drawing
+    commons-velaro-407-drawing within 0.03 m.
+- source_id: commons-velaro-407-drawing
+  name: Wikimedia Commons, Deutsche Bahn Class 407 w-pantograph.png (Glide08)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Deutsche_Bahn_Class_407_w-pantograph.png
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Glide08, via Wikimedia Commons
+  note: >-
+    Side schematic of the whole class 407 set, 6476 × 194 px (method measured): the end car from the
+    nose tip to the gangway is 845 px, 32.2 px per metre for 26.26 m; the roof stands 125.5 px above the
+    wheel tread, 3.90 m, so the body is 3.89 m high like the ICE 3 (the infobox height 4343 mm of
+    wikipedia-de-407 is not the roof).
+- source_id: siemens-velaro-d-factsheet
+  name: Siemens Mobility, High-Speed Trainset Velaro D (Class BR 407), factsheet 2014, page 3
+  homepage_url: https://assets.new.siemens.com/siemens/assets/api/uuid:c993a507-4e7c-406f-b644-9a9641b8a639/factsheet-high-speed-trainset-velaro-e.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://assets.new.siemens.com/siemens/assets/api/uuid:c993a507-4e7c-406f-b644-9a9641b8a639/factsheet-high-speed-trainset-velaro-e.pdf
+  attribution: Siemens Mobility
+  note: >-
+    Plan seat diagram of the end car (raster about 16.6 px per metre, method measured): the nose narrows over about 2.9 m from the tip, half width as a fraction of the body
+    half width 0.51, 0.65, 0.73, 0.80, 0.84, 0.88, 0.92, 0.96, 0.99 at 0.3 m steps behind the tip. Only
+    the numbers are used; the document is not copied.
+- source_id: siemens-velaro-ms-article
+  name: Zeiler, Scheer, Seffrin (Siemens Mobility), Velaro MS für Europa, Eisenbahn-Revue International 7/2023
+  homepage_url: https://assets.new.siemens.com/siemens/assets/api/uuid:fde4c169-496e-4353-ac37-d1ba98282f8a/22307-ICE3neo9netge.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://assets.new.siemens.com/siemens/assets/api/uuid:fde4c169-496e-4353-ac37-d1ba98282f8a/22307-ICE3neo9netge.pdf
+  attribution: Siemens Mobility, Eisenbahn-Revue International
+  note: >-
+    Class 408 end car body 25.7 m and middle car body 24.2 m, floor 1240 mm, wheel 920 mm, train 201 m
+    With the 0.5 m between the bodies of the class 407 (middle car
+    24.7 m over couplers) the end car is 26.26 m over couplers, and 2 × 26.26 + 6 × 24.7 = 200.72 m,
+    the unit length of wikipedia-de-408 (method derived).
+- source_id: commons-ice-3neo-driebergen
+  name: Wikimedia Commons, ICE3neo db driebergenzeist 20240719.jpg (Nickteeuwen)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE3neo_db_driebergenzeist_20240719.jpg
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: Nickteeuwen, via Wikimedia Commons
+  note: >-
+    Three-quarter view of a class 408 (ICE 3neo) on the 960 × 540 rendition retrieved 2026-10-29,
+    used to confirm that the 408 front keeps the class 407 layout (bumper with the stripe across,
+    stripe climbing the nose side, lamps under the windscreen corners, trapezoid cab side window).
+- source_id: commons-ice-3neo-hannover
+  name: Wikimedia Commons, ICE 3neo, Hannover Hbf.jpg (RAIL P)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE_3neo,_Hannover_Hbf.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: RAIL P (RAIL.PHOTOGRAPHY), via Wikimedia Commons
+  note: >-
+    Near head-on view of a class 408 (ICE 3neo) at Hannover Hbf, 5190 × 3451 original (Nikon D3200,
+    78 mm equivalent). A pinhole camera about 20 m ahead of the nose, matched on the silhouette, roof,
+    skirt and nose stripe in the trainforge preview, places the windscreen, wiper panel, louvres, lamp
+    clusters, top light, DB logo and nose stripe of the 408 front (method estimated, by eye at that camera).
+- source_id: commons-ingolfbln-442-cottbus
+  name: Wikimedia Commons, Flickr - IngolfBLN - Bahnhof Cottbus (73).jpg (IngolfBLN)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Flickr_-_IngolfBLN_-_Bahnhof_Cottbus_(73).jpg
+  licence: CC-BY-SA-2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0/
+  attribution: IngolfBLN, via Wikimedia Commons
+  note: >-
+    Orthographic side view of a Talent 2 end car, measured (method measured) by the WP-5.1 reference
+    researcher on the 3840 × 2880 rendition retrieved 2026-11-03: rail y 1995, 298 px per metre from the sourced height 4.26 m and the sourced
+    bogie wheelbase 2.3 m. Window band 1.72 m to 3.11 m, windows 1.73 m wide at a pitch of 2.36 m
+    (pillar 0.62 m, boxes x 950 to 1465, 1650 to 2172, 2356 to 2863), light grey door portal 1.69 m
+    wide, passenger door centre 9.85 m behind the cab door centre, which lies 3.33 m behind the tip
+    (cab door 0.64 m wide, dark grey). Nose silhouette from the companion side view
+    20260918.Bahnübergang.Papiermühlengasse.-034.jpg (Bybbisch94, CC BY-SA 4.0): roof at full height
+    2.64 m behind the tip; setbacks 0.03 m at 1.04 m, 0.42 m at 1.93 m, 1.24 m at 3.43 m.
+- source_id: commons-meskens-442-652-front
+  name: Wikimedia Commons, Dresden DB 442652 01.JPG (Ad Meskens)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Dresden_DB_442652_01.JPG
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Ad Meskens, via Wikimedia Commons
+  note: >-
+    Front view of a Talent 2, read by the WP-5.1 reference researcher on the 2061 × 2109 original
+    (half width 550 px = 1.4625 m at the widest line, centre x 856): windscreen 0.63 of the half
+    width, dark grey helmet mask 0.84 running over the roof front, one lamp cluster per side in a
+    black lozenge at 0.46 to 0.7 under the lower outer windscreen corners, its top level with the
+    windscreen bottom. Heights on this close view are perspective-distorted and not used.
+    Nose loft (scale method on the 2061 px file, close and from above, so only widths
+    are taken; heights are the catalogue levels): body width 1100 px = 2.925 m at the widest line
+    (researcher); roof y 141 x 515 to 1374 (0.78, about 3.8 m), at the windscreen y 464 x 365 to
+    1438 (0.97, about 2.7 m), bulbous lower nose y 1580 x 429 to 1481 (0.96, about 0.4 m); black
+    coupler recess x 571 to 1101 (0.48) from just under the grille (about 1.15 m, estimated) down to
+    the grey band (about 0.35 m, estimated).
+    Body section: close view from above, no bound readable. Values used: tumblehome
+    0.08 m, roof shoulder exponent 2.4 (estimated).
+    Pass 5 (by eye on this front view beside a render from the same angle,
+    estimated): the grey helmet (drawn in the neutral equipment grey) narrows to rounded lower
+    corners at 1.8 m round a windscreen 1.95 m to 3.43 m over 0.62 to 0.67 of the half width; the
+    lamp pods are dark vertical ovals 1.36 m to 1.96 m with the lamps inside; the white DB logo
+    1.58 m to 1.76 m on the centre line; the lower nose narrows to 0.78 of the width at 0.3 m.
+- source_id: commons-440-aalen-side
+  name: Wikimedia Commons, 440 und 111 in Aalen.jpg (Simon Scharfenberger)
+  homepage_url: https://commons.wikimedia.org/wiki/File:440_und_111_in_Aalen.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Simon Scharfenberger (Altsprachenfreund), via Wikimedia Commons
+  note: >-
+    Orthographic side view of a whole Coradia Continental 440 end car, measured (method measured)
+    by the WP-5.1 reference researcher on the 3840 × 2157 rendition retrieved 2026-11-03: nose tip
+    x 1238 to Jacobs joint x 3671 for the sourced 19.05 m, 127.6 px per metre; rail y 1355 from the
+    sourced height 4.28 m. Windows 1.77 m to 2.7 m, 1.15 m wide at a pitch of 1.66 m with red
+    between them; light grey lower band 0.85 m to 1.11 m; one light grey door portal 1.61 m wide,
+    centre 7.88 m behind the tip; cab side window 1.61 m to 2.28 m behind the tip; nose silhouette
+    vertical below 2.3 m with a rounded top, roof at full height 1.33 m behind the tip.
+- source_id: commons-440-039-nuernberg-front
+  name: Wikimedia Commons, DB440 039 Nürnberg 2019.jpg (DoomWarrior)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB440_039_N%C3%BCrnberg_2019.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: DoomWarrior, via Wikimedia Commons
+  note: >-
+    Front view of a Coradia Continental 440, read by the WP-5.1 reference researcher on the
+    1920 × 1280 rendition (half width 276 px = 1.46 m): windscreen 2.4 m to 3.85 m over 0.81 of the
+    half width in a dark grey helmet (0.92, from 2.17 m over the roof front), a row of lamps at
+    0.57 to 0.91 of the half width from 1.72 m to 1.97 m.
+    Pass 8 (same rendition, about 203 px per metre in height from the
+    skirt bottom 0.45 m at y 1045, estimated): grey helmet down to 1.97 m between the lamp pods and
+    out to about 0.84 of the half width; lamp pods 1.62 m to 1.94 m at 0.5 to 0.92 with two round
+    lenses each; DB logo 1.56 m to 1.86 m over 0.15; amber display 3.58 m to 3.78 m over 0.4; top
+    lamp on the helmet at about 3.95 m with a grille above; black coupler pocket about 0.62 m to
+    1.5 m over 0.52 of the half width; dark grey lower front under 0.9 m. Helmet grey sampled as
+    #5a6067 (mean of the medians in 11 px boxes at x 255 y 600, x 640 y 700 and x 350 y 690).
+- source_id: commons-1440-buttenheim-front
+  name: Wikimedia Commons, Altendorf-Buttenheim Bahnhof S-Bahn-20230625-RM-161923.jpg (Ermell)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Altendorf-Buttenheim_Bahnhof_S-Bahn-20230625-RM-161923.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Ermell, via Wikimedia Commons
+  note: >-
+    Straight front view of a class 1440, read by the WP-5.1 reference researcher on the 1920 × 1440
+    rendition (half width 235 px = 1.46 m, 154 px per metre, rail y 1244): trapezoidal windscreen
+    2.49 m to 3.92 m, 0.83 of the half width at the top and 0.55 at the bottom (0.69 used), dark
+    grey chin 2.11 m to 2.49 m and roof cap above 3.92 m (one mask band 2.11 m to the roof used),
+    one round lamp per side at 0.54 to 0.67 from 2.05 m to 2.2 m in a black diagonal strip, skirt
+    bottom 0.34 m. Nose length and setbacks are estimated from the angled side view.
+    Nose loft (scale method on the 1920 px file; heights from the measured lamp row,
+    widths as fractions of the body width at the lamp row, perspective not corrected): body x 696 to
+    1196 at the lamp row y 940 = 2.92 m (0.0058 m per pixel), lamps 2.13 m; roof y 560 x 816 to 1096
+    (0.56, 4.34 m), y 740 x 728 to 1180 (0.9, 3.29 m), chin y 1188 x 708 to 1176 (0.94, 0.68 m);
+    dark coupler recess x 816 to 1036 (0.44) from y 1000 to 1168 (1.77 m to 0.79 m). The roof comes
+    out 0.23 m above the catalogue height, so heights carry about 0.2 m of error.
+    Body section: silhouette at 3.29 m against the lamp row gives an upper bound of
+    0.15 m per side. The front silhouette near the roof belongs to body sections 2 to 6 m behind the
+    lamp row, so on an uncorrected photo it looks 10 to 25 % narrower from perspective alone; the
+    naive inset is an upper bound only. Values used: tumblehome 0.06 m, roof shoulder exponent 2.4
+    (estimated).
+    Pass 5 (by eye on this front view beside a render, estimated): windscreen pane
+    narrowing upwards (0.8 to 0.56), light grey nose cap 0.7 m to 1.9 m round the dark coupler
+    recess 0.74 m to 1.36 m, round lamps in dark pods 1.62 m to 2.02 m near the sides, DB logo
+    1.94 m to 2.09 m under the windscreen frame.
+- source_id: commons-1440-side
+  name: Wikimedia Commons, Br1440.jpg (Zug Videos Bilder)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Br1440.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Zug Videos Bilder, via Wikimedia Commons
+  note: >-
+    Side view of a class 1440 end car from slightly ahead, read by the WP-5.1 reference researcher
+    on the 3840 × 2161 rendition: vertical scale 204 px per metre from the body bands it shares with
+    the 440 (windows 1.77 m to 2.7 m, light grey lower band 0.85 m to 1.11 m); the windscreen top
+    lies about 1.6 m behind the lower tip (low confidence, angled view).
+- source_id: commons-mireo-hausach-side
+  name: Wikimedia Commons, Siemens Mireo in Hausach 01.jpg (Ys2003)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Siemens_Mireo_in_Hausach_01.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Ys2003, via Wikimedia Commons
+  note: >-
+    End car of a Mireo about 33 degrees off square, read by the WP-5.1 reference researcher on the
+    1854 × 1853 original (rail y 1290, 199 px per metre from the sourced height 4.208 m): dark grey
+    window band 1.82 m to 2.88 m (1.77 m to 2.96 m on DB 463 001 Velim.jpg, Plutowiki, CC0; mean
+    1.8 m to 2.92 m used), slit headlights 1.77 m to 2.0 m, nose tip about 1.45 m with the apron down
+    to about 0.2 m, trapezoid cab side window 2.3 m to 2.98 m high. Lengths are not read (angled view);
+    the nose profile is estimated.
+- source_id: commons-mireo-karlsruhe-front
+  name: Wikimedia Commons, Bwegt DB 463 589-2 in Karlsruhe Hbf (2023).jpg (JoachimKohler-HB)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bwegt_DB_463_589-2_in_Karlsruhe_Hbf_(2023).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: JoachimKohler-HB, via Wikimedia Commons
+  note: >-
+    Front of a Mireo, read by the WP-5.1 reference researcher on the 1920 × 1440 rendition (centre
+    x 1284, half width 311 px): windscreen about 0.7 of the half width at the top, narrowing in a V
+    above the logo; slit lamps at 0.65 to 0.87 of the half width; very large black coupler recess.
+    Nose loft (scale method on the 1920 px file; heights from the measured lamp row,
+    widths as fractions of the body width at the lamp row, perspective not corrected): body x 952 to
+    1592 at the lamp row y 820 = 2.808 m (0.0044 m per pixel), lamps 1.89 m; roof y 300 x 1060 to
+    1488 (0.67, 4.17 m), helmet y 480 x 1020 to 1540 (0.81, 3.38 m), y 660 x 980 to 1580 (0.94, 2.59
+    m), apron y 1160 x 992 to 1592 (0.94, 0.39 m). Roof height from this scale 4.17 m against 4.208
+    m in the catalogue.
+    Body section: silhouette at 3.38 m against the lamp row gives an upper bound of
+    0.27 m per side, mostly the roof shoulder and perspective. The front silhouette near the roof
+    belongs to body sections 2 to 6 m behind the lamp row, so on an uncorrected photo it looks 10 to
+    25 % narrower from perspective alone; the naive inset is an upper bound only. Values used:
+    tumblehome 0.1 m, roof shoulder exponent 2.4 (estimated).
+    Pass 5 (by eye on this front view beside a render, estimated): black frame
+    round the windscreen from 1.84 m with rounded lower corners, windscreen pane 2.0 m to 3.55 m
+    over 0.72 to 0.8 of the half width, slim LED lamp strips in the frame's lower outer corners
+    (1.86 m to 1.98 m), DB logo 1.62 m to 1.78 m, coupler recess 0.35 m to 1.25 m over 0.4.
+    Livery (pass 5): the unit wears the bwegt livery; colours sampled on the 1920 × 1440 file:
+    white body #e3ddd3 (mean of 12 by 12 px at x 760 y 930 and x 700 y 980), yellow #c8ad38
+    (median of the 20 brightest yellow pixels on the front between x 820 and 1600, y 380 and 900;
+    the hall light leaves the front partly in shade, so the real yellow is brighter).
+- source_id: commons-1428-duisburg-side
+  name: Wikimedia Commons, DB 1428 Duisburg Hauptbahnhof 1904060958.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_1428_Duisburg_Hauptbahnhof_1904060958.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Orthographic side view of two DB Regio FLIRT 3 end cars nose to nose in DB red, measured by the
+    WP-5.1 reference researcher on the 3840 × 2160 rendition (rail y 1495, 223 px per metre from the
+    sourced height 4.12 m): nose silhouette 0.07 m at 2.0 m, tip 1.55 m, 1.61 m at 3.88 m, roof at
+    full height 2.29 m behind the tip; windows 1.79 m to 2.79 m, 1.5 m wide with red between them;
+    white lower band 1.04 m to 1.24 m over a grey lower body down to 0.55 m at the nose; cab side
+    window 1.12 m to 2.06 m behind the tip; black lamp housings 1.46 m to 1.77 m. Light grey roof
+    and a white cant stripe at about 3.1 m are not modelled. The livery shows that DB Regio runs
+    its FLIRT 3 in Verkehrsrot.
+- source_id: commons-falk2-dbpbzfa-668-hannover
+  name: Wikimedia Commons, J33 146 Bf Hannover Hbf, DBpbzfa 668.2.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J33_146_Bf_Hannover_Hbf,_DBpbzfa_668.2.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Three-quarter front of an Intercity 2 driving trailer DBpbzfa 668.2, read in pass 5 on the 960 × 620 rendition: heights from about 71 px per metre between the roof (y 174,
+    sourced 4.632 m) and the bottom of the front (y 470, about 0.45 m, estimated); lateral
+    fractions from the front centre x 693 and the right edge x 797 (perspective not corrected).
+    Grey mask from 1.7 m over the roof front over about 0.8 of the half width, dark field 2.17 m to
+    4.17 m over 0.58 holding the windscreen and the destination display, two lamps each side in a
+    dark housing 1.81 m to 2.05 m, red DB logo 1.42 m to 1.62 m, dark coupler area under the white
+    lower front. Depths estimated.
+- source_id: commons-falk2-dabpbzfa-connewitz
+  name: Wikimedia Commons, J24 582 Bf Connewitz, DABpbzfa 767.2.jpg (Falk2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:J24_582_Bf_Connewitz,_DABpbzfa_767.2.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Falk2, via Wikimedia Commons
+  note: >-
+    Low three-quarter front of a DB Regio double-deck driving trailer DABpbzfa 767.2, read in
+    pass 5 on the 960 × 640 rendition. Heights from 114 px per metre between the
+    buffer centre (y 489, 1.06 m standard) and the roof (y 78, 4.63 m assumed for the class;
+    perspective not corrected), lateral fractions from the left half of the front (logo centre
+    x 227 to the left edge x 112): light grey mask 1.56 m to 4.38 m over about 0.85, black field
+    1.9 m to 3.9 m over 0.7 holding the destination display, the windscreen glass (2.39 m to 3.41 m)
+    and the lamp strip (1.95 m to 2.19 m, two lamps each side from 0.18 to 0.62), top lamp 3.97 m
+    to 4.17 m, DB logo 1.31 m to 1.53 m, black buffer beam 0.83 m to 1.17 m. Depths estimated.
+- source_id: commons-490-oberhafenkanal-front
+  name: Wikimedia Commons, Hamburg 20260815 S-Bahnbrücke Oberhafenkanal 02.jpg (NutzerAusBerlin)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Hamburg_20260815_S-Bahnbr%C3%BCcke_Oberhafenkanal_02.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: NutzerAusBerlin, via Wikimedia Commons
+  note: >-
+    Straight front of an S-Bahn Hamburg class 490 unit, read in pass 5 on the
+    1920 × 1440 rendition: heights from 205 px per metre between the roof (y 480, sourced 3.76 m)
+    and the skirt bottom (y 1180), lateral fractions by eye. White front face, dark frame 2.1 m to
+    3.52 m over about 0.68 of the half width round the windscreen glass 2.3 m to 3.42 m, dark lamp
+    pods 1.61 m to 2.25 m near the sides with the lamps at their top, DB logo 1.56 m to 1.76 m,
+    wide dark coupler recess 0.35 m to 1.52 m over 0.45. Depths estimated.
+- source_id: commons-146-273-koeln-front
+  name: Wikimedia Commons, 146 273 Köln Hauptbahnhof 2015-12-26-01.JPG (Rolf Heinrich, Köln)
+  homepage_url: https://commons.wikimedia.org/wiki/File:146_273_K%C3%B6ln_Hauptbahnhof_2015-12-26-01.JPG
+  licence: CC-BY-3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0/
+  attribution: Rolf Heinrich, Köln, via Wikimedia Commons
+  note: >-
+    Near straight front of a DB Regio class 146.2 (146 273) hauling double-deck coaches, read in
+    pass 6 on the 960 × 607 rendition: heights from 64.6 px per metre between the
+    rail (y 525, estimated) and the roof front edge (y 250, taken as 4.26 m, estimated), lateral
+    fractions from the front edges x 655 to 845: display 3.82 m to 4.02 m, two windscreen panes
+    2.86 m to 3.79 m over 0.76 with a centre pillar, light grey bars 1.97 m to 2.29 m from 0.25 to
+    0.76 either side of the DB logo, lamp pairs 1.44 m to 1.66 m from 0.53 to 0.86, black buffer
+    beam below about 1.3 m. Depths are taken from the class 146.5 front. Read again by the N3 modeller on
+    2026-11-08 on the 3840 x 2429 rendition with the UIC side buffers as the scale: buffer head centres x 2717
+    and 3257.5 at y 1862, 1.75 m apart at 1.06 m above rail (the forge's buffer geometry), 308.6 px per metre,
+    rail at y 2190, centre line x 2968 (DB logo and lamp pairs). Face plane: red face to 1.35 m off the centre
+    at 1.5 m to 2 m, 1.10 m at the windscreen; roof front edge y 1018, 3.80 m; dark windscreen frame 2.64 m to
+    3.68 m over 1.07 m, display 3.50 m to 3.64 m over 0.58 m, glass 2.67 m to 3.45 m, top lamp housing 2.28 m
+    to 2.50 m, light grey bars 1.93 m to 2.20 m from 0.32 m to 1.05 m, DB logo 1.90 m to 2.19 m over 0.22 m, lamp
+    lenses 1.46 m to 1.66 m from 0.57 m to 0.98 m off the centre, dark buffer beam from 1.38 m down to the
+    plough at 0.19 m. The body height of the dewiki Traxx infobox (Höhe 4256 mm, revision 271890390) is taken
+    as the height over the lowered pantograph, not the roof (inference).
+- source_id: commons-622-508-koeln-deutz-front
+  name: Wikimedia Commons, 622 508 Köln-Deutz 2015-09-30-1.JPG (Rolf Heinrich, Köln)
+  homepage_url: https://commons.wikimedia.org/wiki/File:622_508_K%C3%B6ln-Deutz_2015-09-30-1.JPG
+  licence: CC-BY-3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0/
+  attribution: Rolf Heinrich, Köln, via Wikimedia Commons
+  note: >-
+    Near straight front of a DB Regio LINT 54 (622 508), read in pass 5 on the
+    1920 × 1276 rendition: heights from 152 px per metre between the roof (y 455, sourced 4.31 m)
+    and the skirt bottom (y 1063, about 0.3 m), lateral fractions from the front edges x 750 to
+    1217: grey roof cap 3.98 m up, black frame 2.11 m to 3.97 m over 0.86 round the windscreen
+    glass 2.55 m to 3.7 m, round lamps 1.62 m to 1.95 m from 0.36 to 0.56, DB logo 1.67 m to
+    1.89 m, light grey band 1.01 m to 1.18 m, dark coupler recess 0.57 m to 1.5 m over 0.5. Depths
+    estimated (the LINT 41 nose of 648 is the template). Read again by the N3 modeller on 2026-11-08 on the same
+    rendition for the head built from 2011 (wikipedia-de-coradia-lint-r13: the first 620 delivered at the end of
+    2012, the first 620 and 622 in service from May 2014; its gallery contrasts the head of a newer LINT 54
+    with an older LINT 41): the lower front is full width and
+    flat down to the coupler as on 623 010 (commons-623-010-weinheim-front). Face centre x 979, half width 199 px
+    at the lamp row (144.7 px per metre for 1.375 m), heights from the coupler head centre (y 924) at 0.95 m
+    as on the LINT 41, which couples with the LINT 54: windscreen frame from 1.97 m, display 2.03 m to 2.25 m
+    over 0.48, large lamps 1.64 m to 1.85 m centred at 0.58, small lamps 1.49 m to 1.66 m centred at 0.42, DB
+    logo 1.55 m to 1.79 m over 0.126, coupler recess 0.55 m to 1.39 m over 0.59, coupler head 0.75 m to
+    1.16 m over 0.28, red sides down to 1.18 m, light grey band 0.88 m to 1.18 m, basalt grey below.
+- source_id: commons-622-004-wiehl
+  name: Wikimedia Commons, Bf Wiehl 4.JPG (Bahnthaler)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bf_Wiehl_4.JPG
+  licence: CC-BY-3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0/
+  attribution: Bahnthaler, via Wikimedia Commons
+  note: >-
+    Three-quarter view of DB Regio LINT 54 622 004 (Vareo) in Wiehl, 2014-12-07, read by eye by the N3 modeller on
+    2026-11-08 on the 1920 x 1082 rendition: the head built from 2011, the lower front vertical and full width
+    from the lamps down to the coupler recess, a broad apron below it, the windscreen raked back from about the
+    display. No dimension is taken from it.
+- source_id: commons-623-010-weinheim-front
+  name: Wikimedia Commons, Bahnhof Weinheim - Alstom Coradia LINT 41 - 623-010 - 2019-02-13 14-23-12.jpg (Radosław Drożdżewski)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Weinheim_-_Alstom_Coradia_LINT_41_-_623-010_-_2019-02-13_14-23-12.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Photographs by Radosław Drożdżewski (User:Zwiadowca21), via Wikimedia Commons
+  note: >-
+    Near head-on front of the LINT 41 with the head built from 2011 (623 010; the 623, 1648 and 2648 share
+    the 42,17 m length of that head in wikipedia-de-coradia-lint-r13), read by the M5 modeller on 2026-11-08
+    on the 1280 x 1063 thumbnail (x, y pixels, origin top left). Face scale 165 px per metre from the half
+    width 1.375 m (centre x 485, edge x 258 at the lamp row); heights 0.30 m plus (870 - y) / 165, the skirt
+    bottom at y 870 taken as 0.30 m, which puts the coupler head centre (y 762) at 0.95 m as on the 648.
+    Read: dark frame round the windscreen from 1.94 m over 0.81 of the half width, destination display
+    2.0 m to 2.18 m over 0.40, large round lamps 1.69 m to 1.87 m centred at 0.57, small round lamps
+    1.54 m to 1.67 m centred at 0.42, DB plate 1.51 m to 1.66 m, a wide dark coupler recess 0.48 m to
+    1.39 m over 0.68 with the coupler head 0.75 m to 1.12 m over 0.25, the lower front full width and flat
+    down to a dark skirt 0.30 m to 0.42 m, two grilles on the roof cap either side of a roof lamp. Depths
+    and the roof heights are not taken (perspective).
+- source_id: commons-nwb-648-379-1648-304-wilhelmshaven
+  name: Wikimedia Commons, NWB 648 379 Wilhelmshaven 1903191021.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:NWB_648_379_Wilhelmshaven_1903191021.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Two NordWestBahn LINT 41 nose to nose; the file description reads VT 648 379 (Alstom Coradia LINT mit
+    alter Kopfform) und VT 1648 304 (Alstom Coradia LINT mit neuer Kopfform). Read by eye by the M5
+    modeller on 2026-11-08 on the 1280 x 720 thumbnail, oblique view: the 648 head narrows and recedes
+    towards the coupler, the 1648 head keeps its lower front nearly vertical and full width down to the
+    coupler, with a broad apron below it; lamps and windscreen bottom at about the same height on both. No
+    dimension is taken from it.
+- source_id: commons-642-werkstatt-side
+  name: Wikimedia Commons, 20210419.Regio-Werkstatt.-013.jpg (Bybbisch94, Christian Gebhardt)
+  homepage_url: https://commons.wikimedia.org/wiki/File:20210419.Regio-Werkstatt.-013.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Bybbisch94, Christian Gebhardt, via Wikimedia Commons
+  note: >-
+    Near side-on view of the cab end of a DB Regio Desiro Classic (642 086) in a depot without a
+    coupler cover, read on the 1920 px rendition in pass 12 with a hand-matched camera
+    (rail, roof, window sill and top rows within 15 px; about 155 px per metre at the nose): side
+    profile of the nose (glass from 1.6 m at the tip raked back to the roof, near-vertical dark
+    lower front 0.85 m to 1.5 m, skirt sweeping back to about 0.35 m), light band about 0.97 m to
+    1.13 m, front wheel of the cab bogie about 4.2 m behind the nose.
+- source_id: commons-642-schoena-front
+  name: Wikimedia Commons, Bahnhof Schöna (2026)-10.jpg (Sneeuwvlakte)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Sch%C3%B6na_(2026)-10.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Sneeuwvlakte, via Wikimedia Commons
+  note: >-
+    Three-quarter front of a DB Regio Desiro Classic (642 678), read by eye in pass 5; no sourced car height, so every value is estimated against an assumed 3.85 m roof: light
+    grey mask round one dark field 1.8 m to 3.55 m that holds the windscreen (2.5 m to 3.5 m) and
+    the destination display, round lamps at the bottom of the field near its sides, DB logo
+    between them, a white band 1.3 m to 1.45 m across the front, a dark grey lower nose with the
+    coupler. Read again by the N3 modeller on 2026-11-08 on the 1920 x 1280 rendition: a red coupler cover bag
+    hangs over the coupler (x 597 to 750, y 745 to 835, its centre 23 px right of the lamps' centre x 650.5);
+    on the vertical scale of the model's lamp and display centres (1.77 m and 2.12 m at y 673 and 627, 131 px
+    per metre) it spans 0.53 m to 1.22 m, and on the lamps' lateral span (centred at 0.71 of the half width,
+    140 px to the half width) 0.55 of the half width either side of the centre. The lower nose round it samples
+    #0c0b09 to #34312e (near black), the bag #451716 in the shade.
+- source_id: commons-642-137-bad-schandau
+  name: Wikimedia Commons, 642 137 Bad Schandau.jpg (Pedalito)
+  homepage_url: https://commons.wikimedia.org/wiki/File:642_137_Bad_Schandau.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Pedalito, via Wikimedia Commons
+  note: >-
+    Three-quarter front of DB Regio 642 137 leading (white lamps lit) in Bad Schandau, 2013-07-07, read by eye by
+    the N3 modeller on 2026-11-08 on the 1920 x 1440 rendition: the red coupler cover bag is on the leading end
+    too, opened round the coupler head; a light grey strip with the running number under the dark field, a near
+    black lower nose with a grille. No dimension is taken from it.
+- source_id: commons-desiro-hc-nuremberg-side
+  name: Wikimedia Commons, Desiro HC, Nuremberg (P1200935).jpg (Matti Blume)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Desiro_HC,_Nuremberg_(P1200935).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Matti Blume, via Wikimedia Commons
+  note: >-
+    Side of a Desiro HC double-deck middle car square to the camera, read by the WP-5.1 reference
+    researcher on the 2270 × 973 original (horizontal 52.2 px per metre from the car length
+    25.8 m, vertical 60.6 px per metre from the height 4.64 m): upper-deck windows 3.17 m to
+    3.80 m, lower-deck windows 1.04 m to 2.20 m, light grey lower band 0.56 m to 0.81 m, two
+    door pairs 1.38 m wide with centres 7.6 m and 4.4 m either side of the car centre (the second
+    at the step to the raised single-level end over one bogie).
+- source_id: commons-desiro-hc-strullendorf-front
+  name: Wikimedia Commons, Strullendorf Franken Thüringen Express-20240310-RM-164206.jpg (Reinhold Möller)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Strullendorf_Franken_Th%C3%BCringen_Express-20240310-RM-164206.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Reinhold Möller (Ermell), via Wikimedia Commons
+  note: >-
+    Straight front of a DB Regio Desiro HC (1462 039) from the platform, read in pass 5
+    on the 1920 × 1440 rendition: body width at the lamp row x 995 to 1705 =
+    2.82 m (252 px per metre), rail at about y 1290 (estimated; the roof set back about 1.5 m
+    reads 7 % low). Dark area from 2.14 m to the roof front over about 0.76 of the half width,
+    windscreen glass 2.38 m to 3.73 m over 0.72, lamp pods 1.52 m to 1.88 m from 0.39 to 0.88 with
+    the lamps 0.42 to 0.6, DB logo 1.58 m to 1.78 m on the centre line, coupler recess 0.46 m to
+    1.25 m over 0.5, dark vents beside it 0.7 m to 1.2 m from 0.56 to 0.85. Depths (nose length
+    1.6 m, setbacks) are estimated; no side view of the cab was measured.
+- source_id: commons-1428-werdenfels-front
+  name: Wikimedia Commons, Ein echter Münsteraner im Werdenfelser Land - ET 1428.jpg (Paul Wächter)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Ein_echter_M%C3%BCnsteraner_im_Werdenfelser_Land_-_ET_1428.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Paul Wächter, via Wikimedia Commons
+  note: >-
+    Front of a DB Regio FLIRT 3 from the platform, left of the axis, read by the WP-5.1 reference
+    researcher (low confidence): windscreen about 0.9 of the half width with a shallow V lower edge,
+    lamp housings at 0.45 to 0.85 of the half width.
+    Nose loft (scale method on the 1920 px off-axis file, widths measured from the
+    centre x 983 to the right body edge x 1223 = half width 1.425 m, 0.0059 m per pixel; heights
+    from the lamp row y 692 at 1.62 m, perspective not corrected): roof y 212 right edge x 1136
+    (0.63, about 4.1 m), windscreen y 392 x 1188 (0.85, 3.4 m), bottom y 932 x 1216 (0.97, 0.3 m);
+    coupler recess right edge x 1116 (0.55) from y 772 to 932 (1.14 m to 0.19 m). The bulge is in
+    the side silhouette (tip forward-most at 1.55 m), so face_bulge_m stays 0.
+    Pass 5 (by eye on this front view beside a render, estimated): grey frame round
+    the windscreen (1.92 m to 3.95 m, drawn in the neutral equipment grey), windscreen pane with
+    rounded top corners over 0.88 to 0.9 of the half width, round lamps in dark pods 1.44 m to
+    1.8 m, DB logo 1.7 m to 1.88 m under the windscreen.
+- source_id: commons-423-telephoto
+  name: Wikimedia Commons, BR 423 EMU (55083290260).jpg (Samson Ng)
+  homepage_url: https://commons.wikimedia.org/wiki/File:BR_423_EMU_(55083290260).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Samson Ng (D201@EAL), via Wikimedia Commons
+  note: >-
+    Telephoto three-quarter view of a class 423, read by the WP-5.1 reference researcher on a 0.6
+    preview of the 2000 × 1333 rendition (64 preview px per metre between the door sill at the
+    sourced floor 1.025 m and the roof at 4.295 m, rail y 606): tall side windows 1.34 m to 3.38 m
+    with red between them, light grey lower band 0.91 m to 1.19 m, light grey doors; dark grey
+    front mask 0.71 of the half width from 1.73 m to about 4.16 m, windscreen 0.63, one round
+    headlight each side at 0.66 to 0.93 from 1.42 m to 1.81 m, front skirt bottom 0.25 m; nearly flat
+    front about 0.6 m long (estimated).
+    Pass 5 (by eye on the straight front view 423_249_Duesseldorf_Hbf.jpg, .love.is.war.,
+    CC BY 3.0, beside a render, estimated): the mask round the windscreen is light grey (drawn in
+    the neutral equipment grey), the windscreen a pane with rounded corners over 0.6 to 0.63 of
+    the half width, round lamps 1.48 m to 1.74 m near the sides, DB logo 1.5 m to 1.67 m.
+- source_id: commons-423-sprite
+  name: Wikimedia Commons, 423 gespiegelt.png (Qualle and Wiki-Hypo at de.wikipedia)
+  homepage_url: https://commons.wikimedia.org/wiki/File:423_gespiegelt.png
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Qualle and Wiki-Hypo at de.wikipedia, via Wikimedia Commons
+  note: >-
+    Side elevation sprite of a whole class 423 unit (716 × 64), read by the WP-5.1 reference
+    researcher at 10.1 px per metre (unit x 17.5 to 697.5 for the sourced 67.4 m): end car door
+    centres 5.2 m, 10.4 m and 15.3 m behind the tip (3.9 m, -1.3 m and -6.2 m from the car centre),
+    middle car doors 4.7 m, 0 and -5.2 m from its centre; one pantograph on each end car roof at its
+    inner end (placed 1.2 m from the joint, estimated).
+- source_id: commons-430-schorndorf-side
+  name: Wikimedia Commons, Bahnhof Schorndorf 90.jpg (Giftzwerg 88)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Schorndorf_90.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Giftzwerg 88, via Wikimedia Commons
+  note: >-
+    Side of a class 430 end car from the platform, read by the WP-5.1 reference researcher on the
+    1920 × 1280 rendition at its first door (123 px per metre between the roof at the sourced 4.273 m
+    and the door sill at the floor 1.03 m): windows 1.87 m to 2.82 m with red pillars about 0.35 m,
+    light grey lower band 1.02 m to 1.24 m, light grey door portals, light grey roof down to 3.65 m.
+- source_id: commons-430-vaihingen-front
+  name: Wikimedia Commons, Bahnhof Stuttgart-Vaihingen 16.jpg (Giftzwerg 88)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Stuttgart-Vaihingen_16.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Giftzwerg 88, via Wikimedia Commons
+  note: >-
+    Front of a class 430, read by the WP-5.1 reference researcher on the 1920 × 1280 rendition (half
+    width 326 px, centre x 674): windscreen 0.75 of the half width, light grey helmet mask 0.79 (not
+    drawn, liveries cannot name a mask colour yet), tall narrow lamp housings at 0.73 to 0.89. Heights from 216 px per metre with the rail placed so that the lower band matches
+    the side photo (estimated): windscreen 2.3 m to 3.75 m, lamp housings 1.6 m to 2.3 m.
+    Nose loft (scale method on the 1920 px file; heights from the measured lamp row,
+    widths as fractions of the body width at the lamp row, perspective not corrected): body x 352 to
+    980 at the lamp row y 836 = 3.02 m (0.0048 m per pixel), lamps 1.95 m; roof edge y 356 x 420 to
+    960 (0.86, 4.26 m), y 596 x 380 to 968 (0.94, 3.1 m), bottom y 1196 x 368 to 960 (0.94, 0.22 m);
+    coupler recess x 540 to 780 (0.38) from y 1004 to 1136.
+    Body section: silhouette at 3.1 m x 380 to 968 against the lamp row x 352 to 980
+    gives an upper bound of 0.09 m per side. The front silhouette near the roof belongs to body
+    sections 2 to 6 m behind the lamp row, so on an uncorrected photo it looks 10 to 25 % narrower
+    from perspective alone; the naive inset is an upper bound only. Values used: tumblehome 0.05 m,
+    roof shoulder exponent 2.6 (estimated).
+    Pass 5 (by eye on this front view beside a render, estimated): light grey
+    surround from 2.1 m over the roof front (neutral equipment grey) with a dark frame and a
+    windscreen pane 2.3 m to 3.75 m, vertical lamp strips 1.62 m to 2.28 m beside it, DB logo
+    1.42 m to 1.58 m.
+- source_id: commons-490-603-dresden
+  name: Wikimedia Commons, 490 603 Dresden Hbf.jpg (Rainerhaufe)
+  homepage_url: https://commons.wikimedia.org/wiki/File:490_603_Dresden_Hbf.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Rainerhaufe, via Wikimedia Commons
+  note: >-
+    Side of a class 490 unit at the cab end, read by the WP-5.1 reference researcher on the
+    2816 × 2112 original (113.6 px per metre between the roof at the sourced 3.76 m and the rail
+    y 1207): windows 1.62 m to 2.56 m, white upper stripe 3.03 m to 3.18 m, light grey lower band
+    0.88 m to 1.09 m, white door leaves.
+- source_id: commons-481-hermsdorf-front
+  name: Wikimedia Commons, Berlin - S-Bahnhof Hermsdorf (7814495536).jpg (IngolfBLN)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Berlin_-_S-Bahnhof_Hermsdorf_(7814495536).jpg
+  licence: CC-BY-SA-2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0/
+  attribution: IngolfBLN, via Wikimedia Commons
+  note: >-
+    Straight front of a class 481, read by the WP-5.1 reference researcher on the 1920 × 1440
+    rendition (236 px per metre from the sourced width 3.0 m, rail estimated at y 1380, heights
+    within about 0.1 m): one large dark window 1.63 m to 3.31 m over 0.89 of the half width, small
+    round lamps in its lower corners at 0.72 to 0.84 from 1.7 m to 1.89 m, skirt bottom about 0.21 m.
+    The flat front's depth is estimated. Read again by the N3 modeller on 2026-11-08 on the same rendition: the
+    unit is the trailing end, and each lower corner holds one round lens, lit red over its whole face (no
+    second lens beside it), 42 px to 45 px across (0.18 m to 0.19 m) in a dark round recess about 55 px (0.23 m),
+    lens centres x 1068.5 and 1615 at y 955 (0.77 of the half width, 1.80 m).
+- source_id: commons-481-sundgauer-side
+  name: Wikimedia Commons, Berlin - S-Bahnhof Sundgauer Straße (7818555086).jpg (IngolfBLN)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Berlin_-_S-Bahnhof_Sundgauer_Stra%C3%9Fe_(7818555086).jpg
+  licence: CC-BY-SA-2.0
+  licence_url: https://creativecommons.org/licenses/by-sa/2.0/
+  attribution: IngolfBLN, via Wikimedia Commons
+  note: >-
+    Side of two class 481 cars at a joint across the platform, used by the WP-5.1 reference
+    researcher for the layout (two double plug doors and two large windows per car side, yellow
+    upper body with a red stripe at the roof edge over a red lower body).
+- source_id: commons-484-schoeneweide-front
+  name: Wikimedia Commons, 2022-09-10 Reichsbahnausbesserungswerk Schöneweide 21.jpg (Lukas Beck)
+  homepage_url: https://commons.wikimedia.org/wiki/File:2022-09-10_Reichsbahnausbesserungswerk_Sch%C3%B6neweide_21.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Lukas Beck, via Wikimedia Commons
+  note: >-
+    Straight, square front of a class 484 at an open day, read by the WP-5.1 reference researcher
+    on the 1920 × 1440 rendition: a black field 0.74 of the half width from 1.31 m to the front top,
+    glass 0.69 from 1.84 m to 3.44 m, two horizontal LED lamp strips at 0.31 to 0.64 from 1.57 m to
+    1.67 m, louvred grilles beside the coupler, skirt bottom about 0.33 m. The front depth is
+    estimated.
+- source_id: commons-484-zeuthen-side
+  name: Wikimedia Commons, Berlin S-Bahn Bhf Zeuthen (S08 1137) (cropped).jpg (Michael.F.H.Barth)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Berlin_S-Bahn_Bhf_Zeuthen_(S08_1137)_(cropped).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Michael.F.H.Barth, via Wikimedia Commons
+  note: >-
+    Three-quarter view of a whole class 484 train, used by the WP-5.1 reference researcher for the
+    layout only (two double doors per car side, large black windows, ochre over red).
+- source_id: commons-648-774-braunschweig
+  name: Wikimedia Commons, DB 648 774 Braunschweig 2005231756.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_648_774_Braunschweig_2005231756.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Side of a LINT 41 end car, read by the WP-5.1 reference researcher at the first window behind the
+    cab (73 px per metre between the rail y 618 and the roof equipment top at the sourced 4.34 m):
+    windows 1.86 m to 3.23 m with red pillars, light grey lower band 0.93 m to 1.19 m, one double door
+    per car side near the Jacobs end, raked rounded nose about 2.5 m long with a black wrap-around
+    windscreen surround and lamps at the lower corners (front values estimated from the layout).
+- source_id: commons-648-luebeck-front
+  name: Wikimedia Commons, Lübeck station 2024 6.jpg (Smiley.toerist)
+  homepage_url: https://commons.wikimedia.org/wiki/File:L%C3%BCbeck_station_2024_6.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Smiley.toerist, via Wikimedia Commons
+  note: >-
+    Front of a LINT 41, used by the WP-5.1 reference researcher for the front layout (black windscreen
+    surround, lamp clusters at the lower corners, light grey band across the lower front).
+    Nose loft (scale method on the 1920 px file; heights from the measured lamp row,
+    widths as fractions of the body width at the lamp row, perspective not corrected): body x 760 to
+    1280 at the lamp row y 896 = 2.75 m (0.0053 m per pixel), lamps 1.45 m; roof y 356 x 856 to 1176
+    (0.62, 4.31 m), y 576 x 776 to 1256 (0.92, 3.14 m), bottom y 1096 x 816 to 1256 (0.85, 0.39 m);
+    red coupler cover x 1004 to 1156 (0.29) from y 876 to 984.
+    Body section: silhouette at 3.14 m against the lamp row gives an upper bound of
+    0.11 m per side. The front silhouette near the roof belongs to body sections 2 to 6 m behind the
+    lamp row, so on an uncorrected photo it looks 10 to 25 % narrower from perspective alone; the
+    naive inset is an upper bound only. Values used: tumblehome 0.05 m, roof shoulder exponent 2.6
+    (estimated).
+    Pass 5 (by eye on this front view beside a render, estimated): black frame from
+    1.85 m with rounded lower corners round a windscreen pane 1.95 m to 3.6 m, small lamps in dark
+    pods 1.28 m to 1.62 m in the lower corners, DB logo 1.45 m to 1.62 m.
+- source_id: commons-rs1-side
+  name: Wikimedia Commons, Regio-ShuttleRS1.jpg (Heinz Seehagel, HaSee at German Wikipedia)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Regio-ShuttleRS1.jpg
+  licence: LicenseRef-PublicDomain
+  licence_url: https://commons.wikimedia.org/wiki/File:Regio-ShuttleRS1.jpg
+  attribution: Heinz Seehagel (HaSee at German Wikipedia), public domain, via Wikimedia Commons
+  note: >-
+    Side elevation of a Regio-Shuttle RS1 (Schönbuchbahn livery, same body), measured (method
+    measured) on the 960 × 221 rendition retrieved 2026-10-29: nose tips at
+    x 22 and x 782 for the sourced length 25.5 m, 29.8 px per metre along the car; rail y 169 and the
+    body roof y 52 for the sourced height 3.7 m, 31.7 px per metre in height (the file is slightly
+    squashed). Two double doors per side, centres x 220 and x 583 (6.07 m either side of the centre),
+    portals 1.71 m wide; windows 1.73 m to 2.78 m with body colour between; cab side window 0.65 m to
+    1.35 m behind the tip; nose about 0.9 m deep with a raked windscreen from about 1.75 m. Lamp and
+    lower front values are estimated.
+- source_id: wikipedia-de-ral-eisenbahnfarben
+  name: Wikipedia (de), RAL-Eisenbahnfarben, section RAL-Farben der Deutschen Bahn AG (seit 1993)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270220574
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    The Deutsche Bahn AG table names RAL 7039 Quarzgrau for the skirts and frames of the ICE and
+    RAL 7012 Basaltgrau for solebars, running gear and roof paint (revision of 2026-09-04, read
+    2026-11-05).
+- source_id: stadler-flirt-db-esw
+  name: Stadler, Elektrischer Niederflurtriebzug FLIRT DB Regio AG (Rheinland-Pfalz, 5 cars), data sheet FDB0812d
+  homepage_url: https://www.stadlerrail.com/api/docs/x/2e67d96a27/flirt_db-regio-esw_de.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.stadlerrail.com/api/docs/x/2e67d96a27/flirt_db-regio-esw_de.pdf
+  attribution: Stadler Rail AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); length over couplers 90800 mm = 5239 px at zoom 12
+    (page 2 clip 38,145 to 480,180 pt) = 57.70 px/m; rail y 336. Numbers cited as facts, the drawing is not
+    redistributed.
+- source_id: stadler-flirt-db-nrw
+  name: Stadler, Electric Low-floor Multiple Unit FLIRT DB Regio NRW (RE/RB 42, 4 cars), data sheet
+  homepage_url: https://www.stadlerrail.com/api/docs/x/57fba7ce60/flirt_db-regio-nrw_en.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.stadlerrail.com/api/docs/x/57fba7ce60/flirt_db-regio-nrw_en.pdf
+  attribution: Stadler Rail AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); length over couplers 74700 mm = 5300 px at zoom 11
+    (page 2 clip 40,128 to 530,172 pt) = 70.95 px/m; rail y 423.5. Numbers cited as facts, the drawing is not
+    redistributed.
+- source_id: db-emb-442
+  name: Deutsche Bahn AG, Einsatzmerkblatt fuer Eisenbahnfahrzeuge, Elektrischer Triebzug Baureihe 442 (DB Regio with Bombardier), Stand 05/2009
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718454/27562ebac16468335c1fe52e95fa7a3a/DB-442_________05-2009-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718454/27562ebac16468335c1fe52e95fa7a3a/DB-442_________05-2009-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side view (embedded image 1117 x 268 px);
+    four-car unit coupler to coupler x 220 to 1091 = 871 px for 72300 mm (catalogue unit length) = 12.05 px/m
+    (83 mm/px); car pitches check 20.17 / 15.98 / 16.02 / 20.13 m vs catalogue 20.05 / 16.1 (within 1 %).
+    Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-403
+  name: Deutsche Bahn AG, Einsatzmerkblatt fuer Eisenbahnfahrzeuge, Elektrischer Triebzug ICE 3 / Baureihe 403 (DB Fernverkehr), Stand 04/2023
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723788/819f9bc39b4e262b31c18cfd132b4654/DB-403_04_2023-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723788/819f9bc39b4e262b31c18cfd132b4654/DB-403_04_2023-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); two raster side views (1466 x 100 and 1412 x 100
+    px), four cars each; the cars are NOT drawn at one common scale (middle cars 334 to 374 px for the same
+    24775 mm), so every car is normalised on its own pixel length (gangway centre to gangway centre, nose tip
+    for end cars) to the catalogue length (end 25835, middle 24775 mm); about 70 mm/px, read error +/- 2 px =
+    +/- 0.15 m. Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-406
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug ICE 3 / Baureihe 406, Stand 04/2023
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723790/119bc5599125c23512472496321878a5/DB-406_04_2023-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723790/119bc5599125c23512472496321878a5/DB-406_04_2023-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side views 1487 x 118 and 1513 x 122 px, per-
+    car normalisation as db-emb-403. Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-407
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 407 (Velaro D)
+  homepage_url: https://www.deutschebahn.com/resource/blob/13349156/23af0bda2495bf1309f4c839ce2ae5f4/BR-407-DB-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13349156/23af0bda2495bf1309f4c839ce2ae5f4/BR-407-DB-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side views 1523 x 104 and 1492 x 88 px, four
+    cars each, middle cars 363 to 374 px, end cars 383 to 393 px (nose tip to gangway centre); per-car
+    normalisation to catalogue lengths (end 26260, middle 24700); about 66 mm/px. Numbers cited as facts, the
+    drawing is not redistributed.
+- source_id: db-emb-408
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 408 (ICE 3neo), Stand 09/2023
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723796/e2533799843094c7e2cdea992be7863b/DB-408_09-2023-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723796/e2533799843094c7e2cdea992be7863b/DB-408_09-2023-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); four raster side views (1016 x 114 to 125 px), two
+    cars each; middle cars 487 to 503 px, end cars 515 / 516 px; per-car normalisation to end 26260 / middle
+    24700 mm (assumption: 408 car lengths equal the 407's, both units 200.72 m); about 50 mm/px. Numbers cited
+    as facts, the drawing is not redistributed.
+- source_id: db-emb-411
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug ICE T Baureihe 411, Stand 01/2026
+  homepage_url: https://www.deutschebahn.com/resource/blob/13758410/eb067561ba55ead24cbf46b03512ef84/BR-411-DB-AG-01-2026-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13758410/eb067561ba55ead24cbf46b03512ef84/BR-411-DB-AG-01-2026-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); one raster (1404 x 395 px) with seven cars in three
+    rows, doors drawn as pink rectangles; middle-car gangway pitch 449 to 459 px for 25900 mm (17.6 px/m, 57
+    mm/px); end cars nose tip to gangway centre 484 / 485.5 px for 27450 mm; per-car normalisation. Numbers
+    cited as facts, the drawing is not redistributed.
+- source_id: db-emb-415
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug ICE T Baureihe 415, Stand 01/2026
+  homepage_url: https://www.deutschebahn.com/resource/blob/13758412/212ddb733ccabde241592867ea0aa67b/BR-415-DB-AG-01-2026-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13758412/212ddb733ccabde241592867ea0aa67b/BR-415-DB-AG-01-2026-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); one raster (1420 x 481 px), five cars drawn
+    separately at one scale; middle car body 656 px plus bellows 24 px = 25900 mm (26.25 px/m, 38 mm/px;
+    coupling plane taken at the bellows centre); end cars nose tip to inner coupling plane 724.5 / 715.5 px for
+    27450 mm (26.4 px/m). Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-401
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 401 (ICE 1), Stand 08/2026
+  homepage_url: https://www.deutschebahn.com/resource/blob/14000976/1aba8cf41f2185f31c28e643183020c3/BR-401-DB-AG-08_2026-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/14000976/1aba8cf41f2185f31c28e643183020c3/BR-401-DB-AG-08_2026-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); stylised photo-like car views (page rendered at 300
+    dpi, about 26 px/m), doors marked green; positions +/- 0.3 m, used for counts and layout. Numbers cited as
+    facts, the drawing is not redistributed.
+- source_id: db-emb-402
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug ICE 2 / Baureihe 402, Stand 03/2023 (V2)
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723786/68f209d95e97c368731e50df05c86a00/DB-402_03-2023_V2-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723786/68f209d95e97c368731e50df05c86a00/DB-402_03-2023_V2-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); six 1-bit line drawings at 1200 dpi (2070 to 2146 px
+    wide), one car each, body end to body end; normalised to 26400 mm per middle car (ICE 1 / ICE 2 middle-car
+    length over couplers, catalogue db-401 middle); 78 to 81 px/m (13 mm/px). Numbers cited as facts, the
+    drawing is not redistributed.
+    Pass 11 (2026-11-06, method measured): the driving trailer drawing (2070 × 351 px) gives
+    78.2 px per metre along the car (bogie wheelbase 195.5 px for 2.5 m) and, with the roof line at
+    the sourced 3.84 m over the wheel bottoms, 81.1 px per metre in height (the drawings run about
+    4 % taller than the photos; heights are taken at that scale so the stripe meets the power
+    car's). Driving trailer: nose tip at x 3, roof level from 4.0 m behind it, centreline outline
+    as [height, setback] points every 10 px, windscreen 2.49 m to 3.18 m, cab side window a
+    triangle 2.26 m to 3.22 m behind the tip and 2.57 m to 3.19 m high, ICE lettering 4.76 m to
+    6.68 m and 2.03 m to 2.92 m, stripe 1.39 m to 1.71 m, passenger windows from 9.13 m behind the
+    tip at 2.04 m to 2.83 m, bogie pivots 4.75 m and 22.84 m behind the tip. Second class middle
+    car (2070 × 336): windows 1.96 m to 2.75 m, bogie pivots 19.26 m apart, centred. Restaurant car
+    (532 × 95 at 300 dpi, 20.1 px per metre): doors 1.28 m from one end and 9.55 m from the other,
+    no raised roof. Power car (443 × 96 at 300 dpi): bogie pivots 5.5 m and 16.95 m behind the tip
+    (about 0.2 m precision), pitch 11.46 m as on the class 401.
+- source_id: db-emb-648
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Dieseltriebzug Baureihe 648 (Coradia LINT 41), Stand 11/2014
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724032/850a14ff2a3181e73a2a56c22edd529d/DB-648_________11-2014-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724032/850a14ff2a3181e73a2a56c22edd529d/DB-648_________11-2014-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); scanned manufacturer side drawing of the whole unit,
+    three 1-bit strips 5029 px wide reassembled; coupler to coupler x 15 to 5020 = 5005 px for 41810 mm
+    (catalogue unit length) = 119.7 px/m (8.4 mm/px); rail y 575. Numbers cited as facts, the drawing is not
+    redistributed.
+- source_id: db-emb-642
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Dieseltriebzug Baureihe 642 (Desiro Classic), Stand 10/2019
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724024/32ba548c8511030eec6af307d57da019/DB-642_10-2019-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724024/32ba548c8511030eec6af307d57da019/DB-642_10-2019-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); 1-bit side drawing of the whole unit, 2427 px;
+    coupler to coupler x 15 to 2426 = 2411 px for 41700 mm (catalogue) = 57.8 px/m (17 mm/px); bottom line y
+    249.5 taken as rail. Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-423
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 423 / 433 (S-Bahn), Stand 11/2016
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718438/fb7d244ce56f8316442a10acd4d4b6d0/DB-423_11-2016-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718438/fb7d244ce56f8316442a10acd4d4b6d0/DB-423_11-2016-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); two 1-bit drawings (MTW2 + ETW1 2433 px; ETW4 + MTW3
+    2541 px); each scaled on its end car, nose tip to Jacobs joint = 18240 mm (catalogue): 72.6 and 75.9 px/m
+    (13 mm/px); both drawings agree within 0.02 m. Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-440
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 440 (Coradia Continental), Stand 06/2013
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718452/85d82777f76dc6528d7af96b9fb3b8c0/DB-440_________2013-06-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718452/85d82777f76dc6528d7af96b9fb3b8c0/DB-440_________2013-06-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); (a) large end-car drawing, embedded image 2310 x 570
+    px (upside down), Jacobs end to nose 2291 px = 19050 mm (catalogue) = 120.3 px/m; (b) four-car overview
+    rendered with PyMuPDF at zoom 6, end car nose to joint 1226.5 px = 19050 mm (64.4 px/m), middle cars joint
+    to joint 1032.5 / 1036 px = 16400 mm; per-car normalisation. Numbers cited as facts, the drawing is not
+    redistributed.
+- source_id: db-emb-ic2
+  name: Deutsche Bahn AG, Einsatzmerkblatt, 5-teiliger Doppelstockzug Intercity 2 (Twindexx Vario, Steuerwagen and Mittelwagen, class 146.5), Stand 11/2025
+  homepage_url: https://www.deutschebahn.com/resource/blob/13601180/db92ee1559006c6f9c432d47f9d92b13/BA-InterCity-2-DB-AG-11-2025-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13601180/db92ee1559006c6f9c432d47f9d92b13/BA-InterCity-2-DB-AG-11-2025-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); one raster per car (about 1000 to 1032 px wide);
+    middle cars drawing extent (gangway to gangway) 993 to 1010 px = 26800 mm (catalogue coach) = 37.5 px/m (27
+    mm/px); driving trailer nose tip to rear end 1016 px = 27270 mm (catalogue) = 37.3 px/m; rail = the
+    drawing's bottom line. Numbers cited as facts, the drawing is not redistributed.
+- source_id: db-emb-dosto-d
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Reisezugwagen Doppelstockwagen (classic Goerlitz type), Stand 11/2004
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723972/27f230ccadd935116edcb92217fda017/DB-Wg-D_____11-2004_Doppelstock-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723972/27f230ccadd935116edcb92217fda017/DB-Wg-D_____11-2004_Doppelstock-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); scanned side drawing (1493 x 308 px), car extent x
+    26 to 1442 = 1416 px taken as 26800 mm over buffers (catalogue coach) = 52.8 px/m. Numbers cited as facts,
+    the document is not redistributed.
+- source_id: db-emb-dosto2010
+  name: 'Deutsche Bahn AG, Einsatzmerkblaetter Dosto 2010: Mittelwagen Tiefeinstieg, Mittelwagen Hocheinstieg (https://www.deutschebahn.com/resource/blob/12723968/52b8f9fa3ddb147fd8e83a4b62a04199/DB-Wagen-hoch-Do2010_03-2018-data.pdf), Steuerwagen (https://www.deutschebahn.com/resource/blob/12723964/54a08a54d8198bc0194a832048a0979b/DB-Steuerwagen-Do2010_03-2018-data.pdf), Stand 03/2018'
+  homepage_url: https://www.deutschebahn.com/resource/blob/12723970/819338424e58c1e185b729d441bd7f89/DB-Wagen-tief-Do2010_03-2018-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12723970/819338424e58c1e185b729d441bd7f89/DB-Wagen-tief-Do2010_03-2018-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side views: Tiefeinstieg 1466 px and
+    Hocheinstieg 1468 px car extent = 26800 mm (54.7 px/m); Steuerwagen rear end to nose with coupler 991.5 px =
+    27270 mm (assumption, as the IC2 trailer) = 36.4 px/m. Numbers cited as facts, the document is not
+    redistributed.
+- source_id: db-emb-490
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 490 (S-Bahn Hamburg), Stand 03/2024
+  homepage_url: https://www.deutschebahn.com/resource/blob/12912328/02289690a67df6e44ebda9cd24020a9e/DB-490_03_2024-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12912328/02289690a67df6e44ebda9cd24020a9e/DB-490_03_2024-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); 1-bit side drawing of the whole three-car unit (4109
+    x 316 px); coupler to coupler x 49 to 3995 = 3946 px for 66000 mm (catalogue unit length) = 59.8 px/m (17
+    mm/px). Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-430
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 430 (S-Bahn)
+  homepage_url: https://www.deutschebahn.com/resource/blob/13485266/7264bc0be591d55a635c0f01ca0c4dfa/BR-430-DB-AG-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13485266/7264bc0be591d55a635c0f01ca0c4dfa/BR-430-DB-AG-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); two raster drawings (ETW4 + MTW3 1285 px, MTW2 +
+    ETW1 1280 px); each scaled on its end car nose tip to Jacobs joint = 19256 mm (catalogue): 37.2 and 36.9
+    px/m (27 mm/px); both agree within 0.02 m. Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-463
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 463 (Mireo), Stand 10/2019
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718378/0ce60d598bed9498599bd7e79923db8d/DB-463_10-2019-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718378/0ce60d598bed9498599bd7e79923db8d/DB-463_10-2019-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side view of the three-car unit (1102 x 82
+    px); coupler to coupler 1094 px = 69860 mm (Siemens data sheet Mireo Rheintal Los 2, length over couplers) =
+    15.66 px/m (64 mm/px); the two end cars agree within 0.06 m. Numbers cited as facts, the document is not
+    redistributed.
+- source_id: siemens-mireo-rheintal-los2
+  name: Siemens Mobility, Mireo Rheintal Los 2 fuer die DB Regio AG, data sheet (Laenge ueber Kupplung 69860 mm, Einstiegshoehe 610 mm, Einstiegsbereiche 4 je Zug)
+  homepage_url: https://assets.new.siemens.com/siemens/assets/api/uuid:1170b568-fe82-4dd3-beb4-77d0cd5bcf5d/siemens-mobility-mireo-rheintal-los-2-de.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://assets.new.siemens.com/siemens/assets/api/uuid:1170b568-fe82-4dd3-beb4-77d0cd5bcf5d/siemens-mobility-mireo-rheintal-los-2-de.pdf
+  attribution: Siemens Mobility GmbH
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05). Numbers cited as facts, the document is not
+    redistributed.
+- source_id: db-emb-483-484
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 483 / 484 (S-Bahn Berlin), Stand 08/2021
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718388/31617eeb2d0a32dc341103066cfcd8db/DB-483_484_08-2021-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718388/31617eeb2d0a32dc341103066cfcd8db/DB-483_484_08-2021-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); two raster drawings of two-car units (1383 / 1384
+    px), coupler to coupler 1374 / 1380 px = 36800 mm (catalogue: half train 73.6 m of four 18.4 m cars) = 37.3
+    px/m (27 mm/px). Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-481
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 481 (S-Bahn Berlin), Stand 10/2004
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718386/be499c3e54d0c1c50a3928cc51590685/DB-481_________10-2004-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718386/be499c3e54d0c1c50a3928cc51590685/DB-481_________10-2004-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster side view of the quarter train ETA + ETB (978
+    x 455 px); coupler to coupler 968 px = 36800 mm (catalogue) = 26.3 px/m (38 mm/px). Numbers cited as facts,
+    the document is not redistributed.
+- source_id: db-emb-622
+  name: 'Deutsche Bahn AG, Einsatzmerkblatt, Dieseltriebzug Baureihe 620 / 621 / 622 (Coradia LINT 81 and LINT 54), Stand 05/2013'
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724092/a624582fcaaea803ca2e6462dea3d519/DB-620_622____2013-05-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724092/a624582fcaaea803ca2e6462dea3d519/DB-620_622____2013-05-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); raster page figure reassembled from 18 strips (1638
+    x 719 px); LINT 54 nose to nose 1279 px = 54270 mm (catalogue unit) = 23.6 px/m (42 mm/px); car lengths
+    27.09 / 27.17 m (catalogue 27.135). Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-1462
+  name: 'Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 1462 / 1862 (Desiro HC, DB Regio), Stand 03/2023'
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718504/6b9cc599a1b17ad0cf06df3762770478/DB-1462_03-2023-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718504/6b9cc599a1b17ad0cf06df3762770478/DB-1462_03-2023-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); small coloured overview (632 x 431 px, two rows of
+    two cars), about 10.4 px/m (96 mm/px); doors drawn in light grey, positions read by eye from the rendered
+    image, +/- 0.4 m. Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-412-7
+  name: 'Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug ICE 4 / Baureihe 412, 7-teilig, Stand 01/2024'
+  homepage_url: https://www.deutschebahn.com/resource/blob/12769326/3c6acc0dd3fab0030768e133a6133e13/DB-412_7T_01-2024-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12769326/3c6acc0dd3fab0030768e133a6133e13/DB-412_7T_01-2024-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Door centres and counts read off the side drawing by the WP-5.1 door research (A3r,
+    raw/references/wp-5.1/doors.yaml, accessed 2026-11-05); two raster views (1567 x 99 and 2020 x 99 px), doors
+    pink; per-car normalisation to catalogue lengths (end 29106, middle 28750 mm); end cars 519 / 497 px, middle
+    cars 497 to 518 px (55 to 58 mm/px). Numbers cited as facts, the document is not redistributed.
+- source_id: db-emb-620
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Dieseltriebzug Typ 81H BR 620 und 621, Typ 54H BR 622 (Coradia LINT), Stand 05/2013
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724092/a624582fcaaea803ca2e6462dea3d519/DB-620_622____2013-05-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724092/a624582fcaaea803ca2e6462dea3d519/DB-620_622____2013-05-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    LINT 81 side drawing (three cars) read on 2026-11-08 on page 1 rendered at 450 dpi: whole
+    unit 3009 px for 80 920 mm (catalogue unit length) = 37.2 px/m; the middle car (621, C car) between the gangway
+    bars at x 78 and 1075 = 26.8 m (26.65 m from the sourced lengths), two double doors per side with portals of 57 px
+    (1.53 m) centred 3.10 m ahead of and 3.08 m behind the car centre, bogie centres at x 245 and 1000 (20.3 m
+    apart). Numbers cited as facts, the document is not redistributed.
+- source_id: wikipedia-de-talent-r13
+  name: Wikipedia (de), Bombardier Talent (revision read for the 3D models)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271620851
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Infobox: Länge 48 360 to 52 160 mm for three cars (Achsformel
+    B'2'2'B' for the diesel-mechanical three-car unit), Breite 2925 mm, Fußbodenhöhe 1190 mm, 590 or 800 mm at the
+    entrances and in the middle part. Text: DB class 643 (end cars) and 943 (middle car) are the three-car
+    diesel-mechanical Talent. The forge takes the lower bound of the three-car range for the 643 (inference: the
+    diesel-mechanical unit is the shortest three-car variant; the article does not pair lengths and variants).
+- source_id: db-emb-643
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Diesel-Triebzug Baureihe 643/943, Stand 04/2014
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724026/d10bcfc6e3c0520dc5f342b852ca6950/DB-643_________2014-04-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724026/d10bcfc6e3c0520dc5f342b852ca6950/DB-643_________2014-04-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Side drawing of the three-car unit (embedded raster 1017 x 218 px) read on 2026-11-08:
+    nose to nose x 63 to 997 = 934 px for 48 360 mm (catalogue unit length) = 19.31 px/m; joints at x 402 and 662
+    give end cars of 17.55 and 17.35 m (mean 17.45 m) and a middle car of 13.46 m; one door per car and side,
+    portals 25 px (1.3 m), centred 1.76 m behind the end car centre (mean of both end cars) and 0.1 m ahead of the
+    middle car centre; the powered bogie 4.92 m ahead of the end car centre, 13.7 m from the joint. Read with the
+    vertical scale equal to the horizontal (wheels 0.86 m): roof 3.88 m above the rail, windows 1.45 m to 2.80 m.
+    Numbers cited as facts, the document is not redistributed.
+- source_id: commons-643-546-koeln-west-front
+  name: Wikimedia Commons, 643 546 Köln-West 2015-10-27.JPG (Rolf Heinrich, Köln)
+  homepage_url: https://commons.wikimedia.org/wiki/File:643_546_K%C3%B6ln-West_2015-10-27.JPG
+  licence: CC-BY-3.0
+  licence_url: https://creativecommons.org/licenses/by/3.0/
+  attribution: Rolf Heinrich, Köln, via Wikimedia Commons
+  note: >-
+    Near head-on front of a class 643 on the 1920 x 1201 rendition, read on 2026-11-08:
+    about 155 px per metre on the face (450 px for the face), heights from the skirt bottom at y 1015 taken as
+    0.25 m (estimate): windscreen 1.93 m to 3.48 m with a dark frame to 0.9 of the half width, headlamps behind
+    the glass 2.15 m to 2.33 m (0.39 to 0.63 of the half width), DB plate 1.46 m to 1.65 m, coupler recess 0.80 m
+    to 1.43 m over 0.47 of the half width, light band 0.90 m to 1.09 m, apron below.
+- source_id: commons-643-002-front
+  name: Wikimedia Commons, DB 643 002-9 p1.JPG (Alf van Beem)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_643_002-9_p1.JPG
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Alf van Beem, via Wikimedia Commons
+  note: >-
+    Close three-quarter front of 643 002 read on 2026-11-08: the rounded nose, the windscreen
+    raking back over the dome and running into the dark cab side band, coupler recess and lower band.
+- source_id: mobil-nrw-flirt-3
+  name: Infoportal mobil.nrw (Land Nordrhein-Westfalen), Elektrotriebwagen Flirt 3
+  homepage_url: https://infoportal.mobil.nrw/technik/spnv-fahrzeuge/elektrotriebwagen-flirt-3.html
+  licence: LicenseRef-FactsOnly
+  licence_url: https://infoportal.mobil.nrw/technik/spnv-fahrzeuge/elektrotriebwagen-flirt-3.html
+  attribution: Ministerium für Umwelt, Naturschutz und Verkehr des Landes Nordrhein-Westfalen, mobil.nrw
+  note: >-
+    Read on 2026-11-08. Fahrzeugdaten: Flirt 3 XL three cars Bo'2'2'Bo' 67 600 mm, width
+    2820 mm (the VRR units), floor 780 mm, 6 doors per side; five cars 106 200 mm, 10 doors per side. Text: the
+    Flirt 3 XL has one more door per car body than the Flirt 3; it runs with DB Regio NRW (S2, S3, S9, RB32, RB40,
+    RE34, RE41, RE49) and Transdev Hannover. The Stadler media release of 2018-11-07 gives 68 m and eight doors
+    per side for the Hannover units; the forge draws two doors per car (NRW) and lists the door positions as
+    estimates. Car lengths: the forge lengthens each Flirt 3 car body (21.25 and 16.1 m) by the same 3 m to the
+    67.6 m unit (estimate, no car lengths published).
+- source_id: commons-3427-nienburg-side
+  name: Wikimedia Commons, SBH 3427 Nienburg 2207170912.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:SBH_3427_Nienburg_2207170912.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Side of an S-Bahn Hannover FLIRT 3 XL end car near the cab, read on 2026-11-08 on the
+    1920 x 864 rendition: first passenger door centre about 6.1 m behind the nose (scale from a 1.45 m door
+    portal, about 83 px per metre, estimate). Colours sampled: body #bfc9d2, lower band #345db3.
+- source_id: commons-3427-nienburg-sun
+  name: Wikimedia Commons, SBH 3427 xxx Nienburg 2308110909.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:SBH_3427_xxx_Nienburg_2308110909.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Side of an S-Bahn Hannover FLIRT 3 XL middle car in direct sun at Nienburg, sampled by the FM14 modeller on
+    2026-11-08 on the 1920 x 864 rendition: white body between window and doors, medians #e7ecf8, #e3ebf7, #e5eaf6
+    and #e1e8f0 (boxes at x 960 to 1400, y 402 to 450), taken as #e5eaf6. The shaded side of
+    commons-3427-nienburg-side gave #bfc9d2 to #cbd2e4.
+- source_id: commons-3427-transdev-new
+  name: Wikimedia Commons, Transdev Hannover ET 3427.jpg (Lothar Stöckmann)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Transdev_Hannover_ET_3427.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Lothar Stöckmann, via Wikimedia Commons
+  note: >-
+    Three-quarter view of a new S-Bahn Hannover FLIRT 3 XL, read on 2026-11-08: white face,
+    blue windscreen surround, lower front and lower band, red passenger doors (sampled #a33b30).
+- source_id: wikipedia-de-612
+  name: Wikipedia (de), DB-Baureihe 612 (1998)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271927465
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox (read 2026-11-08): Achsformel 2'B'+B'2', Länge über Kupplung 51 750 mm, Höhe 4124 mm, Breite 2852 mm,
+    Achsabstand der Fahrgestelle 2450 mm, Treib- und Laufraddurchmesser 890 mm, Fußbodenhöhe 1290 mm. Text: two
+    cars, the units were repainted verkehrsrot by 2005; middle doors beside the bellows at the car junction. Car
+    lengths are half the unit length.
+- source_id: db-emb-612
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Diesel-Triebzug Baureihe 612, Stand 08/2006
+  homepage_url: https://www.deutschebahn.com/resource/blob/12724088/d31703d851ccdbbde947fe32df0a6447/DB-612______08-2006-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12724088/d31703d851ccdbbde947fe32df0a6447/DB-612______08-2006-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Side drawing of one car (embedded raster 1061 x 227 px) read on 2026-11-08: nose to the
+    inner end x 30 to 1040 = 1010 px for 25.875 m (half the catalogue unit) = 39 px/m along, 35.9 px/m in height
+    (rail y 187 to the sourced 4.124 m roof). Two doors per side, portals 44 px (1.13 m), centred 5.03 m ahead of
+    the car centre and 12.26 m behind it (beside the bellows; the forge draws it at 12.05 m to keep its 0.3 m gangway gap); bogie centres 7.7 m ahead and 10.0 m behind the car
+    centre (17.7 m apart, pair centre 1.15 m behind the car centre); windows 1.25 m wide at a 1.74 m pitch, 2.18 m
+    to 3.08 m above the rail; nose outline from the coupler at 1.21 m to the roof 1.8 m behind the tip. Numbers
+    cited as facts, the document is not redistributed.
+- source_id: commons-612-639-saarbruecken-front
+  name: Wikimedia Commons, DB 612 639-5 at Saarbruecken.JPG (Alf van Beem)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_612_639-5_at_Saarbruecken.JPG
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Alf van Beem, via Wikimedia Commons
+  note: >-
+    Near head-on front of 612 639 on the 1920 x 1436 rendition, read on 2026-11-08: face 758
+    px wide (1022 centre), heights on a linear scale from the roof (y 92, 4.124 m) to the coupler head (y 1067, taken
+    as 1.025 m, estimate): grey helmet down to 1.92 m, windscreen 2.59 m to 3.78 m over 0.72 of the half width,
+    dark panel with the middle lamp 2.13 m to 2.56 m, lamp pairs 1.47 m to 1.79 m (0.29 to 0.76), DB plate 1.52 m
+    to 1.76 m, light grey band 0.97 m to 1.23 m, coupler recess 0.38 m to 1.31 m over 0.73 of the half width.
+- source_id: commons-612-105-dresden-front
+  name: Wikimedia Commons, 612 105 Dresden Hauptbahnhof.jpg (Pedalito)
+  homepage_url: https://commons.wikimedia.org/wiki/File:612_105_Dresden_Hauptbahnhof.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Pedalito, via Wikimedia Commons
+  note: >-
+    Close three-quarter front of 612 605 read on 2026-11-08: grey helmet round the windscreen
+    sampled at #8b8b91 in shade, red nose sides, lamp housings outlined in the body, light grey lower band.
+- source_id: wikipedia-de-422
+  name: Wikipedia (de), DB-Baureihe 422
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=261414899
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Infobox: Achsformel Bo'(Bo')(2')(Bo')Bo' (Jacobs bogies in
+    brackets), Länge über Kupplung 69 430 mm, Höhe 4330 mm, Breite 3020 mm, Drehzapfenabstand 15 140 mm (end
+    bogies) and 15 460 mm (Jacobs bogies), Achsabstand 2200 mm (end) and 2700 mm (Jacobs), Raddurchmesser
+    850 mm new, Fußbodenhöhe 1025 mm. Text: developed from the 423, the new head with a crash zone makes the
+    unit two metres longer; from 2017 the 48 VRR units were redesigned: light grey paint, the door areas, the
+    roof edge and the side parts of the front in the green of the VRR design. Derived: middle cars 15.46 m
+    (Jacobs pivot distance), end cars (69.43 - 2 x 15.46) / 2 = 19.255 m.
+- source_id: db-emb-422
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 422, Stand 11/2016
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718436/aa14788777014c43ae93b2e849a13159/DB-422_11-2016-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718436/aa14788777014c43ae93b2e849a13159/DB-422_11-2016-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Side drawing of half a unit (1-bit raster 2433 x 350 px, middle car and end car) read on
+    2026-11-08, each car on its own scale: end car joint x 1103 to nose x 2403 for 19.255 m (67.5 px/m), doors
+    (portals 112 px, 1.66 m) centred 4.27 m ahead of, 1.38 m and 6.62 m behind the car centre; middle car joints x
+    5 to 1103 for 15.46 m (71 px/m), doors 4.97 m ahead, 0.0 and 4.99 m behind the centre, its pantograph 6.25 m
+    behind the centre (at the end towards the other middle car). Numbers cited as facts, the document is not
+    redistributed. Nose outline read by the M5 modeller on 2026-11-08 on the same raster: rail head y 343,
+    roof y 123 for 4.33 m (50.8 px per metre upwards, so the drawing is drawn 1.33 times longer than high);
+    the outermost front edge per row read on the vertical scale gives setbacks from the tip of 0 up to
+    2.03 m, 0.10 at 2.42 m, 0.24 at 2.81 m, 0.41 at 3.21 m, 0.67 at 3.60 m, 0.96 at 4.0 m, 1.34 at 4.29 m and
+    about 1.75 m where the curve meets the roof (read on the horizontal scale every setback is 0.75 times
+    as long).
+- source_id: commons-422-045-dortmund-vrr
+  name: Wikimedia Commons, DB 422 045 S-Bahn Rhein-Ruhr Dortmund Hbf 1803110938.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_422_045_S-Bahn_Rhein-Ruhr_Dortmund_Hbf_1803110938.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Three-quarter front of 422 045 in the VRR design (2018), read on 2026-11-08: green
+    front sides and cab section, grey panel round the windscreen to about 0.73 of the half width, light lower
+    panel with the DB plate, lamps in black housings at its lower corners, green doors. Sampled: green #2d9d1d,
+    light grey body #a1a5a5 (shade), panel grey #7b848d.
+- source_id: commons-422-027-westerfilde-front
+  name: Wikimedia Commons, 422 027-3 S2 Dortmund-Westerfilde.jpg (Jacek Rużyczka)
+  homepage_url: https://commons.wikimedia.org/wiki/File:422_027-3_S2_Dortmund-Westerfilde.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Jacek Rużyczka, via Wikimedia Commons
+  note: >-
+    Head-on front of 422 027 (red, 2009) read on 2026-11-08: face 720 px wide, grey middle
+    panel 0.70 to 0.73 of the half width from the roof cap to the lamps, one round lamp in a dark housing at each
+    lower corner, coupler under a cover. Heights not taken (perspective of a low camera disagreed by 0.4 m).
+    Colours sampled on the same photo (1920 x 1443): red front #bb3034 (median of 510,870 to 630,930, shaded),
+    grey panel #71767d (760,775 to 900,845), sill band #9a9692 (860,995 to 1070,1020).
+- source_id: db-emb-445
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebwagen Baureihen 445 und 446, Do2010, Stand 04/2018
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718458/3e69ab4f889a1f82cdba48e5c733a47b/DB-445_446_04-2018-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718458/3e69ab4f889a1f82cdba48e5c733a47b/DB-445_446_04-2018-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Side drawing of the power car with cab (embedded raster 1586 x 433 px) read on
+    2026-11-08: coupler to cab end x 13 to 1287 = 1274 px for 25.98 m (catalogue power car) = 49 px/m; two doors
+    per side, portals 67 px (1.37 m), centred 4.96 m ahead of and 6.06 m behind the car centre; the pantograph on
+    the single-deck rear end 10.2 m behind the centre; machine rooms behind the cab and at the rear end. The unit
+    of two power cars and two middle cars (Schleswig-Holstein and Franken in the de Wikipedia Twindexx article)
+    adds up to 105.56 m with the article's car lengths. Numbers cited as facts, the document is not
+    redistributed. Read again by the M5 modeller on 2026-11-08: rail y 319.5 and roof y 94 for 4.631 m
+    (48.7 px per metre upwards, the drawing is to scale within 1 percent); nose outline as setbacks from the
+    tip (x 1261) of 0 from 0.97 m to 1.30 m, 0.06 at 1.47 m to 1.80 m, 0.22 at 2.45 m, 0.47 at 2.95 m, 0.78 at
+    3.48 m, 1.0 at 3.81 m, 1.31 at 4.14 m, 1.65 at 4.38 m and 1.98 m where it meets the roof, the lower edge
+    0.47 m back at 0.48 m; the machine room behind the cab runs from 5.82 m ahead of the car centre (just
+    ahead of the door) to the cab at 10.14 m, without passenger windows, with a lower grille 7.14 m to
+    9.08 m between 1.53 m and 2.97 m and an upper louvre 7.86 m to 9.49 m between 3.48 m and 4.10 m.
+- source_id: commons-445-007-rostock-front
+  name: Wikimedia Commons, DB 445 007 Rostock 181005.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:DB_445_007_Rostock_181005.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: >-
+    Three-quarter front of 445 007 read by eye on 2026-11-08: rounded nose with a raked
+    windscreen in a dark surround, two round lamps at each lower corner of the face, DB plate below, Scharfenberg
+    coupler in a dark lower front without buffers, light grey band along the lower side. All front levels are
+    estimates from this view.
+- source_id: wikipedia-de-tgv-duplex
+  name: Wikipedia (de), TGV Duplex
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271777175
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Infobox: Achsformel Bo'Bo'+2'2'2'2'2'2'2'2'2'+Bo'Bo' (two power
+    cars, eight double-deck trailers on nine bogies), Länge 200,190 m, Breite 2,904 m, Höhe 4,303 m. Text: the
+    trailers are articulated on Jacobs bogies, one entrance per trailer on the lower deck; 30 units of the 2N2
+    (Euroduplex) variant 3UA are built for the German network.
+- source_id: wikipedia-fr-tgv-2n2
+  name: Wikipedia (fr), TGV Euroduplex
+  homepage_url: https://fr.wikipedia.org/w/index.php?oldid=240658607
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Infobox: Longueur 200,190 m, Hauteur 4,318 m, Largeur 2,904 m.
+    Fleet table: units 4701 to 4715 (3UA, STF TGV Est Européen, the Paris to Germany services) in the Carmillon
+    livery, 4716 onwards in the Lyria 2020 livery.
+- source_id: db-emb-310
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug TGV 2N2 3UA Euroduplex BR 310 (SNCF), Stand 02/2025
+  homepage_url: https://www.deutschebahn.com/resource/blob/13406824/33c530f370d43b2168770ea2d719d029/BR-310-SNCF-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/13406824/33c530f370d43b2168770ea2d719d029/BR-310-SNCF-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Two coloured side views (2051 x 297 px each) read on 2026-11-08: power car nose to joint
+    454 and 430 px, end trailers R1 419 and R8 413 px, middle trailers 398 to 402 px; normalised to the sourced
+    200.19 m unit (0.04862 m/px): power car 21.49 m, end trailer 20.23 m, middle trailers 19.458 m. The views are
+    schematic (car breaks read at the gangways), so the car lengths may be off by up to about 1 m each. One door
+    per trailer and side, R1 to R3 at their end towards the bar car R4 (about 6.2, 5.3 and 4.5 m behind the car
+    centre), R5 to R8 at their end towards R4, none on R4; the raised pantograph of the power car about 6.2 m
+    behind its centre. Numbers cited as facts, the document is not redistributed.
+- source_id: commons-tgv-4702-offenburg-front
+  name: Wikimedia Commons, 2020 08 03 Offenburg Bhf TGV nach Paris 01.jpg (Peter Nath)
+  homepage_url: https://commons.wikimedia.org/wiki/File:2020_08_03_Offenburg_Bhf_TGV_nach_Paris_01.jpg
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: Peter Nath, via Wikimedia Commons
+  note: >-
+    Three-quarter front of power car 310003 (unit 4702, Carmillon livery with the inOui brand) read by eye on 2026-11-08: dark blue helmet over the windscreen and the upper nose down to the lamp band,
+    carmine stripe from the lamps up the side of the helmet to the roof, light grey lower nose, dark skirt.
+    Sampled: body #aaaca7 and #bebeb3, helmet #1d3e66, stripe #992d38, trailer window band #1f262e. All nose levels
+    are estimates from this view and the side view below.
+- source_id: commons-tgv-4702-offenburg-side
+  name: Wikimedia Commons, 2020 08 03 Offenburg Bhf TGV nach Paris 02.jpg (Peter Nath)
+  homepage_url: https://commons.wikimedia.org/wiki/File:2020_08_03_Offenburg_Bhf_TGV_nach_Paris_02.jpg
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: Peter Nath, via Wikimedia Commons
+  note: >-
+    Close side view of the nose of power car 310003 read by eye on 2026-11-08: the long
+    falling roof line of the nose, the cab side window and the round tip low above the skirt (wide angle, the
+    profile is an estimate).
+- source_id: commons-tgv-4710-side
+  name: Wikimedia Commons, 20230608 SNCF 4710.jpg (Alex Noble)
+  homepage_url: https://commons.wikimedia.org/wiki/File:20230608_SNCF_4710.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Alex Noble, via Wikimedia Commons
+  note: >-
+    Side view of unit 4710 in the Carmillon livery with the inOui brand, read by eye by the FM14 modeller on
+    2026-11-08 on the 1920 x 1280 rendition. End trailer R1 at x 790: body side from its bottom (y 937, taken as
+    0.32 m) up, about 34 px per metre from the 4.303 m trailer height; upper-deck windows y 841 to 870, so about
+    2.3 to 3.15 m and 0.8 to 0.9 m tall, light grey pillars between them; carmine line about 1.9 to 2.1 m; dark
+    grey lower deck below it with a light grey bottom strip; no dark skirt on the body sides of the power car or
+    the trailers. Body sampled in the sun on the power car side (median of x 1180 to 1260, y 1015 to 1035):
+    #e4e3d7; other sunlit boxes #ebe7dc and #f4f2e5 (cab door), the overcast Offenburg view gave #bebeb3.
+- source_id: wikipedia-de-474
+  name: Wikipedia (de), DB-Baureihe 474
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271339625
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox (read 2026-11-08): Achsformel Bo'Bo'+2'2'+Bo'Bo', Länge über Kupplung 65 560 mm, Höhe 3720 mm,
+    Breite 3008 mm, Drehzapfenabstand 16 190 mm (ET) and 13 280 mm (EM), Achsabstand der Fahrgestelle 2300 mm
+    (ET) and 1800 mm (EM), Treibraddurchmesser 855 mm new, Laufraddurchmesser 680 mm new (474.1 and 474.2),
+    Fußbodenhöhe 1035 mm. Text: three cars, end cars powered and alike, unpowered middle car, side third rail
+    shoes (474.3 also a roof pantograph on the middle car).
+- source_id: db-emb-474
+  name: Deutsche Bahn AG, Einsatzmerkblatt, Elektrischer Triebzug Baureihe 474 (S-Bahn Hamburg), Stand 03/2024
+  homepage_url: https://www.deutschebahn.com/resource/blob/12718382/3af3b3af45e2773c3702d434fb7a440a/DB-474_03_2024-data.pdf
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.deutschebahn.com/resource/blob/12718382/3af3b3af45e2773c3702d434fb7a440a/DB-474_03_2024-data.pdf
+  attribution: Deutsche Bahn AG
+  note: >-
+    Side drawing of the whole unit (embedded raster 1351 x 124 px) read on 2026-11-08:
+    nose to nose x 6 to 1330 = 1324 px for 65 560 mm (catalogue unit length) = 20.2 px/m; gangways at x 468
+    and 864 give end cars of 22.88 and 23.07 m (mean 22.98 m) and a middle car of 19.60 m. Door portals 32 to
+    33 px (1.6 m), three per car and side, centres 6.86 m ahead of, 0.05 m behind and 6.91 m behind the end
+    car centre and 6.83, -0.05, -6.93 m on the middle car. Passenger windows 26 px wide (1.29 m) with 6 px
+    pillars (0.3 m). Heights: the drawing's vertical scale differs (21.6 px/m from rail y 111 to roof y 30.5
+    for the sourced 3.72 m); on it the door sill reads 0.995 m (sourced floor 1.035 m), windows 1.69 m to
+    2.94 m. Numbers cited as facts, the document is not redistributed.
+- source_id: commons-474-ohlsdorf-front
+  name: Wikimedia Commons, Hamburg 20260815 Bahnhof Ohlsdorf 01.jpg (NutzerAusBerlin)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Hamburg_20260815_Bahnhof_Ohlsdorf_01.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: NutzerAusBerlin, via Wikimedia Commons
+  note: >-
+    Close three-quarter front of a class 474 (4004) on the 1920 x 1440 rendition, read on
+    2026-11-08: arched lower edge of the windscreen, lamp housings with an inner white and an outer red lens,
+    DB plate between them, coupler in a dark recess, light grey lower band. Colours sampled in sunlight:
+    body #d12220 (matches Verkehrsrot), lower band #b0babc.
+- source_id: commons-474-diebsteich-front
+  name: Wikimedia Commons, Type 474 HH-Diebsteich.jpg (Jacek Rużyczka)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Type_474_HH-Diebsteich.jpg
+  licence: CC-BY-SA-3.0
+  licence_url: https://creativecommons.org/licenses/by-sa/3.0/
+  attribution: Jacek Rużyczka, via Wikimedia Commons
+  note: >-
+    Near head-on front of a class 474 (474 506) on the 1920 x 1390 rendition, read on
+    2026-11-08: heights from 198.9 px per metre between the roof (y 344, sourced 3.72 m) and the side door sill
+    (y 878, sourced floor 1.035 m), fractions of the half width from the face edges (x 487 and 1009). Windscreen
+    1.83 m to 3.33 m (centre of the arched lower edge 1.99 m), lamps 1.48 m to 1.73 m, DB plate 1.46 m to
+    1.76 m, roof lamp centre 3.60 m, destination display 3.02 m to 3.22 m, lower band 0.81 m to 1.12 m, coupler
+    recess 0.51 m to 1.22 m over 0.58 of the width. Perspective of a low camera: about ±0.1 m.
+- source_id: commons-474-elbbruecken-side
+  name: Wikimedia Commons, Hamburg 20260815 Bahnhof Elbbrücken S-Bahn 02.jpg (NutzerAusBerlin)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Hamburg_20260815_Bahnhof_Elbbr%C3%BCcken_S-Bahn_02.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: NutzerAusBerlin, via Wikimedia Commons
+  note: >-
+    Three-quarter view of a class 474 along the platform, read on 2026-11-08: red body
+    and cab door, light grey passenger doors with tall windows, light grey band below the door sills.
+- source_id: commons-474-emu-roof
+  name: Wikimedia Commons, Class 474 EMU.jpg (Samson Ng, D201@EAL)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Class_474_EMU.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Samson Ng (D201@EAL), via Wikimedia Commons
+  note: >-
+    A class 474 seen from above on a curve, read on 2026-11-08: grey roof, red cant rail
+    and front cap. Roof sampled at #8b9fa8 with the sky's tint; the catalogue keeps its luminance as neutral
+    #9a9a9a.
+- source_id: wikipedia-de-coradia-lint-r13
+  name: Wikipedia (de), Alstom Coradia LINT (revision read for the 3D models)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271876424
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Variant table: LINT 41 is DB class 648, 1648, 2648 and 623
+    (41,81 m for 648, 42,17 m for 623, 1648 and 2648), LINT 54 is 622 and 1622 (54,27 m), LINT 81 is 620
+    (80,92 m, B'2'+B'2'+B'B'). Section LINT 81: end cars class 620, middle car 621 on two bogies of its own,
+    twelve outer doors; infobox Höhe 4,31 m, Breite 2,75 m, Fußbodenhöhe 800 mm (low floor) and 1180 mm
+    (high floor). Used for the class to model mappings of R13 (a series drawn with the cars of the class
+    the table puts in the same variant). Section LINT 41 (read again by the M5 modeller on 2026-11-08): from
+    2011 the vehicles got a new head for EN 15227 ("Ab 2011 ... mit einem neuen Kopf versehen"), which with
+    energy absorbers behind the GRP head no longer runs so narrow towards the central coupler, and the horn
+    moved from the coupler area into the roof ("Die Pfeifeinrichtung musste aus dem Bereich der Kupplung in
+    die Dachpartie verlegt werden"); the 623 are the first LINT 41 with the new head shape; the gallery
+    names the 1648 as new vehicles running with modernised 648 and an Abellio LINT 41 (S7) with the new
+    head, and contrasts the head of a newer LINT 54 with an older LINT 41. Derived: the 42,17 m of 623, 1648
+    and 2648 against the 41,81 m of 648 is 0.18 m more per end.
+- source_id: wikipedia-de-flirt-r13
+  name: Wikipedia (de), Stadler Flirt (revision read for the 3D models)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271798108
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Delivery table: class 1428 are four-car Flirt 3 (DB, GABW,
+    GABY, WFB), class 1429 five-car Flirt 3 Bo'2'2'2'2'Bo' (NBE, VIASR, ERB, GABW), class 3427 three-car
+    Flirt 3 XL Bo'2'2'Bo' (VRR for the S-Bahn Rhein-Ruhr, GABW Murrbahn, Transdev Hannover 3427 029 to 092
+    for the S-Bahn Hannover), class 3429 five-car Flirt 3 XL Bo'2'2'2'2'Bo' (VRR 3429 001 to 024, leased to DB
+    Regio). Dimension table: Flirt 3 XL 67 600 mm (three cars) and 106 200 mm (five cars), Breite 2882 mm,
+    Höhe 4270 mm, high floor 1120 mm.
+- source_id: commons-650-radolfzell-front
+  name: Wikimedia Commons, Stadler Regio-Shuttle als DB-Baureihe 650 in Radolfzell.jpg (JoachimKohler-HB)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Stadler_Regio-Shuttle_als_DB-Baureihe_650_in_Radolfzell.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: JoachimKohler-HB, via Wikimedia Commons
+  note: >-
+    Close three-quarter front of a DB Regio class 650 (Regio-Shuttle RS1, 650 322), read by eye (pass 8) on the 1920 x 1200 rendition retrieved 2026-11-05: about
+    216 px per metre in height from the front skirt bottom (0.35 m, catalogue) at y 1030 to the
+    roof (3.7 m) at y 305, lamps placed symmetric about the centre between them (x 1411). Windscreen
+    1.9 m to 3.45 m over about 0.9 of the half width with the amber display 3.29 m to 3.45 m over
+    0.66 inside its top; a small top lamp at 3.6 m; round headlamps in black rings at 1.74 m, 0.71 of
+    the half width, a small lamp under each; DB logo 1.55 m to 1.75 m on the centre line; dark grey
+    lower front from 1.46 m down with black rubber buffers 0.97 m to 1.35 m at 0.6 to 0.98 and the
+    coupler in the middle; light grey band along the side under about 1.2 m. Values estimated.
+- source_id: rgb-to-ral
+  name: rgb.to, RAL colour conversion pages (RAL 1024 Ockergelb)
+  homepage_url: https://rgb.to/ral/1024
+  licence: LicenseRef-FactsOnly
+  licence_url: https://rgb.to/about-help
+  attribution: rgb.to
+  note: >-
+    Gives RAL 1024 Ockergelb as RGB 186, 143, 76 (#ba8f4c), read 2026-11-05;
+    the same triplet is in the RAL CLASSIC table of visual-graphics.de. Wikidata
+    gives #aea04b, which renders olive against the class 481 photos; the warmer value is used.
+- source_id: wikipedia-de-zugschlusssignal
+  name: Wikipedia (de), Zugschlusssignal
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=267463875
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Signal Zg 2 of the German signal book (Ril 301, 2021): the last vehicle of a train shows two red
+    lights, paired left and right, as a rule at the lower edge of the vehicle at the same height;
+    multiple units have had them built in since the 1920s. The forge gives every painted class lamp
+    (the generic fronts without lamp decals) a red tail lens on its outer 30 % from this rule; the
+    outer side and the share follow the forge's rule for lamp strips (assumed, not measured).
+- source_id: commons-bahnfrend-ice-4-tz9236-front
+  name: Wikimedia Commons, ICE 4 Tz 9236 in Berlin Hauptbahnhof, 2024 (01).jpg (Bahnfrend)
+  homepage_url: https://commons.wikimedia.org/wiki/File:ICE_4_Tz_9236_in_Berlin_Hauptbahnhof,_2024_(01).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Bahnfrend, via Wikimedia Commons
+  note: >-
+    Head-on daylight view of an ICE 4 cab end, read in models pass 12 on the 3968 px
+    original: each lamp cluster under the windscreen corner holds a lower lens lit white and an
+    upper clear lens unlit, with no coloured red lens, so the red tail light of Zg 2 shows through
+    the same clear cluster (tail_mode: combined).
+- source_id: wikipedia-de-ice-linien
+  name: Wikipedia (de), Liste der Intercity-Express-Linien
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271933115
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Table column Fahrzeuge of every current line (2026): which ICE series usually runs the line. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-intercity-express-fleet
+  name: Wikipedia (de), Intercity-Express
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271865286
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Section Fahrzeuge. Fleet in March 2024: 408 trainsets, 58 ICE 1, 43 ICE 2, 82 ICE 3, 70 ICE T, 137 ICE 4, 18 ICE 3neo. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-ice-3-series
+  name: Wikipedia (de), ICE 3
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271117748
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox: the article covers the series 403, 406, 407 and 408. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-ice-t-series
+  name: Wikipedia (de), ICE T
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271942840
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    The article covers the series 411 and 415. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-berlin
+  name: Wikipedia (de), S-Bahn Berlin
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271842825
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Infobox and section Aktuelle Baureihen: 756 Viertelzüge in total, 500 of series 481/482. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-muenchen
+  name: Wikipedia (de), S-Bahn München
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271683978
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Flottenübersicht: 289 vehicles, 36 of series 420, 237 of 423, 16 of 424. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-stuttgart
+  name: Wikipedia (de), S-Bahn Stuttgart
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270593939
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Fahrzeugbestand on 31 December 2025: 60 units of 423 (S1, S3, S6, S60), 97 of 430.0 and 58 of 430.2 (S1 to S5, S62). Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-rhein-main
+  name: Wikipedia (de), S-Bahn Rhein-Main
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270842742
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    100 vehicles of series 423 and 91 of series 430, the latter standard on S1, S8 and S9. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-hamburg
+  name: Wikipedia (de), S-Bahn Hamburg
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271681652
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Fleet table: series 474 (112 units, main use S1, S2, S5) and 490 (82 units plus 64 on order, main use S2, S3, S5). Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-hannover
+  name: Wikipedia (de), S-Bahn Hannover
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269985363
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Transdev bought 64 FLIRT 3 XL for the network from June 2022 and took over 13 units of series 425. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-rhein-ruhr
+  name: Wikipedia (de), S-Bahn Rhein-Ruhr
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271471617
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Table Aktueller Fahrzeugeinsatz: vehicles and units per line. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: wikipedia-de-s-bahn-rheinland
+  name: Wikipedia (de), S-Bahn Rheinland
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271407635
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Line table of the network since 2023: vehicles and units per line. Read for the fleet rules in WP-6.2 (2026-11-07).
+- source_id: bahn-vehicle-sequence
+  name: bahn.de vehicle sequence (Wagenreihung), unofficial
+  homepage_url: https://www.bahn.de/
+  licence: LicenseRef-FactsOnly
+  licence_url: https://www.bahn.de/
+  attribution: Deutsche Bahn
+  note: >-
+    Keyless endpoint behind the bahn.de coach sequence view, used on demand behind a flag (ADR-0011
+    layer L0). Only facts are kept: the series read from the vehicle numbers, the number of units and
+    cars and the unit names, per train and service day.
+- source_id: wikipedia-de-ic-linien
+  name: Wikipedia (de), Liste der Intercity-Linien (Deutschland)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271400738
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge and the line texts of the current IC lines 17 to 87 (IC2 on 17, 18, 35, 55, 56 and 87, the KISS sold to ÖBB in June 2025). Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-intercity-2-lines
+  name: Wikipedia (de), Intercity 2 (Deutsche Bahn)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271892877
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Section Aktueller und geplanter Einsatz: IC lines in service with the Intercity 2 (17, 34, 35, 55, 56, 61, 87), and the sale of the KISS fleet from January 2025. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-nrw
+  name: Wikipedia (de), Liste der SPNV-Linien in Nordrhein-Westfalen
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271807924
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-nds
+  name: Wikipedia (de), Liste der SPNV-Linien in Niedersachsen
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271297380
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-by
+  name: Wikipedia (de), Liste der SPNV-Linien in Bayern
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271961076
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-bw
+  name: Wikipedia (de), Liste der SPNV-Linien in Baden-Württemberg
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270992555
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-rp
+  name: Wikipedia (de), Liste der SPNV-Linien in Rheinland-Pfalz
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271748669
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-sl
+  name: Wikipedia (de), Liste der SPNV-Linien im Saarland
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270608480
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-nvv
+  name: Wikipedia (de), Liste der SPNV-Linien im Nordhessischen Verkehrsverbund
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271593098
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-rmv
+  name: Wikipedia (de), Liste der Eisenbahnlinien im Rhein-Main-Verkehrsverbund
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271596208
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-bb
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Brandenburg und Berlin
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271702837
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-sn
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Sachsen
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=270608437
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-st
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Sachsen-Anhalt
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271585683
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-th
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Thüringen
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271385289
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-sh
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Schleswig-Holstein
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=269080900
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: wikipedia-de-spnv-mv
+  name: Wikipedia (de), Liste der Eisenbahnlinien in Mecklenburg-Vorpommern
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271427642
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Column Fahrzeuge of the current regional lines: which series runs each line in the 2026 timetable year. Read for the fleet rules (2026-11-08).
+- source_id: commons-3429-bonn-oberkassel
+  name: Wikimedia Commons, Bonn Oberkassel Flirt3 XL voor S-Bahn Rhein-Ruhr 3429 003 (48293301687).jpg (Rob Dammers)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bonn_Oberkassel_Flirt3_XL_voor_S-Bahn_Rhein-Ruhr_3429_003_(48293301687).jpg
+  licence: CC-BY-2.0
+  licence_url: https://creativecommons.org/licenses/by/2.0/
+  attribution: Rob Dammers, via Wikimedia Commons
+  note: 'Three-quarter front of FLIRT 3 XL 3429 003 in the VRR design (2019-07-15), the 1920 px rendition fetched
+    on 2026-11-08 (one request, 927 kB). Sampled on it: green front sides #179d12 (median of 940,560 to
+    975,690), the sunlit shoulder of the body #e4e3e8 (80th percentile of the upper side, 1020,430 to 1140,470),
+    the dark surround of the windscreen #686b75. The doors read #3a8c26 in shade.'
+- source_id: commons-hlb-bad-vilbel
+  name: Wikimedia Commons, Bahnhof Bad Vilbel - Coradia Continental der HLB.jpg (ManuelB701)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Bahnhof_Bad_Vilbel_-_Coradia_Continental_der_HLB.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: ManuelB701, via Wikimedia Commons
+  note: 'Side and front of an HLB Coradia Continental (2020s, overcast), the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1437 px, origin top left): front yellow #d09e30 (60,600 to 150,625; #c59411
+    lower on the nose), light grey body #a8acac (1030,700 to 1280,730), door and roof red #ce3f2e (80th percentile
+    of 805,665 to 830,735; the roof strip alone reads #b3645b), dark sill #2c2d2e.'
+- source_id: commons-brb-paartalbahn
+  name: Wikimedia Commons, Paartalbahn BRB LINT41.jpg (Benno Bickel)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Paartalbahn_BRB_LINT41.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Benno Bickel, via Wikimedia Commons
+  note: 'BRB LINT 41 VT 320 in the snow, 2023-12-05, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1280 px, origin top left): blue #1e3b8b (50th percentile of 640,680 to 690,740), white lower
+    body #beb6a9 (85th percentile of 715,850 to 800,930), red door #8f3c36 (60th percentile of 855,780 to 880,900,
+    in shade).'
+- source_id: commons-eb-vt321-leipzig
+  name: Wikimedia Commons, EB VT-321 01.jpg (Ad Meskens)
+  homepage_url: https://commons.wikimedia.org/wiki/File:EB_VT-321_01.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Ad Meskens, via Wikimedia Commons
+  note: 'Erfurter Bahn Regio-Shuttle VT 321 in Leipzig Hbf, 2023-04-24, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1180 px, origin top left): white upper body #b4bdba (800,320 to 1250,400), green
+    sill and swoosh #246f26 (720,740 to 850,860), door red #7f2d28 (425,450 to 520,860, in shade).'
+- source_id: commons-agilis-naila
+  name: Wikimedia Commons, Agilis Regio-Shuttle in Naila.jpg (Berdi2)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Agilis_Regio-Shuttle_in_Naila.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Berdi2, via Wikimedia Commons
+  note: 'agilis Regio-Shuttle VT 650.738 in Naila, 2025-07-03, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 2560 px, origin top left): yellow-green front #cabd4f (650,893 to 810,951), dark
+    grey body #616e7e (1160,380 to 1230,460), light grey lower side #8c8b8e (1310,960 to 1450,1020), dark underframe
+    #35393c.'
+- source_id: commons-neb-563-003-basdorf
+  name: Wikimedia Commons, NEB 563 003 at Basdorf.jpg (Skye Haynes)
+  homepage_url: https://commons.wikimedia.org/wiki/File:NEB_563_003_at_Basdorf.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Skye Haynes, via Wikimedia Commons
+  note: 'NEB Mireo Plus B 563 003 in Basdorf, 2026-09-18, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1280 px, origin top left): blue #04519e (1110,560 to 1160,620), white nose panel #ccd3db
+    (850,725 to 930,775), yellow doors #d9a336 (85th percentile of 1540,720 to 1565,930).'
+- source_id: commons-vlexx-ruesselsheim
+  name: Wikimedia Commons, Vlexx LINT 54, Rüsselsheim ( 1070812).jpg (Matti Blume)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Vlexx_LINT_54,_R%C3%BCsselsheim_(_1070812).jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Matti Blume, via Wikimedia Commons
+  note: 'vlexx LINT 54 622 403 in Rüsselsheim, 2018-12-24, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1440 px, origin top left): silver-grey side #8e9ca7 (560,560 to 600,590), blue front #07427a
+    (50th percentile of 1160,500 to 1230,560 and 1420,700 to 1500,760: #01386e to #03234a).'
+- source_id: commons-rrx-462-oberhausen
+  name: Wikimedia Commons, RRX 462 062 Oberhausen 2608261727.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:RRX_462_062_Oberhausen_2608261727.jpg
+  licence: CC-BY-4.0
+  licence_url: https://creativecommons.org/licenses/by/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: 'RRX Desiro HC 462 062 in Oberhausen Hbf, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 887 px, origin top left): shaded white body #b3b5b0 (60th percentile of 1380,330 to 1420,420), orange
+    doors #f69c60 (70th percentile of 1305,350 to 1330,500), dark front surround #272a39 (880,330 to 1000,400).'
+- source_id: commons-nwb-643-bielefeld
+  name: Wikimedia Commons, NWB 643 311 Bielefeld 2006141121.jpg (Clic)
+  homepage_url: https://commons.wikimedia.org/wiki/File:NWB_643_311_Bielefeld_2006141121.jpg
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Clic, via Wikimedia Commons
+  note: 'NordWestBahn Talent VT 643 311 in Bielefeld, 2020-06-14, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1080 px, origin top left): blue lower body #1c306b (70th percentile of 1360,640
+    to 1700,700), silver upper body and roof #b1b8be (1000,470 to 1300,490), yellow doors and sill band #a58030
+    (90th percentile of 990,680 to 1190,700, in shade).'
+- source_id: commons-arverio-by-mireo
+  name: Wikimedia Commons, Arverio BY-Mireo.jpg (Lobedan)
+  homepage_url: https://commons.wikimedia.org/wiki/File:Arverio_BY-Mireo.jpg
+  licence: CC0-1.0
+  licence_url: https://creativecommons.org/publicdomain/zero/1.0/
+  attribution: Lobedan, via Wikimedia Commons
+  note: 'Arverio Bayern Mireo 2463 101, the 1920 px thumbnail fetched on 2026-11-08 (one request; the 1600 px of the metadata call was not downloaded). The coordinates below are x,y pixels of that downloaded file (1920 x 1440 px, origin top left): light blue #14b4f0 (50th percentile of 850,400 to 950,600; #14ade9 on the nose), white
+    nose panel #d9e2e7 (70th percentile of 1380,720 to 1460,800), yellow stripe #ffff67.'
+- source_id: wikipedia-de-talent-r14
+  name: Wikipedia (de), Bombardier Talent (revision read for the identical bodies)
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=271620851
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. Section Baureihen 644 und 944: the 644 is the three-car diesel-electric
+    Talent with six doors per side, and each car body is one window pier longer than in the 643.0. Used for the
+    identical-body table (a rejected pair).
+- source_id: wikipedia-de-424
+  name: Wikipedia (de), DB-Baureihe 424
+  homepage_url: https://de.wikipedia.org/w/index.php?oldid=268753822
+  licence: CC-BY-SA-4.0
+  licence_url: https://creativecommons.org/licenses/by-sa/4.0/
+  attribution: Wikipedia contributors
+  note: >-
+    Read on 2026-11-08. The 424 and the 425 have two double doors per car body and side, the
+    outwardly similar 423 has three. Used for the identical-body table (two rejected pairs).

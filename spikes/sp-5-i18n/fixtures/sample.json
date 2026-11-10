@@ -1,0 +1,31 @@
+{
+  "source": "design/variants/data/meta.json and ice379.json, Transitous over DELFI, captured 2026-10-23",
+  "capturedAt": "2026-10-23T19:34:00Z",
+  "trainsTotal": 2665,
+  "trainsRealtime": 2234,
+  "countsByCategory": {
+    "hsr": 151,
+    "foreign": 777,
+    "ld": 40,
+    "night": 3,
+    "rfast": 463,
+    "reg": 610,
+    "sbahn": 621
+  },
+  "train": {
+    "line": "ICE 379",
+    "category": "hsr",
+    "operator": "DB Fernverkehr AG",
+    "origin": "S+U Berlin Hauptbahnhof",
+    "destination": "Basel SBB",
+    "delayMinutes": 51,
+    "nextStop": {
+      "name": "Frankfurt (Main) Hauptbahnhof",
+      "scheduledArrivalAt": "2026-10-23T18:44:00.000Z",
+      "arrivalAt": "2026-10-23T19:35:00.000Z",
+      "departureAt": "2026-10-23T19:42:00.000Z",
+      "platform": "8",
+      "scheduledPlatform": "7"
+    }
+  }
+}

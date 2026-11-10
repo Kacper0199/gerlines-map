@@ -1,0 +1,17 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "typecheck": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": ["$TURBO_EXTENDS$", "$TURBO_ROOT$/catalog/operators.yaml"]
+    },
+    "test": {
+      "dependsOn": ["transit", "@gerlines/i18n#compile"],
+      "inputs": ["$TURBO_EXTENDS$", "$TURBO_ROOT$/catalog/operators.yaml"]
+    },
+    "build": {
+      "dependsOn": ["^build", "@gerlines/i18n#compile", "@gerlines/trainforge#build"]
+    }
+  }
+}

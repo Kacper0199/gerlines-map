@@ -1,0 +1,6 @@
+category,runs_at_iris_stations,in_iris_plan,live_iris,delay_iris,nonzero_iris,live_mirror,live_mobilithek,live_deincr,live_gtfsde,live_any_delfi,live_any_gtfsrt,live_any_incl_iris
+hsr,199,98.5,98.5,98.0,92.0,0.0,0.0,0.0,71.4,0.0,71.4,99.0
+ld,63,95.2,95.2,92.1,79.4,0.0,0.0,0.0,33.3,0.0,33.3,95.2
+rfast,570,97.5,97.5,94.6,76.1,68.9,68.9,73.0,96.1,73.0,96.8,100.0
+reg,395,88.6,88.6,85.3,61.8,59.5,62.0,63.8,94.2,63.8,94.2,100.0
+sbahn,845,43.8,43.8,41.2,31.4,66.9,69.5,72.1,95.6,72.1,97.2,97.4

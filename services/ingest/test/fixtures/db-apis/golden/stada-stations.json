@@ -1,0 +1,230 @@
+{
+  "total": 6,
+  "stations": [
+    {
+      "stationNumber": 1866,
+      "name": "Frankfurt (Main) Hbf",
+      "ifopt": "de:06412:10",
+      "category": 1,
+      "priceCategory": 1,
+      "federalState": "Hessen",
+      "federalStateCode": "DE-HE",
+      "countryCode": "DE",
+      "municipalityCode": "06412000",
+      "mainEva": 8000105,
+      "evaNumbers": [
+        {
+          "eva": 8000105,
+          "isMain": true,
+          "lon": 8.66282825,
+          "lat": 50.1066819
+        },
+        {
+          "eva": 8098105,
+          "isMain": false,
+          "lon": 8.6625612,
+          "lat": 50.1071101
+        }
+      ],
+      "mainRil100": "FF",
+      "ril100Identifiers": [
+        {
+          "ril100": "FF",
+          "isMain": true,
+          "primaryLocationCode": "DE13276"
+        },
+        {
+          "ril100": "FFT",
+          "isMain": false,
+          "primaryLocationCode": "DE13277"
+        }
+      ],
+      "steplessAccess": "yes",
+      "productLine": "Metropolbahnhof",
+      "aufgabentraeger": "RMV",
+      "localizedNames": {}
+    },
+    {
+      "stationNumber": 7263,
+      "name": "Lindaunis",
+      "ifopt": "de:01059:9034567",
+      "category": 7,
+      "priceCategory": 7,
+      "federalState": "Schleswig-Holstein",
+      "federalStateCode": "DE-SH",
+      "countryCode": "DE",
+      "municipalityCode": "01059187",
+      "mainEva": null,
+      "evaNumbers": [],
+      "mainRil100": "ALIN",
+      "ril100Identifiers": [
+        {
+          "ril100": "ALIN",
+          "isMain": true,
+          "primaryLocationCode": "DE25259"
+        }
+      ],
+      "steplessAccess": "yes",
+      "productLine": "Zubringerbahnhof",
+      "aufgabentraeger": "NAH.SH",
+      "localizedNames": {}
+    },
+    {
+      "stationNumber": 374,
+      "name": "Bahnsdorf",
+      "ifopt": "de:12066:900435800",
+      "category": 6,
+      "priceCategory": 6,
+      "federalState": "Brandenburg",
+      "federalStateCode": "DE-BB",
+      "countryCode": "DE",
+      "municipalityCode": "12066226",
+      "mainEva": 8011098,
+      "evaNumbers": [
+        {
+          "eva": 8011098,
+          "isMain": true,
+          "lon": 14.112288,
+          "lat": 51.581745
+        }
+      ],
+      "mainRil100": "BBO",
+      "ril100Identifiers": [
+        {
+          "ril100": "BBO",
+          "isMain": true,
+          "primaryLocationCode": "DE10586"
+        }
+      ],
+      "steplessAccess": "yes",
+      "productLine": "Zubringerbahnhof",
+      "aufgabentraeger": "VBB",
+      "localizedNames": {
+        "dsb": "Bobošojce"
+      }
+    },
+    {
+      "stationNumber": 442,
+      "name": "Bebitz",
+      "ifopt": "de:15089:8011119",
+      "category": 7,
+      "priceCategory": 7,
+      "federalState": "Sachsen-Anhalt",
+      "federalStateCode": "DE-ST",
+      "countryCode": "DE",
+      "municipalityCode": "15089195",
+      "mainEva": 8011119,
+      "evaNumbers": [
+        {
+          "eva": 8011119,
+          "isMain": true,
+          "lon": 11.763967,
+          "lat": 51.724136
+        }
+      ],
+      "mainRil100": "LBBZ",
+      "ril100Identifiers": [
+        {
+          "ril100": "LBBZ",
+          "isMain": true,
+          "primaryLocationCode": "DE10701"
+        }
+      ],
+      "steplessAccess": null,
+      "productLine": null,
+      "aufgabentraeger": "NASA",
+      "localizedNames": {}
+    },
+    {
+      "stationNumber": 1071,
+      "name": "Berlin Hauptbahnhof",
+      "ifopt": "de:11000:900003201",
+      "category": 1,
+      "priceCategory": 1,
+      "federalState": "Berlin",
+      "federalStateCode": "DE-BE",
+      "countryCode": "DE",
+      "municipalityCode": "11000000",
+      "mainEva": 8011160,
+      "evaNumbers": [
+        {
+          "eva": 8011160,
+          "isMain": true,
+          "lon": 13.369545,
+          "lat": 52.525592
+        },
+        {
+          "eva": 8089021,
+          "isMain": false,
+          "lon": 13.369545,
+          "lat": 52.525592
+        },
+        {
+          "eva": 8098160,
+          "isMain": false,
+          "lon": 13.369545,
+          "lat": 52.525592
+        }
+      ],
+      "mainRil100": "BHBF",
+      "ril100Identifiers": [
+        {
+          "ril100": "BHBF",
+          "isMain": true,
+          "primaryLocationCode": "DE10872"
+        },
+        {
+          "ril100": "BHBT",
+          "isMain": false,
+          "primaryLocationCode": "DE10873"
+        },
+        {
+          "ril100": "BL",
+          "isMain": false,
+          "primaryLocationCode": "DE10871"
+        },
+        {
+          "ril100": "BLS",
+          "isMain": false,
+          "primaryLocationCode": "DE10874"
+        }
+      ],
+      "steplessAccess": "partial",
+      "productLine": "Metropolbahnhof",
+      "aufgabentraeger": "VBB Berlin",
+      "localizedNames": {}
+    },
+    {
+      "stationNumber": 6275,
+      "name": "Tromsdorf",
+      "ifopt": null,
+      "category": 7,
+      "priceCategory": 7,
+      "federalState": "Sachsen-Anhalt",
+      "federalStateCode": "DE-ST",
+      "countryCode": "DE",
+      "municipalityCode": "15084125",
+      "mainEva": 8013152,
+      "evaNumbers": [
+        {
+          "eva": 8013152,
+          "isMain": true,
+          "lon": 11.481268,
+          "lat": 51.118495
+        }
+      ],
+      "mainRil100": "UTRO",
+      "ril100Identifiers": [
+        {
+          "ril100": "UTRO",
+          "isMain": true,
+          "primaryLocationCode": "DE20372"
+        }
+      ],
+      "steplessAccess": "yes",
+      "productLine": "nicht anwendbar",
+      "aufgabentraeger": "NASA",
+      "localizedNames": {}
+    }
+  ]
+}

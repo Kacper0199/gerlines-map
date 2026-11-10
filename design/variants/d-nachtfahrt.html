@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GerLines Nachtfahrt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="stylesheet" href="d-nachtfahrt/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5v14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.59 13.51 6.83 3.98"/><path d="m15.41 6.51-6.82 3.98"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+    <symbol id="i-follow" viewBox="0 0 24 24"><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v3"/><path d="M12 19v3"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-pos" viewBox="0 0 24 24"><path d="M12 3 20 20l-8-4-8 4Z"/></symbol>
+  </defs>
+</svg>
+
+<div id="map" role="application" aria-label="Map of trains in Germany"></div>
+
+<header class="brand">
+  <span class="wordmark">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20c7 0 7-14 14-14h3"/><circle cx="20.5" cy="6" r="2.4"/></svg>
+    GerLines
+  </span>
+  <p class="live"><span id="count-total"></span><span id="count-live"><i class="pt"></i></span></p>
+  <p class="stage" id="stage" aria-live="polite">Germany, all trains</p>
+</header>
+
+<div class="topright">
+  <div class="seg lang" role="group" aria-label="Language">
+    <button type="button" aria-pressed="true" lang="en">EN</button>
+    <button type="button" aria-pressed="false" aria-disabled="true" lang="de" tabindex="-1">DE</button>
+    <button type="button" aria-pressed="false" aria-disabled="true" lang="pl" tabindex="-1">PL</button>
+  </div>
+  <button type="button" class="btn search" id="open-search" aria-haspopup="dialog" aria-label="Search trains">
+    <svg class="i"><use href="#i-search"/></svg>
+    <span class="s-label">Train, line or station</span>
+    <kbd>Ctrl K</kbd>
+  </button>
+</div>
+
+<section class="legend" id="legend" aria-label="Legend"></section>
+
+<div class="attrib" id="attrib">
+  &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>,
+  <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>,
+  <a href="https://openmaptiles.org" target="_blank" rel="noopener">OpenMapTiles</a>,
+  <a href="https://transitous.org" target="_blank" rel="noopener">Transitous</a>,
+  <a href="https://www.delfi.de" target="_blank" rel="noopener">DELFI</a>
+</div>
+<button type="button" class="icon-btn attrib-btn" id="attrib-btn" aria-label="Map attribution" aria-expanded="false"><svg class="i"><use href="#i-info"/></svg></button>
+
+<div class="map-controls">
+  <div class="zoom" role="group" aria-label="Zoom">
+    <button type="button" id="zoom-in" aria-label="Zoom in"><svg class="i"><use href="#i-plus"/></svg></button>
+    <button type="button" id="zoom-out" aria-label="Zoom out"><svg class="i"><use href="#i-minus"/></svg></button>
+  </div>
+  <button type="button" class="icon-btn" id="layers-btn" aria-label="Layers and map style" aria-expanded="false" aria-controls="layers-pop"><svg class="i"><use href="#i-layers"/></svg></button>
+</div>
+
+<div class="pop" id="layers-pop" role="dialog" aria-label="Layers and map style" hidden>
+  <div>
+    <h3>Colour by</h3>
+    <div class="seg" role="radiogroup" aria-label="Colour by" id="mode-seg">
+      <button type="button" role="radio" aria-checked="true" data-mode="category">Category</button>
+      <button type="button" role="radio" aria-checked="false" data-mode="delay">Delay</button>
+      <button type="button" role="radio" aria-checked="false" data-mode="operator" disabled title="Operator is not in the snapshot yet">Operator</button>
+    </div>
+  </div>
+  <div>
+    <h3>Map style</h3>
+    <div class="grid2" role="radiogroup" aria-label="Map style" id="style-seg">
+      <button type="button" role="radio" aria-checked="true" data-style="dark">Dark</button>
+      <button type="button" role="radio" aria-checked="false" data-style="light">Light</button>
+      <button type="button" role="radio" aria-checked="false" disabled title="Not part of this mockup">Satellite</button>
+      <button type="button" role="radio" aria-checked="false" disabled title="Not part of this mockup">Terrain</button>
+    </div>
+  </div>
+  <div class="only-phone">
+    <h3>Language</h3>
+    <div class="seg" role="group" aria-label="Language">
+      <button type="button" aria-pressed="true">EN</button>
+      <button type="button" aria-pressed="false" aria-disabled="true" tabindex="-1">DE</button>
+      <button type="button" aria-pressed="false" aria-disabled="true" tabindex="-1">PL</button>
+    </div>
+  </div>
+</div>
+
+<aside class="inspector fit" id="inspector" aria-label="Selected train" hidden></aside>
+
+<div class="palette-wrap" id="palette-wrap" hidden>
+  <div class="palette" role="dialog" aria-modal="true" aria-label="Search trains">
+    <div class="field">
+      <svg class="i"><use href="#i-search"/></svg>
+      <input id="palette-input" type="text" autocomplete="off" spellcheck="false" placeholder="Train, line or station" aria-label="Train, line or station">
+      <kbd>Esc</kbd>
+    </div>
+    <ul id="palette-list" role="listbox" aria-label="Results"></ul>
+    <div class="foot"><span id="palette-hint"></span><span>Up and down to choose, Enter to fly there</span></div>
+  </div>
+</div>
+
+<div class="boot" id="boot">GerLines</div>
+
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script src="d-nachtfahrt/map-style.js"></script>
+<script src="d-nachtfahrt/app.js"></script>
+</body>
+</html>

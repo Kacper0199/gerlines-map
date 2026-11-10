@@ -1,0 +1,22 @@
+{
+  "tag": "flirt3",
+  "model": "db-428-flirt3",
+  "source": "side-end-DB_1428_Duisburg_Hauptbahnhof_1904060958.jpg, true side-on telephoto, 228 px/m from the 2.0 m door and the 4.12 m body height, rail at y 1500",
+  "side": {
+    "zmin": 0.95,
+    "xmax": 2.2,
+    "top": [
+      [2.26, 4.1],
+      [1.82, 4.06],
+      [1.38, 3.95],
+      [1.16, 3.77],
+      [0.94, 3.55],
+      [0.72, 3.29],
+      [0.5, 2.98],
+      [0.29, 2.63],
+      [0.11, 2.32],
+      [0.02, 2.1]
+    ],
+    "front": [[0.0, 1.75], [0.0, 1.4], [0.07, 1.29], [0.11, 1.1], [0.15, 0.95]]
+  }
+}

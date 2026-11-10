@@ -1,0 +1,27 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=269080900 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 91-97, 102-113, 141-143, 154-154, 168-169; references removed. -->
+== {{Anker|Regionalverkehr}}Nah- und Regionalverkehr (Stand: Dezember 2025) ==
+{| class="wikitable"
+|- class="hintergrundfarbe4"
+! [[Verkehrslinie|Linie]] || Zuglauf || [[Kursbuch (Deutschland)|KBS]] || [[Eisenbahn#Fahrzeuge|Fahrzeuge im Regelbetrieb]] || [[Verkehrsunternehmen|Verkehrs&shy;unternehmen]] || Takt
+|- class="hintergrundfarbe5"
+|colspan="6"|
+=== {{Anker|Regional-Express}}Regional-Express (vor/nach Generalsanierung) ===
+|-
+| style="text-align:center;" | {{Bahnlinie SH|RE|6}}
+| [[Bahnhof Hamburg-Altona|Hamburg-Altona]] – [[Bahnhof Elmshorn|Elmshorn]] – [[Bahnhof Itzehoe|Itzehoe]] – [[Bahnhof Heide (Holst)|Heide (Holst)]] – [[Bahnhof Husum|Husum]] – [[Bahnhof Niebüll|Niebüll (DB)]] – Klanxbüll – Morsum – Keitum – [[Bahnhof Westerland (Sylt)|Westerland (Sylt)]]
+| 130 || 1–2 × [[Bombardier Traxx#Baureihe 245|245]] + 4–12<br />[[Bombardier Married Pair|Married-Pair-Wagen]]
+[[DB-Baureihe 218|218]] / [[Bombardier Traxx|245]] + 5 [[Doppelstockwagen]]
+| [[DB Regio Marschbahn]] || 30 min <small>(Niebüll–Westerland)</small><br />60 min <small>(Hamburg–Westerland)</small><br />Verstärker <small>(Westerland–Bredstedt/Husum)</small>
+|-
+| style="text-align:center;" | RE 6x<br><small>(RE 60)</small>
+| ''Sprinter''<br>[[Bahnhof Hamburg-Altona|Hamburg-Altona]] – [[Bahnhof Elmshorn|Elmshorn]] ''(früher Abendzug So)'' – [[Bahnhof Husum|Husum]] – [[Bahnhof Niebüll|Niebüll (DB)]] – Klanxbüll – Morsum – Keitum – [[Bahnhof Westerland (Sylt)|Westerland (Sylt)]]
+| 130 || 1–2 × [[Bombardier Traxx#Baureihe 245|245]] + 4–12<br />[[Bombardier Married Pair|Married-Pair-Wagen]]
+[[DB-Baureihe 218|218]] / [[Bombardier Traxx|245]] + 5 [[Doppelstockwagen]]
+| [[DB Regio Marschbahn]] || zwei Zugpaare <small>(Sa–So; Mitte Mai–Ende Okt/Anfang Nov)</small>
+|-
+| style="text-align:center;" | {{Bahnlinie SH|RE|80}} || [[Hamburg Hauptbahnhof|Hamburg Hbf]] – Ahrensburg – [[Bahnhof Bad Oldesloe|Bad Oldesloe]] – Reinfeld (Holst) – Lübeck Moisling – [[Lübeck Hauptbahnhof|Lübeck Hbf]] || 104 || 1–2 × 445 ([[Stadler KISS|KISS]], vierteilig)
+| [[DB Regio Schleswig-Holstein|DB Regio Nord]] || 60 min
+=== {{Anker|Regionalbahn}}Regionalbahn (vor/nach Generalsanierung) ===
+|-
+| style="text-align:center;" | {{Bahnlinie SH|RB|65}} || [[Bahnhof Niebüll#Weitere Niebüller Bahnstationen|Niebüll (neg)]] – Deezbüll – Maasbüll – Dagebüll Mole ([[Kleinbahn Niebüll–Dagebüll]]) || 136 || [[ÖBB 5047|T4]] / [[DB-Baureihe 628#628.9/629|628.9/629]] || [[Norddeutsche Eisenbahngesellschaft Niebüll]] || 60 min
+|}

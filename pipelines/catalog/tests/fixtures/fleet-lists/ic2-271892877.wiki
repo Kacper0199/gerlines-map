@@ -1,0 +1,29 @@
+<!-- Cut from https://de.wikipedia.org/w/index.php?oldid=271892877 (CC BY-SA 4.0, Wikipedia contributors) for the tests: lines 98-125; references removed. -->
+== Aktueller und geplanter Einsatz ==
+{| class="wikitable zebra"
+|- 
+! Linie !! Fahrtverlauf !! (geplanter) Einsatz !! Takt|| Bemerkungen,<br />Einzelnachweise
+|-
+| {{Bahnlinie|IC|17|IC}} || (Chemnitz –) Dresden – Berlin – Rostock – Warnemünde || unter Verkehr || zweistündlich ||zwei Zugpaare ab/bis Chemnitz
+|-
+| {{Bahnlinie|IC|34|IC}} || Münster – Hamm – Dortmund/Unna – Siegen – Frankfurt(Main) || unter Verkehr || 5 Zugpaare ||  wird ab Dezember 2026 eingestellt
+|-
+| {{Bahnlinie|IC|35|IC}} || (Norddeich/Emden Außenhafen –) Emden – Leer – Papenburg – Meppen – Lingen – Rheine – Münster – Recklinghausen – Wanne-Eickel – Gelsenkirchen – Oberhausen – Duisburg – Düsseldorf – Köln || unter Verkehr || zweistündlich
+|
+|-
+| {{Bahnlinie|IC|55|IC}} || Dresden – Leipzig – Hannover – Köln – Bonn –  Koblenz – Mannheim – Stuttgart – Tübingen || unter Verkehr || zweistündlich || Köln–Stuttgart seit Dezember 2022
+|-
+| {{Bahnlinie|IC|56|IC}} || Leipzig – Magdeburg – Hannover – Emden (– Norddeich/Emden Außenhafen) || unter Verkehr || zweistündlich || Referenzlinie, ein Zugpaar Norddeich–Cottbus
+|-
+| {{Bahnlinie|IC|61|IC}} || Karlsruhe – Pforzheim – Mühlacker – Vaihingen (Enz) – Stuttgart – Schwäbisch Gmünd – Aalen – Ellwangen – Crailsheim – Ansbach – Nürnberg – Bamberg – Jena – Leipzig || unter Verkehr || zweistündlich || Abschnitt Nürnberg – Leipzig:<br/>bis 2024 1 Zugpaar, 2025 5 Zugpaare,<br/>ab 2026 2 Zugpaare
+|-
+| {{Bahnlinie|IC|87|IC}} || Stuttgart – Böblingen – (Herrenberg – Gäufelden – Bondorf) – Horb – (Sulz (Neckar) – Oberndorf (Neckar)) – Rottweil – (Spaichingen) – Tuttlingen – (Engen) – Singen – Schaffhausen – Zürich || unter Verkehr || stündlich ||seit 2025 mit lokbespannten Zügen, von 2022 bis 2025 mit Stadler-Kiss-Triebzügen. Alle 2 Stunden ohne Halt an den eingeklammerten Halten. Zwei tägl. Zugpaare ab Singen über Radolfzell nach Konstanz
+|-
+| {{Bahnlinie|IC|65|IC}} || Berlin – Dresden – Hof – Regensburg – München || || – || frühestens nach der Elektrifizierung der Bahnstrecke zwischen Hof und Regensburg
+|-
+| {{Bahnlinie|IC|66|IC}} || Bamberg – Würzburg – Heilbronn – Stuttgart – Tübingen || 2028 || – ||
+|-
+| {{Bahnlinie|IC|62|IC}} || Saarbrücken – Homburg (Saar) – Kaiserslautern – Neustadt (Weinstr) – Mannheim – Stuttgart – Ulm – Friedrichshafen – Lindau || 2029 || – ||
+|-
+| {{Bahnlinie|IC|51|IC}} || Dresden – Freiberg – Chemnitz – Gößnitz – Gera – Erfurt – Kassel – Paderborn – Dortmund – Essen – Duisburg – Krefeld – Mönchengladbach – Geilenkirchen – Herzogenrath – Aachen || 2032 || zweistündlich || frühestens nach der Elektrifizierung der Bahnstrecke zwischen Weimar und Gößnitz.
+|}

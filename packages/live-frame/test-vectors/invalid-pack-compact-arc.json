@@ -1,0 +1,7 @@
+{
+  "name": "invalid-pack-compact-arc",
+  "description": "shape-pack-basic in the compact coding whose first shape's last M residual is 1 cm smaller, so its M adds up to less than its length.",
+  "decoder": "shapePack",
+  "error": "corrupt",
+  "byteLength": 377
+}

@@ -1,0 +1,274 @@
+[
+  {
+    "kind": "trip",
+    "source": "db-iris",
+    "entityId": "-3511439655951240562-2610260705",
+    "observedAt": 1792969200000,
+    "feedTimestamp": null,
+    "updateTimestamp": null,
+    "sourceTripId": "-3511439655951240562-2610260705",
+    "routeId": null,
+    "directionId": null,
+    "startDate": "2026-10-26",
+    "startTime": "07:05:00",
+    "trainNumber": "83596",
+    "categoryLabel": "ENO",
+    "longDistance": null,
+    "relationship": "added",
+    "vehicleId": null,
+    "vehicleLabel": null,
+    "delaySeconds": null,
+    "stops": [
+      {
+        "stopSequence": null,
+        "stop": {
+          "kind": "uic",
+          "code": 8000152
+        },
+        "arrival": null,
+        "departure": null,
+        "relationship": "unscheduled",
+        "assignedStop": null,
+        "scheduled": {
+          "arrival": 1792997400,
+          "departure": null
+        },
+        "platform": {
+          "scheduled": "11 D-G",
+          "actual": null
+        },
+        "messages": [
+          {
+            "id": "-7650260030006190048",
+            "kind": "d",
+            "code": 1,
+            "category": null,
+            "priority": null,
+            "timestamp": 1792924200,
+            "validFrom": null,
+            "validTo": null
+          }
+        ]
+      }
+    ],
+    "plannedStops": [],
+    "messages": [
+      {
+        "id": "-7650260030006190048",
+        "kind": "d",
+        "code": 1,
+        "category": null,
+        "priority": null,
+        "timestamp": 1792924200,
+        "validFrom": null,
+        "validTo": null
+      }
+    ]
+  },
+  {
+    "kind": "trip",
+    "source": "db-iris",
+    "entityId": "1767422951519870524-2610252151",
+    "observedAt": 1792969200000,
+    "feedTimestamp": null,
+    "updateTimestamp": null,
+    "sourceTripId": "1767422951519870524-2610252151",
+    "routeId": null,
+    "directionId": null,
+    "startDate": "2026-10-25",
+    "startTime": "21:51:00",
+    "trainNumber": null,
+    "categoryLabel": null,
+    "longDistance": null,
+    "relationship": "scheduled",
+    "vehicleId": null,
+    "vehicleLabel": null,
+    "delaySeconds": null,
+    "stops": [
+      {
+        "stopSequence": null,
+        "stop": {
+          "kind": "uic",
+          "code": 8000152
+        },
+        "arrival": {
+          "time": 1792969680,
+          "delaySeconds": null,
+          "uncertaintySeconds": null
+        },
+        "departure": null,
+        "relationship": "scheduled",
+        "assignedStop": null,
+        "scheduled": {
+          "arrival": null,
+          "departure": null
+        },
+        "platform": {
+          "scheduled": null,
+          "actual": "1"
+        },
+        "messages": []
+      }
+    ],
+    "plannedStops": [],
+    "messages": []
+  },
+  {
+    "kind": "trip",
+    "source": "db-iris",
+    "entityId": "2810195840507242816-2610252132",
+    "observedAt": 1792969200000,
+    "feedTimestamp": null,
+    "updateTimestamp": null,
+    "sourceTripId": "2810195840507242816-2610252132",
+    "routeId": null,
+    "directionId": null,
+    "startDate": "2026-10-25",
+    "startTime": "21:32:00",
+    "trainNumber": null,
+    "categoryLabel": null,
+    "longDistance": null,
+    "relationship": "scheduled",
+    "vehicleId": null,
+    "vehicleLabel": null,
+    "delaySeconds": null,
+    "stops": [
+      {
+        "stopSequence": null,
+        "stop": {
+          "kind": "uic",
+          "code": 8000152
+        },
+        "arrival": {
+          "time": 1792971960,
+          "delaySeconds": null,
+          "uncertaintySeconds": null
+        },
+        "departure": null,
+        "relationship": "scheduled",
+        "assignedStop": null,
+        "scheduled": {
+          "arrival": null,
+          "departure": null
+        },
+        "platform": {
+          "scheduled": null,
+          "actual": null
+        },
+        "messages": [
+          {
+            "id": "7071551368623384147-5664866768097215324",
+            "kind": "d",
+            "code": 47,
+            "category": null,
+            "priority": null,
+            "timestamp": 1792960140,
+            "validFrom": null,
+            "validTo": null
+          },
+          {
+            "id": "8205116904917690951-",
+            "kind": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": 1792960920,
+            "validFrom": null,
+            "validTo": null
+          },
+          {
+            "id": "-3840934826685621445-",
+            "kind": "f",
+            "code": 0,
+            "category": null,
+            "priority": null,
+            "timestamp": 1792963680,
+            "validFrom": null,
+            "validTo": null
+          }
+        ]
+      }
+    ],
+    "plannedStops": [],
+    "messages": [
+      {
+        "id": "7071551368623384147-5664866768097215324",
+        "kind": "d",
+        "code": 47,
+        "category": null,
+        "priority": null,
+        "timestamp": 1792960140,
+        "validFrom": null,
+        "validTo": null
+      },
+      {
+        "id": "8205116904917690951-",
+        "kind": "f",
+        "code": 0,
+        "category": null,
+        "priority": null,
+        "timestamp": 1792960920,
+        "validFrom": null,
+        "validTo": null
+      },
+      {
+        "id": "-3840934826685621445-",
+        "kind": "f",
+        "code": 0,
+        "category": null,
+        "priority": null,
+        "timestamp": 1792963680,
+        "validFrom": null,
+        "validTo": null
+      }
+    ]
+  },
+  {
+    "kind": "trip",
+    "source": "db-iris",
+    "entityId": "6161405535149816642-2610260406",
+    "observedAt": 1792969200000,
+    "feedTimestamp": null,
+    "updateTimestamp": null,
+    "sourceTripId": "6161405535149816642-2610260406",
+    "routeId": null,
+    "directionId": null,
+    "startDate": "2026-10-26",
+    "startTime": "04:06:00",
+    "trainNumber": null,
+    "categoryLabel": null,
+    "longDistance": null,
+    "relationship": "scheduled",
+    "vehicleId": null,
+    "vehicleLabel": null,
+    "delaySeconds": null,
+    "stops": [
+      {
+        "stopSequence": null,
+        "stop": {
+          "kind": "uic",
+          "code": 8000152
+        },
+        "arrival": {
+          "time": 1792986660,
+          "delaySeconds": null,
+          "uncertaintySeconds": null
+        },
+        "departure": null,
+        "relationship": "scheduled",
+        "assignedStop": null,
+        "scheduled": {
+          "arrival": null,
+          "departure": null
+        },
+        "platform": {
+          "scheduled": null,
+          "actual": null
+        },
+        "messages": []
+      }
+    ],
+    "plannedStops": [],
+    "messages": []
+  }
+]

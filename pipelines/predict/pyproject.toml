@@ -1,0 +1,22 @@
+[project]
+name = "gerlines-predict"
+version = "0.1.0"
+description = "GerLines B0 and B1 delay predictions: historical quantile tables and their backtest"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = [
+  "polars==1.44.2",
+]
+
+[project.scripts]
+gerlines-predict = "gerlines_predict.cli:main"
+
+[tool.ruff]
+extend = "../../pyproject.toml"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "PLR2004"]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14"]
+build-backend = "uv_build"

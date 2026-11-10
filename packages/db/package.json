@@ -1,0 +1,35 @@
+{
+  "name": "@gerlines/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Database migrations and types",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "db:migrate": "node --env-file-if-exists=../../.env src/cli.ts migrate",
+    "db:reset": "node --env-file-if-exists=../../.env src/cli.ts reset",
+    "db:rollback": "node --env-file-if-exists=../../.env src/cli.ts rollback",
+    "db:status": "node --env-file-if-exists=../../.env src/cli.ts status",
+    "db:types": "node --env-file-if-exists=../../.env src/cli.ts types",
+    "lint": "biome check .",
+    "test": "vitest run --exclude \"**/*.integration.test.ts\"",
+    "test:integration": "node --env-file-if-exists=../../.env node_modules/vitest/vitest.mjs run --test-timeout=60000 --hook-timeout=60000 integration",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "kysely": "catalog:",
+    "pg": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "@types/pg": "catalog:",
+    "kysely-codegen": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

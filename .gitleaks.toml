@@ -1,0 +1,171 @@
+title = "GerLines gitleaks configuration"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Placeholder values committed in .env.example"
+regexes = ['''^change-me-locally$''', '''^-change-me-locally\}$''']
+
+[[allowlists]]
+description = "Made-up sequential hex used as a token in recorder tests"
+regexes = ['''^(?:0123456789abcdef)+$''']
+
+[[rules]]
+id = "gerlines-db-api-marketplace-env"
+description = "DB API Marketplace client id or API key in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])DB_(?:CLIENT_ID|API_KEY)["']?[ \t]*[=:][ \t]*["']?([0-9A-Fa-f]{32})(?:[^0-9A-Za-z]|$)'''
+secretGroup = 1
+keywords = ["db_client_id", "db_api_key"]
+
+[[rules]]
+id = "gerlines-db-api-marketplace-header"
+description = "DB API Marketplace client id or API key in a request header"
+regex = '''(?i)DB-(?:Client-Id|Api-Key)["']?[ \t]*[:=,][ \t]*["']?([0-9A-Fa-f]{32})(?:[^0-9A-Za-z]|$)'''
+secretGroup = 1
+keywords = ["db-client-id", "db-api-key"]
+
+[[rules]]
+id = "gerlines-sncb-api-key-env"
+description = "SNCB (Belgian Mobility Company) API key in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])SNCB_API_KEY["']?[ \t]*[=:][ \t]*["']?([0-9A-Fa-f]{32})(?:[^0-9A-Za-z]|$)'''
+secretGroup = 1
+keywords = ["sncb_api_key"]
+
+[[rules]]
+id = "gerlines-sncb-partner-key-header"
+description = "SNCB (Belgian Mobility Company) API key in the bmc-partner-key header"
+regex = '''(?i)bmc-partner-key["']?[ \t]*[:=,][ \t]*["']?([0-9A-Fa-f]{32})(?:[^0-9A-Za-z]|$)'''
+secretGroup = 1
+keywords = ["bmc-partner-key"]
+
+[[rules]]
+id = "gerlines-mobilithek-cert-password"
+description = "Password of the Mobilithek client certificate in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])MOBILITHEK_CERT_PASSWORD["']?(?:[ \t]*=[ \t]*|[ \t]*:[ \t]+)["']?([^\s"'#$<{%\\][^\s"'#\\]*)'''
+secretGroup = 1
+keywords = ["mobilithek_cert_password"]
+
+  [[rules.allowlists]]
+  description = "Reads from the environment"
+  regexTarget = "match"
+  regexes = ['''[=:][ \t]*["']?(?:os\.environ|os\.getenv|process\.env)''']
+
+[[rules]]
+id = "gerlines-client-certificate-file"
+description = "PKCS 12 client certificate file, such as the Mobilithek machine certificate"
+path = '''(?i)\.(?:p12|pfx)$'''
+
+[[rules]]
+id = "gerlines-otd-api-key"
+description = "opentransportdata.swiss API key in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])OTD_CH_(?:FORMATION_)?API_KEY["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{][^\s"'#]{15,})'''
+secretGroup = 1
+keywords = ["otd_ch_"]
+
+[[rules]]
+id = "gerlines-bearer-jwt"
+description = "JWT sent as a bearer token"
+regex = '''Bearer[ \t]+(eyJ[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]{8,})'''
+secretGroup = 1
+keywords = ["bearer"]
+
+[[rules]]
+id = "gerlines-cloudflare-r2"
+description = "Cloudflare API token or R2 access key in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])(?:CLOUDFLARE_API_TOKEN|R2_ACCESS_KEY_ID|R2_SECRET_ACCESS_KEY)["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{][^\s"'#]{15,})'''
+secretGroup = 1
+keywords = ["cloudflare_api_token", "r2_access_key_id", "r2_secret_access_key"]
+
+[[rules]]
+id = "gerlines-hcloud-token"
+description = "Hetzner Cloud token in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])HCLOUD_TOKEN["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{][^\s"'#]{15,})'''
+secretGroup = 1
+keywords = ["hcloud_token"]
+
+[[rules]]
+id = "gerlines-glitchtip-dsn"
+description = "GlitchTip or Sentry DSN that contains a key"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])GLITCHTIP_DSN["']?[ \t]*[=:][ \t]*["']?(https?://[^\s"'@/$<{][^\s"'@/]*@[^\s"']+)'''
+secretGroup = 1
+keywords = ["glitchtip_dsn"]
+
+[[rules]]
+id = "gerlines-sentry-style-dsn"
+description = "DSN URL with a 32 character hex key"
+regex = '''(https?://[0-9a-f]{32}@[^\s"'/]+/[0-9]+)'''
+secretGroup = 1
+keywords = ["http"]
+
+[[rules]]
+id = "gerlines-postgres-password"
+description = "Postgres password with a real value"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])POSTGRES_PASSWORD["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{\\][^\s"'#\\]*)'''
+secretGroup = 1
+keywords = ["postgres_password"]
+
+  [[rules.allowlists]]
+  description = "Reads from the environment"
+  regexTarget = "match"
+  regexes = ['''[=:][ \t]*["']?(?:os\.environ|os\.getenv|process\.env)''']
+
+  [[rules.allowlists]]
+  description = "Compose required-variable form"
+  regexTarget = "match"
+  regexes = ['''POSTGRES_PASSWORD["']?[ \t]*:\?''']
+
+[[rules]]
+id = "gerlines-production-db-password"
+description = "Production database password (owner or API role) with a real value"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])(?:DB_OWNER_PASSWORD|API_DB_PASSWORD)["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{,;()?/\\][^\s"',;()\\]{7,})'''
+secretGroup = 1
+keywords = ["db_owner_password", "api_db_password"]
+
+  [[rules.allowlists]]
+  description = "Constant names with an underscore and reads from the environment"
+  regexTarget = "secret"
+  regexes = ['''^[A-Z][A-Z0-9]*_[A-Z0-9_]*$''', '''^(?:os\.environ|os\.getenv|process\.env)''']
+
+[[rules]]
+id = "gerlines-centrifugo-secret"
+description = "Centrifugo HTTP API key, admin password, admin secret or token HMAC secret in a variable"
+regex = '''(?m)(?:^|[^A-Za-z0-9_.])CENTRIFUGO_(?:HTTP_API_KEY|ADMIN_PASSWORD|ADMIN_SECRET|CLIENT_TOKEN_HMAC_SECRET_KEY)["']?[ \t]*[=:][ \t]*["']?([^\s"'#$<{,;()\\][^\s"',;()\\]{7,})'''
+secretGroup = 1
+keywords = ["centrifugo_http_api_key", "centrifugo_admin_password", "centrifugo_admin_secret", "centrifugo_client_token_hmac_secret_key"]
+
+  [[rules.allowlists]]
+  description = "Constant names with an underscore and reads from the environment"
+  regexTarget = "secret"
+  regexes = ['''^[A-Z][A-Z0-9]*_[A-Z0-9_]*$''', '''^(?:os\.environ|os\.getenv|process\.env)''']
+
+[[rules]]
+id = "gerlines-centrifugo-config-secret"
+description = "Centrifugo admin password, admin secret, HTTP API key or token HMAC secret in a config file (JSON, YAML or TOML)"
+regex = '''(?m)(?:(?:^|[^A-Za-z0-9.])(?:hmac_secret_key|admin_password|admin_secret)["']?[ \t]*[=:][ \t]*["']?|"(?:http_api|admin)"[ \t]*:[ \t]*\{[^{}]*?"(?:key|password|secret)"[ \t]*:[ \t]*"|^[ \t]*(?:http_api|admin):[ \t]*\r?\n(?:[ \t]+[^\s#][^\n]*\n)*?[ \t]+(?:key|password|secret):[ \t]*["']?)([^\s"'#$<{,;()\\][^\s"',;()\\]{7,})'''
+secretGroup = 1
+keywords = ["hmac_secret_key", "admin_password", "admin_secret", "http_api", "admin"]
+
+  [[rules.allowlists]]
+  description = "Constant names with an underscore and reads from the environment"
+  regexTarget = "secret"
+  regexes = ['''^[A-Z][A-Z0-9]*_[A-Z0-9_]*$''', '''^(?:os\.environ|os\.getenv|process\.env)''']
+
+[[rules]]
+id = "gerlines-valkey-password"
+description = "Valkey password in a variable, a requirepass or masterauth setting or a redis URL"
+regex = '''(?m)(?:(?:^|[^A-Za-z0-9_.])VALKEY_PASSWORD["']?[ \t]*[=:][ \t]*["']?|(?:^[ \t]*|[ \t]--)(?:requirepass|masterauth)[ \t]+["']?|(?:redis|rediss|valkey|valkeys)://[^\s:@/"']*:)([^\s"'#$<{,;()@/\\][^\s"',;()@\\]{7,})'''
+secretGroup = 1
+keywords = ["valkey_password", "requirepass", "masterauth", "redis://", "rediss://", "valkey://", "valkeys://"]
+
+  [[rules.allowlists]]
+  description = "Constant names with an underscore and reads from the environment"
+  regexTarget = "secret"
+  regexes = ['''^[A-Z][A-Z0-9]*_[A-Z0-9_]*$''', '''^(?:os\.environ|os\.getenv|process\.env)''']
+
+[[rules]]
+id = "gerlines-valkey-acl-password"
+description = "Valkey ACL user with a clear text password (a user line or ACL SETUSER)"
+regex = '''(?m)(?:^[ \t]*user|[ \t](?i:acl)[ \t]+(?i:setuser))[ \t]+[^\s>]+(?:[ \t]+[^\s>]+)*?[ \t]+>([^\s"'$<{][^\s"']{7,})'''
+secretGroup = 1
+keywords = ["user", "setuser"]

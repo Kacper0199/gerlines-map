@@ -1,0 +1,150 @@
+{
+  "fixture": {
+    "name": "cancelled-train",
+    "note": "Train cancelled at every stop",
+    "database": "gerlines_wp23",
+    "asOf": "2026-10-26T21:15:00.000Z",
+    "selection": "trip_instance a97e3bcb-f952-57f5-98aa-b29de53c4b00, source delfi-gtfs-rt",
+    "replay": {
+      "from": "2026-10-26T21:00:00.000Z",
+      "to": "2026-10-27T07:00:00.000Z",
+      "note": "feed version switch replay, window as planned, not measured at build time"
+    },
+    "feedVersions": [
+      {
+        "id": 1,
+        "version": "2026-10-17T14:46:34"
+      },
+      {
+        "id": 3,
+        "version": "2026-10-24T14:58:08"
+      }
+    ],
+    "rtPayloads": {
+      "atOrBefore": "2026-10-26T21:15:00.000Z",
+      "total": 100,
+      "bySource": {
+        "delfi-gtfs-rt": 15,
+        "gtfsde-rt": 15
+      },
+      "countedAt": "2026-10-29, after the build; delfi-gtfs-rt and gtfsde-rt are the sources used, the other 70 belong to other sources"
+    },
+    "builder": {
+      "script": "apps/web/src/components/train/fixtures/build.ts",
+      "commit": "0f2921f",
+      "sha256": "5473f0eace70b16bddc17559572be34b76921462048fe18e4e4de1d346939da3"
+    },
+    "assumed": [
+      "detail.geometry.available is set true: matched shapes are not loaded in this database",
+      "detail.productName is null: the static feed names long distance routes by line number only"
+    ],
+    "rebuildable": false,
+    "rebuildNote": "gerlines_wp23 was reset after the build: on 2026-10-29 it held 188 rt_payload rows from 2026-10-27T02:28Z to 02:57Z and none at or before asOf, so this instant cannot be rebuilt"
+  },
+  "detail": {
+    "tripInstanceId": "a97e3bcb-f952-57f5-98aa-b29de53c4b00",
+    "frameKey": null,
+    "serviceDate": "2026-10-26",
+    "timetableVersion": "2026-10-17T14:46:34",
+    "version": 4,
+    "asOf": "2026-10-26T21:15:00.000Z",
+    "category": "reg",
+    "productName": null,
+    "line": "RB82",
+    "trainNumber": "58920",
+    "foreign": false,
+    "added": false,
+    "cancelled": true,
+    "operator": {
+      "id": "db-regio-ag-bayern",
+      "name": "DB Regio AG Bayern",
+      "wikidataQid": null
+    },
+    "destination": {
+      "stopPlaceId": "412aaac7-38d1-5f5f-b1c6-ad45d0db8b0f",
+      "name": "Steinach (bei Rothenburg ob der Tauber)"
+    },
+    "headsign": "Steinach (bei Rothenburg ob der Tauber)",
+    "delaySeconds": null,
+    "provenance": {
+      "kind": "realtime",
+      "sourceId": "delfi-gtfs-rt",
+      "sourceName": "DELFI GTFS-RT (Prognosedaten) via the traines.eu community mirror",
+      "attribution": "DELFI e.V., mirrored by traines.eu",
+      "predictionChangedAt": "2026-10-26T21:00:20.611Z",
+      "feedObservedAt": "2026-10-26T21:14:21.898Z"
+    },
+    "geometry": {
+      "available": true,
+      "reason": null
+    },
+    "progress": {
+      "lastPassedIndex": null,
+      "nextIndex": null
+    },
+    "stops": [
+      {
+        "index": 0,
+        "stopPlaceId": "a4382acb-bbbc-5625-a4b8-0241f8dbbeb8",
+        "name": "Rothenburg ob der Tauber",
+        "scheduledArrival": "2026-10-26T21:05:00.000Z",
+        "scheduledDeparture": "2026-10-26T21:05:00.000Z",
+        "predictedArrival": null,
+        "predictedDeparture": null,
+        "arrivalDelaySeconds": null,
+        "departureDelaySeconds": null,
+        "platformScheduled": "1",
+        "platformActual": null,
+        "cancelled": true,
+        "prediction": "propagated"
+      },
+      {
+        "index": 1,
+        "stopPlaceId": "356b2f0d-ba29-50de-b177-3334b997a78f",
+        "name": "Schweinsdorf",
+        "scheduledArrival": "2026-10-26T21:09:00.000Z",
+        "scheduledDeparture": "2026-10-26T21:09:00.000Z",
+        "predictedArrival": null,
+        "predictedDeparture": null,
+        "arrivalDelaySeconds": null,
+        "departureDelaySeconds": null,
+        "platformScheduled": "1",
+        "platformActual": null,
+        "cancelled": true,
+        "prediction": "propagated"
+      },
+      {
+        "index": 2,
+        "stopPlaceId": "a8f7aa83-d2dc-5a4a-b6e5-261feeeef0aa",
+        "name": "Hartershofen",
+        "scheduledArrival": "2026-10-26T21:11:00.000Z",
+        "scheduledDeparture": "2026-10-26T21:12:00.000Z",
+        "predictedArrival": null,
+        "predictedDeparture": null,
+        "arrivalDelaySeconds": null,
+        "departureDelaySeconds": null,
+        "platformScheduled": "1",
+        "platformActual": null,
+        "cancelled": true,
+        "prediction": "propagated"
+      },
+      {
+        "index": 3,
+        "stopPlaceId": "412aaac7-38d1-5f5f-b1c6-ad45d0db8b0f",
+        "name": "Steinach (bei Rothenburg ob der Tauber)",
+        "scheduledArrival": "2026-10-26T21:20:00.000Z",
+        "scheduledDeparture": "2026-10-26T21:20:00.000Z",
+        "predictedArrival": null,
+        "predictedDeparture": null,
+        "arrivalDelaySeconds": null,
+        "departureDelaySeconds": null,
+        "platformScheduled": "5",
+        "platformActual": null,
+        "cancelled": true,
+        "prediction": "propagated"
+      }
+    ],
+    "vehicle": null,
+    "photo": null
+  }
+}

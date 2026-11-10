@@ -1,0 +1,15 @@
+*
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!packages/config/package.json
+!packages/db/package.json
+!packages/db/src/
+!packages/schema/package.json
+!packages/schema/src/
+!apps/api/package.json
+!apps/api/src/
+**/node_modules
+**/dist
+**/.turbo
+**/*.test.ts

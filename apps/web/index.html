@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>GerLines, live map of every train in Germany</title>
+    <meta name="description" content="Every train in Germany, live on a map." />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317181A'/%3E%3Cpath d='M16 5l9 21-9-6-9 6z' fill='%23FFB000'/%3E%3C/svg%3E"
+    />
+    <script>
+      (function () {
+        var theme = "dark";
+        var styles = { dark: "dark", light: "light", satellite: "dark", terrain: "light" };
+        var styleTheme = function (style) {
+          return Object.prototype.hasOwnProperty.call(styles, style) ? styles[style] : null;
+        };
+        try {
+          var params = new URLSearchParams(location.search);
+          var askedTheme = params.get("theme");
+          var storedStyle = null;
+          var storedTheme = null;
+          try {
+            storedStyle = localStorage.getItem("gerlines-map-style");
+            storedTheme = localStorage.getItem("gerlines-theme");
+          } catch (error) {}
+          var pick =
+            styleTheme(params.get("style")) ||
+            (askedTheme === "light" || askedTheme === "dark" ? askedTheme : null) ||
+            styleTheme(storedStyle) ||
+            storedTheme;
+          theme = pick === "light" ? "light" : "dark";
+        } catch (error) {}
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "invalid-pack-arc-length",
+  "description": "shape-pack-basic whose first shape's m column adds up to 1 cm less than its length.",
+  "decoder": "shapePack",
+  "error": "corrupt",
+  "byteLength": 404
+}

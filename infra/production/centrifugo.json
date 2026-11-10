@@ -1,0 +1,74 @@
+{
+  "log": {
+    "level": "info"
+  },
+  "health": {
+    "enabled": true
+  },
+  "http_server": {
+    "internal_port": "9000"
+  },
+  "admin": {
+    "enabled": false,
+    "insecure": false
+  },
+  "http_api": {
+    "insecure": false
+  },
+  "prometheus": {
+    "enabled": false
+  },
+  "swagger": {
+    "enabled": false
+  },
+  "debug": {
+    "enabled": false
+  },
+  "client": {
+    "insecure": false,
+    "allow_anonymous_connect_without_token": true,
+    "allowed_origins": [],
+    "channel_limit": 4,
+    "connection_limit": 4000
+  },
+  "channel": {
+    "namespaces": [
+      {
+        "name": "live",
+        "allow_subscribe_for_anonymous": true,
+        "allow_subscribe_for_client": true,
+        "presence": false,
+        "join_leave": false,
+        "history_size": 0,
+        "allow_recovery": false,
+        "allow_publish_for_client": false,
+        "allow_publish_for_anonymous": false,
+        "allow_publish_for_subscriber": false,
+        "allow_presence_for_client": false,
+        "allow_presence_for_anonymous": false,
+        "allow_presence_for_subscriber": false,
+        "allow_history_for_client": false,
+        "allow_history_for_anonymous": false,
+        "allow_history_for_subscriber": false
+      },
+      {
+        "name": "train",
+        "allow_subscribe_for_anonymous": false,
+        "allow_subscribe_for_client": true,
+        "presence": false,
+        "join_leave": false,
+        "history_size": 0,
+        "allow_recovery": false,
+        "allow_publish_for_client": false,
+        "allow_publish_for_anonymous": false,
+        "allow_publish_for_subscriber": false,
+        "allow_presence_for_client": false,
+        "allow_presence_for_anonymous": false,
+        "allow_presence_for_subscriber": false,
+        "allow_history_for_client": false,
+        "allow_history_for_anonymous": false,
+        "allow_history_for_subscriber": false
+      }
+    ]
+  }
+}

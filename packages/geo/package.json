@@ -1,0 +1,30 @@
+{
+  "name": "@gerlines/geo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Linear referencing and motion kernel",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client-plan": "./src/client-plan.ts"
+  },
+  "scripts": {
+    "bench": "node bench/advance.bench.ts",
+    "continuity": "node scripts/continuity-ice379.ts",
+    "lint": "biome check .",
+    "test": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage --coverage.reporter=text",
+    "typecheck": "tsc && tsc -p tsconfig.tools.json"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@gerlines/config": "workspace:*",
+    "@types/node": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "fast-check": "catalog:",
+    "tinybench": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

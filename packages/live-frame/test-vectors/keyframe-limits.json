@@ -1,0 +1,71 @@
+{
+  "name": "keyframe-limits",
+  "description": "Two trips with every field at the end of its range: keys 0 and 4294967295, shape numbers 0 and 4294967295 under epoch 4294967295, delays -32767 and 32767, start at -timeBase and at 2147483647, run and dwell 65535, firstStop 65535, train number 4294967295, a line of 300 bytes, explicit arc positions 0 and 42949672.95 m, sequence and timetable version 4294967295.",
+  "decoder": "keyframe",
+  "expected": {
+    "kind": "keyframe",
+    "sequence": 4294967295,
+    "timetableVersion": 4294967295,
+    "shapeEpoch": 4294967295,
+    "timeBase": 1793000000,
+    "trips": [
+      {
+        "key": 0,
+        "shapeId": 0,
+        "category": "unknown",
+        "realtime": false,
+        "cancelled": false,
+        "foreign": false,
+        "delay": -32767,
+        "line": null,
+        "trainNumber": null,
+        "firstStop": 0,
+        "stops": [
+          {
+            "arrival": 0,
+            "departure": 65535,
+            "cancelled": false,
+            "realtime": true,
+            "s": null
+          },
+          {
+            "arrival": 131070,
+            "departure": null,
+            "cancelled": true,
+            "realtime": false,
+            "s": null
+          }
+        ]
+      },
+      {
+        "key": 4294967295,
+        "shapeId": 4294967295,
+        "category": "bus",
+        "realtime": true,
+        "cancelled": true,
+        "foreign": true,
+        "delay": 32767,
+        "line": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+        "trainNumber": 4294967295,
+        "firstStop": 65535,
+        "stops": [
+          {
+            "arrival": 3940483647,
+            "departure": 3940549182,
+            "cancelled": false,
+            "realtime": false,
+            "s": 0
+          },
+          {
+            "arrival": 3940614717,
+            "departure": null,
+            "cancelled": false,
+            "realtime": false,
+            "s": 42949672.95
+          }
+        ]
+      }
+    ]
+  },
+  "byteLength": 676
+}

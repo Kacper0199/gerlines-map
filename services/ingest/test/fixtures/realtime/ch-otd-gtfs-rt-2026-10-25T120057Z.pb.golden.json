@@ -1,0 +1,259 @@
+{
+  "ok": true,
+  "feedVersion": "20261021",
+  "feedTimestamp": 1792929648,
+  "events": [
+    {
+      "kind": "trip",
+      "source": "ch-otd-gtfs-rt",
+      "entityId": "ojp:91003:Y:R:j26.85:11_2875_ch:1:sjyid:100001:2875-916_20261025|20261025",
+      "observedAt": 1792929657566,
+      "feedTimestamp": 1792929648,
+      "updateTimestamp": null,
+      "sourceTripId": "ojp:91003:Y:R:j26.85:11_2875_ch:1:sjyid:100001:2875-916_20261025",
+      "routeId": "91-3-Y-j26-1",
+      "directionId": null,
+      "startDate": "2026-10-25",
+      "startTime": "05:36:00",
+      "trainNumber": null,
+      "relationship": "added",
+      "vehicleId": null,
+      "vehicleLabel": null,
+      "delaySeconds": null,
+      "stops": [
+        {
+          "stopSequence": 1,
+          "stop": {
+            "kind": "uic",
+            "code": 8010053
+          },
+          "arrival": null,
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792902960,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 2,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:90"
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792920960,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792921260,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 3,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:10:22:33"
+          },
+          "arrival": {
+            "delaySeconds": 1146,
+            "time": 1792922826,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 906,
+            "time": 1792923186,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 4,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:23:2:4"
+          },
+          "arrival": {
+            "delaySeconds": 786,
+            "time": 1792923666,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 852,
+            "time": 1792923732,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 5,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:218:4:7"
+          },
+          "arrival": {
+            "delaySeconds": 690,
+            "time": 1792924590,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 570,
+            "time": 1792924710,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 6,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:7000:4:7"
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792926960,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 42,
+            "time": 1792928082,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 7,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:7100:2:3"
+          },
+          "arrival": {
+            "delaySeconds": 30,
+            "time": 1792929210,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 84,
+            "time": 1792929324,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 8,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:7483:0:954324"
+          },
+          "arrival": {
+            "delaySeconds": 6,
+            "time": 1792929846,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 66,
+            "time": 1792929966,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 9,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:7493:0:602252"
+          },
+          "arrival": {
+            "delaySeconds": 24,
+            "time": 1792930944,
+            "uncertaintySeconds": null
+          },
+          "departure": null,
+          "relationship": "scheduled",
+          "assignedStop": null
+        }
+      ]
+    },
+    {
+      "kind": "trip",
+      "source": "ch-otd-gtfs-rt",
+      "entityId": "ojp:9100N:Y:R:j26.85:11_2871_ch:1:sjyid:100001:2871-916_20261025|20261025",
+      "observedAt": 1792929657566,
+      "feedTimestamp": 1792929648,
+      "updateTimestamp": null,
+      "sourceTripId": "ojp:9100N:Y:R:j26.85:11_2871_ch:1:sjyid:100001:2871-916_20261025",
+      "routeId": "91-N-Y-j26-1",
+      "directionId": null,
+      "startDate": "2026-10-25",
+      "startTime": "06:31:00",
+      "trainNumber": null,
+      "relationship": "added",
+      "vehicleId": null,
+      "vehicleLabel": null,
+      "delaySeconds": null,
+      "stops": [
+        {
+          "stopSequence": 1,
+          "stop": {
+            "kind": "uic",
+            "code": 8001071
+          },
+          "arrival": null,
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792906260,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 2,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:90"
+          },
+          "arrival": {
+            "delaySeconds": 0,
+            "time": 1792929660,
+            "uncertaintySeconds": null
+          },
+          "departure": {
+            "delaySeconds": 0,
+            "time": 1792930440,
+            "uncertaintySeconds": null
+          },
+          "relationship": "scheduled",
+          "assignedStop": null
+        },
+        {
+          "stopSequence": 3,
+          "stop": {
+            "kind": "source",
+            "id": "ch:1:sloid:10:22:33"
+          },
+          "arrival": {
+            "delaySeconds": 1656,
+            "time": 1792932516,
+            "uncertaintySeconds": null
+          },
+          "departure": null,
+          "relationship": "scheduled",
+          "assignedStop": null
+        }
+      ]
+    }
+  ]
+}

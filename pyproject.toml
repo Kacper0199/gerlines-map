@@ -1,0 +1,65 @@
+[project]
+name = "gerlines-workspace"
+version = "0.0.0"
+description = "uv workspace root for the GerLines Python pipelines"
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "gerlines-backfill",
+  "gerlines-catalog",
+  "gerlines-common",
+  "gerlines-geo-base",
+  "gerlines-predict",
+  "gerlines-rollups",
+  "gerlines-static-import",
+  "pytest==9.2.0",
+  "reuse[charset-normalizer]==6.2.0",
+  "ruff==0.17.3",
+]
+rail-graph = ["gerlines-rail-graph"]
+
+[tool.uv]
+package = false
+required-version = ">=0.13.5"
+
+[tool.uv.workspace]
+members = ["pipelines/*"]
+
+[tool.uv.sources]
+gerlines-backfill = { workspace = true }
+gerlines-catalog = { workspace = true }
+gerlines-common = { workspace = true }
+gerlines-geo-base = { workspace = true }
+gerlines-predict = { workspace = true }
+gerlines-rollups = { workspace = true }
+gerlines-static-import = { workspace = true }
+gerlines-rail-graph = { workspace = true }
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+include = ["*.py", "*.pyi", "**/pyproject.toml"]
+src = ["pipelines/*/src"]
+
+[tool.ruff.lint]
+select = [
+  "E", "W", "F", "I", "N", "UP", "B", "A", "C4", "SIM", "RET", "PTH", "PT", "S", "BLE",
+  "ERA", "PL", "RUF", "TRY", "PERF", "FURB",
+]
+ignore = ["PLR2004"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["S101", "PLR2004"]
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "lf"
+
+[tool.pytest]
+testpaths = ["pipelines"]
+addopts = ["-ra", "--strict-markers", "--strict-config", "--import-mode=importlib"]
+markers = ["db: needs a PostgreSQL server; runs in the Database workflow"]
+xfail_strict = true

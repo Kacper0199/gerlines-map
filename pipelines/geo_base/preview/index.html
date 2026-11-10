@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geo base preview</title>
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<style>
+  html, body, #map { margin: 0; height: 100%; background: #1a1b1d; }
+  #legend {
+    position: absolute; top: 16px; left: 16px; padding: 10px 12px; border-radius: 10px;
+    font: 13px system-ui, sans-serif; background: #1f2023; color: #e9e6df; border: 1px solid #333438;
+  }
+  #legend.light { background: #f6f4ef; color: #26231e; border-color: #d6d2c8; }
+  #legend span { display: inline-block; width: 18px; height: 3px; margin-right: 6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="legend"></div>
+<script type="module">
+import * as maplibregl from "./vendor/maplibre-gl.mjs";
+
+const params = new URLSearchParams(location.search);
+const theme = params.get("theme") === "light" ? "light" : "dark";
+const view = params.get("view") ?? "focus";
+const requestedLand = params.get("land") ?? "DE-BE";
+const land = /^DE-[A-Z]{2}$/.test(requestedLand) ? requestedLand : "DE-BE";
+const palette = theme === "dark"
+  ? { land: "#1A1B1D", water: "#121315", rail: "#3A3B3F", label: "#8D8A84", mask: "#0C0C0D", maskOpacity: 0.55,
+      outline: "#5A5B60", state: "#2F3033", country: "#4B4C51", focus: "#F1EFEA", old: "#E58F8F", crossing: "#9CC5F6" }
+  : { land: "#EDEBE5", water: "#C7CFD3", rail: "#B2AEA5", label: "#625E57", mask: "#6E6C66", maskOpacity: 0.34,
+      outline: "#7A766E", state: "#CFCBC1", country: "#9A968D", focus: "#1B1A18", old: "#C2503F", crossing: "#1F5EB0" };
+
+const omt = (id, type, sourceLayer, extra) => ({ id, type, source: "omt", "source-layer": sourceLayer, ...extra });
+const style = {
+  version: 8,
+  glyphs: "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  sources: {
+    omt: { type: "vector", url: "https://tiles.openfreemap.org/planet" },
+    laender: { type: "geojson", data: "geo/laender.geojson" },
+    neighbours: { type: "geojson", data: "geo/neighbours.geojson" },
+    crossings: { type: "geojson", data: "geo/border-crossings.geojson" },
+  },
+  layers: [
+    { id: "background", type: "background", paint: { "background-color": palette.land } },
+    omt("water", "fill", "water", { paint: { "fill-color": palette.water } }),
+    omt("rail", "line", "transportation", {
+      filter: ["==", ["get", "class"], "rail"], paint: { "line-color": palette.rail, "line-width": 0.8 },
+    }),
+    omt("boundary", "line", "boundary", {
+      filter: ["==", ["get", "admin_level"], 2], paint: { "line-color": palette.country, "line-width": 1 },
+    }),
+  ],
+};
+
+const map = new maplibregl.Map({ container: "map", style, center: [10.4, 51.1], zoom: 5, attributionControl: false });
+map.addControl(new maplibregl.AttributionControl({
+  customAttribution: "© GeoBasis-DE / BKG (2026), changed. Natural Earth. OpenStreetMap contributors, OpenFreeMap",
+}));
+
+function labelLayer(id, source, field, size) {
+  return {
+    id, type: "symbol", source,
+    layout: { "text-field": ["get", field], "text-font": ["Noto Sans Regular"], "text-size": size },
+    paint: { "text-color": palette.label, "text-halo-color": palette.land, "text-halo-width": 1.4 },
+  };
+}
+
+map.on("load", async () => {
+  const legend = document.getElementById("legend");
+  legend.className = theme;
+  if (view === "focus") {
+    map.addSource("focus-mask", { type: "geojson", data: `geo/laender-masks/${land}.geojson` });
+    map.addLayer({ id: "focus-mask", type: "fill", source: "focus-mask",
+      paint: { "fill-color": palette.mask, "fill-opacity": palette.maskOpacity } });
+    map.addLayer({ id: "laender-lines", type: "line", source: "laender",
+      paint: { "line-color": palette.outline, "line-width": 0.8 } });
+    map.addLayer({ id: "focus-outline", type: "line", source: "focus-mask",
+      paint: { "line-color": palette.focus, "line-width": 1.6 } });
+    map.addLayer({ id: "crossings", type: "circle", source: "crossings",
+      paint: { "circle-radius": 3, "circle-color": palette.crossing } });
+    const laender = await (await fetch("geo/laender.geojson")).json();
+    const labels = { type: "FeatureCollection", features: laender.features.map((f) => ({
+      type: "Feature", properties: f.properties,
+      geometry: { type: "Point", coordinates: [f.properties.label_lon, f.properties.label_lat] },
+    })) };
+    map.addSource("laender-labels", { type: "geojson", data: labels });
+    map.addLayer(labelLayer("laender-labels", "laender-labels", "name_en", 12));
+    map.addLayer(labelLayer("neighbour-labels", "neighbours", "name_en", 13));
+    const focus = laender.features.find((f) => f.properties.code === land).properties;
+    map.fitBounds([[focus.fit_west, focus.fit_south], [focus.fit_east, focus.fit_north]], { padding: 40, duration: 0 });
+    legend.textContent = `Land focus ${focus.name_en}: world minus Land mask, fitBounds on fit_* bounds`;
+  } else if (view === "mask") {
+    const requestedMask = params.get("mask") ?? "";
+    const file = /^[a-z0-9-]+\.geojson$/.test(requestedMask) ? requestedMask : "germany-mask.geojson";
+    const source = { type: "geojson", data: `geo/${file}` };
+    if (params.has("tolerance")) source.tolerance = Number(params.get("tolerance"));
+    map.addSource("mask", source);
+    map.addLayer({ id: "mask", type: "fill", source: "mask",
+      paint: { "fill-color": palette.mask, "fill-opacity": palette.maskOpacity } });
+    map.jumpTo({ center: [Number(params.get("lon") ?? 10.4), Number(params.get("lat") ?? 51.1)],
+      zoom: Number(params.get("zoom") ?? 5.6) });
+    legend.textContent = `Mask ${file}, source tolerance ${source.tolerance ?? "default"}`;
+  } else {
+    map.addSource("old", { type: "geojson", data: "geo/ne-germany-outline.geojson" });
+    map.addSource("new", { type: "geojson", data: "geo/germany-outline.geojson" });
+    map.addLayer({ id: "old", type: "line", source: "old", paint: { "line-color": palette.old, "line-width": 1.5 } });
+    map.addLayer({ id: "new", type: "line", source: "new", paint: { "line-color": palette.focus, "line-width": 1.5 } });
+    map.jumpTo({ center: [Number(params.get("lon") ?? 6.05), Number(params.get("lat") ?? 50.75)],
+      zoom: Number(params.get("zoom") ?? 9) });
+    legend.innerHTML = `<span style="background:${palette.old}"></span>Natural Earth outline (before)<br>`
+      + `<span style="background:${palette.focus}"></span>BKG VG250 outline (after)<br>`
+      + `<span style="background:${palette.country}"></span>OpenStreetMap country border`;
+  }
+  map.once("idle", () => { document.body.dataset.ready = "1"; });
+});
+</script>
+</body>
+</html>

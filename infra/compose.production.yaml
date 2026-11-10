@@ -1,0 +1,199 @@
+# Production overlay of compose.yaml for one server behind Cloudflare (docs/runbooks/deploy.md):
+#   docker compose -f infra/compose.yaml -f infra/compose.production.yaml --env-file /etc/gerlines/production.env \
+#     --profile live --profile recorder --profile router up -d
+# Only edge publishes a port (443 on IPv4) and only edge joins the routed edge network; api, live and centrifugo
+# reach it on the internal front network, the stores on the internal backend network. Every secret is required.
+# scripts/check-deploy.sh checks all of it.
+networks:
+  edge: {}
+  front:
+    internal: true
+    ipam:
+      config:
+        - subnet: 172.31.250.0/24
+  backend:
+    internal: true
+  egress: {}
+
+volumes:
+  edge-data:
+  edge-config:
+
+services:
+  db:
+    ports: !reset []
+    networks: [backend]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${DB_OWNER_PASSWORD:?set DB_OWNER_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+
+  valkey:
+    ports: !reset []
+    networks: [backend]
+    cap_drop: [ALL]
+    cap_add: [CHOWN, SETUID, SETGID]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      VALKEY_PASSWORD: ${VALKEY_PASSWORD:?set VALKEY_PASSWORD}
+    command:
+      - /bin/sh
+      - -ec
+      - |
+        exec docker-entrypoint.sh valkey-server - --protected-mode yes --appendonly yes --appendfsync everysec \
+          --save "300 1 60 1000" --maxmemory 256mb --maxmemory-policy noeviction <<CONFIG
+        requirepass $${VALKEY_PASSWORD}
+        CONFIG
+    healthcheck:
+      test: ["CMD-SHELL", "REDISCLI_AUTH=\"$${VALKEY_PASSWORD}\" valkey-cli --no-auth-warning ping | grep -q PONG"]
+
+  centrifugo:
+    ports: !reset []
+    networks: [front, backend]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment: !override
+      CENTRIFUGO_CLIENT_TOKEN_HMAC_SECRET_KEY: ${CENTRIFUGO_CLIENT_TOKEN_HMAC_SECRET_KEY:?set CENTRIFUGO_CLIENT_TOKEN_HMAC_SECRET_KEY}
+      CENTRIFUGO_HTTP_API_KEY: ${CENTRIFUGO_HTTP_API_KEY:?set CENTRIFUGO_HTTP_API_KEY}
+      CENTRIFUGO_CLIENT_ALLOWED_ORIGINS: https://${PUBLIC_HOST:?set PUBLIC_HOST}
+    volumes: !override
+      - ./production/centrifugo.json:/centrifugo/config.json:ro
+    mem_limit: 512m
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9000/health"]
+
+  live:
+    ports: !reset []
+    networks: [front, backend]
+    environment: !override
+      APP_NAME: ${APP_NAME:?set APP_NAME}
+      APP_CONTACT: ${APP_CONTACT:?set APP_CONTACT}
+      POSTGRES_HOST: db
+      POSTGRES_PORT: "5432"
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${DB_OWNER_PASSWORD:?set DB_OWNER_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+      VALKEY_URL: redis://:${VALKEY_PASSWORD:?set VALKEY_PASSWORD}@valkey:6379
+      CENTRIFUGO_URL: http://centrifugo:9000
+      CENTRIFUGO_HTTP_API_KEY: ${CENTRIFUGO_HTTP_API_KEY:?set CENTRIFUGO_HTTP_API_KEY}
+    volumes: !override
+      - ${LIVE_DIR:?set LIVE_DIR}:/live
+
+  recorder:
+    networks: [backend, egress]
+    environment:
+      APP_NAME: ${APP_NAME:?set APP_NAME}
+      APP_CONTACT: ${APP_CONTACT:?set APP_CONTACT}
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${DB_OWNER_PASSWORD:?set DB_OWNER_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+    volumes: !override
+      - ${RECORDINGS_DIR:?set RECORDINGS_DIR}:/recordings
+      - ${RECORDER_SEED_DIR:?set RECORDER_SEED_DIR}:/seed:ro
+      - ../secrets/mobilithek:/secrets/mobilithek:ro
+
+  realtime:
+    networks: [backend]
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?set POSTGRES_USER}
+      POSTGRES_PASSWORD: ${DB_OWNER_PASSWORD:?set DB_OWNER_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?set POSTGRES_DB}
+    volumes: !override
+      - ${RECORDINGS_DIR:?set RECORDINGS_DIR}:/recordings:ro
+      - ${REALTIME_STATE_DIR:?set REALTIME_STATE_DIR}:/state
+
+  router:
+    ports: !reset []
+    networks: [backend]
+    volumes: !override
+      - ${ROUTER_RUN_DIR:?set ROUTER_RUN_DIR}/data:/data:ro
+      - ${ROUTER_RUN_DIR:?set ROUTER_RUN_DIR}/container.yml:/data/config.yml:ro
+
+  api:
+    build:
+      context: ..
+      dockerfile: infra/production/api.Dockerfile
+    image: gerlines-api:0.0.0
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    depends_on:
+      db:
+        condition: service_healthy
+      valkey:
+        condition: service_healthy
+    networks: [front, backend]
+    environment:
+      NODE_ENV: production
+      API_HOST: 0.0.0.0
+      API_PORT: "8787"
+      APP_NAME: ${APP_NAME:?set APP_NAME}
+      APP_CONTACT: ${APP_CONTACT:?set APP_CONTACT}
+      API_TRUSTED_PROXIES: 172.31.250.10
+      API_CLOUDFLARE_RANGES: ${API_CLOUDFLARE_RANGES:?set API_CLOUDFLARE_RANGES}
+      ROUTER_BASE_URL: http://router:8080
+      SEARCH_DATABASE_URL: postgres://${API_DB_USER:?set API_DB_USER}:${API_DB_PASSWORD:?set API_DB_PASSWORD}@db:5432/${POSTGRES_DB:?set POSTGRES_DB}
+      STATS_DATABASE_URL: postgres://${API_DB_USER:?set API_DB_USER}:${API_DB_PASSWORD:?set API_DB_PASSWORD}@db:5432/${POSTGRES_DB:?set POSTGRES_DB}
+      STATUS_DATABASE_URL: postgres://${API_DB_USER:?set API_DB_USER}:${API_DB_PASSWORD:?set API_DB_PASSWORD}@db:5432/${POSTGRES_DB:?set POSTGRES_DB}
+      VEHICLE_DATABASE_URL: postgres://${API_DB_USER:?set API_DB_USER}:${API_DB_PASSWORD:?set API_DB_PASSWORD}@db:5432/${POSTGRES_DB:?set POSTGRES_DB}
+      VALKEY_URL: redis://:${VALKEY_PASSWORD:?set VALKEY_PASSWORD}@valkey:6379
+      SEARCH_PLACES_FILE: /data/search/places-de.tsv
+      PHOTO_DIR: /data/photos
+      PREDICTION_TABLE: ${PREDICTION_TABLE:-}
+      VEHICLE_SEQUENCE_ENABLED: "0"
+    volumes:
+      - ${API_DATA_DIR:?set API_DATA_DIR}:/data:ro
+    mem_limit: 1536m
+    stop_grace_period: 15s
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8787/api/health').then((r) => process.exit(r.ok ? 0 : 1), () => process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+
+  edge:
+    image: caddy:2.11.9-alpine@sha256:0bbb055bda6793c999bde78b1b5ce3e89f829fb031af2cf50056ea1246559fee
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: ["no-new-privileges:true"]
+    pids_limit: 128
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      edge: {}
+      front:
+        ipv4_address: 172.31.250.10
+    ports:
+      - target: 443
+        published: "443"
+        host_ip: 0.0.0.0
+        protocol: tcp
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST:?set PUBLIC_HOST}
+      CLOUDFLARE_RANGES: ${CLOUDFLARE_RANGES:?set CLOUDFLARE_RANGES}
+    volumes:
+      - ./production/Caddyfile:/etc/caddy/Caddyfile:ro
+      - ${WEB_DIST_DIR:?set WEB_DIST_DIR}:/srv/web:ro
+      - ${EDGE_TLS_DIR:?set EDGE_TLS_DIR}:/etc/caddy/tls:ro
+      - edge-data:/data
+      - edge-config:/config
+    mem_limit: 256m
+    stop_grace_period: 15s
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8081/healthz"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 10s

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trainforge preview</title>
+    <link rel="icon" href="data:," />
+    <style>
+      :root {
+        --land: #1a1b1d;
+        --surface: #17181a;
+        --ink: #f1efea;
+        --muted: #a09d96;
+        --hairline: #2c2e32;
+      }
+      :root[data-theme="light"] {
+        --land: #edebe5;
+        --surface: #fbfaf7;
+        --ink: #1b1a18;
+        --muted: #5f5b54;
+        --hairline: #dad6cc;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: var(--land);
+        color: var(--ink);
+        font: 13px/1.35 system-ui, sans-serif;
+      }
+      canvas {
+        display: block;
+      }
+      #panel {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-radius: 10px;
+        padding: 10px 12px;
+        min-width: 260px;
+        max-width: 420px;
+      }
+      #panel h1 {
+        font-size: 15px;
+        margin: 0 0 6px;
+      }
+      #panel table {
+        border-collapse: collapse;
+        font-variant-numeric: tabular-nums;
+      }
+      #panel td,
+      #panel th {
+        padding: 2px 8px 2px 0;
+        text-align: right;
+      }
+      #panel th:first-child,
+      #panel td:first-child {
+        text-align: left;
+      }
+      #panel .muted {
+        color: var(--muted);
+      }
+      .label {
+        position: fixed;
+        color: var(--ink);
+        background: var(--surface);
+        border: 1px solid var(--hairline);
+        border-radius: 6px;
+        padding: 1px 6px;
+        font-size: 12px;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel"></div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

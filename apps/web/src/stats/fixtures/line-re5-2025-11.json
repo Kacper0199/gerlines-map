@@ -1,0 +1,13 @@
+{
+  "kind": "line",
+  "period": { "from": "2025-11-01", "to": "2025-11-30", "days": 30 },
+  "freshness": {
+    "refreshedAt": null,
+    "maxLagMinutes": 40,
+    "note": "Statistics are up to about 40 minutes behind the live map, because they are read from rollups refreshed every 30 minutes."
+  },
+  "generatedAt": "2026-11-08T01:01:10.503Z",
+  "line": "RE5",
+  "operatorId": null,
+  "groups": []
+}

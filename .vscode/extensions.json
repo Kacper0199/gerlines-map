@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig",
+    "typescriptteam.native-preview",
+    "vitest.explorer"
+  ]
+}

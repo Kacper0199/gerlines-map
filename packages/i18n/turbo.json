@@ -1,0 +1,40 @@
+{
+  "$schema": "../../node_modules/turbo/schema.json",
+  "extends": ["//"],
+  "tasks": {
+    "lint": {
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/scripts/lint-copy.ts",
+        "$TURBO_ROOT$/apps/web/src/**",
+        "$TURBO_ROOT$/packages/ui/src/**",
+        "!$TURBO_ROOT$/apps/web/src/**/*.test.*",
+        "!$TURBO_ROOT$/packages/ui/src/**/*.test.*"
+      ]
+    },
+    "compile": {
+      "inputs": [
+        "messages/**",
+        "project.inlang/settings.json",
+        "project.inlang/paraglide.config.js",
+        "package.json"
+      ],
+      "outputs": ["src/paraglide/**"]
+    },
+    "test": {
+      "dependsOn": ["transit", "compile"],
+      "inputs": [
+        "$TURBO_EXTENDS$",
+        "$TURBO_ROOT$/scripts/lint-copy.ts",
+        "$TURBO_ROOT$/apps/web/index.html",
+        "$TURBO_ROOT$/apps/web/src/**",
+        "$TURBO_ROOT$/packages/ui/src/**",
+        "!$TURBO_ROOT$/apps/web/src/**/*.test.*",
+        "!$TURBO_ROOT$/packages/ui/src/**/*.test.*"
+      ]
+    },
+    "typecheck": {
+      "dependsOn": ["transit", "compile"]
+    }
+  }
+}

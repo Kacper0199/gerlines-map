@@ -1,0 +1,16 @@
+no_auto_install: true
+assert_lefthook_installed: true
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: biome
+      glob: "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,json,jsonc,css}"
+      run: pnpm exec biome check --no-errors-on-unmatched {staged_files}
+
+    - name: ruff
+      glob: "*.py"
+      run: uv run --frozen ruff check {staged_files} && uv run --frozen ruff format --check {staged_files}
+
+    - name: secrets
+      run: bash scripts/scan-staged-secrets.sh

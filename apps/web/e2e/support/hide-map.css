@@ -1,0 +1,4 @@
+canvas,
+.maplibregl-map {
+  visibility: hidden !important;
+}
