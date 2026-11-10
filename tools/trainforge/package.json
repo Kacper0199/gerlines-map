@@ -28,9 +28,9 @@
     "@gerlines/config": "workspace:*",
     "@types/js-yaml": "catalog:",
     "@types/node": "catalog:",
-    "@types/three": "0.186.0",
+    "@types/three": "0.187.0",
     "fast-check": "catalog:",
-    "three": "0.186.1",
+    "three": "0.187.0",
     "typescript": "catalog:",
     "vite": "catalog:",
     "vitest": "catalog:"
