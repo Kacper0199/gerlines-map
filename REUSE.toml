@@ -230,7 +230,7 @@ SPDX-FileCopyrightText = ["2026 GerLines contributors (interface)", "OpenStreetM
 SPDX-License-Identifier = "AGPL-3.0-or-later AND CC-BY-SA-4.0 AND ODbL-1.0 AND CC-BY-4.0 AND DL-DE-BY-2.0 AND OFL-1.1"
 
 [[annotations]]
-path = ["docs/images/overview-dark.png", "docs/images/selected-train-route.png", "docs/images/train-card-german.png", "docs/images/delay-mode-frankfurt.png", "docs/images/cars-koeln-hbf.png", "docs/images/statistics.png", "docs/images/journey-planner.png"]
+path = ["docs/images/overview-dark.png", "docs/images/selected-train-route.png", "docs/images/train-card-german.png", "docs/images/delay-mode-frankfurt.png", "docs/images/cars-koeln-hbf.png", "docs/images/statistics.png", "docs/images/journey-planner.png", "docs/images/timelapse-germany.gif", "docs/images/zoom-levels.gif", "docs/images/select-flight.gif", "docs/images/cars-3d.gif", "docs/images/land-focus-polish.png", "docs/images/operator-mode-frankfurt.png", "docs/images/playback-light.png", "docs/images/station-card-german.png", "docs/images/cars-closeup-1.png", "docs/images/cars-closeup-2.png"]
 precedence = "override"
 SPDX-FileCopyrightText = ["2026 GerLines contributors (interface)", "OpenStreetMap contributors", "OpenMapTiles contributors", "2026 DELFI e.V. (timetable and realtime)", "gtfs.de (timetable and realtime)", "Deutsche Bahn AG (station data)", "GeoBasis-DE / BKG (2026), changed", "The Noto Project Authors (Noto Sans)"]
 SPDX-License-Identifier = "AGPL-3.0-or-later AND CC-BY-SA-4.0 AND ODbL-1.0 AND CC-BY-4.0 AND DL-DE-BY-2.0 AND OFL-1.1"
@@ -242,7 +242,19 @@ SPDX-FileCopyrightText = ["2026 GerLines contributors (interface)", "OpenStreetM
 SPDX-License-Identifier = "AGPL-3.0-or-later AND CC-BY-SA-4.0 AND ODbL-1.0 AND CC-BY-4.0 AND DL-DE-BY-2.0 AND OFL-1.1"
 
 [[annotations]]
-path = ["docs/images/model-ice4.png", "docs/images/model-talent2.png"]
+path = "docs/images/model-*.png"
 precedence = "override"
-SPDX-FileCopyrightText = "2026 GerLines contributors (renders of the procedural train models; the lettering and logo shown are trademarks of Deutsche Bahn AG and only describe the train)"
+SPDX-FileCopyrightText = "2026 GerLines contributors (renders of the procedural train models; the lettering and logos shown are trademarks of their owners and only describe the trains)"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+[[annotations]]
+path = "docs/images/satellite-koeln.png"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 GerLines contributors (interface)", "OpenStreetMap contributors", "OpenMapTiles contributors", "VersaTiles (imagery: orthophotos of the Land survey offices and modified Copernicus Sentinel data, licences as listed at versatiles.org/sources)", "2026 DELFI e.V. (timetable and realtime)", "gtfs.de (timetable and realtime)", "Deutsche Bahn AG (station data)", "GeoBasis-DE / BKG (2026), changed", "The Noto Project Authors (Noto Sans)"]
+SPDX-License-Identifier = "AGPL-3.0-or-later AND CC-BY-SA-4.0 AND ODbL-1.0 AND CC-BY-4.0 AND DL-DE-BY-2.0 AND OFL-1.1"
+
+[[annotations]]
+path = "docs/images/statistics-charts.png"
+precedence = "override"
+SPDX-FileCopyrightText = ["2026 GerLines contributors (interface)", "piebro/deutsche-bahn-data (the history the figures are computed from; data of Deutsche Bahn AG)"]
+SPDX-License-Identifier = "AGPL-3.0-or-later AND CC-BY-4.0"

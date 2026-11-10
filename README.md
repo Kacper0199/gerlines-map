@@ -8,6 +8,10 @@ The interface is in English, German and Polish.
 GerLines is a non-commercial, open source project (AGPL-3.0-or-later). It is under active development and runs
 locally only: there is no public website yet.
 
+![Three hours of train traffic in Germany played back in thirteen seconds](docs/images/timelapse-germany.gif)
+
+Three hours of a Sunday afternoon in thirteen seconds. Every dot is a train on its own track.
+
 ![All of Germany on the dark map, every running train as a dot coloured by category](docs/images/overview-dark.png)
 
 | | |
@@ -19,8 +23,19 @@ locally only: there is no public website yet.
 | ![The statistics panel for Germany](docs/images/statistics.png) | ![A journey from Berlin to München drawn on the map](docs/images/journey-planner.png) |
 | Punctuality and delay statistics for Germany, a Land, a station, a line or a train. | The journey planner: Berlin Hbf to München Hbf, with the legs on the map. |
 
-All images come from the development build replaying recorded data on a laptop. The clock in each image is the
-replay's clock.
+| | |
+| --- | --- |
+| ![One continuous zoom from the whole country into Köln Hbf](docs/images/zoom-levels.gif) | ![Selecting a train: the camera flies to it and the route draws itself](docs/images/select-flight.gif) |
+| One zoom from the whole country into Köln Hbf: dots become arrows, then 3D cars at the platforms. | Selecting a train: the camera flies to it and tilts, and the route ahead draws itself along the track. |
+| ![Köln Hbf and the Hohenzollern bridge in the satellite style](docs/images/satellite-koeln.png) | ![Focus on Bavaria with the Polish interface](docs/images/land-focus-polish.png) |
+| The satellite style: Köln Hbf, the cathedral and the Hohenzollern bridge, with trains as 3D cars on the tracks. | The Polish interface with the focus on one Land, here Bavaria. |
+| ![Trains around Frankfurt coloured by operator group](docs/images/operator-mode-frankfurt.png) | ![Playback of a past hour in the light style](docs/images/playback-light.png) |
+| Colour by operator group around Frankfurt. | The light style, here with the playback of a past hour: a scrubber and speeds from 1x to 60x. |
+| ![The card of Wuppertal Hbf in German](docs/images/station-card-german.png) | ![Delay distribution and punctuality charts of the statistics panel](docs/images/statistics-charts.png) |
+| A station card in German: the lines that call there and today's trains. | The statistics panel up close: delay distribution, punctuality by category, by hour and by day, in both themes. |
+
+All images and animations come from the development build replaying recorded data on a laptop. The clock in each
+image is the replay's clock.
 
 ## Contents
 
@@ -82,10 +97,43 @@ replay's clock.
 | ![Trains drawn as 3D cars at Köln Hbf](docs/images/cars-koeln-hbf.png) | ![The procedural model of an ICE 4](docs/images/model-ice4.png) | ![The procedural model of a Talent 2 regional train](docs/images/model-talent2.png) |
 | Close to a station, each train is drawn as its cars on the platform track. | ICE 4, generated from its measurements. | Talent 2 regional unit. |
 
+| | |
+| --- | --- |
+| ![Trains as 3D cars leaving Köln Hbf, animated](docs/images/cars-3d.gif) | ![An S-Bahn drawn as 3D cars on its track, seen from close up](docs/images/cars-closeup-1.png) |
+| Köln Hbf: one train pulls out while others stand at their platforms. | An S-Bahn on the map at zoom 18, every car on the matched track. |
+
+![A regional train drawn as 3D cars in the light style](docs/images/cars-closeup-2.png)
+
 The train models are not drawn by hand. A generator (`tools/trainforge`) builds them from a catalogue of
 measurements: car lengths, bogie positions, cross-sections, nose shapes fitted to photos, and a livery per operator.
 The catalogue holds 56 models today (49 vehicle series and 7 generic ones for trains whose series is unknown), each
 in three levels of detail.
+
+### Model gallery
+
+A few of the generated models, at their highest level of detail. The colours come from the livery rules of each
+operator.
+
+| | |
+| --- | --- |
+| ![S-Bahn class 423](docs/images/model-sbahn-423.png) | ![S-Bahn class 422 in the green of the Rhine-Ruhr network](docs/images/model-sbahn-422-vrr.png) |
+| S-Bahn class 423 | S-Bahn class 422 in the green of the Rhine-Ruhr network |
+| ![Berlin S-Bahn class 481](docs/images/model-sbahn-berlin-481.png) | ![FLIRT 3, class 428](docs/images/model-flirt-428-db.png) |
+| Berlin S-Bahn class 481 | FLIRT 3 (class 428) |
+| ![FLIRT 3 in vlexx colours](docs/images/model-flirt-vlexx.png) | ![Coradia Continental, class 440](docs/images/model-coradia-440.png) |
+| FLIRT 3 in vlexx colours | Coradia Continental (class 440) |
+| ![RegioShuttle RS1 in Erfurter Bahn colours](docs/images/model-regioshuttle-650-erfurter.png) | ![Mireo, class 463, in bwegt colours](docs/images/model-mireo-463-bwegt.png) |
+| RegioShuttle RS1 (class 650) in Erfurter Bahn colours | Mireo (class 463) in bwegt colours |
+| ![Class 146 locomotive with double-deck coaches](docs/images/model-doppelstock-146.png) | ![Intercity 2 with double-deck coaches](docs/images/model-intercity-2.png) |
+| Class 146 locomotive with double-deck coaches | Intercity 2: a class 146.5 locomotive with Twindexx double-deck coaches |
+| ![ICE 3, class 403](docs/images/model-ice3-403.png) | ![ICE T, class 411](docs/images/model-ice-t-411.png) |
+| ICE 3 (class 403) | ICE T (class 411) |
+| ![TGV Euroduplex](docs/images/model-tgv-euroduplex.png) | ![Desiro Classic, class 642, from the side](docs/images/model-side-desiro-642-neb.png) |
+| TGV Euroduplex, which reaches Germany from France | Desiro Classic (class 642) from the side |
+
+![Four regional trains at the same scale](docs/images/model-lineup-regional.png)
+
+Four trains at the same scale, from the top: Berlin S-Bahn class 481, Desiro Classic, Mireo and FLIRT 3.
 
 ## How it works
 

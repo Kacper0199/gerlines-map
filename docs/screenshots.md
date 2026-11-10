@@ -106,27 +106,39 @@ never crop it out, and annotate committed images in `REUSE.toml`.
 | Vehicle photos, operator logos | Wikimedia Commons, operators | the photo credit must stay in the image, and logos stay out of the README hero (trademarks) |
 
 Images for the repository: PNG at 1440 by 900 (the two model images are cropped to 1008 by 630) with every metadata
-chunk stripped, at most ten in the README.
+chunk stripped. Animations are GIF files of at most 8 MB.
 The PNGs of a capture run stay in `raw/` (git-ignored).
 
 ## Images in the README
 
-The ten images in `docs/images/` were taken on the development server in front of a replay of recorded feeds, not on a
-public deployment. The clock in the live bar is the replay's clock. Each map image keeps its attribution box.
+The images and animations in `docs/images/` were taken on the development server in front of a replay of recorded
+feeds, not on a public deployment. The clock in the live bar is the replay's clock. Each map image keeps its
+attribution box.
 
 | File | What it shows | Theme, locale |
 | --- | --- | --- |
 | `overview-dark.png` | all of Germany, every train coloured by category, legend with counts | dark, EN |
+| `land-focus-polish.png` | focus on Bavaria, every train still drawn | dark, PL |
 | `selected-train-route.png` | a selected high speed train with its whole route drawn along the track | dark, EN |
 | `train-card-german.png` | the train card of a delayed ICE near Köln with its next stop and speed estimate | dark, DE |
+| `station-card-german.png` | the card of Wuppertal Hbf with its lines | light, DE |
 | `delay-mode-frankfurt.png` | trains around Frankfurt as heading arrows, coloured by delay | dark, EN |
+| `operator-mode-frankfurt.png` | the same view coloured by operator group | dark, EN |
+| `playback-light.png` | playback of a past hour with the scrubber open | light, EN |
+| `satellite-koeln.png` | Köln Hbf and the Hohenzollern bridge in the satellite style with 3D cars | satellite, EN |
 | `cars-koeln-hbf.png` | trains drawn as 3D cars on their platform tracks at Köln Hbf | dark, EN |
+| `cars-closeup-1.png`, `cars-closeup-2.png` | one train as 3D cars at zoom 18, captured at twice the pixel density | dark and light, EN |
 | `terrain-moselle.png` | the Moselle valley at Cochem in the terrain style with 3D relief, delay colours | terrain, EN |
 | `statistics.png` | the statistics panel for Germany on one day | dark, EN |
+| `statistics-charts.png` | three crops of the statistics panel side by side: the charts for Germany, one train, and the light theme | dark and light, EN |
 | `journey-planner.png` | a journey from Berlin Hbf to München Hbf drawn on the map | dark, EN |
-| `model-ice4.png` | the procedural model of an ICE 4 power car in the model viewer | dark |
-| `model-talent2.png` | the procedural model of a Talent 2 regional unit in the model viewer | light |
+| `timelapse-germany.gif` | about three hours of a Sunday afternoon at 120 times the speed, one screenshot per 56 s of replay time | dark, EN |
+| `zoom-levels.gif` | one zoom from the national view into Köln Hbf, captured frame by frame | dark, EN |
+| `select-flight.gif` | a train is clicked, the camera flies to it and the route ahead is drawn | dark, EN |
+| `cars-3d.gif` | 3D cars at Köln Hbf at three times the speed, the camera following a departing train | dark, EN |
+| `model-*.png` | renders of single train models in the model preview (`pnpm --filter @gerlines/trainforge preview`) | dark and light |
 
-The two model images show no map and no timetable data. They carry the lettering and logo the livery rules give a
-Deutsche Bahn train; those are trademarks of their owner and are shown only to describe the train (see the notice in
-the README).
+The model images show no map and no timetable data. They carry the lettering and logos the livery rules give a
+train; those are trademarks of their owners and are shown only to describe the train (see the notice in
+the README). The preview draws a logo with every livery, while the map hides it for operators outside the group it
+belongs to.
