@@ -1,6 +1,6 @@
 # Build from the repository root: docker build -f services/ingest/Dockerfile .
 # (infra/compose.yaml services recorder and realtime do this). The context is limited by Dockerfile.dockerignore.
-FROM node:24.22.2-alpine3.23@sha256:9b69af715c7f9d038150b54ccccbaeffa9064bbc93e2904c29591ca097316af1 AS build
+FROM node:24.22.2-alpine3.23@sha256:0efee1e068d21f6edcab7fa8c962fc4ecd50d4e28727bc23963379b63ee318ab AS build
 WORKDIR /repo
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
@@ -16,7 +16,7 @@ COPY packages/schema packages/schema
 COPY services/ingest services/ingest
 RUN pnpm --filter @gerlines/ingest build
 
-FROM node:24.22.2-alpine3.23@sha256:9b69af715c7f9d038150b54ccccbaeffa9064bbc93e2904c29591ca097316af1
+FROM node:24.22.2-alpine3.23@sha256:0efee1e068d21f6edcab7fa8c962fc4ecd50d4e28727bc23963379b63ee318ab
 ENV NODE_ENV=production
 WORKDIR /app
 COPY --from=build /repo/services/ingest/dist/recorder.mjs /app/recorder.mjs
