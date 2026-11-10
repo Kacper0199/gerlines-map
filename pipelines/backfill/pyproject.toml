@@ -8,7 +8,7 @@ dependencies = [
   "gerlines-common",
   "gerlines-rollups",
   "gerlines-static-import",
-  "polars==1.44.2",
+  "polars==2.1.0",
   "psycopg[binary]==3.3.6",
 ]
 
