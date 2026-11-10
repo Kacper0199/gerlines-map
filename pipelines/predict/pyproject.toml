@@ -5,7 +5,7 @@ description = "GerLines B0 and B1 delay predictions: historical quantile tables 
 license = "AGPL-3.0-or-later"
 requires-python = ">=3.13"
 dependencies = [
-  "polars==1.44.2",
+  "polars==2.1.0",
 ]
 
 [project.scripts]
