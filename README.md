@@ -100,9 +100,11 @@ image is the replay's clock.
 | | |
 | --- | --- |
 | ![Trains as 3D cars leaving Köln Hbf, animated](docs/images/cars-3d.gif) | ![An S-Bahn drawn as 3D cars on its track, seen from close up](docs/images/cars-closeup-1.png) |
-| Köln Hbf: one train pulls out while others stand at their platforms. | An S-Bahn on the map at zoom 18, every car on the matched track. |
+| Köln Hbf: one train pulls out while others stand at their platforms. | A Berlin S-Bahn with every car on the matched track, zoomed in closer than the map normally allows. |
 
 ![A regional train drawn as 3D cars in the light style](docs/images/cars-closeup-2.png)
+
+A regional express with double-deck coaches near Köln Hbf, in the light style.
 
 The train models are not drawn by hand. A generator (`tools/trainforge`) builds them from a catalogue of
 measurements: car lengths, bogie positions, cross-sections, nose shapes fitted to photos, and a livery per operator.

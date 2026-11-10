@@ -127,7 +127,7 @@ attribution box.
 | `playback-light.png` | playback of a past hour with the scrubber open | light, EN |
 | `satellite-koeln.png` | Köln Hbf and the Hohenzollern bridge in the satellite style with 3D cars | satellite, EN |
 | `cars-koeln-hbf.png` | trains drawn as 3D cars on their platform tracks at Köln Hbf | dark, EN |
-| `cars-closeup-1.png`, `cars-closeup-2.png` | one train as 3D cars at zoom 18, captured at twice the pixel density | dark and light, EN |
+| `cars-closeup-1.png`, `cars-closeup-2.png` | one train as 3D cars at zoom 18.5 and 17.7, with the map's zoom and pitch limits raised in the page for the picture, captured at twice the pixel density | dark and light, EN |
 | `terrain-moselle.png` | the Moselle valley at Cochem in the terrain style with 3D relief, delay colours | terrain, EN |
 | `statistics.png` | the statistics panel for Germany on one day | dark, EN |
 | `statistics-charts.png` | three crops of the statistics panel side by side: the charts for Germany, one train, and the light theme | dark and light, EN |
