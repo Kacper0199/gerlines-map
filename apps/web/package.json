@@ -36,7 +36,7 @@
     "meshoptimizer": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "zustand": "5.0.16"
+    "zustand": "5.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
